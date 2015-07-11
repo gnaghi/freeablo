@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Freeablo: Input::InputManager::Event::_vals::_mouseMove Struct Reference</title>
+<title>Freeablo: Input::Hotkey Class Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -94,32 +94,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="nav-path" class="navpath">
     <ul>
       <li class="navelem"><b>Input</b>      </li>
-      <li class="navelem"><a class="el" href="classInput_1_1InputManager.html">InputManager</a>      </li>
-      <li class="navelem"><b>Event</b>      </li>
-      <li class="navelem"><a class="el" href="unionInput_1_1InputManager_1_1Event_1_1__vals.html">_vals</a>      </li>
-      <li class="navelem"><a class="el" href="structInput_1_1InputManager_1_1Event_1_1__vals_1_1__mouseMove.html">_mouseMove</a>      </li>
+      <li class="navelem"><a class="el" href="classInput_1_1Hotkey.html">Hotkey</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">Input::InputManager::Event::_vals::_mouseMove Struct Reference</div>  </div>
+<div class="title">Input::Hotkey Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="Input::InputManager::Event::_vals::_mouseMove" -->
-<p><a href="structInput_1_1InputManager_1_1Event_1_1__vals_1_1__mouseMove-members.html">List of all members.</a></p>
+<!-- doxytag: class="Input::Hotkey" -->
+<p><a href="classInput_1_1Hotkey-members.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b54435dc5f5b5f5ed255f8b9d4607e7"></a><!-- doxytag: member="Input::Hotkey::Hotkey" ref="a1b54435dc5f5b5f5ed255f8b9d4607e7" args="(const char *name, bpt::ptree hotkeypt)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>Hotkey</b> (const char *name, bpt::ptree hotkeypt)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd7137ebc76ac86902e6cb9e63918422"></a><!-- doxytag: member="Input::Hotkey::Hotkey" ref="afd7137ebc76ac86902e6cb9e63918422" args="(int nkey, bool nshift, bool nctrl, bool nalt)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>Hotkey</b> (int nkey, bool nshift, bool nctrl, bool nalt)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf837904facae607ec14575f343d776b"></a><!-- doxytag: member="Input::Hotkey::operator==" ref="adf837904facae607ec14575f343d776b" args="(const Hotkey &amp;other)" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classInput_1_1Hotkey.html">Hotkey</a> &amp;other)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9633f25fcae714ae26120d91c7ba0213"></a><!-- doxytag: member="Input::Hotkey::save" ref="a9633f25fcae714ae26120d91c7ba0213" args="(const char *name, bpt::ptree hotkeypt)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> (const char *name, bpt::ptree hotkeypt)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb265f8ec7121f3eb47a415b59bf3a23"></a><!-- doxytag: member="Input::Hotkey::initpythonwrapper" ref="acb265f8ec7121f3eb47a415b59bf3a23" args="()" -->
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>initpythonwrapper</b> ()</td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add27ed9284e84b894b85ccaa7e1cf47b"></a><!-- doxytag: member="Input::InputManager::Event::_vals::_mouseMove::x" ref="add27ed9284e84b894b85ccaa7e1cf47b" args="" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>x</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a024999a8f117429ba4f674c4027436f5"></a><!-- doxytag: member="Input::InputManager::Event::_vals::_mouseMove::y" ref="a024999a8f117429ba4f674c4027436f5" args="" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f9c01c445c0d6f8009f8e846f6c44ac"></a><!-- doxytag: member="Input::Hotkey::key" ref="a6f9c01c445c0d6f8009f8e846f6c44ac" args="" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>key</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd5dbb5c19701db42f2e6a2dcad6b1fc"></a><!-- doxytag: member="Input::Hotkey::shift" ref="acd5dbb5c19701db42f2e6a2dcad6b1fc" args="" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>shift</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e223aeb53a4986c5da1659a85ce771a"></a><!-- doxytag: member="Input::Hotkey::ctrl" ref="a0e223aeb53a4986c5da1659a85ce771a" args="" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ctrl</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e92b798d6f4bb2c993ca132921690b4"></a><!-- doxytag: member="Input::Hotkey::alt" ref="a3e92b798d6f4bb2c993ca132921690b4" args="" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>alt</b></td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>components/input/<a class="el" href="inputmanager_8h_source.html">inputmanager.h</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>components/input/<a class="el" href="hotkey_8h_source.html">hotkey.h</a></li>
+<li>components/input/hotkey.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- window showing the filter options -->
