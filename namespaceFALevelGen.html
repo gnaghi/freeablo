@@ -97,13 +97,14 @@ Classes</h2></td></tr>
 <tr><td colspan="2"><h2><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>Basic</b> { <br/>
-&#160;&#160;<b>wall</b> =  135, 
-<b>upStairs</b> =  64, 
-<b>downStairs</b> =  59, 
-<b>door</b> =  47, 
+&#160;&#160;<b>insideWall</b> =  27, 
+<b>wall</b> =  56, 
+<b>upStairs</b> =  35, 
+<b>downStairs</b> =  34, 
 <br/>
-&#160;&#160;<b>floor</b> =  13, 
-<b>blank</b> =  104
+&#160;&#160;<b>door</b> =  67, 
+<b>floor</b> =  116, 
+<b>blank</b> =  115
 <br/>
  }</td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
@@ -130,6 +131,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drawRoom</b> (const <
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getXY</b> (int32_t x, int32_t y, const <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd97c680f0e14d01f8ce16c23ec91ca9"></a><!-- doxytag: member="FALevelGen::borders" ref="abd97c680f0e14d01f8ce16c23ec91ca9" args="(size_t x, size_t y, Basic tile, const Level::Dun &amp;level)" -->
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>borders</b> (size_t x, size_t y, Basic tile, const <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0419289bedbab7a736278c975a39a220"></a><!-- doxytag: member="FALevelGen::addWalls" ref="a0419289bedbab7a736278c975a39a220" args="(Level::Dun &amp;level)" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>addWalls</b> (<a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a919277a6ead4f9bab070feaf8151ff29"></a><!-- doxytag: member="FALevelGen::cleanupHelper" ref="a919277a6ead4f9bab070feaf8151ff29" args="(Level::Dun &amp;level, std::vector&lt; Room &gt; &amp;rooms, bool includeBorders)" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>cleanupHelper</b> (<a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level, std::vector&lt; <a class="el" href="classFALevelGen_1_1Room.html">Room</a> &gt; &amp;rooms, bool includeBorders)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab839eedf0dc81a4db5366d95ca198188"></a><!-- doxytag: member="FALevelGen::isWall" ref="ab839eedf0dc81a4db5366d95ca198188" args="(size_t x, size_t y, const Level::Dun &amp;level, bool inside)" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isWall</b> (size_t x, size_t y, const <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level, bool inside)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a6b8872f9374d3d1ea6e1bf6a8a350b"></a><!-- doxytag: member="FALevelGen::cleanLooseWallsHelper" ref="a0a6b8872f9374d3d1ea6e1bf6a8a350b" args="(size_t x, size_t y, const Level::Dun &amp;level, bool wallsSeparated)" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>cleanLooseWallsHelper</b> (size_t x, size_t y, const <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level, bool wallsSeparated)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a390fa115f23f6651f009d2dfcd639b98"></a><!-- doxytag: member="FALevelGen::cleanLooseWalls" ref="a390fa115f23f6651f009d2dfcd639b98" args="(Level::Dun &amp;level, bool wallsSeparated)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>cleanLooseWalls</b> (<a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level, bool wallsSeparated)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65b24647f0db6ad38c4c66bb489be055"></a><!-- doxytag: member="FALevelGen::cleanup" ref="a65b24647f0db6ad38c4c66bb489be055" args="(Level::Dun &amp;level, std::vector&lt; Room &gt; &amp;rooms)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>cleanup</b> (<a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level, std::vector&lt; <a class="el" href="classFALevelGen_1_1Room.html">Room</a> &gt; &amp;rooms)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09f0829395e8549e29e1edf094fb297c"></a><!-- doxytag: member="FALevelGen::doorAddHelper" ref="a09f0829395e8549e29e1edf094fb297c" args="(Level::Dun &amp;level, int32_t otherCoord, int32_t add, size_t start, size_t end, bool xAxis)" -->
@@ -138,16 +149,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>doorAddHelper</b> (<a
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addDoors</b> (<a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level, const std::vector&lt; <a class="el" href="classFALevelGen_1_1Room.html">Room</a> &gt; &amp;rooms)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a594ed88ca46d4ee0453ef8743eceda3d"></a><!-- doxytag: member="FALevelGen::placeUpStairs" ref="a594ed88ca46d4ee0453ef8743eceda3d" args="(Level::Dun &amp;level, const std::vector&lt; Room &gt; &amp;rooms, size_t levelNum)" -->
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>placeUpStairs</b> (<a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level, const std::vector&lt; <a class="el" href="classFALevelGen_1_1Room.html">Room</a> &gt; &amp;rooms, size_t levelNum)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36635b594f4c3f18eac82278bd29aaaa"></a><!-- doxytag: member="FALevelGen::placeDownStairs" ref="a36635b594f4c3f18eac82278bd29aaaa" args="(Level::Dun &amp;level, const std::vector&lt; Room &gt; &amp;rooms)" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>placeDownStairs</b> (<a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level, const std::vector&lt; <a class="el" href="classFALevelGen_1_1Room.html">Room</a> &gt; &amp;rooms)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03d95875d0aa4f7a5e245b920487a23d"></a><!-- doxytag: member="FALevelGen::placeDownStairs" ref="a03d95875d0aa4f7a5e245b920487a23d" args="(Level::Dun &amp;level, const std::vector&lt; Room &gt; &amp;rooms, size_t levelNum)" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>placeDownStairs</b> (<a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level, const std::vector&lt; <a class="el" href="classFALevelGen_1_1Room.html">Room</a> &gt; &amp;rooms, size_t levelNum)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e67d9abf003b6628cc7f4421fef950b"></a><!-- doxytag: member="FALevelGen::generateTmp" ref="a3e67d9abf003b6628cc7f4421fef950b" args="(size_t width, size_t height, size_t levelNum)" -->
 <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a>&#160;</td><td class="memItemRight" valign="bottom"><b>generateTmp</b> (size_t width, size_t height, size_t levelNum)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96a2e9f3d6aae8afd2938c68acf69e00"></a><!-- doxytag: member="FALevelGen::isWall" ref="a96a2e9f3d6aae8afd2938c68acf69e00" args="(size_t x, size_t y, const Level::Dun &amp;level)" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isWall</b> (size_t x, size_t y, const <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af42c26d9b2c6ff3e52d18a0860d5b4f5"></a><!-- doxytag: member="FALevelGen::setPoint" ref="af42c26d9b2c6ff3e52d18a0860d5b4f5" args="(int32_t x, int32_t y, size_t val, const Level::Dun &amp;tmpLevel, Level::Dun &amp;level, const TileSet &amp;tileset)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPoint</b> (int32_t x, int32_t y, size_t val, const <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;tmpLevel, <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level, const <a class="el" href="classFALevelGen_1_1TileSet.html">TileSet</a> &amp;tileset)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6afadecc7f51a2b049ce927e4f9b9808"></a><!-- doxytag: member="FALevelGen::isPassable" ref="a6afadecc7f51a2b049ce927e4f9b9808" args="(int32_t x, int32_t y, const Level::Dun &amp;tmpLevel)" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isPassable</b> (int32_t x, int32_t y, const <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;tmpLevel)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4a0dddc042ef217b8fe90230625fd9e"></a><!-- doxytag: member="FALevelGen::setPoint" ref="ac4a0dddc042ef217b8fe90230625fd9e" args="(int32_t x, int32_t y, size_t val, const Level::Dun &amp;tmpLevel, Level::Dun &amp;level, const TileSet &amp;tileset, int wallOffset, bool isInsideWall)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPoint</b> (int32_t x, int32_t y, size_t val, const <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;tmpLevel, <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level, const <a class="el" href="classFALevelGen_1_1TileSet.html">TileSet</a> &amp;tileset, int wallOffset, bool isInsideWall)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2871e1e0e9e5cd851b0dafd412140b8e"></a><!-- doxytag: member="FALevelGen::placeMonsters" ref="a2871e1e0e9e5cd851b0dafd412140b8e" args="(Level::Level &amp;level, const DiabloExe::DiabloExe &amp;exe, size_t dLvl)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>placeMonsters</b> (<a class="el" href="classLevel_1_1Level.html">Level::Level</a> &amp;level, const <a class="el" href="classDiabloExe_1_1DiabloExe.html">DiabloExe::DiabloExe</a> &amp;exe, size_t dLvl)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0d75609e42e96604e99852b3b18544b"></a><!-- doxytag: member="FALevelGen::fillIsometric" ref="ae0d75609e42e96604e99852b3b18544b" args="(Level::Dun &amp;tmpLevel, Level::Dun &amp;level, TileSet &amp;tileset, bool ignoreNotWall, int wallOffset, bool isInsideWall)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fillIsometric</b> (<a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;tmpLevel, <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level, <a class="el" href="classFALevelGen_1_1TileSet.html">TileSet</a> &amp;tileset, bool ignoreNotWall, int wallOffset, bool isInsideWall)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a464dd6a003f458e129d50ae8493e6cf4"></a><!-- doxytag: member="FALevelGen::connectHelperY" ref="a464dd6a003f458e129d50ae8493e6cf4" args="(int32_t x, int32_t y, Level::Dun &amp;level)" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>connectHelperY</b> (int32_t x, int32_t y, <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9781713d748d73af019950ff659089a"></a><!-- doxytag: member="FALevelGen::connectHelperX" ref="ac9781713d748d73af019950ff659089a" args="(int32_t x, int32_t y, Level::Dun &amp;level)" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>connectHelperX</b> (int32_t x, int32_t y, <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada3a10ca3b2f97503c8a54a27b5ba199"></a><!-- doxytag: member="FALevelGen::connectWalls" ref="ada3a10ca3b2f97503c8a54a27b5ba199" args="(Level::Dun &amp;level)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>connectWalls</b> (<a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d7cc5e0fc580671e9f56f1bc138a645"></a><!-- doxytag: member="FALevelGen::generate" ref="a8d7cc5e0fc580671e9f56f1bc138a645" args="(size_t width, size_t height, size_t dLvl, const DiabloExe::DiabloExe &amp;exe)" -->
 <a class="el" href="classLevel_1_1Level.html">Level::Level</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>generate</b> (size_t width, size_t height, size_t dLvl, const <a class="el" href="classDiabloExe_1_1DiabloExe.html">DiabloExe::DiabloExe</a> &amp;exe)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae67843d327b2eb402d25e6ba3d4c206"></a><!-- doxytag: member="FALevelGen::minKey" ref="aae67843d327b2eb402d25e6ba3d4c206" args="(const std::vector&lt; size_t &gt; &amp;key, const std::vector&lt; bool &gt; &amp;mstSet)" -->
@@ -185,7 +204,7 @@ boost::mt19937&#160;</td><td class="memItemRight" valign="bottom"><b>rng</b></td
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 11 2015 14:13:38 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 20 2015 21:17:39 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

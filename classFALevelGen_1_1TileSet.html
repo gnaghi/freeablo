@@ -117,6 +117,8 @@ Public Member Functions</h2></td></tr>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getRandomTile</b> (size_t tile)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75f68323e29fb12f3b1137d0f3ee5e82"></a><!-- doxytag: member="FALevelGen::TileSet::getDoorMap" ref="a75f68323e29fb12f3b1137d0f3ee5e82" args="()" -->
 std::map&lt; size_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getDoorMap</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2aaee31d3302b06ebc00dbcce9364306"></a><!-- doxytag: member="FALevelGen::TileSet::convert" ref="a2aaee31d3302b06ebc00dbcce9364306" args="(TileSetEnum::TileSetEnum val)" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>convert</b> (TileSetEnum::TileSetEnum val)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34c1c1e18cc84da80893351aaeade4dd"></a><!-- doxytag: member="FALevelGen::TileSet::xWall" ref="a34c1c1e18cc84da80893351aaeade4dd" args="" -->
@@ -149,8 +151,12 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>floor</b></td></tr>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>blank</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae174fc3dd49c19cd2f97a1a261b0b4ae"></a><!-- doxytag: member="FALevelGen::TileSet::xWallEnd" ref="ae174fc3dd49c19cd2f97a1a261b0b4ae" args="" -->
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>xWallEnd</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51bed6df10894ee4e3de2114d957c56f"></a><!-- doxytag: member="FALevelGen::TileSet::xWallEndBack" ref="a51bed6df10894ee4e3de2114d957c56f" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>xWallEndBack</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade6037d693a266a41e2ed13c3ae9f3f4"></a><!-- doxytag: member="FALevelGen::TileSet::yWallEnd" ref="ade6037d693a266a41e2ed13c3ae9f3f4" args="" -->
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>yWallEnd</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11deb41bd8260647dd21e7e678a9cb69"></a><!-- doxytag: member="FALevelGen::TileSet::yWallEndBack" ref="a11deb41bd8260647dd21e7e678a9cb69" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>yWallEndBack</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba0752da5ce6b632b6379f709d5d03ab"></a><!-- doxytag: member="FALevelGen::TileSet::xDoor" ref="aba0752da5ce6b632b6379f709d5d03ab" args="" -->
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>xDoor</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab59c2aa45535ff98a690a31533f992de"></a><!-- doxytag: member="FALevelGen::TileSet::yDoor" ref="ab59c2aa45535ff98a690a31533f992de" args="" -->
@@ -191,6 +197,58 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>downStairs7</b></td
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>downStairs8</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3476c2185c0db886c78469c8a3533489"></a><!-- doxytag: member="FALevelGen::TileSet::downStairs9" ref="a3476c2185c0db886c78469c8a3533489" args="" -->
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>downStairs9</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa1f2445864ed7b824e370d717fbaf66"></a><!-- doxytag: member="FALevelGen::TileSet::insideXWall" ref="aaa1f2445864ed7b824e370d717fbaf66" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>insideXWall</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6afe34d2951b3cba4edd5e7dd524f3f2"></a><!-- doxytag: member="FALevelGen::TileSet::insideXWallEnd" ref="a6afe34d2951b3cba4edd5e7dd524f3f2" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>insideXWallEnd</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9db9f0d2a00c34a29558ae67c1c73c0"></a><!-- doxytag: member="FALevelGen::TileSet::insideXWallEndBack" ref="aa9db9f0d2a00c34a29558ae67c1c73c0" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>insideXWallEndBack</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bb46b2fc26db1c5605461de46f7cce3"></a><!-- doxytag: member="FALevelGen::TileSet::insideYWall" ref="a0bb46b2fc26db1c5605461de46f7cce3" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>insideYWall</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac172f699b4b71b952188913b23a63615"></a><!-- doxytag: member="FALevelGen::TileSet::insideYWallEnd" ref="ac172f699b4b71b952188913b23a63615" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>insideYWallEnd</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6dfd637650530c25550cee2485321ea6"></a><!-- doxytag: member="FALevelGen::TileSet::insideYWallEndBack" ref="a6dfd637650530c25550cee2485321ea6" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>insideYWallEndBack</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a7dbd533fe062227daa72411ccaa282"></a><!-- doxytag: member="FALevelGen::TileSet::insideLeftCorner" ref="a5a7dbd533fe062227daa72411ccaa282" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>insideLeftCorner</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae48e2968db788ea3ddec465d72c805a6"></a><!-- doxytag: member="FALevelGen::TileSet::insideRightCorner" ref="ae48e2968db788ea3ddec465d72c805a6" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>insideRightCorner</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fe6c83ac2a0e32c571194f0bd620792"></a><!-- doxytag: member="FALevelGen::TileSet::insideBottomCorner" ref="a1fe6c83ac2a0e32c571194f0bd620792" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>insideBottomCorner</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a046591b9c696f16da29c4130620435b3"></a><!-- doxytag: member="FALevelGen::TileSet::insideTopCorner" ref="a046591b9c696f16da29c4130620435b3" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>insideTopCorner</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d5370f4e59e0890f124185715107e4c"></a><!-- doxytag: member="FALevelGen::TileSet::joinY" ref="a2d5370f4e59e0890f124185715107e4c" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>joinY</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace8174ce8fa8965e7dc39e9c4cf77f9b"></a><!-- doxytag: member="FALevelGen::TileSet::joinYRightCorner" ref="ace8174ce8fa8965e7dc39e9c4cf77f9b" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>joinYRightCorner</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf5cb7d24cabec75876b653ace34ebe3"></a><!-- doxytag: member="FALevelGen::TileSet::joinRightCorner" ref="adf5cb7d24cabec75876b653ace34ebe3" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>joinRightCorner</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac84da6136aeda692d5696be9997b9447"></a><!-- doxytag: member="FALevelGen::TileSet::joinOutXRightCorner" ref="ac84da6136aeda692d5696be9997b9447" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>joinOutXRightCorner</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae444c6151235a458a46b9266a6e0180b"></a><!-- doxytag: member="FALevelGen::TileSet::joinOutX" ref="ae444c6151235a458a46b9266a6e0180b" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>joinOutX</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3700e820426dff04f77eb62a1ea18cb6"></a><!-- doxytag: member="FALevelGen::TileSet::joinOutXTopCorner" ref="a3700e820426dff04f77eb62a1ea18cb6" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>joinOutXTopCorner</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b3d6ce1dc08e855169b1b20e11376e1"></a><!-- doxytag: member="FALevelGen::TileSet::joinTopCorner" ref="a4b3d6ce1dc08e855169b1b20e11376e1" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>joinTopCorner</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ba7b74f3c0957cf7a4357eb526e5889"></a><!-- doxytag: member="FALevelGen::TileSet::joinOutYTopCorner" ref="a9ba7b74f3c0957cf7a4357eb526e5889" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>joinOutYTopCorner</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a549c477c5506ad401aafd25db44ab79a"></a><!-- doxytag: member="FALevelGen::TileSet::joinOutY" ref="a549c477c5506ad401aafd25db44ab79a" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>joinOutY</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2de5d855f5ade5a308a06ea56dfd654"></a><!-- doxytag: member="FALevelGen::TileSet::joinOutYLeftCorner" ref="ae2de5d855f5ade5a308a06ea56dfd654" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>joinOutYLeftCorner</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28a7a39bda0f9499b34a7e3351c551d0"></a><!-- doxytag: member="FALevelGen::TileSet::joinLeftCorner" ref="a28a7a39bda0f9499b34a7e3351c551d0" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>joinLeftCorner</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54fac93ff3b0f2aa88a7b95d373e8786"></a><!-- doxytag: member="FALevelGen::TileSet::joinXLeftCorner" ref="a54fac93ff3b0f2aa88a7b95d373e8786" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>joinXLeftCorner</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47803b5295114f841797263839a3ebff"></a><!-- doxytag: member="FALevelGen::TileSet::joinX" ref="a47803b5295114f841797263839a3ebff" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>joinX</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ea91a4c866bf70b647e17d0638756bb"></a><!-- doxytag: member="FALevelGen::TileSet::joinXBottomCorner" ref="a4ea91a4c866bf70b647e17d0638756bb" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>joinXBottomCorner</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab86f76643838f22b96b49e9227b041ae"></a><!-- doxytag: member="FALevelGen::TileSet::joinBottomCorner" ref="ab86f76643838f22b96b49e9227b041ae" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>joinBottomCorner</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a326ef3ac18a39a7523a64e3ea4e2035d"></a><!-- doxytag: member="FALevelGen::TileSet::joinYBottomCorner" ref="a326ef3ac18a39a7523a64e3ea4e2035d" args="" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>joinYBottomCorner</b></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>apps/freeablo/falevelgen/<a class="el" href="apps_2freeablo_2falevelgen_2tileset_8h_source.html">tileset.h</a></li>
@@ -214,7 +272,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>downStairs9</b></td
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 11 2015 14:13:38 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 20 2015 21:17:39 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
