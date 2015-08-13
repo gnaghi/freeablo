@@ -5,5 +5,6 @@ var searchData=
   ['player',['Player',['../classFAWorld_1_1Player.html',1,'FAWorld']]],
   ['playpage',['PlayPage',['../classLauncher_1_1PlayPage.html',1,'Launcher']]],
   ['position',['Position',['../classFAWorld_1_1Position.html',1,'FAWorld']]],
+  ['prefix',['Prefix',['../structDiabloExe_1_1Prefix.html',1,'DiabloExe']]],
   ['processinvoker',['ProcessInvoker',['../classLauncher_1_1ProcessInvoker.html',1,'Launcher']]]
 ];

@@ -138,10 +138,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00056"></a>00056     uint16_t read16(<a class="code" href="structFAIO_1_1FAFile.html">FAFile</a>* file);
 <a name="l00057"></a>00057     uint8_t read8(<a class="code" href="structFAIO_1_1FAFile.html">FAFile</a>* file);
 <a name="l00058"></a>00058     std::string readCString(<a class="code" href="structFAIO_1_1FAFile.html">FAFile</a>* file, <span class="keywordtype">size_t</span> ptr);
-<a name="l00059"></a>00059     std::string getMPQFileName();
-<a name="l00060"></a>00060 }
-<a name="l00061"></a>00061 
-<a name="l00062"></a>00062 <span class="preprocessor">#endif </span>
+<a name="l00059"></a>00059     std::string readCStringFromWin32Binary(<a class="code" href="structFAIO_1_1FAFile.html">FAFile</a>* file, <span class="keywordtype">size_t</span> ptr, <span class="keywordtype">size_t</span> offset);
+<a name="l00060"></a>00060     std::string getMPQFileName();
+<a name="l00061"></a>00061 }
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063 <span class="preprocessor">#endif </span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -160,7 +161,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 5 2015 18:43:19 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 13 2015 21:47:37 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
