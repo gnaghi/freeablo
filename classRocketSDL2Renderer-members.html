@@ -91,7 +91,7 @@ This is the complete list of members for <a class="el" href="classRocketSDL2Rend
   <tr bgcolor="#f0f0f0"><td><b>mDrawBuffer</b> (defined in <a class="el" href="classRocketSDL2Renderer.html">RocketSDL2Renderer</a>)</td><td><a class="el" href="classRocketSDL2Renderer.html">RocketSDL2Renderer</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classRocketSDL2Renderer.html#aa159d9c39c0859dd01ed405169393b55">ReleaseTexture</a>(Rocket::Core::TextureHandle texture_handle)</td><td><a class="el" href="classRocketSDL2Renderer.html">RocketSDL2Renderer</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classRocketSDL2Renderer.html#a783a13f334b87e23a182513fc0c42b75">RenderGeometry</a>(Rocket::Core::Vertex *vertices, int num_vertices, int *indices, int num_indices, Rocket::Core::TextureHandle texture, const Rocket::Core::Vector2f &amp;translation)</td><td><a class="el" href="classRocketSDL2Renderer.html">RocketSDL2Renderer</a></td><td><code> [virtual]</code></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>RocketSDL2Renderer</b>(SDL_Renderer *renderer, SDL_Window *screen, boost::function&lt; bool(Rocket::Core::TextureHandle &amp;, Rocket::Core::Vector2i &amp;, const Rocket::Core::String &amp;)&gt; loadTextureFunc, boost::function&lt; bool(Rocket::Core::TextureHandle &amp;, const Rocket::Core::byte *, const Rocket::Core::Vector2i &amp;)&gt; generateTextureFunc, boost::function&lt; void(Rocket::Core::TextureHandle)&gt; releaseTextureFunc) (defined in <a class="el" href="classRocketSDL2Renderer.html">RocketSDL2Renderer</a>)</td><td><a class="el" href="classRocketSDL2Renderer.html">RocketSDL2Renderer</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>RocketSDL2Renderer</b>(SDL_Renderer *renderer, SDL_Window *screen, std::function&lt; bool(Rocket::Core::TextureHandle &amp;, Rocket::Core::Vector2i &amp;, const Rocket::Core::String &amp;)&gt; loadTextureFunc, std::function&lt; bool(Rocket::Core::TextureHandle &amp;, const Rocket::Core::byte *, const Rocket::Core::Vector2i &amp;)&gt; generateTextureFunc, std::function&lt; void(Rocket::Core::TextureHandle)&gt; releaseTextureFunc) (defined in <a class="el" href="classRocketSDL2Renderer.html">RocketSDL2Renderer</a>)</td><td><a class="el" href="classRocketSDL2Renderer.html">RocketSDL2Renderer</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classRocketSDL2Renderer.html#aeb7307b87652cee9e0282dc61e556eaf">SetScissorRegion</a>(int x, int y, int width, int height)</td><td><a class="el" href="classRocketSDL2Renderer.html">RocketSDL2Renderer</a></td><td><code> [virtual]</code></td></tr>
 </table></div><!-- contents -->
 <!-- window showing the filter options -->
@@ -111,7 +111,7 @@ This is the complete list of members for <a class="el" href="classRocketSDL2Rend
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 19 2015 19:43:11 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 19 2015 22:01:50 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
