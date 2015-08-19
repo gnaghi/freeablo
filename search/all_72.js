@@ -2,7 +2,6 @@ var searchData=
 [
   ['rawcachetmp',['RawCacheTmp',['../structFARender_1_1RawCacheTmp.html',1,'FARender']]],
   ['read',['Read',['../classFAIOFileInterface.html#a79264fa428afc4411ef4d6d4eb25f38e',1,'FAIOFileInterface']]],
-  ['readini',['readIni',['../namespaceMisc.html#a18c0c997328944acd671dccab68e0dd9',1,'Misc']]],
   ['releasetexture',['ReleaseTexture',['../classRocketSDL2Renderer.html#aa159d9c39c0859dd01ed405169393b55',1,'RocketSDL2Renderer']]],
   ['render',['Render',['../namespaceRender.html',1,'']]],
   ['renderer',['Renderer',['../classFARender_1_1Renderer.html',1,'FARender']]],

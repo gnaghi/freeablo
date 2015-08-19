@@ -111,16 +111,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa789d65395395f93b8024efb5567223c"></a><!-- doxytag: member="Settings::Settings::loadSettings" ref="aa789d65395395f93b8024efb5567223c" args="()" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadSettings</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdfd9af06cf4cb5efc8d9d3b45dfb6e0"></a><!-- doxytag: member="Settings::Settings::saveSettingsToFile" ref="afdfd9af06cf4cb5efc8d9d3b45dfb6e0" args="()" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>saveSettingsToFile</b> ()</td></tr>
-<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="a4ecfc068bcc8a3c9319f9d5fce9da746"></a><!-- doxytag: member="Settings::Settings::get" ref="a4ecfc068bcc8a3c9319f9d5fce9da746" args="(const char *name)" -->
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99d0bf933efedfbb5ce4f8a0c1a7f022"></a><!-- doxytag: member="Settings::Settings::loadUserSettings" ref="a99d0bf933efedfbb5ce4f8a0c1a7f022" args="()" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadUserSettings</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1bd46b374b1279a3f4d66b2e01ab03c"></a><!-- doxytag: member="Settings::Settings::loadFromFile" ref="aa1bd46b374b1279a3f4d66b2e01ab03c" args="(const std::string &amp;path)" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadFromFile</b> (const std::string &amp;path)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae752b0e9050e09a7beb01e07582fd12f"></a><!-- doxytag: member="Settings::Settings::save" ref="ae752b0e9050e09a7beb01e07582fd12f" args="()" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acdf1f892b0b56ff65ee3626bae047480"></a><!-- doxytag: member="Settings::Settings::isSectionExists" ref="acdf1f892b0b56ff65ee3626bae047480" args="(const std::string &amp;section)" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isSectionExists</b> (const std::string &amp;section)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb26bf6f49f261a50eaeb642ac45ae40"></a><!-- doxytag: member="Settings::Settings::getSections" ref="afb26bf6f49f261a50eaeb642ac45ae40" args="()" -->
+Container&#160;</td><td class="memItemRight" valign="bottom"><b>getSections</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add94b46bc1103539b1f595992722094e"></a><!-- doxytag: member="Settings::Settings::getPropertiesInSection" ref="add94b46bc1103539b1f595992722094e" args="(const std::string &amp;section)" -->
+Container&#160;</td><td class="memItemRight" valign="bottom"><b>getPropertiesInSection</b> (const std::string &amp;section)</td></tr>
+<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="ab44b93c89996df05ac70e3f814148470"></a><!-- doxytag: member="Settings::Settings::get" ref="ab44b93c89996df05ac70e3f814148470" args="(const std::string &amp;section, const std::string &amp;name, T defaultValue=T())" -->
 template&lt;class T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> (const char *name)</td></tr>
-<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="a00eb0df1eba25f346cec2cead07e0c60"></a><!-- doxytag: member="Settings::Settings::set" ref="a00eb0df1eba25f346cec2cead07e0c60" args="(const char *name, T value)" -->
+<tr><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> (const std::string &amp;section, const std::string &amp;name, T defaultValue=T())</td></tr>
+<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="a617d9edfdc2c80e48b808efcd921b6bb"></a><!-- doxytag: member="Settings::Settings::set" ref="a617d9edfdc2c80e48b808efcd921b6bb" args="(const std::string &amp;section, const std::string &amp;name, T value)" -->
 template&lt;class T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>set</b> (const char *name, T value)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>set</b> (const std::string &amp;section, const std::string &amp;name, T value)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4969be6d4436667fe397ddad2ce2e21a"></a><!-- doxytag: member="Settings::Settings::DEFAULT_PATH" ref="a4969be6d4436667fe397ddad2ce2e21a" args="" -->
@@ -152,7 +160,7 @@ static const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>U
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 16 2015 16:58:33 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 19 2015 19:43:11 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

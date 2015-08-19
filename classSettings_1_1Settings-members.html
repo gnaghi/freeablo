@@ -91,10 +91,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 This is the complete list of members for <a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a>, including all inherited members.<table>
   <tr bgcolor="#f0f0f0"><td><b>DEFAULT_PATH</b> (defined in <a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a>)</td><td><a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a></td><td><code> [static]</code></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>get</b>(const char *name) (defined in <a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a>)</td><td><a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>loadSettings</b>() (defined in <a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a>)</td><td><a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>saveSettingsToFile</b>() (defined in <a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a>)</td><td><a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>set</b>(const char *name, T value) (defined in <a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a>)</td><td><a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>get</b>(const std::string &amp;section, const std::string &amp;name, T defaultValue=T()) (defined in <a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a>)</td><td><a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a></td><td><code> [inline]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>getPropertiesInSection</b>(const std::string &amp;section) (defined in <a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a>)</td><td><a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>getSections</b>() (defined in <a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a>)</td><td><a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>isSectionExists</b>(const std::string &amp;section) (defined in <a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a>)</td><td><a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>loadFromFile</b>(const std::string &amp;path) (defined in <a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a>)</td><td><a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>loadUserSettings</b>() (defined in <a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a>)</td><td><a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>save</b>() (defined in <a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a>)</td><td><a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>set</b>(const std::string &amp;section, const std::string &amp;name, T value) (defined in <a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a>)</td><td><a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a></td><td><code> [inline]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>Settings</b>() (defined in <a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a>)</td><td><a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>USER_DIR</b> (defined in <a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a>)</td><td><a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a></td><td><code> [static]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>USER_PATH</b> (defined in <a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a>)</td><td><a class="el" href="classSettings_1_1Settings.html">Settings::Settings</a></td><td><code> [static]</code></td></tr>
@@ -116,7 +120,7 @@ This is the complete list of members for <a class="el" href="classSettings_1_1Se
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 16 2015 16:58:33 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 19 2015 19:43:11 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
