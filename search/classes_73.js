@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['savegamemanager',['SaveGameManager',['../classFASaveGame_1_1SaveGameManager.html',1,'FASaveGame']]],
   ['settings',['Settings',['../classSettings_1_1Settings.html',1,'Settings']]],
   ['sol',['Sol',['../classLevel_1_1Sol.html',1,'Level']]],
   ['spritecache',['SpriteCache',['../classFARender_1_1SpriteCache.html',1,'FARender']]],
