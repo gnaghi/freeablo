@@ -111,14 +111,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a281c94335e5309c50a6c3af93853d40f"></a><!-- doxytag: member="FAWorld::Inventory::Inventory" ref="a281c94335e5309c50a6c3af93853d40f" args="(Actor *actor)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>Inventory</b> (<a class="el" href="classFAWorld_1_1Actor.html">Actor</a> *actor)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1218b871051e65d5d625da5caed5f098"></a><!-- doxytag: member="FAWorld::Inventory::dump" ref="a1218b871051e65d5d625da5caed5f098" args="()" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dump</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba639ebf115e1783630e12788641f636"></a><!-- doxytag: member="FAWorld::Inventory::testInv" ref="aba639ebf115e1783630e12788641f636" args="(Inventory &amp;inv)" -->
-<a class="el" href="classFAWorld_1_1Inventory.html">Inventory</a>&#160;</td><td class="memItemRight" valign="bottom"><b>testInv</b> (<a class="el" href="classFAWorld_1_1Inventory.html">Inventory</a> &amp;inv)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1cefe3fad7c98436288ce9bfb22c646"></a><!-- doxytag: member="FAWorld::Inventory::putItem" ref="af1cefe3fad7c98436288ce9bfb22c646" args="(Level::Item &amp;item, Level::Item::equipLoc equipType, Level::Item::equipLoc from, uint8_t y=0, uint8_t x=0, uint8_t beltX=0)" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>putItem</b> (<a class="el" href="classLevel_1_1Item.html">Level::Item</a> &amp;item, Level::Item::equipLoc equipType, Level::Item::equipLoc from, uint8_t y=0, uint8_t x=0, uint8_t beltX=0)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff4e8349b574e6b78987ec38e63a6740"></a><!-- doxytag: member="FAWorld::Inventory::getItemAt" ref="aff4e8349b574e6b78987ec38e63a6740" args="(Level::Item::equipLoc type, uint8_t y=0, uint8_t x=0, uint8_t beltX=0)" -->
-<a class="el" href="classLevel_1_1Item.html">Level::Item</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getItemAt</b> (Level::Item::equipLoc type, uint8_t y=0, uint8_t x=0, uint8_t beltX=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a463cf57748e5f68b5c33f916e109131c"></a><!-- doxytag: member="FAWorld::Inventory::collectEffects" ref="a463cf57748e5f68b5c33f916e109131c" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>collectEffects</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0dd7b54868aa8320d4c7a84c62ad43f8"></a><!-- doxytag: member="FAWorld::Inventory::putItem" ref="a0dd7b54868aa8320d4c7a84c62ad43f8" args="(Item &amp;item, Item::equipLoc equipType, Item::equipLoc from, uint8_t y=0, uint8_t x=0, uint8_t beltX=0, bool recalculateStats=true)" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>putItem</b> (<a class="el" href="classFAWorld_1_1Item.html">Item</a> &amp;item, Item::equipLoc equipType, Item::equipLoc from, uint8_t y=0, uint8_t x=0, uint8_t beltX=0, bool recalculateStats=true)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5757807eb3653d0f10c945941f34147c"></a><!-- doxytag: member="FAWorld::Inventory::getItemAt" ref="a5757807eb3653d0f10c945941f34147c" args="(Item::equipLoc type, uint8_t y=0, uint8_t x=0, uint8_t beltX=0)" -->
+<a class="el" href="classFAWorld_1_1Item.html">Item</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getItemAt</b> (Item::equipLoc type, uint8_t y=0, uint8_t x=0, uint8_t beltX=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7802b4b415fe4a62f2961f0d40aadb17"></a><!-- doxytag: member="FAWorld::Inventory::getTotalAttackDamage" ref="a7802b4b415fe4a62f2961f0d40aadb17" args="()" -->
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getTotalAttackDamage</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ab1f92ba0e02d40da86817134a2d630"></a><!-- doxytag: member="FAWorld::Inventory::getTotalArmourClass" ref="a9ab1f92ba0e02d40da86817134a2d630" args="()" -->
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getTotalArmourClass</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd2520acf595a745b3b50f72d7ed3829"></a><!-- doxytag: member="FAWorld::Inventory::getTotalEffects" ref="acd2520acf595a745b3b50f72d7ed3829" args="()" -->
+std::vector&lt; std::tuple<br class="typebreak"/>
+&lt; Item::ItemEffect, uint32_t, <br class="typebreak"/>
+uint32_t, uint32_t &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getTotalEffects</b> ()</td></tr>
 <tr><td colspan="2"><h2><a name="friends"></a>
 Friends</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4af50bf1743d112cb2c2c784bea21c8"></a><!-- doxytag: member="FAWorld::Inventory::Actor" ref="ae4af50bf1743d112cb2c2c784bea21c8" args="" -->
@@ -146,7 +156,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Actor</b></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 29 2015 17:05:47 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 29 2015 21:51:23 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

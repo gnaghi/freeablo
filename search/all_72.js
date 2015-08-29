@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['rangerstats',['RangerStats',['../classFAWorld_1_1RangerStats.html',1,'FAWorld']]],
   ['rawcachetmp',['RawCacheTmp',['../structFARender_1_1RawCacheTmp.html',1,'FARender']]],
   ['read',['Read',['../classFAIOFileInterface.html#a79264fa428afc4411ef4d6d4eb25f38e',1,'FAIOFileInterface']]],
   ['releasetexture',['ReleaseTexture',['../classRocketSDL2Renderer.html#aa159d9c39c0859dd01ed405169393b55',1,'RocketSDL2Renderer']]],

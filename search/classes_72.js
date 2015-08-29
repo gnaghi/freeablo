@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['rangerstats',['RangerStats',['../classFAWorld_1_1RangerStats.html',1,'FAWorld']]],
   ['rawcachetmp',['RawCacheTmp',['../structFARender_1_1RawCacheTmp.html',1,'FARender']]],
   ['renderer',['Renderer',['../classFARender_1_1Renderer.html',1,'FARender']]],
   ['rendersettings',['RenderSettings',['../structRender_1_1RenderSettings.html',1,'Render']]],
