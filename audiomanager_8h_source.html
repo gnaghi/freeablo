@@ -92,41 +92,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00010"></a>00010 
 <a name="l00011"></a>00011 <span class="preprocessor">#include &lt;audio/audio.h&gt;</span>
 <a name="l00012"></a>00012 
-<a name="l00013"></a>00013 <span class="keyword">namespace </span>FAAudio
+<a name="l00013"></a>00013 <span class="keyword">namespace </span>Engine
 <a name="l00014"></a>00014 {
-<a name="l00015"></a><a class="code" href="structFAAudio_1_1CacheEntry.html">00015</a>     <span class="keyword">struct </span><a class="code" href="structFAAudio_1_1CacheEntry.html">CacheEntry</a>
-<a name="l00016"></a>00016     {
-<a name="l00017"></a>00017         Audio::Sound* sound;
-<a name="l00018"></a>00018         std::list&lt;std::string&gt;::iterator usedListIt;
-<a name="l00019"></a>00019 
-<a name="l00020"></a>00020         <a class="code" href="structFAAudio_1_1CacheEntry.html">CacheEntry</a>(Audio::Sound* _sound, std::list&lt;std::string&gt;::iterator _usedListIt)
-<a name="l00021"></a>00021             : sound(_sound), usedListIt(_usedListIt) {}
-<a name="l00022"></a>00022 
-<a name="l00023"></a>00023         <a class="code" href="structFAAudio_1_1CacheEntry.html">CacheEntry</a>() {}
-<a name="l00024"></a>00024     };
-<a name="l00025"></a>00025 
-<a name="l00026"></a><a class="code" href="classFAAudio_1_1AudioManager.html">00026</a>     <span class="keyword">class </span><a class="code" href="classFAAudio_1_1AudioManager.html">AudioManager</a>
-<a name="l00027"></a>00027     {
-<a name="l00028"></a>00028         <span class="keyword">public</span>:
-<a name="l00029"></a>00029             <a class="code" href="classFAAudio_1_1AudioManager.html">AudioManager</a>(int32_t channelCount, <span class="keywordtype">size_t</span> cacheSize);
-<a name="l00030"></a>00030             ~<a class="code" href="classFAAudio_1_1AudioManager.html">AudioManager</a>();
-<a name="l00031"></a>00031 
-<a name="l00032"></a>00032             <span class="keywordtype">void</span> play(std::string path);
-<a name="l00033"></a>00033             <span class="keywordtype">void</span> playMusic(<span class="keyword">const</span> std::string&amp; path);
-<a name="l00034"></a>00034 
-<a name="l00035"></a>00035         <span class="keyword">private</span>:
-<a name="l00036"></a>00036             std::vector&lt;std::string&gt; mPlaying;
-<a name="l00037"></a>00037             std::map&lt;std::string, CacheEntry&gt; mCache;
-<a name="l00038"></a>00038             std::list&lt;std::string&gt; mUsedList;
+<a name="l00015"></a>00015     <span class="keyword">class </span>ThreadManager;
+<a name="l00016"></a>00016 }
+<a name="l00017"></a>00017 
+<a name="l00018"></a>00018 <span class="keyword">namespace </span>FAAudio
+<a name="l00019"></a>00019 {
+<a name="l00020"></a><a class="code" href="structFAAudio_1_1CacheEntry.html">00020</a>     <span class="keyword">struct </span><a class="code" href="structFAAudio_1_1CacheEntry.html">CacheEntry</a>
+<a name="l00021"></a>00021     {
+<a name="l00022"></a>00022         Audio::Sound* sound;
+<a name="l00023"></a>00023         std::list&lt;std::string&gt;::iterator usedListIt;
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025         <a class="code" href="structFAAudio_1_1CacheEntry.html">CacheEntry</a>(Audio::Sound* _sound, std::list&lt;std::string&gt;::iterator _usedListIt)
+<a name="l00026"></a>00026             : sound(_sound), usedListIt(_usedListIt) {}
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028         <a class="code" href="structFAAudio_1_1CacheEntry.html">CacheEntry</a>() {}
+<a name="l00029"></a>00029     };
+<a name="l00030"></a>00030 
+<a name="l00031"></a><a class="code" href="classFAAudio_1_1AudioManager.html">00031</a>     <span class="keyword">class </span><a class="code" href="classFAAudio_1_1AudioManager.html">AudioManager</a>
+<a name="l00032"></a>00032     {
+<a name="l00033"></a>00033         <span class="keyword">public</span>:
+<a name="l00034"></a>00034             <a class="code" href="classFAAudio_1_1AudioManager.html">AudioManager</a>(int32_t channelCount, <span class="keywordtype">size_t</span> cacheSize);
+<a name="l00035"></a>00035             ~<a class="code" href="classFAAudio_1_1AudioManager.html">AudioManager</a>();
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037             <span class="keywordtype">void</span> play(std::string path);
+<a name="l00038"></a>00038             <span class="keywordtype">void</span> playMusic(<span class="keyword">const</span> std::string&amp; path);
 <a name="l00039"></a>00039 
-<a name="l00040"></a>00040             <span class="keywordtype">size_t</span> mCacheSize;
-<a name="l00041"></a>00041             <span class="keywordtype">size_t</span> mCount;
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043             Audio::Music* mCurrentMusic;
-<a name="l00044"></a>00044     };
-<a name="l00045"></a>00045 }
+<a name="l00040"></a>00040             <span class="keyword">static</span> <span class="keywordtype">void</span> playLevelMusic(int32_t currentLevel, <a class="code" href="classEngine_1_1ThreadManager.html">Engine::ThreadManager</a>&amp; threadManager);
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042         <span class="keyword">private</span>:
+<a name="l00043"></a>00043             std::vector&lt;std::string&gt; mPlaying;
+<a name="l00044"></a>00044             std::map&lt;std::string, CacheEntry&gt; mCache;
+<a name="l00045"></a>00045             std::list&lt;std::string&gt; mUsedList;
 <a name="l00046"></a>00046 
-<a name="l00047"></a>00047 <span class="preprocessor">#endif</span>
+<a name="l00047"></a>00047             <span class="keywordtype">size_t</span> mCacheSize;
+<a name="l00048"></a>00048             <span class="keywordtype">size_t</span> mCount;
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050             Audio::Music* mCurrentMusic;
+<a name="l00051"></a>00051     };
+<a name="l00052"></a>00052 }
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -145,7 +152,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 27 2015 19:45:49 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 29 2015 17:05:47 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

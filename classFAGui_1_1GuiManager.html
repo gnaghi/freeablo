@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -100,7 +100,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">FAGui::GuiManager Class Reference</div>  </div>
 </div><!--header-->
@@ -110,14 +111,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae83fca4a34d94d1412d8142991259106"></a><!-- doxytag: member="FAGui::GuiManager::destroy" ref="ae83fca4a34d94d1412d8142991259106" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec0ef94c19e1bbe7e0489c0a3f0ec228"></a><!-- doxytag: member="FAGui::GuiManager::update" ref="aec0ef94c19e1bbe7e0489c0a3f0ec228" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5ce6c77b7414d3c6a2b6641ea7b04b4"></a><!-- doxytag: member="FAGui::GuiManager::display" ref="aa5ce6c77b7414d3c6a2b6641ea7b04b4" args="(const std::string &amp;path)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>display</b> (const std::string &amp;path)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ba68872bcc5c031061c657de88f50f2"></a><!-- doxytag: member="FAGui::GuiManager::showGameBottomMenu" ref="a5ba68872bcc5c031061c657de88f50f2" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>showGameBottomMenu</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab52c63b2f0eba521367f3fa6ed206329"></a><!-- doxytag: member="FAGui::GuiManager::GuiManager" ref="ab52c63b2f0eba521367f3fa6ed206329" args="(FAWorld::Inventory &amp;playerInventory, Engine::EngineMain &amp;engine)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>GuiManager</b> (<a class="el" href="classFAWorld_1_1Inventory.html">FAWorld::Inventory</a> &amp;playerInventory, <a class="el" href="classEngine_1_1EngineMain.html">Engine::EngineMain</a> &amp;engine)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7667c4778fe6db955c3b32399213c97"></a><!-- doxytag: member="FAGui::GuiManager::showIngameGui" ref="af7667c4778fe6db955c3b32399213c97" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showIngameGui</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a517ba5e01a779fd93d2773c8976cd55f"></a><!-- doxytag: member="FAGui::GuiManager::showMainMenu" ref="a517ba5e01a779fd93d2773c8976cd55f" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showMainMenu</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8acac85dc71615f9539ceb38e0a41a6"></a><!-- doxytag: member="FAGui::GuiManager::updateGui" ref="ab8acac85dc71615f9539ceb38e0a41a6" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateGui</b> ()</td></tr>
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af197a9c0cd40de81ac10a78865817c75"></a><!-- doxytag: member="FAGui::GuiManager::mPythonFuncs" ref="af197a9c0cd40de81ac10a78865817c75" args="" -->
+<a class="el" href="classFAGui_1_1FAPythonFuncs.html">FAPythonFuncs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mPythonFuncs</b></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>apps/freeablo/fagui/<a class="el" href="guimanager_8h_source.html">guimanager.h</a></li>
@@ -129,7 +134,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>showGameBottomMenu</b
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -141,7 +146,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>showGameBottomMenu</b
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 4 2014 20:05:46 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 29 2015 17:05:47 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

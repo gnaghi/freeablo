@@ -125,12 +125,14 @@ Inheritance diagram for FAWorld::Actor:</div>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e99f5cd93408b65a33f4284423ec8a3"></a><!-- doxytag: member="FAWorld::Actor::Actor" ref="a1e99f5cd93408b65a33f4284423ec8a3" args="(const std::string &amp;walkAnimPath, const std::string &amp;idleAnimPath, const Position &amp;pos)" -->
 &#160;</td><td class="memItemRight" valign="bottom"><b>Actor</b> (const std::string &amp;walkAnimPath, const std::string &amp;idleAnimPath, const <a class="el" href="classFAWorld_1_1Position.html">Position</a> &amp;pos)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac86cf8221d2260292b909015f82a8866"></a><!-- doxytag: member="FAWorld::Actor::update" ref="ac86cf8221d2260292b909015f82a8866" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80f7ee4d3531ba745b66dd72e406c643"></a><!-- doxytag: member="FAWorld::Actor::update" ref="a80f7ee4d3531ba745b66dd72e406c643" args="(bool noclip)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (bool noclip)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0f672a764dbd1aa2854eff81e45f78e"></a><!-- doxytag: member="FAWorld::Actor::getCurrentAnim" ref="ab0f672a764dbd1aa2854eff81e45f78e" args="()" -->
 <a class="el" href="classFARender_1_1FASpriteGroup.html">FARender::FASpriteGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentAnim</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07ef3d20f2270f5b2a8c1fb3075f6f81"></a><!-- doxytag: member="FAWorld::Actor::setAnimation" ref="a07ef3d20f2270f5b2a8c1fb3075f6f81" args="(AnimState::AnimState state)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setAnimation</b> (AnimState::AnimState state)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a444ffc43b8028fd002ff931c6e4ca445"></a><!-- doxytag: member="FAWorld::Actor::destination" ref="a444ffc43b8028fd002ff931c6e4ca445" args="()" -->
+std::pair&lt; size_t, size_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>destination</b> ()</td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78328234299e1ed9da3e706cdfaf3853"></a><!-- doxytag: member="FAWorld::Actor::mPos" ref="a78328234299e1ed9da3e706cdfaf3853" args="" -->
@@ -143,6 +145,8 @@ Public Attributes</h2></td></tr>
 <a class="el" href="classFARender_1_1FASpriteGroup.html">FARender::FASpriteGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mIdleAnim</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd918eed32d94304e71eafb26a8d9096"></a><!-- doxytag: member="FAWorld::Actor::mFrame" ref="acd918eed32d94304e71eafb26a8d9096" args="" -->
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>mFrame</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe51e77ab0d63ec5ce28e9217ed10363"></a><!-- doxytag: member="FAWorld::Actor::mDestination" ref="afe51e77ab0d63ec5ce28e9217ed10363" args="" -->
+std::pair&lt; size_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mDestination</b></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2"><a class="anchor" id="aa6a27417ed0edf06434a63bcab51864b"></a><!-- doxytag: member="FAWorld::Actor::save" ref="aa6a27417ed0edf06434a63bcab51864b" args="(Archive &amp;ar, const unsigned int version) const " -->
@@ -178,7 +182,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>boost::serialization
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 27 2015 19:45:49 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 29 2015 17:05:47 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

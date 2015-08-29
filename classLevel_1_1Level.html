@@ -111,10 +111,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11c750f694ee10664c68a1f655a61f1f"></a><!-- doxytag: member="Level::Level::Level" ref="a11c750f694ee10664c68a1f655a61f1f" args="(const std::string &amp;dunPath, const std::string &amp;tilPath, const std::string &amp;minPath, const std::string &amp;solPath, const std::string &amp;tileSetPath, const std::pair&lt; size_t, size_t &gt; &amp;downStairs, const std::pair&lt; size_t, size_t &gt; &amp;upStairs)" -->
-&#160;</td><td class="memItemRight" valign="bottom"><b>Level</b> (const std::string &amp;dunPath, const std::string &amp;tilPath, const std::string &amp;minPath, const std::string &amp;solPath, const std::string &amp;tileSetPath, const std::pair&lt; size_t, size_t &gt; &amp;downStairs, const std::pair&lt; size_t, size_t &gt; &amp;upStairs)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c2e54ed200b816cde73e49831925068"></a><!-- doxytag: member="Level::Level::Level" ref="a0c2e54ed200b816cde73e49831925068" args="(const Dun &amp;dun, const std::string &amp;tilPath, const std::string &amp;minPath, const std::string &amp;solPath, const std::string &amp;tileSetPath, const std::pair&lt; size_t, size_t &gt; &amp;downStairs, const std::pair&lt; size_t, size_t &gt; &amp;upStairs, std::map&lt; size_t, size_t &gt; doorMap)" -->
-&#160;</td><td class="memItemRight" valign="bottom"><b>Level</b> (const <a class="el" href="classLevel_1_1Dun.html">Dun</a> &amp;dun, const std::string &amp;tilPath, const std::string &amp;minPath, const std::string &amp;solPath, const std::string &amp;tileSetPath, const std::pair&lt; size_t, size_t &gt; &amp;downStairs, const std::pair&lt; size_t, size_t &gt; &amp;upStairs, std::map&lt; size_t, size_t &gt; doorMap)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade4d4b0c78e61f91234f0ba66f92ddce"></a><!-- doxytag: member="Level::Level::Level" ref="ade4d4b0c78e61f91234f0ba66f92ddce" args="(const Dun &amp;dun, const std::string &amp;tilPath, const std::string &amp;minPath, const std::string &amp;solPath, const std::string &amp;tileSetPath, const std::pair&lt; size_t, size_t &gt; &amp;downStairs, const std::pair&lt; size_t, size_t &gt; &amp;upStairs, std::map&lt; size_t, size_t &gt; doorMap, size_t previous, size_t next)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>Level</b> (const <a class="el" href="classLevel_1_1Dun.html">Dun</a> &amp;dun, const std::string &amp;tilPath, const std::string &amp;minPath, const std::string &amp;solPath, const std::string &amp;tileSetPath, const std::pair&lt; size_t, size_t &gt; &amp;downStairs, const std::pair&lt; size_t, size_t &gt; &amp;upStairs, std::map&lt; size_t, size_t &gt; doorMap, size_t previous, size_t next)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ab98622582f360e6d30ff5f9993473b"></a><!-- doxytag: member="Level::Level::operator[]" ref="a2ab98622582f360e6d30ff5f9993473b" args="(size_t x) const " -->
 <a class="el" href="classMisc_1_1Helper2D.html">Misc::Helper2D</a>&lt; const <a class="el" href="classLevel_1_1Level.html">Level</a>, <br class="typebreak"/>
 const <a class="el" href="classLevel_1_1MinPillar.html">MinPillar</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_t x) const </td></tr>
@@ -142,6 +140,10 @@ const std::vector&lt; <a class="el" href="structLevel_1_1Monster.html">Monster</
 std::vector&lt; <a class="el" href="structLevel_1_1Monster.html">Monster</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getMonsters</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38c8b6a4f1f2bf14e8e6326a35b99343"></a><!-- doxytag: member="Level::Level::isStairs" ref="a38c8b6a4f1f2bf14e8e6326a35b99343" args="(size_t, size_t) const " -->
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isStairs</b> (size_t, size_t) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a758d864a0451511aa1f143f05afa6d66"></a><!-- doxytag: member="Level::Level::getNextLevel" ref="a758d864a0451511aa1f143f05afa6d66" args="() const " -->
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getNextLevel</b> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac91a95216a3e6a4e59eb15a968045528"></a><!-- doxytag: member="Level::Level::getPreviousLevel" ref="ac91a95216a3e6a4e59eb15a968045528" args="() const " -->
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getPreviousLevel</b> () const </td></tr>
 <tr><td colspan="2"><h2><a name="friends"></a>
 Friends</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af290e6b8f0f449f0e466c458783d8aa6"></a><!-- doxytag: member="Level::Level::get" ref="af290e6b8f0f449f0e466c458783d8aa6" args="(size_t x, size_t y, const Level &amp;level)" -->
@@ -169,7 +171,7 @@ const <a class="el" href="classLevel_1_1MinPillar.html">MinPillar</a>&#160;</td>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 27 2015 19:45:49 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 29 2015 17:05:47 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

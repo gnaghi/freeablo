@@ -6,7 +6,7 @@ var searchData=
   ['message',['Message',['../structEngine_1_1Message.html',1,'Engine']]],
   ['min',['Min',['../classLevel_1_1Min.html',1,'Level']]],
   ['minpillar',['MinPillar',['../classLevel_1_1MinPillar.html',1,'Level']]],
-  ['monster',['Monster',['../structLevel_1_1Monster.html',1,'Level']]],
   ['monster',['Monster',['../structDiabloExe_1_1Monster.html',1,'DiabloExe']]],
+  ['monster',['Monster',['../structLevel_1_1Monster.html',1,'Level']]],
   ['monster',['Monster',['../classFAWorld_1_1Monster.html',1,'FAWorld']]]
 ];

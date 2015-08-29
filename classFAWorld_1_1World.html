@@ -101,6 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">FAWorld::World Class Reference</div>  </div>
@@ -111,20 +112,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad71334a65208cf481c2365cc3bc07092"></a><!-- doxytag: member="FAWorld::World::setLevel" ref="ad71334a65208cf481c2365cc3bc07092" args="(Level::Level &amp;level, const DiabloExe::DiabloExe &amp;exe)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setLevel</b> (<a class="el" href="classLevel_1_1Level.html">Level::Level</a> &amp;level, const <a class="el" href="classDiabloExe_1_1DiabloExe.html">DiabloExe::DiabloExe</a> &amp;exe)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3dd520e634ff9936f6f3f7f4dc0cf5a"></a><!-- doxytag: member="FAWorld::World::addNpcs" ref="ad3dd520e634ff9936f6f3f7f4dc0cf5a" args="(const DiabloExe::DiabloExe &amp;exe)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addNpcs</b> (const <a class="el" href="classDiabloExe_1_1DiabloExe.html">DiabloExe::DiabloExe</a> &amp;exe)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa01b099e77f672b1b5af97957d299e77"></a><!-- doxytag: member="FAWorld::World::World" ref="aa01b099e77f672b1b5af97957d299e77" args="(const DiabloExe::DiabloExe &amp;exe)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>World</b> (const <a class="el" href="classDiabloExe_1_1DiabloExe.html">DiabloExe::DiabloExe</a> &amp;exe)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f2ca8c8743cc7689ba9227be88f9556"></a><!-- doxytag: member="FAWorld::World::generateLevels" ref="a5f2ca8c8743cc7689ba9227be88f9556" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>generateLevels</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d95331c8b035420243e0b1db18b21cb"></a><!-- doxytag: member="FAWorld::World::getCurrentLevel" ref="a4d95331c8b035420243e0b1db18b21cb" args="()" -->
+<a class="el" href="classLevel_1_1Level.html">Level::Level</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentLevel</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1cecdd7a29335885b67df630d476585f"></a><!-- doxytag: member="FAWorld::World::getCurrentLevelIndex" ref="a1cecdd7a29335885b67df630d476585f" args="()" -->
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentLevelIndex</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1cef5e892ca5b8edd924e466f26bf40"></a><!-- doxytag: member="FAWorld::World::setLevel" ref="ac1cef5e892ca5b8edd924e466f26bf40" args="(size_t levelnum)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLevel</b> (size_t levelnum)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13e8f8a14faa1e8ee48b2b4bcaa12add"></a><!-- doxytag: member="FAWorld::World::addNpcs" ref="a13e8f8a14faa1e8ee48b2b4bcaa12add" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addNpcs</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a232923bf93809b892f0e295ea678d395"></a><!-- doxytag: member="FAWorld::World::getActorAt" ref="a232923bf93809b892f0e295ea678d395" args="(size_t x, size_t y)" -->
 <a class="el" href="classFAWorld_1_1Actor.html">Actor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getActorAt</b> (size_t x, size_t y)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d5475140ba77479e60cfaff5ee0abe6"></a><!-- doxytag: member="FAWorld::World::clear" ref="a3d5475140ba77479e60cfaff5ee0abe6" args="()" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adaeba7bdddb50ac1c5b7c6b1a890bf3c"></a><!-- doxytag: member="FAWorld::World::update" ref="adaeba7bdddb50ac1c5b7c6b1a890bf3c" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6d290feac7ac6ff400062d847722daf"></a><!-- doxytag: member="FAWorld::World::update" ref="ae6d290feac7ac6ff400062d847722daf" args="(bool noclip)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (bool noclip)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2209d1791a5894ffe184100b99697df7"></a><!-- doxytag: member="FAWorld::World::getPlayer" ref="a2209d1791a5894ffe184100b99697df7" args="()" -->
 <a class="el" href="classFAWorld_1_1Player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPlayer</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5afbd524390014b824643a3430395196"></a><!-- doxytag: member="FAWorld::World::fillRenderState" ref="a5afbd524390014b824643a3430395196" args="(FARender::RenderState *state)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>fillRenderState</b> (<a class="el" href="classFARender_1_1RenderState.html">FARender::RenderState</a> *state)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa72cae8b62329a79324bce7294236787"></a><!-- doxytag: member="FAWorld::World::get" ref="aa72cae8b62329a79324bce7294236787" args="()" -->
+static <a class="el" href="classFAWorld_1_1World.html">World</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> ()</td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8c6a5ca048e2f35d06d667ae59db923"></a><!-- doxytag: member="FAWorld::World::ticksPerSecond" ref="ab8c6a5ca048e2f35d06d667ae59db923" args="" -->
@@ -153,7 +166,7 @@ static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class=
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 27 2015 19:45:49 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Aug 29 2015 17:05:47 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -10,6 +10,6 @@ var searchData=
   ['misc',['Misc',['../namespaceMisc.html',1,'']]],
   ['mobjects',['mObjects',['../classFARender_1_1RenderState.html#a9ce8ffeb7af14e22cdc313eaeb94f1b4',1,'FARender::RenderState']]],
   ['monster',['Monster',['../classFAWorld_1_1Monster.html',1,'FAWorld']]],
-  ['monster',['Monster',['../structLevel_1_1Monster.html',1,'Level']]],
-  ['monster',['Monster',['../structDiabloExe_1_1Monster.html',1,'DiabloExe']]]
+  ['monster',['Monster',['../structDiabloExe_1_1Monster.html',1,'DiabloExe']]],
+  ['monster',['Monster',['../structLevel_1_1Monster.html',1,'Level']]]
 ];
