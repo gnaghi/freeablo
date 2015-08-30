@@ -82,15 +82,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef DIABLOCHARACTERSTATS_H</span>
 <a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define DIABLOCHARACTERSTATS_H</span>
-<a name="l00003"></a>00003 <span class="preprocessor"></span><span class="preprocessor">#include &quot;actorstats.hpp&quot;</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span><span class="preprocessor">#include &quot;actorstats.h&quot;</span>
 <a name="l00004"></a>00004 <span class="keyword">namespace </span>FAWorld
 <a name="l00005"></a>00005 {
 <a name="l00006"></a>00006     <span class="keyword">class </span>Inventory;
 <a name="l00007"></a>00007 
-<a name="l00008"></a><a class="code" href="classFAWorld_1_1MeleeStats.html">00008</a>     <span class="keyword">class </span><a class="code" href="classFAWorld_1_1MeleeStats.html">MeleeStats</a> : <span class="keyword">public</span> ActorStats
+<a name="l00008"></a><a class="code" href="classFAWorld_1_1MeleeStats.html">00008</a>     <span class="keyword">class </span><a class="code" href="classFAWorld_1_1MeleeStats.html">MeleeStats</a> : <span class="keyword">public</span> <a class="code" href="classFAWorld_1_1ActorStats.html">ActorStats</a>
 <a name="l00009"></a>00009     {
 <a name="l00010"></a>00010     <span class="keyword">public</span>:
-<a name="l00011"></a>00011         <a class="code" href="classFAWorld_1_1MeleeStats.html">MeleeStats</a>(<a class="code" href="classDiabloExe_1_1CharacterStats.html">DiabloExe::CharacterStats</a> stats) : ActorStats(stats)
+<a name="l00011"></a>00011         <a class="code" href="classFAWorld_1_1MeleeStats.html">MeleeStats</a>(<a class="code" href="classDiabloExe_1_1CharacterStats.html">DiabloExe::CharacterStats</a> stats) : <a class="code" href="classFAWorld_1_1ActorStats.html">ActorStats</a>(stats)
 <a name="l00012"></a>00012         {
 <a name="l00013"></a>00013             mHP = 2*mVitality + 2*mLevel+18;
 <a name="l00014"></a>00014             mCurrentHP = mHP;
@@ -104,10 +104,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00022"></a>00022 
 <a name="l00023"></a>00023     };
 <a name="l00024"></a>00024 
-<a name="l00025"></a><a class="code" href="classFAWorld_1_1RangerStats.html">00025</a>     <span class="keyword">class </span><a class="code" href="classFAWorld_1_1RangerStats.html">RangerStats</a> : <span class="keyword">public</span> ActorStats
+<a name="l00025"></a><a class="code" href="classFAWorld_1_1RangerStats.html">00025</a>     <span class="keyword">class </span><a class="code" href="classFAWorld_1_1RangerStats.html">RangerStats</a> : <span class="keyword">public</span> <a class="code" href="classFAWorld_1_1ActorStats.html">ActorStats</a>
 <a name="l00026"></a>00026     {
 <a name="l00027"></a>00027         <span class="keyword">public</span>:
-<a name="l00028"></a>00028             <a class="code" href="classFAWorld_1_1RangerStats.html">RangerStats</a>(<a class="code" href="classDiabloExe_1_1CharacterStats.html">DiabloExe::CharacterStats</a> stats) : ActorStats(stats)
+<a name="l00028"></a>00028             <a class="code" href="classFAWorld_1_1RangerStats.html">RangerStats</a>(<a class="code" href="classDiabloExe_1_1CharacterStats.html">DiabloExe::CharacterStats</a> stats) : <a class="code" href="classFAWorld_1_1ActorStats.html">ActorStats</a>(stats)
 <a name="l00029"></a>00029             {
 <a name="l00030"></a>00030                 mHP = mVitality + 2*mLevel+23;
 <a name="l00031"></a>00031                 mCurrentHP = mHP;
@@ -121,10 +121,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00039"></a>00039 
 <a name="l00040"></a>00040     };
 <a name="l00041"></a>00041 
-<a name="l00042"></a><a class="code" href="classFAWorld_1_1MageStats.html">00042</a>     <span class="keyword">class </span><a class="code" href="classFAWorld_1_1MageStats.html">MageStats</a> : <span class="keyword">public</span> ActorStats
+<a name="l00042"></a><a class="code" href="classFAWorld_1_1MageStats.html">00042</a>     <span class="keyword">class </span><a class="code" href="classFAWorld_1_1MageStats.html">MageStats</a> : <span class="keyword">public</span> <a class="code" href="classFAWorld_1_1ActorStats.html">ActorStats</a>
 <a name="l00043"></a>00043     {
 <a name="l00044"></a>00044         <span class="keyword">public</span>:
-<a name="l00045"></a>00045             <a class="code" href="classFAWorld_1_1MageStats.html">MageStats</a>(<a class="code" href="classDiabloExe_1_1CharacterStats.html">DiabloExe::CharacterStats</a> stats) : ActorStats(stats)
+<a name="l00045"></a>00045             <a class="code" href="classFAWorld_1_1MageStats.html">MageStats</a>(<a class="code" href="classDiabloExe_1_1CharacterStats.html">DiabloExe::CharacterStats</a> stats) : <a class="code" href="classFAWorld_1_1ActorStats.html">ActorStats</a>(stats)
 <a name="l00046"></a>00046             {
 <a name="l00047"></a>00047                 mHP = mVitality + 2*mLevel + 9;
 <a name="l00048"></a>00048                 mCurrentHP = mHP;
@@ -156,7 +156,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Aug 29 2015 22:07:55 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Aug 30 2015 17:39:29 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
