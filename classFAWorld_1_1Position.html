@@ -107,7 +107,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">FAWorld::Position Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="FAWorld::Position" -->
+<!-- doxytag: class="FAWorld::Position" --><!-- doxytag: inherits="FAWorld::NetObject" --><div class="dynheader">
+Inheritance diagram for FAWorld::Position:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classFAWorld_1_1Position.png" usemap="#FAWorld::Position_map" alt=""/>
+  <map id="FAWorld::Position_map" name="FAWorld::Position_map">
+<area href="classFAWorld_1_1NetObject.html" alt="FAWorld::NetObject" shape="rect" coords="0,0,124,24"/>
+</map>
+ </div></div>
+
 <p><a href="classFAWorld_1_1Position-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
@@ -125,6 +134,12 @@ std::pair&lt; size_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bot
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaab58152fbd29cfde68a7317dad1f83d"></a><!-- doxytag: member="FAWorld::Position::next" ref="aaab58152fbd29cfde68a7317dad1f83d" args="() const " -->
 std::pair&lt; size_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFAWorld_1_1Position.html#aaab58152fbd29cfde68a7317dad1f83d">next</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">where we are going to <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11018e46cdf6b89b8e9502e3f3593958"></a><!-- doxytag: member="FAWorld::Position::getSize" ref="a11018e46cdf6b89b8e9502e3f3593958" args="()" -->
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getSize</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4dc980e3ebcf57bf60ad1c076ffdb1c2"></a><!-- doxytag: member="FAWorld::Position::writeTo" ref="a4dc980e3ebcf57bf60ad1c076ffdb1c2" args="(ENetPacket *packet, size_t start)" -->
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>writeTo</b> (ENetPacket *packet, size_t start)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10664d9721615fdf7f8abbb1707a0260"></a><!-- doxytag: member="FAWorld::Position::readFrom" ref="a10664d9721615fdf7f8abbb1707a0260" args="(ENetPacket *packet, size_t start)" -->
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>readFrom</b> (ENetPacket *packet, size_t start)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7492aeb4817c537b6776a8ccceffef5c"></a><!-- doxytag: member="FAWorld::Position::mDist" ref="a7492aeb4817c537b6776a8ccceffef5c" args="" -->
@@ -161,7 +176,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>boost::serialization
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 30 2015 17:39:29 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 2 2015 23:56:09 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

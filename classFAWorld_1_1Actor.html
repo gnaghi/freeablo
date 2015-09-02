@@ -108,14 +108,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">FAWorld::Actor Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="FAWorld::Actor" --><div class="dynheader">
+<!-- doxytag: class="FAWorld::Actor" --><!-- doxytag: inherits="FAWorld::NetObject" --><div class="dynheader">
 Inheritance diagram for FAWorld::Actor:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classFAWorld_1_1Actor.png" usemap="#FAWorld::Actor_map" alt=""/>
   <map id="FAWorld::Actor_map" name="FAWorld::Actor_map">
-<area href="classFAWorld_1_1Monster.html" alt="FAWorld::Monster" shape="rect" coords="0,56,114,80"/>
-<area href="classFAWorld_1_1Player.html" alt="FAWorld::Player" shape="rect" coords="124,56,238,80"/>
+<area href="classFAWorld_1_1NetObject.html" alt="FAWorld::NetObject" shape="rect" coords="67,0,191,24"/>
+<area href="classFAWorld_1_1Monster.html" alt="FAWorld::Monster" shape="rect" coords="0,112,124,136"/>
+<area href="classFAWorld_1_1Player.html" alt="FAWorld::Player" shape="rect" coords="134,112,258,136"/>
 </map>
  </div></div>
 
@@ -139,6 +140,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setWalkAnimation</b> 
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setIdleAnimation</b> (const std::string path)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a444ffc43b8028fd002ff931c6e4ca445"></a><!-- doxytag: member="FAWorld::Actor::destination" ref="a444ffc43b8028fd002ff931c6e4ca445" args="()" -->
 std::pair&lt; size_t, size_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>destination</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bb928ff77f0907b89c15433c44de321"></a><!-- doxytag: member="FAWorld::Actor::getSize" ref="a0bb928ff77f0907b89c15433c44de321" args="()" -->
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getSize</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50ad884567aaa16967e1ff1b8f2645d1"></a><!-- doxytag: member="FAWorld::Actor::writeTo" ref="a50ad884567aaa16967e1ff1b8f2645d1" args="(ENetPacket *packet, size_t start)" -->
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>writeTo</b> (ENetPacket *packet, size_t start)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41fad6c20d6be1975ccbe316a7d44fa1"></a><!-- doxytag: member="FAWorld::Actor::readFrom" ref="a41fad6c20d6be1975ccbe316a7d44fa1" args="(ENetPacket *packet, size_t start)" -->
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>readFrom</b> (ENetPacket *packet, size_t start)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78328234299e1ed9da3e706cdfaf3853"></a><!-- doxytag: member="FAWorld::Actor::mPos" ref="a78328234299e1ed9da3e706cdfaf3853" args="" -->
@@ -190,7 +197,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Inventory</b></td></
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 30 2015 17:39:29 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 2 2015 23:56:09 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

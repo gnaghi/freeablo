@@ -1,6 +1,7 @@
 var searchData=
 [
   ['actor',['Actor',['../classFAWorld_1_1Actor.html',1,'FAWorld']]],
+  ['actornetdata',['ActorNetData',['../structFAWorld_1_1ActorNetData.html',1,'FAWorld']]],
   ['actorstats',['ActorStats',['../classFAWorld_1_1ActorStats.html',1,'FAWorld']]],
   ['affix',['Affix',['../structDiabloExe_1_1Affix.html',1,'DiabloExe']]],
   ['animateddecorator',['AnimatedDecorator',['../classFAGui_1_1AnimatedDecorator.html',1,'FAGui']]],

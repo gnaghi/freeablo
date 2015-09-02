@@ -94,6 +94,7 @@ This is the complete list of members for <a class="el" href="classFAWorld_1_1Act
   <tr bgcolor="#f0f0f0"><td><b>boost::serialization::access</b> (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td><code> [friend]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>destination</b>() (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td><code> [inline]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>getCurrentAnim</b>() (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>getSize</b>() (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td><code> [virtual]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>Inventory</b> (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td><code> [friend]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>load</b>(Archive &amp;ar, const unsigned int version) (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td><code> [inline, protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>mDestination</b> (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td></td></tr>
@@ -102,12 +103,15 @@ This is the complete list of members for <a class="el" href="classFAWorld_1_1Act
   <tr bgcolor="#f0f0f0"><td><b>mInventory</b> (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>mPos</b> (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>mWalkAnim</b> (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>readFrom</b>(ENetPacket *packet, size_t start) (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td><code> [virtual]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>save</b>(Archive &amp;ar, const unsigned int version) const  (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td><code> [inline, protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>setAnimation</b>(AnimState::AnimState state) (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>setIdleAnimation</b>(const std::string path) (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>setStats</b>(ActorStats *stats) (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>setWalkAnimation</b>(const std::string path) (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>update</b>(bool noclip) (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>writeTo</b>(ENetPacket *packet, size_t start) (defined in <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a>)</td><td><a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a></td><td><code> [virtual]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>~NetObject</b>() (defined in <a class="el" href="classFAWorld_1_1NetObject.html">FAWorld::NetObject</a>)</td><td><a class="el" href="classFAWorld_1_1NetObject.html">FAWorld::NetObject</a></td><td><code> [inline, virtual]</code></td></tr>
 </table></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -126,7 +130,7 @@ This is the complete list of members for <a class="el" href="classFAWorld_1_1Act
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 30 2015 17:39:29 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 2 2015 23:56:09 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

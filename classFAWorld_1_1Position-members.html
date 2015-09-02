@@ -92,6 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 This is the complete list of members for <a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a>, including all inherited members.<table>
   <tr bgcolor="#f0f0f0"><td><b>boost::serialization::access</b> (defined in <a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a>)</td><td><a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a></td><td><code> [friend]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classFAWorld_1_1Position.html#ad3f6fbf7e42940edc332a296a4c27090">current</a>() const </td><td><a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>getSize</b>() (defined in <a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a>)</td><td><a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a></td><td><code> [virtual]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>mDirection</b> (defined in <a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a>)</td><td><a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classFAWorld_1_1Position.html#a7492aeb4817c537b6776a8ccceffef5c">mDist</a></td><td><a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>mMoving</b> (defined in <a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a>)</td><td><a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a></td><td></td></tr>
@@ -99,7 +100,10 @@ This is the complete list of members for <a class="el" href="classFAWorld_1_1Pos
   <tr bgcolor="#f0f0f0"><td><b>Position</b>() (defined in <a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a>)</td><td><a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>Position</b>(size_t x, size_t y) (defined in <a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a>)</td><td><a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>Position</b>(size_t x, size_t y, size_t direction) (defined in <a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a>)</td><td><a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>readFrom</b>(ENetPacket *packet, size_t start) (defined in <a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a>)</td><td><a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classFAWorld_1_1Position.html#ad34a10975af08be2beb527fc2d10d101">update</a>()</td><td><a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>writeTo</b>(ENetPacket *packet, size_t start) (defined in <a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a>)</td><td><a class="el" href="classFAWorld_1_1Position.html">FAWorld::Position</a></td><td><code> [virtual]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>~NetObject</b>() (defined in <a class="el" href="classFAWorld_1_1NetObject.html">FAWorld::NetObject</a>)</td><td><a class="el" href="classFAWorld_1_1NetObject.html">FAWorld::NetObject</a></td><td><code> [inline, virtual]</code></td></tr>
 </table></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -118,7 +122,7 @@ This is the complete list of members for <a class="el" href="classFAWorld_1_1Pos
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 30 2015 17:39:29 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 2 2015 23:56:09 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
