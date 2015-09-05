@@ -111,8 +111,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a281c94335e5309c50a6c3af93853d40f"></a><!-- doxytag: member="FAWorld::Inventory::Inventory" ref="a281c94335e5309c50a6c3af93853d40f" args="(Actor *actor)" -->
-&#160;</td><td class="memItemRight" valign="bottom"><b>Inventory</b> (<a class="el" href="classFAWorld_1_1Actor.html">Actor</a> *actor)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8929ce934c6d1e2ae483343bb690f3e7"></a><!-- doxytag: member="FAWorld::Inventory::Inventory" ref="a8929ce934c6d1e2ae483343bb690f3e7" args="(Player *actor)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>Inventory</b> (<a class="el" href="classFAWorld_1_1Player.html">Player</a> *actor)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1218b871051e65d5d625da5caed5f098"></a><!-- doxytag: member="FAWorld::Inventory::dump" ref="a1218b871051e65d5d625da5caed5f098" args="()" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dump</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a463cf57748e5f68b5c33f916e109131c"></a><!-- doxytag: member="FAWorld::Inventory::collectEffects" ref="a463cf57748e5f68b5c33f916e109131c" args="()" -->
@@ -129,10 +129,14 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getTotalArmourCla
 std::vector&lt; std::tuple<br class="typebreak"/>
 &lt; Item::ItemEffect, uint32_t, <br class="typebreak"/>
 uint32_t, uint32_t &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getTotalEffects</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a762bbb4dc49e65cebf08ac6d06906dfd"></a><!-- doxytag: member="FAWorld::Inventory::canPlaceItem" ref="a762bbb4dc49e65cebf08ac6d06906dfd" args="(Item item, Item::equipLoc equipType, uint8_t y=0, uint8_t x=0, uint8_t beltX=0)" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canPlaceItem</b> (<a class="el" href="classFAWorld_1_1Item.html">Item</a> item, Item::equipLoc equipType, uint8_t y=0, uint8_t x=0, uint8_t beltX=0)</td></tr>
 <tr><td colspan="2"><h2><a name="friends"></a>
 Friends</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4af50bf1743d112cb2c2c784bea21c8"></a><!-- doxytag: member="FAWorld::Inventory::Actor" ref="ae4af50bf1743d112cb2c2c784bea21c8" args="" -->
-class&#160;</td><td class="memItemRight" valign="bottom"><b>Actor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f4241aa9ecc051c75f779af132a52ed"></a><!-- doxytag: member="FAWorld::Inventory::Player" ref="a7f4241aa9ecc051c75f779af132a52ed" args="" -->
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Player</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f24986350bfc76b24d133ba07e7dc96"></a><!-- doxytag: member="FAWorld::Inventory::CharacterStatsBase" ref="a9f24986350bfc76b24d133ba07e7dc96" args="" -->
+class&#160;</td><td class="memItemRight" valign="bottom"><b>CharacterStatsBase</b></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>apps/freeablo/faworld/<a class="el" href="inventory_8h_source.html">inventory.h</a></li>
@@ -156,7 +160,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Actor</b></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 2 2015 23:56:09 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 5 2015 17:44:30 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

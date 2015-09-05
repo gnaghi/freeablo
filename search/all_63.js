@@ -6,6 +6,7 @@ var searchData=
   ['celfile',['CelFile',['../classCel_1_1CelFile.html',1,'Cel']]],
   ['celframe',['CelFrame',['../classCel_1_1CelFrame.html',1,'Cel']]],
   ['characterstats',['CharacterStats',['../classDiabloExe_1_1CharacterStats.html',1,'DiabloExe']]],
+  ['characterstatsbase',['CharacterStatsBase',['../classFAWorld_1_1CharacterStatsBase.html',1,'FAWorld']]],
   ['cleanup',['cleanup',['../classFARender_1_1Renderer.html#a7c3143aefd6b3454e511ed572dad79c9',1,'FARender::Renderer']]],
   ['clear',['clear',['../classFARender_1_1SpriteManager.html#a3654837a02b4e588ea5a5f486dac3203',1,'FARender::SpriteManager']]],
   ['clientpacket',['ClientPacket',['../structEngine_1_1ClientPacket.html',1,'Engine']]],

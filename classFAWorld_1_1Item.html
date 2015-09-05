@@ -246,10 +246,30 @@ Public Types</h2></td></tr>
 &#160;&#160;<b>itNOVELTY</b> = 5
 <br/>
  }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>itemCode</b> { <br/>
+&#160;&#160;<b>icOther</b>, 
+<b>icSword</b>, 
+<b>icAxe</b>, 
+<b>icBow</b>, 
+<br/>
+&#160;&#160;<b>icBlunt</b>, 
+<b>icShield</b>, 
+<b>icLightArmour</b>, 
+<b>icHelm</b>, 
+<br/>
+&#160;&#160;<b>icMidArmour</b>, 
+<b>icHeavyArmour</b>, 
+<b>icStave</b>, 
+<b>icGold</b>, 
+<br/>
+&#160;&#160;<b>icRing</b>, 
+<b>icAmulet</b>
+<br/>
+ }</td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6de1936730b3b190eee1102a4db5c966"></a><!-- doxytag: member="FAWorld::Item::isEmpty" ref="a6de1936730b3b190eee1102a4db5c966" args="()" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isEmpty</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa93072efcb6eff29b43d82297470e2c1"></a><!-- doxytag: member="FAWorld::Item::isEmpty" ref="aa93072efcb6eff29b43d82297470e2c1" args="() const " -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isEmpty</b> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b398b8078a2539505e56385c6b0304f"></a><!-- doxytag: member="FAWorld::Item::Item" ref="a9b398b8078a2539505e56385c6b0304f" args="(DiabloExe::BaseItem item, uint32_t id, DiabloExe::Affix *affix=NULL, bool isIdentified=true)" -->
 &#160;</td><td class="memItemRight" valign="bottom"><b>Item</b> (<a class="el" href="classDiabloExe_1_1BaseItem.html">DiabloExe::BaseItem</a> item, uint32_t id, <a class="el" href="structDiabloExe_1_1Affix.html">DiabloExe::Affix</a> *affix=NULL, bool isIdentified=true)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88dfcbe2414c2956442d4a291015cfba"></a><!-- doxytag: member="FAWorld::Item::Item" ref="a88dfcbe2414c2956442d4a291015cfba" args="(const DiabloExe::UniqueItem &amp;item, uint32_t id)" -->
@@ -334,8 +354,8 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getEffect5</b> ()
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getMinRange5</b> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a0be1a89a7ae4be627d1264779eed5d"></a><!-- doxytag: member="FAWorld::Item::getMaxRange5" ref="a2a0be1a89a7ae4be627d1264779eed5d" args="() const " -->
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxRange5</b> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a7c8b90dcacd0e177eed4070bbcbf95"></a><!-- doxytag: member="FAWorld::Item::getCode" ref="a8a7c8b90dcacd0e177eed4070bbcbf95" args="() const " -->
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>getCode</b> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecde209b06ff8ab8fe42450b09eb5411"></a><!-- doxytag: member="FAWorld::Item::getCode" ref="aecde209b06ff8ab8fe42450b09eb5411" args="() const " -->
+itemCode&#160;</td><td class="memItemRight" valign="bottom"><b>getCode</b> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa72f2bacafd5067ba4add0d8e8918311"></a><!-- doxytag: member="FAWorld::Item::getEquipLoc" ref="aa72f2bacafd5067ba4add0d8e8918311" args="() const " -->
 equipLoc&#160;</td><td class="memItemRight" valign="bottom"><b>getEquipLoc</b> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45732ee9631eb73d02b0a8bda88ecbde"></a><!-- doxytag: member="FAWorld::Item::getType" ref="a45732ee9631eb73d02b0a8bda88ecbde" args="() const " -->
@@ -379,7 +399,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ItemPosition</b></td
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 2 2015 23:56:09 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 5 2015 17:44:30 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

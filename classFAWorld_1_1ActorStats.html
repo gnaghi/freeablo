@@ -114,9 +114,10 @@ Inheritance diagram for FAWorld::ActorStats:</div>
  <div class="center">
   <img src="classFAWorld_1_1ActorStats.png" usemap="#FAWorld::ActorStats_map" alt=""/>
   <map id="FAWorld::ActorStats_map" name="FAWorld::ActorStats_map">
-<area href="classFAWorld_1_1MageStats.html" alt="FAWorld::MageStats" shape="rect" coords="0,56,136,80"/>
-<area href="classFAWorld_1_1MeleeStats.html" alt="FAWorld::MeleeStats" shape="rect" coords="146,56,282,80"/>
-<area href="classFAWorld_1_1RangerStats.html" alt="FAWorld::RangerStats" shape="rect" coords="292,56,428,80"/>
+<area href="classFAWorld_1_1CharacterStatsBase.html" alt="FAWorld::CharacterStatsBase" shape="rect" coords="190,56,370,80"/>
+<area href="classFAWorld_1_1MageStats.html" alt="FAWorld::MageStats" shape="rect" coords="0,112,180,136"/>
+<area href="classFAWorld_1_1MeleeStats.html" alt="FAWorld::MeleeStats" shape="rect" coords="190,112,370,136"/>
+<area href="classFAWorld_1_1RangerStats.html" alt="FAWorld::RangerStats" shape="rect" coords="380,112,560,136"/>
 </map>
  </div></div>
 
@@ -159,14 +160,24 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxStrength</b
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setActor</b> (<a class="el" href="classFAWorld_1_1Actor.html">Actor</a> *actor)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb866790046769f326bb375137b6fb54"></a><!-- doxytag: member="FAWorld::ActorStats::ActorStats" ref="afb866790046769f326bb375137b6fb54" args="(DiabloExe::CharacterStats stats)" -->
 &#160;</td><td class="memItemRight" valign="bottom"><b>ActorStats</b> (<a class="el" href="classDiabloExe_1_1CharacterStats.html">DiabloExe::CharacterStats</a> stats)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d689762bf2840e2086c00b23b9723d8"></a><!-- doxytag: member="FAWorld::ActorStats::processEffects" ref="a8d689762bf2840e2086c00b23b9723d8" args="()" -->
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>processEffects</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c78d270bd2fb5aea05088954fd1b42f"></a><!-- doxytag: member="FAWorld::ActorStats::ActorStats" ref="a7c78d270bd2fb5aea05088954fd1b42f" args="(const DiabloExe::Monster &amp;monsterStat)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>ActorStats</b> (const <a class="el" href="structDiabloExe_1_1Monster.html">DiabloExe::Monster</a> &amp;monsterStat)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c37bbae974d4ef51ec22079a7d71318"></a><!-- doxytag: member="FAWorld::ActorStats::printStats" ref="a8c37bbae974d4ef51ec22079a7d71318" args="()" -->
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>printStats</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9437600fb7e625274e5f47c8755b1456"></a><!-- doxytag: member="FAWorld::ActorStats::levelUp" ref="a9437600fb7e625274e5f47c8755b1456" args="(BasicStat statModified)" -->
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>levelUp</b> (BasicStat statModified)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a408af5b335005ede1c69e2a37a0a3515"></a><!-- doxytag: member="FAWorld::ActorStats::spendLevelUpPoint" ref="a408af5b335005ede1c69e2a37a0a3515" args="(BasicStat stat)" -->
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>spendLevelUpPoint</b> (BasicStat stat)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5488e256064e76fc84528fd698593b05"></a><!-- doxytag: member="FAWorld::ActorStats::takeDamage" ref="a5488e256064e76fc84528fd698593b05" args="(int32_t amount)" -->
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>takeDamage</b> (int32_t amount)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64e8e016ab28ecfdb732979c1a14be3a"></a><!-- doxytag: member="FAWorld::ActorStats::getMeleeDamage" ref="a64e8e016ab28ecfdb732979c1a14be3a" args="()" -->
+virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>getMeleeDamage</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a668d3d4553927ee6fe3cec2f1d0e6081"></a><!-- doxytag: member="FAWorld::ActorStats::getAttackSpeed" ref="a668d3d4553927ee6fe3cec2f1d0e6081" args="()" -->
+virtual uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>getAttackSpeed</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a644ea9caf1c8eea3338f219bf335ddc3"></a><!-- doxytag: member="FAWorld::ActorStats::getAttackFrameset" ref="a644ea9caf1c8eea3338f219bf335ddc3" args="()" -->
+virtual uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>getAttackFrameset</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ef9d7f0ab086d8a3964968b53bc5852"></a><!-- doxytag: member="FAWorld::ActorStats::getCurrentHP" ref="a9ef9d7f0ab086d8a3964968b53bc5852" args="()" -->
+virtual int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentHP</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac15e9e11adf2b230af3990a61f71a155"></a><!-- doxytag: member="FAWorld::ActorStats::recalculateDerivedStats" ref="ac15e9e11adf2b230af3990a61f71a155" args="()" -->
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>recalculateDerivedStats</b> ()</td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
@@ -243,8 +254,8 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>mMana</b> = 0</td
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>mCurrentMana</b> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae089c3758bf19527cb67222fc9cd764f"></a><!-- doxytag: member="FAWorld::ActorStats::mHP" ref="ae089c3758bf19527cb67222fc9cd764f" args="" -->
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>mHP</b> = 0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0f94eb052d3bfea7d78be4e9ecf9791"></a><!-- doxytag: member="FAWorld::ActorStats::mCurrentHP" ref="ab0f94eb052d3bfea7d78be4e9ecf9791" args="" -->
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>mCurrentHP</b> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4497c4d344773a9b7acb71dca5d9f9af"></a><!-- doxytag: member="FAWorld::ActorStats::mCurrentHP" ref="a4497c4d344773a9b7acb71dca5d9f9af" args="" -->
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>mCurrentHP</b> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a404dcfeee068efbdb2032100088479aa"></a><!-- doxytag: member="FAWorld::ActorStats::mBonusStrength" ref="a404dcfeee068efbdb2032100088479aa" args="" -->
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>mBonusStrength</b> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52e3731015138838638ffd761e8ca6c9"></a><!-- doxytag: member="FAWorld::ActorStats::mBonusMagic" ref="a52e3731015138838638ffd761e8ca6c9" args="" -->
@@ -283,8 +294,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>mArmourClass</b> = 
 double&#160;</td><td class="memItemRight" valign="bottom"><b>mManaShield</b> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae46ac026f49afc0a2609a074fdcfa47f"></a><!-- doxytag: member="FAWorld::ActorStats::mDamageDone" ref="ae46ac026f49afc0a2609a074fdcfa47f" args="" -->
 double&#160;</td><td class="memItemRight" valign="bottom"><b>mDamageDone</b> = 0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac792f9149bea0d09031fbc60eb825db2"></a><!-- doxytag: member="FAWorld::ActorStats::mAttackSpeed" ref="ac792f9149bea0d09031fbc60eb825db2" args="" -->
-double&#160;</td><td class="memItemRight" valign="bottom"><b>mAttackSpeed</b> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6696f69ad90e741f1bde4ab89fae29c"></a><!-- doxytag: member="FAWorld::ActorStats::mAttackSpeed" ref="aa6696f69ad90e741f1bde4ab89fae29c" args="" -->
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>mAttackSpeed</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93045495df550b78a0d050e80ae03e63"></a><!-- doxytag: member="FAWorld::ActorStats::mDamageDoneBow" ref="a93045495df550b78a0d050e80ae03e63" args="" -->
 double&#160;</td><td class="memItemRight" valign="bottom"><b>mDamageDoneBow</b> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ab5048399c6771eb2f53d42393042e6"></a><!-- doxytag: member="FAWorld::ActorStats::mDamageDoneMelee" ref="a6ab5048399c6771eb2f53d42393042e6" args="" -->
@@ -305,6 +316,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>mWalkSpeed</b> = 0.
 double&#160;</td><td class="memItemRight" valign="bottom"><b>mSwingSpeed</b> = 0.0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ffc275b8d80d58482a2e835558238f8"></a><!-- doxytag: member="FAWorld::ActorStats::mHitRecovery" ref="a6ffc275b8d80d58482a2e835558238f8" args="" -->
 double&#160;</td><td class="memItemRight" valign="bottom"><b>mHitRecovery</b> = 0.0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af784112d3022d1ac4572cd408586c410"></a><!-- doxytag: member="FAWorld::ActorStats::mSecondAttackDamageDone" ref="af784112d3022d1ac4572cd408586c410" args="" -->
+double&#160;</td><td class="memItemRight" valign="bottom"><b>mSecondAttackDamageDone</b> = 0.0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea3f6b9f38059df3d60f7c6a5c452e0f"></a><!-- doxytag: member="FAWorld::ActorStats::mMonsterType" ref="aea3f6b9f38059df3d60f7c6a5c452e0f" args="" -->
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>mMonsterType</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e756621bb7ba0114de147ed93938a03"></a><!-- doxytag: member="FAWorld::ActorStats::mLevelPointsToSpend" ref="a5e756621bb7ba0114de147ed93938a03" args="" -->
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>mLevelPointsToSpend</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01d6ad4d63a02666a200c8bf3abf9180"></a><!-- doxytag: member="FAWorld::ActorStats::mActor" ref="a01d6ad4d63a02666a200c8bf3abf9180" args="" -->
@@ -332,7 +347,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>mLevelPointsToSpen
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 2 2015 23:56:09 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 5 2015 17:44:30 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

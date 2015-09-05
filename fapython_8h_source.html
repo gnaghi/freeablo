@@ -122,20 +122,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00040"></a>00040             <span class="keywordtype">void</span> placeItem(uint32_t toPara, uint32_t fromPara, uint32_t fromY, uint32_t fromX,
 <a name="l00041"></a>00041                            uint32_t toY, uint32_t toX, uint32_t beltX);
 <a name="l00042"></a>00042             boost::python::dict updateInventory();
-<a name="l00043"></a>00043 
-<a name="l00044"></a>00044             std::string getInvClass();
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046             <span class="keyword">friend</span> <span class="keywordtype">void</span> init_module_freeablo();
-<a name="l00047"></a>00047 
-<a name="l00048"></a>00048             <a class="code" href="classFAWorld_1_1Inventory.html">FAWorld::Inventory</a>&amp; mPlayerInv;
-<a name="l00049"></a>00049             <a class="code" href="classFAGui_1_1GuiManager.html">GuiManager</a>&amp; mGuiManager;
-<a name="l00050"></a>00050             <a class="code" href="classEngine_1_1EngineMain.html">Engine::EngineMain</a>&amp; mEngine;
-<a name="l00051"></a>00051     };
-<a name="l00052"></a>00052 
-<a name="l00053"></a>00053     <span class="keywordtype">void</span> initPython(<a class="code" href="classFAGui_1_1FAPythonFuncs.html">FAPythonFuncs</a>&amp; funcs);
-<a name="l00054"></a>00054 }
-<a name="l00055"></a>00055 
-<a name="l00056"></a>00056 <span class="preprocessor">#endif</span>
+<a name="l00043"></a>00043             <span class="keywordtype">bool</span> canPlace(uint32_t toPara, uint32_t fromPara, uint32_t fromY, uint32_t fromX,
+<a name="l00044"></a>00044                           uint32_t toY, uint32_t toX, uint32_t beltX);
+<a name="l00045"></a>00045             std::string getInvClass();
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047             <span class="keyword">friend</span> <span class="keywordtype">void</span> init_module_freeablo();
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049             <a class="code" href="classFAWorld_1_1Inventory.html">FAWorld::Inventory</a>&amp; mPlayerInv;
+<a name="l00050"></a>00050             <a class="code" href="classFAGui_1_1GuiManager.html">GuiManager</a>&amp; mGuiManager;
+<a name="l00051"></a>00051             <a class="code" href="classEngine_1_1EngineMain.html">Engine::EngineMain</a>&amp; mEngine;
+<a name="l00052"></a>00052     };
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054     <span class="keywordtype">void</span> initPython(<a class="code" href="classFAGui_1_1FAPythonFuncs.html">FAPythonFuncs</a>&amp; funcs);
+<a name="l00055"></a>00055 }
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -154,7 +155,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 2 2015 23:56:08 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 5 2015 17:44:29 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

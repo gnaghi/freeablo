@@ -102,7 +102,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#friends">Friends</a>  </div>
   <div class="headertitle">
 <div class="title">FAWorld::World Class Reference</div>  </div>
 </div><!--header-->
@@ -128,6 +129,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addNpcs</b> ()</td></
 <a class="el" href="classFAWorld_1_1Actor.html">Actor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getActorAt</b> (size_t x, size_t y)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d5475140ba77479e60cfaff5ee0abe6"></a><!-- doxytag: member="FAWorld::World::clear" ref="a3d5475140ba77479e60cfaff5ee0abe6" args="()" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30556274e4d7fadded3b1339716b3e28"></a><!-- doxytag: member="FAWorld::World::deleteActorFromWorld" ref="a30556274e4d7fadded3b1339716b3e28" args="(Actor *dead)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteActorFromWorld</b> (<a class="el" href="classFAWorld_1_1Actor.html">Actor</a> *dead)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6d290feac7ac6ff400062d847722daf"></a><!-- doxytag: member="FAWorld::World::update" ref="ae6d290feac7ac6ff400062d847722daf" args="(bool noclip)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (bool noclip)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8715034c60fe91ec17c2baf2d57c8e79"></a><!-- doxytag: member="FAWorld::World::getCurrentPlayer" ref="a8715034c60fe91ec17c2baf2d57c8e79" args="()" -->
@@ -151,6 +154,10 @@ Static Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8c6a5ca048e2f35d06d667ae59db923"></a><!-- doxytag: member="FAWorld::World::ticksPerSecond" ref="ab8c6a5ca048e2f35d06d667ae59db923" args="" -->
 static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFAWorld_1_1World.html#ab8c6a5ca048e2f35d06d667ae59db923">ticksPerSecond</a> = 125</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">number of times per second that game state will be updated <br/></td></tr>
+<tr><td colspan="2"><h2><a name="friends"></a>
+Friends</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4af50bf1743d112cb2c2c784bea21c8"></a><!-- doxytag: member="FAWorld::World::Actor" ref="ae4af50bf1743d112cb2c2c784bea21c8" args="" -->
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Actor</b></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>apps/freeablo/faworld/<a class="el" href="world_8h_source.html">world.h</a></li>
@@ -174,7 +181,7 @@ static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class=
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 2 2015 23:56:09 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 5 2015 17:44:30 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -86,146 +86,157 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00004"></a>00004 <span class="preprocessor">#include &lt;stdint.h&gt;</span>
 <a name="l00005"></a>00005 <span class="preprocessor">#include &lt;vector&gt;</span>
 <a name="l00006"></a>00006 <span class="preprocessor">#include &lt;diabloexe/diabloexe.h&gt;</span>
-<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;actor.h&quot;</span>
-<a name="l00008"></a>00008 
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;diabloexe/monster.h&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;actor.h&quot;</span>
 <a name="l00009"></a>00009 
-<a name="l00010"></a>00010 <span class="keyword">namespace </span>FAWorld
-<a name="l00011"></a>00011 {
-<a name="l00012"></a>00012 
-<a name="l00013"></a><a class="code" href="classFAWorld_1_1ActorStats.html">00013</a>     <span class="keyword">class </span><a class="code" href="classFAWorld_1_1ActorStats.html">ActorStats</a>
-<a name="l00014"></a>00014     {
-<a name="l00015"></a>00015         <span class="keyword">public</span>:
-<a name="l00016"></a>00016             <span class="keyword">typedef</span> <span class="keyword">enum</span>
-<a name="l00017"></a>00017             {
-<a name="l00018"></a>00018                 Strength,
-<a name="l00019"></a>00019                 Magic,
-<a name="l00020"></a>00020                 Dexterity,
-<a name="l00021"></a>00021                 Vitality
-<a name="l00022"></a>00022             } BasicStat;
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024             uint32_t getLevel()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mLevel;}
-<a name="l00025"></a>00025             uint32_t getLevelPoints()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mLevelPoints;}
-<a name="l00026"></a>00026             uint32_t getExp()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mExp;}
-<a name="l00027"></a>00027             uint32_t getExpToNextLevel()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mExpToNextLevel;}
-<a name="l00028"></a>00028 
-<a name="l00029"></a>00029             uint32_t getVitality()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mVitality;}
-<a name="l00030"></a>00030             uint32_t getMaxVitality()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mMaxVitality;}
-<a name="l00031"></a>00031 
-<a name="l00032"></a>00032             uint32_t getMagic()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mMagic;}
-<a name="l00033"></a>00033             uint32_t getMaxMagic()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mMaxMagic;}
-<a name="l00034"></a>00034 
-<a name="l00035"></a>00035             uint32_t getDexterity()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mDexterity;}
-<a name="l00036"></a>00036             uint32_t getMaxDexterity()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mMaxDexterity;}
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038             uint32_t getStrength()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mStrength;}
-<a name="l00039"></a>00039             uint32_t getMaxStrength()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mMaxStrength;}
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041             <span class="keywordtype">void</span> setActor(<a class="code" href="classFAWorld_1_1Actor.html">Actor</a> * actor){mActor = actor;}
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043             <a class="code" href="classFAWorld_1_1ActorStats.html">ActorStats</a>(<a class="code" href="classDiabloExe_1_1CharacterStats.html">DiabloExe::CharacterStats</a> stats) :
-<a name="l00044"></a>00044                 mExpForLevel(stats.mNextLevelExp),
-<a name="l00045"></a>00045                 mLevel(1),
-<a name="l00046"></a>00046                 mLevelPoints(0),
-<a name="l00047"></a>00047                 mExp(0),
-<a name="l00048"></a>00048                 mExpToNextLevel(2000),
-<a name="l00049"></a>00049                 mStartingVitality(stats.mVitality),
-<a name="l00050"></a>00050                 mMaxVitality(stats.mMaxVitality),
-<a name="l00051"></a>00051                 mStartingMagic(stats.mMagic),
-<a name="l00052"></a>00052                 mMaxMagic(stats.mMaxMagic),
-<a name="l00053"></a>00053                 mStartingDexterity(stats.mDexterity),
-<a name="l00054"></a>00054                 mMaxDexterity(stats.mMaxDexterity),
-<a name="l00055"></a>00055                 mStartingStrength(stats.mStrength),
-<a name="l00056"></a>00056                 mMaxStrength(stats.mMaxStrength),
-<a name="l00057"></a>00057                 mBlockingBonus(stats.mBlockingBonus)
-<a name="l00058"></a>00058 
-<a name="l00059"></a>00059             {
-<a name="l00060"></a>00060                 mVitality = mStartingVitality;
-<a name="l00061"></a>00061                 mStrength = mStartingStrength;
-<a name="l00062"></a>00062                 mMagic    = mMagic;
-<a name="l00063"></a>00063                 mDexterity = mStartingDexterity;
-<a name="l00064"></a>00064                 recalculateDerivedStats();
-<a name="l00065"></a>00065             }
-<a name="l00066"></a>00066             <span class="keyword">virtual</span> <span class="keywordtype">void</span> processEffects();
-<a name="l00067"></a>00067             <span class="keyword">virtual</span> <span class="keywordtype">void</span> printStats();
-<a name="l00068"></a>00068             <span class="keywordtype">bool</span> levelUp(BasicStat statModified);
-<a name="l00069"></a>00069             <span class="keywordtype">bool</span> spendLevelUpPoint(BasicStat stat);
-<a name="l00070"></a>00070             <span class="keyword">virtual</span> <span class="keywordtype">void</span> recalculateDerivedStats(){}
-<a name="l00071"></a>00071 
-<a name="l00072"></a>00072         <span class="keyword">protected</span>:
-<a name="l00073"></a>00073             <span class="keyword">const</span> std::vector&lt;uint32_t&gt; mExpForLevel;
-<a name="l00074"></a>00074             <span class="keyword">virtual</span> <span class="keywordtype">void</span> clearDerivedStats();
-<a name="l00075"></a>00075             uint32_t mStrength;
-<a name="l00076"></a>00076             uint32_t mMagic;
-<a name="l00077"></a>00077             uint32_t mDexterity;
-<a name="l00078"></a>00078             uint32_t mVitality;
-<a name="l00079"></a>00079             uint32_t mLevel;
-<a name="l00080"></a>00080             uint32_t mLevelPoints;
-<a name="l00081"></a>00081             uint32_t mExp;
-<a name="l00082"></a>00082             uint32_t mExpToNextLevel;
-<a name="l00083"></a>00083             uint32_t mStartingVitality;
-<a name="l00084"></a>00084             <span class="keyword">const</span> uint32_t mMaxVitality;
-<a name="l00085"></a>00085             uint32_t mStartingMagic;
-<a name="l00086"></a>00086             <span class="keyword">const</span> uint32_t mMaxMagic;
-<a name="l00087"></a>00087             uint32_t mStartingDexterity;
-<a name="l00088"></a>00088             <span class="keyword">const</span> uint32_t mMaxDexterity;
-<a name="l00089"></a>00089             uint32_t mStartingStrength;
-<a name="l00090"></a>00090             <span class="keyword">const</span> uint32_t mMaxStrength;
-<a name="l00091"></a>00091             uint32_t mBlockingBonus;
-<a name="l00092"></a>00092             uint8_t mBlockingSpeed;
-<a name="l00093"></a>00093             uint8_t mSpellCastingSpeed;
-<a name="l00094"></a>00094             uint8_t mWalkInTownFrameset;
-<a name="l00095"></a>00095             uint8_t mWalkInDungeonFrameset;
-<a name="l00096"></a>00096             uint8_t mDeathFrameset;
-<a name="l00097"></a>00097             uint8_t mMagicCastFrameset;
-<a name="l00098"></a>00098             uint8_t mAttackFrameset;
-<a name="l00099"></a>00099             uint8_t mIdleInTownFrameset;
-<a name="l00100"></a>00100             uint8_t mIdleInDungeonFrameset;
-<a name="l00101"></a>00101             uint32_t mSpentLevelsOnStrength=0;
-<a name="l00102"></a>00102             uint32_t mSpentLevelsOnMagic=0;
-<a name="l00103"></a>00103             uint32_t mSpentLevelsOnDexterity=0;
-<a name="l00104"></a>00104             uint32_t mSpentLevelsOnVitality=0;
-<a name="l00105"></a>00105             uint32_t mMana=0;
-<a name="l00106"></a>00106             uint32_t mCurrentMana=0;
-<a name="l00107"></a>00107             uint32_t mHP=0;
-<a name="l00108"></a>00108             uint32_t mCurrentHP=0;
-<a name="l00109"></a>00109             uint32_t mBonusStrength=0;
-<a name="l00110"></a>00110             uint32_t mBonusMagic=0;
-<a name="l00111"></a>00111             uint32_t mBonusDexterity=0;
-<a name="l00112"></a>00112             uint32_t mBonusVitality=0;
-<a name="l00113"></a>00113             <span class="keywordtype">double</span> mResistanceFire=0;
-<a name="l00114"></a>00114             <span class="keywordtype">double</span> mResistanceLightning=0;
-<a name="l00115"></a>00115             <span class="keywordtype">double</span> mResistanceMagic=0;
-<a name="l00116"></a>00116             <span class="keywordtype">double</span> mResistanceAll=0;
-<a name="l00117"></a>00117             <span class="keywordtype">double</span> mChanceToHitCharacterScreen=0;
-<a name="l00118"></a>00118             <span class="keywordtype">double</span> mChanceToHitMelee=0;
-<a name="l00119"></a>00119             <span class="keywordtype">double</span> mChanceToHitArrow=0;
-<a name="l00120"></a>00120             <span class="keywordtype">double</span> mChanceToHitMagic=0;
-<a name="l00121"></a>00121             <span class="keywordtype">double</span> mChanceToHitMagicVPlayer=0;
-<a name="l00122"></a>00122             <span class="keywordtype">double</span> mBlockingChance=0;
-<a name="l00123"></a>00123             <span class="keywordtype">double</span> mBlockingChanceTrap=0;
-<a name="l00124"></a>00124             <span class="keywordtype">double</span> mBlockingChancePVP=0;
-<a name="l00125"></a>00125             <span class="keywordtype">double</span> mArmourClass=0;
-<a name="l00126"></a>00126             <span class="keywordtype">double</span> mManaShield=0;
-<a name="l00127"></a>00127             <span class="keywordtype">double</span> mDamageDone=0;
-<a name="l00128"></a>00128             <span class="keywordtype">double</span> mAttackSpeed=0;
-<a name="l00129"></a>00129             <span class="keywordtype">double</span> mDamageDoneBow=0;
-<a name="l00130"></a>00130             <span class="keywordtype">double</span> mDamageDoneMelee=0;
-<a name="l00131"></a>00131             int32_t  mDamageTakenMultiplier=0;
-<a name="l00132"></a>00132             uint32_t mLightRadius = 0;
-<a name="l00133"></a>00133             <span class="keywordtype">bool</span> mHasThieves=<span class="keyword">false</span>;
-<a name="l00134"></a>00134             <span class="keywordtype">bool</span> mBonusAgainstDemons=<span class="keyword">false</span>;
-<a name="l00135"></a>00135             <span class="keywordtype">bool</span> mBonusAgainstUndead=<span class="keyword">false</span>;
-<a name="l00136"></a>00136             <span class="keywordtype">double</span> mWalkSpeed=0.4;
-<a name="l00137"></a>00137             <span class="keywordtype">double</span> mSwingSpeed=0.0;
-<a name="l00138"></a>00138             <span class="keywordtype">double</span> mHitRecovery=0.0;
-<a name="l00139"></a>00139             uint8_t mLevelPointsToSpend;
-<a name="l00140"></a>00140             <a class="code" href="classFAWorld_1_1Actor.html">Actor</a> * mActor;
-<a name="l00141"></a>00141     };
-<a name="l00142"></a>00142 }
-<a name="l00143"></a>00143 
-<a name="l00144"></a>00144 
-<a name="l00145"></a>00145 
-<a name="l00146"></a>00146 <span class="preprocessor">#endif //ACTORSTATS_H</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="keyword">namespace </span>FAWorld
+<a name="l00012"></a>00012 {
+<a name="l00013"></a>00013 
+<a name="l00014"></a><a class="code" href="classFAWorld_1_1ActorStats.html">00014</a>     <span class="keyword">class </span><a class="code" href="classFAWorld_1_1ActorStats.html">ActorStats</a>
+<a name="l00015"></a>00015     {
+<a name="l00016"></a>00016         <span class="keyword">public</span>:
+<a name="l00017"></a>00017             <span class="keyword">typedef</span> <span class="keyword">enum</span>
+<a name="l00018"></a>00018             {
+<a name="l00019"></a>00019                 Strength,
+<a name="l00020"></a>00020                 Magic,
+<a name="l00021"></a>00021                 Dexterity,
+<a name="l00022"></a>00022                 Vitality
+<a name="l00023"></a>00023             } BasicStat;
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025             uint32_t getLevel()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mLevel;}
+<a name="l00026"></a>00026             uint32_t getLevelPoints()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mLevelPoints;}
+<a name="l00027"></a>00027             uint32_t getExp()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mExp;}
+<a name="l00028"></a>00028             uint32_t getExpToNextLevel()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mExpToNextLevel;}
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030             uint32_t getVitality()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mVitality;}
+<a name="l00031"></a>00031             uint32_t getMaxVitality()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mMaxVitality;}
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033             uint32_t getMagic()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mMagic;}
+<a name="l00034"></a>00034             uint32_t getMaxMagic()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mMaxMagic;}
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036             uint32_t getDexterity()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mDexterity;}
+<a name="l00037"></a>00037             uint32_t getMaxDexterity()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mMaxDexterity;}
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039             uint32_t getStrength()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mStrength;}
+<a name="l00040"></a>00040             uint32_t getMaxStrength()<span class="keyword"> const</span>{<span class="keywordflow">return</span> mMaxStrength;}
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042             <span class="keywordtype">void</span> setActor(<a class="code" href="classFAWorld_1_1Actor.html">Actor</a> * actor){mActor = actor;}
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044             <a class="code" href="classFAWorld_1_1ActorStats.html">ActorStats</a>(<a class="code" href="classDiabloExe_1_1CharacterStats.html">DiabloExe::CharacterStats</a> stats) :
+<a name="l00045"></a>00045                 mExpForLevel(stats.mNextLevelExp),
+<a name="l00046"></a>00046                 mLevel(1),
+<a name="l00047"></a>00047                 mLevelPoints(0),
+<a name="l00048"></a>00048                 mExp(0),
+<a name="l00049"></a>00049                 mExpToNextLevel(2000),
+<a name="l00050"></a>00050                 mStartingVitality(stats.mVitality),
+<a name="l00051"></a>00051                 mMaxVitality(stats.mMaxVitality),
+<a name="l00052"></a>00052                 mStartingMagic(stats.mMagic),
+<a name="l00053"></a>00053                 mMaxMagic(stats.mMaxMagic),
+<a name="l00054"></a>00054                 mStartingDexterity(stats.mDexterity),
+<a name="l00055"></a>00055                 mMaxDexterity(stats.mMaxDexterity),
+<a name="l00056"></a>00056                 mStartingStrength(stats.mStrength),
+<a name="l00057"></a>00057                 mMaxStrength(stats.mMaxStrength),
+<a name="l00058"></a>00058                 mBlockingBonus(stats.mBlockingBonus),
+<a name="l00059"></a>00059                 mAttackFrameset(stats.mAttackFrameset),
+<a name="l00060"></a>00060                 mAttackSpeed(stats.mSingleHandedAttackSpeed)
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062             {
+<a name="l00063"></a>00063                 mVitality = mStartingVitality;
+<a name="l00064"></a>00064                 mStrength = mStartingStrength;                
+<a name="l00065"></a>00065                 mMagic    = mStartingMagic;
+<a name="l00066"></a>00066                 mDexterity = mStartingDexterity;
+<a name="l00067"></a>00067                 recalculateDerivedStats();
+<a name="l00068"></a>00068             }
+<a name="l00069"></a>00069             <a class="code" href="classFAWorld_1_1ActorStats.html">ActorStats</a>(<span class="keyword">const</span> <a class="code" href="structDiabloExe_1_1Monster.html">DiabloExe::Monster</a> &amp; monsterStat);
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071             <span class="keyword">virtual</span> <span class="keywordtype">void</span> printStats();
+<a name="l00072"></a>00072             <span class="keywordtype">bool</span> levelUp(BasicStat statModified);
+<a name="l00073"></a>00073             <span class="keywordtype">bool</span> spendLevelUpPoint(BasicStat stat);
+<a name="l00074"></a>00074             <span class="keyword">virtual</span> <span class="keywordtype">void</span> takeDamage(int32_t amount);
+<a name="l00075"></a>00075             <span class="keyword">virtual</span> <span class="keywordtype">double</span> getMeleeDamage();
+<a name="l00076"></a>00076             <span class="keyword">virtual</span> uint8_t getAttackSpeed();
+<a name="l00077"></a>00077             <span class="keyword">virtual</span> uint8_t getAttackFrameset();
+<a name="l00078"></a>00078             <span class="keyword">virtual</span> int32_t getCurrentHP();
+<a name="l00079"></a>00079             <span class="keyword">virtual</span> <span class="keywordtype">void</span> recalculateDerivedStats(){}
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081         <span class="keyword">protected</span>:
+<a name="l00082"></a>00082             <span class="keyword">const</span> std::vector&lt;uint32_t&gt; mExpForLevel;
+<a name="l00083"></a>00083             <span class="keyword">virtual</span> <span class="keywordtype">void</span> clearDerivedStats();
+<a name="l00084"></a>00084             uint32_t mStrength;
+<a name="l00085"></a>00085             uint32_t mMagic;
+<a name="l00086"></a>00086             uint32_t mDexterity;
+<a name="l00087"></a>00087             uint32_t mVitality;
+<a name="l00088"></a>00088             uint32_t mLevel;
+<a name="l00089"></a>00089             uint32_t mLevelPoints;
+<a name="l00090"></a>00090             uint32_t mExp;
+<a name="l00091"></a>00091             uint32_t mExpToNextLevel;
+<a name="l00092"></a>00092             uint32_t mStartingVitality;
+<a name="l00093"></a>00093             <span class="keyword">const</span> uint32_t mMaxVitality;
+<a name="l00094"></a>00094             uint32_t mStartingMagic;
+<a name="l00095"></a>00095             <span class="keyword">const</span> uint32_t mMaxMagic;
+<a name="l00096"></a>00096             uint32_t mStartingDexterity;
+<a name="l00097"></a>00097             <span class="keyword">const</span> uint32_t mMaxDexterity;
+<a name="l00098"></a>00098             uint32_t mStartingStrength;
+<a name="l00099"></a>00099             <span class="keyword">const</span> uint32_t mMaxStrength;
+<a name="l00100"></a>00100             uint32_t mBlockingBonus;
+<a name="l00101"></a>00101             uint8_t mBlockingSpeed;
+<a name="l00102"></a>00102             uint8_t mSpellCastingSpeed;
+<a name="l00103"></a>00103             uint8_t mWalkInTownFrameset;
+<a name="l00104"></a>00104             uint8_t mWalkInDungeonFrameset;
+<a name="l00105"></a>00105             uint8_t mDeathFrameset;
+<a name="l00106"></a>00106             uint8_t mMagicCastFrameset;
+<a name="l00107"></a>00107             uint8_t mAttackFrameset;
+<a name="l00108"></a>00108             uint8_t mIdleInTownFrameset;
+<a name="l00109"></a>00109             uint8_t mIdleInDungeonFrameset;
+<a name="l00110"></a>00110             uint32_t mSpentLevelsOnStrength=0;
+<a name="l00111"></a>00111             uint32_t mSpentLevelsOnMagic=0;
+<a name="l00112"></a>00112             uint32_t mSpentLevelsOnDexterity=0;
+<a name="l00113"></a>00113             uint32_t mSpentLevelsOnVitality=0;
+<a name="l00114"></a>00114             uint32_t mMana=0;
+<a name="l00115"></a>00115             uint32_t mCurrentMana=0;
+<a name="l00116"></a>00116             uint32_t mHP=0;
+<a name="l00117"></a>00117             int32_t mCurrentHP=0;
+<a name="l00118"></a>00118             uint32_t mBonusStrength=0;
+<a name="l00119"></a>00119             uint32_t mBonusMagic=0;
+<a name="l00120"></a>00120             uint32_t mBonusDexterity=0;
+<a name="l00121"></a>00121             uint32_t mBonusVitality=0;
+<a name="l00122"></a>00122             <span class="keywordtype">double</span> mResistanceFire=0;
+<a name="l00123"></a>00123             <span class="keywordtype">double</span> mResistanceLightning=0;
+<a name="l00124"></a>00124             <span class="keywordtype">double</span> mResistanceMagic=0;
+<a name="l00125"></a>00125             <span class="keywordtype">double</span> mResistanceAll=0;
+<a name="l00126"></a>00126             <span class="keywordtype">double</span> mChanceToHitCharacterScreen=0;
+<a name="l00127"></a>00127             <span class="keywordtype">double</span> mChanceToHitMelee=0;
+<a name="l00128"></a>00128             <span class="keywordtype">double</span> mChanceToHitArrow=0;
+<a name="l00129"></a>00129             <span class="keywordtype">double</span> mChanceToHitMagic=0;
+<a name="l00130"></a>00130             <span class="keywordtype">double</span> mChanceToHitMagicVPlayer=0;
+<a name="l00131"></a>00131             <span class="keywordtype">double</span> mBlockingChance=0;
+<a name="l00132"></a>00132             <span class="keywordtype">double</span> mBlockingChanceTrap=0;
+<a name="l00133"></a>00133             <span class="keywordtype">double</span> mBlockingChancePVP=0;
+<a name="l00134"></a>00134             <span class="keywordtype">double</span> mArmourClass=0;
+<a name="l00135"></a>00135             <span class="keywordtype">double</span> mManaShield=0;
+<a name="l00136"></a>00136             <span class="keywordtype">double</span> mDamageDone=0;
+<a name="l00137"></a>00137             uint8_t mAttackSpeed;
+<a name="l00138"></a>00138             <span class="keywordtype">double</span> mDamageDoneBow=0;
+<a name="l00139"></a>00139             <span class="keywordtype">double</span> mDamageDoneMelee=0;
+<a name="l00140"></a>00140             int32_t  mDamageTakenMultiplier=0;
+<a name="l00141"></a>00141             uint32_t mLightRadius = 0;
+<a name="l00142"></a>00142             <span class="keywordtype">bool</span> mHasThieves=<span class="keyword">false</span>;
+<a name="l00143"></a>00143             <span class="keywordtype">bool</span> mBonusAgainstDemons=<span class="keyword">false</span>;
+<a name="l00144"></a>00144             <span class="keywordtype">bool</span> mBonusAgainstUndead=<span class="keyword">false</span>;
+<a name="l00145"></a>00145             <span class="keywordtype">double</span> mWalkSpeed=0.4;
+<a name="l00146"></a>00146             <span class="keywordtype">double</span> mSwingSpeed=0.0;
+<a name="l00147"></a>00147             <span class="keywordtype">double</span> mHitRecovery=0.0;
+<a name="l00148"></a>00148             <span class="keywordtype">double</span> mSecondAttackDamageDone=0.0;
+<a name="l00149"></a>00149             uint32_t mMonsterType;
+<a name="l00150"></a>00150             uint8_t mLevelPointsToSpend;
+<a name="l00151"></a>00151             <a class="code" href="classFAWorld_1_1Actor.html">Actor</a> * mActor;
+<a name="l00152"></a>00152     };
+<a name="l00153"></a>00153 }
+<a name="l00154"></a>00154 
+<a name="l00155"></a>00155 
+<a name="l00156"></a>00156 
+<a name="l00157"></a>00157 <span class="preprocessor">#endif //ACTORSTATS_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -244,7 +255,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 2 2015 23:56:08 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 5 2015 17:44:29 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
