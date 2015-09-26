@@ -89,78 +89,62 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00007"></a>00007 
 <a name="l00008"></a>00008 <span class="preprocessor">#include &quot;actor.h&quot;</span>
 <a name="l00009"></a>00009 <span class="preprocessor">#include &quot;player.h&quot;</span>
-<a name="l00010"></a>00010 
-<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;level/level.h&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;gamelevel.h&quot;</span>
+<a name="l00011"></a>00011 
 <a name="l00012"></a>00012 
-<a name="l00013"></a>00013 
-<a name="l00014"></a>00014 <span class="keyword">namespace </span>FARender
-<a name="l00015"></a>00015 {
-<a name="l00016"></a>00016     <span class="keyword">class </span>RenderState;
-<a name="l00017"></a>00017 }
-<a name="l00018"></a>00018 
-<a name="l00019"></a>00019 <span class="keyword">namespace </span>DiabloExe
-<a name="l00020"></a>00020 {
-<a name="l00021"></a>00021     <span class="keyword">class </span>DiabloExe;
-<a name="l00022"></a>00022 }
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024 <span class="keyword">namespace </span>FAWorld
-<a name="l00025"></a>00025 {
-<a name="l00026"></a><a class="code" href="classFAWorld_1_1World.html">00026</a>     <span class="keyword">class </span><a class="code" href="classFAWorld_1_1World.html">World</a>
-<a name="l00027"></a>00027     {
-<a name="l00028"></a>00028         <span class="keyword">public</span>:
-<a name="l00029"></a>00029             <a class="code" href="classFAWorld_1_1World.html">World</a>(<span class="keyword">const</span> <a class="code" href="classDiabloExe_1_1DiabloExe.html">DiabloExe::DiabloExe</a>&amp; exe);
-<a name="l00030"></a>00030             ~<a class="code" href="classFAWorld_1_1World.html">World</a>();
+<a name="l00013"></a>00013 <span class="keyword">namespace </span>FARender
+<a name="l00014"></a>00014 {
+<a name="l00015"></a>00015     <span class="keyword">class </span>RenderState;
+<a name="l00016"></a>00016 }
+<a name="l00017"></a>00017 
+<a name="l00018"></a>00018 <span class="keyword">namespace </span>DiabloExe
+<a name="l00019"></a>00019 {
+<a name="l00020"></a>00020     <span class="keyword">class </span>DiabloExe;
+<a name="l00021"></a>00021 }
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023 <span class="keyword">namespace </span>FAWorld
+<a name="l00024"></a>00024 {
+<a name="l00025"></a><a class="code" href="classFAWorld_1_1World.html">00025</a>     <span class="keyword">class </span><a class="code" href="classFAWorld_1_1World.html">World</a>
+<a name="l00026"></a>00026     {
+<a name="l00027"></a>00027         <span class="keyword">public</span>:
+<a name="l00028"></a>00028             <a class="code" href="classFAWorld_1_1World.html">World</a>(<span class="keyword">const</span> <a class="code" href="classDiabloExe_1_1DiabloExe.html">DiabloExe::DiabloExe</a>&amp; exe);
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030             <span class="keyword">static</span> <a class="code" href="classFAWorld_1_1World.html">World</a>* <span class="keyword">get</span>();
 <a name="l00031"></a>00031 
-<a name="l00032"></a>00032             <span class="keyword">static</span> <a class="code" href="classFAWorld_1_1World.html">World</a>* <span class="keyword">get</span>();
+<a name="l00032"></a>00032             <span class="keywordtype">void</span> generateLevels();
 <a name="l00033"></a>00033 
-<a name="l00034"></a>00034             <span class="keywordtype">void</span> generateLevels();
-<a name="l00035"></a>00035 
-<a name="l00036"></a>00036             <a class="code" href="classLevel_1_1Level.html">Level::Level</a>* getCurrentLevel();
-<a name="l00037"></a>00037             <span class="keywordtype">size_t</span> getCurrentLevelIndex();
+<a name="l00034"></a>00034             <a class="code" href="classFAWorld_1_1GameLevel.html">GameLevel</a>* getCurrentLevel();
+<a name="l00035"></a>00035             <span class="keywordtype">size_t</span> getCurrentLevelIndex();
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037             <span class="keywordtype">void</span> setLevel(int32_t levelnum);
 <a name="l00038"></a>00038 
-<a name="l00039"></a>00039             <span class="keywordtype">void</span> setLevel(int32_t levelnum);
-<a name="l00040"></a>00040             <span class="keywordtype">void</span> addNpcs();
+<a name="l00039"></a>00039             <a class="code" href="classFAWorld_1_1GameLevel.html">GameLevel</a>* getLevel(<span class="keywordtype">size_t</span> levelNum);
+<a name="l00040"></a>00040             <span class="keywordtype">void</span> insertLevel(<span class="keywordtype">size_t</span> levelNum, <a class="code" href="classFAWorld_1_1GameLevel.html">GameLevel</a>* level);
 <a name="l00041"></a>00041 
 <a name="l00042"></a>00042             <a class="code" href="classFAWorld_1_1Actor.html">Actor</a>* getActorAt(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y);
 <a name="l00043"></a>00043 
-<a name="l00044"></a>00044             <span class="keywordtype">void</span> clear();
+<a name="l00044"></a>00044             <span class="keywordtype">void</span> update(<span class="keywordtype">bool</span> noclip);
 <a name="l00045"></a>00045 
-<a name="l00046"></a>00046             <span class="keywordtype">void</span> deleteActorFromWorld(<a class="code" href="classFAWorld_1_1Actor.html">Actor</a> * dead);
-<a name="l00047"></a>00047 
-<a name="l00048"></a>00048             <span class="keywordtype">void</span> update(<span class="keywordtype">bool</span> noclip);
-<a name="l00049"></a>00049 
-<a name="l00050"></a>00050             <a class="code" href="classFAWorld_1_1Player.html">Player</a>* getCurrentPlayer();
-<a name="l00051"></a>00051             <span class="keywordtype">void</span> addPlayer(uint32_t <span class="keywordtype">id</span>, <a class="code" href="classFAWorld_1_1Player.html">Player</a>* player);
-<a name="l00052"></a>00052             <a class="code" href="classFAWorld_1_1Player.html">Player</a>* getPlayer(<span class="keywordtype">size_t</span> <span class="keywordtype">id</span>);
-<a name="l00053"></a>00053             <span class="keywordtype">void</span> setCurrentPlayerId(uint32_t <span class="keywordtype">id</span>);
+<a name="l00046"></a>00046             <span class="keywordtype">void</span> addCurrentPlayer(<a class="code" href="classFAWorld_1_1Player.html">Player</a> * player);
+<a name="l00047"></a>00047             <a class="code" href="classFAWorld_1_1Player.html">Player</a>* getCurrentPlayer();
+<a name="l00048"></a>00048             <span class="keywordtype">void</span> addPlayer(uint32_t <span class="keywordtype">id</span>, <a class="code" href="classFAWorld_1_1Player.html">Player</a>* player);
+<a name="l00049"></a>00049             <a class="code" href="classFAWorld_1_1Player.html">Player</a>* getPlayer(<span class="keywordtype">size_t</span> <span class="keywordtype">id</span>);
+<a name="l00050"></a>00050             <span class="keywordtype">void</span> setCurrentPlayerId(uint32_t <span class="keywordtype">id</span>);
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052             <span class="keywordtype">void</span> fillRenderState(<a class="code" href="classFARender_1_1RenderState.html">FARender::RenderState</a>* state);
+<a name="l00053"></a><a class="code" href="classFAWorld_1_1World.html#ab8c6a5ca048e2f35d06d667ae59db923">00053</a>             <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="classFAWorld_1_1World.html#ab8c6a5ca048e2f35d06d667ae59db923" title="number of times per second that game state will be updated">ticksPerSecond</a> = 125; 
 <a name="l00054"></a>00054 
-<a name="l00055"></a>00055             <span class="keywordtype">void</span> fillRenderState(<a class="code" href="classFARender_1_1RenderState.html">FARender::RenderState</a>* state);
-<a name="l00056"></a>00056             <span class="keywordtype">void</span> setStatsObject(<a class="code" href="classFAWorld_1_1ActorStats.html">ActorStats</a> *stats);
-<a name="l00057"></a><a class="code" href="classFAWorld_1_1World.html#ab8c6a5ca048e2f35d06d667ae59db923">00057</a>             <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="classFAWorld_1_1World.html#ab8c6a5ca048e2f35d06d667ae59db923" title="number of times per second that game state will be updated">ticksPerSecond</a> = 125; 
-<a name="l00058"></a>00058 
-<a name="l00059"></a>00059         <span class="keyword">private</span>:
-<a name="l00060"></a>00060             <span class="keywordtype">void</span> actorMapInsert(<a class="code" href="classFAWorld_1_1Actor.html">Actor</a>* actor); 
-<a name="l00061"></a>00061             <span class="keywordtype">void</span> actorMapRemove(<a class="code" href="classFAWorld_1_1Actor.html">Actor</a>* actor);
-<a name="l00062"></a>00062             <span class="keywordtype">void</span> actorMapClear();
-<a name="l00063"></a>00063 
-<a name="l00064"></a>00064             std::vector&lt;Actor*&gt; mActors;
-<a name="l00065"></a>00065 
-<a name="l00066"></a>00066             std::vector&lt;Level::Level&gt; mLevels;
-<a name="l00067"></a>00067             <a class="code" href="classLevel_1_1Level.html">Level::Level</a>* mCurrentLevel;
-<a name="l00068"></a>00068             <span class="keywordtype">size_t</span> mCurrentLevelIndex;
-<a name="l00069"></a>00069             std::map&lt;std::pair&lt;size_t, size_t&gt;, <a class="code" href="classFAWorld_1_1Actor.html">Actor</a>*&gt; mActorMap2D;    
-<a name="l00070"></a>00070 
-<a name="l00071"></a>00071 
-<a name="l00072"></a>00072             <span class="keywordtype">size_t</span> mTicksSinceLastAnimUpdate=0;
-<a name="l00073"></a>00073             <span class="keywordtype">size_t</span> mTicksPassed=0;
-<a name="l00074"></a>00074             <a class="code" href="classFAWorld_1_1Player.html">Player</a>* mCurrentPlayer;
-<a name="l00075"></a>00075             std::map&lt;uint32_t, Player*&gt; mPlayers;            
-<a name="l00076"></a>00076             <span class="keyword">const</span> <a class="code" href="classDiabloExe_1_1DiabloExe.html">DiabloExe::DiabloExe</a>&amp; mDiabloExe;
-<a name="l00077"></a>00077             <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classFAWorld_1_1Actor.html">Actor</a>;
-<a name="l00078"></a>00078     };
-<a name="l00079"></a>00079 }
-<a name="l00080"></a>00080 
-<a name="l00081"></a>00081 <span class="preprocessor">#endif</span>
+<a name="l00055"></a>00055         <span class="keyword">private</span>:
+<a name="l00056"></a>00056             std::map&lt;size_t, std::shared_ptr&lt;GameLevel&gt;&gt; mLevels;
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058             <span class="keywordtype">size_t</span> mTicksPassed=0;
+<a name="l00059"></a>00059             <a class="code" href="classFAWorld_1_1Player.html">Player</a>* mCurrentPlayer;
+<a name="l00060"></a>00060             std::map&lt;uint32_t, Player*&gt; mPlayers;            
+<a name="l00061"></a>00061             <span class="keyword">const</span> <a class="code" href="classDiabloExe_1_1DiabloExe.html">DiabloExe::DiabloExe</a>&amp; mDiabloExe;
+<a name="l00062"></a>00062     };
+<a name="l00063"></a>00063 }
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -179,7 +163,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 15 2015 20:22:15 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 26 2015 16:03:43 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

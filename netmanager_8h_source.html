@@ -94,7 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00012"></a>00012     {
 <a name="l00013"></a>00013         <span class="keywordtype">size_t</span> end = position + <span class="keyword">sizeof</span>(T);
 <a name="l00014"></a>00014 
-<a name="l00015"></a>00015         <span class="keywordflow">if</span>(end &gt;= packet-&gt;dataLength)
+<a name="l00015"></a>00015         <span class="keywordflow">if</span>(end &gt; packet-&gt;dataLength)
 <a name="l00016"></a>00016             <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00017"></a>00017 
 <a name="l00018"></a>00018         T* dest = (T*)(packet-&gt;data + position);
@@ -110,7 +110,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00028"></a>00028     {
 <a name="l00029"></a>00029         <span class="keywordtype">size_t</span> end = position + <span class="keyword">sizeof</span>(T);
 <a name="l00030"></a>00030 
-<a name="l00031"></a>00031         <span class="keywordflow">if</span>(end &gt;= packet-&gt;dataLength)
+<a name="l00031"></a>00031         <span class="keywordflow">if</span>(end &gt; packet-&gt;dataLength)
 <a name="l00032"></a>00032             <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00033"></a>00033 
 <a name="l00034"></a>00034         T* data = (T*)(packet-&gt;data + position);
@@ -131,28 +131,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00049"></a>00049 
 <a name="l00050"></a>00050         <span class="keyword">private</span>:
 <a name="l00051"></a>00051             <span class="keyword">const</span> uint32_t SERVER_PLAYER_ID = 0;
-<a name="l00052"></a>00052 
-<a name="l00053"></a>00053             <span class="keywordtype">void</span> sendServerPacket();
-<a name="l00054"></a>00054             <span class="keywordtype">void</span> sendClientPacket();
-<a name="l00055"></a>00055 
-<a name="l00056"></a>00056             <span class="keywordtype">void</span> readServerPacket(ENetEvent&amp; event);
-<a name="l00057"></a>00057             <span class="keywordtype">void</span> readClientPacket(ENetEvent&amp; event);
-<a name="l00058"></a>00058 
-<a name="l00059"></a>00059             <span class="keywordtype">void</span> spawnPlayer(uint32_t <span class="keywordtype">id</span>);
+<a name="l00052"></a>00052             <span class="keyword">const</span> uint8_t UNRELIABLE_CHANNEL_ID = 0;
+<a name="l00053"></a>00053             <span class="keyword">const</span> uint8_t RELIABLE_CHANNEL_ID = 1;
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055             <span class="keywordtype">void</span> sendServerPacket();
+<a name="l00056"></a>00056             <span class="keywordtype">void</span> sendClientPacket();
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058             <span class="keywordtype">void</span> readServerPacket(ENetEvent&amp; event);
+<a name="l00059"></a>00059             <span class="keywordtype">void</span> readClientPacket(ENetEvent&amp; event);
 <a name="l00060"></a>00060 
-<a name="l00061"></a>00061             <span class="keywordtype">bool</span> mIsServer;
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063             ENetPeer* mServerPeer = NULL;
-<a name="l00064"></a>00064             std::vector&lt;ENetPeer*&gt; mClients;
-<a name="l00065"></a>00065             ENetHost* mHost = NULL;
-<a name="l00066"></a>00066             ENetAddress mAddress;
+<a name="l00061"></a>00061             <span class="keywordtype">void</span> sendLevel(<span class="keywordtype">size_t</span> levelIndex, ENetPeer* peer);
+<a name="l00062"></a>00062             <span class="keywordtype">void</span> readLevel(ENetPacket* packet);
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064             <span class="keywordtype">void</span> spawnPlayer(uint32_t <span class="keywordtype">id</span>);
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066             <span class="keywordtype">bool</span> mIsServer;
 <a name="l00067"></a>00067 
-<a name="l00068"></a>00068             <span class="keywordtype">size_t</span> mTick = 0;
-<a name="l00069"></a>00069             <span class="keywordtype">size_t</span> mLastServerTickProcessed = 0;
-<a name="l00070"></a>00070     };
-<a name="l00071"></a>00071 }
+<a name="l00068"></a>00068             ENetPeer* mServerPeer = NULL;
+<a name="l00069"></a>00069             std::vector&lt;ENetPeer*&gt; mClients;
+<a name="l00070"></a>00070             ENetHost* mHost = NULL;
+<a name="l00071"></a>00071             ENetAddress mAddress;
 <a name="l00072"></a>00072 
-<a name="l00073"></a>00073 <span class="preprocessor">#endif</span>
+<a name="l00073"></a>00073             <span class="keywordtype">size_t</span> mTick = 0;
+<a name="l00074"></a>00074             <span class="keywordtype">size_t</span> mLastServerTickProcessed = 0;
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076             int32_t mLevelIndexTmp; <span class="comment">// TODO: remove this when we fix mp level changing</span>
+<a name="l00077"></a>00077     };
+<a name="l00078"></a>00078 }
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -171,7 +178,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 15 2015 20:22:15 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 26 2015 16:03:43 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

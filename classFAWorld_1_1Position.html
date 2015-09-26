@@ -136,12 +136,11 @@ std::pair&lt; size_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bot
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">where we are going to <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5087eb57c5012a8d5cf85feab4b2a26"></a><!-- doxytag: member="FAWorld::Position::distanceFrom" ref="ac5087eb57c5012a8d5cf85feab4b2a26" args="(Position B)" -->
 double&#160;</td><td class="memItemRight" valign="bottom"><b>distanceFrom</b> (<a class="el" href="classFAWorld_1_1Position.html">Position</a> B)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11018e46cdf6b89b8e9502e3f3593958"></a><!-- doxytag: member="FAWorld::Position::getSize" ref="a11018e46cdf6b89b8e9502e3f3593958" args="()" -->
-virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getSize</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4dc980e3ebcf57bf60ad1c076ffdb1c2"></a><!-- doxytag: member="FAWorld::Position::writeTo" ref="a4dc980e3ebcf57bf60ad1c076ffdb1c2" args="(ENetPacket *packet, size_t start)" -->
-virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>writeTo</b> (ENetPacket *packet, size_t start)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10664d9721615fdf7f8abbb1707a0260"></a><!-- doxytag: member="FAWorld::Position::readFrom" ref="a10664d9721615fdf7f8abbb1707a0260" args="(ENetPacket *packet, size_t start)" -->
-virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>readFrom</b> (ENetPacket *packet, size_t start)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFAWorld_1_1Position.html#af8be3a5a938b40435f39f383ce6262a1">getWriteSize</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Must only be called between calls to <a class="el" href="classFAWorld_1_1NetObject.html#a1be4602fa7204c096891ca9a1ced42dc" title="Must be called before any calls to getSize() or writeTo()">startWriting()</a> and <a class="el" href="classFAWorld_1_1Position.html#a1380f47771f9f1027a83ffd513570f83" title="Write object to packet. startWriting() must be called before this function.">writeTo()</a>  <a href="#af8be3a5a938b40435f39f383ce6262a1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFAWorld_1_1Position.html#a1380f47771f9f1027a83ffd513570f83">writeTo</a> (ENetPacket *packet, size_t &amp;position)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Write object to packet. <a class="el" href="classFAWorld_1_1NetObject.html#a1be4602fa7204c096891ca9a1ced42dc" title="Must be called before any calls to getSize() or writeTo()">startWriting()</a> must be called before this function.  <a href="#a1380f47771f9f1027a83ffd513570f83"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFAWorld_1_1Position.html#af980b9e7511b02011f5605d1254e878e">readFrom</a> (ENetPacket *packet, size_t &amp;position)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7492aeb4817c537b6776a8ccceffef5c"></a><!-- doxytag: member="FAWorld::Position::mDist" ref="a7492aeb4817c537b6776a8ccceffef5c" args="" -->
@@ -156,6 +155,104 @@ Friends</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac98d07dd8f7b70e16ccb9a01abf56b9c"></a><!-- doxytag: member="FAWorld::Position::boost::serialization::access" ref="ac98d07dd8f7b70e16ccb9a01abf56b9c" args="" -->
 class&#160;</td><td class="memItemRight" valign="bottom"><b>boost::serialization::access</b></td></tr>
 </table>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="af8be3a5a938b40435f39f383ce6262a1"></a><!-- doxytag: member="FAWorld::Position::getWriteSize" ref="af8be3a5a938b40435f39f383ce6262a1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classFAWorld_1_1Position.html#af8be3a5a938b40435f39f383ce6262a1">FAWorld::Position::getWriteSize</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Must only be called between calls to <a class="el" href="classFAWorld_1_1NetObject.html#a1be4602fa7204c096891ca9a1ced42dc" title="Must be called before any calls to getSize() or writeTo()">startWriting()</a> and <a class="el" href="classFAWorld_1_1Position.html#a1380f47771f9f1027a83ffd513570f83" title="Write object to packet. startWriting() must be called before this function.">writeTo()</a> </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>size to be written </dd></dl>
+
+<p>Implements <a class="el" href="classFAWorld_1_1NetObject.html#a9339b64f1355eaa2899489845c982280">FAWorld::NetObject</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af980b9e7511b02011f5605d1254e878e"></a><!-- doxytag: member="FAWorld::Position::readFrom" ref="af980b9e7511b02011f5605d1254e878e" args="(ENetPacket *packet, size_t &amp;position)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classFAWorld_1_1Position.html#af980b9e7511b02011f5605d1254e878e">FAWorld::Position::readFrom</a> </td>
+          <td>(</td>
+          <td class="paramtype">ENetPacket *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>position</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packet</td><td>packet to read from </td></tr>
+    <tr><td class="paramname">start</td><td>index in package to start at, must be incremented by amount read by implementors </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>success </dd></dl>
+
+<p>Implements <a class="el" href="classFAWorld_1_1NetObject.html#a7f7b24f69a32b43f7e36b1f5702e6765">FAWorld::NetObject</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1380f47771f9f1027a83ffd513570f83"></a><!-- doxytag: member="FAWorld::Position::writeTo" ref="a1380f47771f9f1027a83ffd513570f83" args="(ENetPacket *packet, size_t &amp;position)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classFAWorld_1_1Position.html#a1380f47771f9f1027a83ffd513570f83">FAWorld::Position::writeTo</a> </td>
+          <td>(</td>
+          <td class="paramtype">ENetPacket *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>position</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Write object to packet. <a class="el" href="classFAWorld_1_1NetObject.html#a1be4602fa7204c096891ca9a1ced42dc" title="Must be called before any calls to getSize() or writeTo()">startWriting()</a> must be called before this function. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packet</td><td>packet to write to </td></tr>
+    <tr><td class="paramname">start</td><td>index in package to start at, must be incremented by amount written by implementors </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>success </dd></dl>
+
+<p>Implements <a class="el" href="classFAWorld_1_1NetObject.html#a497984649cd1eb7b59429423cdaeecd4">FAWorld::NetObject</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>apps/freeablo/faworld/<a class="el" href="position_8h_source.html">position.h</a></li>
 <li>apps/freeablo/faworld/position.cpp</li>
@@ -178,7 +275,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>boost::serialization
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 15 2015 20:22:15 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 26 2015 16:03:44 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

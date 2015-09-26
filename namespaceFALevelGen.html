@@ -156,8 +156,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>placeDownStairs</b> (
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isPassable</b> (int32_t x, int32_t y, const <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;tmpLevel)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd00f6c90ec460081478daad824540e9"></a><!-- doxytag: member="FALevelGen::setPoint" ref="abd00f6c90ec460081478daad824540e9" args="(int32_t x, int32_t y, size_t val, const Level::Dun &amp;tmpLevel, Level::Dun &amp;level, int32_t wallOffset, bool isInsideWall)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setPoint</b> (int32_t x, int32_t y, size_t val, const <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;tmpLevel, <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level, int32_t wallOffset, bool isInsideWall)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2871e1e0e9e5cd851b0dafd412140b8e"></a><!-- doxytag: member="FALevelGen::placeMonsters" ref="a2871e1e0e9e5cd851b0dafd412140b8e" args="(Level::Level &amp;level, const DiabloExe::DiabloExe &amp;exe, size_t dLvl)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>placeMonsters</b> (<a class="el" href="classLevel_1_1Level.html">Level::Level</a> &amp;level, const <a class="el" href="classDiabloExe_1_1DiabloExe.html">DiabloExe::DiabloExe</a> &amp;exe, size_t dLvl)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f48db4843ed8be1a245fed54a4b7e0b"></a><!-- doxytag: member="FALevelGen::placeMonsters" ref="a2f48db4843ed8be1a245fed54a4b7e0b" args="(Level::Level &amp;level, std::vector&lt; FAWorld::Actor * &gt; &amp;actors, const DiabloExe::DiabloExe &amp;exe, size_t dLvl)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>placeMonsters</b> (<a class="el" href="classLevel_1_1Level.html">Level::Level</a> &amp;level, std::vector&lt; <a class="el" href="classFAWorld_1_1Actor.html">FAWorld::Actor</a> * &gt; &amp;actors, const <a class="el" href="classDiabloExe_1_1DiabloExe.html">DiabloExe::DiabloExe</a> &amp;exe, size_t dLvl)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af82a580c6c944b63032043ff18d09999"></a><!-- doxytag: member="FALevelGen::fillIsometric" ref="af82a580c6c944b63032043ff18d09999" args="(Level::Dun &amp;tmpLevel, Level::Dun &amp;level, bool ignoreNotWall, int wallOffset, bool isInsideWall)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>fillIsometric</b> (<a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;tmpLevel, <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level, bool ignoreNotWall, int wallOffset, bool isInsideWall)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a464dd6a003f458e129d50ae8493e6cf4"></a><!-- doxytag: member="FALevelGen::connectHelperY" ref="a464dd6a003f458e129d50ae8493e6cf4" args="(int32_t x, int32_t y, Level::Dun &amp;level)" -->
@@ -166,8 +166,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>connectHelperY</b> (i
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>connectHelperX</b> (int32_t x, int32_t y, <a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada3a10ca3b2f97503c8a54a27b5ba199"></a><!-- doxytag: member="FALevelGen::connectWalls" ref="ada3a10ca3b2f97503c8a54a27b5ba199" args="(Level::Dun &amp;level)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>connectWalls</b> (<a class="el" href="classLevel_1_1Dun.html">Level::Dun</a> &amp;level)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab67d4749f8284f479fecb842661a86ae"></a><!-- doxytag: member="FALevelGen::generate" ref="ab67d4749f8284f479fecb842661a86ae" args="(size_t width, size_t height, size_t dLvl, const DiabloExe::DiabloExe &amp;exe, size_t previous, size_t next)" -->
-<a class="el" href="classLevel_1_1Level.html">Level::Level</a>&#160;</td><td class="memItemRight" valign="bottom"><b>generate</b> (size_t width, size_t height, size_t dLvl, const <a class="el" href="classDiabloExe_1_1DiabloExe.html">DiabloExe::DiabloExe</a> &amp;exe, size_t previous, size_t next)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39cfc010a5cfbe2fb020c22fb8a09eef"></a><!-- doxytag: member="FALevelGen::generate" ref="a39cfc010a5cfbe2fb020c22fb8a09eef" args="(size_t width, size_t height, size_t dLvl, const DiabloExe::DiabloExe &amp;exe, size_t previous, size_t next)" -->
+std::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classFAWorld_1_1GameLevel.html">FAWorld::GameLevel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>generate</b> (size_t width, size_t height, size_t dLvl, const <a class="el" href="classDiabloExe_1_1DiabloExe.html">DiabloExe::DiabloExe</a> &amp;exe, size_t previous, size_t next)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae67843d327b2eb402d25e6ba3d4c206"></a><!-- doxytag: member="FALevelGen::minKey" ref="aae67843d327b2eb402d25e6ba3d4c206" args="(const std::vector&lt; size_t &gt; &amp;key, const std::vector&lt; bool &gt; &amp;mstSet)" -->
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>minKey</b> (const std::vector&lt; size_t &gt; &amp;key, const std::vector&lt; bool &gt; &amp;mstSet)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ea210f38328e739f62adb59485ebaf6"></a><!-- doxytag: member="FALevelGen::minimumSpanningTree" ref="a6ea210f38328e739f62adb59485ebaf6" args="(const std::vector&lt; std::vector&lt; size_t &gt; &gt; &amp;graph, std::vector&lt; size_t &gt; &amp;parent)" -->
@@ -206,7 +207,7 @@ std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><b>rng</b></td><
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 15 2015 20:22:15 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 26 2015 16:03:43 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

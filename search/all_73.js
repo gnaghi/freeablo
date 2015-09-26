@@ -12,5 +12,6 @@ var searchData=
   ['spritecachebase',['SpriteCacheBase',['../classRender_1_1SpriteCacheBase.html',1,'Render']]],
   ['spritegroup',['SpriteGroup',['../classRender_1_1SpriteGroup.html',1,'Render']]],
   ['spritemanager',['SpriteManager',['../classFARender_1_1SpriteManager.html',1,'FARender']]],
+  ['startwriting',['startWriting',['../classFAWorld_1_1GameLevel.html#afc6fa520eece5aae880732debd52b812',1,'FAWorld::GameLevel::startWriting()'],['../classFAWorld_1_1NetObject.html#a1be4602fa7204c096891ca9a1ced42dc',1,'FAWorld::NetObject::startWriting()']]],
   ['stringutils',['StringUtils',['../classMisc_1_1StringUtils.html',1,'Misc']]]
 ];
