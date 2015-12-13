@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$namespace_render.html#a04af26977f421431f3a4569af1b877f4" title="Render::getImageInfo" alt="" coords="261,32,408,61"/>
-<area shape="rect" id="node23" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="231,85,439,115"/>
+<area shape="rect" id="node3" href="$namespace_render.html#a04af26977f421431f3a4569af1b877f4" title="Render::getImageInfo" alt="" coords="261,45,408,75"/>
+<area shape="rect" id="node23" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="231,125,439,155"/>
 <area shape="rect" id="node5" href="$class_f_a_render_1_1_sprite_cache.html#ad480d3c6ae72f0a19439e542bea9356c" title="To be called from the game thread." alt="" coords="488,32,675,61"/>
 <area shape="rect" id="node7" href="$class_f_a_render_1_1_sprite_manager.html#aea2af871429cd9ac16e419e17ec03da5" title="To be called from the game thread." alt="" coords="724,32,921,61"/>
 <area shape="rect" id="node9" href="$class_f_a_render_1_1_renderer.html#ac3bcc5a3217058dc2a3ce0469cbbd37a" title="FARender::Renderer::loadImage" alt="" coords="971,5,1181,35"/>
@@ -10,8 +10,9 @@
 <area shape="rect" id="node17" href="$class_engine_1_1_thread_manager.html#ab99a6ee7b73f2e9b24a824e811df5d88" title="Engine::ThreadManager::run" alt="" coords="1501,59,1688,88"/>
 <area shape="rect" id="node19" href="$class_engine_1_1_engine_main.html#a5a16165ab6d6e9f2bb2f2739bd1b11bf" title="Engine::EngineMain::run" alt="" coords="1737,59,1900,88"/>
 <area shape="rect" id="node21" href="$freeablo_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1949,59,2000,88"/>
-<area shape="rect" id="node25" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="516,139,647,168"/>
+<area shape="rect" id="node25" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="516,192,647,221"/>
 <area shape="rect" id="node31" href="$namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="499,85,664,115"/>
-<area shape="rect" id="node27" href="$class_f_a_render_1_1_sprite_cache.html#aaede499b2c79f9f1cf535f37887d2f99" title="To be called from the render thread." alt="" coords="729,85,916,115"/>
-<area shape="rect" id="node29" href="$class_f_a_render_1_1_sprite_manager.html#a4897198f560005dd7067150c3ed3ed2d" title="To be called from the render thread." alt="" coords="724,139,921,168"/>
+<area shape="rect" id="node34" href="$namespace_render.html#a05c97dfcb545abc37e57ca717e15f6cc" title="Render::loadResizedSprite" alt="" coords="492,139,671,168"/>
+<area shape="rect" id="node27" href="$class_f_a_render_1_1_sprite_cache.html#aaede499b2c79f9f1cf535f37887d2f99" title="To be called from the render thread." alt="" coords="729,139,916,168"/>
+<area shape="rect" id="node29" href="$class_f_a_render_1_1_sprite_manager.html#a4897198f560005dd7067150c3ed3ed2d" title="To be called from the render thread." alt="" coords="724,192,921,221"/>
 </map>

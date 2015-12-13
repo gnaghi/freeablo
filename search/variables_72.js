@@ -14,7 +14,7 @@ var searchData=
   ['rem',['rem',['../struct_c_seq_out_stream_buf.html#ad6ead9d544e51dcb4a915e8bef5abbe8',1,'CSeqOutStreamBuf']]],
   ['remainlen',['remainLen',['../struct_c_lzma_dec.html#ab4b2b6f8e6e8e20b2ce45b9406b11739',1,'CLzmaDec']]],
   ['renderdone',['renderDone',['../namespace_engine.html#a89057d19926de885e06263a8d3be9e95',1,'Engine']]],
-  ['renderer',['renderer',['../namespace_render.html#a83fdc275f915ff4a0aa699dd185c30e6',1,'Render::renderer()'],['../namespace_render.html#a0537ce4334a5cbbbf1ed246a12bc1b84',1,'Render::Renderer()']]],
+  ['renderer',['Renderer',['../namespace_render.html#a0537ce4334a5cbbbf1ed246a12bc1b84',1,'Render::Renderer()'],['../namespace_render.html#a83fdc275f915ff4a0aa699dd185c30e6',1,'Render::renderer()']]],
   ['renderstate',['renderState',['../struct_engine_1_1_message.html#a9b0f4206f962cd0491880e010b5bee19',1,'Engine::Message']]],
   ['replenenc',['repLenEnc',['../struct_c_save_state.html#af75e75d3972499693a4b725a5020e13a',1,'CSaveState::repLenEnc()'],['../struct_c_lzma_enc.html#a99899745b6c6678310b34d06b8d8fca3',1,'CLzmaEnc::repLenEnc()']]],
   ['reps',['reps',['../struct_c_lzma_dec.html#a7270fb4457b9b9249d0d12a4e03d6c6a',1,'CLzmaDec::reps()'],['../struct_c_save_state.html#ac41a715753146819eefdd6c4009ae65e',1,'CSaveState::reps()'],['../struct_c_lzma_enc.html#a9ffeefffe1bdd14631ebd141dc99ec91',1,'CLzmaEnc::reps()']]],

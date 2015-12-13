@@ -16,7 +16,7 @@
 <area shape="rect" id="node15" href="$_storm_lib_8h.html#a4cc5ee53bb9a41f91d71a0be809ede22" title="SFileAddWave" alt="" coords="1340,59,1449,88"/>
 <area shape="rect" id="node19" href="$_storm_lib_8h.html#a5f3daefb5c0d87a791fcc42ec40714d2" title="SFileFlushArchive" alt="" coords="1073,112,1201,141"/>
 <area shape="rect" id="node30" href="$namespace_f_a_i_o.html#a19fa8e6274a04bdeb5c54d1552e6248e" title="FAIO::FAfopen" alt="" coords="567,512,676,541"/>
-<area shape="rect" id="node70" href="$_storm_common_8h.html#a7d3f9dcaa29374564574951db3f84fd7" title="SAttrLoadAttributes" alt="" coords="553,989,689,1019"/>
+<area shape="rect" id="node72" href="$_storm_common_8h.html#a7d3f9dcaa29374564574951db3f84fd7" title="SAttrLoadAttributes" alt="" coords="553,989,689,1019"/>
 <area shape="rect" id="node82" href="$_storm_lib_8h.html#a7f66db40266cb2d78416b2f9cc2804ba" title="SFileUpdateFileAttributes" alt="" coords="536,1043,707,1072"/>
 <area shape="rect" id="node84" href="$_storm_lib_8h.html#a25532910e8392ffc4b5fd57878d67316" title="SFileExtractFile" alt="" coords="564,776,679,805"/>
 <area shape="rect" id="node86" href="$_storm_lib_8h.html#a36dc66999a9e3fc82b83153fe8f1dc0c" title="SListFileFindFirstFile" alt="" coords="549,829,693,859"/>
@@ -27,25 +27,25 @@
 <area shape="rect" id="node36" href="$namespace_audio.html#aa723124f1d8ab10a57d74aac0df5d5cb" title="Audio::loadMusic" alt="" coords="803,512,925,541"/>
 <area shape="rect" id="node40" href="$namespace_audio.html#a640626e3ff91a05bf85051aa564d2be7" title="Audio::loadSound" alt="" coords="803,192,925,221"/>
 <area shape="rect" id="node44" href="$namespace_render.html#ac19fcc278cfef53ca0b941ff040fb5d3" title="Render::loadNonCelImage" alt="" coords="776,405,952,435"/>
-<area shape="rect" id="node56" href="$class_cel_1_1_cel_file.html#a7aa56b24ad6db831061b2b1f4faed266" title="Cel::CelFile::CelFile" alt="" coords="795,459,933,488"/>
-<area shape="rect" id="node58" href="$class_cel_1_1_pal.html#a1374e8fdbb589d9ad415f4bc3f133ef2" title="Cel::Pal::Pal" alt="" coords="816,565,912,595"/>
-<area shape="rect" id="node60" href="$class_diablo_exe_1_1_diablo_exe.html#aae82ed26725dbd5b89faca92507958f0" title="DiabloExe::DiabloExe::DiabloExe" alt="" coords="755,619,973,648"/>
-<area shape="rect" id="node62" href="$class_level_1_1_dun.html#aebe0dd29cec43011e986c36a9a52b7b7" title="Level::Dun::Dun" alt="" coords="805,672,923,701"/>
-<area shape="rect" id="node64" href="$class_level_1_1_min.html#ab29c456876f2cc69a0247e419fa17337" title="Level::Min::Min" alt="" coords="809,725,919,755"/>
-<area shape="rect" id="node66" href="$class_level_1_1_sol.html#ab1b97555d237cb1c671bfdbb3de5d129" title="Level::Sol::Sol" alt="" coords="811,779,917,808"/>
-<area shape="rect" id="node68" href="$class_f_a_i_o_file_interface.html#a0dd986067a16d1ba2da857c9b59c091c" title="Opens a file." alt="" coords="783,245,945,275"/>
+<area shape="rect" id="node58" href="$class_cel_1_1_cel_file.html#a7aa56b24ad6db831061b2b1f4faed266" title="Cel::CelFile::CelFile" alt="" coords="795,459,933,488"/>
+<area shape="rect" id="node60" href="$class_cel_1_1_pal.html#a1374e8fdbb589d9ad415f4bc3f133ef2" title="Cel::Pal::Pal" alt="" coords="816,565,912,595"/>
+<area shape="rect" id="node62" href="$class_diablo_exe_1_1_diablo_exe.html#aae82ed26725dbd5b89faca92507958f0" title="DiabloExe::DiabloExe::DiabloExe" alt="" coords="755,619,973,648"/>
+<area shape="rect" id="node64" href="$class_level_1_1_dun.html#aebe0dd29cec43011e986c36a9a52b7b7" title="Level::Dun::Dun" alt="" coords="805,672,923,701"/>
+<area shape="rect" id="node66" href="$class_level_1_1_min.html#ab29c456876f2cc69a0247e419fa17337" title="Level::Min::Min" alt="" coords="809,725,919,755"/>
+<area shape="rect" id="node68" href="$class_level_1_1_sol.html#ab1b97555d237cb1c671bfdbb3de5d129" title="Level::Sol::Sol" alt="" coords="811,779,917,808"/>
+<area shape="rect" id="node70" href="$class_f_a_i_o_file_interface.html#a0dd986067a16d1ba2da857c9b59c091c" title="Opens a file." alt="" coords="783,245,945,275"/>
 <area shape="rect" id="node38" href="$class_f_a_audio_1_1_audio_manager.html#a9eaf93569374ad7fed5b0229d4e36e8b" title="FAAudio::AudioManager::playMusic" alt="" coords="1023,512,1252,541"/>
 <area shape="rect" id="node42" href="$class_f_a_audio_1_1_audio_manager.html#a1c562d006a318f6c682dd80e6a278996" title="FAAudio::AudioManager::play" alt="" coords="1040,192,1235,221"/>
 <area shape="rect" id="node46" href="$namespace_render.html#a04af26977f421431f3a4569af1b877f4" title="Render::getImageInfo" alt="" coords="1064,432,1211,461"/>
-<area shape="rect" id="node50" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="1033,379,1241,408"/>
-<area shape="rect" id="node48" href="$class_f_a_render_1_1_sprite_cache.html#ad480d3c6ae72f0a19439e542bea9356c" title="To be called from the game thread." alt="" coords="1301,432,1488,461"/>
-<area shape="rect" id="node52" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="1329,325,1460,355"/>
-<area shape="rect" id="node54" href="$namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="1312,379,1477,408"/>
-<area shape="rect" id="node72" href="$_storm_lib_8h.html#a8b031afa4f88b4b3705c274a0b5b4f73" title="SFileOpenArchive" alt="" coords="801,989,927,1019"/>
-<area shape="rect" id="node74" href="$namespace_f_a_i_o.html#a2c6d08b4256153f34907093724c0f995" title="FAIO::init" alt="" coords="1099,963,1176,992"/>
+<area shape="rect" id="node50" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="1033,365,1241,395"/>
+<area shape="rect" id="node48" href="$class_f_a_render_1_1_sprite_cache.html#ad480d3c6ae72f0a19439e542bea9356c" title="To be called from the game thread." alt="" coords="1301,459,1488,488"/>
+<area shape="rect" id="node52" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="1329,299,1460,328"/>
+<area shape="rect" id="node54" href="$namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="1312,352,1477,381"/>
+<area shape="rect" id="node56" href="$namespace_render.html#a05c97dfcb545abc37e57ca717e15f6cc" title="Render::loadResizedSprite" alt="" coords="1305,405,1484,435"/>
+<area shape="rect" id="node74" href="$_storm_lib_8h.html#a8b031afa4f88b4b3705c274a0b5b4f73" title="SFileOpenArchive" alt="" coords="801,989,927,1019"/>
+<area shape="rect" id="node76" href="$namespace_f_a_i_o.html#a2c6d08b4256153f34907093724c0f995" title="FAIO::init" alt="" coords="1099,963,1176,992"/>
 <area shape="rect" id="node78" href="$_storm_lib_8h.html#aa2b6fa8f16b5ac42868c546533fe26ce" title="SFileCreateArchive2" alt="" coords="1067,1016,1208,1045"/>
-<area shape="rect" id="node80" href="$_storm_lib_8h.html#a6daebdc66320d44284e960bbff33e886" title="SFileOpenPatchArchive" alt="" coords="1057,871,1217,900"/>
-<area shape="rect" id="node76" href="$exedump_2main_8cpp.html#a2c3f6775325c30275d11c6abee2db6a0" title="main" alt="" coords="1369,963,1420,992"/>
+<area shape="rect" id="node80" href="$_storm_lib_8h.html#a6daebdc66320d44284e960bbff33e886" title="SFileOpenPatchArchive" alt="" coords="1057,869,1217,899"/>
 <area shape="rect" id="node93" href="$_storm_lib_8h.html#a65c5c13489a621c481282da76b101e16" title="SFileGetFileInfo" alt="" coords="807,883,921,912"/>
 <area shape="rect" id="node95" href="$_storm_lib_8h.html#a5d1f891bd3e6c98a94a13cc5745ae6f4" title="SFileVerifyArchive" alt="" coords="799,936,929,965"/>
 </map>

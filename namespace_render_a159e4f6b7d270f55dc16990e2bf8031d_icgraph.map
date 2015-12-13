@@ -1,7 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="175,7,383,36"/>
-<area shape="rect" id="node11" href="$namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="433,59,599,88"/>
-<area shape="rect" id="node5" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="451,5,581,35"/>
-<area shape="rect" id="node7" href="$class_f_a_render_1_1_sprite_cache.html#aaede499b2c79f9f1cf535f37887d2f99" title="To be called from the render thread." alt="" coords="655,59,841,88"/>
-<area shape="rect" id="node9" href="$class_f_a_render_1_1_sprite_manager.html#a4897198f560005dd7067150c3ed3ed2d" title="To be called from the render thread." alt="" coords="649,5,847,35"/>
+<area shape="rect" id="node3" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="175,9,383,39"/>
+<area shape="rect" id="node11" href="$namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="439,112,604,141"/>
+<area shape="rect" id="node14" href="$namespace_render.html#a05c97dfcb545abc37e57ca717e15f6cc" title="Render::loadResizedSprite" alt="" coords="432,59,611,88"/>
+<area shape="rect" id="node5" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="456,5,587,35"/>
+<area shape="rect" id="node7" href="$class_f_a_render_1_1_sprite_cache.html#aaede499b2c79f9f1cf535f37887d2f99" title="To be called from the render thread." alt="" coords="665,59,852,88"/>
+<area shape="rect" id="node9" href="$class_f_a_render_1_1_sprite_manager.html#a4897198f560005dd7067150c3ed3ed2d" title="To be called from the render thread." alt="" coords="660,5,857,35"/>
 </map>

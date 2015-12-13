@@ -1,16 +1,17 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$namespace_render.html#a04af26977f421431f3a4569af1b877f4" title="Render::getImageInfo" alt="" coords="248,32,395,61"/>
-<area shape="rect" id="node23" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="256,139,387,168"/>
-<area shape="rect" id="node29" href="$namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="239,85,404,115"/>
-<area shape="rect" id="node5" href="$class_f_a_render_1_1_sprite_cache.html#ad480d3c6ae72f0a19439e542bea9356c" title="To be called from the game thread." alt="" coords="460,32,647,61"/>
-<area shape="rect" id="node7" href="$class_f_a_render_1_1_sprite_manager.html#aea2af871429cd9ac16e419e17ec03da5" title="To be called from the game thread." alt="" coords="703,32,900,61"/>
-<area shape="rect" id="node9" href="$class_f_a_render_1_1_renderer.html#ac3bcc5a3217058dc2a3ce0469cbbd37a" title="FARender::Renderer::loadImage" alt="" coords="949,5,1160,35"/>
-<area shape="rect" id="node13" href="$class_f_a_render_1_1_renderer.html#aa73fae0f49236c7a83fa6b01a9e5e8d4" title="FARender::Renderer::setCursor" alt="" coords="952,59,1157,88"/>
-<area shape="rect" id="node11" href="$class_f_a_world_1_1_actor.html#ab9e28a0505dc7a3040e249c563badd37" title="FAWorld::Actor::Actor" alt="" coords="1245,5,1395,35"/>
-<area shape="rect" id="node15" href="$class_f_a_render_1_1_renderer.html#ad6e983189d6cf6b7aaef89d54ed89396" title="To be called only by Engine::ThreadManager." alt="" coords="1209,59,1431,88"/>
-<area shape="rect" id="node17" href="$class_engine_1_1_thread_manager.html#ab99a6ee7b73f2e9b24a824e811df5d88" title="Engine::ThreadManager::run" alt="" coords="1480,59,1667,88"/>
-<area shape="rect" id="node19" href="$class_engine_1_1_engine_main.html#a5a16165ab6d6e9f2bb2f2739bd1b11bf" title="Engine::EngineMain::run" alt="" coords="1716,59,1879,88"/>
-<area shape="rect" id="node21" href="$freeablo_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1928,59,1979,88"/>
-<area shape="rect" id="node25" href="$class_f_a_render_1_1_sprite_cache.html#aaede499b2c79f9f1cf535f37887d2f99" title="To be called from the render thread." alt="" coords="460,85,647,115"/>
-<area shape="rect" id="node27" href="$class_f_a_render_1_1_sprite_manager.html#a4897198f560005dd7067150c3ed3ed2d" title="To be called from the render thread." alt="" coords="455,139,652,168"/>
+<area shape="rect" id="node3" href="$namespace_render.html#a04af26977f421431f3a4569af1b877f4" title="Render::getImageInfo" alt="" coords="253,32,400,61"/>
+<area shape="rect" id="node23" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="261,192,392,221"/>
+<area shape="rect" id="node29" href="$namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="244,85,409,115"/>
+<area shape="rect" id="node32" href="$namespace_render.html#a05c97dfcb545abc37e57ca717e15f6cc" title="Render::loadResizedSprite" alt="" coords="237,139,416,168"/>
+<area shape="rect" id="node5" href="$class_f_a_render_1_1_sprite_cache.html#ad480d3c6ae72f0a19439e542bea9356c" title="To be called from the game thread." alt="" coords="471,32,657,61"/>
+<area shape="rect" id="node7" href="$class_f_a_render_1_1_sprite_manager.html#aea2af871429cd9ac16e419e17ec03da5" title="To be called from the game thread." alt="" coords="713,32,911,61"/>
+<area shape="rect" id="node9" href="$class_f_a_render_1_1_renderer.html#ac3bcc5a3217058dc2a3ce0469cbbd37a" title="FARender::Renderer::loadImage" alt="" coords="960,5,1171,35"/>
+<area shape="rect" id="node13" href="$class_f_a_render_1_1_renderer.html#aa73fae0f49236c7a83fa6b01a9e5e8d4" title="FARender::Renderer::setCursor" alt="" coords="963,59,1168,88"/>
+<area shape="rect" id="node11" href="$class_f_a_world_1_1_actor.html#ab9e28a0505dc7a3040e249c563badd37" title="FAWorld::Actor::Actor" alt="" coords="1256,5,1405,35"/>
+<area shape="rect" id="node15" href="$class_f_a_render_1_1_renderer.html#ad6e983189d6cf6b7aaef89d54ed89396" title="To be called only by Engine::ThreadManager." alt="" coords="1220,59,1441,88"/>
+<area shape="rect" id="node17" href="$class_engine_1_1_thread_manager.html#ab99a6ee7b73f2e9b24a824e811df5d88" title="Engine::ThreadManager::run" alt="" coords="1491,59,1677,88"/>
+<area shape="rect" id="node19" href="$class_engine_1_1_engine_main.html#a5a16165ab6d6e9f2bb2f2739bd1b11bf" title="Engine::EngineMain::run" alt="" coords="1727,59,1889,88"/>
+<area shape="rect" id="node21" href="$freeablo_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1939,59,1989,88"/>
+<area shape="rect" id="node25" href="$class_f_a_render_1_1_sprite_cache.html#aaede499b2c79f9f1cf535f37887d2f99" title="To be called from the render thread." alt="" coords="471,139,657,168"/>
+<area shape="rect" id="node27" href="$class_f_a_render_1_1_sprite_manager.html#a4897198f560005dd7067150c3ed3ed2d" title="To be called from the render thread." alt="" coords="465,192,663,221"/>
 </map>
