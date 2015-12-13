@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_a_gui_1_1_f_a_python_funcs.html#a02df52cb30147adb14606b296743e23e" title="FAGui::FAPythonFuncs::updateInventory" alt="" coords="385,165,647,195"/>
+<area shape="rect" id="node19" href="$classpython_1_1draggable_1_1_draggable_widget.html#a16e15cc108585de3f8b1f2ed9013d2ea" title="python.draggable.DraggableWidget.updateInventory" alt="" coords="355,219,677,248"/>
+<area shape="rect" id="node5" href="$class_f_a_world_1_1_inventory.html#a5757807eb3653d0f10c945941f34147c" title="FAWorld::Inventory::getItemAt" alt="" coords="733,5,933,35"/>
+<area shape="rect" id="node7" href="$class_f_a_world_1_1_item.html#aece75a76ee9033a27b494e9953d36625" title="FAWorld::Item::getGraphicValue" alt="" coords="728,59,939,88"/>
+<area shape="rect" id="node9" href="$class_f_a_world_1_1_item.html#aa93072efcb6eff29b43d82297470e2c1" title="FAWorld::Item::isEmpty" alt="" coords="752,112,915,141"/>
+<area shape="rect" id="node11" href="$class_f_a_world_1_1_item.html#a1f9e3942cf9b273de32dd11e825e565b" title="FAWorld::Item::getInvCoords" alt="" coords="737,165,929,195"/>
+<area shape="rect" id="node13" href="$class_f_a_world_1_1_item.html#ad641b58719596604934377509b36125c" title="FAWorld::Item::isReal" alt="" coords="757,219,909,248"/>
+<area shape="rect" id="node15" href="$class_f_a_world_1_1_item.html#a72a463ee92e0d9d83ad2b4fcee8672cf" title="FAWorld::Item::getInvSize" alt="" coords="745,272,921,301"/>
+<area shape="rect" id="node17" href="$class_f_a_world_1_1_item.html#a7f64ed288f8fe4250f7e425db52b56cd" title="FAWorld::Item::getCornerCoords" alt="" coords="727,325,940,355"/>
+</map>

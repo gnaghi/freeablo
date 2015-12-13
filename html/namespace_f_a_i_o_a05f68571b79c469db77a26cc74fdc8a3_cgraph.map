@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_s_file_read_file_8cpp.html#a6e34d029cecd26331b44985dd5622927" title="SFileSetFilePointer" alt="" coords="167,128,300,157"/>
+<area shape="rect" id="node22" href="$_file_stream_8cpp.html#a10b9a284527af83a44533867b0aff0fc" title="GetLastError" alt="" coords="185,181,281,211"/>
+<area shape="rect" id="node5" href="$_s_base_common_8cpp.html#a3216d5c62d758be099dfa3324cf34dd3" title="IsValidFileHandle" alt="" coords="541,5,664,35"/>
+<area shape="rect" id="node9" href="$_file_stream_8cpp.html#ae12246cf2f9f9aa8e3a6367bd9fa2aed" title="SetLastError" alt="" coords="556,64,649,93"/>
+<area shape="rect" id="node11" href="$_file_stream_8cpp.html#a4cda734fc220ab4b32e1f2bf9b5446fc" title="FileStream_GetPos" alt="" coords="349,205,485,235"/>
+<area shape="rect" id="node13" href="$_file_stream_8cpp.html#af505319882f0f4aaf396b6d061a2275b" title="FileStream_GetSize" alt="" coords="533,129,672,159"/>
+<area shape="rect" id="node15" href="$_s_file_read_file_8cpp.html#a1d30c5a49fb9c1c1669884646282e4d3" title="SFileGetFileSize" alt="" coords="357,51,477,80"/>
+<area shape="rect" id="node20" href="$_file_stream_8cpp.html#a593f3b1416f7497c28fa5552cd1b3003" title="FileStream_Read" alt="" coords="356,259,479,288"/>
+<area shape="rect" id="node7" href="$_s_base_common_8cpp.html#a67882fdf8d424efbb6b2e1f748583a66" title="IsValidMpqHandle" alt="" coords="720,5,848,35"/>
+</map>

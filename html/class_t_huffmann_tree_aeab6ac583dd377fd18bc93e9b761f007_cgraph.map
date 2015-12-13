@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_t_huffmann_tree.html#a353d6143d3b08755c6b22936540298d5" title="THuffmannTree::BuildTree" alt="" coords="300,32,476,61"/>
+<area shape="rect" id="node19" href="$class_t_output_stream.html#a60efe31d3fd395d10dba91a492537bcc" title="TOutputStream::PutBits" alt="" coords="615,215,777,244"/>
+<area shape="rect" id="node21" href="$class_t_huffmann_tree.html#aa91f1cbb00d0c39fede7accf46d5f295" title="THuffmannTree::EncodeOneByte" alt="" coords="280,240,496,269"/>
+<area shape="rect" id="node24" href="$class_t_huffmann_tree.html#aa2d1ed63bb3b90c1f31bd34850ee0f5c" title="THuffmannTree::InsertNewBranchAndRebalance" alt="" coords="235,85,541,115"/>
+<area shape="rect" id="node27" href="$class_t_huffmann_tree.html#a9bea307d3f4d3049bcedf37f508197c6" title="THuffmannTree::IncWeightsAndRebalance" alt="" coords="851,112,1123,141"/>
+<area shape="rect" id="node33" href="$class_t_output_stream.html#a01c7cb1233bcf81938f55781247dfff8" title="TOutputStream::Flush" alt="" coords="313,293,463,323"/>
+<area shape="rect" id="node5" href="$class_t_huffmann_tree.html#a90a46fd9ecc3cd85cf8a6a64042b9d8a" title="THuffmannTree::CreateNewItem" alt="" coords="589,35,803,64"/>
+<area shape="rect" id="node13" href="$class_t_huffmann_tree.html#ac837ce58c1c6fa305bc94a5fad4a4a10" title="THuffmannTree::FixupItemPosByWeight" alt="" coords="857,59,1116,88"/>
+<area shape="rect" id="node7" href="$class_t_huffmann_tree.html#a3194a608aa7d3381ce3b157d9d328261" title="THuffmannTree::InsertItem" alt="" coords="897,5,1076,35"/>
+<area shape="rect" id="node9" href="$struct_t_h_tree_item.html#a0fde258496612e0525b63c44fa2c783d" title="THTreeItem::RemoveItem" alt="" coords="1213,5,1387,35"/>
+<area shape="rect" id="node11" href="$class_t_huffmann_tree.html#ae88f3c29824b69051cda8f3f449d18a6" title="THuffmannTree::LinkTwoItems" alt="" coords="1199,59,1401,88"/>
+<area shape="rect" id="node15" href="$class_t_huffmann_tree.html#a2f4f4169017174bdb5003d888addc0d3" title="THuffmannTree::FindHigherOrEqualItem" alt="" coords="1172,112,1428,141"/>
+</map>

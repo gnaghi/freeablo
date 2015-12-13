@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$guimanager_8h.html" title="apps/freeablo/fagui/guimanager.h" alt="" coords="239,83,452,112"/>
+<area shape="rect" id="node5" href="$enginemain_8cpp.html" title="apps/freeablo/engine/enginemain.cpp" alt="" coords="5,160,243,189"/>
+<area shape="rect" id="node12" href="$inventory_8cpp.html" title="apps/freeablo/faworld/inventory.cpp" alt="" coords="476,83,703,112"/>
+<area shape="rect" id="node14" href="$item_8cpp.html" title="apps/freeablo/faworld/item.cpp" alt="" coords="727,83,927,112"/>
+<area shape="rect" id="node16" href="$itemmanager_8cpp.html" title="apps/freeablo/faworld/itemmanager.cpp" alt="" coords="951,83,1201,112"/>
+<area shape="rect" id="node18" href="$playerfactory_8cpp.html" title="apps/freeablo/faworld/playerfactory.cpp" alt="" coords="1225,83,1476,112"/>
+<area shape="rect" id="node7" href="$fapython_8cpp.html" title="apps/freeablo/fagui/fapython.cpp" alt="" coords="267,160,477,189"/>
+<area shape="rect" id="node9" href="$guimanager_8cpp.html" title="apps/freeablo/fagui/guimanager.cpp" alt="" coords="501,160,728,189"/>
+</map>

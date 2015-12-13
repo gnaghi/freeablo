@@ -1,0 +1,25 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_storm_common_8h.html" title="extern/StormLib/src/StormCommon.h" alt="" coords="2683,83,2920,112"/>
+<area shape="rect" id="node45" href="$huff_8cpp.html" title="extern/StormLib/src/huffman/huff.cpp" alt="" coords="2944,83,3181,112"/>
+<area shape="rect" id="node47" href="$huff__old_8cpp.html" title="extern/StormLib/src/huffman/huff_old.cpp" alt="" coords="3205,83,3467,112"/>
+<area shape="rect" id="node5" href="$_file_stream_8cpp.html" title="extern/StormLib/src/FileStream.cpp" alt="" coords="5,160,232,189"/>
+<area shape="rect" id="node7" href="$_s_base_common_8cpp.html" title="extern/StormLib/src/SBaseCommon.cpp" alt="" coords="256,160,512,189"/>
+<area shape="rect" id="node9" href="$_s_base_dump_data_8cpp.html" title="extern/StormLib/src/SBaseDumpData.cpp" alt="" coords="536,160,803,189"/>
+<area shape="rect" id="node11" href="$_s_base_file_table_8cpp.html" title="extern/StormLib/src/SBaseFileTable.cpp" alt="" coords="827,160,1083,189"/>
+<area shape="rect" id="node13" href="$_s_base_sub_types_8cpp.html" title="extern/StormLib/src/SBaseSubTypes.cpp" alt="" coords="1107,160,1368,189"/>
+<area shape="rect" id="node15" href="$_s_compression_8cpp.html" title="extern/StormLib/src/SCompression.cpp" alt="" coords="1392,160,1643,189"/>
+<area shape="rect" id="node17" href="$_s_file_add_file_8cpp.html" title="extern/StormLib/src/SFileAddFile.cpp" alt="" coords="1667,160,1904,189"/>
+<area shape="rect" id="node19" href="$_s_file_attributes_8cpp.html" title="extern/StormLib/src/SFileAttributes.cpp" alt="" coords="1928,160,2179,189"/>
+<area shape="rect" id="node21" href="$_s_file_compact_archive_8cpp.html" title="extern/StormLib/src/SFileCompactArchive.cpp" alt="" coords="2203,160,2493,189"/>
+<area shape="rect" id="node23" href="$_s_file_create_archive_8cpp.html" title="extern/StormLib/src/SFileCreateArchive.cpp" alt="" coords="2517,160,2795,189"/>
+<area shape="rect" id="node25" href="$_s_file_extract_file_8cpp.html" title="extern/StormLib/src/SFileExtractFile.cpp" alt="" coords="2819,160,3077,189"/>
+<area shape="rect" id="node27" href="$_s_file_find_file_8cpp.html" title="extern/StormLib/src/SFileFindFile.cpp" alt="" coords="3101,160,3341,189"/>
+<area shape="rect" id="node29" href="$_s_file_get_file_info_8cpp.html" title="extern/StormLib/src/SFileGetFileInfo.cpp" alt="" coords="3365,160,3624,189"/>
+<area shape="rect" id="node31" href="$_s_file_list_file_8cpp.html" title="extern/StormLib/src/SFileListFile.cpp" alt="" coords="3648,160,3885,189"/>
+<area shape="rect" id="node33" href="$_s_file_open_archive_8cpp.html" title="extern/StormLib/src/SFileOpenArchive.cpp" alt="" coords="3909,160,4179,189"/>
+<area shape="rect" id="node35" href="$_s_file_open_file_ex_8cpp.html" title="extern/StormLib/src/SFileOpenFileEx.cpp" alt="" coords="4203,160,4464,189"/>
+<area shape="rect" id="node37" href="$_s_file_patch_archives_8cpp.html" title="extern/StormLib/src/SFilePatchArchives.cpp" alt="" coords="4488,160,4768,189"/>
+<area shape="rect" id="node39" href="$_s_file_read_file_8cpp.html" title="extern/StormLib/src/SFileReadFile.cpp" alt="" coords="4792,160,5037,189"/>
+<area shape="rect" id="node41" href="$_s_file_verify_8cpp.html" title="extern/StormLib/src/SFileVerify.cpp" alt="" coords="5061,160,5291,189"/>
+<area shape="rect" id="node43" href="$_storm_test_8cpp.html" title="extern/StormLib/test/StormTest.cpp" alt="" coords="5315,160,5544,189"/>
+</map>

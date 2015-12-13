@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_a_world_1_1_inventory.html#a762bbb4dc49e65cebf08ac6d06906dfd" title="FAWorld::Inventory::canPlaceItem" alt="" coords="241,7,463,36"/>
+<area shape="rect" id="node9" href="$class_f_a_world_1_1_inventory.html#a0dd7b54868aa8320d4c7a84c62ad43f8" title="FAWorld::Inventory::putItem" alt="" coords="528,57,715,87"/>
+<area shape="rect" id="node15" href="$class_f_a_world_1_1_player.html#af4dc40030e9bbac29582ac3a6411df80" title="FAWorld::Player::updateSprite" alt="" coords="253,111,451,140"/>
+<area shape="rect" id="node5" href="$class_f_a_gui_1_1_f_a_python_funcs.html#a9cb1351ff5531061ce7f556dbf0cf478" title="FAGui::FAPythonFuncs::canPlace" alt="" coords="781,5,1003,35"/>
+<area shape="rect" id="node7" href="$namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="1053,32,1293,61"/>
+<area shape="rect" id="node11" href="$class_f_a_gui_1_1_f_a_python_funcs.html#ab6ebb3e0d60378b1c1efd6e248e28923" title="FAGui::FAPythonFuncs::placeItem" alt="" coords="779,59,1005,88"/>
+<area shape="rect" id="node17" href="$class_f_a_world_1_1_player.html#a1fbc0f7531b9f039d7a5ef5e07027a8c" title="FAWorld::Player::getCurrentAnim" alt="" coords="513,111,729,140"/>
+</map>

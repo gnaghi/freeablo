@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$zlib_2crc32_8c.html#af5a1c7b05170540ef3bb084e6cf903c4" title="crc32" alt="" coords="155,5,208,35"/>
+<area shape="rect" id="node5" href="$adler32_8c.html#a86607743a4b76949b24cf5cc2f01a40d" title="adler32" alt="" coords="149,59,213,88"/>
+<area shape="rect" id="node7" href="$trees_8c.html#a330f47f21a267ad5616b9ba72bf7f90b" title="_tr_init" alt="" coords="151,112,212,141"/>
+<area shape="rect" id="node18" href="$deflate_8c.html#ab197bb7bbeee75dcfccbfa8d55cae272" title="lm_init" alt="" coords="152,165,211,195"/>
+<area shape="rect" id="node9" href="$trees_8c.html#af0327179e9998353dddfef79251847d4" title="tr_static_init" alt="" coords="261,85,355,115"/>
+<area shape="rect" id="node16" href="$trees_8c.html#ac5265fdf07ca6c4cc57769e2fb546d55" title="init_block" alt="" coords="269,139,347,168"/>
+<area shape="rect" id="node11" href="$trees_8c.html#a599e4c4281ef721bd56222d9f01dec7c" title="gen_codes" alt="" coords="403,60,488,89"/>
+<area shape="rect" id="node13" href="$trees_8c.html#ac59b08248ea9953b87f375717ab8524a" title="bi_reverse" alt="" coords="536,87,619,116"/>
+</map>

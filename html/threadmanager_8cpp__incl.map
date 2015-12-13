@@ -1,0 +1,23 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$threadmanager_8h.html" title="threadmanager.h" alt="" coords="87,315,205,344"/>
+<area shape="rect" id="node24" href="$inputmanager_8h.html" title="input/inputmanager.h" alt="" coords="1591,392,1733,421"/>
+<area shape="rect" id="node38" href="$renderer_8h.html" title="../farender/renderer.h" alt="" coords="723,83,865,112"/>
+<area shape="rect" id="node9" href="$audiomanager_8h.html" title="../faaudio/audiomanager.h" alt="" coords="170,392,341,421"/>
+<area shape="rect" id="node20" href="$audio_8h.html" title="audio/audio.h" alt="" coords="231,469,330,499"/>
+<area shape="rect" id="node30" href="$disablewarn_8h.html" title="misc/disablewarn.h" alt="" coords="1199,469,1333,499"/>
+<area shape="rect" id="node34" href="$enablewarn_8h.html" title="misc/enablewarn.h" alt="" coords="1045,469,1175,499"/>
+<area shape="rect" id="node36" href="$keys_8h.html" title="keys.h" alt="" coords="1735,469,1797,499"/>
+<area shape="rect" id="node52" href="$render_8h.html" title="render/render.h" alt="" coords="1219,315,1329,344"/>
+<area shape="rect" id="node93" href="$position_8h.html" title="../faworld/position.h" alt="" coords="2215,237,2351,267"/>
+<area shape="rect" id="node127" href="$spritemanager_8h.html" title="spritemanager.h" alt="" coords="367,160,482,189"/>
+<area shape="rect" id="node60" href="$celfile_8h.html" title="cel/celfile.h" alt="" coords="618,392,706,421"/>
+<area shape="rect" id="node70" href="$celframe_8h.html" title="cel/celframe.h" alt="" coords="1381,392,1485,421"/>
+<area shape="rect" id="node81" href="$drawcommand_8h.html" title="rocketglue/drawcommand.h" alt="" coords="1005,392,1186,421"/>
+<area shape="rect" id="node89" href="$levelobjects_8h.html" title="levelobjects.h" alt="" coords="1858,392,1959,421"/>
+<area shape="rect" id="node65" href="$pal_8h.html" title="pal.h" alt="" coords="637,469,687,499"/>
+<area shape="rect" id="node74" href="$helper2d_8h.html" title="misc/helper2d.h" alt="" coords="1973,469,2087,499"/>
+<area shape="rect" id="node100" href="$savegame_8h.html" title="../fasavegame/savegame.h" alt="" coords="2974,315,3153,344"/>
+<area shape="rect" id="node118" href="$netobject_8h.html" title="netobject.h" alt="" coords="3581,315,3666,344"/>
+<area shape="rect" id="node122" href="$misc_8h.html" title="misc/misc.h" alt="" coords="2162,315,2255,344"/>
+<area shape="rect" id="node129" href="$spritecache_8h.html" title="spritecache.h" alt="" coords="379,237,478,267"/>
+</map>

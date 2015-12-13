@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespace_render.html#a3bbdc70f166ed8419fcfa4d292258b6a" title="Render::drawMinTile" alt="" coords="207,5,348,35"/>
+<area shape="rect" id="node5" href="$namespace_render.html#a8384399aba8d9bca82788367f744016f" title="Render::drawFrame" alt="" coords="399,5,535,35"/>
+<area shape="rect" id="node7" href="$namespace_render.html#a255d3d88fd6f86eb173484b03e176d23" title="Render::setpixel" alt="" coords="584,5,701,35"/>
+</map>

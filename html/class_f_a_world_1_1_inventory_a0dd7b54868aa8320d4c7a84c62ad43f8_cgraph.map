@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_a_world_1_1_inventory.html#a762bbb4dc49e65cebf08ac6d06906dfd" title="FAWorld::Inventory::canPlaceItem" alt="" coords="241,59,463,88"/>
+<area shape="rect" id="node5" href="$class_f_a_world_1_1_item.html#aa72f2bacafd5067ba4add0d8e8918311" title="FAWorld::Item::getEquipLoc" alt="" coords="564,5,751,35"/>
+<area shape="rect" id="node7" href="$class_f_a_world_1_1_item.html#aa93072efcb6eff29b43d82297470e2c1" title="FAWorld::Item::isEmpty" alt="" coords="576,112,739,141"/>
+<area shape="rect" id="node13" href="$class_f_a_world_1_1_inventory.html#a463cf57748e5f68b5c33f916e109131c" title="FAWorld::Inventory::collectEffects" alt="" coords="241,163,463,192"/>
+<area shape="rect" id="node9" href="$class_f_a_world_1_1_item.html#a45732ee9631eb73d02b0a8bda88ecbde" title="FAWorld::Item::getType" alt="" coords="576,59,739,88"/>
+<area shape="rect" id="node16" href="$class_f_a_world_1_1_actor_stats.html#ac15e9e11adf2b230af3990a61f71a155" title="FAWorld::ActorStats::recalculateDerivedStats" alt="" coords="512,165,803,195"/>
+</map>

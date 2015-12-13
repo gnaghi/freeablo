@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_threads_8c.html#adcebff2a2a5098940f037eb6ba9d6873" title="Event_Reset" alt="" coords="237,5,336,35"/>
+<area shape="rect" id="node7" href="$_threads_8c.html#a4c894884b1268b8d00d2a96489ba89e3" title="Event_Set" alt="" coords="245,59,328,88"/>
+<area shape="rect" id="node10" href="$_threads_8c.html#a6d392082486c2dd897b1256a5b5eb8f7" title="Semaphore_Release1" alt="" coords="212,112,361,141"/>
+<area shape="rect" id="node5" href="$_threads_8c.html#a4cab6ca310179ac5fd522acd3fa59a50" title="BOOLToWRes" alt="" coords="433,32,543,61"/>
+<area shape="rect" id="node12" href="$_threads_8c.html#a1dfc591d0c0c4fcc8881567bfa146498" title="Semaphore_ReleaseN" alt="" coords="412,112,564,141"/>
+</map>

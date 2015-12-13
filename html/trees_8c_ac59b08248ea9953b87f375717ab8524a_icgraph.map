@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$trees_8c.html#af0327179e9998353dddfef79251847d4" title="tr_static_init" alt="" coords="269,5,363,35"/>
+<area shape="rect" id="node13" href="$trees_8c.html#a599e4c4281ef721bd56222d9f01dec7c" title="gen_codes" alt="" coords="136,57,221,87"/>
+<area shape="rect" id="node5" href="$trees_8c.html#a330f47f21a267ad5616b9ba72bf7f90b" title="_tr_init" alt="" coords="428,5,489,35"/>
+<area shape="rect" id="node7" href="$deflate_8c.html#a4f17a4d330d76066b4b26c27f7cde5dc" title="deflateReset" alt="" coords="563,5,659,35"/>
+<area shape="rect" id="node9" href="$deflate_8c.html#ae501d2862c68d17b909d6f1c9264815c" title="deflateInit2_" alt="" coords="715,5,808,35"/>
+<area shape="rect" id="node11" href="$deflate_8c.html#a0e6601591faa9573f27340153b0f3296" title="deflateInit_" alt="" coords="857,5,943,35"/>
+<area shape="rect" id="node16" href="$trees_8c.html#ae24585b9d3230020126f1c8ae8f240f9" title="build_tree" alt="" coords="277,59,355,88"/>
+<area shape="rect" id="node18" href="$trees_8c.html#aef05b1c8b7f7ef2902111a8f415ead66" title="build_bl_tree" alt="" coords="412,59,505,88"/>
+<area shape="rect" id="node20" href="$trees_8c.html#aafe54369cbbb97972279a82a3b6c699e" title="_tr_flush_block" alt="" coords="556,84,665,113"/>
+</map>

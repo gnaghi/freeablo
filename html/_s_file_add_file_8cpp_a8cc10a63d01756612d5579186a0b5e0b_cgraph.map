@@ -1,0 +1,33 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_s_base_common_8cpp.html#a67882fdf8d424efbb6b2e1f748583a66" title="IsValidMpqHandle" alt="" coords="191,5,319,35"/>
+<area shape="rect" id="node5" href="$_s_base_common_8cpp.html#ad01c4c290fa6caebc77053dbc12c1070" title="IsPseudoFileName" alt="" coords="601,108,735,137"/>
+<area shape="rect" id="node7" href="$_s_base_common_8cpp.html#a271822a4e6a88edb8f2f53df8b713023" title="IsInternalMpqFileName" alt="" coords="176,267,333,296"/>
+<area shape="rect" id="node9" href="$_s_base_file_table_8cpp.html#a7347ab3dd849dcc0350e1ca8d83af6b3" title="GetFileEntryLocale" alt="" coords="601,55,735,84"/>
+<area shape="rect" id="node19" href="$_s_base_file_table_8cpp.html#a064b84cb1dd914abd03d6caab3a1e99b" title="RenameFileEntry" alt="" coords="193,213,316,243"/>
+<area shape="rect" id="node36" href="$_s_base_file_table_8cpp.html#a97fd4e4b3730b45b008fbba7dc7c07e8" title="RebuildHetTable" alt="" coords="196,320,313,349"/>
+<area shape="rect" id="node42" href="$_s_base_common_8cpp.html#af3e146ce1fda8ffaf72d6391956f29a3" title="CreateFileHandle" alt="" coords="193,373,316,403"/>
+<area shape="rect" id="node44" href="$_s_base_common_8cpp.html#ad65eac195a2ffc9e9ad511d7b381a9a5" title="WriteMpqDataMD5" alt="" coords="188,507,321,536"/>
+<area shape="rect" id="node62" href="$_file_stream_8cpp.html#ae12246cf2f9f9aa8e3a6367bd9fa2aed" title="SetLastError" alt="" coords="621,585,715,615"/>
+<area shape="rect" id="node64" href="$_s_base_common_8cpp.html#a18f4fd98a66477ad38b6b12f27cf2ad0" title="FreeFileHandle" alt="" coords="200,768,309,797"/>
+<area shape="rect" id="node11" href="$_s_base_file_table_8cpp.html#acf04d5326a7dd5e0c5d82598f8e76a50" title="GetFileIndex_Het" alt="" coords="785,107,908,136"/>
+<area shape="rect" id="node13" href="$_s_base_common_8cpp.html#a7c410e53e1793314064827d095ba86ce" title="HashStringJenkins" alt="" coords="959,160,1089,189"/>
+<area shape="rect" id="node17" href="$_s_base_file_table_8cpp.html#a8b7cf3b06d4cc7779a95a0ef92172269" title="GetBits" alt="" coords="991,107,1057,136"/>
+<area shape="rect" id="node15" href="$lookup_8h.html#a28bbffa78951ac929184f31d92a05388" title="hashlittle2" alt="" coords="1140,160,1220,189"/>
+<area shape="rect" id="node21" href="$_s_base_file_table_8cpp.html#a551f6e01e95accafb0042ae9b8d81e61" title="AllocateFileName" alt="" coords="404,160,529,189"/>
+<area shape="rect" id="node25" href="$_s_base_common_8cpp.html#a259665299cf78eb0e253b08d6489da68" title="AllocateHashEntry" alt="" coords="401,267,532,296"/>
+<area shape="rect" id="node29" href="$_s_base_file_table_8cpp.html#a49c99a591813b88b38d9d219af88a8d4" title="InvalidateInternalFiles" alt="" coords="392,213,541,243"/>
+<area shape="rect" id="node27" href="$_s_base_common_8cpp.html#a9eeed4144d8cb5a5f06a0116a1c2133c" title="FindFreeHashEntry" alt="" coords="601,319,735,348"/>
+<area shape="rect" id="node31" href="$_s_base_file_table_8cpp.html#a90069131da300c2a6d9ff0b7a1b41806" title="GetFileEntryExact" alt="" coords="604,212,732,241"/>
+<area shape="rect" id="node34" href="$_s_base_file_table_8cpp.html#ab491aefc6c1009d67e63868ea2be6ecc" title="DeleteFileEntry" alt="" coords="612,265,724,295"/>
+<area shape="rect" id="node38" href="$_s_base_file_table_8cpp.html#a97648c0afa4a301e7f7ee1e2bf201018" title="CreateHetTable" alt="" coords="409,320,524,349"/>
+<area shape="rect" id="node40" href="$_s_base_file_table_8cpp.html#a01959b3dc86a80003a50a1483937ce7d" title="FreeHetTable" alt="" coords="416,373,517,403"/>
+<area shape="rect" id="node46" href="$_s_base_common_8cpp.html#a6c6b7ba3c8ec84b3f0f9f3e79ff9d33f" title="AllocateMd5Buffer" alt="" coords="403,533,531,563"/>
+<area shape="rect" id="node48" href="$_file_stream_8cpp.html#a593f3b1416f7497c28fa5552cd1b3003" title="FileStream_Read" alt="" coords="405,587,528,616"/>
+<area shape="rect" id="node50" href="$_file_stream_8cpp.html#a10b9a284527af83a44533867b0aff0fc" title="GetLastError" alt="" coords="419,640,515,669"/>
+<area shape="rect" id="node52" href="$_s_base_common_8cpp.html#aec4669e8a9275dc112ebca320ae0e08a" title="CalculateDataBlockHash" alt="" coords="383,427,551,456"/>
+<area shape="rect" id="node60" href="$_file_stream_8cpp.html#a36307955e8de92f5ea26be07ea3b9cb4" title="FileStream_Write" alt="" coords="405,480,528,509"/>
+<area shape="rect" id="node54" href="$md5_8c.html#a26c1379e5ead2590effec89de6b8cd11" title="md5_init" alt="" coords="633,453,703,483"/>
+<area shape="rect" id="node56" href="$md5_8c.html#aee76a4c9f37bfe88d943301f3fa8126f" title="md5_done" alt="" coords="627,400,709,429"/>
+<area shape="rect" id="node58" href="$tomcrypt__misc_8h.html#a7ecf35c558d5f07c279cfc4f5231b655" title="zeromem" alt="" coords="809,400,884,429"/>
+<area shape="rect" id="node67" href="$_file_stream_8cpp.html#ae8b75c4797726e9c5ee0b4b03bf31442" title="FileStream_Close" alt="" coords="404,768,529,797"/>
+</map>

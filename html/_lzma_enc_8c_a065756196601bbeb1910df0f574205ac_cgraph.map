@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_lzma_enc_8c.html#a468c61c864910402968dee57bc958ea8" title="LzmaEnc_Destruct" alt="" coords="185,112,319,141"/>
+<area shape="rect" id="node5" href="$_lz_find_mt_8c.html#a8f04458f06b00f3c982627cc01f566ce" title="MatchFinderMt_Destruct" alt="" coords="369,59,535,88"/>
+<area shape="rect" id="node21" href="$_lz_find_8c.html#a7cd763a949f7a5f1bad61a9ebf0f7c30" title="MatchFinder_Free" alt="" coords="389,112,515,141"/>
+<area shape="rect" id="node23" href="$_lzma_enc_8c.html#a7f6d9c0dba37c4249c29a54283c9747b" title="LzmaEnc_FreeLits" alt="" coords="387,165,517,195"/>
+<area shape="rect" id="node7" href="$_lz_find_mt_8c.html#abe828e1f84f9d54d9d52bf271cc656ba" title="MtSync_Destruct" alt="" coords="608,32,731,61"/>
+<area shape="rect" id="node19" href="$_lz_find_mt_8c.html#afd7e6f1d902192822f2c76fdac6abe87" title="MatchFinderMt_FreeMem" alt="" coords="584,85,755,115"/>
+<area shape="rect" id="node9" href="$_lz_find_mt_8c.html#a8df1d3212ac2c1d3e5f11c0778ec6536" title="MtSync_StopWriting" alt="" coords="804,5,945,35"/>
+<area shape="rect" id="node15" href="$_threads_8c.html#a4c894884b1268b8d00d2a96489ba89e3" title="Event_Set" alt="" coords="833,59,916,88"/>
+<area shape="rect" id="node11" href="$_threads_8c.html#a6d392082486c2dd897b1256a5b5eb8f7" title="Semaphore_Release1" alt="" coords="996,5,1145,35"/>
+<area shape="rect" id="node13" href="$_threads_8c.html#a1dfc591d0c0c4fcc8881567bfa146498" title="Semaphore_ReleaseN" alt="" coords="1196,5,1348,35"/>
+<area shape="rect" id="node17" href="$_threads_8c.html#a4cab6ca310179ac5fd522acd3fa59a50" title="BOOLToWRes" alt="" coords="1016,59,1125,88"/>
+</map>

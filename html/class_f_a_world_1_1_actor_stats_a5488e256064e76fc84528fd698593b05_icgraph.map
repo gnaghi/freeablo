@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_a_world_1_1_actor.html#a45131c266364a071e5e36dba66bdf38a" title="FAWorld::Actor::takeDamage" alt="" coords="280,5,475,35"/>
+<area shape="rect" id="node5" href="$class_f_a_world_1_1_player.html#aa4da592bd7d2a7523212fe7ba91b4861" title="FAWorld::Player::attack" alt="" coords="523,5,685,35"/>
+<area shape="rect" id="node7" href="$class_f_a_world_1_1_player.html#a1f1fe37fd8144a89a4f495a760cbd797" title="FAWorld::Player::Player" alt="" coords="733,5,896,35"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$inflate_8c.html#a9a49cf8b6ce882dea33505b0ac84ecef" title="inflate" alt="" coords="196,164,252,193"/>
+<area shape="rect" id="node21" href="$inflate_8c.html#aed3136bc8afc3ef309b731b4ad724534" title="inflateEnd" alt="" coords="184,217,264,247"/>
+<area shape="rect" id="node5" href="$zlib_2crc32_8c.html#af5a1c7b05170540ef3bb084e6cf903c4" title="crc32" alt="" coords="339,5,392,35"/>
+<area shape="rect" id="node7" href="$adler32_8c.html#a86607743a4b76949b24cf5cc2f01a40d" title="adler32" alt="" coords="333,59,397,88"/>
+<area shape="rect" id="node9" href="$zutil_8c.html#aac7aa2bbd8584b96c89e311b6c3409a5" title="zmemcpy" alt="" coords="475,268,552,297"/>
+<area shape="rect" id="node11" href="$inflate_8c.html#a4493a4d633ce7f2dd463edc3a9bce72f" title="fixedtables" alt="" coords="323,112,408,141"/>
+<area shape="rect" id="node13" href="$inftrees_8c.html#a773e6164ab27c6f3ea71144dfc487c7f" title="inflate_table" alt="" coords="468,139,559,168"/>
+<area shape="rect" id="node16" href="$inffast_8c.html#abe57be8a6f777dc648ebcb275e57d849" title="inflate_fast" alt="" coords="323,267,408,296"/>
+<area shape="rect" id="node18" href="$inflate_8c.html#a1d501d65182a4a5f56d3d07961f3fb02" title="updatewindow" alt="" coords="313,320,417,349"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_t_huffmann_tree.html#a7ad4b50bbe3ee1b2a473f6b475e470f0" title="THuffmannTree::Call1500E820" alt="" coords="229,32,432,61"/>
+<area shape="rect" id="node5" href="$class_t_huffmann_tree.html#aa65605e870061213ac45823934de3f42" title="THuffmannTree::DoCompression" alt="" coords="488,5,701,35"/>
+<area shape="rect" id="node7" href="$class_t_huffmann_tree.html#a1355c1bf334f4e8050a1a84b523581e1" title="THuffmannTree::DoDecompression" alt="" coords="480,59,709,88"/>
+</map>

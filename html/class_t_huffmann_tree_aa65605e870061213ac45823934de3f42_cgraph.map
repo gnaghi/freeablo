@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_t_huffmann_tree.html#a353d6143d3b08755c6b22936540298d5" title="THuffmannTree::BuildTree" alt="" coords="283,42,459,71"/>
+<area shape="rect" id="node7" href="$class_t_huffmann_tree.html#a3194a608aa7d3381ce3b157d9d328261" title="THuffmannTree::InsertItem" alt="" coords="821,40,1000,70"/>
+<area shape="rect" id="node19" href="$class_t_output_stream.html#a60efe31d3fd395d10dba91a492537bcc" title="TOutputStream::PutBits" alt="" coords="289,95,452,124"/>
+<area shape="rect" id="node21" href="$class_t_huffmann_tree.html#a388775d614b49f71a6ebd5f0b660775d" title="THuffmannTree::Call1500E740" alt="" coords="269,148,472,178"/>
+<area shape="rect" id="node23" href="$class_t_huffmann_tree.html#a7ad4b50bbe3ee1b2a473f6b475e470f0" title="THuffmannTree::Call1500E820" alt="" coords="269,202,472,231"/>
+<area shape="rect" id="node5" href="$class_t_huffmann_tree.html#a90a46fd9ecc3cd85cf8a6a64042b9d8a" title="THuffmannTree::CreateNewItem" alt="" coords="520,42,733,71"/>
+<area shape="rect" id="node13" href="$class_t_huffmann_tree.html#ac837ce58c1c6fa305bc94a5fad4a4a10" title="THuffmannTree::FixupItemPosByWeight" alt="" coords="781,94,1040,123"/>
+<area shape="rect" id="node9" href="$struct_t_h_tree_item.html#a0fde258496612e0525b63c44fa2c783d" title="THTreeItem::RemoveItem" alt="" coords="1131,94,1304,123"/>
+<area shape="rect" id="node11" href="$class_t_huffmann_tree.html#ae88f3c29824b69051cda8f3f449d18a6" title="THuffmannTree::LinkTwoItems" alt="" coords="1116,40,1319,70"/>
+<area shape="rect" id="node15" href="$class_t_huffmann_tree.html#a2f4f4169017174bdb5003d888addc0d3" title="THuffmannTree::FindHigherOrEqualItem" alt="" coords="1089,147,1345,176"/>
+<area shape="rect" id="node25" href="$struct_t_h_tree_item.html#afbba3aea303f1e51dfcd6ca4912a5793" title="THTreeItem::GetPrevItem" alt="" coords="540,202,713,231"/>
+</map>

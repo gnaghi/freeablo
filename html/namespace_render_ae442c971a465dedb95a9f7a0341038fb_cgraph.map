@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespace_render.html#a3d28da845a64625382c6b7ab62df3bdb" title="Render::spriteSize" alt="" coords="168,5,299,35"/>
+<area shape="rect" id="node5" href="$class_level_1_1_level.html#a8a9ab47247600f305776f3d62b73a46a" title="Level::Level::width" alt="" coords="168,59,299,88"/>
+<area shape="rect" id="node9" href="$namespace_render.html#a725f4e1357ec4979c7ed97f447c7d5a6" title="Render::drawAt" alt="" coords="177,112,289,141"/>
+<area shape="rect" id="node7" href="$class_level_1_1_dun.html#a484e94f5c0d423b9277ee500583c510d" title="Level::Dun::width" alt="" coords="348,59,471,88"/>
+</map>

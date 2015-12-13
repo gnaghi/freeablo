@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_a_world_1_1_player.html#af4dc40030e9bbac29582ac3a6411df80" title="FAWorld::Player::updateSprite" alt="" coords="220,5,417,35"/>
+<area shape="rect" id="node5" href="$class_f_a_world_1_1_player.html#a1fbc0f7531b9f039d7a5ef5e07027a8c" title="FAWorld::Player::getCurrentAnim" alt="" coords="468,5,684,35"/>
+</map>

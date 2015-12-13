@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node17" href="$render_8h.html" title="render/render.h" alt="" coords="535,83,644,112"/>
+<area shape="rect" id="node26" href="$celfile_8h.html" title="cel/celfile.h" alt="" coords="932,160,1020,189"/>
+<area shape="rect" id="node36" href="$celframe_8h.html" title="cel/celframe.h" alt="" coords="671,160,775,189"/>
+<area shape="rect" id="node43" href="$disablewarn_8h.html" title="misc/disablewarn.h" alt="" coords="58,237,191,267"/>
+<area shape="rect" id="node47" href="$enablewarn_8h.html" title="misc/enablewarn.h" alt="" coords="396,237,527,267"/>
+<area shape="rect" id="node49" href="$drawcommand_8h.html" title="rocketglue/drawcommand.h" alt="" coords="188,160,370,189"/>
+<area shape="rect" id="node57" href="$levelobjects_8h.html" title="levelobjects.h" alt="" coords="495,160,596,189"/>
+<area shape="rect" id="node31" href="$pal_8h.html" title="pal.h" alt="" coords="900,237,951,267"/>
+<area shape="rect" id="node40" href="$helper2d_8h.html" title="misc/helper2d.h" alt="" coords="551,237,666,267"/>
+</map>

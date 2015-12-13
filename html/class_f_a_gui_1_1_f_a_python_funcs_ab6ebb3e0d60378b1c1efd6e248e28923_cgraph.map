@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_a_world_1_1_inventory.html#a5757807eb3653d0f10c945941f34147c" title="FAWorld::Inventory::getItemAt" alt="" coords="288,5,488,35"/>
+<area shape="rect" id="node5" href="$class_f_a_world_1_1_item.html#aa93072efcb6eff29b43d82297470e2c1" title="FAWorld::Item::isEmpty" alt="" coords="880,159,1043,188"/>
+<area shape="rect" id="node7" href="$class_f_a_world_1_1_item.html#ad641b58719596604934377509b36125c" title="FAWorld::Item::isReal" alt="" coords="312,188,464,217"/>
+<area shape="rect" id="node9" href="$class_f_a_world_1_1_item.html#a7f64ed288f8fe4250f7e425db52b56cd" title="FAWorld::Item::getCornerCoords" alt="" coords="281,241,495,271"/>
+<area shape="rect" id="node11" href="$class_f_a_world_1_1_item.html#a1f9e3942cf9b273de32dd11e825e565b" title="FAWorld::Item::getInvCoords" alt="" coords="292,295,484,324"/>
+<area shape="rect" id="node13" href="$class_f_a_world_1_1_inventory.html#a0dd7b54868aa8320d4c7a84c62ad43f8" title="FAWorld::Inventory::putItem" alt="" coords="295,135,481,164"/>
+<area shape="rect" id="node29" href="$class_f_a_world_1_1_item.html#aece75a76ee9033a27b494e9953d36625" title="FAWorld::Item::getGraphicValue" alt="" coords="283,348,493,377"/>
+<area shape="rect" id="node15" href="$class_f_a_world_1_1_inventory.html#a762bbb4dc49e65cebf08ac6d06906dfd" title="FAWorld::Inventory::canPlaceItem" alt="" coords="545,213,767,243"/>
+<area shape="rect" id="node17" href="$class_f_a_world_1_1_item.html#aa72f2bacafd5067ba4add0d8e8918311" title="FAWorld::Item::getEquipLoc" alt="" coords="868,265,1055,295"/>
+<area shape="rect" id="node24" href="$class_f_a_world_1_1_inventory.html#a463cf57748e5f68b5c33f916e109131c" title="FAWorld::Inventory::collectEffects" alt="" coords="545,109,767,139"/>
+<area shape="rect" id="node20" href="$class_f_a_world_1_1_item.html#a45732ee9631eb73d02b0a8bda88ecbde" title="FAWorld::Item::getType" alt="" coords="880,212,1043,241"/>
+<area shape="rect" id="node27" href="$class_f_a_world_1_1_actor_stats.html#ac15e9e11adf2b230af3990a61f71a155" title="FAWorld::ActorStats::recalculateDerivedStats" alt="" coords="816,105,1107,135"/>
+</map>

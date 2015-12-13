@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$class_f_a_world_1_1_mage_stats.html" title="FAWorld::MageStats" alt="" coords="5,160,149,189"/>
+<area shape="rect" id="node7" href="$class_f_a_world_1_1_melee_stats.html" title="FAWorld::MeleeStats" alt="" coords="173,160,320,189"/>
+<area shape="rect" id="node9" href="$class_f_a_world_1_1_ranger_stats.html" title="FAWorld::RangerStats" alt="" coords="344,160,499,189"/>
+<area shape="rect" id="node2" href="$class_f_a_world_1_1_actor_stats.html" title="FAWorld::ActorStats" alt="" coords="176,5,317,35"/>
+</map>

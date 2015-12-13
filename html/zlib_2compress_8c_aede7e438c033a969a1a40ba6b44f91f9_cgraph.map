@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$deflate_8c.html#aedba3a94d6e827d61b660443ae5b9f09" title="deflate" alt="" coords="153,192,215,221"/>
+<area shape="rect" id="node42" href="$deflate_8c.html#ada68769789b1d84de7e708d6e848a075" title="deflateEnd" alt="" coords="143,245,225,274"/>
+<area shape="rect" id="node5" href="$zlib_2crc32_8c.html#af5a1c7b05170540ef3bb084e6cf903c4" title="crc32" alt="" coords="739,22,792,52"/>
+<area shape="rect" id="node7" href="$deflate_8c.html#a6db0a0a840addf113cb217c4aa1c0384" title="putShortMSB" alt="" coords="285,269,384,298"/>
+<area shape="rect" id="node9" href="$adler32_8c.html#a86607743a4b76949b24cf5cc2f01a40d" title="adler32" alt="" coords="733,100,797,129"/>
+<area shape="rect" id="node11" href="$deflate_8c.html#ae9a3263767d40c4f7443bf07c31e0119" title="flush_pending" alt="" coords="444,244,545,273"/>
+<area shape="rect" id="node15" href="$deflate_8c.html#a5d5671ede8ee51f34a50cfd5f498d2f0" title="deflate_huff" alt="" coords="289,165,380,194"/>
+<area shape="rect" id="node29" href="$deflate_8c.html#aea13a1600dd641f5584b39b840eecaae" title="deflate_rle" alt="" coords="293,112,376,141"/>
+<area shape="rect" id="node32" href="$trees_8c.html#abd2aff56f489aac6182c99eb739c41be" title="_tr_align" alt="" coords="300,322,369,352"/>
+<area shape="rect" id="node36" href="$trees_8c.html#a65fd19df7fed60e83492819918defec2" title="_tr_stored_block" alt="" coords="276,376,393,405"/>
+<area shape="rect" id="node13" href="$zutil_8c.html#aac7aa2bbd8584b96c89e311b6c3409a5" title="zmemcpy" alt="" coords="727,270,804,300"/>
+<area shape="rect" id="node17" href="$deflate_8c.html#a6cf3c43817cac5f5c422e94b2a57ea49" title="fill_window" alt="" coords="452,165,537,194"/>
+<area shape="rect" id="node20" href="$deflate_8c.html#a30b7fcd3e6bea023c1c00eafad492639" title="read_buf" alt="" coords="600,112,672,141"/>
+<area shape="rect" id="node25" href="$namespace_audio.html#a1bc7922d7669f621d532686d08bb8e41" title="Audio::init" alt="" coords="596,165,676,194"/>
+<area shape="rect" id="node27" href="$zutil_8c.html#a9d1ad31f82b89b791ce9c70c24d3947c" title="zmemzero" alt="" coords="595,218,677,248"/>
+<area shape="rect" id="node34" href="$trees_8c.html#ab3b46873b1a7611ee2ca275cfd1c8f79" title="bi_flush" alt="" coords="461,322,528,352"/>
+<area shape="rect" id="node38" href="$trees_8c.html#a1f3d6aa6a0147df6a48af35bcb5719d6" title="copy_block" alt="" coords="451,376,539,405"/>
+<area shape="rect" id="node40" href="$trees_8c.html#a8532fd6b0e6cd8b6a633fe249ac4353c" title="bi_windup" alt="" coords="596,376,676,405"/>
+</map>

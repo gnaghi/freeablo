@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_a_render_1_1_sprite_manager.html#a3654837a02b4e588ea5a5f486dac3203" title="To be called from the render thread." alt="" coords="249,5,457,35"/>
+<area shape="rect" id="node5" href="$class_f_a_render_1_1_sprite_cache.html#aa02c7cd887f96554f6f2e62f2588d1fa" title="FARender::SpriteCache::clear" alt="" coords="507,5,704,35"/>
+</map>

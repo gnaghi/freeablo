@@ -1,0 +1,36 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$zlib_8h.html" title="extern/StormLib/src/zlib/zlib.h" alt="" coords="6283,83,6477,112"/>
+<area shape="rect" id="node5" href="$_storm_common_8h.html" title="extern/StormLib/src/StormCommon.h" alt="" coords="2829,160,3067,189"/>
+<area shape="rect" id="node47" href="$zutil_8h.html" title="extern/StormLib/src/zlib/zutil.h" alt="" coords="6281,160,6479,189"/>
+<area shape="rect" id="node67" href="$zlib_2compress_8c.html" title="extern/StormLib/src/zlib/compress.c" alt="" coords="6861,160,7093,189"/>
+<area shape="rect" id="node7" href="$_file_stream_8cpp.html" title="extern/StormLib/src/FileStream.cpp" alt="" coords="5,237,232,267"/>
+<area shape="rect" id="node9" href="$_s_base_common_8cpp.html" title="extern/StormLib/src/SBaseCommon.cpp" alt="" coords="256,237,512,267"/>
+<area shape="rect" id="node11" href="$_s_base_dump_data_8cpp.html" title="extern/StormLib/src/SBaseDumpData.cpp" alt="" coords="536,237,803,267"/>
+<area shape="rect" id="node13" href="$_s_base_file_table_8cpp.html" title="extern/StormLib/src/SBaseFileTable.cpp" alt="" coords="827,237,1083,267"/>
+<area shape="rect" id="node15" href="$_s_base_sub_types_8cpp.html" title="extern/StormLib/src/SBaseSubTypes.cpp" alt="" coords="1107,237,1368,267"/>
+<area shape="rect" id="node17" href="$_s_compression_8cpp.html" title="extern/StormLib/src/SCompression.cpp" alt="" coords="1392,237,1643,267"/>
+<area shape="rect" id="node19" href="$_s_file_add_file_8cpp.html" title="extern/StormLib/src/SFileAddFile.cpp" alt="" coords="1667,237,1904,267"/>
+<area shape="rect" id="node21" href="$_s_file_attributes_8cpp.html" title="extern/StormLib/src/SFileAttributes.cpp" alt="" coords="1928,237,2179,267"/>
+<area shape="rect" id="node23" href="$_s_file_compact_archive_8cpp.html" title="extern/StormLib/src/SFileCompactArchive.cpp" alt="" coords="2203,237,2493,267"/>
+<area shape="rect" id="node25" href="$_s_file_create_archive_8cpp.html" title="extern/StormLib/src/SFileCreateArchive.cpp" alt="" coords="2517,237,2795,267"/>
+<area shape="rect" id="node27" href="$_s_file_extract_file_8cpp.html" title="extern/StormLib/src/SFileExtractFile.cpp" alt="" coords="2819,237,3077,267"/>
+<area shape="rect" id="node29" href="$_s_file_find_file_8cpp.html" title="extern/StormLib/src/SFileFindFile.cpp" alt="" coords="3101,237,3341,267"/>
+<area shape="rect" id="node31" href="$_s_file_get_file_info_8cpp.html" title="extern/StormLib/src/SFileGetFileInfo.cpp" alt="" coords="3365,237,3624,267"/>
+<area shape="rect" id="node33" href="$_s_file_list_file_8cpp.html" title="extern/StormLib/src/SFileListFile.cpp" alt="" coords="3648,237,3885,267"/>
+<area shape="rect" id="node35" href="$_s_file_open_archive_8cpp.html" title="extern/StormLib/src/SFileOpenArchive.cpp" alt="" coords="3909,237,4179,267"/>
+<area shape="rect" id="node37" href="$_s_file_open_file_ex_8cpp.html" title="extern/StormLib/src/SFileOpenFileEx.cpp" alt="" coords="4203,237,4464,267"/>
+<area shape="rect" id="node39" href="$_s_file_patch_archives_8cpp.html" title="extern/StormLib/src/SFilePatchArchives.cpp" alt="" coords="4488,237,4768,267"/>
+<area shape="rect" id="node41" href="$_s_file_read_file_8cpp.html" title="extern/StormLib/src/SFileReadFile.cpp" alt="" coords="4792,237,5037,267"/>
+<area shape="rect" id="node43" href="$_s_file_verify_8cpp.html" title="extern/StormLib/src/SFileVerify.cpp" alt="" coords="5061,237,5291,267"/>
+<area shape="rect" id="node45" href="$_storm_test_8cpp.html" title="extern/StormLib/test/StormTest.cpp" alt="" coords="5315,237,5544,267"/>
+<area shape="rect" id="node49" href="$adler32_8c.html" title="extern/StormLib/src/zlib/adler32.c" alt="" coords="5568,237,5784,267"/>
+<area shape="rect" id="node51" href="$zlib_2crc32_8c.html" title="extern/StormLib/src/zlib/crc32.c" alt="" coords="5808,237,6013,267"/>
+<area shape="rect" id="node53" href="$deflate_8h.html" title="extern/StormLib/src/zlib/deflate.h" alt="" coords="6037,237,6251,267"/>
+<area shape="rect" id="node59" href="$inffast_8c.html" title="extern/StormLib/src/zlib/inffast.c" alt="" coords="6275,237,6485,267"/>
+<area shape="rect" id="node61" href="$inflate_8c.html" title="extern/StormLib/src/zlib/inflate.c" alt="" coords="6509,237,6720,267"/>
+<area shape="rect" id="node63" href="$inftrees_8c.html" title="extern/StormLib/src/zlib/inftrees.c" alt="" coords="6744,237,6963,267"/>
+<area shape="rect" id="node65" href="$zutil_8c.html" title="extern/StormLib/src/zlib/zutil.c" alt="" coords="6987,237,7184,267"/>
+<area shape="rect" id="node55" href="$deflate_8c.html" title="extern/StormLib/src/zlib/deflate.c" alt="" coords="5921,315,6135,344"/>
+<area shape="rect" id="node57" href="$trees_8c.html" title="extern/StormLib/src/zlib/trees.c" alt="" coords="6159,315,6361,344"/>
+<area shape="rect" id="node69" href="$compress__zlib_8c.html" title="extern/StormLib/src/zlib/compress_zlib.c" alt="" coords="7208,237,7467,267"/>
+</map>

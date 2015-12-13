@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$adler32_8c.html" title="extern/StormLib/src/zlib/adler32.c" alt="" coords="5,83,221,112"/>
+<area shape="rect" id="node5" href="$zlib_2crc32_8c.html" title="extern/StormLib/src/zlib/crc32.c" alt="" coords="245,83,451,112"/>
+<area shape="rect" id="node7" href="$deflate_8h.html" title="extern/StormLib/src/zlib/deflate.h" alt="" coords="475,83,688,112"/>
+<area shape="rect" id="node13" href="$inffast_8c.html" title="extern/StormLib/src/zlib/inffast.c" alt="" coords="712,83,923,112"/>
+<area shape="rect" id="node15" href="$inflate_8c.html" title="extern/StormLib/src/zlib/inflate.c" alt="" coords="947,83,1157,112"/>
+<area shape="rect" id="node17" href="$inftrees_8c.html" title="extern/StormLib/src/zlib/inftrees.c" alt="" coords="1181,83,1400,112"/>
+<area shape="rect" id="node19" href="$zutil_8c.html" title="extern/StormLib/src/zlib/zutil.c" alt="" coords="1424,83,1621,112"/>
+<area shape="rect" id="node9" href="$deflate_8c.html" title="extern/StormLib/src/zlib/deflate.c" alt="" coords="359,160,572,189"/>
+<area shape="rect" id="node11" href="$trees_8c.html" title="extern/StormLib/src/zlib/trees.c" alt="" coords="596,160,799,189"/>
+</map>

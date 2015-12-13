@@ -1,0 +1,15 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespace_f_a_i_o.html#a05f68571b79c469db77a26cc74fdc8a3" title="FAIO::FAfseek" alt="" coords="185,417,295,447"/>
+<area shape="rect" id="node26" href="$namespace_f_a_i_o.html#a68409e8d223eec973ba9abdce4e0c6d0" title="FAIO::FAfread" alt="" coords="187,364,293,393"/>
+<area shape="rect" id="node5" href="$_s_file_read_file_8cpp.html#a6e34d029cecd26331b44985dd5622927" title="SFileSetFilePointer" alt="" coords="345,160,479,189"/>
+<area shape="rect" id="node24" href="$_file_stream_8cpp.html#a10b9a284527af83a44533867b0aff0fc" title="GetLastError" alt="" coords="733,443,829,472"/>
+<area shape="rect" id="node7" href="$_s_base_common_8cpp.html#a3216d5c62d758be099dfa3324cf34dd3" title="IsValidFileHandle" alt="" coords="720,213,843,243"/>
+<area shape="rect" id="node11" href="$_file_stream_8cpp.html#ae12246cf2f9f9aa8e3a6367bd9fa2aed" title="SetLastError" alt="" coords="735,160,828,189"/>
+<area shape="rect" id="node13" href="$_file_stream_8cpp.html#a4cda734fc220ab4b32e1f2bf9b5446fc" title="FileStream_GetPos" alt="" coords="528,5,664,35"/>
+<area shape="rect" id="node15" href="$_file_stream_8cpp.html#af505319882f0f4aaf396b6d061a2275b" title="FileStream_GetSize" alt="" coords="712,83,851,112"/>
+<area shape="rect" id="node17" href="$_s_file_read_file_8cpp.html#a1d30c5a49fb9c1c1669884646282e4d3" title="SFileGetFileSize" alt="" coords="536,160,656,189"/>
+<area shape="rect" id="node22" href="$_file_stream_8cpp.html#a593f3b1416f7497c28fa5552cd1b3003" title="FileStream_Read" alt="" coords="720,339,843,368"/>
+<area shape="rect" id="node9" href="$_s_base_common_8cpp.html#a67882fdf8d424efbb6b2e1f748583a66" title="IsValidMpqHandle" alt="" coords="899,213,1027,243"/>
+<area shape="rect" id="node28" href="$_s_file_read_file_8cpp.html#a3c81a68cbecef70ab57c9d3145ef8b7d" title="SFileReadFile" alt="" coords="360,364,464,393"/>
+<area shape="rect" id="node32" href="$_s_base_common_8cpp.html#ace1d87f4df2379a25c5516fbcc027d0c" title="AllocatePatchInfo" alt="" coords="533,416,659,445"/>
+</map>

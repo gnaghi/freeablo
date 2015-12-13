@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$zutil_8c.html#a41dc53193e9af4588e7bcbe459f4f834" title="zcalloc" alt="" coords="164,5,225,35"/>
+<area shape="rect" id="node5" href="$zutil_8c.html#a03a8230ad4ec43e8916fa91aad05bfd3" title="zcfree" alt="" coords="165,59,224,88"/>
+<area shape="rect" id="node7" href="$deflate_8c.html#ada68769789b1d84de7e708d6e848a075" title="deflateEnd" alt="" coords="153,112,236,141"/>
+<area shape="rect" id="node9" href="$deflate_8c.html#a4f17a4d330d76066b4b26c27f7cde5dc" title="deflateReset" alt="" coords="147,165,243,195"/>
+<area shape="rect" id="node11" href="$zlib_2crc32_8c.html#af5a1c7b05170540ef3bb084e6cf903c4" title="crc32" alt="" coords="296,85,349,115"/>
+<area shape="rect" id="node13" href="$adler32_8c.html#a86607743a4b76949b24cf5cc2f01a40d" title="adler32" alt="" coords="291,139,355,168"/>
+<area shape="rect" id="node15" href="$trees_8c.html#a330f47f21a267ad5616b9ba72bf7f90b" title="_tr_init" alt="" coords="292,192,353,221"/>
+<area shape="rect" id="node26" href="$deflate_8c.html#ab197bb7bbeee75dcfccbfa8d55cae272" title="lm_init" alt="" coords="293,245,352,275"/>
+<area shape="rect" id="node17" href="$trees_8c.html#af0327179e9998353dddfef79251847d4" title="tr_static_init" alt="" coords="403,165,496,195"/>
+<area shape="rect" id="node24" href="$trees_8c.html#ac5265fdf07ca6c4cc57769e2fb546d55" title="init_block" alt="" coords="411,219,488,248"/>
+<area shape="rect" id="node19" href="$trees_8c.html#a599e4c4281ef721bd56222d9f01dec7c" title="gen_codes" alt="" coords="544,140,629,169"/>
+<area shape="rect" id="node21" href="$trees_8c.html#ac59b08248ea9953b87f375717ab8524a" title="bi_reverse" alt="" coords="677,167,760,196"/>
+</map>

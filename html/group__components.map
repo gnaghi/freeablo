@@ -1,0 +1,8 @@
+<map id="structs" name="structs">
+<area shape="rect" id="node1" href="$group__misc.html" title="Misc" alt="" coords="165,5,216,35"/>
+<area shape="rect" id="node2" href="$group__render.html" title="Render" alt="" coords="159,59,223,88"/>
+<area shape="rect" id="node4" href="$group__level.html" title="Level" alt="" coords="164,112,217,141"/>
+<area shape="rect" id="node5" href="$group__faio.html" title="FAIO" alt="" coords="164,165,217,195"/>
+<area shape="rect" id="node6" href="$group__diabloexe.html" title="DiabloExe" alt="" coords="149,219,232,248"/>
+<area shape="rect" id="node7" href="$group__cel.html" title="Cel" alt="" coords="169,272,212,301"/>
+</map>
