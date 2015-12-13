@@ -1,0 +1,11 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Input::InputManager::Event::_vals",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mouseButton" ,fontname="Helvetica"];
+  Node2 [label="Input::InputManager::Event::_vals::_mouseButton",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_button.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mouseMove" ,fontname="Helvetica"];
+  Node3 [label="Input::InputManager::Event::_vals::_mouseMove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_input_1_1_input_manager_1_1_event_1_1__vals_1_1__mouse_move.html"];
+}

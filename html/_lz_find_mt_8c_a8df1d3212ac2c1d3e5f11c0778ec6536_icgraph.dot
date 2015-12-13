@@ -1,0 +1,23 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="MtSync_StopWriting",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="MtSync_Destruct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lz_find_mt_8c.html#abe828e1f84f9d54d9d52bf271cc656ba"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="MatchFinderMt_Destruct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lz_find_mt_8h.html#a8f04458f06b00f3c982627cc01f566ce"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="LzmaEnc_Destruct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lzma_enc_8c.html#a468c61c864910402968dee57bc958ea8"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="LzmaEnc_Destroy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lzma_enc_8h.html#a065756196601bbeb1910df0f574205ac"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="LzmaEncode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lzma_enc_8h.html#a5b557f56f2aba7069f192c2d51c187cc"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="BtThreadFunc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lz_find_mt_8c.html#a9388955f0272d2954a5f7d30de7e595f"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="MatchFinderMt_ReleaseStream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lz_find_mt_8h.html#ab05936f9e72c6dab29e8680102121740"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="LzmaEnc_Finish",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lzma_enc_8c.html#a2686436c7efca3ce0b2c9f66d14f10ea"];
+}

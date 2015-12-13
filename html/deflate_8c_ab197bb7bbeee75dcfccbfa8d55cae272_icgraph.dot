@@ -1,0 +1,13 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="lm_init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="deflateReset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$deflate_8c.html#a4f17a4d330d76066b4b26c27f7cde5dc"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="deflateInit2_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$deflate_8c.html#ae501d2862c68d17b909d6f1c9264815c"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="deflateInit_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$deflate_8c.html#a0e6601591faa9573f27340153b0f3296"];
+}

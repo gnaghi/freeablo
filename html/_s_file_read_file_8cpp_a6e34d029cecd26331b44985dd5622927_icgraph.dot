@@ -1,0 +1,25 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SFileSetFilePointer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="FAIO::FAfseek",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_f_a_i_o.html#a05f68571b79c469db77a26cc74fdc8a3"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Level::TileSet::TileSet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_level_1_1_tile_set.html#a25885e5e41f2220ddec063dd66615054"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Cel::CelFile::CelFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cel_1_1_cel_file.html#a7aa56b24ad6db831061b2b1f4faed266"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="FAIO::readCString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_f_a_i_o.html#a812b04ac9c072550624f7f652aebd213"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="FAIO::readCStringFromWin32Binary",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_f_a_i_o.html#a8d65de399c241036f7d220dd3fcf8c5d"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Level::Min::Min",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_level_1_1_min.html#ab29c456876f2cc69a0247e419fa17337"];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="FAIOFileInterface::Seek",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_i_o_file_interface.html#a296920878fdde9a655191137f4ef410c",tooltip="Seeks to a point in a previously opened file."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="FAIO::FAftell",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_f_a_i_o.html#ac08b4b781701ddb250389584e532cfee"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="FAIOFileInterface::Tell",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_i_o_file_interface.html#a6f40abe000b3ba4870610a5e491cf512",tooltip="Returns the current position of the file pointer."];
+}

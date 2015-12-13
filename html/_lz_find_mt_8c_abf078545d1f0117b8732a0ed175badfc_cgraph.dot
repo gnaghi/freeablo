@@ -1,0 +1,27 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DEF_GetHeads2",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Event_Set",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_threads_8c.html#a4c894884b1268b8d00d2a96489ba89e3"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="BOOLToWRes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_threads_8c.html#a4cab6ca310179ac5fd522acd3fa59a50"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="MatchFinder_NeedMove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lz_find_8c.html#a73e1c37ad8c3c7825e18df404715717b"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="MatchFinder_GetPointerToCurrentPos",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lz_find_8c.html#a5c1fa1397cda08989ae6c5762ab2ecfa"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="MatchFinder_MoveBlock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lz_find_8c.html#a486cf924c1f3660f84871dfe21f22df5"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="MatchFinder_ReadIfRequired",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lz_find_8c.html#a2f38eecea3cc5a353ddf42bafcca7c08"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="MatchFinder_ReduceOffsets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lz_find_8c.html#af20649c50f586d14d31435d0611447cd"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="MatchFinder_Normalize3",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lz_find_8c.html#a76f1bca871fc8831a73b67b9e7a778e1"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Semaphore_Release1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_threads_8c.html#a6d392082486c2dd897b1256a5b5eb8f7"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Semaphore_ReleaseN",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_threads_8c.html#a1dfc591d0c0c4fcc8881567bfa146498"];
+}

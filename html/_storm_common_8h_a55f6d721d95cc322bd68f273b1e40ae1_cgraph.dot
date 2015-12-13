@@ -1,0 +1,15 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="WriteSectorOffsets",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="EncryptMpqBlock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_common_8cpp.html#af19849fff79ec5da0c98df69ede4a7b6"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="FileStream_Write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_file_stream_8cpp.html#a36307955e8de92f5ea26be07ea3b9cb4"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SetLastError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_file_stream_8cpp.html#ae12246cf2f9f9aa8e3a6367bd9fa2aed"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="GetLastError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_file_stream_8cpp.html#a10b9a284527af83a44533867b0aff0fc"];
+}

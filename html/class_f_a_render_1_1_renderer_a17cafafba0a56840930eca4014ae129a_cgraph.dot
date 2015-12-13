@@ -1,0 +1,11 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="FARender::Renderer::~Renderer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Render::quitGui",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_render.html#ad9d50c20961996439097b561b6d0f183"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Audio::quit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_audio.html#a7234a67a576788cf386dd445ed4ba8f4"];
+}

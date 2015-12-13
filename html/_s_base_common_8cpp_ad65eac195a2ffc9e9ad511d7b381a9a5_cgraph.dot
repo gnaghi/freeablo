@@ -1,0 +1,25 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="WriteMpqDataMD5",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AllocateMd5Buffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_common_8cpp.html#a6c6b7ba3c8ec84b3f0f9f3e79ff9d33f"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="FileStream_Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_file_stream_8cpp.html#a593f3b1416f7497c28fa5552cd1b3003"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="GetLastError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_file_stream_8cpp.html#a10b9a284527af83a44533867b0aff0fc"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CalculateDataBlockHash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_common_8cpp.html#aec4669e8a9275dc112ebca320ae0e08a"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="md5_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$md5_8c.html#a26c1379e5ead2590effec89de6b8cd11"];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="md5_done",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$md5_8c.html#aee76a4c9f37bfe88d943301f3fa8126f"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="zeromem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tomcrypt__misc_8h.html#a7ecf35c558d5f07c279cfc4f5231b655"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="FileStream_Write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_file_stream_8cpp.html#a36307955e8de92f5ea26be07ea3b9cb4"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="SetLastError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_file_stream_8cpp.html#ae12246cf2f9f9aa8e3a6367bd9fa2aed"];
+}

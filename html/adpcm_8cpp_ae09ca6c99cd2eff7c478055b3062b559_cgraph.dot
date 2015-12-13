@@ -1,0 +1,15 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CompressADPCM",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TADPCMStream::WriteByteSample",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t_a_d_p_c_m_stream.html#aa472bcd7ae6a3c12e94657916d565296"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="TADPCMStream::ReadWordSample",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t_a_d_p_c_m_stream.html#a670b66453ecd6d5e4c55fab6243ebbf1"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="TADPCMStream::LengthProcessed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t_a_d_p_c_m_stream.html#a78f5f80d8374bb47353ea678596501b1"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="TADPCMStream::WriteWordSample",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t_a_d_p_c_m_stream.html#a1e438ec20279f30a473bb593db950a2c"];
+}

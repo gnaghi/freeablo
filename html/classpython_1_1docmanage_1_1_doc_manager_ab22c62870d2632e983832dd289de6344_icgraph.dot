@@ -1,0 +1,11 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="python.docmanage.DocManager.pause",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="python.docmanage.DocManager.togglePause",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpython_1_1docmanage_1_1_doc_manager.html#adec74ea70e6fa732d9c93e318fc7e566"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="python.docmanage.DocManager.onKeyDown",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpython_1_1docmanage_1_1_doc_manager.html#af8b586506f8117c3c0e46eb33a047dd9"];
+}

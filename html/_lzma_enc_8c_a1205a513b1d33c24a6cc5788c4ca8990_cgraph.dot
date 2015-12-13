@@ -1,0 +1,25 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="LzmaEnc_Create",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="LzmaEnc_Construct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lzma_enc_8c.html#ae75399a1aab501f1fd7cd6bcc4c2f7ec"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="MatchFinder_Construct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lz_find_8c.html#a487aeb881073394dc1c0755d4790c5ea"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="MatchFinderMt_Construct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lz_find_mt_8c.html#a12919af4249f297f157a5f862d4ea040"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="MtSync_Construct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lz_find_mt_8c.html#a828c0c1f691af42f15d19574d54154de"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="LzmaEncProps_Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lzma_enc_8c.html#a336bf0e92adf6ff680547c58fd60baa6"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="LzmaEnc_SetProps",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lzma_enc_8c.html#a1d041ccb4b74f5608f08bc9cc97ae4cd"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="LzmaEncProps_Normalize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lzma_enc_8c.html#acd23d29a44a6a248851b7e0ef8016d87"];
+  Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="LzmaEnc_FastPosInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lzma_enc_8c.html#ae737021e88f3258ec97393859a2f1926"];
+  Node2 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="LzmaEnc_InitPriceTables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lzma_enc_8c.html#a6ee9c9a2ad5145bd684d8f5c79433bb4"];
+}

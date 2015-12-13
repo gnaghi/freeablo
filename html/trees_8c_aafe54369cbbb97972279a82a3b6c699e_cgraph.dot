@@ -1,0 +1,39 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="_tr_flush_block",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="detect_data_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trees_8c.html#aba5a443f39dc6a62117f7bbe268e60b5"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="build_tree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trees_8c.html#ae24585b9d3230020126f1c8ae8f240f9"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="pqdownheap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trees_8c.html#a44f0c568451fbfd68a418eaddea09982"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="gen_bitlen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trees_8c.html#a1ad07677feac279d0f161fea3891af92"];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="gen_codes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trees_8c.html#a599e4c4281ef721bd56222d9f01dec7c"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="bi_reverse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trees_8c.html#ac59b08248ea9953b87f375717ab8524a"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="build_bl_tree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trees_8c.html#aef05b1c8b7f7ef2902111a8f415ead66"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="scan_tree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trees_8c.html#a7a7678fb5fcf9024b76f5ce22abce082"];
+  Node8 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="_tr_stored_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trees_8c.html#a65fd19df7fed60e83492819918defec2"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="copy_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trees_8c.html#a1f3d6aa6a0147df6a48af35bcb5719d6"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="bi_windup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trees_8c.html#a8532fd6b0e6cd8b6a633fe249ac4353c"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="compress_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trees_8c.html#a507733a2d56ecdb7b6d7b169f241d8ea"];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="send_all_trees",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trees_8c.html#a8e697cc571f3acaa017cbd15bc352fe5"];
+  Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="send_tree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trees_8c.html#a66b34bd277c8c1de59110a448a55b467"];
+  Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="init_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trees_8c.html#ac5265fdf07ca6c4cc57769e2fb546d55"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

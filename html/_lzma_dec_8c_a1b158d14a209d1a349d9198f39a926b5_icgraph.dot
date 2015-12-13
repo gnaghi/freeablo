@@ -1,0 +1,13 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="LzmaDec_FreeProbs",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="LzmaDec_Free",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lzma_dec_8h.html#ad0e72806c25f060c1327c7325f179a67"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="LzmaDec_Allocate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lzma_dec_8h.html#a8580dca7a1a141ba1793006433a94bef"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="LzmaDecode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_lzma_dec_8h.html#ab8c63d6972edb0325afc6326936afab1"];
+}

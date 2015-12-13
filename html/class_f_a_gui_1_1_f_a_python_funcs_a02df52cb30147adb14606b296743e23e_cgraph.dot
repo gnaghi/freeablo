@@ -1,0 +1,21 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="FAGui::FAPythonFuncs::updateInventory",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="FAWorld::Inventory::getItemAt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_inventory.html#a5757807eb3653d0f10c945941f34147c"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="FAWorld::Item::getGraphicValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item.html#aece75a76ee9033a27b494e9953d36625"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="FAWorld::Item::isEmpty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item.html#aa93072efcb6eff29b43d82297470e2c1"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="FAWorld::Item::getInvCoords",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item.html#a1f9e3942cf9b273de32dd11e825e565b"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="FAWorld::Item::isReal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item.html#ad641b58719596604934377509b36125c"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="FAWorld::Item::getInvSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item.html#a72a463ee92e0d9d83ad2b4fcee8672cf"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="FAWorld::Item::getCornerCoords",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item.html#a7f64ed288f8fe4250f7e425db52b56cd"];
+}

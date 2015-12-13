@@ -1,0 +1,11 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="BZ2_bzwrite",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="BZ2_bzWrite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bzlib_8c.html#a2c9f27601f05438ac27f086911f4f5d4"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="BZ2_bzCompress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bzlib_8c.html#afaf431b4be66dc0dc2554dc8a8a87de7"];
+}

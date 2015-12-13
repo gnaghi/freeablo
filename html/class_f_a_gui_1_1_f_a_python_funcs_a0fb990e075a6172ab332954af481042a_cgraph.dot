@@ -1,0 +1,13 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="FAGui::FAPythonFuncs::startGame",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Cel::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_cel.html#a4e01b99470fde6ba49817d25dc1e2bc6"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Engine::EngineMain::unPause",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_engine_1_1_engine_main.html#ae46d281c8d2c93e0536ca381726cbe47"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="FAGui::GuiManager::showIngameGui",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_gui_1_1_gui_manager.html#af7667c4778fe6db955c3b32399213c97"];
+}

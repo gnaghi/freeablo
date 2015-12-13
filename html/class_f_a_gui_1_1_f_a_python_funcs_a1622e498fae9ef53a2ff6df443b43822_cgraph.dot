@@ -1,0 +1,21 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="FAGui::FAPythonFuncs::setHotkey",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Input::convertRocketKeyToAscii",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_input.html#a475d6846ae343c7decd8a69d23aa0f82"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Engine::EngineMain::getInputManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_engine_1_1_engine_main.html#adb8f448125f3c4e10659ad7e7f135a1b"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Input::Hotkey::save",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_input_1_1_hotkey.html#a8e53b8978df34c035f336cc966646e41"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Settings::Settings::loadFromFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_settings_1_1_settings.html#aa1bd46b374b1279a3f4d66b2e01ab03c"];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Settings::Settings::set",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_settings_1_1_settings.html#a617d9edfdc2c80e48b808efcd921b6bb"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="section",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$readme_8md.html#a761c9db34323d25e19c1f4e803188d6b"];
+  Node4 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Settings::Settings::save",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_settings_1_1_settings.html#ae752b0e9050e09a7beb01e07582fd12f"];
+}

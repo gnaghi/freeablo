@@ -1,0 +1,35 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="FAGui::FAPythonFuncs::placeItem",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="FAWorld::Inventory::getItemAt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_inventory.html#a5757807eb3653d0f10c945941f34147c"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="FAWorld::Item::isEmpty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item.html#aa93072efcb6eff29b43d82297470e2c1"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="FAWorld::Item::isReal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item.html#ad641b58719596604934377509b36125c"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="FAWorld::Item::getCornerCoords",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item.html#a7f64ed288f8fe4250f7e425db52b56cd"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="FAWorld::Item::getInvCoords",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item.html#a1f9e3942cf9b273de32dd11e825e565b"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="FAWorld::Inventory::putItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_inventory.html#a0dd7b54868aa8320d4c7a84c62ad43f8"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="FAWorld::Inventory::canPlaceItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_inventory.html#a762bbb4dc49e65cebf08ac6d06906dfd"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="FAWorld::Item::getEquipLoc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item.html#aa72f2bacafd5067ba4add0d8e8918311"];
+  Node8 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="FAWorld::Item::getType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item.html#a45732ee9631eb73d02b0a8bda88ecbde"];
+  Node7 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="FAWorld::Inventory::collectEffects",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_inventory.html#a463cf57748e5f68b5c33f916e109131c"];
+  Node11 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="FAWorld::ActorStats::recalculateDerivedStats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_actor_stats.html#ac15e9e11adf2b230af3990a61f71a155"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="FAWorld::Item::getGraphicValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item.html#aece75a76ee9033a27b494e9953d36625"];
+}

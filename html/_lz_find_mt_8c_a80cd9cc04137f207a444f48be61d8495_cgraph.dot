@@ -1,0 +1,18 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="MtSync_GetNextBlock",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Event_Reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_threads_8c.html#adcebff2a2a5098940f037eb6ba9d6873"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="BOOLToWRes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_threads_8c.html#a4cab6ca310179ac5fd522acd3fa59a50"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Event_Set",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_threads_8c.html#a4c894884b1268b8d00d2a96489ba89e3"];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Semaphore_Release1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_threads_8c.html#a6d392082486c2dd897b1256a5b5eb8f7"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Semaphore_ReleaseN",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_threads_8c.html#a1dfc591d0c0c4fcc8881567bfa146498"];
+}

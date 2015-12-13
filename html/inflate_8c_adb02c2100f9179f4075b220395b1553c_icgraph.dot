@@ -1,0 +1,15 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="inflateReset",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="inflateReset2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$inflate_8c.html#af5a145c15cfb580ef24ce3fc4d292a02"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="inflateInit2_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$inflate_8c.html#aa87e80daa481d931b2d4d414769d432a"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="inflateInit_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$inflate_8c.html#aed01e9084fe1ed4d8808bbcf525dfe63"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="inflateSync",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$inflate_8c.html#a91828dbb3f427115719a892872b414a4"];
+}

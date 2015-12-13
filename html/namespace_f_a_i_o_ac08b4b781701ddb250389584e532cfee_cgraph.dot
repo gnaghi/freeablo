@@ -1,0 +1,26 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="FAIO::FAftell",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SFileSetFilePointer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_file_read_file_8cpp.html#a6e34d029cecd26331b44985dd5622927"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="IsValidFileHandle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_common_8cpp.html#a3216d5c62d758be099dfa3324cf34dd3"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="IsValidMpqHandle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_common_8cpp.html#a67882fdf8d424efbb6b2e1f748583a66"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SetLastError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_file_stream_8cpp.html#ae12246cf2f9f9aa8e3a6367bd9fa2aed"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="FileStream_GetPos",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_file_stream_8cpp.html#a4cda734fc220ab4b32e1f2bf9b5446fc"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="FileStream_GetSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_file_stream_8cpp.html#af505319882f0f4aaf396b6d061a2275b"];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="SFileGetFileSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_file_read_file_8cpp.html#a1d30c5a49fb9c1c1669884646282e4d3"];
+  Node8 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="FileStream_Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_file_stream_8cpp.html#a593f3b1416f7497c28fa5552cd1b3003"];
+}

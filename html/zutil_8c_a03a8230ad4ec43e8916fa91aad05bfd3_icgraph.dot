@@ -1,0 +1,15 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="zcfree",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="deflateInit2_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$deflate_8c.html#ae501d2862c68d17b909d6f1c9264815c"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="deflateInit_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$deflate_8c.html#a0e6601591faa9573f27340153b0f3296"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="inflateInit2_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$inflate_8c.html#aa87e80daa481d931b2d4d414769d432a"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="inflateInit_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$inflate_8c.html#aed01e9084fe1ed4d8808bbcf525dfe63"];
+}

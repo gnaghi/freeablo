@@ -1,0 +1,13 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Misc::StringUtils::ciStartsWith",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Misc::StringUtils::startsWith",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_misc_1_1_string_utils.html#ae87707c9fd017f55237241315f93c94f"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Misc::StringUtils::lowerCase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_misc_1_1_string_utils.html#a2982264998fde90a8e01ebab4bd69e14",tooltip="Returns lower case copy of input string."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Misc::StringUtils::toLower",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_misc_1_1_string_utils.html#aa4d0bd593b4e8eebea933db0511616e2",tooltip="Transforms input string to lower case w/o copy."];
+}

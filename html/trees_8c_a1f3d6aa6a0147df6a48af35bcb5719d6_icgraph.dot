@@ -1,0 +1,21 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="copy_block",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="_tr_stored_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trees_8c.html#a65fd19df7fed60e83492819918defec2"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="deflate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$deflate_8c.html#aedba3a94d6e827d61b660443ae5b9f09"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="compress2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$zlib_2compress_8c.html#aede7e438c033a969a1a40ba6b44f91f9"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="compress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$zlib_2compress_8c.html#aef315743418d760a360e1be293d27cd1"];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Compress_ZLIB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_compression_8cpp.html#a76b9015cfca14abf02066adb598e39d0"];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="deflateParams",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$deflate_8c.html#a6be3d26b7e317aa4db6c7870b1911d4d"];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="_tr_flush_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trees_8c.html#aafe54369cbbb97972279a82a3b6c699e"];
+}

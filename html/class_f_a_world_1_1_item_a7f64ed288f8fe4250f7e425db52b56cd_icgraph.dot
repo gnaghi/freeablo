@@ -1,0 +1,26 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="FAWorld::Item::getCornerCoords",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="FAGui::FAPythonFuncs::placeItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_gui_1_1_f_a_python_funcs.html#ab6ebb3e0d60378b1c1efd6e248e28923"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="FAGui::BOOST_PYTHON_MODULE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="FAGui::FAPythonFuncs::updateInventory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_gui_1_1_f_a_python_funcs.html#a02df52cb30147adb14606b296743e23e"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="python.draggable.DraggableWidget.onLoad",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpython_1_1draggable_1_1_draggable_widget.html#a50ad10d58fa24439e148fdcb549ba73b"];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="python.draggable.DraggableWidget.onAmuletClick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpython_1_1draggable_1_1_draggable_widget.html#aff93530fe54fd820022cfa71cd82f303"];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="python.draggable.DraggableWidget.onBodyClick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpython_1_1draggable_1_1_draggable_widget.html#a587cbc720a6c0414b383ae2bf8ec7d3c"];
+  Node4 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="python.draggable.DraggableWidget.onRingClick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpython_1_1draggable_1_1_draggable_widget.html#a5dd08355ac329a1f039f137673c8b9d2"];
+  Node4 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="python.draggable.DraggableWidget.onWeaponClick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpython_1_1draggable_1_1_draggable_widget.html#a5418bd5677c2caead6e4081912907588"];
+  Node4 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="python.draggable.DraggableWidget.socketMouseDown",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpython_1_1draggable_1_1_draggable_widget.html#aea728a9ca8d1854752b4eecca75790a4"];
+}

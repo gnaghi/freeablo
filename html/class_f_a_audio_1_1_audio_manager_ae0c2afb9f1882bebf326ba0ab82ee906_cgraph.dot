@@ -1,0 +1,13 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="FAAudio::AudioManager::~AudioManager",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Audio::freeSound",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_audio.html#afeccfbb26a8934b2f65625af4cbeb5bc"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Audio::freeMusic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_audio.html#a6d7dacf61f15d103f537cacc6709ecd9"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Audio::quit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_audio.html#a7234a67a576788cf386dd445ed4ba8f4"];
+}

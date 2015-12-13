@@ -1,0 +1,9 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="FAIO::FAftell",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="FAIOFileInterface::Tell",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_i_o_file_interface.html#a6f40abe000b3ba4870610a5e491cf512",tooltip="Returns the current position of the file pointer."];
+}

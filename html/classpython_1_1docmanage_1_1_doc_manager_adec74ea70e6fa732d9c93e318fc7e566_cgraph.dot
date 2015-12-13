@@ -1,0 +1,20 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="python.docmanage.DocManager.togglePause",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="python.docmanage.DocManager.unpause",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpython_1_1docmanage_1_1_doc_manager.html#acbb51b8524073a1bc758a851d162df1f"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="python.docmanage.DocManager.toggleDoc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpython_1_1docmanage_1_1_doc_manager.html#afbcabe820c31769900a4a1c1581bbb6a"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="python.docmanage.DocManager.hideDoc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpython_1_1docmanage_1_1_doc_manager.html#a846750936832a95f1526d3f51f3d3319"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="python.docmanage.DocManager.showDoc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpython_1_1docmanage_1_1_doc_manager.html#a82ba5a62e8ec92a8d4b065d72bb2f5b3"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Engine::EngineMain::pause",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_engine_1_1_engine_main.html#a634ca46f524b9dbd4cdd4c93b0dd3d1b"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="python.docmanage.DocManager.pause",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpython_1_1docmanage_1_1_doc_manager.html#ab22c62870d2632e983832dd289de6344"];
+  Node7 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

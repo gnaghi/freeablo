@@ -1,0 +1,11 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="FAWorld::ItemManager::getUniqueItemCode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="FAWorld::ItemManager::getBaseItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item_manager.html#a41088aab7e1d32e29829a723079a1a79"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="FAWorld::ItemManager::getUniqueItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item_manager.html#aa6e878b6f2c6f712256fdd861f6a780d"];
+}

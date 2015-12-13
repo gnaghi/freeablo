@@ -1,0 +1,38 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="WriteMpqDataMD5",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SFileAddFile_Write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_storm_common_8h.html#a8bbeffca003d324051f5a4d93a6862a3"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SFileWriteFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_storm_lib_8h.html#a70c78df25d758e53550021e82078352e"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SFileAddFileEx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_storm_lib_8h.html#a9d092079ada150e05bfed5a26e65e184"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SFileAddFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_storm_lib_8h.html#ab6184a31092ac5364a8746b1fca3a822"];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SFileAddWave",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_storm_lib_8h.html#a4cc5ee53bb9a41f91d71a0be809ede22"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="SAttrFileSaveToMpq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_storm_common_8h.html#a1f552d4db51760c541354dc64e7808ea"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="SFileFlushArchive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_storm_lib_8h.html#a5f3daefb5c0d87a791fcc42ec40714d2"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="SFileCompactArchive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_storm_lib_8h.html#a4a8f24295ae27ee91ab52a2cc8a0e9ba"];
+  Node8 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="SFileCloseArchive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_storm_lib_8h.html#abe1ae9917ea665286bffd1524561fceb"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="FAIO::quit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_f_a_i_o.html#ae82e5f53b89d70f240951c564bdff66a"];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$exedump_2main_8cpp.html#a2c3f6775325c30275d11c6abee2db6a0"];
+  Node10 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="SFileCreateArchive2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_storm_lib_8h.html#aa2b6fa8f16b5ac42868c546533fe26ce"];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="SFileCreateArchive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_storm_lib_8h.html#a11342f379ed88e7b54873f1f53feb773"];
+  Node2 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="SListFileSaveToMpq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_storm_common_8h.html#a92fbeed559aba21268c7cf0b967e49fc"];
+  Node15 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="SFileRenameFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_storm_lib_8h.html#abf315c2be57e5ebb9790cf84fe88ef03"];
+}

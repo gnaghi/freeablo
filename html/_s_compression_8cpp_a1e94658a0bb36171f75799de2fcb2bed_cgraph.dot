@@ -1,0 +1,27 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Decompress_ZLIB",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="inflate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$inflate_8c.html#a9a49cf8b6ce882dea33505b0ac84ecef"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="crc32",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$zlib_2crc32_8c.html#af5a1c7b05170540ef3bb084e6cf903c4"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="adler32",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$adler32_8c.html#a86607743a4b76949b24cf5cc2f01a40d"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="zmemcpy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$zutil_8c.html#aac7aa2bbd8584b96c89e311b6c3409a5"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="fixedtables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$inflate_8c.html#a4493a4d633ce7f2dd463edc3a9bce72f"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="inflate_table",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$inftrees_8c.html#a773e6164ab27c6f3ea71144dfc487c7f"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="inflate_fast",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$inffast_8c.html#abe57be8a6f777dc648ebcb275e57d849"];
+  Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="updatewindow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$inflate_8c.html#a1d501d65182a4a5f56d3d07961f3fb02"];
+  Node9 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="inflateEnd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$inflate_8c.html#aed3136bc8afc3ef309b731b4ad724534"];
+}

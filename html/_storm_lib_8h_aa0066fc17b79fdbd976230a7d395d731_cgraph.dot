@@ -1,0 +1,39 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SFileSetMaxFileCount",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="IsValidMpqHandle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_common_8cpp.html#a67882fdf8d424efbb6b2e1f748583a66"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="GetHashTableSizeForFileCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_common_8cpp.html#aa2f9f710a63a44de2157a48bff7c5a21"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="RebuildFileTable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_file_table_8cpp.html#a4f32b630b4ecbefaceebbbad807e65f8"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AllocateHashEntry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_common_8cpp.html#a259665299cf78eb0e253b08d6489da68"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="FindFreeHashEntry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_common_8cpp.html#a9eeed4144d8cb5a5f06a0116a1c2133c"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="InvalidateInternalFiles",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_file_table_8cpp.html#a49c99a591813b88b38d9d219af88a8d4"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="GetFileEntryExact",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_file_table_8cpp.html#a90069131da300c2a6d9ff0b7a1b41806"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="GetFileIndex_Het",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_file_table_8cpp.html#acf04d5326a7dd5e0c5d82598f8e76a50"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="HashStringJenkins",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_common_8cpp.html#a7c410e53e1793314064827d095ba86ce"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="hashlittle2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lookup_8h.html#a28bbffa78951ac929184f31d92a05388"];
+  Node9 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="GetBits",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_file_table_8cpp.html#a8b7cf3b06d4cc7779a95a0ef92172269"];
+  Node7 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="DeleteFileEntry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_file_table_8cpp.html#ab491aefc6c1009d67e63868ea2be6ecc"];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="RebuildHetTable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_file_table_8cpp.html#a97fd4e4b3730b45b008fbba7dc7c07e8"];
+  Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="CreateHetTable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_file_table_8cpp.html#a97648c0afa4a301e7f7ee1e2bf201018"];
+  Node14 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="FreeHetTable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_s_base_file_table_8cpp.html#a01959b3dc86a80003a50a1483937ce7d"];
+  Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="SetLastError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_file_stream_8cpp.html#ae12246cf2f9f9aa8e3a6367bd9fa2aed"];
+}

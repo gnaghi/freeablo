@@ -1,0 +1,20 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="FAWorld::PlayerFactory::create",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DiabloExe::DiabloExe::getCharacterStat",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_diablo_exe_1_1_diablo_exe.html#ab4b5958fc74129e5b2ca6e7cf90bb6fa"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="FAWorld::Actor::setStats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_actor.html#a9b83109c5d0813a7aa9d9c4bccf3848f"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="FAWorld::ActorStats::setActor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_actor_stats.html#abee40e6a4dee179a7c96ca138cbde93a"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="FAWorld::Inventory::collectEffects",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_inventory.html#a463cf57748e5f68b5c33f916e109131c"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="FAWorld::Item::isEmpty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item.html#aa93072efcb6eff29b43d82297470e2c1"];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="FAWorld::ActorStats::recalculateDerivedStats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_actor_stats.html#ac15e9e11adf2b230af3990a61f71a155"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

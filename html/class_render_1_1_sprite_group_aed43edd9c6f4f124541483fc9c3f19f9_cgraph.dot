@@ -1,0 +1,19 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Render::SpriteGroup::SpriteGroup",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Cel::CelFile::numFrames",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cel_1_1_cel_file.html#ad307fd30a1a89e2e7d5ac11fb4076f71"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Render::createTransparentSurface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_render.html#a83ee7f6e3cb7a513ab4bac2c05614c26"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Render::clearTransparentSurface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_render.html#aaa59a6d2c1fc80969f9af8a563250bf0"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Render::drawFrame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_render.html#a8384399aba8d9bca82788367f744016f"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Render::setpixel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_render.html#a255d3d88fd6f86eb173484b03e176d23"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Cel::CelFile::animLength",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cel_1_1_cel_file.html#a3250aab7b67716ab35d84c4d4f1e76d8",tooltip="if normal cel file, returns same as numFrames(), for an archive, the number of frames in each subcel..."];
+}

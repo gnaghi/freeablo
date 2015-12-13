@@ -1,0 +1,13 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="FAWorld::Player::updateSprite",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="FAWorld::Item::getCode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item.html#aecde209b06ff8ab8fe42450b09eb5411"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="FAWorld::Item::isEmpty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item.html#aa93072efcb6eff29b43d82297470e2c1"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="FAWorld::Item::getEquipLoc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_world_1_1_item.html#aa72f2bacafd5067ba4add0d8e8918311"];
+}

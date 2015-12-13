@@ -1,0 +1,17 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="BZ2_hbCreateDecodeTables",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="BZ2_decompress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$decompress_8c.html#a4363bf4c57bbccf863c62361e39d2c97"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="BZ2_bzDecompress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bzlib_8h.html#ac9ef23cf5fa665ebfa93fa8d0697da99"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="BZ2_bzRead",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bzlib_8h.html#aa58d9438a59e466bb6d7a8a350981a28"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="BZ2_bzread",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bzlib_8h.html#ad9cd9fcce34563c4b6a9b529b87af194"];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="BZ2_bzBuffToBuffDecompress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bzlib_8h.html#a7efea6f98c51ae16fd90dbb61db6df8c"];
+}

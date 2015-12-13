@@ -1,0 +1,13 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Input::Hotkey::save",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="FAGui::FAPythonFuncs::setHotkey",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_f_a_gui_1_1_f_a_python_funcs.html#a1622e498fae9ef53a2ff6df443b43822"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="FAGui::BOOST_PYTHON_MODULE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Input::BOOST_PYTHON_MODULE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_input.html#a0d6c10e33b8662601f928c163b4c9aab"];
+}
