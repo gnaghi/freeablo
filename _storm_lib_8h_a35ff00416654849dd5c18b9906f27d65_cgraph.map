@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_s_base_common_8cpp.html#a67882fdf8d424efbb6b2e1f748583a66" title="IsValidMpqHandle" alt="" coords="192,5,320,35"/>
+<area shape="rect" id="node5" href="$_s_base_common_8cpp.html#ad01c4c290fa6caebc77053dbc12c1070" title="IsPseudoFileName" alt="" coords="189,59,323,88"/>
+<area shape="rect" id="node7" href="$_s_base_common_8cpp.html#aa1133687cdff9769a49bad6d9b8abec1" title="GetFirstHashEntry" alt="" coords="191,112,321,141"/>
+<area shape="rect" id="node9" href="$_s_base_common_8cpp.html#a8ce768ce195c4379b7dccadcc6635a06" title="GetNextHashEntry" alt="" coords="189,165,323,195"/>
+<area shape="rect" id="node11" href="$_s_base_file_table_8cpp.html#abf78f423c25cfc7a8065eca9dc4480af" title="GetFileEntryByIndex" alt="" coords="185,219,327,248"/>
+</map>

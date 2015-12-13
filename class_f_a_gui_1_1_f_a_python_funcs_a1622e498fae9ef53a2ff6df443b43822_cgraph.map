@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespace_input.html#a475d6846ae343c7decd8a69d23aa0f82" title="Input::convertRocketKeyToAscii" alt="" coords="299,5,509,35"/>
+<area shape="rect" id="node5" href="$class_engine_1_1_engine_main.html#adb8f448125f3c4e10659ad7e7f135a1b" title="Engine::EngineMain::getInputManager" alt="" coords="283,59,525,88"/>
+<area shape="rect" id="node7" href="$class_input_1_1_hotkey.html#a8e53b8978df34c035f336cc966646e41" title="Input::Hotkey::save" alt="" coords="336,112,472,141"/>
+<area shape="rect" id="node9" href="$class_settings_1_1_settings.html#aa1bd46b374b1279a3f4d66b2e01ab03c" title="Settings::Settings::loadFromFile" alt="" coords="575,59,783,88"/>
+<area shape="rect" id="node11" href="$class_settings_1_1_settings.html#a617d9edfdc2c80e48b808efcd921b6bb" title="Settings::Settings::set" alt="" coords="603,112,755,141"/>
+<area shape="rect" id="node15" href="$class_settings_1_1_settings.html#ae752b0e9050e09a7beb01e07582fd12f" title="Settings::Settings::save" alt="" coords="597,165,760,195"/>
+<area shape="rect" id="node13" href="$readme_8md.html#a761c9db34323d25e19c1f4e803188d6b" title="section" alt="" coords="832,112,896,141"/>
+</map>

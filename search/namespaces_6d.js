@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['misc',['Misc',['../namespaceMisc.html',1,'']]]
+  ['misc',['Misc',['../namespace_misc.html',1,'']]]
 ];

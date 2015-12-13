@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_t_log_helper.html#ab5db2d575286413f1e74f59835ab3359" title="TLogHelper::PrintMessage" alt="" coords="228,32,404,61"/>
+<area shape="rect" id="node13" href="$class_t_log_helper.html#afcbda4e3e228de9483fb78812d60d61c" title="TLogHelper::PrintProgress" alt="" coords="228,85,404,115"/>
+<area shape="rect" id="node5" href="$class_t_log_helper.html#a0d6932915953c6a40b532f46b4bd314b" title="TLogHelper::PrintWithClreol" alt="" coords="455,59,639,88"/>
+<area shape="rect" id="node7" href="$class_t_log_helper.html#ac39f06e485600140e743ff33c3413ccb" title="TLogHelper::GetConsoleWidth" alt="" coords="701,5,901,35"/>
+<area shape="rect" id="node9" href="$_file_stream_8cpp.html#a10b9a284527af83a44533867b0aff0fc" title="GetLastError" alt="" coords="753,59,849,88"/>
+<area shape="rect" id="node11" href="$class_t_log_helper.html#a47324bc44ce9199c6cf1923e2deef3a5" title="TLogHelper::CopyFormatCharacter" alt="" coords="688,112,915,141"/>
+</map>

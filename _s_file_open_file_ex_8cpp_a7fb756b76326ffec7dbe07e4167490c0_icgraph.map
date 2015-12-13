@@ -1,0 +1,33 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespace_f_a_i_o.html#a19fa8e6274a04bdeb5c54d1552e6248e" title="FAIO::FAfopen" alt="" coords="179,299,288,328"/>
+<area shape="rect" id="node64" href="$_storm_lib_8h.html#a6daebdc66320d44284e960bbff33e886" title="SFileOpenPatchArchive" alt="" coords="153,352,313,381"/>
+<area shape="rect" id="node5" href="$mpqtool_2main_8cpp.html#a51a0c03e82a49c8df1aee64a078f33e7" title="main" alt="" coords="447,5,497,35"/>
+<area shape="rect" id="node7" href="$class_level_1_1_tile_set.html#a25885e5e41f2220ddec063dd66615054" title="Level::TileSet::TileSet" alt="" coords="397,59,547,88"/>
+<area shape="rect" id="node9" href="$namespace_audio.html#aa723124f1d8ab10a57d74aac0df5d5cb" title="Audio::loadMusic" alt="" coords="411,112,533,141"/>
+<area shape="rect" id="node13" href="$namespace_audio.html#a640626e3ff91a05bf85051aa564d2be7" title="Audio::loadSound" alt="" coords="411,165,533,195"/>
+<area shape="rect" id="node17" href="$namespace_render.html#ac19fcc278cfef53ca0b941ff040fb5d3" title="Render::loadNonCelImage" alt="" coords="384,219,560,248"/>
+<area shape="rect" id="node50" href="$class_cel_1_1_cel_file.html#a7aa56b24ad6db831061b2b1f4faed266" title="Cel::CelFile::CelFile" alt="" coords="403,272,541,301"/>
+<area shape="rect" id="node52" href="$class_cel_1_1_pal.html#a1374e8fdbb589d9ad415f4bc3f133ef2" title="Cel::Pal::Pal" alt="" coords="424,325,520,355"/>
+<area shape="rect" id="node54" href="$class_diablo_exe_1_1_diablo_exe.html#aae82ed26725dbd5b89faca92507958f0" title="DiabloExe::DiabloExe::DiabloExe" alt="" coords="363,379,581,408"/>
+<area shape="rect" id="node56" href="$class_level_1_1_dun.html#aebe0dd29cec43011e986c36a9a52b7b7" title="Level::Dun::Dun" alt="" coords="413,432,531,461"/>
+<area shape="rect" id="node58" href="$class_level_1_1_min.html#ab29c456876f2cc69a0247e419fa17337" title="Level::Min::Min" alt="" coords="417,485,527,515"/>
+<area shape="rect" id="node60" href="$class_level_1_1_sol.html#ab1b97555d237cb1c671bfdbb3de5d129" title="Level::Sol::Sol" alt="" coords="419,539,525,568"/>
+<area shape="rect" id="node62" href="$class_f_a_i_o_file_interface.html#a0dd986067a16d1ba2da857c9b59c091c" title="Opens a file." alt="" coords="391,592,553,621"/>
+<area shape="rect" id="node11" href="$class_f_a_audio_1_1_audio_manager.html#a9eaf93569374ad7fed5b0229d4e36e8b" title="FAAudio::AudioManager::playMusic" alt="" coords="631,112,860,141"/>
+<area shape="rect" id="node15" href="$class_f_a_audio_1_1_audio_manager.html#a1c562d006a318f6c682dd80e6a278996" title="FAAudio::AudioManager::play" alt="" coords="648,165,843,195"/>
+<area shape="rect" id="node19" href="$namespace_render.html#a04af26977f421431f3a4569af1b877f4" title="Render::getImageInfo" alt="" coords="672,219,819,248"/>
+<area shape="rect" id="node39" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="641,272,849,301"/>
+<area shape="rect" id="node21" href="$class_f_a_render_1_1_sprite_cache.html#ad480d3c6ae72f0a19439e542bea9356c" title="To be called from the game thread." alt="" coords="909,219,1096,248"/>
+<area shape="rect" id="node23" href="$class_f_a_render_1_1_sprite_manager.html#aea2af871429cd9ac16e419e17ec03da5" title="To be called from the game thread." alt="" coords="1145,219,1343,248"/>
+<area shape="rect" id="node25" href="$class_f_a_render_1_1_renderer.html#ac3bcc5a3217058dc2a3ce0469cbbd37a" title="FARender::Renderer::loadImage" alt="" coords="1392,192,1603,221"/>
+<area shape="rect" id="node29" href="$class_f_a_render_1_1_renderer.html#aa73fae0f49236c7a83fa6b01a9e5e8d4" title="FARender::Renderer::setCursor" alt="" coords="1395,245,1600,275"/>
+<area shape="rect" id="node27" href="$class_f_a_world_1_1_actor.html#ab9e28a0505dc7a3040e249c563badd37" title="FAWorld::Actor::Actor" alt="" coords="1688,192,1837,221"/>
+<area shape="rect" id="node31" href="$class_f_a_render_1_1_renderer.html#ad6e983189d6cf6b7aaef89d54ed89396" title="To be called only by Engine::ThreadManager." alt="" coords="1652,245,1873,275"/>
+<area shape="rect" id="node33" href="$class_engine_1_1_thread_manager.html#ab99a6ee7b73f2e9b24a824e811df5d88" title="Engine::ThreadManager::run" alt="" coords="1923,245,2109,275"/>
+<area shape="rect" id="node35" href="$class_engine_1_1_engine_main.html#a5a16165ab6d6e9f2bb2f2739bd1b11bf" title="Engine::EngineMain::run" alt="" coords="2159,245,2321,275"/>
+<area shape="rect" id="node37" href="$freeablo_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="2371,245,2421,275"/>
+<area shape="rect" id="node41" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="937,325,1068,355"/>
+<area shape="rect" id="node47" href="$namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="920,272,1085,301"/>
+<area shape="rect" id="node43" href="$class_f_a_render_1_1_sprite_cache.html#aaede499b2c79f9f1cf535f37887d2f99" title="To be called from the render thread." alt="" coords="1151,272,1337,301"/>
+<area shape="rect" id="node45" href="$class_f_a_render_1_1_sprite_manager.html#a4897198f560005dd7067150c3ed3ed2d" title="To be called from the render thread." alt="" coords="1145,325,1343,355"/>
+</map>

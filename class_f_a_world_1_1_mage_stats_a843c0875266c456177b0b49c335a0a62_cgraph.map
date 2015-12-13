@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_a_world_1_1_actor_stats.html#a52d8ac5d05cfdd1a9acffefc2e30fea9" title="FAWorld::ActorStats::clearDerivedStats" alt="" coords="365,5,619,35"/>
+<area shape="rect" id="node5" href="$class_f_a_world_1_1_character_stats_base.html#aba8310e5bcf49cb098cfd7e4b4e6a902" title="FAWorld::CharacterStatsBase::processEffects" alt="" coords="345,59,639,88"/>
+<area shape="rect" id="node11" href="$class_f_a_world_1_1_inventory.html#a7802b4b415fe4a62f2961f0d40aadb17" title="FAWorld::Inventory::getTotalAttackDamage" alt="" coords="353,112,631,141"/>
+<area shape="rect" id="node13" href="$class_f_a_world_1_1_inventory.html#a9ab1f92ba0e02d40da86817134a2d630" title="FAWorld::Inventory::getTotalArmourClass" alt="" coords="359,165,625,195"/>
+<area shape="rect" id="node7" href="$class_f_a_world_1_1_inventory.html#acd2520acf595a745b3b50f72d7ed3829" title="FAWorld::Inventory::getTotalEffects" alt="" coords="688,32,920,61"/>
+<area shape="rect" id="node9" href="$namespace_f_a_level_gen.html#a0374e2ca497149c811dbc135899a5db7" title="FALevelGen::randomInRange" alt="" coords="707,85,901,115"/>
+</map>

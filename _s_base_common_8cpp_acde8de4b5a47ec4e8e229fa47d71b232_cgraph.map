@@ -1,0 +1,35 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_file_stream_8cpp.html#a593f3b1416f7497c28fa5552cd1b3003" title="FileStream_Read" alt="" coords="172,367,295,397"/>
+<area shape="rect" id="node5" href="$_s_base_common_8cpp.html#a66f0f8a3367d5feb073639de03872a7e" title="DecryptMpqBlock" alt="" coords="171,421,296,450"/>
+<area shape="rect" id="node7" href="$_s_compression_8cpp.html#ad4be5c65706a57411d71edd72bd91e06" title="SCompDecompress2" alt="" coords="160,474,307,503"/>
+<area shape="rect" id="node76" href="$_file_stream_8cpp.html#a10b9a284527af83a44533867b0aff0fc" title="GetLastError" alt="" coords="185,527,281,557"/>
+<area shape="rect" id="node9" href="$_s_compression_8cpp.html#a1e94658a0bb36171f75799de2fcb2bed" title="Decompress_ZLIB" alt="" coords="369,343,500,373"/>
+<area shape="rect" id="node31" href="$_s_compression_8cpp.html#a0ae2e64309b3cae6ee4f6fe72dae9939" title="Decompress_SPARSE" alt="" coords="356,447,513,477"/>
+<area shape="rect" id="node35" href="$_s_compression_8cpp.html#af6ddfa41c2bcdabfb985348a84dff2df" title="Decompress_huff" alt="" coords="372,501,497,530"/>
+<area shape="rect" id="node74" href="$_file_stream_8cpp.html#ae12246cf2f9f9aa8e3a6367bd9fa2aed" title="SetLastError" alt="" coords="388,554,481,583"/>
+<area shape="rect" id="node11" href="$inflate_8c.html#a9a49cf8b6ce882dea33505b0ac84ecef" title="inflate" alt="" coords="632,187,688,217"/>
+<area shape="rect" id="node29" href="$inflate_8c.html#aed3136bc8afc3ef309b731b4ad724534" title="inflateEnd" alt="" coords="620,343,700,373"/>
+<area shape="rect" id="node13" href="$zlib_2crc32_8c.html#af5a1c7b05170540ef3bb084e6cf903c4" title="crc32" alt="" coords="932,161,985,190"/>
+<area shape="rect" id="node15" href="$adler32_8c.html#a86607743a4b76949b24cf5cc2f01a40d" title="adler32" alt="" coords="927,214,991,243"/>
+<area shape="rect" id="node17" href="$zutil_8c.html#aac7aa2bbd8584b96c89e311b6c3409a5" title="zmemcpy" alt="" coords="1228,291,1305,321"/>
+<area shape="rect" id="node19" href="$inflate_8c.html#a4493a4d633ce7f2dd463edc3a9bce72f" title="fixedtables" alt="" coords="916,54,1001,83"/>
+<area shape="rect" id="node21" href="$inftrees_8c.html#a773e6164ab27c6f3ea71144dfc487c7f" title="inflate_table" alt="" coords="1221,29,1312,58"/>
+<area shape="rect" id="node24" href="$inffast_8c.html#abe57be8a6f777dc648ebcb275e57d849" title="inflate_fast" alt="" coords="916,107,1001,137"/>
+<area shape="rect" id="node26" href="$inflate_8c.html#a1d501d65182a4a5f56d3d07961f3fb02" title="updatewindow" alt="" coords="907,318,1011,347"/>
+<area shape="rect" id="node33" href="$sparse_8cpp.html#a50cc31d1acdd8f663a27ac21a2b1bc35" title="DecompressSparse" alt="" coords="592,447,728,477"/>
+<area shape="rect" id="node37" href="$class_t_huffmann_tree.html#a5fae7bcc8bb1852bf8036ae0e78e3a09" title="THuffmannTree::Decompress" alt="" coords="563,541,757,570"/>
+<area shape="rect" id="node39" href="$class_t_input_stream.html#aa678734689a4a4cffd993b84352ec4ce" title="TInputStream::Get8Bits" alt="" coords="879,686,1039,715"/>
+<area shape="rect" id="node41" href="$class_t_huffmann_tree.html#a353d6143d3b08755c6b22936540298d5" title="THuffmannTree::BuildTree" alt="" coords="871,633,1047,662"/>
+<area shape="rect" id="node57" href="$class_t_huffmann_tree.html#aeacbf46b8d0c2dd39c5525f231541d0c" title="THuffmannTree::DecodeOneByte" alt="" coords="851,501,1067,530"/>
+<area shape="rect" id="node65" href="$class_t_huffmann_tree.html#aa2d1ed63bb3b90c1f31bd34850ee0f5c" title="THuffmannTree::InsertNewBranchAndRebalance" alt="" coords="805,579,1112,609"/>
+<area shape="rect" id="node68" href="$class_t_huffmann_tree.html#a9bea307d3f4d3049bcedf37f508197c6" title="THuffmannTree::IncWeightsAndRebalance" alt="" coords="1421,554,1693,583"/>
+<area shape="rect" id="node43" href="$class_t_huffmann_tree.html#a90a46fd9ecc3cd85cf8a6a64042b9d8a" title="THuffmannTree::CreateNewItem" alt="" coords="1160,633,1373,662"/>
+<area shape="rect" id="node51" href="$class_t_huffmann_tree.html#ac837ce58c1c6fa305bc94a5fad4a4a10" title="THuffmannTree::FixupItemPosByWeight" alt="" coords="1428,607,1687,637"/>
+<area shape="rect" id="node45" href="$class_t_huffmann_tree.html#a3194a608aa7d3381ce3b157d9d328261" title="THuffmannTree::InsertItem" alt="" coords="1468,661,1647,690"/>
+<area shape="rect" id="node47" href="$struct_t_h_tree_item.html#a0fde258496612e0525b63c44fa2c783d" title="THTreeItem::RemoveItem" alt="" coords="1784,607,1957,637"/>
+<area shape="rect" id="node49" href="$class_t_huffmann_tree.html#ae88f3c29824b69051cda8f3f449d18a6" title="THuffmannTree::LinkTwoItems" alt="" coords="1769,661,1972,690"/>
+<area shape="rect" id="node53" href="$class_t_huffmann_tree.html#a2f4f4169017174bdb5003d888addc0d3" title="THuffmannTree::FindHigherOrEqualItem" alt="" coords="1743,554,1999,583"/>
+<area shape="rect" id="node59" href="$class_t_input_stream.html#a1668b748bb295528d1cf0620f63f0040" title="TInputStream::Peek7Bits" alt="" coords="1183,529,1351,558"/>
+<area shape="rect" id="node61" href="$class_t_input_stream.html#aef988b3048bf20c2ed44c25b08308949" title="TInputStream::SkipBits" alt="" coords="1188,422,1345,451"/>
+<area shape="rect" id="node63" href="$class_t_input_stream.html#a563086eed1afe02db30a94e55790ed61" title="TInputStream::Get1Bit" alt="" coords="1191,475,1343,505"/>
+</map>

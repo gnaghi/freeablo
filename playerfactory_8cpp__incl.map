@@ -1,0 +1,29 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$playerfactory_8h.html" title="playerfactory.h" alt="" coords="224,83,331,112"/>
+<area shape="rect" id="node9" href="$player_8h.html" title="player.h" alt="" coords="2169,160,2236,189"/>
+<area shape="rect" id="node141" href="$apps_2freeablo_2faworld_2characterstats_8h.html" title="characterstats.h" alt="" coords="1409,83,1524,112"/>
+<area shape="rect" id="node150" href="$itemmanager_8h.html" title="itemmanager.h" alt="" coords="1299,237,1405,267"/>
+<area shape="rect" id="node13" href="$actor_8h.html" title="actor.h" alt="" coords="2764,237,2825,267"/>
+<area shape="rect" id="node86" href="$inventory_8h.html" title="inventory.h" alt="" coords="1569,237,1655,267"/>
+<area shape="rect" id="node15" href="$position_8h.html" title="position.h" alt="" coords="2763,392,2840,421"/>
+<area shape="rect" id="node25" href="$savegame_8h.html" title="../fasavegame/savegame.h" alt="" coords="3132,469,3311,499"/>
+<area shape="rect" id="node43" href="$misc_8h.html" title="misc/misc.h" alt="" coords="2964,469,3057,499"/>
+<area shape="rect" id="node49" href="$renderer_8h.html" title="../farender/renderer.h" alt="" coords="2313,315,2455,344"/>
+<area shape="rect" id="node41" href="$netobject_8h.html" title="netobject.h" alt="" coords="2855,469,2940,499"/>
+<area shape="rect" id="node63" href="$render_8h.html" title="render/render.h" alt="" coords="1971,392,2080,421"/>
+<area shape="rect" id="node80" href="$spritemanager_8h.html" title="spritemanager.h" alt="" coords="2523,392,2637,421"/>
+<area shape="rect" id="node70" href="$celfile_8h.html" title="cel/celfile.h" alt="" coords="1963,469,2051,499"/>
+<area shape="rect" id="node75" href="$celframe_8h.html" title="cel/celframe.h" alt="" coords="2075,469,2179,499"/>
+<area shape="rect" id="node89" href="$item_8h.html" title="item.h" alt="" coords="1516,315,1575,344"/>
+<area shape="rect" id="node115" href="$diabloexe_8h.html" title="diabloexe/diabloexe.h" alt="" coords="996,315,1143,344"/>
+<area shape="rect" id="node91" href="$baseitem_8h.html" title="diabloexe/baseitem.h" alt="" coords="1171,392,1315,421"/>
+<area shape="rect" id="node100" href="$uniqueitem_8h.html" title="diabloexe/uniqueitem.h" alt="" coords="992,392,1147,421"/>
+<area shape="rect" id="node105" href="$affix_8h.html" title="diabloexe/affix.h" alt="" coords="851,392,968,421"/>
+<area shape="rect" id="node96" href="$faio_8h.html" title="faio/faio.h" alt="" coords="773,469,851,499"/>
+<area shape="rect" id="node120" href="$settings_8h.html" title="settings/settings.h" alt="" coords="416,469,544,499"/>
+<area shape="rect" id="node124" href="$components_2diabloexe_2monster_8h.html" title="monster.h" alt="" coords="619,469,699,499"/>
+<area shape="rect" id="node129" href="$npc_8h.html" title="npc.h" alt="" coords="723,392,776,421"/>
+<area shape="rect" id="node135" href="$components_2diabloexe_2characterstats_8h.html" title="characterstats.h" alt="" coords="1621,469,1736,499"/>
+<area shape="rect" id="node143" href="$actorstats_8h.html" title="actorstats.h" alt="" coords="1429,160,1520,189"/>
+<area shape="rect" id="node156" href="$baseitemmanager_8h.html" title="level/baseitemmanager.h" alt="" coords="1280,469,1445,499"/>
+</map>

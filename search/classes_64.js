@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['diabloexe',['DiabloExe',['../classDiabloExe_1_1DiabloExe.html',1,'DiabloExe']]],
-  ['drawcommand',['DrawCommand',['../structDrawCommand.html',1,'']]],
-  ['dun',['Dun',['../classLevel_1_1Dun.html',1,'Level']]]
+  ['diabloexe',['DiabloExe',['../class_diablo_exe_1_1_diablo_exe.html',1,'DiabloExe']]],
+  ['docmanager',['DocManager',['../classpython_1_1docmanage_1_1_doc_manager.html',1,'python::docmanage']]],
+  ['draggablewidget',['DraggableWidget',['../classpython_1_1draggable_1_1_draggable_widget.html',1,'python::draggable']]],
+  ['drawcommand',['DrawCommand',['../struct_draw_command.html',1,'']]],
+  ['dstate',['DState',['../struct_d_state.html',1,'']]],
+  ['dun',['Dun',['../class_level_1_1_dun.html',1,'Level']]]
 ];

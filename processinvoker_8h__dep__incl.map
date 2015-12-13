@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$launcher_2mainwindow_8h.html" title="apps/launcher/mainwindow.h" alt="" coords="187,83,376,112"/>
+<area shape="rect" id="node13" href="$processinvoker_8cpp.html" title="apps/launcher/processinvoker.cpp" alt="" coords="400,83,619,112"/>
+<area shape="rect" id="node15" href="$moc__processinvoker_8cpp.html" title="build/apps/launcher/moc_processinvoker.cpp" alt="" coords="643,83,925,112"/>
+<area shape="rect" id="node5" href="$launcher_2main_8cpp.html" title="apps/launcher/main.cpp" alt="" coords="5,160,165,189"/>
+<area shape="rect" id="node7" href="$launcher_2mainwindow_8cpp.html" title="apps/launcher/mainwindow.cpp" alt="" coords="189,160,392,189"/>
+<area shape="rect" id="node9" href="$launcher_2moc__mainwindow_8cpp.html" title="build/apps/launcher/moc_mainwindow.cpp" alt="" coords="435,160,701,189"/>
+<area shape="rect" id="node11" href="$launcher__automoc_8cpp.html" title="build/apps/launcher/launcher_automoc.cpp" alt="" coords="523,237,792,267"/>
+</map>

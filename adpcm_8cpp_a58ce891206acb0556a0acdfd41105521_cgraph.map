@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_t_a_d_p_c_m_stream.html#acfef6f4241b3309207de5c75860d85b8" title="TADPCMStream::ReadByteSample" alt="" coords="203,5,432,35"/>
+<area shape="rect" id="node5" href="$class_t_a_d_p_c_m_stream.html#a670b66453ecd6d5e4c55fab6243ebbf1" title="TADPCMStream::ReadWordSample" alt="" coords="200,59,435,88"/>
+<area shape="rect" id="node7" href="$class_t_a_d_p_c_m_stream.html#a78f5f80d8374bb47353ea678596501b1" title="TADPCMStream::LengthProcessed" alt="" coords="203,112,432,141"/>
+<area shape="rect" id="node9" href="$class_t_a_d_p_c_m_stream.html#a1e438ec20279f30a473bb593db950a2c" title="TADPCMStream::WriteWordSample" alt="" coords="200,165,435,195"/>
+</map>

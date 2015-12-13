@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_t_input_stream.html#aa678734689a4a4cffd993b84352ec4ce" title="TInputStream::Get8Bits" alt="" coords="304,31,464,60"/>
+<area shape="rect" id="node5" href="$class_t_huffmann_tree.html#a353d6143d3b08755c6b22936540298d5" title="THuffmannTree::BuildTree" alt="" coords="296,84,472,113"/>
+<area shape="rect" id="node21" href="$class_t_input_stream.html#afd6efdbb3eb8f2ea4ef2b6bccf5def77" title="TInputStream::Get7Bits" alt="" coords="304,137,464,167"/>
+<area shape="rect" id="node23" href="$class_t_input_stream.html#aef988b3048bf20c2ed44c25b08308949" title="TInputStream::SkipBits" alt="" coords="305,191,463,220"/>
+<area shape="rect" id="node25" href="$class_t_input_stream.html#a019edae2626c0debbb31163a932ed9a4" title="TInputStream::GetBit" alt="" coords="311,244,457,273"/>
+<area shape="rect" id="node27" href="$class_t_huffmann_tree.html#a388775d614b49f71a6ebd5f0b660775d" title="THuffmannTree::Call1500E740" alt="" coords="283,297,485,327"/>
+<area shape="rect" id="node29" href="$class_t_huffmann_tree.html#a7ad4b50bbe3ee1b2a473f6b475e470f0" title="THuffmannTree::Call1500E820" alt="" coords="283,351,485,380"/>
+<area shape="rect" id="node7" href="$class_t_huffmann_tree.html#a90a46fd9ecc3cd85cf8a6a64042b9d8a" title="THuffmannTree::CreateNewItem" alt="" coords="533,111,747,140"/>
+<area shape="rect" id="node15" href="$class_t_huffmann_tree.html#ac837ce58c1c6fa305bc94a5fad4a4a10" title="THuffmannTree::FixupItemPosByWeight" alt="" coords="795,59,1053,88"/>
+<area shape="rect" id="node9" href="$class_t_huffmann_tree.html#a3194a608aa7d3381ce3b157d9d328261" title="THuffmannTree::InsertItem" alt="" coords="835,112,1013,141"/>
+<area shape="rect" id="node11" href="$struct_t_h_tree_item.html#a0fde258496612e0525b63c44fa2c783d" title="THTreeItem::RemoveItem" alt="" coords="1144,112,1317,141"/>
+<area shape="rect" id="node13" href="$class_t_huffmann_tree.html#ae88f3c29824b69051cda8f3f449d18a6" title="THuffmannTree::LinkTwoItems" alt="" coords="1129,59,1332,88"/>
+<area shape="rect" id="node17" href="$class_t_huffmann_tree.html#a2f4f4169017174bdb5003d888addc0d3" title="THuffmannTree::FindHigherOrEqualItem" alt="" coords="1103,5,1359,35"/>
+<area shape="rect" id="node31" href="$struct_t_h_tree_item.html#afbba3aea303f1e51dfcd6ca4912a5793" title="THTreeItem::GetPrevItem" alt="" coords="553,351,727,380"/>
+</map>

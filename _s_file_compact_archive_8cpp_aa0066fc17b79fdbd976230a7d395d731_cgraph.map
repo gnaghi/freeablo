@@ -1,0 +1,18 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_s_base_common_8cpp.html#a67882fdf8d424efbb6b2e1f748583a66" title="IsValidMpqHandle" alt="" coords="248,5,376,35"/>
+<area shape="rect" id="node5" href="$_s_base_common_8cpp.html#aa2f9f710a63a44de2157a48bff7c5a21" title="GetHashTableSizeForFileCount" alt="" coords="209,59,415,88"/>
+<area shape="rect" id="node7" href="$_s_base_file_table_8cpp.html#a4f32b630b4ecbefaceebbbad807e65f8" title="RebuildFileTable" alt="" coords="253,112,371,141"/>
+<area shape="rect" id="node13" href="$_s_base_file_table_8cpp.html#a49c99a591813b88b38d9d219af88a8d4" title="InvalidateInternalFiles" alt="" coords="237,165,387,195"/>
+<area shape="rect" id="node27" href="$_s_base_file_table_8cpp.html#a97fd4e4b3730b45b008fbba7dc7c07e8" title="RebuildHetTable" alt="" coords="253,219,371,248"/>
+<area shape="rect" id="node33" href="$_file_stream_8cpp.html#ae12246cf2f9f9aa8e3a6367bd9fa2aed" title="SetLastError" alt="" coords="265,272,359,301"/>
+<area shape="rect" id="node9" href="$_s_base_common_8cpp.html#a259665299cf78eb0e253b08d6489da68" title="AllocateHashEntry" alt="" coords="464,59,595,88"/>
+<area shape="rect" id="node11" href="$_s_base_common_8cpp.html#a9eeed4144d8cb5a5f06a0116a1c2133c" title="FindFreeHashEntry" alt="" coords="644,59,777,88"/>
+<area shape="rect" id="node15" href="$_s_base_file_table_8cpp.html#a90069131da300c2a6d9ff0b7a1b41806" title="GetFileEntryExact" alt="" coords="465,112,593,141"/>
+<area shape="rect" id="node25" href="$_s_base_file_table_8cpp.html#ab491aefc6c1009d67e63868ea2be6ecc" title="DeleteFileEntry" alt="" coords="473,165,585,195"/>
+<area shape="rect" id="node17" href="$_s_base_file_table_8cpp.html#acf04d5326a7dd5e0c5d82598f8e76a50" title="GetFileIndex_Het" alt="" coords="649,112,772,141"/>
+<area shape="rect" id="node19" href="$_s_base_common_8cpp.html#a7c410e53e1793314064827d095ba86ce" title="HashStringJenkins" alt="" coords="828,85,959,115"/>
+<area shape="rect" id="node23" href="$_s_base_file_table_8cpp.html#a8b7cf3b06d4cc7779a95a0ef92172269" title="GetBits" alt="" coords="860,139,927,168"/>
+<area shape="rect" id="node21" href="$lookup_8h.html#a28bbffa78951ac929184f31d92a05388" title="hashlittle2" alt="" coords="1009,85,1089,115"/>
+<area shape="rect" id="node29" href="$_s_base_file_table_8cpp.html#a97648c0afa4a301e7f7ee1e2bf201018" title="CreateHetTable" alt="" coords="472,219,587,248"/>
+<area shape="rect" id="node31" href="$_s_base_file_table_8cpp.html#a01959b3dc86a80003a50a1483937ce7d" title="FreeHetTable" alt="" coords="479,272,580,301"/>
+</map>

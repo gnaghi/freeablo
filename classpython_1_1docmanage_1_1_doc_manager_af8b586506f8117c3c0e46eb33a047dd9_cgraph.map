@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classpython_1_1docmanage_1_1_doc_manager.html#adec74ea70e6fa732d9c93e318fc7e566" title="python.docmanage.DocManager.togglePause" alt="" coords="340,59,625,88"/>
+<area shape="rect" id="node5" href="$classpython_1_1docmanage_1_1_doc_manager.html#acbb51b8524073a1bc758a851d162df1f" title="python.docmanage.DocManager.unpause" alt="" coords="676,5,937,35"/>
+<area shape="rect" id="node13" href="$class_engine_1_1_engine_main.html#a634ca46f524b9dbd4cdd4c93b0dd3d1b" title="Engine::EngineMain::pause" alt="" coords="716,59,897,88"/>
+<area shape="rect" id="node15" href="$classpython_1_1docmanage_1_1_doc_manager.html#ab22c62870d2632e983832dd289de6344" title="python.docmanage.DocManager.pause" alt="" coords="683,112,931,141"/>
+<area shape="rect" id="node7" href="$classpython_1_1docmanage_1_1_doc_manager.html#afbcabe820c31769900a4a1c1581bbb6a" title="python.docmanage.DocManager.toggleDoc" alt="" coords="988,59,1260,88"/>
+<area shape="rect" id="node9" href="$classpython_1_1docmanage_1_1_doc_manager.html#a846750936832a95f1526d3f51f3d3319" title="python.docmanage.DocManager.hideDoc" alt="" coords="1313,32,1575,61"/>
+<area shape="rect" id="node11" href="$classpython_1_1docmanage_1_1_doc_manager.html#a82ba5a62e8ec92a8d4b065d72bb2f5b3" title="python.docmanage.DocManager.showDoc" alt="" coords="1309,85,1579,115"/>
+</map>

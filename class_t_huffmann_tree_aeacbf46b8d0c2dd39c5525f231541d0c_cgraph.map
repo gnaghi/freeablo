@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_t_input_stream.html#a1668b748bb295528d1cf0620f63f0040" title="TInputStream::Peek7Bits" alt="" coords="273,5,441,35"/>
+<area shape="rect" id="node5" href="$class_t_input_stream.html#aef988b3048bf20c2ed44c25b08308949" title="TInputStream::SkipBits" alt="" coords="279,59,436,88"/>
+<area shape="rect" id="node7" href="$class_t_input_stream.html#a563086eed1afe02db30a94e55790ed61" title="TInputStream::Get1Bit" alt="" coords="281,112,433,141"/>
+</map>

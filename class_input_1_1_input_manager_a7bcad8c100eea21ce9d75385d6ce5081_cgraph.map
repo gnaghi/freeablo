@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespace_input.html#a6f96be0b5f178f7a6a5fe0ac5678d01e" title="Input::getKey" alt="" coords="320,5,419,35"/>
+<area shape="rect" id="node5" href="$namespace_input.html#a0f0d78790e21242a30dc78f50f05d2e3" title="Input::consoleTranslateKey" alt="" coords="279,59,460,88"/>
+<area shape="rect" id="node7" href="$namespace_input.html#a8ac082b0c2216953d9529ba1159febae" title="Input::rocketTranslateKey" alt="" coords="284,112,455,141"/>
+<area shape="rect" id="node9" href="$namespace_input.html#aa10b803d21913a21223acd3fcb92add5" title="Input::getRocketModifiers" alt="" coords="284,165,455,195"/>
+<area shape="rect" id="node11" href="$namespace_input.html#aaea01e6d661312e84ced4c7102fc9769" title="Input::getMouseKey" alt="" coords="300,219,439,248"/>
+<area shape="rect" id="node13" href="$namespace_input.html#aedc5d327490d1918f6b77d5e40e40bc9" title="Input::rocketTranslateMouse" alt="" coords="276,272,463,301"/>
+</map>

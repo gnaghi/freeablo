@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Freeablo: apps/freeablo/fagui/fapython.h Source File</title>
+<title>freeablo: apps/freeablo/fagui/fapython.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Freeablo
+   <div id="projectname">freeablo
    
    </div>
    
@@ -72,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -80,12 +81,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">apps/freeablo/fagui/fapython.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef FA_PYTHON_H</span>
+<a href="fapython_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef FA_PYTHON_H</span>
 <a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define FA_PYTHON_H</span>
 <a name="l00003"></a>00003 <span class="preprocessor"></span>
 <a name="l00004"></a>00004 <span class="preprocessor">#include &lt;string&gt;</span>
 <a name="l00005"></a>00005 
-<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;boost/python.hpp&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;<a class="code" href="boost__python_8h.html">misc/boost_python.h</a>&gt;</span>
 <a name="l00007"></a>00007 
 <a name="l00008"></a>00008 <span class="keyword">namespace </span>FAWorld
 <a name="l00009"></a>00009 {
@@ -101,39 +102,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00019"></a>00019 {
 <a name="l00020"></a>00020     <span class="keyword">class </span>GuiManager;
 <a name="l00021"></a>00021 
-<a name="l00022"></a><a class="code" href="classFAGui_1_1FAPythonFuncs.html">00022</a>     <span class="keyword">class </span><a class="code" href="classFAGui_1_1FAPythonFuncs.html">FAPythonFuncs</a>
+<a name="l00022"></a><a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html">00022</a>     <span class="keyword">class </span><a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html">FAPythonFuncs</a>
 <a name="l00023"></a>00023     {
 <a name="l00024"></a>00024         <span class="keyword">public</span>:
-<a name="l00025"></a>00025             <a class="code" href="classFAGui_1_1FAPythonFuncs.html">FAPythonFuncs</a>(<a class="code" href="classFAWorld_1_1Inventory.html">FAWorld::Inventory</a>&amp; playerInv, <a class="code" href="classFAGui_1_1GuiManager.html">GuiManager</a>&amp; guiManager, <a class="code" href="classEngine_1_1EngineMain.html">Engine::EngineMain</a>&amp; engine):
-<a name="l00026"></a>00026                 mPlayerInv(playerInv), mGuiManager(guiManager), mEngine(engine)
+<a name="l00025"></a><a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#acb29738d9131a1b8e92c14738c18bd0c">00025</a>             <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#acb29738d9131a1b8e92c14738c18bd0c">FAPythonFuncs</a>(<a class="code" href="class_f_a_world_1_1_inventory.html">FAWorld::Inventory</a>&amp; playerInv, <a class="code" href="class_f_a_gui_1_1_gui_manager.html">GuiManager</a>&amp; guiManager, <a class="code" href="class_engine_1_1_engine_main.html">Engine::EngineMain</a>&amp; <a class="code" href="readme_8md.html#a0c672cf8c51ac9f910731bbd3cea24ca">engine</a>):
+<a name="l00026"></a>00026                 <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#acebb07800ba4b2ec425bafa4c6e86e4a">mPlayerInv</a>(playerInv), <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#a37516b7ea1797db95b14c93d71b52fa1">mGuiManager</a>(guiManager), <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#aed055d940eb0bd7dc7744d4a75b1fcb9">mEngine</a>(engine)
 <a name="l00027"></a>00027             {}
 <a name="l00028"></a>00028 
 <a name="l00029"></a>00029         <span class="keyword">protected</span>:
-<a name="l00030"></a>00030             <span class="keywordtype">void</span> quitGame();
-<a name="l00031"></a>00031             <span class="keywordtype">void</span> pauseGame();
-<a name="l00032"></a>00032             <span class="keywordtype">void</span> unpauseGame();
-<a name="l00033"></a>00033             <span class="keywordtype">void</span> startGame();
-<a name="l00034"></a>00034             <span class="keywordtype">void</span> saveGame();
-<a name="l00035"></a>00035             <span class="keywordtype">void</span> loadGame();
-<a name="l00036"></a>00036             <span class="keywordtype">void</span> playSound(<span class="keyword">const</span> std::string&amp; path);
-<a name="l00037"></a>00037             boost::python::list getHotkeyNames();
-<a name="l00038"></a>00038             boost::python::list getHotkeys();
-<a name="l00039"></a>00039             <span class="keywordtype">void</span> setHotkey(std::string <span class="keyword">function</span>, boost::python::list pyhotkey);
-<a name="l00040"></a>00040             <span class="keywordtype">void</span> placeItem(uint32_t toPara, uint32_t fromPara, uint32_t fromY, uint32_t fromX,
+<a name="l00030"></a>00030             <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#a13739d0733bd7b81b3ae737faacf32aa">quitGame</a>();
+<a name="l00031"></a>00031             <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#ae3c5275fc24e5ef262033e8df157870f">pauseGame</a>();
+<a name="l00032"></a>00032             <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#a41ca07a89493d639e74be96ea0c3b4ac">unpauseGame</a>();
+<a name="l00033"></a>00033             <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#a0fb990e075a6172ab332954af481042a">startGame</a>();
+<a name="l00034"></a>00034             <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#aedaa277fd1fdf292d0205a6ba0d7634d">saveGame</a>();
+<a name="l00035"></a>00035             <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#afbc6e00b8cd71c9d4a7e89739eb3955f">loadGame</a>();
+<a name="l00036"></a>00036             <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#a87545334fff51721b7d9d8dc16721b68">playSound</a>(<span class="keyword">const</span> std::string&amp; path);
+<a name="l00037"></a>00037             boost::python::list <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#a5d628bad1e601c5ea59f11bede2fd890">getHotkeyNames</a>();
+<a name="l00038"></a>00038             boost::python::list <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#a4e2a57a6cca3fc9484e17b9381d85e5d">getHotkeys</a>();
+<a name="l00039"></a>00039             <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#a1622e498fae9ef53a2ff6df443b43822">setHotkey</a>(std::string <span class="keyword">function</span>, boost::python::list pyhotkey);
+<a name="l00040"></a>00040             <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#ab6ebb3e0d60378b1c1efd6e248e28923">placeItem</a>(uint32_t toPara, uint32_t fromPara, uint32_t fromY, uint32_t fromX,
 <a name="l00041"></a>00041                            uint32_t toY, uint32_t toX, uint32_t beltX);
-<a name="l00042"></a>00042             boost::python::dict updateInventory();
-<a name="l00043"></a>00043             <span class="keywordtype">bool</span> canPlace(uint32_t toPara, uint32_t fromPara, uint32_t fromY, uint32_t fromX,
+<a name="l00042"></a>00042             boost::python::dict <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#a02df52cb30147adb14606b296743e23e">updateInventory</a>();
+<a name="l00043"></a>00043             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#a9cb1351ff5531061ce7f556dbf0cf478">canPlace</a>(uint32_t toPara, uint32_t fromPara, uint32_t fromY, uint32_t fromX,
 <a name="l00044"></a>00044                           uint32_t toY, uint32_t toX, uint32_t beltX);
-<a name="l00045"></a>00045             std::string getInvClass();
+<a name="l00045"></a>00045             std::string <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#a541dbe3089e7377976ec6ed9d094276b">getInvClass</a>();
 <a name="l00046"></a>00046 
-<a name="l00047"></a>00047             <span class="keyword">friend</span> <span class="keywordtype">void</span> init_module_freeablo();
+<a name="l00047"></a>00047             <span class="keyword">friend</span> <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#ace9aa4a9fb1f6f5fbe62ae4ac16d8044">init_module_freeablo</a>();
 <a name="l00048"></a>00048 
-<a name="l00049"></a>00049             <a class="code" href="classFAWorld_1_1Inventory.html">FAWorld::Inventory</a>&amp; mPlayerInv;
-<a name="l00050"></a>00050             <a class="code" href="classFAGui_1_1GuiManager.html">GuiManager</a>&amp; mGuiManager;
-<a name="l00051"></a>00051             <a class="code" href="classEngine_1_1EngineMain.html">Engine::EngineMain</a>&amp; mEngine;
+<a name="l00049"></a><a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#acebb07800ba4b2ec425bafa4c6e86e4a">00049</a>             <a class="code" href="class_f_a_world_1_1_inventory.html">FAWorld::Inventory</a>&amp; <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#acebb07800ba4b2ec425bafa4c6e86e4a">mPlayerInv</a>;
+<a name="l00050"></a><a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#a37516b7ea1797db95b14c93d71b52fa1">00050</a>             <a class="code" href="class_f_a_gui_1_1_gui_manager.html">GuiManager</a>&amp; <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#a37516b7ea1797db95b14c93d71b52fa1">mGuiManager</a>;
+<a name="l00051"></a><a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#aed055d940eb0bd7dc7744d4a75b1fcb9">00051</a>             <a class="code" href="class_engine_1_1_engine_main.html">Engine::EngineMain</a>&amp; <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html#aed055d940eb0bd7dc7744d4a75b1fcb9">mEngine</a>;
 <a name="l00052"></a>00052     };
 <a name="l00053"></a>00053 
-<a name="l00054"></a>00054     <span class="keywordtype">void</span> initPython(<a class="code" href="classFAGui_1_1FAPythonFuncs.html">FAPythonFuncs</a>&amp; funcs);
+<a name="l00054"></a>00054     <span class="keywordtype">void</span> <a class="code" href="namespace_f_a_gui.html#af3f1c6ee8afa7e579b77ad7f95596fb8">initPython</a>(<a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html">FAPythonFuncs</a>&amp; <a class="code" href="namespace_f_a_gui.html#aacea6716e18e3f47f379a911fc1273cf">funcs</a>);
 <a name="l00055"></a>00055 }
 <a name="l00056"></a>00056 
 <a name="l00057"></a>00057 <span class="preprocessor">#endif</span>
@@ -143,7 +144,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -155,7 +156,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 26 2015 16:03:43 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -1,0 +1,15 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="172,33,380,63"/>
+<area shape="rect" id="node11" href="$namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="456,59,621,88"/>
+<area shape="rect" id="node15" href="$namespace_render.html#a8384399aba8d9bca82788367f744016f" title="Render::drawFrame" alt="" coords="208,139,344,168"/>
+<area shape="rect" id="node5" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="473,5,604,35"/>
+<area shape="rect" id="node7" href="$class_f_a_render_1_1_sprite_cache.html#aaede499b2c79f9f1cf535f37887d2f99" title="To be called from the render thread." alt="" coords="1392,84,1579,113"/>
+<area shape="rect" id="node9" href="$class_f_a_render_1_1_sprite_manager.html#a4897198f560005dd7067150c3ed3ed2d" title="To be called from the render thread." alt="" coords="697,32,895,61"/>
+<area shape="rect" id="node17" href="$class_render_1_1_sprite_group.html#aed43edd9c6f4f124541483fc9c3f19f9" title="Render::SpriteGroup::SpriteGroup" alt="" coords="429,112,648,141"/>
+<area shape="rect" id="node19" href="$class_render_1_1_sprite_group.html#ac3be63d0ef9141cd581700e8c2bddecc" title="Render::SpriteGroup::toPng" alt="" coords="448,165,629,195"/>
+<area shape="rect" id="node21" href="$namespace_render.html#a3bbdc70f166ed8419fcfa4d292258b6a" title="Render::drawMinTile" alt="" coords="468,219,609,248"/>
+<area shape="rect" id="node23" href="$namespace_render.html#aa3495cd25236e295a183dc4c70932ecd" title="Render::drawMinPillar" alt="" coords="721,204,871,233"/>
+<area shape="rect" id="node25" href="$namespace_render.html#ab52f404c5feb88408defadb935b310e5" title="Render::drawMinPillarTop" alt="" coords="949,151,1120,180"/>
+<area shape="rect" id="node30" href="$namespace_render.html#a17a1ce99e9825ff602e9834cb8a7a409" title="Render::drawMinPillarBase" alt="" coords="945,204,1124,233"/>
+<area shape="rect" id="node27" href="$namespace_render.html#a5b51432e4c169b5593556ea7ceebce69" title="Render::loadTilesetSprite" alt="" coords="1175,151,1343,180"/>
+</map>

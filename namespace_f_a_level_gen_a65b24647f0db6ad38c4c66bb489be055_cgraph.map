@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespace_f_a_level_gen.html#a919277a6ead4f9bab070feaf8151ff29" title="FALevelGen::cleanupHelper" alt="" coords="209,300,393,329"/>
+<area shape="rect" id="node15" href="$namespace_f_a_level_gen.html#a0419289bedbab7a736278c975a39a220" title="FALevelGen::addWalls" alt="" coords="224,222,379,252"/>
+<area shape="rect" id="node21" href="$namespace_f_a_level_gen.html#a390fa115f23f6651f009d2dfcd639b98" title="FALevelGen::cleanLooseWalls" alt="" coords="201,132,401,161"/>
+<area shape="rect" id="node5" href="$class_level_1_1_dun.html#a484e94f5c0d423b9277ee500583c510d" title="Level::Dun::width" alt="" coords="928,286,1051,316"/>
+<area shape="rect" id="node7" href="$class_level_1_1_dun.html#a741579a7d91d77fa99026cc35c77ac59" title="Level::Dun::height" alt="" coords="925,132,1053,161"/>
+<area shape="rect" id="node9" href="$namespace_f_a_level_gen.html#abd97c680f0e14d01f8ce16c23ec91ca9" title="FALevelGen::borders" alt="" coords="499,261,643,290"/>
+<area shape="rect" id="node11" href="$namespace_f_a_level_gen.html#ae58979758ba5b5bc2d6f0e719832b3ef" title="FALevelGen::getXY" alt="" coords="739,209,877,238"/>
+<area shape="rect" id="node25" href="$namespace_f_a_level_gen.html#a0a6b8872f9374d3d1ea6e1bf6a8a350b" title="FALevelGen::cleanLooseWallsHelper" alt="" coords="452,157,689,186"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_file_stream_8cpp.html#a593f3b1416f7497c28fa5552cd1b3003" title="FileStream_Read" alt="" coords="237,5,360,35"/>
+<area shape="rect" id="node5" href="$_file_stream_8cpp.html#a10b9a284527af83a44533867b0aff0fc" title="GetLastError" alt="" coords="251,59,347,88"/>
+<area shape="rect" id="node7" href="$_s_base_common_8cpp.html#a2ee395fedefc3dea1b3606db90530f0f" title="DetectFileKeyBySectorSize" alt="" coords="207,112,391,141"/>
+<area shape="rect" id="node9" href="$_s_base_common_8cpp.html#a66f0f8a3367d5feb073639de03872a7e" title="DecryptMpqBlock" alt="" coords="236,165,361,195"/>
+</map>

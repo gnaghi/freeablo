@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_a_world_1_1_item_manager.html#a3088dac1c9c52f556e3d990b15b18ba1" title="FAWorld::ItemManager::getUniqueItemCode" alt="" coords="305,5,585,35"/>
+<area shape="rect" id="node5" href="$class_f_a_world_1_1_item.html#ad862c017566cf087e7427ca4d95e63dd" title="FAWorld::Item::setUniqueId" alt="" coords="353,59,537,88"/>
+</map>

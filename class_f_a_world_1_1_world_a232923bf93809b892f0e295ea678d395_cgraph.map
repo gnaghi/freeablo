@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_a_world_1_1_world.html#a0cb638b42a04dba460fcaf3e0a261fd9" title="FAWorld::World::getCurrentLevel" alt="" coords="243,5,456,35"/>
+<area shape="rect" id="node7" href="$class_f_a_world_1_1_game_level.html#aae6a0535a7d91a41d9174c5e483f6736" title="FAWorld::GameLevel::getActorAt" alt="" coords="241,59,457,88"/>
+<area shape="rect" id="node5" href="$class_f_a_world_1_1_actor.html#ac7f3a1a4b5b66da302e257ea3b5c0f58" title="FAWorld::Actor::getLevel" alt="" coords="508,5,676,35"/>
+</map>

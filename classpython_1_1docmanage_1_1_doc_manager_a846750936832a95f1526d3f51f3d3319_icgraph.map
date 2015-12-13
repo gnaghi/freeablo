@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classpython_1_1docmanage_1_1_doc_manager.html#afbcabe820c31769900a4a1c1581bbb6a" title="python.docmanage.DocManager.toggleDoc" alt="" coords="319,32,591,61"/>
+<area shape="rect" id="node5" href="$classpython_1_1docmanage_1_1_doc_manager.html#ab22c62870d2632e983832dd289de6344" title="python.docmanage.DocManager.pause" alt="" coords="648,5,896,35"/>
+<area shape="rect" id="node11" href="$classpython_1_1docmanage_1_1_doc_manager.html#acbb51b8524073a1bc758a851d162df1f" title="python.docmanage.DocManager.unpause" alt="" coords="641,59,903,88"/>
+<area shape="rect" id="node7" href="$classpython_1_1docmanage_1_1_doc_manager.html#adec74ea70e6fa732d9c93e318fc7e566" title="python.docmanage.DocManager.togglePause" alt="" coords="953,32,1239,61"/>
+<area shape="rect" id="node9" href="$classpython_1_1docmanage_1_1_doc_manager.html#af8b586506f8117c3c0e46eb33a047dd9" title="python.docmanage.DocManager.onKeyDown" alt="" coords="1288,32,1573,61"/>
+</map>

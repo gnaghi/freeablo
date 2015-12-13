@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_t_huffmann_tree.html#a5fae7bcc8bb1852bf8036ae0e78e3a09" title="THuffmannTree::Decompress" alt="" coords="179,112,373,141"/>
+<area shape="rect" id="node5" href="$class_t_input_stream.html#aa678734689a4a4cffd993b84352ec4ce" title="TInputStream::Get8Bits" alt="" coords="495,5,655,35"/>
+<area shape="rect" id="node7" href="$class_t_huffmann_tree.html#a353d6143d3b08755c6b22936540298d5" title="THuffmannTree::BuildTree" alt="" coords="487,59,663,88"/>
+<area shape="rect" id="node23" href="$class_t_huffmann_tree.html#aeacbf46b8d0c2dd39c5525f231541d0c" title="THuffmannTree::DecodeOneByte" alt="" coords="467,243,683,272"/>
+<area shape="rect" id="node31" href="$class_t_huffmann_tree.html#aa2d1ed63bb3b90c1f31bd34850ee0f5c" title="THuffmannTree::InsertNewBranchAndRebalance" alt="" coords="421,112,728,141"/>
+<area shape="rect" id="node34" href="$class_t_huffmann_tree.html#a9bea307d3f4d3049bcedf37f508197c6" title="THuffmannTree::IncWeightsAndRebalance" alt="" coords="1037,139,1309,168"/>
+<area shape="rect" id="node9" href="$class_t_huffmann_tree.html#a90a46fd9ecc3cd85cf8a6a64042b9d8a" title="THuffmannTree::CreateNewItem" alt="" coords="776,61,989,91"/>
+<area shape="rect" id="node17" href="$class_t_huffmann_tree.html#ac837ce58c1c6fa305bc94a5fad4a4a10" title="THuffmannTree::FixupItemPosByWeight" alt="" coords="1044,85,1303,115"/>
+<area shape="rect" id="node11" href="$class_t_huffmann_tree.html#a3194a608aa7d3381ce3b157d9d328261" title="THuffmannTree::InsertItem" alt="" coords="1084,32,1263,61"/>
+<area shape="rect" id="node13" href="$struct_t_h_tree_item.html#a0fde258496612e0525b63c44fa2c783d" title="THTreeItem::RemoveItem" alt="" coords="1400,85,1573,115"/>
+<area shape="rect" id="node15" href="$class_t_huffmann_tree.html#ae88f3c29824b69051cda8f3f449d18a6" title="THuffmannTree::LinkTwoItems" alt="" coords="1385,32,1588,61"/>
+<area shape="rect" id="node19" href="$class_t_huffmann_tree.html#a2f4f4169017174bdb5003d888addc0d3" title="THuffmannTree::FindHigherOrEqualItem" alt="" coords="1359,139,1615,168"/>
+<area shape="rect" id="node25" href="$class_t_input_stream.html#a1668b748bb295528d1cf0620f63f0040" title="TInputStream::Peek7Bits" alt="" coords="799,216,967,245"/>
+<area shape="rect" id="node27" href="$class_t_input_stream.html#aef988b3048bf20c2ed44c25b08308949" title="TInputStream::SkipBits" alt="" coords="804,269,961,299"/>
+<area shape="rect" id="node29" href="$class_t_input_stream.html#a563086eed1afe02db30a94e55790ed61" title="TInputStream::Get1Bit" alt="" coords="807,323,959,352"/>
+</map>

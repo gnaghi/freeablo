@@ -1,0 +1,24 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$actor_8h.html" title="actor.h" alt="" coords="2023,160,2084,189"/>
+<area shape="rect" id="node91" href="$player_8h.html" title="player.h" alt="" coords="2164,83,2231,112"/>
+<area shape="rect" id="node110" href="$gamelevel_8h.html" title="gamelevel.h" alt="" coords="2049,83,2140,112"/>
+<area shape="rect" id="node11" href="$position_8h.html" title="position.h" alt="" coords="1331,315,1408,344"/>
+<area shape="rect" id="node20" href="$savegame_8h.html" title="../fasavegame/savegame.h" alt="" coords="1027,392,1205,421"/>
+<area shape="rect" id="node42" href="$misc_8h.html" title="misc/misc.h" alt="" coords="1808,392,1901,421"/>
+<area shape="rect" id="node48" href="$renderer_8h.html" title="../farender/renderer.h" alt="" coords="1815,237,1956,267"/>
+<area shape="rect" id="node38" href="$netobject_8h.html" title="netobject.h" alt="" coords="917,392,1003,421"/>
+<area shape="rect" id="node61" href="$render_8h.html" title="render/render.h" alt="" coords="2259,315,2368,344"/>
+<area shape="rect" id="node84" href="$spritemanager_8h.html" title="spritemanager.h" alt="" coords="1517,315,1632,344"/>
+<area shape="rect" id="node70" href="$celfile_8h.html" title="cel/celfile.h" alt="" coords="3363,392,3451,421"/>
+<area shape="rect" id="node75" href="$celframe_8h.html" title="cel/celframe.h" alt="" coords="2912,392,3016,421"/>
+<area shape="rect" id="node79" href="$disablewarn_8h.html" title="misc/disablewarn.h" alt="" coords="2077,392,2211,421"/>
+<area shape="rect" id="node95" href="$inventory_8h.html" title="inventory.h" alt="" coords="3491,237,3576,267"/>
+<area shape="rect" id="node98" href="$item_8h.html" title="item.h" alt="" coords="3504,315,3563,344"/>
+<area shape="rect" id="node104" href="$diabloexe_8h.html" title="diabloexe/diabloexe.h" alt="" coords="3760,392,3907,421"/>
+<area shape="rect" id="node112" href="$level_8h.html" title="level/level.h" alt="" coords="2536,237,2627,267"/>
+<area shape="rect" id="node114" href="$min_8h.html" title="min.h" alt="" coords="2693,392,2747,421"/>
+<area shape="rect" id="node119" href="$components_2level_2tileset_8h.html" title="tileset.h" alt="" coords="2771,392,2837,421"/>
+<area shape="rect" id="node124" href="$dun_8h.html" title="dun.h" alt="" coords="2619,315,2672,344"/>
+<area shape="rect" id="node132" href="$sol_8h.html" title="sol.h" alt="" coords="2619,392,2669,421"/>
+<area shape="rect" id="node137" href="$baseitemmanager_8h.html" title="baseitemmanager.h" alt="" coords="3475,392,3611,421"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_a_world_1_1_item.html#aa72f2bacafd5067ba4add0d8e8918311" title="FAWorld::Item::getEquipLoc" alt="" coords="277,5,464,35"/>
+<area shape="rect" id="node5" href="$class_f_a_world_1_1_item.html#aa93072efcb6eff29b43d82297470e2c1" title="FAWorld::Item::isEmpty" alt="" coords="289,59,452,88"/>
+<area shape="rect" id="node7" href="$class_f_a_world_1_1_item.html#a45732ee9631eb73d02b0a8bda88ecbde" title="FAWorld::Item::getType" alt="" coords="289,112,452,141"/>
+</map>

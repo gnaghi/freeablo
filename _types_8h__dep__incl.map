@@ -1,0 +1,33 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_lzma_enc_8h.html" title="extern/StormLib/src/lzma/C/LzmaEnc.h" alt="" coords="5172,83,5423,112"/>
+<area shape="rect" id="node49" href="$_lzma_dec_8h.html" title="extern/StormLib/src/lzma/C/LzmaDec.h" alt="" coords="2973,83,3227,112"/>
+<area shape="rect" id="node54" href="$_lz_find_8h.html" title="extern/StormLib/src/lzma/C/LzFind.h" alt="" coords="5447,83,5681,112"/>
+<area shape="rect" id="node64" href="$_threads_8h.html" title="extern/StormLib/src/lzma/C/Threads.h" alt="" coords="5709,83,5952,112"/>
+<area shape="rect" id="node5" href="$_storm_common_8h.html" title="extern/StormLib/src/StormCommon.h" alt="" coords="2981,160,3219,189"/>
+<area shape="rect" id="node47" href="$_lzma_enc_8c.html" title="extern/StormLib/src/lzma/C/LzmaEnc.c" alt="" coords="5568,237,5819,267"/>
+<area shape="rect" id="node7" href="$_file_stream_8cpp.html" title="extern/StormLib/src/FileStream.cpp" alt="" coords="5037,237,5264,267"/>
+<area shape="rect" id="node9" href="$_s_base_common_8cpp.html" title="extern/StormLib/src/SBaseCommon.cpp" alt="" coords="5288,237,5544,267"/>
+<area shape="rect" id="node11" href="$_s_base_dump_data_8cpp.html" title="extern/StormLib/src/SBaseDumpData.cpp" alt="" coords="5,237,272,267"/>
+<area shape="rect" id="node13" href="$_s_base_file_table_8cpp.html" title="extern/StormLib/src/SBaseFileTable.cpp" alt="" coords="296,237,552,267"/>
+<area shape="rect" id="node15" href="$_s_base_sub_types_8cpp.html" title="extern/StormLib/src/SBaseSubTypes.cpp" alt="" coords="576,237,837,267"/>
+<area shape="rect" id="node17" href="$_s_compression_8cpp.html" title="extern/StormLib/src/SCompression.cpp" alt="" coords="861,237,1112,267"/>
+<area shape="rect" id="node19" href="$_s_file_add_file_8cpp.html" title="extern/StormLib/src/SFileAddFile.cpp" alt="" coords="1136,237,1373,267"/>
+<area shape="rect" id="node21" href="$_s_file_attributes_8cpp.html" title="extern/StormLib/src/SFileAttributes.cpp" alt="" coords="1397,237,1648,267"/>
+<area shape="rect" id="node23" href="$_s_file_compact_archive_8cpp.html" title="extern/StormLib/src/SFileCompactArchive.cpp" alt="" coords="1672,237,1963,267"/>
+<area shape="rect" id="node25" href="$_s_file_create_archive_8cpp.html" title="extern/StormLib/src/SFileCreateArchive.cpp" alt="" coords="1987,237,2264,267"/>
+<area shape="rect" id="node27" href="$_s_file_extract_file_8cpp.html" title="extern/StormLib/src/SFileExtractFile.cpp" alt="" coords="2288,237,2547,267"/>
+<area shape="rect" id="node29" href="$_s_file_find_file_8cpp.html" title="extern/StormLib/src/SFileFindFile.cpp" alt="" coords="2571,237,2811,267"/>
+<area shape="rect" id="node31" href="$_s_file_get_file_info_8cpp.html" title="extern/StormLib/src/SFileGetFileInfo.cpp" alt="" coords="2835,237,3093,267"/>
+<area shape="rect" id="node33" href="$_s_file_list_file_8cpp.html" title="extern/StormLib/src/SFileListFile.cpp" alt="" coords="3117,237,3355,267"/>
+<area shape="rect" id="node35" href="$_s_file_open_archive_8cpp.html" title="extern/StormLib/src/SFileOpenArchive.cpp" alt="" coords="3379,237,3648,267"/>
+<area shape="rect" id="node37" href="$_s_file_open_file_ex_8cpp.html" title="extern/StormLib/src/SFileOpenFileEx.cpp" alt="" coords="3672,237,3933,267"/>
+<area shape="rect" id="node39" href="$_s_file_patch_archives_8cpp.html" title="extern/StormLib/src/SFilePatchArchives.cpp" alt="" coords="3957,237,4237,267"/>
+<area shape="rect" id="node41" href="$_s_file_read_file_8cpp.html" title="extern/StormLib/src/SFileReadFile.cpp" alt="" coords="4261,237,4507,267"/>
+<area shape="rect" id="node43" href="$_s_file_verify_8cpp.html" title="extern/StormLib/src/SFileVerify.cpp" alt="" coords="4531,237,4760,267"/>
+<area shape="rect" id="node45" href="$_storm_test_8cpp.html" title="extern/StormLib/test/StormTest.cpp" alt="" coords="4784,237,5013,267"/>
+<area shape="rect" id="node52" href="$_lzma_dec_8c.html" title="extern/StormLib/src/lzma/C/LzmaDec.c" alt="" coords="2704,160,2957,189"/>
+<area shape="rect" id="node56" href="$_lz_find_8c.html" title="extern/StormLib/src/lzma/C/LzFind.c" alt="" coords="5447,160,5681,189"/>
+<area shape="rect" id="node58" href="$_lz_find_mt_8h.html" title="extern/StormLib/src/lzma/C/LzFindMt.h" alt="" coords="5705,160,5956,189"/>
+<area shape="rect" id="node60" href="$_lz_find_mt_8c.html" title="extern/StormLib/src/lzma/C/LzFindMt.c" alt="" coords="5843,237,6093,267"/>
+<area shape="rect" id="node67" href="$_threads_8c.html" title="extern/StormLib/src/lzma/C/Threads.c" alt="" coords="5980,160,6223,189"/>
+</map>

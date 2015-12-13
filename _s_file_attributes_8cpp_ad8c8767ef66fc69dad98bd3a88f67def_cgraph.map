@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_s_base_common_8cpp.html#a67882fdf8d424efbb6b2e1f748583a66" title="IsValidMpqHandle" alt="" coords="192,5,320,35"/>
+<area shape="rect" id="node5" href="$_file_stream_8cpp.html#ae12246cf2f9f9aa8e3a6367bd9fa2aed" title="SetLastError" alt="" coords="209,59,303,88"/>
+<area shape="rect" id="node7" href="$_s_base_file_table_8cpp.html#a49c99a591813b88b38d9d219af88a8d4" title="InvalidateInternalFiles" alt="" coords="181,112,331,141"/>
+<area shape="rect" id="node9" href="$_s_base_file_table_8cpp.html#a90069131da300c2a6d9ff0b7a1b41806" title="GetFileEntryExact" alt="" coords="380,85,508,115"/>
+<area shape="rect" id="node19" href="$_s_base_file_table_8cpp.html#ab491aefc6c1009d67e63868ea2be6ecc" title="DeleteFileEntry" alt="" coords="388,139,500,168"/>
+<area shape="rect" id="node11" href="$_s_base_file_table_8cpp.html#acf04d5326a7dd5e0c5d82598f8e76a50" title="GetFileIndex_Het" alt="" coords="559,85,681,115"/>
+<area shape="rect" id="node13" href="$_s_base_common_8cpp.html#a7c410e53e1793314064827d095ba86ce" title="HashStringJenkins" alt="" coords="732,59,863,88"/>
+<area shape="rect" id="node17" href="$_s_base_file_table_8cpp.html#a8b7cf3b06d4cc7779a95a0ef92172269" title="GetBits" alt="" coords="764,112,831,141"/>
+<area shape="rect" id="node15" href="$lookup_8h.html#a28bbffa78951ac929184f31d92a05388" title="hashlittle2" alt="" coords="913,59,993,88"/>
+</map>

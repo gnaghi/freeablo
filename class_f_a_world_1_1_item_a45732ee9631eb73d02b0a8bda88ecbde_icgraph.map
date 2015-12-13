@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_a_world_1_1_inventory.html#a762bbb4dc49e65cebf08ac6d06906dfd" title="FAWorld::Inventory::canPlaceItem" alt="" coords="217,33,439,63"/>
+<area shape="rect" id="node5" href="$class_f_a_gui_1_1_f_a_python_funcs.html#a9cb1351ff5531061ce7f556dbf0cf478" title="FAGui::FAPythonFuncs::canPlace" alt="" coords="725,5,947,35"/>
+<area shape="rect" id="node9" href="$class_f_a_world_1_1_inventory.html#a0dd7b54868aa8320d4c7a84c62ad43f8" title="FAWorld::Inventory::putItem" alt="" coords="488,59,675,88"/>
+<area shape="rect" id="node7" href="$namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="997,32,1237,61"/>
+<area shape="rect" id="node11" href="$class_f_a_gui_1_1_f_a_python_funcs.html#ab6ebb3e0d60378b1c1efd6e248e28923" title="FAGui::FAPythonFuncs::placeItem" alt="" coords="723,59,949,88"/>
+</map>

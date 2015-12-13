@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['render',['Render',['../namespaceRender.html',1,'']]]
+  ['render',['Render',['../namespace_render.html',1,'']]]
 ];

@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$item_8h.html" title="item.h" alt="" coords="279,83,338,112"/>
+<area shape="rect" id="node54" href="$diabloexe_8h.html" title="diabloexe/diabloexe.h" alt="" coords="762,83,909,112"/>
+<area shape="rect" id="node85" href="$baseitemmanager_8h.html" title="level/baseitemmanager.h" alt="" coords="318,160,483,189"/>
+<area shape="rect" id="node5" href="$baseitem_8h.html" title="diabloexe/baseitem.h" alt="" coords="763,160,907,189"/>
+<area shape="rect" id="node19" href="$uniqueitem_8h.html" title="diabloexe/uniqueitem.h" alt="" coords="1073,160,1227,189"/>
+<area shape="rect" id="node24" href="$affix_8h.html" title="diabloexe/affix.h" alt="" coords="931,160,1049,189"/>
+<area shape="rect" id="node30" href="$celfile_8h.html" title="cel/celfile.h" alt="" coords="206,160,294,189"/>
+<area shape="rect" id="node41" href="$celframe_8h.html" title="cel/celframe.h" alt="" coords="22,237,126,267"/>
+<area shape="rect" id="node13" href="$faio_8h.html" title="faio/faio.h" alt="" coords="1041,237,1118,267"/>
+<area shape="rect" id="node36" href="$pal_8h.html" title="pal.h" alt="" coords="302,237,353,267"/>
+<area shape="rect" id="node45" href="$helper2d_8h.html" title="misc/helper2d.h" alt="" coords="17,315,131,344"/>
+<area shape="rect" id="node59" href="$settings_8h.html" title="settings/settings.h" alt="" coords="1627,160,1755,189"/>
+<area shape="rect" id="node69" href="$components_2diabloexe_2monster_8h.html" title="monster.h" alt="" coords="659,160,739,189"/>
+<area shape="rect" id="node74" href="$npc_8h.html" title="npc.h" alt="" coords="1302,160,1355,189"/>
+<area shape="rect" id="node80" href="$components_2diabloexe_2characterstats_8h.html" title="characterstats.h" alt="" coords="478,237,593,267"/>
+</map>

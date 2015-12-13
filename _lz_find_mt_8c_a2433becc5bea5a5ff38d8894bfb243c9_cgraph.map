@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_lz_find_mt_8c.html#a80cd9cc04137f207a444f48be61d8495" title="MtSync_GetNextBlock" alt="" coords="283,72,437,101"/>
+<area shape="rect" id="node16" href="$_lz_find_mt_8c.html#a7325153c2d4673c9d2311e3299b21bed" title="MatchFinderMt_Normalize" alt="" coords="273,139,447,168"/>
+<area shape="rect" id="node5" href="$_threads_8c.html#adcebff2a2a5098940f037eb6ba9d6873" title="Event_Reset" alt="" coords="531,5,629,35"/>
+<area shape="rect" id="node9" href="$_threads_8c.html#a4c894884b1268b8d00d2a96489ba89e3" title="Event_Set" alt="" coords="539,59,621,88"/>
+<area shape="rect" id="node12" href="$_threads_8c.html#a6d392082486c2dd897b1256a5b5eb8f7" title="Semaphore_Release1" alt="" coords="505,112,655,141"/>
+<area shape="rect" id="node7" href="$_threads_8c.html#a4cab6ca310179ac5fd522acd3fa59a50" title="BOOLToWRes" alt="" coords="735,32,844,61"/>
+<area shape="rect" id="node14" href="$_threads_8c.html#a1dfc591d0c0c4fcc8881567bfa146498" title="Semaphore_ReleaseN" alt="" coords="713,112,865,141"/>
+<area shape="rect" id="node18" href="$_lz_find_8c.html#a76f1bca871fc8831a73b67b9e7a778e1" title="MatchFinder_Normalize3" alt="" coords="497,165,663,195"/>
+</map>

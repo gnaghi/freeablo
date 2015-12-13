@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_diablo_exe_1_1_diablo_exe.html#ab4b5958fc74129e5b2ca6e7cf90bb6fa" title="DiabloExe::DiabloExe::getCharacterStat" alt="" coords="263,5,519,35"/>
+<area shape="rect" id="node5" href="$class_f_a_world_1_1_actor.html#a9b83109c5d0813a7aa9d9c4bccf3848f" title="FAWorld::Actor::setStats" alt="" coords="307,59,475,88"/>
+<area shape="rect" id="node7" href="$class_f_a_world_1_1_actor_stats.html#abee40e6a4dee179a7c96ca138cbde93a" title="FAWorld::ActorStats::setActor" alt="" coords="291,112,491,141"/>
+<area shape="rect" id="node9" href="$class_f_a_world_1_1_inventory.html#a463cf57748e5f68b5c33f916e109131c" title="FAWorld::Inventory::collectEffects" alt="" coords="280,165,501,195"/>
+<area shape="rect" id="node13" href="$class_f_a_world_1_1_actor_stats.html#ac15e9e11adf2b230af3990a61f71a155" title="FAWorld::ActorStats::recalculateDerivedStats" alt="" coords="568,217,859,247"/>
+<area shape="rect" id="node11" href="$class_f_a_world_1_1_item.html#aa93072efcb6eff29b43d82297470e2c1" title="FAWorld::Item::isEmpty" alt="" coords="632,164,795,193"/>
+</map>

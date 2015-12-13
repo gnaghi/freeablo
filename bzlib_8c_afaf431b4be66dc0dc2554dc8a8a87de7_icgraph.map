@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$bzlib_8h.html#ac0ee27cad70465618cdaac4dba76d32e" title="BZ2_bzWrite" alt="" coords="228,5,327,35"/>
+<area shape="rect" id="node7" href="$bzlib_8h.html#aa8f11aea0c222e2f019ec3fdf1c70bcc" title="BZ2_bzWriteClose64" alt="" coords="204,59,351,88"/>
+<area shape="rect" id="node13" href="$bzlib_8h.html#adceecf16fb855f77c7555e78527d2d89" title="BZ2_bzBuffToBuffCompress" alt="" coords="183,112,372,141"/>
+<area shape="rect" id="node5" href="$bzlib_8h.html#aca6d8ba5da54603ea808baa90529af2e" title="BZ2_bzwrite" alt="" coords="441,5,535,35"/>
+<area shape="rect" id="node9" href="$bzlib_8h.html#a965bb896f11b4e0103ff252049723ee7" title="BZ2_bzWriteClose" alt="" coords="423,59,553,88"/>
+<area shape="rect" id="node11" href="$bzlib_8h.html#a62cfd6641b39114695baa90fe5ef2d25" title="BZ2_bzclose" alt="" coords="603,59,701,88"/>
+</map>

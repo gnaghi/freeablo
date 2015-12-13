@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_storm_lib_8h.html#ae3ab9ea48707f8edb0decb7fef53e896" title="SFileCreateFile" alt="" coords="220,32,332,61"/>
+<area shape="rect" id="node11" href="$_storm_lib_8h.html#a78b84dd7671288c4fa62d0ae748b831d" title="SFileRemoveFile" alt="" coords="215,85,337,115"/>
+<area shape="rect" id="node13" href="$_storm_lib_8h.html#abf315c2be57e5ebb9790cf84fe88ef03" title="SFileRenameFile" alt="" coords="215,139,337,168"/>
+<area shape="rect" id="node15" href="$_storm_lib_8h.html#a7b5145c080be1df3647b57e93454a7fb" title="SFileSetFileLocale" alt="" coords="211,192,341,221"/>
+<area shape="rect" id="node5" href="$_storm_lib_8h.html#a9d092079ada150e05bfed5a26e65e184" title="SFileAddFileEx" alt="" coords="389,32,501,61"/>
+<area shape="rect" id="node7" href="$_storm_lib_8h.html#ab6184a31092ac5364a8746b1fca3a822" title="SFileAddFile" alt="" coords="556,5,652,35"/>
+<area shape="rect" id="node9" href="$_storm_lib_8h.html#a4cc5ee53bb9a41f91d71a0be809ede22" title="SFileAddWave" alt="" coords="549,59,659,88"/>
+</map>

@@ -1,0 +1,29 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_s_file_open_file_ex_8cpp.html#af9090bd528ef09a1c58bdb3931be5ec3" title="SFileOpenFileEx" alt="" coords="200,424,320,453"/>
+<area shape="rect" id="node26" href="$_file_stream_8cpp.html#ae12246cf2f9f9aa8e3a6367bd9fa2aed" title="SetLastError" alt="" coords="599,265,692,294"/>
+<area shape="rect" id="node55" href="$_file_stream_8cpp.html#a10b9a284527af83a44533867b0aff0fc" title="GetLastError" alt="" coords="392,792,488,821"/>
+<area shape="rect" id="node64" href="$_s_file_find_file_8cpp.html#ac0b9f8d5f02bdef74438e8d134d229f0" title="CheckWildCard" alt="" coords="203,528,317,557"/>
+<area shape="rect" id="node67" href="$_s_file_open_file_ex_8cpp.html#a49a09a38e6dc3b1afd95163a1c9052c6" title="SFileCloseFile" alt="" coords="207,88,313,117"/>
+<area shape="rect" id="node5" href="$_s_base_common_8cpp.html#a67882fdf8d424efbb6b2e1f748583a66" title="IsValidMpqHandle" alt="" coords="779,186,907,216"/>
+<area shape="rect" id="node7" href="$_s_base_common_8cpp.html#ad01c4c290fa6caebc77053dbc12c1070" title="IsPseudoFileName" alt="" coords="579,529,712,558"/>
+<area shape="rect" id="node9" href="$_s_base_file_table_8cpp.html#abf78f423c25cfc7a8065eca9dc4480af" title="GetFileEntryByIndex" alt="" coords="369,685,511,714"/>
+<area shape="rect" id="node11" href="$_s_base_file_table_8cpp.html#a7347ab3dd849dcc0350e1ca8d83af6b3" title="GetFileEntryLocale" alt="" coords="579,582,712,612"/>
+<area shape="rect" id="node21" href="$_s_file_open_file_ex_8cpp.html#afa582c7f26b956201e18cd3677caefb8" title="OpenPatchedFile" alt="" coords="379,424,501,453"/>
+<area shape="rect" id="node29" href="$_s_base_file_table_8cpp.html#af5707ce5a7b11e9d533b24cda45ce7b1" title="GetFileEntryAny" alt="" coords="381,632,499,661"/>
+<area shape="rect" id="node33" href="$_s_base_common_8cpp.html#af3e146ce1fda8ffaf72d6391956f29a3" title="CreateFileHandle" alt="" coords="379,317,501,346"/>
+<area shape="rect" id="node35" href="$_s_base_file_table_8cpp.html#a551f6e01e95accafb0042ae9b8d81e61" title="AllocateFileName" alt="" coords="377,477,503,506"/>
+<area shape="rect" id="node39" href="$_s_base_common_8cpp.html#af48f792817421c6ae782d3ea4f6e8772" title="DecryptFileKey" alt="" coords="384,738,496,768"/>
+<area shape="rect" id="node45" href="$_s_file_get_file_info_8cpp.html#a3909beee4f92f439ad52faef54a6a296" title="SFileGetFileName" alt="" coords="376,370,504,400"/>
+<area shape="rect" id="node57" href="$_s_base_common_8cpp.html#a18f4fd98a66477ad38b6b12f27cf2ad0" title="FreeFileHandle" alt="" coords="385,61,495,90"/>
+<area shape="rect" id="node13" href="$_s_base_file_table_8cpp.html#acf04d5326a7dd5e0c5d82598f8e76a50" title="GetFileIndex_Het" alt="" coords="781,556,904,585"/>
+<area shape="rect" id="node15" href="$_s_base_common_8cpp.html#a7c410e53e1793314064827d095ba86ce" title="HashStringJenkins" alt="" coords="956,450,1087,480"/>
+<area shape="rect" id="node19" href="$_s_base_file_table_8cpp.html#a8b7cf3b06d4cc7779a95a0ef92172269" title="GetBits" alt="" coords="988,556,1055,585"/>
+<area shape="rect" id="node17" href="$lookup_8h.html#a28bbffa78951ac929184f31d92a05388" title="hashlittle2" alt="" coords="1137,450,1217,480"/>
+<area shape="rect" id="node23" href="$_s_base_file_table_8cpp.html#a90069131da300c2a6d9ff0b7a1b41806" title="GetFileEntryExact" alt="" coords="581,476,709,505"/>
+<area shape="rect" id="node41" href="$_file_stream_8cpp.html#a4182f61165951a9334874d488e089844" title="GetPlainFileName" alt="" coords="581,713,709,742"/>
+<area shape="rect" id="node43" href="$_s_base_common_8cpp.html#a253e7854c54b950673d285bc8ceba83a" title="HashString" alt="" coords="603,766,688,796"/>
+<area shape="rect" id="node47" href="$_s_base_common_8cpp.html#a3216d5c62d758be099dfa3324cf34dd3" title="IsValidFileHandle" alt="" coords="584,212,707,241"/>
+<area shape="rect" id="node50" href="$_file_stream_8cpp.html#a900badc0a3d7dff123d1c8a0b45c3c70" title="FileStream_GetFileName" alt="" coords="561,372,729,401"/>
+<area shape="rect" id="node52" href="$_file_stream_8cpp.html#ac501502e4d0f6f5904f24190566c3beb" title="CopyFileName" alt="" coords="591,318,700,348"/>
+<area shape="rect" id="node60" href="$_file_stream_8cpp.html#ae8b75c4797726e9c5ee0b4b03bf31442" title="FileStream_Close" alt="" coords="583,61,708,90"/>
+</map>

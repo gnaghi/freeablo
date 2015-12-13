@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_a_world_1_1_actor_stats.html#a5488e256064e76fc84528fd698593b05" title="FAWorld::ActorStats::takeDamage" alt="" coords="252,5,476,35"/>
+<area shape="rect" id="node5" href="$class_f_a_world_1_1_actor_stats.html#a9ef9d7f0ab086d8a3964968b53bc5852" title="FAWorld::ActorStats::getCurrentHP" alt="" coords="249,59,479,88"/>
+<area shape="rect" id="node7" href="$namespace_cel.html#a4e01b99470fde6ba49817d25dc1e2bc6" title="Cel::get" alt="" coords="331,112,397,141"/>
+<area shape="rect" id="node9" href="$class_f_a_world_1_1_actor.html#ad877a8196a376ed0d728fd548e7e5171" title="FAWorld::Actor::getHitWav" alt="" coords="273,165,455,195"/>
+<area shape="rect" id="node11" href="$class_f_a_world_1_1_actor.html#a00af1cf4ccaf76a3cf84dc7ec5ba3390" title="FAWorld::Actor::setAnimation" alt="" coords="267,219,461,248"/>
+</map>

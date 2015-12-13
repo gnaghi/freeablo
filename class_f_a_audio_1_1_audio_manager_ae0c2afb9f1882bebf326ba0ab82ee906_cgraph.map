@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespace_audio.html#afeccfbb26a8934b2f65625af4cbeb5bc" title="Audio::freeSound" alt="" coords="317,5,440,35"/>
+<area shape="rect" id="node5" href="$namespace_audio.html#a6d7dacf61f15d103f537cacc6709ecd9" title="Audio::freeMusic" alt="" coords="319,59,439,88"/>
+<area shape="rect" id="node7" href="$namespace_audio.html#a7234a67a576788cf386dd445ed4ba8f4" title="Audio::quit" alt="" coords="337,112,420,141"/>
+</map>

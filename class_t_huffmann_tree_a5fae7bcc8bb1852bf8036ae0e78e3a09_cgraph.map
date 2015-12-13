@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_t_input_stream.html#aa678734689a4a4cffd993b84352ec4ce" title="TInputStream::Get8Bits" alt="" coords="321,5,481,35"/>
+<area shape="rect" id="node5" href="$class_t_huffmann_tree.html#a353d6143d3b08755c6b22936540298d5" title="THuffmannTree::BuildTree" alt="" coords="313,59,489,88"/>
+<area shape="rect" id="node21" href="$class_t_huffmann_tree.html#aeacbf46b8d0c2dd39c5525f231541d0c" title="THuffmannTree::DecodeOneByte" alt="" coords="293,243,509,272"/>
+<area shape="rect" id="node29" href="$class_t_huffmann_tree.html#aa2d1ed63bb3b90c1f31bd34850ee0f5c" title="THuffmannTree::InsertNewBranchAndRebalance" alt="" coords="248,112,555,141"/>
+<area shape="rect" id="node32" href="$class_t_huffmann_tree.html#a9bea307d3f4d3049bcedf37f508197c6" title="THuffmannTree::IncWeightsAndRebalance" alt="" coords="864,139,1136,168"/>
+<area shape="rect" id="node7" href="$class_t_huffmann_tree.html#a90a46fd9ecc3cd85cf8a6a64042b9d8a" title="THuffmannTree::CreateNewItem" alt="" coords="603,61,816,91"/>
+<area shape="rect" id="node15" href="$class_t_huffmann_tree.html#ac837ce58c1c6fa305bc94a5fad4a4a10" title="THuffmannTree::FixupItemPosByWeight" alt="" coords="871,85,1129,115"/>
+<area shape="rect" id="node9" href="$class_t_huffmann_tree.html#a3194a608aa7d3381ce3b157d9d328261" title="THuffmannTree::InsertItem" alt="" coords="911,32,1089,61"/>
+<area shape="rect" id="node11" href="$struct_t_h_tree_item.html#a0fde258496612e0525b63c44fa2c783d" title="THTreeItem::RemoveItem" alt="" coords="1227,85,1400,115"/>
+<area shape="rect" id="node13" href="$class_t_huffmann_tree.html#ae88f3c29824b69051cda8f3f449d18a6" title="THuffmannTree::LinkTwoItems" alt="" coords="1212,32,1415,61"/>
+<area shape="rect" id="node17" href="$class_t_huffmann_tree.html#a2f4f4169017174bdb5003d888addc0d3" title="THuffmannTree::FindHigherOrEqualItem" alt="" coords="1185,139,1441,168"/>
+<area shape="rect" id="node23" href="$class_t_input_stream.html#a1668b748bb295528d1cf0620f63f0040" title="TInputStream::Peek7Bits" alt="" coords="625,216,793,245"/>
+<area shape="rect" id="node25" href="$class_t_input_stream.html#aef988b3048bf20c2ed44c25b08308949" title="TInputStream::SkipBits" alt="" coords="631,269,788,299"/>
+<area shape="rect" id="node27" href="$class_t_input_stream.html#a563086eed1afe02db30a94e55790ed61" title="TInputStream::Get1Bit" alt="" coords="633,323,785,352"/>
+</map>

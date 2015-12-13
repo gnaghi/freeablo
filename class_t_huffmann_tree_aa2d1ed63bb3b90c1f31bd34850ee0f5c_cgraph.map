@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_t_huffmann_tree.html#a90a46fd9ecc3cd85cf8a6a64042b9d8a" title="THuffmannTree::CreateNewItem" alt="" coords="360,7,573,36"/>
+<area shape="rect" id="node11" href="$class_t_huffmann_tree.html#a9bea307d3f4d3049bcedf37f508197c6" title="THuffmannTree::IncWeightsAndRebalance" alt="" coords="621,59,893,88"/>
+<area shape="rect" id="node5" href="$class_t_huffmann_tree.html#a3194a608aa7d3381ce3b157d9d328261" title="THuffmannTree::InsertItem" alt="" coords="668,5,847,35"/>
+<area shape="rect" id="node7" href="$struct_t_h_tree_item.html#a0fde258496612e0525b63c44fa2c783d" title="THTreeItem::RemoveItem" alt="" coords="984,59,1157,88"/>
+<area shape="rect" id="node9" href="$class_t_huffmann_tree.html#ae88f3c29824b69051cda8f3f449d18a6" title="THuffmannTree::LinkTwoItems" alt="" coords="969,5,1172,35"/>
+<area shape="rect" id="node13" href="$class_t_huffmann_tree.html#a2f4f4169017174bdb5003d888addc0d3" title="THuffmannTree::FindHigherOrEqualItem" alt="" coords="943,112,1199,141"/>
+</map>

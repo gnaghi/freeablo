@@ -1,0 +1,27 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_lzma_enc_8c.html#a1205a513b1d33c24a6cc5788c4ca8990" title="LzmaEnc_Create" alt="" coords="179,180,301,209"/>
+<area shape="rect" id="node15" href="$_lzma_enc_8c.html#a1d041ccb4b74f5608f08bc9cc97ae4cd" title="LzmaEnc_SetProps" alt="" coords="601,272,740,301"/>
+<area shape="rect" id="node24" href="$_lzma_enc_8c.html#ab2a60ba1f7effb909fb756e381299cc2" title="LzmaEnc_WriteProperties" alt="" coords="153,297,327,327"/>
+<area shape="rect" id="node26" href="$_lzma_enc_8c.html#a68dde38988e722f5c2acb7d42b318181" title="LzmaEnc_MemEncode" alt="" coords="161,351,319,380"/>
+<area shape="rect" id="node30" href="$_lzma_enc_8c.html#a065756196601bbeb1910df0f574205ac" title="LzmaEnc_Destroy" alt="" coords="175,404,305,433"/>
+<area shape="rect" id="node5" href="$_lzma_enc_8c.html#ae75399a1aab501f1fd7cd6bcc4c2f7ec" title="LzmaEnc_Construct" alt="" coords="385,165,527,195"/>
+<area shape="rect" id="node7" href="$_lz_find_8c.html#a487aeb881073394dc1c0755d4790c5ea" title="MatchFinder_Construct" alt="" coords="592,5,749,35"/>
+<area shape="rect" id="node9" href="$_lz_find_mt_8c.html#a12919af4249f297f157a5f862d4ea040" title="MatchFinderMt_Construct" alt="" coords="584,59,757,88"/>
+<area shape="rect" id="node13" href="$_lzma_enc_8c.html#a336bf0e92adf6ff680547c58fd60baa6" title="LzmaEncProps_Init" alt="" coords="603,112,739,141"/>
+<area shape="rect" id="node19" href="$_lzma_enc_8c.html#ae737021e88f3258ec97393859a2f1926" title="LzmaEnc_FastPosInit" alt="" coords="596,165,745,195"/>
+<area shape="rect" id="node21" href="$_lzma_enc_8c.html#a6ee9c9a2ad5145bd684d8f5c79433bb4" title="LzmaEnc_InitPriceTables" alt="" coords="585,219,756,248"/>
+<area shape="rect" id="node11" href="$_lz_find_mt_8c.html#a828c0c1f691af42f15d19574d54154de" title="MtSync_Construct" alt="" coords="829,59,960,88"/>
+<area shape="rect" id="node17" href="$_lzma_enc_8c.html#acd23d29a44a6a248851b7e0ef8016d87" title="LzmaEncProps_Normalize" alt="" coords="807,272,983,301"/>
+<area shape="rect" id="node28" href="$_lzma_enc_8c.html#a0a78075f9383a55278fadd356c8eb8a4" title="LzmaEnc_MemPrepare" alt="" coords="377,351,535,380"/>
+<area shape="rect" id="node32" href="$_lzma_enc_8c.html#a468c61c864910402968dee57bc958ea8" title="LzmaEnc_Destruct" alt="" coords="389,404,523,433"/>
+<area shape="rect" id="node34" href="$_lz_find_mt_8c.html#a8f04458f06b00f3c982627cc01f566ce" title="MatchFinderMt_Destruct" alt="" coords="588,351,753,380"/>
+<area shape="rect" id="node50" href="$_lz_find_8c.html#a7cd763a949f7a5f1bad61a9ebf0f7c30" title="MatchFinder_Free" alt="" coords="608,404,733,433"/>
+<area shape="rect" id="node52" href="$_lzma_enc_8c.html#a7f6d9c0dba37c4249c29a54283c9747b" title="LzmaEnc_FreeLits" alt="" coords="605,457,736,487"/>
+<area shape="rect" id="node36" href="$_lz_find_mt_8c.html#abe828e1f84f9d54d9d52bf271cc656ba" title="MtSync_Destruct" alt="" coords="833,325,956,355"/>
+<area shape="rect" id="node48" href="$_lz_find_mt_8c.html#afd7e6f1d902192822f2c76fdac6abe87" title="MatchFinderMt_FreeMem" alt="" coords="809,379,980,408"/>
+<area shape="rect" id="node38" href="$_lz_find_mt_8c.html#a8df1d3212ac2c1d3e5f11c0778ec6536" title="MtSync_StopWriting" alt="" coords="1033,299,1175,328"/>
+<area shape="rect" id="node44" href="$_threads_8c.html#a4c894884b1268b8d00d2a96489ba89e3" title="Event_Set" alt="" coords="1063,352,1145,381"/>
+<area shape="rect" id="node40" href="$_threads_8c.html#a6d392082486c2dd897b1256a5b5eb8f7" title="Semaphore_Release1" alt="" coords="1225,299,1375,328"/>
+<area shape="rect" id="node42" href="$_threads_8c.html#a1dfc591d0c0c4fcc8881567bfa146498" title="Semaphore_ReleaseN" alt="" coords="1425,299,1577,328"/>
+<area shape="rect" id="node46" href="$_threads_8c.html#a4cab6ca310179ac5fd522acd3fa59a50" title="BOOLToWRes" alt="" coords="1245,352,1355,381"/>
+</map>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Freeablo: apps/freeablo/engine/input.h Source File</title>
+<title>freeablo: apps/freeablo/engine/input.h Source File</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Freeablo
+   <div id="projectname">freeablo
    
    </div>
    
@@ -72,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -80,11 +81,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">apps/freeablo/engine/input.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef FA_INPUT_H</span>
+<a href="input_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef FA_INPUT_H</span>
 <a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define FA_INPUT_H</span>
 <a name="l00003"></a>00003 <span class="preprocessor"></span>
-<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;input/hotkey.h&gt;</span>
-<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;input/inputmanager.h&gt;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;<a class="code" href="hotkey_8h.html">input/hotkey.h</a>&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;<a class="code" href="inputmanager_8h.html">input/inputmanager.h</a>&gt;</span>
 <a name="l00006"></a>00006 
 <a name="l00007"></a>00007 <span class="keyword">namespace </span>FAWorld
 <a name="l00008"></a>00008 {
@@ -95,28 +96,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00013"></a>00013 {
 <a name="l00014"></a>00014     <span class="keyword">class </span>EngineMain;
 <a name="l00015"></a>00015 
-<a name="l00016"></a><a class="code" href="classEngine_1_1EngineInputManager.html">00016</a>     <span class="keyword">class </span><a class="code" href="classEngine_1_1EngineInputManager.html">EngineInputManager</a>
+<a name="l00016"></a><a class="code" href="class_engine_1_1_engine_input_manager.html">00016</a>     <span class="keyword">class </span><a class="code" href="class_engine_1_1_engine_input_manager.html">EngineInputManager</a>
 <a name="l00017"></a>00017     {
 <a name="l00018"></a>00018         <span class="keyword">public</span>:
-<a name="l00019"></a>00019             <a class="code" href="classEngine_1_1EngineInputManager.html">EngineInputManager</a>(<a class="code" href="classEngine_1_1EngineMain.html">EngineMain</a>&amp; engine);
-<a name="l00020"></a>00020             <span class="keywordtype">void</span> update(<span class="keywordtype">bool</span> paused);
+<a name="l00019"></a>00019             <a class="code" href="class_engine_1_1_engine_input_manager.html#ae90adddae507deff25cac4bc601a5141">EngineInputManager</a>(<a class="code" href="class_engine_1_1_engine_main.html">EngineMain</a>&amp; <a class="code" href="readme_8md.html#a0c672cf8c51ac9f910731bbd3cea24ca">engine</a>);
+<a name="l00020"></a>00020             <span class="keywordtype">void</span> <a class="code" href="class_engine_1_1_engine_input_manager.html#a9e498a09e866f109b2d59d371f390ad6">update</a>(<span class="keywordtype">bool</span> paused);
 <a name="l00021"></a>00021 
-<a name="l00022"></a>00022             <a class="code" href="classInput_1_1Hotkey.html">Input::Hotkey</a> quit_key;
-<a name="l00023"></a>00023             <a class="code" href="classInput_1_1Hotkey.html">Input::Hotkey</a> noclip_key;
-<a name="l00024"></a>00024             <a class="code" href="classInput_1_1Hotkey.html">Input::Hotkey</a> changelvldwn_key;
-<a name="l00025"></a>00025             <a class="code" href="classInput_1_1Hotkey.html">Input::Hotkey</a> changelvlup_key;
-<a name="l00026"></a>00026             <a class="code" href="classInput_1_1Hotkey.html">Input::Hotkey</a> toggleconsole_key;
+<a name="l00022"></a><a class="code" href="class_engine_1_1_engine_input_manager.html#a544be9dc6d2176feecc246d61bc9bdaa">00022</a>             <a class="code" href="class_input_1_1_hotkey.html">Input::Hotkey</a> <a class="code" href="class_engine_1_1_engine_input_manager.html#a544be9dc6d2176feecc246d61bc9bdaa">quit_key</a>;
+<a name="l00023"></a><a class="code" href="class_engine_1_1_engine_input_manager.html#a6f070d76f31fe562806ecb879a8cb691">00023</a>             <a class="code" href="class_input_1_1_hotkey.html">Input::Hotkey</a> <a class="code" href="class_engine_1_1_engine_input_manager.html#a6f070d76f31fe562806ecb879a8cb691">noclip_key</a>;
+<a name="l00024"></a><a class="code" href="class_engine_1_1_engine_input_manager.html#a4f5afbc14d5dee707bc6d15b11cf748f">00024</a>             <a class="code" href="class_input_1_1_hotkey.html">Input::Hotkey</a> <a class="code" href="class_engine_1_1_engine_input_manager.html#a4f5afbc14d5dee707bc6d15b11cf748f">changelvldwn_key</a>;
+<a name="l00025"></a><a class="code" href="class_engine_1_1_engine_input_manager.html#a174bdeb9c4d43e32cb28d068e4f959a1">00025</a>             <a class="code" href="class_input_1_1_hotkey.html">Input::Hotkey</a> <a class="code" href="class_engine_1_1_engine_input_manager.html#a174bdeb9c4d43e32cb28d068e4f959a1">changelvlup_key</a>;
+<a name="l00026"></a><a class="code" href="class_engine_1_1_engine_input_manager.html#a6308fea00a672c960da6b97d6a410b28">00026</a>             <a class="code" href="class_input_1_1_hotkey.html">Input::Hotkey</a> <a class="code" href="class_engine_1_1_engine_input_manager.html#a6308fea00a672c960da6b97d6a410b28">toggleconsole_key</a>;
 <a name="l00027"></a>00027 
 <a name="l00028"></a>00028         <span class="keyword">private</span>:
-<a name="l00029"></a>00029             <span class="keywordtype">void</span> keyPress(Input::Key key);
-<a name="l00030"></a>00030             <span class="keywordtype">void</span> mouseClick(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y, Input::Key key);
-<a name="l00031"></a>00031             <span class="keywordtype">void</span> mouseRelease(<span class="keywordtype">size_t</span>, <span class="keywordtype">size_t</span>, Input::Key key);
+<a name="l00029"></a>00029             <span class="keywordtype">void</span> keyPress(<a class="code" href="namespace_input.html#ac74df526ba38aedbefa716292b6534d5">Input::Key</a> key);
+<a name="l00030"></a>00030             <span class="keywordtype">void</span> mouseClick(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y, <a class="code" href="namespace_input.html#ac74df526ba38aedbefa716292b6534d5">Input::Key</a> key);
+<a name="l00031"></a>00031             <span class="keywordtype">void</span> mouseRelease(<span class="keywordtype">size_t</span>, <span class="keywordtype">size_t</span>, <a class="code" href="namespace_input.html#ac74df526ba38aedbefa716292b6534d5">Input::Key</a> key);
 <a name="l00032"></a>00032             <span class="keywordtype">void</span> mouseMove(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y);
 <a name="l00033"></a>00033 
-<a name="l00034"></a>00034             <a class="code" href="classInput_1_1InputManager.html">Input::InputManager</a> mInput;
+<a name="l00034"></a>00034             <a class="code" href="class_input_1_1_input_manager.html">Input::InputManager</a> mInput;
 <a name="l00035"></a>00035 
 <a name="l00036"></a>00036             <span class="keywordtype">bool</span> mToggleConsole = <span class="keyword">false</span>;
-<a name="l00037"></a>00037             <a class="code" href="classEngine_1_1EngineMain.html">EngineMain</a>&amp; mEngine;
+<a name="l00037"></a>00037             <a class="code" href="class_engine_1_1_engine_main.html">EngineMain</a>&amp; mEngine;
 <a name="l00038"></a>00038 
 <a name="l00039"></a>00039             <span class="keywordtype">size_t</span> mXClick = 0, mYClick = 0;
 <a name="l00040"></a>00040             <span class="keywordtype">bool</span> mMouseDown = <span class="keyword">false</span>;
@@ -134,7 +135,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -146,7 +147,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 26 2015 16:03:43 for Freeablo by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
