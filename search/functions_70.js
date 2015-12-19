@@ -17,6 +17,7 @@ var searchData=
   ['placemonsters',['placeMonsters',['../namespace_f_a_level_gen.html#a2f48db4843ed8be1a245fed54a4b7e0b',1,'FALevelGen']]],
   ['placeupstairs',['placeUpStairs',['../namespace_f_a_level_gen.html#a594ed88ca46d4ee0453ef8743eceda3d',1,'FALevelGen']]],
   ['play',['play',['../class_f_a_audio_1_1_audio_manager.html#a1c562d006a318f6c682dd80e6a278996',1,'FAAudio::AudioManager']]],
+  ['playclickbuttonsound',['playClickButtonSound',['../class_f_a_gui_1_1_f_a_python_funcs.html#af3db3e9cf3035c09423bebacde5366de',1,'FAGui::FAPythonFuncs']]],
   ['player',['Player',['../class_f_a_world_1_1_player.html#a1f1fe37fd8144a89a4f495a760cbd797',1,'FAWorld::Player']]],
   ['playerfactory',['PlayerFactory',['../class_f_a_world_1_1_player_factory.html#a489563624fcfbc86c861741983e58738',1,'FAWorld::PlayerFactory']]],
   ['playlevelmusic',['playLevelMusic',['../class_f_a_audio_1_1_audio_manager.html#a0aa00bbb6d2feddb861ab0d5f2e157a9',1,'FAAudio::AudioManager']]],

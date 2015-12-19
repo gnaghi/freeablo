@@ -1,3 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classpython_1_1menu_1_1_menu.html#a9011fd17cc68bdd567efb457c5f6997f" title="python.menu.Menu.onKeyDown" alt="" coords="261,5,469,35"/>
+<area shape="rect" id="node3" href="$classpython_1_1menu_1_1_menu.html#a875f4142499b1e614851bcc0a73d6475" title="python.menu.Menu.initMenu" alt="" coords="272,5,459,35"/>
+<area shape="rect" id="node7" href="$classpython_1_1menu_1_1_menu.html#a9011fd17cc68bdd567efb457c5f6997f" title="python.menu.Menu.onKeyDown" alt="" coords="261,59,469,88"/>
+<area shape="rect" id="node5" href="$classpython_1_1menu_1_1_menu.html#a6fd22a4a362cf22c62177c7ad7a3fa87" title="python.menu.Menu.deleteEntry" alt="" coords="517,5,720,35"/>
 </map>

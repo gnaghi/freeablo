@@ -113,6 +113,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpython_1_1menu_1_1_menu.html#a4f396e7abd8f7ce740962b3b85ddb5d4">__init__</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpython_1_1menu_1_1_menu.html#a875f4142499b1e614851bcc0a73d6475">initMenu</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpython_1_1menu_1_1_menu.html#a6fd22a4a362cf22c62177c7ad7a3fa87">deleteEntry</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpython_1_1menu_1_1_menu.html#ab429f52dd4c2ab9f96d6d14542e9a5a3">getEntryElement</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpython_1_1menu_1_1_menu.html#a37836e977e47d8f93029fc86d91a3dd5">setSelected</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpython_1_1menu_1_1_menu.html#a4ee6f4214e76989f608c30294302673a">setNotSelected</a></td></tr>
@@ -122,8 +124,11 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpython_1_1menu_1_1_menu.html#ab2f62a14f078b61c874fc0dc12d9ae44">doc</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpython_1_1menu_1_1_menu.html#a370f07cf136f29690cc26a8aee1122e2">entries</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpython_1_1menu_1_1_menu.html#a228f3e4e534b0a195dac47c1599500e0">containerId</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpython_1_1menu_1_1_menu.html#ab643440abdcaa05084dcc8b589eb9cf3">selfName</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpython_1_1menu_1_1_menu.html#af5bae8d30980f3895389aac334070908">fmtSelected</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpython_1_1menu_1_1_menu.html#a229d24008ad96b4e38cadb2785198946">fmtNotSelected</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpython_1_1menu_1_1_menu.html#a4537ff0d95113860f2e63c1ceda0f456">onSelect</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpython_1_1menu_1_1_menu.html#a11b61e5d82f0e9e5dcdc70ad228fb00c">current</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -175,7 +180,13 @@ or clicked with the mouse. For an example of usage, see resources/gui/pausemenu.
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>fmtNotSelected</em>&#160;</td>
+          <td class="paramname"><em>fmtNotSelected</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>onSelect</em> = <code>None</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -200,6 +211,7 @@ Required for similar reasons to the selfName field above
 fmtSelected -- The format for rml for entries when they are selected. Must contain %s somewhere, which
     will be replaced with entry.text for each entry.
 fmtNotSelected -- Same as above, but for unselected entries.
+onSelect -- Callback function when user selects menu entry
 </pre></div> 
 </div>
 </div>
@@ -225,6 +237,42 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classpython_1_1menu_1_1_menu_a15a35dd5b5a9199e90ce58b49a5fc3a9_icgraph.png" border="0" usemap="#classpython_1_1menu_1_1_menu_a15a35dd5b5a9199e90ce58b49a5fc3a9_icgraph" alt=""/></div>
 <map name="classpython_1_1menu_1_1_menu_a15a35dd5b5a9199e90ce58b49a5fc3a9_icgraph" id="classpython_1_1menu_1_1_menu_a15a35dd5b5a9199e90ce58b49a5fc3a9_icgraph">
 <area shape="rect" id="node3" href="classpython_1_1menu_1_1_menu.html#a9011fd17cc68bdd567efb457c5f6997f" title="python.menu.Menu.onKeyDown" alt="" coords="237,5,445,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6fd22a4a362cf22c62177c7ad7a3fa87"></a><!-- doxytag: member="python::menu::Menu::deleteEntry" ref="a6fd22a4a362cf22c62177c7ad7a3fa87" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="classpython_1_1menu_1_1_menu.html#a6fd22a4a362cf22c62177c7ad7a3fa87">python.menu.Menu.deleteEntry</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classpython_1_1menu_1_1_menu_a6fd22a4a362cf22c62177c7ad7a3fa87_cgraph.png" border="0" usemap="#classpython_1_1menu_1_1_menu_a6fd22a4a362cf22c62177c7ad7a3fa87_cgraph" alt=""/></div>
+<map name="classpython_1_1menu_1_1_menu_a6fd22a4a362cf22c62177c7ad7a3fa87_cgraph" id="classpython_1_1menu_1_1_menu_a6fd22a4a362cf22c62177c7ad7a3fa87_cgraph">
+<area shape="rect" id="node3" href="classpython_1_1menu_1_1_menu.html#a875f4142499b1e614851bcc0a73d6475" title="python.menu.Menu.initMenu" alt="" coords="256,32,443,61"/><area shape="rect" id="node5" href="classpython_1_1menu_1_1_menu.html#a37836e977e47d8f93029fc86d91a3dd5" title="python.menu.Menu.setSelected" alt="" coords="492,32,697,61"/><area shape="rect" id="node7" href="classpython_1_1menu_1_1_menu.html#a4ee6f4214e76989f608c30294302673a" title="python.menu.Menu.setNotSelected" alt="" coords="747,5,973,35"/><area shape="rect" id="node9" href="classpython_1_1menu_1_1_menu.html#ab429f52dd4c2ab9f96d6d14542e9a5a3" title="python.menu.Menu.getEntryElement" alt="" coords="1021,32,1256,61"/></map>
 </div>
 </p>
 
@@ -260,7 +308,42 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classpython_1_1menu_1_1_menu_ab429f52dd4c2ab9f96d6d14542e9a5a3_icgraph.png" border="0" usemap="#classpython_1_1menu_1_1_menu_ab429f52dd4c2ab9f96d6d14542e9a5a3_icgraph" alt=""/></div>
 <map name="classpython_1_1menu_1_1_menu_ab429f52dd4c2ab9f96d6d14542e9a5a3_icgraph" id="classpython_1_1menu_1_1_menu_ab429f52dd4c2ab9f96d6d14542e9a5a3_icgraph">
-<area shape="rect" id="node3" href="classpython_1_1menu_1_1_menu.html#a37836e977e47d8f93029fc86d91a3dd5" title="python.menu.Menu.setSelected" alt="" coords="564,5,769,35"/><area shape="rect" id="node7" href="classpython_1_1menu_1_1_menu.html#a4ee6f4214e76989f608c30294302673a" title="python.menu.Menu.setNotSelected" alt="" coords="288,31,515,60"/><area shape="rect" id="node5" href="classpython_1_1menu_1_1_menu.html#a9011fd17cc68bdd567efb457c5f6997f" title="python.menu.Menu.onKeyDown" alt="" coords="819,5,1027,35"/></map>
+<area shape="rect" id="node3" href="classpython_1_1menu_1_1_menu.html#a37836e977e47d8f93029fc86d91a3dd5" title="python.menu.Menu.setSelected" alt="" coords="564,32,769,61"/><area shape="rect" id="node11" href="classpython_1_1menu_1_1_menu.html#a4ee6f4214e76989f608c30294302673a" title="python.menu.Menu.setNotSelected" alt="" coords="288,57,515,87"/><area shape="rect" id="node5" href="classpython_1_1menu_1_1_menu.html#a875f4142499b1e614851bcc0a73d6475" title="python.menu.Menu.initMenu" alt="" coords="829,5,1016,35"/><area shape="rect" id="node9" href="classpython_1_1menu_1_1_menu.html#a9011fd17cc68bdd567efb457c5f6997f" title="python.menu.Menu.onKeyDown" alt="" coords="819,59,1027,88"/><area shape="rect" id="node7" href="classpython_1_1menu_1_1_menu.html#a6fd22a4a362cf22c62177c7ad7a3fa87" title="python.menu.Menu.deleteEntry" alt="" coords="1075,5,1277,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a875f4142499b1e614851bcc0a73d6475"></a><!-- doxytag: member="python::menu::Menu::initMenu" ref="a875f4142499b1e614851bcc0a73d6475" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def <a class="el" href="classpython_1_1menu_1_1_menu.html#a875f4142499b1e614851bcc0a73d6475">python.menu.Menu.initMenu</a> </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classpython_1_1menu_1_1_menu_a875f4142499b1e614851bcc0a73d6475_cgraph.png" border="0" usemap="#classpython_1_1menu_1_1_menu_a875f4142499b1e614851bcc0a73d6475_cgraph" alt=""/></div>
+<map name="classpython_1_1menu_1_1_menu_a875f4142499b1e614851bcc0a73d6475_cgraph" id="classpython_1_1menu_1_1_menu_a875f4142499b1e614851bcc0a73d6475_cgraph">
+<area shape="rect" id="node3" href="classpython_1_1menu_1_1_menu.html#a37836e977e47d8f93029fc86d91a3dd5" title="python.menu.Menu.setSelected" alt="" coords="241,32,447,61"/><area shape="rect" id="node5" href="classpython_1_1menu_1_1_menu.html#a4ee6f4214e76989f608c30294302673a" title="python.menu.Menu.setNotSelected" alt="" coords="496,5,723,35"/><area shape="rect" id="node7" href="classpython_1_1menu_1_1_menu.html#ab429f52dd4c2ab9f96d6d14542e9a5a3" title="python.menu.Menu.getEntryElement" alt="" coords="771,32,1005,61"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classpython_1_1menu_1_1_menu_a875f4142499b1e614851bcc0a73d6475_icgraph.png" border="0" usemap="#classpython_1_1menu_1_1_menu_a875f4142499b1e614851bcc0a73d6475_icgraph" alt=""/></div>
+<map name="classpython_1_1menu_1_1_menu_a875f4142499b1e614851bcc0a73d6475_icgraph" id="classpython_1_1menu_1_1_menu_a875f4142499b1e614851bcc0a73d6475_icgraph">
+<area shape="rect" id="node3" href="classpython_1_1menu_1_1_menu.html#a6fd22a4a362cf22c62177c7ad7a3fa87" title="python.menu.Menu.deleteEntry" alt="" coords="240,5,443,35"/></map>
 </div>
 </p>
 
@@ -341,7 +424,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classpython_1_1menu_1_1_menu_a4ee6f4214e76989f608c30294302673a_icgraph.png" border="0" usemap="#classpython_1_1menu_1_1_menu_a4ee6f4214e76989f608c30294302673a_icgraph" alt=""/></div>
 <map name="classpython_1_1menu_1_1_menu_a4ee6f4214e76989f608c30294302673a_icgraph" id="classpython_1_1menu_1_1_menu_a4ee6f4214e76989f608c30294302673a_icgraph">
-<area shape="rect" id="node3" href="classpython_1_1menu_1_1_menu.html#a37836e977e47d8f93029fc86d91a3dd5" title="python.menu.Menu.setSelected" alt="" coords="281,5,487,35"/><area shape="rect" id="node5" href="classpython_1_1menu_1_1_menu.html#a9011fd17cc68bdd567efb457c5f6997f" title="python.menu.Menu.onKeyDown" alt="" coords="536,5,744,35"/></map>
+<area shape="rect" id="node3" href="classpython_1_1menu_1_1_menu.html#a37836e977e47d8f93029fc86d91a3dd5" title="python.menu.Menu.setSelected" alt="" coords="281,32,487,61"/><area shape="rect" id="node5" href="classpython_1_1menu_1_1_menu.html#a875f4142499b1e614851bcc0a73d6475" title="python.menu.Menu.initMenu" alt="" coords="547,5,733,35"/><area shape="rect" id="node9" href="classpython_1_1menu_1_1_menu.html#a9011fd17cc68bdd567efb457c5f6997f" title="python.menu.Menu.onKeyDown" alt="" coords="536,59,744,88"/><area shape="rect" id="node7" href="classpython_1_1menu_1_1_menu.html#a6fd22a4a362cf22c62177c7ad7a3fa87" title="python.menu.Menu.deleteEntry" alt="" coords="792,5,995,35"/></map>
 </div>
 </p>
 
@@ -392,13 +475,26 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classpython_1_1menu_1_1_menu_a37836e977e47d8f93029fc86d91a3dd5_icgraph.png" border="0" usemap="#classpython_1_1menu_1_1_menu_a37836e977e47d8f93029fc86d91a3dd5_icgraph" alt=""/></div>
 <map name="classpython_1_1menu_1_1_menu_a37836e977e47d8f93029fc86d91a3dd5_icgraph" id="classpython_1_1menu_1_1_menu_a37836e977e47d8f93029fc86d91a3dd5_icgraph">
-<area shape="rect" id="node3" href="classpython_1_1menu_1_1_menu.html#a9011fd17cc68bdd567efb457c5f6997f" title="python.menu.Menu.onKeyDown" alt="" coords="261,5,469,35"/></map>
+<area shape="rect" id="node3" href="classpython_1_1menu_1_1_menu.html#a875f4142499b1e614851bcc0a73d6475" title="python.menu.Menu.initMenu" alt="" coords="272,5,459,35"/><area shape="rect" id="node7" href="classpython_1_1menu_1_1_menu.html#a9011fd17cc68bdd567efb457c5f6997f" title="python.menu.Menu.onKeyDown" alt="" coords="261,59,469,88"/><area shape="rect" id="node5" href="classpython_1_1menu_1_1_menu.html#a6fd22a4a362cf22c62177c7ad7a3fa87" title="python.menu.Menu.deleteEntry" alt="" coords="517,5,720,35"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a228f3e4e534b0a195dac47c1599500e0"></a><!-- doxytag: member="python::menu::Menu::containerId" ref="a228f3e4e534b0a195dac47c1599500e0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpython_1_1menu_1_1_menu.html#a228f3e4e534b0a195dac47c1599500e0">python::menu.Menu::containerId</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a11b61e5d82f0e9e5dcdc70ad228fb00c"></a><!-- doxytag: member="python::menu::Menu::current" ref="a11b61e5d82f0e9e5dcdc70ad228fb00c" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -457,6 +553,32 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classpython_1_1menu_1_1_menu.html#af5bae8d30980f3895389aac334070908">python::menu.Menu::fmtSelected</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4537ff0d95113860f2e63c1ceda0f456"></a><!-- doxytag: member="python::menu::Menu::onSelect" ref="a4537ff0d95113860f2e63c1ceda0f456" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpython_1_1menu_1_1_menu.html#a4537ff0d95113860f2e63c1ceda0f456">python::menu.Menu::onSelect</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab643440abdcaa05084dcc8b589eb9cf3"></a><!-- doxytag: member="python::menu::Menu::selfName" ref="ab643440abdcaa05084dcc8b589eb9cf3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpython_1_1menu_1_1_menu.html#ab643440abdcaa05084dcc8b589eb9cf3">python::menu.Menu::selfName</a></td>
         </tr>
       </table>
 </div>

@@ -33,6 +33,7 @@ var searchData=
   ['deflatesetdictionary',['deflateSetDictionary',['../deflate_8c.html#a4e2855f986abd56d4515e9bb09986a5b',1,'deflate.c']]],
   ['deflatesetheader',['deflateSetHeader',['../deflate_8c.html#a0bb9d562cacbe698297de30cdeeb2153',1,'deflate.c']]],
   ['deflatetune',['deflateTune',['../deflate_8c.html#aa2f2f8ee11441c80c35f035ad7efbb8e',1,'deflate.c']]],
+  ['deleteentry',['deleteEntry',['../classpython_1_1menu_1_1_menu.html#a6fd22a4a362cf22c62177c7ad7a3fa87',1,'python::menu::Menu']]],
   ['deletefileentry',['DeleteFileEntry',['../_s_base_file_table_8cpp.html#ab491aefc6c1009d67e63868ea2be6ecc',1,'DeleteFileEntry(TMPQArchive *ha, TFileEntry *pFileEntry):&#160;SBaseFileTable.cpp'],['../_storm_common_8h.html#ab491aefc6c1009d67e63868ea2be6ecc',1,'DeleteFileEntry(TMPQArchive *ha, TFileEntry *pFileEntry):&#160;SBaseFileTable.cpp']]],
   ['der_5fdecode_5fbit_5fstring',['der_decode_bit_string',['../der__decode__bit__string_8c.html#a0a0c371e559e6b455cc4a052d962226f',1,'der_decode_bit_string.c']]],
   ['der_5fdecode_5fboolean',['der_decode_boolean',['../der__decode__boolean_8c.html#a5c72faaf0b34b18bd92db4d95e211a9d',1,'der_decode_boolean.c']]],

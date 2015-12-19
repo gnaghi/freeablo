@@ -107,23 +107,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00024"></a>00024         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#ae6c3b065cf29ca67f74658a165f640cc">showTitleScreen</a>();
 <a name="l00025"></a>00025         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#af7667c4778fe6db955c3b32399213c97">showIngameGui</a>();
 <a name="l00026"></a>00026         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a517ba5e01a779fd93d2773c8976cd55f">showMainMenu</a>();
-<a name="l00027"></a>00027         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#ab8acac85dc71615f9539ceb38e0a41a6">updateGui</a>();
-<a name="l00028"></a>00028         <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754">GuiType</a> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#aedbc8c6e4b08c31c4208ea7b43dca4b3">currentGuiType</a>() <span class="keyword">const</span>;
-<a name="l00029"></a><a class="code" href="class_f_a_gui_1_1_gui_manager.html#abac92caf7513a1c62573cf3aca7b2372">00029</a>         <span class="keyword">static</span> std::string <a class="code" href="class_f_a_gui_1_1_gui_manager.html#abac92caf7513a1c62573cf3aca7b2372">invClass</a>;
-<a name="l00030"></a>00030 
-<a name="l00031"></a><a class="code" href="class_f_a_gui_1_1_gui_manager.html#af197a9c0cd40de81ac10a78865817c75">00031</a>         <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html">FAPythonFuncs</a> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#af197a9c0cd40de81ac10a78865817c75">mPythonFuncs</a>;
-<a name="l00032"></a>00032 
-<a name="l00033"></a>00033         <span class="keyword">private</span>:
-<a name="l00034"></a>00034             <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754">GuiType</a> mCurrentGuiType;
-<a name="l00035"></a>00035 
-<a name="l00036"></a>00036     };
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038     <span class="keyword">extern</span> std::string <a class="code" href="namespace_f_a_gui.html#a0ca1b6902b9ba1e9dd10b09bcc9cea0d">cursorPath</a>;
-<a name="l00039"></a>00039 
-<a name="l00040"></a>00040     <span class="keyword">extern</span> uint32_t <a class="code" href="namespace_f_a_gui.html#aaeaebbc0ee052537ce05c78358f6d9ca">cursorFrame</a>;
-<a name="l00041"></a>00041 }
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043 <span class="preprocessor">#endif</span>
+<a name="l00027"></a>00027         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#af8975e4df44fe341a560dffad24aeb48">showSelectHeroMenu</a>();
+<a name="l00028"></a>00028         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#ab150be448d19219034998dac1c0b2f66">showChooseClassMenu</a>();
+<a name="l00029"></a>00029         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a316001c6914e78f667f6029e82c6840c">showEnterNameMenu</a>(<span class="keywordtype">int</span> classNumber);
+<a name="l00030"></a>00030         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a4a047459b9bca575ec28dcd18b48a9a8">showInvalidNameMenu</a>(<span class="keywordtype">int</span> classNumber);
+<a name="l00031"></a>00031         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#ab8acac85dc71615f9539ceb38e0a41a6">updateGui</a>();
+<a name="l00032"></a>00032         <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754">GuiType</a> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#aedbc8c6e4b08c31c4208ea7b43dca4b3">currentGuiType</a>() <span class="keyword">const</span>;
+<a name="l00033"></a><a class="code" href="class_f_a_gui_1_1_gui_manager.html#abac92caf7513a1c62573cf3aca7b2372">00033</a>         <span class="keyword">static</span> std::string <a class="code" href="class_f_a_gui_1_1_gui_manager.html#abac92caf7513a1c62573cf3aca7b2372">invClass</a>;
+<a name="l00034"></a>00034 
+<a name="l00035"></a><a class="code" href="class_f_a_gui_1_1_gui_manager.html#af197a9c0cd40de81ac10a78865817c75">00035</a>         <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html">FAPythonFuncs</a> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#af197a9c0cd40de81ac10a78865817c75">mPythonFuncs</a>;
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037     <span class="keyword">private</span>:
+<a name="l00038"></a>00038         <span class="keywordtype">void</span> hideAllMenus();
+<a name="l00039"></a>00039         <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754">GuiType</a> mCurrentGuiType;
+<a name="l00040"></a>00040     };
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042     <span class="keyword">extern</span> std::string <a class="code" href="namespace_f_a_gui.html#a0ca1b6902b9ba1e9dd10b09bcc9cea0d">cursorPath</a>;
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044     <span class="keyword">extern</span> uint32_t <a class="code" href="namespace_f_a_gui.html#aaeaebbc0ee052537ce05c78358f6d9ca">cursorFrame</a>;
+<a name="l00045"></a>00045 }
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"

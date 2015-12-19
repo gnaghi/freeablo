@@ -1,4 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classpython_1_1menu_1_1_menu.html#a37836e977e47d8f93029fc86d91a3dd5" title="python.menu.Menu.setSelected" alt="" coords="281,5,487,35"/>
-<area shape="rect" id="node5" href="$classpython_1_1menu_1_1_menu.html#a9011fd17cc68bdd567efb457c5f6997f" title="python.menu.Menu.onKeyDown" alt="" coords="536,5,744,35"/>
+<area shape="rect" id="node3" href="$classpython_1_1menu_1_1_menu.html#a37836e977e47d8f93029fc86d91a3dd5" title="python.menu.Menu.setSelected" alt="" coords="281,32,487,61"/>
+<area shape="rect" id="node5" href="$classpython_1_1menu_1_1_menu.html#a875f4142499b1e614851bcc0a73d6475" title="python.menu.Menu.initMenu" alt="" coords="547,5,733,35"/>
+<area shape="rect" id="node9" href="$classpython_1_1menu_1_1_menu.html#a9011fd17cc68bdd567efb457c5f6997f" title="python.menu.Menu.onKeyDown" alt="" coords="536,59,744,88"/>
+<area shape="rect" id="node7" href="$classpython_1_1menu_1_1_menu.html#a6fd22a4a362cf22c62177c7ad7a3fa87" title="python.menu.Menu.deleteEntry" alt="" coords="792,5,995,35"/>
 </map>

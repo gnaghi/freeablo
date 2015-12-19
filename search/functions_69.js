@@ -24,6 +24,7 @@ var searchData=
   ['init_5fblock',['init_block',['../trees_8c.html#ac5265fdf07ca6c4cc57769e2fb546d55',1,'trees.c']]],
   ['initgui',['initGui',['../namespace_render.html#a9d96a3416ef7e954ba791f94c24a632c',1,'Render']]],
   ['initializempqcryptography',['InitializeMpqCryptography',['../_s_base_common_8cpp.html#a771e96257f2889763ee169050c798554',1,'InitializeMpqCryptography():&#160;SBaseCommon.cpp'],['../_storm_common_8h.html#a771e96257f2889763ee169050c798554',1,'InitializeMpqCryptography():&#160;SBaseCommon.cpp']]],
+  ['initmenu',['initMenu',['../classpython_1_1menu_1_1_menu.html#a875f4142499b1e614851bcc0a73d6475',1,'python::menu::Menu']]],
   ['initpython',['initPython',['../namespace_f_a_gui.html#af3f1c6ee8afa7e579b77ad7f95596fb8',1,'FAGui']]],
   ['initpythonwrapper',['initpythonwrapper',['../class_input_1_1_hotkey.html#acb265f8ec7121f3eb47a415b59bf3a23',1,'Input::Hotkey']]],
   ['inittree',['InitTree',['../class_t_huffmann_tree.html#a8bc84df971081627d909593fdea27118',1,'THuffmannTree']]],
