@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_a_world_1_1_actor.html#aa214e029e67b1b02d811ef016e002d6e" title="FAWorld::Actor::isEnemy" alt="" coords="260,5,431,35"/>
+<area shape="rect" id="node5" href="$class_f_a_world_1_1_actor.html#a202dce9f5352c307a3fe4e27c0d40b36" title="FAWorld::Actor::isDead" alt="" coords="265,59,425,88"/>
+<area shape="rect" id="node7" href="$class_f_a_world_1_1_position.html#ac5087eb57c5012a8d5cf85feab4b2a26" title="FAWorld::Position::distanceFrom" alt="" coords="239,112,452,141"/>
+</map>

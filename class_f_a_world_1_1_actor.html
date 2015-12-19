@@ -149,7 +149,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a6e2d86d273662e6ea51e1c8f1a9c15cb">attack</a> (<a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *enemy)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a5cc6f4f374e31c0a21d0f60ef6f1eb0a">die</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::pair&lt; size_t, size_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a444ffc43b8028fd002ff931c6e4ca445">destination</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a13d3e583e0c9018af8482d0f3623748d">isDead</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a202dce9f5352c307a3fe4e27c0d40b36">isDead</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#aa214e029e67b1b02d811ef016e002d6e">isEnemy</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a9efde1147775c12a01e7dd2bb9ffe4d0">getWriteSize</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Must only be called between calls to <a class="el" href="class_f_a_world_1_1_net_object.html#a1be4602fa7204c096891ca9a1ced42dc" title="Must be called before any calls to getSize() or writeTo()">startWriting()</a> and <a class="el" href="class_f_a_world_1_1_actor.html#a80e0c4fe4a1dc980a57b9da694cd2362" title="Write object to packet. startWriting() must be called before this function.">writeTo()</a>  <a href="#a9efde1147775c12a01e7dd2bb9ffe4d0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a80e0c4fe4a1dc980a57b9da694cd2362">writeTo</a> (ENetPacket *packet, size_t &amp;position)</td></tr>
@@ -174,11 +175,13 @@ Protected Member Functions</h2></td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#aa6a27417ed0edf06434a63bcab51864b">save</a> (Archive &amp;ar, const unsigned int version) const </td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ae052cd3c00a6b57b34430d684e7863b8">load</a> (Archive &amp;ar, const unsigned int version)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ab251c6705ad0be74a823fe955e6175f2">canIAttack</a> (<a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *actor)</td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_game_level.html">GameLevel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a5c7b9155b85b7d6d10397e77e0588e6a">mLevel</a> = <a class="el" href="huff__old_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ac6cf18e16b80ae8e820fea0c3c52a0b1">mIsDead</a> = <a class="el" href="_storm_port_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3">AnimState::AnimState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a9225c2ffaf0c39b8edc13334a861b2f6">mAnimState</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a81ce70269025d8e9ce1bcf694312a32c">mIsEnemy</a></td></tr>
 <tr><td colspan="2"><h2><a name="friends"></a>
 Friends</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
@@ -278,6 +281,41 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_f_a_world_1_1_actor_a6e2d86d273662e6ea51e1c8f1a9c15cb_icgraph.png" border="0" usemap="#class_f_a_world_1_1_actor_a6e2d86d273662e6ea51e1c8f1a9c15cb_icgraph" alt=""/></div>
 <map name="class_f_a_world_1_1_actor_a6e2d86d273662e6ea51e1c8f1a9c15cb_icgraph" id="class_f_a_world_1_1_actor_a6e2d86d273662e6ea51e1c8f1a9c15cb_icgraph">
 <area shape="rect" id="node3" href="class_f_a_world_1_1_actor.html#a210d7366b718ee9366442a98f940d083" title="FAWorld::Actor::update" alt="" coords="212,5,369,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_game_level.html#a78e4db23f4a198945e69fced2b8d8e9d" title="FAWorld::GameLevel::update" alt="" coords="419,5,613,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab251c6705ad0be74a823fe955e6175f2"></a><!-- doxytag: member="FAWorld::Actor::canIAttack" ref="ab251c6705ad0be74a823fe955e6175f2" args="(Actor *actor)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="class_f_a_world_1_1_actor.html#ab251c6705ad0be74a823fe955e6175f2">FAWorld::Actor::canIAttack</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *&#160;</td>
+          <td class="paramname"><em>actor</em></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_world_1_1_actor_ab251c6705ad0be74a823fe955e6175f2_cgraph.png" border="0" usemap="#class_f_a_world_1_1_actor_ab251c6705ad0be74a823fe955e6175f2_cgraph" alt=""/></div>
+<map name="class_f_a_world_1_1_actor_ab251c6705ad0be74a823fe955e6175f2_cgraph" id="class_f_a_world_1_1_actor_ab251c6705ad0be74a823fe955e6175f2_cgraph">
+<area shape="rect" id="node3" href="class_f_a_world_1_1_actor.html#aa214e029e67b1b02d811ef016e002d6e" title="FAWorld::Actor::isEnemy" alt="" coords="260,5,431,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_actor.html#a202dce9f5352c307a3fe4e27c0d40b36" title="FAWorld::Actor::isDead" alt="" coords="265,59,425,88"/><area shape="rect" id="node7" href="class_f_a_world_1_1_position.html#ac5087eb57c5012a8d5cf85feab4b2a26" title="FAWorld::Position::distanceFrom" alt="" coords="239,112,452,141"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_world_1_1_actor_ab251c6705ad0be74a823fe955e6175f2_icgraph.png" border="0" usemap="#class_f_a_world_1_1_actor_ab251c6705ad0be74a823fe955e6175f2_icgraph" alt=""/></div>
+<map name="class_f_a_world_1_1_actor_ab251c6705ad0be74a823fe955e6175f2_icgraph" id="class_f_a_world_1_1_actor_ab251c6705ad0be74a823fe955e6175f2_icgraph">
+<area shape="rect" id="node3" href="class_f_a_world_1_1_actor.html#a210d7366b718ee9366442a98f940d083" title="FAWorld::Actor::update" alt="" coords="239,5,396,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_game_level.html#a78e4db23f4a198945e69fced2b8d8e9d" title="FAWorld::GameLevel::update" alt="" coords="445,5,640,35"/></map>
 </div>
 </p>
 
@@ -537,15 +575,15 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a13d3e583e0c9018af8482d0f3623748d"></a><!-- doxytag: member="FAWorld::Actor::isDead" ref="a13d3e583e0c9018af8482d0f3623748d" args="()" -->
+<a class="anchor" id="a202dce9f5352c307a3fe4e27c0d40b36"></a><!-- doxytag: member="FAWorld::Actor::isDead" ref="a202dce9f5352c307a3fe4e27c0d40b36" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="class_f_a_world_1_1_actor.html#a13d3e583e0c9018af8482d0f3623748d">FAWorld::Actor::isDead</a> </td>
+          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="class_f_a_world_1_1_actor.html#a202dce9f5352c307a3fe4e27c0d40b36">FAWorld::Actor::isDead</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div>
@@ -554,9 +592,34 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_f_a_world_1_1_actor_a13d3e583e0c9018af8482d0f3623748d_icgraph.png" border="0" usemap="#class_f_a_world_1_1_actor_a13d3e583e0c9018af8482d0f3623748d_icgraph" alt=""/></div>
-<map name="class_f_a_world_1_1_actor_a13d3e583e0c9018af8482d0f3623748d_icgraph" id="class_f_a_world_1_1_actor_a13d3e583e0c9018af8482d0f3623748d_icgraph">
-<area shape="rect" id="node3" href="class_f_a_world_1_1_actor.html#a210d7366b718ee9366442a98f940d083" title="FAWorld::Actor::update" alt="" coords="219,5,376,35"/><area shape="rect" id="node7" href="class_f_a_world_1_1_player.html#aa4da592bd7d2a7523212fe7ba91b4861" title="FAWorld::Player::attack" alt="" coords="216,59,379,88"/><area shape="rect" id="node5" href="class_f_a_world_1_1_game_level.html#a78e4db23f4a198945e69fced2b8d8e9d" title="FAWorld::GameLevel::update" alt="" coords="427,5,621,35"/><area shape="rect" id="node9" href="class_f_a_world_1_1_player.html#a1f1fe37fd8144a89a4f495a760cbd797" title="FAWorld::Player::Player" alt="" coords="443,59,605,88"/></map>
+<div class="center"><img src="class_f_a_world_1_1_actor_a202dce9f5352c307a3fe4e27c0d40b36_icgraph.png" border="0" usemap="#class_f_a_world_1_1_actor_a202dce9f5352c307a3fe4e27c0d40b36_icgraph" alt=""/></div>
+<map name="class_f_a_world_1_1_actor_a202dce9f5352c307a3fe4e27c0d40b36_icgraph" id="class_f_a_world_1_1_actor_a202dce9f5352c307a3fe4e27c0d40b36_icgraph">
+<area shape="rect" id="node3" href="class_f_a_world_1_1_actor.html#a210d7366b718ee9366442a98f940d083" title="FAWorld::Actor::update" alt="" coords="451,5,608,35"/><area shape="rect" id="node7" href="class_f_a_world_1_1_actor.html#ab251c6705ad0be74a823fe955e6175f2" title="FAWorld::Actor::canIAttack" alt="" coords="217,31,399,60"/><area shape="rect" id="node10" href="class_f_a_world_1_1_player.html#aa4da592bd7d2a7523212fe7ba91b4861" title="FAWorld::Player::attack" alt="" coords="227,84,389,113"/><area shape="rect" id="node5" href="class_f_a_world_1_1_game_level.html#a78e4db23f4a198945e69fced2b8d8e9d" title="FAWorld::GameLevel::update" alt="" coords="659,5,853,35"/><area shape="rect" id="node12" href="class_f_a_world_1_1_player.html#a1f1fe37fd8144a89a4f495a760cbd797" title="FAWorld::Player::Player" alt="" coords="448,84,611,113"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa214e029e67b1b02d811ef016e002d6e"></a><!-- doxytag: member="FAWorld::Actor::isEnemy" ref="aa214e029e67b1b02d811ef016e002d6e" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="class_f_a_world_1_1_actor.html#aa214e029e67b1b02d811ef016e002d6e">FAWorld::Actor::isEnemy</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_world_1_1_actor_aa214e029e67b1b02d811ef016e002d6e_icgraph.png" border="0" usemap="#class_f_a_world_1_1_actor_aa214e029e67b1b02d811ef016e002d6e_icgraph" alt=""/></div>
+<map name="class_f_a_world_1_1_actor_aa214e029e67b1b02d811ef016e002d6e_icgraph" id="class_f_a_world_1_1_actor_aa214e029e67b1b02d811ef016e002d6e_icgraph">
+<area shape="rect" id="node3" href="class_f_a_world_1_1_actor.html#ab251c6705ad0be74a823fe955e6175f2" title="FAWorld::Actor::canIAttack" alt="" coords="225,5,407,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_actor.html#a210d7366b718ee9366442a98f940d083" title="FAWorld::Actor::update" alt="" coords="457,5,615,35"/><area shape="rect" id="node7" href="class_f_a_world_1_1_game_level.html#a78e4db23f4a198945e69fced2b8d8e9d" title="FAWorld::GameLevel::update" alt="" coords="664,5,859,35"/></map>
 </div>
 </p>
 
@@ -901,7 +964,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_f_a_world_1_1_actor_a210d7366b718ee9366442a98f940d083_cgraph.png" border="0" usemap="#class_f_a_world_1_1_actor_a210d7366b718ee9366442a98f940d083_cgraph" alt=""/></div>
 <map name="class_f_a_world_1_1_actor_a210d7366b718ee9366442a98f940d083_cgraph" id="class_f_a_world_1_1_actor_a210d7366b718ee9366442a98f940d083_cgraph">
-<area shape="rect" id="node3" href="class_f_a_world_1_1_actor.html#af9dbee7f6987ffae1a1698434367057f" title="FAWorld::Actor::getAnimState" alt="" coords="223,5,420,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_actor.html#a13d3e583e0c9018af8482d0f3623748d" title="FAWorld::Actor::isDead" alt="" coords="241,59,401,88"/><area shape="rect" id="node7" href="class_f_a_world_1_1_actor.html#ab0f672a764dbd1aa2854eff81e45f78e" title="FAWorld::Actor::getCurrentAnim" alt="" coords="216,112,427,141"/><area shape="rect" id="node9" href="class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090" title="where we are coming from" alt="" coords="233,165,409,195"/><area shape="rect" id="node11" href="namespace_misc.html#a501bcdb31f2fadaf6e4c7ea3db7b5d69" title="Misc::getVec" alt="" coords="272,219,371,248"/><area shape="rect" id="node13" href="namespace_cel.html#a4e01b99470fde6ba49817d25dc1e2bc6" title="Cel::get" alt="" coords="288,272,355,301"/><area shape="rect" id="node15" href="class_f_a_world_1_1_position.html#ac5087eb57c5012a8d5cf85feab4b2a26" title="FAWorld::Position::distanceFrom" alt="" coords="215,325,428,355"/><area shape="rect" id="node17" href="namespace_misc.html#a146231bea9c51a041c24dec11383e81c" title="Misc::getVecDir" alt="" coords="264,379,379,408"/><area shape="rect" id="node19" href="class_f_a_world_1_1_position.html#ad34a10975af08be2beb527fc2d10d101" title="advances towards mNext" alt="" coords="235,432,408,461"/><area shape="rect" id="node23" href="class_f_a_world_1_1_actor.html#a6e2d86d273662e6ea51e1c8f1a9c15cb" title="FAWorld::Actor::attack" alt="" coords="244,485,399,515"/><area shape="rect" id="node25" href="class_f_a_world_1_1_world.html#a232923bf93809b892f0e295ea678d395" title="FAWorld::World::getActorAt" alt="" coords="229,539,413,568"/><area shape="rect" id="node33" href="class_f_a_world_1_1_game_level.html#a77abbe17d598a66968fa502ef9d21a6a" title="FAWorld::GameLevel::getTile" alt="" coords="224,592,419,621"/><area shape="rect" id="node35" href="class_f_a_world_1_1_actor.html#a00af1cf4ccaf76a3cf84dc7ec5ba3390" title="FAWorld::Actor::setAnimation" alt="" coords="224,645,419,675"/><area shape="rect" id="node21" href="class_f_a_world_1_1_position.html#aaab58152fbd29cfde68a7317dad1f83d" title="where we are going to" alt="" coords="507,432,667,461"/><area shape="rect" id="node27" href="class_f_a_world_1_1_world.html#a0cb638b42a04dba460fcaf3e0a261fd9" title="FAWorld::World::getCurrentLevel" alt="" coords="480,512,693,541"/><area shape="rect" id="node31" href="class_f_a_world_1_1_game_level.html#aae6a0535a7d91a41d9174c5e483f6736" title="FAWorld::GameLevel::getActorAt" alt="" coords="479,565,695,595"/><area shape="rect" id="node29" href="class_f_a_world_1_1_actor.html#ac7f3a1a4b5b66da302e257ea3b5c0f58" title="FAWorld::Actor::getLevel" alt="" coords="745,512,913,541"/></map>
+<area shape="rect" id="node3" href="class_f_a_world_1_1_actor.html#af9dbee7f6987ffae1a1698434367057f" title="FAWorld::Actor::getAnimState" alt="" coords="220,5,417,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_actor.html#a202dce9f5352c307a3fe4e27c0d40b36" title="FAWorld::Actor::isDead" alt="" coords="501,151,661,180"/><area shape="rect" id="node7" href="class_f_a_world_1_1_actor.html#ab0f672a764dbd1aa2854eff81e45f78e" title="FAWorld::Actor::getCurrentAnim" alt="" coords="213,109,424,139"/><area shape="rect" id="node9" href="class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090" title="where we are coming from" alt="" coords="231,163,407,192"/><area shape="rect" id="node11" href="namespace_misc.html#a501bcdb31f2fadaf6e4c7ea3db7b5d69" title="Misc::getVec" alt="" coords="269,216,368,245"/><area shape="rect" id="node13" href="namespace_cel.html#a4e01b99470fde6ba49817d25dc1e2bc6" title="Cel::get" alt="" coords="285,269,352,299"/><area shape="rect" id="node15" href="class_f_a_world_1_1_actor.html#ab251c6705ad0be74a823fe955e6175f2" title="FAWorld::Actor::canIAttack" alt="" coords="228,323,409,352"/><area shape="rect" id="node22" href="namespace_misc.html#a146231bea9c51a041c24dec11383e81c" title="Misc::getVecDir" alt="" coords="261,376,376,405"/><area shape="rect" id="node24" href="class_f_a_world_1_1_position.html#ad34a10975af08be2beb527fc2d10d101" title="advances towards mNext" alt="" coords="232,429,405,459"/><area shape="rect" id="node28" href="class_f_a_world_1_1_actor.html#a6e2d86d273662e6ea51e1c8f1a9c15cb" title="FAWorld::Actor::attack" alt="" coords="241,483,396,512"/><area shape="rect" id="node30" href="class_f_a_world_1_1_world.html#a232923bf93809b892f0e295ea678d395" title="FAWorld::World::getActorAt" alt="" coords="227,536,411,565"/><area shape="rect" id="node38" href="class_f_a_world_1_1_game_level.html#a77abbe17d598a66968fa502ef9d21a6a" title="FAWorld::GameLevel::getTile" alt="" coords="221,589,416,619"/><area shape="rect" id="node40" href="class_f_a_world_1_1_actor.html#a00af1cf4ccaf76a3cf84dc7ec5ba3390" title="FAWorld::Actor::setAnimation" alt="" coords="221,643,416,672"/><area shape="rect" id="node17" href="class_f_a_world_1_1_actor.html#aa214e029e67b1b02d811ef016e002d6e" title="FAWorld::Actor::isEnemy" alt="" coords="496,296,667,325"/><area shape="rect" id="node20" href="class_f_a_world_1_1_position.html#ac5087eb57c5012a8d5cf85feab4b2a26" title="FAWorld::Position::distanceFrom" alt="" coords="475,349,688,379"/><area shape="rect" id="node26" href="class_f_a_world_1_1_position.html#aaab58152fbd29cfde68a7317dad1f83d" title="where we are going to" alt="" coords="501,429,661,459"/><area shape="rect" id="node32" href="class_f_a_world_1_1_world.html#a0cb638b42a04dba460fcaf3e0a261fd9" title="FAWorld::World::getCurrentLevel" alt="" coords="475,509,688,539"/><area shape="rect" id="node36" href="class_f_a_world_1_1_game_level.html#aae6a0535a7d91a41d9174c5e483f6736" title="FAWorld::GameLevel::getActorAt" alt="" coords="473,563,689,592"/><area shape="rect" id="node34" href="class_f_a_world_1_1_actor.html#ac7f3a1a4b5b66da302e257ea3b5c0f58" title="FAWorld::Actor::getLevel" alt="" coords="740,509,908,539"/></map>
 </div>
 </p>
 
@@ -1089,6 +1152,19 @@ Here is the call graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="class_f_a_world_1_1_actor.html#ac6cf18e16b80ae8e820fea0c3c52a0b1">FAWorld::Actor::mIsDead</a> = <a class="el" href="_storm_port_8h.html#a65e9886d74aaee76545e83dd09011727">false</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a81ce70269025d8e9ce1bcf694312a32c"></a><!-- doxytag: member="FAWorld::Actor::mIsEnemy" ref="a81ce70269025d8e9ce1bcf694312a32c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="class_f_a_world_1_1_actor.html#a81ce70269025d8e9ce1bcf694312a32c">FAWorld::Actor::mIsEnemy</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>

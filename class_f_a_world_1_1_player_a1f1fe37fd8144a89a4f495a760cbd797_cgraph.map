@@ -1,6 +1,6 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$class_f_a_world_1_1_player.html#aa4da592bd7d2a7523212fe7ba91b4861" title="FAWorld::Player::attack" alt="" coords="216,191,379,220"/>
-<area shape="rect" id="node5" href="$class_f_a_world_1_1_actor.html#a13d3e583e0c9018af8482d0f3623748d" title="FAWorld::Actor::isDead" alt="" coords="473,5,633,35"/>
+<area shape="rect" id="node5" href="$class_f_a_world_1_1_actor.html#a202dce9f5352c307a3fe4e27c0d40b36" title="FAWorld::Actor::isDead" alt="" coords="473,5,633,35"/>
 <area shape="rect" id="node7" href="$namespace_cel.html#a4e01b99470fde6ba49817d25dc1e2bc6" title="Cel::get" alt="" coords="811,165,877,195"/>
 <area shape="rect" id="node9" href="$namespace_f_a_level_gen.html#a9a5e4ea8044e59b4b5e21115e04d4e9a" title="FALevelGen::chooseOne" alt="" coords="469,320,637,349"/>
 <area shape="rect" id="node13" href="$class_f_a_world_1_1_actor.html#a45131c266364a071e5e36dba66bdf38a" title="FAWorld::Actor::takeDamage" alt="" coords="456,112,651,141"/>

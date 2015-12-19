@@ -125,6 +125,7 @@ var searchData=
   ['minvalidvalue',['MinValidValue',['../class_t_huffmann_tree.html#a0f6dac496f3f6855db0aa2518c9e050f',1,'THuffmannTree']]],
   ['minventory',['mInventory',['../class_f_a_world_1_1_player.html#a5793a4a0c105bbeecfe92e9dac7f9d45',1,'FAWorld::Player']]],
   ['misdead',['mIsDead',['../class_f_a_world_1_1_actor.html#ac6cf18e16b80ae8e820fea0c3c52a0b1',1,'FAWorld::Actor']]],
+  ['misenemy',['mIsEnemy',['../class_f_a_world_1_1_actor.html#a81ce70269025d8e9ce1bcf694312a32c',1,'FAWorld::Actor']]],
   ['misreal',['mIsReal',['../class_f_a_world_1_1_item.html#a930546755e1ba5a242405d0710807847',1,'FAWorld::Item']]],
   ['mitemtype',['mItemType',['../class_diablo_exe_1_1_unique_item.html#af463514934e876b3330a4cd63434e4c1',1,'DiabloExe::UniqueItem']]],
   ['mixmatchesfunc',['MixMatchesFunc',['../struct___c_match_finder_mt.html#aede626f553532467b8f19e56fed43789',1,'_CMatchFinderMt']]],
