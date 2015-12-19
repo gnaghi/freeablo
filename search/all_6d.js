@@ -16,7 +16,7 @@ var searchData=
   ['main_5fqsort_5fdepth_5fthresh',['MAIN_QSORT_DEPTH_THRESH',['../blocksort_8c.html#aba9147c3d53a417053f6d690ab2af5b7',1,'blocksort.c']]],
   ['main_5fqsort_5fsmall_5fthresh',['MAIN_QSORT_SMALL_THRESH',['../blocksort_8c.html#a4a7f5a87cffcfeaf6960d5e167640148',1,'blocksort.c']]],
   ['main_5fqsort_5fstack_5fsize',['MAIN_QSORT_STACK_SIZE',['../blocksort_8c.html#a1cb1a268a37cdaa3ce0aad0e5da82282',1,'blocksort.c']]],
-  ['mainmenu',['mainMenu',['../namespace_f_a_gui.html#ae04ad4d62edfbb2c079104fe9e167bed',1,'FAGui']]],
+  ['mainmenu',['MainMenu',['../class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754a089bc443d930bf98f62bc34cce8f8b4f',1,'FAGui::GuiManager::MainMenu()'],['../namespace_f_a_gui.html#ae04ad4d62edfbb2c079104fe9e167bed',1,'FAGui::mainMenu()']]],
   ['mainwindow',['MainWindow',['../class_ui_1_1_main_window.html',1,'Ui']]],
   ['mainwindow',['MainWindow',['../class_main_window.html',1,'MainWindow'],['../class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db',1,'MainWindow::MainWindow()'],['../class_launcher_1_1_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db',1,'Launcher::MainWindow::MainWindow()']]],
   ['mainwindow',['MainWindow',['../class_launcher_1_1_main_window.html',1,'Launcher']]],

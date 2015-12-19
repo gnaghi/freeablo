@@ -78,5 +78,6 @@ var searchData=
   ['criticalsection_5finit',['CriticalSection_Init',['../_threads_8c.html#a1e49081fd33200900841f17035ecb15b',1,'CriticalSection_Init(CCriticalSection *p):&#160;Threads.c'],['../_threads_8h.html#a1e49081fd33200900841f17035ecb15b',1,'CriticalSection_Init(CCriticalSection *p):&#160;Threads.c']]],
   ['crypt_5fargchk',['crypt_argchk',['../tomcrypt__argchk_8h.html#a95a939332c88409470a0b9a5130a815a',1,'crypt_argchk(char *v, char *s, int d):&#160;crypt_argchk.c'],['../crypt__argchk_8c.html#a95a939332c88409470a0b9a5130a815a',1,'crypt_argchk(char *v, char *s, int d):&#160;crypt_argchk.c']]],
   ['crypt_5ffsa',['crypt_fsa',['../tomcrypt__misc_8h.html#aefa03a9ea8721b2d7c4ec148f3124c03',1,'tomcrypt_misc.h']]],
-  ['current',['current',['../class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090',1,'FAWorld::Position']]]
+  ['current',['current',['../class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090',1,'FAWorld::Position']]],
+  ['currentguitype',['currentGuiType',['../class_f_a_gui_1_1_gui_manager.html#aedbc8c6e4b08c31c4208ea7b43dca4b3',1,'FAGui::GuiManager']]]
 ];
