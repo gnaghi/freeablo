@@ -14,7 +14,7 @@ var searchData=
   ['elzmafinishmode',['ELzmaFinishMode',['../_lzma_dec_8h.html#a61326609cb619c55df7de7377082b79a',1,'LzmaDec.h']]],
   ['elzmastatus',['ELzmaStatus',['../_lzma_dec_8h.html#aec5f6be8053dbbef6f7117ffb81aea6a',1,'LzmaDec.h']]],
   ['empty',['empty',['../class_f_a_world_1_1_item.html#ae153cfeb18009ca67d76006522a84132',1,'FAWorld::Item']]],
-  ['enablescissor',['enableScissor',['../struct_draw_command.html#a66f33eef18fcfc675e7100ca2afefef4',1,'DrawCommand::enableScissor()'],['../struct_draw_command.html#af5e6c0ee72edc973f8d10997b08707eba73e9063b623ffcb4649be6c3c153ecc2',1,'DrawCommand::EnableScissor()']]],
+  ['enablescissor',['EnableScissor',['../struct_draw_command.html#af5e6c0ee72edc973f8d10997b08707eba73e9063b623ffcb4649be6c3c153ecc2',1,'DrawCommand::EnableScissor()'],['../struct_draw_command.html#a66f33eef18fcfc675e7100ca2afefef4',1,'DrawCommand::enableScissor()']]],
   ['enablescissorregion',['EnableScissorRegion',['../class_rocket_s_d_l2_renderer.html#a7ad7c990b8da972855f79def5b22a595',1,'RocketSDL2Renderer']]],
   ['enablewarn_2eh',['enablewarn.h',['../enablewarn_8h.html',1,'']]],
   ['encodeonebyte',['EncodeOneByte',['../class_t_huffmann_tree.html#aa91f1cbb00d0c39fede7accf46d5f295',1,'THuffmannTree']]],

@@ -14,7 +14,7 @@ var searchData=
   ['info_5fcompiler',['info_compiler',['../_c_make_c_compiler_id_8c.html#a4b0efeb7a5d59313986b3a0390f050f6',1,'info_compiler():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a4b0efeb7a5d59313986b3a0390f050f6',1,'info_compiler():&#160;CMakeCXXCompilerId.cpp']]],
   ['info_5fplatform',['info_platform',['../_c_make_c_compiler_id_8c.html#a2321403dee54ee23f0c2fa849c60f7d4',1,'info_platform():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a2321403dee54ee23f0c2fa849c60f7d4',1,'info_platform():&#160;CMakeCXXCompilerId.cpp']]],
   ['ingameui',['ingameUi',['../namespace_f_a_gui.html#a4144d86a55ac9084e1070d5fd0d985e0',1,'FAGui']]],
-  ['init',['init',['../structltc__hash__descriptor.html#a01ab14b80b86c261c03a0846d3328f9a',1,'ltc_hash_descriptor::init()'],['../structltc__math__descriptor.html#a7f798e8c56b542dfce0ff9e1e07c7d7f',1,'ltc_math_descriptor::init()'],['../struct___i_match_finder.html#abfd72dee891c932d567298a92acbe4a6',1,'_IMatchFinder::Init()']]],
+  ['init',['Init',['../struct___i_match_finder.html#abfd72dee891c932d567298a92acbe4a6',1,'_IMatchFinder::Init()'],['../structltc__hash__descriptor.html#a01ab14b80b86c261c03a0846d3328f9a',1,'ltc_hash_descriptor::init()'],['../structltc__math__descriptor.html#a7f798e8c56b542dfce0ff9e1e07c7d7f',1,'ltc_math_descriptor::init()']]],
   ['init_5fcopy',['init_copy',['../structltc__math__descriptor.html#a542cb445e22d6bc2eb645e671279ff37',1,'ltc_math_descriptor']]],
   ['initialisedok',['initialisedOk',['../structbz_file.html#a9786a78aa951d4ec101350dbaf6328d1',1,'bzFile']]],
   ['ins_5fh',['ins_h',['../structinternal__state.html#a8cf437698f428195122d3c530929a80c',1,'internal_state']]],
