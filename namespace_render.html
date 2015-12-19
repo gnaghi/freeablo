@@ -124,7 +124,7 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_render.html#a3d28da845a64625382c6b7ab62df3bdb">spriteSize</a> (const <a class="el" href="namespace_render.html#af50f804b65c964056de6aeffcf039f66">Sprite</a> &amp;sprite, size_t &amp;w, size_t &amp;h)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_render_1_1_sprite_group.html">SpriteGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_render.html#a5b51432e4c169b5593556ea7ceebce69">loadTilesetSprite</a> (const std::string &amp;celPath, const std::string &amp;minPath, <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> top)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_render.html#aa2625d5d45177718b16be35d3de01643">drawLevel</a> (const <a class="el" href="class_level_1_1_level.html">Level::Level</a> &amp;level, size_t minTopsHandle, size_t minBottomsHandle, <a class="el" href="class_render_1_1_sprite_cache_base.html">SpriteCacheBase</a> *cache, LevelObjects &amp;objs, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::pair&lt; size_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_render.html#a85cfca0eb3f3983b090abb049385765b">getClickedTile</a> (const <a class="el" href="class_level_1_1_level.html">Level::Level</a> &amp;level, size_t x, size_t y, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::pair&lt; int32_t, int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_render.html#a14fb455a9e0201367451b54ff2276f9f">getClickedTile</a> (const <a class="el" href="class_level_1_1_level.html">Level::Level</a> &amp;level, size_t x, size_t y, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_render.html#a1b2e4583833018c9d23e43e44300ba83">clear</a> (int r=0, int g=0, int b=255)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_render.html#a165d3db9739bbdac36dbbd9d837a3f6d">import</a> (const std::string &amp;name)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_render.html#ac19fcc278cfef53ca0b941ff040fb5d3">loadNonCelImage</a> (const std::string &amp;sourcePath, const std::string &amp;extension)</td></tr>
@@ -142,7 +142,8 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_render.html#aa3495cd25236e295a183dc4c70932ecd">drawMinPillar</a> (SDL_Surface *s, int x, int y, const std::vector&lt; int16_t &gt; &amp;pillar, <a class="el" href="class_cel_1_1_cel_file.html">Cel::CelFile</a> &amp;tileset, <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> top)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_render.html#ae442c971a465dedb95a9f7a0341038fb">drawAt</a> (const <a class="el" href="class_level_1_1_level.html">Level::Level</a> &amp;level, const <a class="el" href="namespace_render.html#af50f804b65c964056de6aeffcf039f66">Sprite</a> &amp;sprite, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist, int32_t levelX, int32_t levelY)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_render.html#aa1e46d36c78f3a7f7f2715ebaa057bc9">getMapScreenCoords</a> (const <a class="el" href="class_level_1_1_level.html">Level::Level</a> &amp;level, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist, int32_t &amp;levelX, int32_t &amp;levelY)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_render.html#abfbdc758f189d3035f48e856d7083693">drawLevelHelper</a> (const <a class="el" href="class_level_1_1_level.html">Level::Level</a> &amp;level, <a class="el" href="class_render_1_1_sprite_group.html">SpriteGroup</a> &amp;minSprites, int32_t x, int32_t y, int32_t levelX, int32_t levelY)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::pair&lt; int32_t, int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_render.html#ad87d4d24823c4be8c9e90a79cef0cc48">getTileFromScreenCoords</a> (const <a class="el" href="class_level_1_1_level.html">Level::Level</a> &amp;level, size_t levelX, size_t levelY, size_t x, size_t y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_render.html#a4d30f80e7e20bffea849c6efdf7076b1">drawLevelHelper</a> (const <a class="el" href="class_level_1_1_level.html">Level::Level</a> &amp;level, <a class="el" href="class_render_1_1_sprite_group.html">SpriteGroup</a> &amp;minSprites, int32_t x, int32_t y, int32_t levelX, int32_t levelY)</td></tr>
 <tr><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_render.html#adc197974c259e54ff7349d030b64d8e2">WIDTH</a> = 1280</td></tr>
@@ -363,7 +364,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_render_a725f4e1357ec4979c7ed97f447c7d5a6_icgraph.png" border="0" usemap="#namespace_render_a725f4e1357ec4979c7ed97f447c7d5a6_icgraph" alt=""/></div>
 <map name="namespace_render_a725f4e1357ec4979c7ed97f447c7d5a6_icgraph" id="namespace_render_a725f4e1357ec4979c7ed97f447c7d5a6_icgraph">
-<area shape="rect" id="node3" href="namespace_render.html#ae8490bd4dd892c99b383fe597d8c51e6" title="Render::drawCursor" alt="" coords="184,5,323,35"/><area shape="rect" id="node15" href="namespace_render.html#ae442c971a465dedb95a9f7a0341038fb" title="Render::drawAt" alt="" coords="197,59,309,88"/><area shape="rect" id="node17" href="namespace_render.html#abfbdc758f189d3035f48e856d7083693" title="Render::drawLevelHelper" alt="" coords="169,112,337,141"/><area shape="rect" id="node19" href="namespace_render.html#aa2625d5d45177718b16be35d3de01643" title="Render::drawLevel" alt="" coords="425,112,556,141"/><area shape="rect" id="node5" href="class_f_a_render_1_1_renderer.html#aa73fae0f49236c7a83fa6b01a9e5e8d4" title="FARender::Renderer::setCursor" alt="" coords="388,32,593,61"/><area shape="rect" id="node7" href="class_f_a_render_1_1_renderer.html#ad6e983189d6cf6b7aaef89d54ed89396" title="To be called only by Engine::ThreadManager." alt="" coords="644,72,865,101"/><area shape="rect" id="node9" href="class_engine_1_1_thread_manager.html#ab99a6ee7b73f2e9b24a824e811df5d88" title="Engine::ThreadManager::run" alt="" coords="915,72,1101,101"/><area shape="rect" id="node11" href="class_engine_1_1_engine_main.html#a5a16165ab6d6e9f2bb2f2739bd1b11bf" title="Engine::EngineMain::run" alt="" coords="1151,72,1313,101"/><area shape="rect" id="node13" href="freeablo_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1363,72,1413,101"/></map>
+<area shape="rect" id="node3" href="namespace_render.html#ae8490bd4dd892c99b383fe597d8c51e6" title="Render::drawCursor" alt="" coords="184,5,323,35"/><area shape="rect" id="node15" href="namespace_render.html#ae442c971a465dedb95a9f7a0341038fb" title="Render::drawAt" alt="" coords="197,59,309,88"/><area shape="rect" id="node17" href="namespace_render.html#a4d30f80e7e20bffea849c6efdf7076b1" title="Render::drawLevelHelper" alt="" coords="169,112,337,141"/><area shape="rect" id="node19" href="namespace_render.html#aa2625d5d45177718b16be35d3de01643" title="Render::drawLevel" alt="" coords="425,112,556,141"/><area shape="rect" id="node5" href="class_f_a_render_1_1_renderer.html#aa73fae0f49236c7a83fa6b01a9e5e8d4" title="FARender::Renderer::setCursor" alt="" coords="388,32,593,61"/><area shape="rect" id="node7" href="class_f_a_render_1_1_renderer.html#ad6e983189d6cf6b7aaef89d54ed89396" title="To be called only by Engine::ThreadManager." alt="" coords="644,72,865,101"/><area shape="rect" id="node9" href="class_engine_1_1_thread_manager.html#ab99a6ee7b73f2e9b24a824e811df5d88" title="Engine::ThreadManager::run" alt="" coords="915,72,1101,101"/><area shape="rect" id="node11" href="class_engine_1_1_engine_main.html#a5a16165ab6d6e9f2bb2f2739bd1b11bf" title="Engine::EngineMain::run" alt="" coords="1151,72,1313,101"/><area shape="rect" id="node13" href="freeablo_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1363,72,1413,101"/></map>
 </div>
 </p>
 
@@ -711,7 +712,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_render_aa2625d5d45177718b16be35d3de01643_cgraph.png" border="0" usemap="#namespace_render_aa2625d5d45177718b16be35d3de01643_cgraph" alt=""/></div>
 <map name="namespace_render_aa2625d5d45177718b16be35d3de01643_cgraph" id="namespace_render_aa2625d5d45177718b16be35d3de01643_cgraph">
-<area shape="rect" id="node3" href="namespace_render.html#aa1e46d36c78f3a7f7f2715ebaa057bc9" title="Render::getMapScreenCoords" alt="" coords="211,5,408,35"/><area shape="rect" id="node5" href="class_level_1_1_level.html#a8a9ab47247600f305776f3d62b73a46a" title="Level::Level::width" alt="" coords="504,55,635,84"/><area shape="rect" id="node9" href="class_render_1_1_sprite_cache_base.html#ac4423720734020abfa127474bec66924" title="Render::SpriteCacheBase::get" alt="" coords="209,264,409,293"/><area shape="rect" id="node12" href="class_level_1_1_level.html#a2192aa396aedd8d135e8e027ed8a826e" title="Level::Level::height" alt="" coords="503,108,636,137"/><area shape="rect" id="node16" href="namespace_render.html#abfbdc758f189d3035f48e856d7083693" title="Render::drawLevelHelper" alt="" coords="225,160,393,189"/><area shape="rect" id="node22" href="namespace_render.html#a725f4e1357ec4979c7ed97f447c7d5a6" title="Render::drawAt" alt="" coords="513,215,625,244"/><area shape="rect" id="node24" href="class_render_1_1_sprite_cache_base.html#af0a06d2069abeca46b501c6414319e68" title="Render::SpriteCacheBase::setImmortal" alt="" coords="184,317,435,347"/><area shape="rect" id="node7" href="class_level_1_1_dun.html#a484e94f5c0d423b9277ee500583c510d" title="Level::Dun::width" alt="" coords="707,55,829,84"/><area shape="rect" id="node14" href="class_level_1_1_dun.html#a741579a7d91d77fa99026cc35c77ac59" title="Level::Dun::height" alt="" coords="704,108,832,137"/><area shape="rect" id="node20" href="class_render_1_1_sprite_group.html#a6509b30910ff7482b45d96f459938aa2" title="Render::SpriteGroup::size" alt="" coords="483,161,656,191"/></map>
+<area shape="rect" id="node3" href="namespace_render.html#aa1e46d36c78f3a7f7f2715ebaa057bc9" title="Render::getMapScreenCoords" alt="" coords="211,5,408,35"/><area shape="rect" id="node9" href="class_render_1_1_sprite_cache_base.html#ac4423720734020abfa127474bec66924" title="Render::SpriteCacheBase::get" alt="" coords="209,216,409,245"/><area shape="rect" id="node11" href="namespace_render.html#ad87d4d24823c4be8c9e90a79cef0cc48" title="Render::getTileFromScreenCoords" alt="" coords="197,59,421,88"/><area shape="rect" id="node17" href="namespace_render.html#a4d30f80e7e20bffea849c6efdf7076b1" title="Render::drawLevelHelper" alt="" coords="225,112,393,141"/><area shape="rect" id="node23" href="namespace_render.html#a725f4e1357ec4979c7ed97f447c7d5a6" title="Render::drawAt" alt="" coords="513,165,625,195"/><area shape="rect" id="node25" href="class_render_1_1_sprite_cache_base.html#af0a06d2069abeca46b501c6414319e68" title="Render::SpriteCacheBase::setImmortal" alt="" coords="184,269,435,299"/><area shape="rect" id="node5" href="class_level_1_1_level.html#a8a9ab47247600f305776f3d62b73a46a" title="Level::Level::width" alt="" coords="504,5,635,35"/><area shape="rect" id="node7" href="class_level_1_1_dun.html#a484e94f5c0d423b9277ee500583c510d" title="Level::Dun::width" alt="" coords="707,5,829,35"/><area shape="rect" id="node13" href="class_level_1_1_level.html#a2192aa396aedd8d135e8e027ed8a826e" title="Level::Level::height" alt="" coords="503,59,636,88"/><area shape="rect" id="node15" href="class_level_1_1_dun.html#a741579a7d91d77fa99026cc35c77ac59" title="Level::Dun::height" alt="" coords="704,59,832,88"/><area shape="rect" id="node21" href="class_render_1_1_sprite_group.html#a6509b30910ff7482b45d96f459938aa2" title="Render::SpriteGroup::size" alt="" coords="483,112,656,141"/></map>
 </div>
 </p>
 
@@ -726,12 +727,12 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="abfbdc758f189d3035f48e856d7083693"></a><!-- doxytag: member="Render::drawLevelHelper" ref="abfbdc758f189d3035f48e856d7083693" args="(const Level::Level &amp;level, SpriteGroup &amp;minSprites, int32_t x, int32_t y, int32_t levelX, int32_t levelY)" -->
+<a class="anchor" id="a4d30f80e7e20bffea849c6efdf7076b1"></a><!-- doxytag: member="Render::drawLevelHelper" ref="a4d30f80e7e20bffea849c6efdf7076b1" args="(const Level::Level &amp;level, SpriteGroup &amp;minSprites, int32_t x, int32_t y, int32_t levelX, int32_t levelY)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="namespace_render.html#abfbdc758f189d3035f48e856d7083693">Render::drawLevelHelper</a> </td>
+          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="namespace_render.html#a4d30f80e7e20bffea849c6efdf7076b1">Render::drawLevelHelper</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_level_1_1_level.html">Level::Level</a> &amp;&#160;</td>
           <td class="paramname"><em>level</em>, </td>
@@ -778,8 +779,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespace_render_abfbdc758f189d3035f48e856d7083693_cgraph.png" border="0" usemap="#namespace_render_abfbdc758f189d3035f48e856d7083693_cgraph" alt=""/></div>
-<map name="namespace_render_abfbdc758f189d3035f48e856d7083693_cgraph" id="namespace_render_abfbdc758f189d3035f48e856d7083693_cgraph">
+<div class="center"><img src="namespace_render_a4d30f80e7e20bffea849c6efdf7076b1_cgraph.png" border="0" usemap="#namespace_render_a4d30f80e7e20bffea849c6efdf7076b1_cgraph" alt=""/></div>
+<map name="namespace_render_a4d30f80e7e20bffea849c6efdf7076b1_cgraph" id="namespace_render_a4d30f80e7e20bffea849c6efdf7076b1_cgraph">
 <area shape="rect" id="node3" href="class_level_1_1_level.html#a8a9ab47247600f305776f3d62b73a46a" title="Level::Level::width" alt="" coords="245,5,376,35"/><area shape="rect" id="node7" href="class_level_1_1_level.html#a2192aa396aedd8d135e8e027ed8a826e" title="Level::Level::height" alt="" coords="244,59,377,88"/><area shape="rect" id="node11" href="class_render_1_1_sprite_group.html#a6509b30910ff7482b45d96f459938aa2" title="Render::SpriteGroup::size" alt="" coords="224,112,397,141"/><area shape="rect" id="node13" href="namespace_render.html#a725f4e1357ec4979c7ed97f447c7d5a6" title="Render::drawAt" alt="" coords="255,165,367,195"/><area shape="rect" id="node5" href="class_level_1_1_dun.html#a484e94f5c0d423b9277ee500583c510d" title="Level::Dun::width" alt="" coords="448,5,571,35"/><area shape="rect" id="node9" href="class_level_1_1_dun.html#a741579a7d91d77fa99026cc35c77ac59" title="Level::Dun::height" alt="" coords="445,59,573,88"/></map>
 </div>
 </p>
@@ -787,8 +788,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespace_render_abfbdc758f189d3035f48e856d7083693_icgraph.png" border="0" usemap="#namespace_render_abfbdc758f189d3035f48e856d7083693_icgraph" alt=""/></div>
-<map name="namespace_render_abfbdc758f189d3035f48e856d7083693_icgraph" id="namespace_render_abfbdc758f189d3035f48e856d7083693_icgraph">
+<div class="center"><img src="namespace_render_a4d30f80e7e20bffea849c6efdf7076b1_icgraph.png" border="0" usemap="#namespace_render_a4d30f80e7e20bffea849c6efdf7076b1_icgraph" alt=""/></div>
+<map name="namespace_render_a4d30f80e7e20bffea849c6efdf7076b1_icgraph" id="namespace_render_a4d30f80e7e20bffea849c6efdf7076b1_icgraph">
 <area shape="rect" id="node3" href="namespace_render.html#aa2625d5d45177718b16be35d3de01643" title="Render::drawLevel" alt="" coords="224,5,355,35"/><area shape="rect" id="node5" href="class_f_a_render_1_1_renderer.html#ad6e983189d6cf6b7aaef89d54ed89396" title="To be called only by Engine::ThreadManager." alt="" coords="404,5,625,35"/><area shape="rect" id="node7" href="class_engine_1_1_thread_manager.html#ab99a6ee7b73f2e9b24a824e811df5d88" title="Engine::ThreadManager::run" alt="" coords="675,5,861,35"/><area shape="rect" id="node9" href="class_engine_1_1_engine_main.html#a5a16165ab6d6e9f2bb2f2739bd1b11bf" title="Engine::EngineMain::run" alt="" coords="911,5,1073,35"/><area shape="rect" id="node11" href="freeablo_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1123,5,1173,35"/></map>
 </div>
 </p>
@@ -1092,12 +1093,12 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a85cfca0eb3f3983b090abb049385765b"></a><!-- doxytag: member="Render::getClickedTile" ref="a85cfca0eb3f3983b090abb049385765b" args="(const Level::Level &amp;level, size_t x, size_t y, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)" -->
+<a class="anchor" id="a14fb455a9e0201367451b54ff2276f9f"></a><!-- doxytag: member="Render::getClickedTile" ref="a14fb455a9e0201367451b54ff2276f9f" args="(const Level::Level &amp;level, size_t x, size_t y, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt; size_t, size_t &gt; <a class="el" href="namespace_render.html#a85cfca0eb3f3983b090abb049385765b">Render::getClickedTile</a> </td>
+          <td class="memname">std::pair&lt; int32_t, int32_t &gt; <a class="el" href="namespace_render.html#a14fb455a9e0201367451b54ff2276f9f">Render::getClickedTile</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_level_1_1_level.html">Level::Level</a> &amp;&#160;</td>
           <td class="paramname"><em>level</em>, </td>
@@ -1156,9 +1157,9 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespace_render_a85cfca0eb3f3983b090abb049385765b_cgraph.png" border="0" usemap="#namespace_render_a85cfca0eb3f3983b090abb049385765b_cgraph" alt=""/></div>
-<map name="namespace_render_a85cfca0eb3f3983b090abb049385765b_cgraph" id="namespace_render_a85cfca0eb3f3983b090abb049385765b_cgraph">
-<area shape="rect" id="node3" href="namespace_render.html#aa1e46d36c78f3a7f7f2715ebaa057bc9" title="Render::getMapScreenCoords" alt="" coords="209,5,407,35"/><area shape="rect" id="node9" href="class_level_1_1_level.html#a2192aa396aedd8d135e8e027ed8a826e" title="Level::Level::height" alt="" coords="241,59,375,88"/><area shape="rect" id="node5" href="class_level_1_1_level.html#a8a9ab47247600f305776f3d62b73a46a" title="Level::Level::width" alt="" coords="456,5,587,35"/><area shape="rect" id="node7" href="class_level_1_1_dun.html#a484e94f5c0d423b9277ee500583c510d" title="Level::Dun::width" alt="" coords="636,5,759,35"/><area shape="rect" id="node11" href="class_level_1_1_dun.html#a741579a7d91d77fa99026cc35c77ac59" title="Level::Dun::height" alt="" coords="457,59,585,88"/></map>
+<div class="center"><img src="namespace_render_a14fb455a9e0201367451b54ff2276f9f_cgraph.png" border="0" usemap="#namespace_render_a14fb455a9e0201367451b54ff2276f9f_cgraph" alt=""/></div>
+<map name="namespace_render_a14fb455a9e0201367451b54ff2276f9f_cgraph" id="namespace_render_a14fb455a9e0201367451b54ff2276f9f_cgraph">
+<area shape="rect" id="node3" href="namespace_render.html#aa1e46d36c78f3a7f7f2715ebaa057bc9" title="Render::getMapScreenCoords" alt="" coords="221,5,419,35"/><area shape="rect" id="node9" href="namespace_render.html#ad87d4d24823c4be8c9e90a79cef0cc48" title="Render::getTileFromScreenCoords" alt="" coords="208,59,432,88"/><area shape="rect" id="node5" href="class_level_1_1_level.html#a8a9ab47247600f305776f3d62b73a46a" title="Level::Level::width" alt="" coords="483,5,613,35"/><area shape="rect" id="node7" href="class_level_1_1_dun.html#a484e94f5c0d423b9277ee500583c510d" title="Level::Dun::width" alt="" coords="667,5,789,35"/><area shape="rect" id="node11" href="class_level_1_1_level.html#a2192aa396aedd8d135e8e027ed8a826e" title="Level::Level::height" alt="" coords="481,59,615,88"/><area shape="rect" id="node13" href="class_level_1_1_dun.html#a741579a7d91d77fa99026cc35c77ac59" title="Level::Dun::height" alt="" coords="664,59,792,88"/></map>
 </div>
 </p>
 
@@ -1328,7 +1329,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_render_aa1e46d36c78f3a7f7f2715ebaa057bc9_icgraph.png" border="0" usemap="#namespace_render_aa1e46d36c78f3a7f7f2715ebaa057bc9_icgraph" alt=""/></div>
 <map name="namespace_render_aa1e46d36c78f3a7f7f2715ebaa057bc9_icgraph" id="namespace_render_aa1e46d36c78f3a7f7f2715ebaa057bc9_icgraph">
-<area shape="rect" id="node3" href="namespace_render.html#a85cfca0eb3f3983b090abb049385765b" title="Render::getClickedTile" alt="" coords="253,5,408,35"/><area shape="rect" id="node5" href="namespace_render.html#aa2625d5d45177718b16be35d3de01643" title="Render::drawLevel" alt="" coords="265,59,396,88"/><area shape="rect" id="node7" href="class_f_a_render_1_1_renderer.html#ad6e983189d6cf6b7aaef89d54ed89396" title="To be called only by Engine::ThreadManager." alt="" coords="457,59,679,88"/><area shape="rect" id="node9" href="class_engine_1_1_thread_manager.html#ab99a6ee7b73f2e9b24a824e811df5d88" title="Engine::ThreadManager::run" alt="" coords="728,59,915,88"/><area shape="rect" id="node11" href="class_engine_1_1_engine_main.html#a5a16165ab6d6e9f2bb2f2739bd1b11bf" title="Engine::EngineMain::run" alt="" coords="964,59,1127,88"/><area shape="rect" id="node13" href="freeablo_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1176,59,1227,88"/></map>
+<area shape="rect" id="node3" href="namespace_render.html#a14fb455a9e0201367451b54ff2276f9f" title="Render::getClickedTile" alt="" coords="253,5,408,35"/><area shape="rect" id="node5" href="namespace_render.html#aa2625d5d45177718b16be35d3de01643" title="Render::drawLevel" alt="" coords="265,59,396,88"/><area shape="rect" id="node7" href="class_f_a_render_1_1_renderer.html#ad6e983189d6cf6b7aaef89d54ed89396" title="To be called only by Engine::ThreadManager." alt="" coords="457,59,679,88"/><area shape="rect" id="node9" href="class_engine_1_1_thread_manager.html#ab99a6ee7b73f2e9b24a824e811df5d88" title="Engine::ThreadManager::run" alt="" coords="728,59,915,88"/><area shape="rect" id="node11" href="class_engine_1_1_engine_main.html#a5a16165ab6d6e9f2bb2f2739bd1b11bf" title="Engine::EngineMain::run" alt="" coords="964,59,1127,88"/><area shape="rect" id="node13" href="freeablo_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1176,59,1227,88"/></map>
 </div>
 </p>
 
@@ -1371,6 +1372,69 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="namespace_render_a159e4f6b7d270f55dc16990e2bf8031d_icgraph.png" border="0" usemap="#namespace_render_a159e4f6b7d270f55dc16990e2bf8031d_icgraph" alt=""/></div>
 <map name="namespace_render_a159e4f6b7d270f55dc16990e2bf8031d_icgraph" id="namespace_render_a159e4f6b7d270f55dc16990e2bf8031d_icgraph">
 <area shape="rect" id="node3" href="namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="175,9,383,39"/><area shape="rect" id="node11" href="namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="439,112,604,141"/><area shape="rect" id="node14" href="namespace_render.html#a05c97dfcb545abc37e57ca717e15f6cc" title="Render::loadResizedSprite" alt="" coords="432,59,611,88"/><area shape="rect" id="node5" href="namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="456,5,587,35"/><area shape="rect" id="node7" href="class_f_a_render_1_1_sprite_cache.html#aaede499b2c79f9f1cf535f37887d2f99" title="To be called from the render thread." alt="" coords="665,59,852,88"/><area shape="rect" id="node9" href="class_f_a_render_1_1_sprite_manager.html#a4897198f560005dd7067150c3ed3ed2d" title="To be called from the render thread." alt="" coords="660,5,857,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad87d4d24823c4be8c9e90a79cef0cc48"></a><!-- doxytag: member="Render::getTileFromScreenCoords" ref="ad87d4d24823c4be8c9e90a79cef0cc48" args="(const Level::Level &amp;level, size_t levelX, size_t levelY, size_t x, size_t y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt;int32_t, int32_t&gt; <a class="el" href="namespace_render.html#ad87d4d24823c4be8c9e90a79cef0cc48">Render::getTileFromScreenCoords</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_level_1_1_level.html">Level::Level</a> &amp;&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>levelX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>levelY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_render_ad87d4d24823c4be8c9e90a79cef0cc48_cgraph.png" border="0" usemap="#namespace_render_ad87d4d24823c4be8c9e90a79cef0cc48_cgraph" alt=""/></div>
+<map name="namespace_render_ad87d4d24823c4be8c9e90a79cef0cc48_cgraph" id="namespace_render_ad87d4d24823c4be8c9e90a79cef0cc48_cgraph">
+<area shape="rect" id="node3" href="class_level_1_1_level.html#a2192aa396aedd8d135e8e027ed8a826e" title="Level::Level::height" alt="" coords="279,5,412,35"/><area shape="rect" id="node5" href="class_level_1_1_dun.html#a741579a7d91d77fa99026cc35c77ac59" title="Level::Dun::height" alt="" coords="461,5,589,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_render_ad87d4d24823c4be8c9e90a79cef0cc48_icgraph.png" border="0" usemap="#namespace_render_ad87d4d24823c4be8c9e90a79cef0cc48_icgraph" alt=""/></div>
+<map name="namespace_render_ad87d4d24823c4be8c9e90a79cef0cc48_icgraph" id="namespace_render_ad87d4d24823c4be8c9e90a79cef0cc48_icgraph">
+<area shape="rect" id="node3" href="namespace_render.html#a14fb455a9e0201367451b54ff2276f9f" title="Render::getClickedTile" alt="" coords="277,5,432,35"/><area shape="rect" id="node5" href="namespace_render.html#aa2625d5d45177718b16be35d3de01643" title="Render::drawLevel" alt="" coords="289,59,420,88"/><area shape="rect" id="node7" href="class_f_a_render_1_1_renderer.html#ad6e983189d6cf6b7aaef89d54ed89396" title="To be called only by Engine::ThreadManager." alt="" coords="481,59,703,88"/><area shape="rect" id="node9" href="class_engine_1_1_thread_manager.html#ab99a6ee7b73f2e9b24a824e811df5d88" title="Engine::ThreadManager::run" alt="" coords="752,59,939,88"/><area shape="rect" id="node11" href="class_engine_1_1_engine_main.html#a5a16165ab6d6e9f2bb2f2739bd1b11bf" title="Engine::EngineMain::run" alt="" coords="988,59,1151,88"/><area shape="rect" id="node13" href="freeablo_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1200,59,1251,88"/></map>
 </div>
 </p>
 

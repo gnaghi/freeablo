@@ -95,7 +95,7 @@ var searchData=
   ['drawframe',['drawFrame',['../namespace_render.html#a8384399aba8d9bca82788367f744016f',1,'Render']]],
   ['drawgui',['drawGui',['../namespace_render.html#ab202bc8717cdb0033125cb9446fd2db2',1,'Render']]],
   ['drawlevel',['drawLevel',['../namespace_render.html#aa2625d5d45177718b16be35d3de01643',1,'Render']]],
-  ['drawlevelhelper',['drawLevelHelper',['../namespace_render.html#abfbdc758f189d3035f48e856d7083693',1,'Render']]],
+  ['drawlevelhelper',['drawLevelHelper',['../namespace_render.html#a4d30f80e7e20bffea849c6efdf7076b1',1,'Render']]],
   ['drawminpillar',['drawMinPillar',['../namespace_render.html#aa3495cd25236e295a183dc4c70932ecd',1,'Render']]],
   ['drawminpillarbase',['drawMinPillarBase',['../namespace_render.html#a17a1ce99e9825ff602e9834cb8a7a409',1,'Render']]],
   ['drawminpillartop',['drawMinPillarTop',['../namespace_render.html#ab52f404c5feb88408defadb935b310e5',1,'Render']]],

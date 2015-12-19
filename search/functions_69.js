@@ -49,6 +49,7 @@ var searchData=
   ['issectionexists',['isSectionExists',['../class_settings_1_1_settings.html#acdf1f892b0b56ff65ee3626bae047480',1,'Settings::Settings']]],
   ['isstairs',['isStairs',['../class_level_1_1_level.html#a38c8b6a4f1f2bf14e8e6326a35b99343',1,'Level::Level']]],
   ['istilecel',['isTileCel',['../namespace_cel.html#a8b0f7a8271312959f51b91ddc45d23e3',1,'Cel']]],
+  ['isvalid',['isValid',['../class_f_a_render_1_1_f_a_sprite_group.html#a753178917d992e5f872ca528ebbb6e54',1,'FARender::FASpriteGroup']]],
   ['isvalidfilehandle',['IsValidFileHandle',['../_s_base_common_8cpp.html#a3216d5c62d758be099dfa3324cf34dd3',1,'IsValidFileHandle(HANDLE hFile):&#160;SBaseCommon.cpp'],['../_storm_common_8h.html#a3216d5c62d758be099dfa3324cf34dd3',1,'IsValidFileHandle(HANDLE hFile):&#160;SBaseCommon.cpp']]],
   ['isvalidmd5',['IsValidMD5',['../_s_base_common_8cpp.html#a5419ca3b1b9735690e1b6a1563194d6e',1,'IsValidMD5(LPBYTE pbMd5):&#160;SBaseCommon.cpp'],['../_storm_common_8h.html#a5419ca3b1b9735690e1b6a1563194d6e',1,'IsValidMD5(LPBYTE pbMd5):&#160;SBaseCommon.cpp']]],
   ['isvalidmpqhandle',['IsValidMpqHandle',['../_s_base_common_8cpp.html#a67882fdf8d424efbb6b2e1f748583a66',1,'IsValidMpqHandle(HANDLE hMpq):&#160;SBaseCommon.cpp'],['../_storm_common_8h.html#a67882fdf8d424efbb6b2e1f748583a66',1,'IsValidMpqHandle(HANDLE hMpq):&#160;SBaseCommon.cpp']]],

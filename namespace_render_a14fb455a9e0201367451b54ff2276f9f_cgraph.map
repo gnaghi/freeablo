@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespace_render.html#aa1e46d36c78f3a7f7f2715ebaa057bc9" title="Render::getMapScreenCoords" alt="" coords="221,5,419,35"/>
+<area shape="rect" id="node9" href="$namespace_render.html#ad87d4d24823c4be8c9e90a79cef0cc48" title="Render::getTileFromScreenCoords" alt="" coords="208,59,432,88"/>
+<area shape="rect" id="node5" href="$class_level_1_1_level.html#a8a9ab47247600f305776f3d62b73a46a" title="Level::Level::width" alt="" coords="483,5,613,35"/>
+<area shape="rect" id="node7" href="$class_level_1_1_dun.html#a484e94f5c0d423b9277ee500583c510d" title="Level::Dun::width" alt="" coords="667,5,789,35"/>
+<area shape="rect" id="node11" href="$class_level_1_1_level.html#a2192aa396aedd8d135e8e027ed8a826e" title="Level::Level::height" alt="" coords="481,59,615,88"/>
+<area shape="rect" id="node13" href="$class_level_1_1_dun.html#a741579a7d91d77fa99026cc35c77ac59" title="Level::Dun::height" alt="" coords="664,59,792,88"/>
+</map>

@@ -1,30 +1,31 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$namespace_f_a_level_gen.html#ae58979758ba5b5bc2d6f0e719832b3ef" title="FALevelGen::getXY" alt="" coords="203,341,341,371"/>
-<area shape="rect" id="node7" href="$namespace_f_a_level_gen.html#a0419289bedbab7a736278c975a39a220" title="FALevelGen::addWalls" alt="" coords="723,185,877,215"/>
-<area shape="rect" id="node20" href="$namespace_f_a_level_gen.html#a919277a6ead4f9bab070feaf8151ff29" title="FALevelGen::cleanupHelper" alt="" coords="708,132,892,161"/>
-<area shape="rect" id="node29" href="$namespace_f_a_level_gen.html#af82a580c6c944b63032043ff18d09999" title="FALevelGen::fillIsometric" alt="" coords="977,497,1145,527"/>
-<area shape="rect" id="node35" href="$namespace_f_a_level_gen.html#a390fa115f23f6651f009d2dfcd639b98" title="FALevelGen::cleanLooseWalls" alt="" coords="700,313,900,343"/>
+<area shape="rect" id="node3" href="$namespace_f_a_level_gen.html#ae58979758ba5b5bc2d6f0e719832b3ef" title="FALevelGen::getXY" alt="" coords="203,317,341,347"/>
+<area shape="rect" id="node7" href="$namespace_f_a_level_gen.html#a0419289bedbab7a736278c975a39a220" title="FALevelGen::addWalls" alt="" coords="723,187,877,216"/>
+<area shape="rect" id="node20" href="$namespace_f_a_level_gen.html#a919277a6ead4f9bab070feaf8151ff29" title="FALevelGen::cleanupHelper" alt="" coords="708,133,892,163"/>
+<area shape="rect" id="node29" href="$namespace_f_a_level_gen.html#af82a580c6c944b63032043ff18d09999" title="FALevelGen::fillIsometric" alt="" coords="977,500,1145,529"/>
+<area shape="rect" id="node35" href="$namespace_f_a_level_gen.html#a390fa115f23f6651f009d2dfcd639b98" title="FALevelGen::cleanLooseWalls" alt="" coords="700,371,900,400"/>
 <area shape="rect" id="node51" href="$namespace_f_a_level_gen.html#ada3a10ca3b2f97503c8a54a27b5ba199" title="FALevelGen::connectWalls" alt="" coords="181,5,363,35"/>
-<area shape="rect" id="node54" href="$class_level_1_1_level.html#a2192aa396aedd8d135e8e027ed8a826e" title="Level::Level::height" alt="" coords="205,704,339,733"/>
+<area shape="rect" id="node54" href="$class_level_1_1_level.html#a2192aa396aedd8d135e8e027ed8a826e" title="Level::Level::height" alt="" coords="205,680,339,709"/>
 <area shape="rect" id="node5" href="$namespace_f_a_level_gen.html#abd97c680f0e14d01f8ce16c23ec91ca9" title="FALevelGen::borders" alt="" coords="459,211,603,240"/>
-<area shape="rect" id="node25" href="$namespace_f_a_level_gen.html#ab839eedf0dc81a4db5366d95ca198188" title="FALevelGen::isWall" alt="" coords="461,523,600,552"/>
-<area shape="rect" id="node27" href="$namespace_f_a_level_gen.html#abd00f6c90ec460081478daad824540e9" title="FALevelGen::setPoint" alt="" coords="725,471,875,500"/>
-<area shape="rect" id="node33" href="$namespace_f_a_level_gen.html#a0a6b8872f9374d3d1ea6e1bf6a8a350b" title="FALevelGen::cleanLooseWallsHelper" alt="" coords="412,368,649,397"/>
-<area shape="rect" id="node39" href="$namespace_f_a_level_gen.html#a09f0829395e8549e29e1edf094fb297c" title="FALevelGen::doorAddHelper" alt="" coords="707,405,893,435"/>
-<area shape="rect" id="node44" href="$namespace_f_a_level_gen.html#a6afadecc7f51a2b049ce927e4f9b9808" title="FALevelGen::isPassable" alt="" coords="448,315,613,344"/>
-<area shape="rect" id="node11" href="$namespace_f_a_level_gen.html#a3e67d9abf003b6628cc7f4421fef950b" title="FALevelGen::generateTmp" alt="" coords="1225,287,1404,316"/>
-<area shape="rect" id="node9" href="$namespace_f_a_level_gen.html#a65b24647f0db6ad38c4c66bb489be055" title="FALevelGen::cleanup" alt="" coords="988,159,1135,188"/>
-<area shape="rect" id="node17" href="$rsa__make__key_8c.html#aece58b13922a56a3fbcce677333dad9a" title="rsa_make_key" alt="" coords="1261,159,1368,188"/>
-<area shape="rect" id="node13" href="$namespace_f_a_level_gen.html#acf970d89560068907dc8e5f8a0511161" title="FALevelGen::generate" alt="" coords="1463,372,1615,401"/>
-<area shape="rect" id="node15" href="$class_f_a_world_1_1_world.html#a5f2ca8c8743cc7689ba9227be88f9556" title="FAWorld::World::generateLevels" alt="" coords="1669,372,1880,401"/>
-<area shape="rect" id="node41" href="$namespace_f_a_level_gen.html#addd22db51650e4202c3521978a26e97c" title="FALevelGen::addDoors" alt="" coords="983,372,1140,401"/>
-<area shape="rect" id="node56" href="$namespace_f_a_level_gen.html#a2f48db4843ed8be1a245fed54a4b7e0b" title="FALevelGen::placeMonsters" alt="" coords="968,588,1155,617"/>
-<area shape="rect" id="node59" href="$class_f_a_world_1_1_game_level.html#ad576185f819af1be6b83418031d0cc58" title="FAWorld::GameLevel::height" alt="" coords="705,833,895,863"/>
-<area shape="rect" id="node69" href="$namespace_render.html#a85cfca0eb3f3983b090abb049385765b" title="Render::getClickedTile" alt="" coords="453,677,608,707"/>
-<area shape="rect" id="node71" href="$namespace_render.html#abfbdc758f189d3035f48e856d7083693" title="Render::drawLevelHelper" alt="" coords="447,731,615,760"/>
-<area shape="rect" id="node73" href="$namespace_render.html#aa2625d5d45177718b16be35d3de01643" title="Render::drawLevel" alt="" coords="735,780,865,809"/>
-<area shape="rect" id="node61" href="$class_f_a_render_1_1_renderer.html#ad6e983189d6cf6b7aaef89d54ed89396" title="To be called only by Engine::ThreadManager." alt="" coords="951,807,1172,836"/>
-<area shape="rect" id="node63" href="$class_engine_1_1_thread_manager.html#ab99a6ee7b73f2e9b24a824e811df5d88" title="Engine::ThreadManager::run" alt="" coords="1221,807,1408,836"/>
-<area shape="rect" id="node65" href="$class_engine_1_1_engine_main.html#a5a16165ab6d6e9f2bb2f2739bd1b11bf" title="Engine::EngineMain::run" alt="" coords="1457,807,1620,836"/>
-<area shape="rect" id="node67" href="$freeablo_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1749,807,1800,836"/>
+<area shape="rect" id="node25" href="$namespace_f_a_level_gen.html#ab839eedf0dc81a4db5366d95ca198188" title="FALevelGen::isWall" alt="" coords="461,475,600,504"/>
+<area shape="rect" id="node27" href="$namespace_f_a_level_gen.html#abd00f6c90ec460081478daad824540e9" title="FALevelGen::setPoint" alt="" coords="725,525,875,555"/>
+<area shape="rect" id="node33" href="$namespace_f_a_level_gen.html#a0a6b8872f9374d3d1ea6e1bf6a8a350b" title="FALevelGen::cleanLooseWallsHelper" alt="" coords="412,371,649,400"/>
+<area shape="rect" id="node39" href="$namespace_f_a_level_gen.html#a09f0829395e8549e29e1edf094fb297c" title="FALevelGen::doorAddHelper" alt="" coords="437,317,624,347"/>
+<area shape="rect" id="node44" href="$namespace_f_a_level_gen.html#a6afadecc7f51a2b049ce927e4f9b9808" title="FALevelGen::isPassable" alt="" coords="448,264,613,293"/>
+<area shape="rect" id="node11" href="$namespace_f_a_level_gen.html#a3e67d9abf003b6628cc7f4421fef950b" title="FALevelGen::generateTmp" alt="" coords="1225,292,1404,321"/>
+<area shape="rect" id="node9" href="$namespace_f_a_level_gen.html#a65b24647f0db6ad38c4c66bb489be055" title="FALevelGen::cleanup" alt="" coords="988,163,1135,192"/>
+<area shape="rect" id="node17" href="$rsa__make__key_8c.html#aece58b13922a56a3fbcce677333dad9a" title="rsa_make_key" alt="" coords="1261,163,1368,192"/>
+<area shape="rect" id="node13" href="$namespace_f_a_level_gen.html#acf970d89560068907dc8e5f8a0511161" title="FALevelGen::generate" alt="" coords="1463,357,1615,387"/>
+<area shape="rect" id="node15" href="$class_f_a_world_1_1_world.html#a5f2ca8c8743cc7689ba9227be88f9556" title="FAWorld::World::generateLevels" alt="" coords="1669,357,1880,387"/>
+<area shape="rect" id="node41" href="$namespace_f_a_level_gen.html#addd22db51650e4202c3521978a26e97c" title="FALevelGen::addDoors" alt="" coords="983,317,1140,347"/>
+<area shape="rect" id="node56" href="$namespace_f_a_level_gen.html#a2f48db4843ed8be1a245fed54a4b7e0b" title="FALevelGen::placeMonsters" alt="" coords="968,589,1155,619"/>
+<area shape="rect" id="node59" href="$class_f_a_world_1_1_game_level.html#ad576185f819af1be6b83418031d0cc58" title="FAWorld::GameLevel::height" alt="" coords="705,787,895,816"/>
+<area shape="rect" id="node69" href="$namespace_render.html#ad87d4d24823c4be8c9e90a79cef0cc48" title="Render::getTileFromScreenCoords" alt="" coords="419,733,643,763"/>
+<area shape="rect" id="node76" href="$namespace_render.html#a4d30f80e7e20bffea849c6efdf7076b1" title="Render::drawLevelHelper" alt="" coords="447,680,615,709"/>
+<area shape="rect" id="node61" href="$class_f_a_render_1_1_renderer.html#ad6e983189d6cf6b7aaef89d54ed89396" title="To be called only by Engine::ThreadManager." alt="" coords="951,733,1172,763"/>
+<area shape="rect" id="node63" href="$class_engine_1_1_thread_manager.html#ab99a6ee7b73f2e9b24a824e811df5d88" title="Engine::ThreadManager::run" alt="" coords="1221,733,1408,763"/>
+<area shape="rect" id="node65" href="$class_engine_1_1_engine_main.html#a5a16165ab6d6e9f2bb2f2739bd1b11bf" title="Engine::EngineMain::run" alt="" coords="1457,733,1620,763"/>
+<area shape="rect" id="node67" href="$freeablo_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1749,733,1800,763"/>
+<area shape="rect" id="node71" href="$namespace_render.html#a14fb455a9e0201367451b54ff2276f9f" title="Render::getClickedTile" alt="" coords="723,733,877,763"/>
+<area shape="rect" id="node73" href="$namespace_render.html#aa2625d5d45177718b16be35d3de01643" title="Render::drawLevel" alt="" coords="735,680,865,709"/>
 </map>

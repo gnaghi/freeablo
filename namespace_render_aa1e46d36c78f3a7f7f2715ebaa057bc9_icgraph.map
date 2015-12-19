@@ -1,5 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$namespace_render.html#a85cfca0eb3f3983b090abb049385765b" title="Render::getClickedTile" alt="" coords="253,5,408,35"/>
+<area shape="rect" id="node3" href="$namespace_render.html#a14fb455a9e0201367451b54ff2276f9f" title="Render::getClickedTile" alt="" coords="253,5,408,35"/>
 <area shape="rect" id="node5" href="$namespace_render.html#aa2625d5d45177718b16be35d3de01643" title="Render::drawLevel" alt="" coords="265,59,396,88"/>
 <area shape="rect" id="node7" href="$class_f_a_render_1_1_renderer.html#ad6e983189d6cf6b7aaef89d54ed89396" title="To be called only by Engine::ThreadManager." alt="" coords="457,59,679,88"/>
 <area shape="rect" id="node9" href="$class_engine_1_1_thread_manager.html#ab99a6ee7b73f2e9b24a824e811df5d88" title="Engine::ThreadManager::run" alt="" coords="728,59,915,88"/>
