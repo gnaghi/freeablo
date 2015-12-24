@@ -1,4 +1,4 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$class_f_a_gui_1_1_gui_manager.html#afb827f9b028aafa83fa870a609b126f2" title="FAGui::GuiManager::GuiManager" alt="" coords="311,5,524,35"/>
-<area shape="rect" id="node5" href="$class_f_a_gui_1_1_gui_manager.html#ab8acac85dc71615f9539ceb38e0a41a6" title="FAGui::GuiManager::updateGui" alt="" coords="316,59,519,88"/>
+<area shape="rect" id="node5" href="$class_f_a_gui_1_1_gui_manager.html#ad2d1e040339127fda9527be6437ff2b7" title="FAGui::GuiManager::update" alt="" coords="325,59,509,88"/>
 </map>

@@ -12,6 +12,8 @@ var searchData=
   ['scompression_2ecpp',['SCompression.cpp',['../_s_compression_8cpp.html',1,'']]],
   ['scriptcontext_2ecpp',['scriptcontext.cpp',['../scriptcontext_8cpp.html',1,'']]],
   ['scriptcontext_2eh',['scriptcontext.h',['../scriptcontext_8h.html',1,'']]],
+  ['scrollbox_2ecpp',['scrollbox.cpp',['../scrollbox_8cpp.html',1,'']]],
+  ['scrollbox_2eh',['scrollbox.h',['../scrollbox_8h.html',1,'']]],
   ['sdl2backend_2ecpp',['sdl2backend.cpp',['../audio_2sdl2backend_8cpp.html',1,'']]],
   ['sdl2backend_2ecpp',['sdl2backend.cpp',['../input_2sdl2backend_8cpp.html',1,'']]],
   ['sdl2backend_2ecpp',['sdl2backend.cpp',['../render_2sdl2backend_8cpp.html',1,'']]],

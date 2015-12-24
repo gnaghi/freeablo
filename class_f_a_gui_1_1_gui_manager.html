@@ -122,9 +122,14 @@ Collaboration diagram for FAGui::GuiManager:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754">GuiType</a> { <a class="el" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754a2c8ed6cbcdd0ea3da230fb0b8f76731d">TitleScreen</a>, 
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754">GuiType</a> { <br/>
+&#160;&#160;<a class="el" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754a2c8ed6cbcdd0ea3da230fb0b8f76731d">TitleScreen</a>, 
 <a class="el" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754a089bc443d930bf98f62bc34cce8f8b4f">MainMenu</a>, 
-<a class="el" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754aa1e7598c0560afb600ba72cf406f0ebc">IngameMenu</a>
+<a class="el" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754a0ce9a173cc0d6fe1f013623b60fafd68">Credits</a>, 
+<a class="el" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754aa1e7598c0560afb600ba72cf406f0ebc">IngameMenu</a>, 
+<br/>
+&#160;&#160;<a class="el" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754a7333c6ce5983c35589fd312da6745b92">Other</a>
+<br/>
  }</td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -132,11 +137,12 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#ae6c3b065cf29ca67f74658a165f640cc">showTitleScreen</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#af7667c4778fe6db955c3b32399213c97">showIngameGui</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#a517ba5e01a779fd93d2773c8976cd55f">showMainMenu</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#af8975e4df44fe341a560dffad24aeb48">showSelectHeroMenu</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#afd9b15932f5c4e1ec963b468f59762f7">showCredits</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#aa9529fccef92a768f871614fccbf6ebe">showSelectHeroMenu</a> (<a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> fade)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#ab150be448d19219034998dac1c0b2f66">showChooseClassMenu</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#a316001c6914e78f667f6029e82c6840c">showEnterNameMenu</a> (int classNumber)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#a4a047459b9bca575ec28dcd18b48a9a8">showInvalidNameMenu</a> (int classNumber)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#ab8acac85dc71615f9539ceb38e0a41a6">updateGui</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#ad2d1e040339127fda9527be6437ff2b7">update</a> (<a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> paused)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754">GuiType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#aedbc8c6e4b08c31c4208ea7b43dca4b3">currentGuiType</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -161,7 +167,11 @@ Static Public Attributes</h2></td></tr>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a8cea84db3e9e079f9d4f1d323873d754a089bc443d930bf98f62bc34cce8f8b4f"></a><!-- doxytag: member="MainMenu" ref="a8cea84db3e9e079f9d4f1d323873d754a089bc443d930bf98f62bc34cce8f8b4f" args="" -->MainMenu</em>&nbsp;</td><td>
 </td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8cea84db3e9e079f9d4f1d323873d754a0ce9a173cc0d6fe1f013623b60fafd68"></a><!-- doxytag: member="Credits" ref="a8cea84db3e9e079f9d4f1d323873d754a0ce9a173cc0d6fe1f013623b60fafd68" args="" -->Credits</em>&nbsp;</td><td>
+</td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a8cea84db3e9e079f9d4f1d323873d754aa1e7598c0560afb600ba72cf406f0ebc"></a><!-- doxytag: member="IngameMenu" ref="a8cea84db3e9e079f9d4f1d323873d754aa1e7598c0560afb600ba72cf406f0ebc" args="" -->IngameMenu</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8cea84db3e9e079f9d4f1d323873d754a7333c6ce5983c35589fd312da6745b92"></a><!-- doxytag: member="Other" ref="a8cea84db3e9e079f9d4f1d323873d754a7333c6ce5983c35589fd312da6745b92" args="" -->Other</em>&nbsp;</td><td>
 </td></tr>
 </table>
 </dd>
@@ -249,6 +259,31 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_f_a_gui_1_1_gui_manager_ab150be448d19219034998dac1c0b2f66_icgraph.png" border="0" usemap="#class_f_a_gui_1_1_gui_manager_ab150be448d19219034998dac1c0b2f66_icgraph" alt=""/></div>
 <map name="class_f_a_gui_1_1_gui_manager_ab150be448d19219034998dac1c0b2f66_icgraph" id="class_f_a_gui_1_1_gui_manager_ab150be448d19219034998dac1c0b2f66_icgraph">
 <area shape="rect" id="node3" href="class_f_a_gui_1_1_f_a_python_funcs.html#a59cd2aca024de5c8faf95bef7eba8ff6" title="FAGui::FAPythonFuncs::showChooseClassMenu" alt="" coords="343,5,652,35"/><area shape="rect" id="node5" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="701,5,941,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afd9b15932f5c4e1ec963b468f59762f7"></a><!-- doxytag: member="FAGui::GuiManager::showCredits" ref="afd9b15932f5c4e1ec963b468f59762f7" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_f_a_gui_1_1_gui_manager.html#afd9b15932f5c4e1ec963b468f59762f7">FAGui::GuiManager::showCredits</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_gui_manager_afd9b15932f5c4e1ec963b468f59762f7_icgraph.png" border="0" usemap="#class_f_a_gui_1_1_gui_manager_afd9b15932f5c4e1ec963b468f59762f7_icgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_gui_manager_afd9b15932f5c4e1ec963b468f59762f7_icgraph" id="class_f_a_gui_1_1_gui_manager_afd9b15932f5c4e1ec963b468f59762f7_icgraph">
+<area shape="rect" id="node3" href="class_f_a_gui_1_1_f_a_python_funcs.html#afc2f79a6733fffdc47d9430ccbd7f39e" title="FAGui::FAPythonFuncs::showCredits" alt="" coords="272,5,515,35"/><area shape="rect" id="node5" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="563,5,803,35"/></map>
 </div>
 </p>
 
@@ -356,14 +391,15 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="af8975e4df44fe341a560dffad24aeb48"></a><!-- doxytag: member="FAGui::GuiManager::showSelectHeroMenu" ref="af8975e4df44fe341a560dffad24aeb48" args="()" -->
+<a class="anchor" id="aa9529fccef92a768f871614fccbf6ebe"></a><!-- doxytag: member="FAGui::GuiManager::showSelectHeroMenu" ref="aa9529fccef92a768f871614fccbf6ebe" args="(bool fade)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_f_a_gui_1_1_gui_manager.html#af8975e4df44fe341a560dffad24aeb48">FAGui::GuiManager::showSelectHeroMenu</a> </td>
+          <td class="memname">void <a class="el" href="class_f_a_gui_1_1_gui_manager.html#aa9529fccef92a768f871614fccbf6ebe">FAGui::GuiManager::showSelectHeroMenu</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramname"><em>fade</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -373,9 +409,9 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_f_a_gui_1_1_gui_manager_af8975e4df44fe341a560dffad24aeb48_icgraph.png" border="0" usemap="#class_f_a_gui_1_1_gui_manager_af8975e4df44fe341a560dffad24aeb48_icgraph" alt=""/></div>
-<map name="class_f_a_gui_1_1_gui_manager_af8975e4df44fe341a560dffad24aeb48_icgraph" id="class_f_a_gui_1_1_gui_manager_af8975e4df44fe341a560dffad24aeb48_icgraph">
-<area shape="rect" id="node3" href="class_f_a_gui_1_1_f_a_python_funcs.html#a8dfd54b7095018c7af8d34ca0a2c7e25" title="FAGui::FAPythonFuncs::showSelectHeroMenu" alt="" coords="329,5,625,35"/><area shape="rect" id="node5" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="675,5,915,35"/></map>
+<div class="center"><img src="class_f_a_gui_1_1_gui_manager_aa9529fccef92a768f871614fccbf6ebe_icgraph.png" border="0" usemap="#class_f_a_gui_1_1_gui_manager_aa9529fccef92a768f871614fccbf6ebe_icgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_gui_manager_aa9529fccef92a768f871614fccbf6ebe_icgraph" id="class_f_a_gui_1_1_gui_manager_aa9529fccef92a768f871614fccbf6ebe_icgraph">
+<area shape="rect" id="node3" href="class_f_a_gui_1_1_f_a_python_funcs.html#a8dfd54b7095018c7af8d34ca0a2c7e25" title="FAGui::FAPythonFuncs::showSelectHeroMenu" alt="" coords="352,5,648,35"/><area shape="rect" id="node7" href="class_f_a_gui_1_1_f_a_python_funcs.html#a33cc86f7fc65511fcd00712a83da7b72" title="FAGui::FAPythonFuncs::showSelectHeroMenuNoFade" alt="" coords="329,59,671,88"/><area shape="rect" id="node5" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="720,32,960,61"/></map>
 </div>
 </p>
 
@@ -397,14 +433,15 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ab8acac85dc71615f9539ceb38e0a41a6"></a><!-- doxytag: member="FAGui::GuiManager::updateGui" ref="ab8acac85dc71615f9539ceb38e0a41a6" args="()" -->
+<a class="anchor" id="ad2d1e040339127fda9527be6437ff2b7"></a><!-- doxytag: member="FAGui::GuiManager::update" ref="ad2d1e040339127fda9527be6437ff2b7" args="(bool paused)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_f_a_gui_1_1_gui_manager.html#ab8acac85dc71615f9539ceb38e0a41a6">FAGui::GuiManager::updateGui</a> </td>
+          <td class="memname">void <a class="el" href="class_f_a_gui_1_1_gui_manager.html#ad2d1e040339127fda9527be6437ff2b7">FAGui::GuiManager::update</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramname"><em>paused</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -414,9 +451,9 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_f_a_gui_1_1_gui_manager_ab8acac85dc71615f9539ceb38e0a41a6_cgraph.png" border="0" usemap="#class_f_a_gui_1_1_gui_manager_ab8acac85dc71615f9539ceb38e0a41a6_cgraph" alt=""/></div>
-<map name="class_f_a_gui_1_1_gui_manager_ab8acac85dc71615f9539ceb38e0a41a6_cgraph" id="class_f_a_gui_1_1_gui_manager_ab8acac85dc71615f9539ceb38e0a41a6_cgraph">
-<area shape="rect" id="node3" href="namespace_cel.html#a4e01b99470fde6ba49817d25dc1e2bc6" title="Cel::get" alt="" coords="353,5,420,35"/><area shape="rect" id="node5" href="class_f_a_render_1_1_renderer.html#a9f198f6d107afbe18b9f68231c4b2b8c" title="FARender::Renderer::getRocketContext" alt="" coords="259,59,515,88"/></map>
+<div class="center"><img src="class_f_a_gui_1_1_gui_manager_ad2d1e040339127fda9527be6437ff2b7_cgraph.png" border="0" usemap="#class_f_a_gui_1_1_gui_manager_ad2d1e040339127fda9527be6437ff2b7_cgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_gui_manager_ad2d1e040339127fda9527be6437ff2b7_cgraph" id="class_f_a_gui_1_1_gui_manager_ad2d1e040339127fda9527be6437ff2b7_cgraph">
+<area shape="rect" id="node3" href="namespace_cel.html#a4e01b99470fde6ba49817d25dc1e2bc6" title="Cel::get" alt="" coords="332,5,399,35"/><area shape="rect" id="node5" href="class_f_a_render_1_1_renderer.html#a9f198f6d107afbe18b9f68231c4b2b8c" title="FARender::Renderer::getRocketContext" alt="" coords="237,59,493,88"/></map>
 </div>
 </p>
 

@@ -39,6 +39,7 @@ var searchData=
   ['isdead',['isDead',['../class_f_a_world_1_1_actor.html#a202dce9f5352c307a3fe4e27c0d40b36',1,'FAWorld::Actor']]],
   ['isempty',['isEmpty',['../class_f_a_world_1_1_item.html#aa93072efcb6eff29b43d82297470e2c1',1,'FAWorld::Item']]],
   ['isenemy',['isEnemy',['../class_f_a_world_1_1_actor.html#aa214e029e67b1b02d811ef016e002d6e',1,'FAWorld::Actor']]],
+  ['isfinished',['isFinished',['../class_f_a_gui_1_1_scroll_box.html#aca02b7e0b861d42feca7be8cb03f3a71',1,'FAGui::ScrollBox']]],
   ['isgreaterthan',['isGreaterThan',['../namespace_cel.html#ab60907f79ad1c1bdedeabaef3c614b31',1,'Cel']]],
   ['isincrementalpatchfile',['IsIncrementalPatchFile',['../_s_file_patch_archives_8cpp.html#ab5bb17d96d449e811cb62181805307e0',1,'IsIncrementalPatchFile(const void *pvData, DWORD cbData, LPDWORD pdwPatchedFileSize):&#160;SFilePatchArchives.cpp'],['../_storm_common_8h.html#ab5bb17d96d449e811cb62181805307e0',1,'IsIncrementalPatchFile(const void *pvData, DWORD cbData, LPDWORD pdwPatchedFileSize):&#160;SFilePatchArchives.cpp']]],
   ['isinternalmpqfilename',['IsInternalMpqFileName',['../_s_base_common_8cpp.html#a271822a4e6a88edb8f2f53df8b713023',1,'IsInternalMpqFileName(const char *szFileName):&#160;SBaseCommon.cpp'],['../_storm_common_8h.html#a271822a4e6a88edb8f2f53df8b713023',1,'IsInternalMpqFileName(const char *szFileName):&#160;SBaseCommon.cpp']]],

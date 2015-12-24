@@ -96,17 +96,17 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#af8b8e4a76a7aa9eec87f63bccf1decf8">RocketSDL2Renderer</a> (SDL_Renderer *renderer, SDL_Window *screen, std::function&lt; <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>(Rocket::Core::TextureHandle &amp;, Rocket::Core::Vector2i &amp;, const Rocket::Core::String &amp;)&gt; loadTextureFunc, std::function&lt; <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>(Rocket::Core::TextureHandle &amp;, const <a class="el" href="tomcrypt__macros_8h.html#a76134035baa59a42ca0b5b8fb99d9d53">Rocket::Core::byte</a> *, const Rocket::Core::Vector2i &amp;)&gt; generateTextureFunc, std::function&lt; void(Rocket::Core::TextureHandle)&gt; releaseTextureFunc)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#a4d590e7958e63257934ec4a23c33750f">drawBuffer</a> (std::vector&lt; <a class="el" href="struct_draw_command.html">DrawCommand</a> &gt; &amp;buffer, <a class="el" href="class_render_1_1_sprite_cache_base.html">Render::SpriteCacheBase</a> *cache)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#a783a13f334b87e23a182513fc0c42b75">RenderGeometry</a> (Rocket::Core::Vertex *vertices, int num_vertices, int *indices, int num_indices, Rocket::Core::TextureHandle texture, const Rocket::Core::Vector2f &amp;translation)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by Rocket when it wants to render geometry that it does not wish to optimise.  <a href="#a783a13f334b87e23a182513fc0c42b75"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when it wants to render geometry that it does not wish to optimise.  <a href="#a783a13f334b87e23a182513fc0c42b75"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#a7ad7c990b8da972855f79def5b22a595">EnableScissorRegion</a> (<a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> enable)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by Rocket when it wants to enable or disable scissoring to clip content.  <a href="#a7ad7c990b8da972855f79def5b22a595"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when it wants to enable or disable scissoring to clip content.  <a href="#a7ad7c990b8da972855f79def5b22a595"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#aeb7307b87652cee9e0282dc61e556eaf">SetScissorRegion</a> (int x, int y, int width, int height)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by Rocket when it wants to change the scissor region.  <a href="#aeb7307b87652cee9e0282dc61e556eaf"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when it wants to change the scissor region.  <a href="#aeb7307b87652cee9e0282dc61e556eaf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#ab0e78538f385d5315b1e85a31417fcd1">LoadTexture</a> (Rocket::Core::TextureHandle &amp;texture_handle, Rocket::Core::Vector2i &amp;texture_dimensions, const Rocket::Core::String &amp;source)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by Rocket when a texture is required by the library.  <a href="#ab0e78538f385d5315b1e85a31417fcd1"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when a texture is required by the library.  <a href="#ab0e78538f385d5315b1e85a31417fcd1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#a4d704d31e2b1b4c3dacbea97a8d3c6fe">GenerateTexture</a> (Rocket::Core::TextureHandle &amp;texture_handle, const <a class="el" href="tomcrypt__macros_8h.html#a76134035baa59a42ca0b5b8fb99d9d53">Rocket::Core::byte</a> *source, const Rocket::Core::Vector2i &amp;source_dimensions)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by Rocket when a texture is required to be built from an internally-generated sequence of pixels.  <a href="#a4d704d31e2b1b4c3dacbea97a8d3c6fe"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when a texture is required to be built from an internally-generated sequence of pixels.  <a href="#a4d704d31e2b1b4c3dacbea97a8d3c6fe"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#aa159d9c39c0859dd01ed405169393b55">ReleaseTexture</a> (Rocket::Core::TextureHandle texture_handle)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by Rocket when a loaded texture is no longer required.  <a href="#aa159d9c39c0859dd01ed405169393b55"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="namespace_rocket.html">Rocket</a> when a loaded texture is no longer required.  <a href="#aa159d9c39c0859dd01ed405169393b55"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_draw_command.html">DrawCommand</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rocket_s_d_l2_renderer.html#a2a37533120bc9166fcba3713bbf33291">mDrawBuffer</a></td></tr>
@@ -218,7 +218,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Called by Rocket when it wants to enable or disable scissoring to clip content. </p>
+<p>Called by <a class="el" href="namespace_rocket.html">Rocket</a> when it wants to enable or disable scissoring to clip content. </p>
 
 </div>
 </div>
@@ -253,7 +253,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Called by Rocket when a texture is required to be built from an internally-generated sequence of pixels. </p>
+<p>Called by <a class="el" href="namespace_rocket.html">Rocket</a> when a texture is required to be built from an internally-generated sequence of pixels. </p>
 
 </div>
 </div>
@@ -288,7 +288,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Called by Rocket when a texture is required by the library. </p>
+<p>Called by <a class="el" href="namespace_rocket.html">Rocket</a> when a texture is required by the library. </p>
 
 </div>
 </div>
@@ -307,7 +307,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Called by Rocket when a loaded texture is no longer required. </p>
+<p>Called by <a class="el" href="namespace_rocket.html">Rocket</a> when a loaded texture is no longer required. </p>
 
 </div>
 </div>
@@ -360,7 +360,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Called by Rocket when it wants to render geometry that it does not wish to optimise. </p>
+<p>Called by <a class="el" href="namespace_rocket.html">Rocket</a> when it wants to render geometry that it does not wish to optimise. </p>
 
 </div>
 </div>
@@ -401,7 +401,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Called by Rocket when it wants to change the scissor region. </p>
+<p>Called by <a class="el" href="namespace_rocket.html">Rocket</a> when it wants to change the scissor region. </p>
 
 </div>
 </div>

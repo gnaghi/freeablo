@@ -2,6 +2,7 @@ var searchData=
 [
   ['savegamemanager',['SaveGameManager',['../class_f_a_save_game_1_1_save_game_manager.html',1,'FASaveGame']]],
   ['scriptcontext',['ScriptContext',['../class_script_1_1_script_context.html',1,'Script']]],
+  ['scrollbox',['ScrollBox',['../class_f_a_gui_1_1_scroll_box.html',1,'FAGui']]],
   ['serverpacketheader',['ServerPacketHeader',['../struct_engine_1_1_server_packet_header.html',1,'Engine']]],
   ['settings',['Settings',['../class_settings_1_1_settings.html',1,'Settings']]],
   ['singleton',['Singleton',['../classpython_1_1singleton_1_1_singleton.html',1,'python::singleton']]],

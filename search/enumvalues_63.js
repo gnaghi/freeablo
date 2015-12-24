@@ -7,6 +7,7 @@ var searchData=
   ['constantlifedrain',['ConstantLifeDrain',['../class_f_a_world_1_1_item.html#a3bcbdc930154420b49bb318fe536cbeaa7b59f71d902605e3bc86137480421af7',1,'FAWorld::Item']]],
   ['copy',['COPY',['../inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaaba6788019f0f871f0aefcd5644635785',1,'inflate.h']]],
   ['copy_5f',['COPY_',['../inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaabf17f496021fb9357faed8247beb3926',1,'inflate.h']]],
+  ['credits',['Credits',['../class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754a0ce9a173cc0d6fe1f013623b60fafd68',1,'FAGui::GuiManager']]],
   ['crypt_5fbuffer_5foverflow',['CRYPT_BUFFER_OVERFLOW',['../tomcrypt_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8accd878f5599f3036ffe759dbe1a1ac16',1,'tomcrypt.h']]],
   ['crypt_5ferror',['CRYPT_ERROR',['../tomcrypt_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8a03c22220d7538be04455cd2aa6ddf9da',1,'tomcrypt.h']]],
   ['crypt_5ferror_5freadprng',['CRYPT_ERROR_READPRNG',['../tomcrypt_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8a68eea82b3b71f23031cd94b10c920bf3',1,'tomcrypt.h']]],

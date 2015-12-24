@@ -33,6 +33,7 @@ var searchData=
   ['rendergeometry',['RenderGeometry',['../class_rocket_s_d_l2_renderer.html#a783a13f334b87e23a182513fc0c42b75',1,'RocketSDL2Renderer']]],
   ['renderstate',['RenderState',['../class_f_a_render_1_1_render_state.html#a1d019091f5cb8b148bec91b3be2fd25f',1,'FARender::RenderState']]],
   ['replaceend',['replaceEnd',['../class_misc_1_1_string_utils.html#aceacbce7417c7a8da97b6f832411c6d8',1,'Misc::StringUtils']]],
+  ['reset',['reset',['../class_f_a_gui_1_1_scroll_box.html#a73149b4758d2bf827e6a264b817026a0',1,'FAGui::ScrollBox']]],
   ['resettohead',['resetToHead',['../class_f_a_gui_1_1_command_history.html#a87d73304b5b097a1ac48dbee24ee9d60',1,'FAGui::CommandHistory']]],
   ['resize',['resize',['../namespace_render.html#aec95c0d3bbbec74e588dfefc1e0a1d9f',1,'Render']]],
   ['retranslateui',['retranslateUi',['../class_ui___main_window.html#a097dd160c3534a204904cb374412c618',1,'Ui_MainWindow::retranslateUi(QMainWindow *MainWindow)'],['../class_ui___main_window.html#a097dd160c3534a204904cb374412c618',1,'Ui_MainWindow::retranslateUi(QMainWindow *MainWindow)']]],

@@ -1,9 +1,9 @@
 var searchData=
 [
   ['magestats',['MageStats',['../class_f_a_world_1_1_mage_stats.html',1,'FAWorld']]],
-  ['mainwindow',['MainWindow',['../class_main_window.html',1,'']]],
-  ['mainwindow',['MainWindow',['../class_ui_1_1_main_window.html',1,'Ui']]],
   ['mainwindow',['MainWindow',['../class_launcher_1_1_main_window.html',1,'Launcher']]],
+  ['mainwindow',['MainWindow',['../class_ui_1_1_main_window.html',1,'Ui']]],
+  ['mainwindow',['MainWindow',['../class_main_window.html',1,'']]],
   ['md5_5fstate_5fs',['md5_state_s',['../struct_misc_1_1md5__state__s.html',1,'Misc']]],
   ['meleestats',['MeleeStats',['../class_f_a_world_1_1_melee_stats.html',1,'FAWorld']]],
   ['menu',['Menu',['../classpython_1_1menu_1_1_menu.html',1,'python::menu']]],
