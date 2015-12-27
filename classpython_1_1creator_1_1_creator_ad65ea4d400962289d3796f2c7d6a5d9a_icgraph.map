@@ -1,3 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$classpython_1_1creator_1_1_creator.html#a68169e25b843e2f451a958d9aefa9b44" title="python.creator.Creator.onOkClick" alt="" coords="305,5,521,35"/>
+<area shape="rect" id="node3" href="$classpython_1_1creator_1_1_creator.html#a68169e25b843e2f451a958d9aefa9b44" title="python.creator.Creator.onOkClick" alt="" coords="317,5,533,35"/>
+<area shape="rect" id="node7" href="$classpython_1_1creator_1_1_creator.html#a9e23b316b48433710b2293d74eb522e3" title="python.creator.Creator.onCancelClick" alt="" coords="305,59,545,88"/>
+<area shape="rect" id="node5" href="$classpython_1_1creator_1_1_creator.html#a47e8577ad6b7fd7ea965aac86dec7a41" title="python.creator.Creator.onKeyDown" alt="" coords="595,32,821,61"/>
 </map>

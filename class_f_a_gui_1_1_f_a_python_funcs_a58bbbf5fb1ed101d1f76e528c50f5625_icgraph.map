@@ -1,4 +1,5 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="360,5,600,35"/>
 <area shape="rect" id="node5" href="$classpython_1_1creator_1_1_creator.html#a68169e25b843e2f451a958d9aefa9b44" title="python.creator.Creator.onOkClick" alt="" coords="372,59,588,88"/>
+<area shape="rect" id="node7" href="$classpython_1_1creator_1_1_creator.html#a47e8577ad6b7fd7ea965aac86dec7a41" title="python.creator.Creator.onKeyDown" alt="" coords="648,59,875,88"/>
 </map>
