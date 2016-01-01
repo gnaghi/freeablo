@@ -35,7 +35,7 @@
 <area shape="rect" id="node71" href="$class_f_a_i_o_file_interface.html#a0dd986067a16d1ba2da857c9b59c091c" title="Opens a file." alt="" coords="599,968,761,997"/>
 <area shape="rect" id="node41" href="$class_f_a_audio_1_1_audio_manager.html#a9eaf93569374ad7fed5b0229d4e36e8b" title="FAAudio::AudioManager::playMusic" alt="" coords="839,701,1068,731"/>
 <area shape="rect" id="node45" href="$class_f_a_audio_1_1_audio_manager.html#a1c562d006a318f6c682dd80e6a278996" title="FAAudio::AudioManager::play" alt="" coords="856,861,1051,891"/>
-<area shape="rect" id="node49" href="$namespace_render.html#a04af26977f421431f3a4569af1b877f4" title="Render::getImageInfo" alt="" coords="880,968,1027,997"/>
+<area shape="rect" id="node49" href="$namespace_render.html#a5f9e2be0c2c45a803579d9860af440e3" title="Render::getImageInfo" alt="" coords="880,968,1027,997"/>
 <area shape="rect" id="node53" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="849,915,1057,944"/>
 <area shape="rect" id="node51" href="$class_f_a_render_1_1_sprite_cache.html#a5936030780a9a97d4c27bca0bb846dd6" title="To be called from the game thread." alt="" coords="1117,968,1304,997"/>
 <area shape="rect" id="node55" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="1145,861,1276,891"/>

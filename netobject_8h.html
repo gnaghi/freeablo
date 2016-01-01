@@ -86,6 +86,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;enet/enet.h&gt;</code><br/>
+<code>#include &lt;stdint.h&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for netobject.h:</div>
 <div class="dyncontent">
@@ -111,16 +112,35 @@ Namespaces</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_f_a_world.html">FAWorld</a></td></tr>
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netobject_8h.html#a2fd97b350e0b4a5e5a67c8900ac8e92e">STATIC_HANDLE_NET_OBJECT</a>(className)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netobject_8h.html#aab0c33f65a3296a1b71a125d6e0a70fa">STATIC_NET_OBJECT_SET_CLASS_ID</a>(classId)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netobject_8h.html#ab27c7db6726e8b6421a80092491e570c">STATIC_HANDLE_NET_OBJECT_IN_IMPL</a>(className)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netobject_8h.html#a80f86cfe94ff23e7edb15265be9a62cf">STATIC_HANDLE_NET_OBJECT_IN_CLASS</a>()</td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
-<a class="anchor" id="a2fd97b350e0b4a5e5a67c8900ac8e92e"></a><!-- doxytag: member="netobject.h::STATIC_HANDLE_NET_OBJECT" ref="a2fd97b350e0b4a5e5a67c8900ac8e92e" args="(className)" -->
+<a class="anchor" id="a80f86cfe94ff23e7edb15265be9a62cf"></a><!-- doxytag: member="netobject.h::STATIC_HANDLE_NET_OBJECT_IN_CLASS" ref="a80f86cfe94ff23e7edb15265be9a62cf" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="netobject_8h.html#a2fd97b350e0b4a5e5a67c8900ac8e92e">STATIC_HANDLE_NET_OBJECT</a></td>
+          <td class="memname">#define <a class="el" href="netobject_8h.html#a80f86cfe94ff23e7edb15265be9a62cf">STATIC_HANDLE_NET_OBJECT_IN_CLASS</a></td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>Value:</b><div class="fragment"><pre class="fragment"><span class="keyword">public</span>: \
+        static int32_t mClassIndirectId; \
+        virtual int32_t getClassId() { return ::FAWorld::NetObject::getClassIdFromIndirectId(mClassIndirectId); }
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ab27c7db6726e8b6421a80092491e570c"></a><!-- doxytag: member="netobject.h::STATIC_HANDLE_NET_OBJECT_IN_IMPL" ref="ab27c7db6726e8b6421a80092491e570c" args="(className)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="netobject_8h.html#ab27c7db6726e8b6421a80092491e570c">STATIC_HANDLE_NET_OBJECT_IN_IMPL</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">className</td><td>)</td>
@@ -129,34 +149,15 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">NetObject* StaticInitialiseFunc##className() { <span class="keywordflow">return</span> <span class="keyword">new</span> className(); } \
+<b>Value:</b><div class="fragment"><pre class="fragment">int32_t className::mClassIndirectId = -1; \
+    NetObject* StaticInitialiseFunc##className() { <span class="keywordflow">return</span> <span class="keyword">new</span> className(); } \
     struct StaticInitialise##className \
     { \
         StaticInitialise##className() \
         { \
-            NetObject::registerNetObjectClass(className::StaticGetClassId(), StaticInitialiseFunc##className); \
+            className::mClassIndirectId = NetObject::registerNetObjectClass(#className, StaticInitialiseFunc##className); \
         } \
     } _StaticInitialise##className;
-</pre></div>
-</div>
-</div>
-<a class="anchor" id="aab0c33f65a3296a1b71a125d6e0a70fa"></a><!-- doxytag: member="netobject.h::STATIC_NET_OBJECT_SET_CLASS_ID" ref="aab0c33f65a3296a1b71a125d6e0a70fa" args="(classId)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="netobject_8h.html#aab0c33f65a3296a1b71a125d6e0a70fa">STATIC_NET_OBJECT_SET_CLASS_ID</a></td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">classId</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment"><span class="keyword">public</span>: \
-        static int32_t StaticGetClassId() { <span class="keywordflow">return</span> classId; } \
-        virtual int32_t getClassId() { <span class="keywordflow">return</span> StaticGetClassId(); }
 </pre></div>
 </div>
 </div>

@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_a_render_1_1_sprite_manager.html#a610fffb804bb0137e72de674c7158874" title="To be called from the game thread." alt="" coords="321,5,639,35"/>
+<area shape="rect" id="node5" href="$class_f_a_render_1_1_sprite_cache.html#ac89d731619ab8f11003e563b3885dfed" title="To be called from the game thread." alt="" coords="689,5,980,35"/>
+</map>

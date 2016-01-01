@@ -130,13 +130,14 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#a930342e8a97ad6f3051f96d9df4ea272">tickDone</a> (<a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> wasSent)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after every network tick. Used to accumulate priorities, for later recall with <a class="el" href="class_f_a_world_1_1_net_object.html#a5bc4351c25f45b87a6ba5a4f732afb08">getPriority()</a>  <a href="#a930342e8a97ad6f3051f96d9df4ea272"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#a875f5add72812b21f2fde5737586e671">getClassId</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get the class id for sending over the network, this is the id used on <a class="el" href="class_f_a_world_1_1_net_object.html#a13c2ffe170095ff5b8e893765e1d89c8" title="construct a class instance of a NetObject subclass, using a classId previously registered with regist...">construct()</a> and <a class="el" href="class_f_a_world_1_1_net_object.html#a5e560c637148a04f2bbd282a2b38aac3" title="Registers a factory function for a NetObject subclass, so they can be constructed using just the id...">registerNetObjectClass()</a> above.  <a href="#a875f5add72812b21f2fde5737586e671"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get the class id for sending over the network, this is the id used on <a class="el" href="class_f_a_world_1_1_net_object.html#a13c2ffe170095ff5b8e893765e1d89c8" title="construct a class instance of a NetObject subclass, using a classId previously registered with regist...">construct()</a> and <a class="el" href="class_f_a_world_1_1_net_object.html#a473b0869199f05cb8ea6bfdce460d687" title="Registers a factory function for a NetObject subclass, so they can be constructed using just the id...">registerNetObjectClass()</a> above.  <a href="#a875f5add72812b21f2fde5737586e671"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#a5e560c637148a04f2bbd282a2b38aac3">registerNetObjectClass</a> (int32_t classId, <a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> *(*factoryFunc)())</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a factory function for a <a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> subclass, so they can be constructed using just the id.  <a href="#a5e560c637148a04f2bbd282a2b38aac3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#a473b0869199f05cb8ea6bfdce460d687">registerNetObjectClass</a> (const char *typeName, <a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> *(*factoryFunc)())</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a factory function for a <a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> subclass, so they can be constructed using just the id.  <a href="#a473b0869199f05cb8ea6bfdce460d687"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#a13c2ffe170095ff5b8e893765e1d89c8">construct</a> (int32_t classId)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">construct a class instance of a <a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> subclass, using a classId previously registered with <a class="el" href="class_f_a_world_1_1_net_object.html#a5e560c637148a04f2bbd282a2b38aac3" title="Registers a factory function for a NetObject subclass, so they can be constructed using just the id...">registerNetObjectClass()</a>. The reason for this is that the classId can be sent over the network allowing the reciever to construct the appropriate class using just the id.  <a href="#a13c2ffe170095ff5b8e893765e1d89c8"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">construct a class instance of a <a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> subclass, using a classId previously registered with <a class="el" href="class_f_a_world_1_1_net_object.html#a473b0869199f05cb8ea6bfdce460d687" title="Registers a factory function for a NetObject subclass, so they can be constructed using just the id...">registerNetObjectClass()</a>. The reason for this is that the classId can be sent over the network allowing the reciever to construct the appropriate class using just the id.  <a href="#a13c2ffe170095ff5b8e893765e1d89c8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#a84eaa7e8220ef7f8cfb10d95398a0995">getClassIdFromIndirectId</a> (int32_t indirectId)</td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad857986c68aa3d4a6f5e6b19fd06299b"></a><!-- doxytag: member="FAWorld::NetObject::~NetObject" ref="ad857986c68aa3d4a6f5e6b19fd06299b" args="()" -->
@@ -171,7 +172,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>construct a class instance of a <a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> subclass, using a classId previously registered with <a class="el" href="class_f_a_world_1_1_net_object.html#a5e560c637148a04f2bbd282a2b38aac3" title="Registers a factory function for a NetObject subclass, so they can be constructed using just the id...">registerNetObjectClass()</a>. The reason for this is that the classId can be sent over the network allowing the reciever to construct the appropriate class using just the id. </p>
+<p>construct a class instance of a <a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> subclass, using a classId previously registered with <a class="el" href="class_f_a_world_1_1_net_object.html#a473b0869199f05cb8ea6bfdce460d687" title="Registers a factory function for a NetObject subclass, so they can be constructed using just the id...">registerNetObjectClass()</a>. The reason for this is that the classId can be sent over the network allowing the reciever to construct the appropriate class using just the id. </p>
 
 </div>
 </div>
@@ -217,7 +218,31 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>get the class id for sending over the network, this is the id used on <a class="el" href="class_f_a_world_1_1_net_object.html#a13c2ffe170095ff5b8e893765e1d89c8" title="construct a class instance of a NetObject subclass, using a classId previously registered with regist...">construct()</a> and <a class="el" href="class_f_a_world_1_1_net_object.html#a5e560c637148a04f2bbd282a2b38aac3" title="Registers a factory function for a NetObject subclass, so they can be constructed using just the id...">registerNetObjectClass()</a> above. </p>
+<p>get the class id for sending over the network, this is the id used on <a class="el" href="class_f_a_world_1_1_net_object.html#a13c2ffe170095ff5b8e893765e1d89c8" title="construct a class instance of a NetObject subclass, using a classId previously registered with regist...">construct()</a> and <a class="el" href="class_f_a_world_1_1_net_object.html#a473b0869199f05cb8ea6bfdce460d687" title="Registers a factory function for a NetObject subclass, so they can be constructed using just the id...">registerNetObjectClass()</a> above. </p>
+
+</div>
+</div>
+<a class="anchor" id="a84eaa7e8220ef7f8cfb10d95398a0995"></a><!-- doxytag: member="FAWorld::NetObject::getClassIdFromIndirectId" ref="a84eaa7e8220ef7f8cfb10d95398a0995" args="(int32_t indirectId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t <a class="el" href="class_f_a_world_1_1_net_object.html#a84eaa7e8220ef7f8cfb10d95398a0995">FAWorld::NetObject::getClassIdFromIndirectId</a> </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>indirectId</em></td><td>)</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indirectId</td><td>an indirect id from <a class="el" href="class_f_a_world_1_1_net_object.html#a473b0869199f05cb8ea6bfdce460d687" title="Registers a factory function for a NetObject subclass, so they can be constructed using just the id...">registerNetObjectClass()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>an id for use with <a class="el" href="class_f_a_world_1_1_net_object.html#a13c2ffe170095ff5b8e893765e1d89c8" title="construct a class instance of a NetObject subclass, using a classId previously registered with regist...">construct()</a> </dd></dl>
 
 </div>
 </div>
@@ -303,15 +328,15 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a5e560c637148a04f2bbd282a2b38aac3"></a><!-- doxytag: member="FAWorld::NetObject::registerNetObjectClass" ref="a5e560c637148a04f2bbd282a2b38aac3" args="(int32_t classId, NetObject *(*factoryFunc)())" -->
+<a class="anchor" id="a473b0869199f05cb8ea6bfdce460d687"></a><!-- doxytag: member="FAWorld::NetObject::registerNetObjectClass" ref="a473b0869199f05cb8ea6bfdce460d687" args="(const char *typeName, NetObject *(*factoryFunc)())" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_f_a_world_1_1_net_object.html#a5e560c637148a04f2bbd282a2b38aac3">FAWorld::NetObject::registerNetObjectClass</a> </td>
+          <td class="memname">int32_t <a class="el" href="class_f_a_world_1_1_net_object.html#a473b0869199f05cb8ea6bfdce460d687">FAWorld::NetObject::registerNetObjectClass</a> </td>
           <td>(</td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>classId</em>, </td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>typeName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -329,6 +354,7 @@ Here is the call graph for this function:</div>
 <div class="memdoc">
 
 <p>Registers a factory function for a <a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> subclass, so they can be constructed using just the id. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>an indirect id that can be converted to a real id with <a class="el" href="class_f_a_world_1_1_net_object.html#a84eaa7e8220ef7f8cfb10d95398a0995">getClassIdFromIndirectId()</a> </dd></dl>
 
 </div>
 </div>

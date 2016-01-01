@@ -119,18 +119,18 @@ Inheritance diagram for Render::SpriteCacheBase:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_render_1_1_sprite_group.html">SpriteGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_render_1_1_sprite_cache_base.html#ac4423720734020abfa127474bec66924">get</a> (size_t key)=0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_render_1_1_sprite_cache_base.html#af0a06d2069abeca46b501c6414319e68">setImmortal</a> (size_t index, <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> immortal)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_render_1_1_sprite_group.html">SpriteGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_render_1_1_sprite_cache_base.html#af3ac5342c01c2e5372f028e6343b0c76">get</a> (uint32_t key)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_render_1_1_sprite_cache_base.html#a1deef00e690fc84727cde14ccd22018c">setImmortal</a> (uint32_t index, <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> immortal)=0</td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ac4423720734020abfa127474bec66924"></a><!-- doxytag: member="Render::SpriteCacheBase::get" ref="ac4423720734020abfa127474bec66924" args="(size_t key)=0" -->
+<a class="anchor" id="af3ac5342c01c2e5372f028e6343b0c76"></a><!-- doxytag: member="Render::SpriteCacheBase::get" ref="af3ac5342c01c2e5372f028e6343b0c76" args="(uint32_t key)=0" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_render_1_1_sprite_group.html">SpriteGroup</a>* <a class="el" href="class_render_1_1_sprite_cache_base.html#ac4423720734020abfa127474bec66924">Render::SpriteCacheBase::get</a> </td>
+          <td class="memname">virtual <a class="el" href="class_render_1_1_sprite_group.html">SpriteGroup</a>* <a class="el" href="class_render_1_1_sprite_cache_base.html#af3ac5342c01c2e5372f028e6343b0c76">Render::SpriteCacheBase::get</a> </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td><code> [pure virtual]</code></td>
         </tr>
@@ -138,27 +138,27 @@ Public Member Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_f_a_render_1_1_sprite_manager.html#a4897198f560005dd7067150c3ed3ed2d">FARender::SpriteManager</a>.</p>
+<p>Implemented in <a class="el" href="class_f_a_render_1_1_sprite_manager.html#aba6477a1788e19b1e953fe354785807f">FARender::SpriteManager</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_render_1_1_sprite_cache_base_ac4423720734020abfa127474bec66924_icgraph.png" border="0" usemap="#class_render_1_1_sprite_cache_base_ac4423720734020abfa127474bec66924_icgraph" alt=""/></div>
-<map name="class_render_1_1_sprite_cache_base_ac4423720734020abfa127474bec66924_icgraph" id="class_render_1_1_sprite_cache_base_ac4423720734020abfa127474bec66924_icgraph">
+<div class="center"><img src="class_render_1_1_sprite_cache_base_af3ac5342c01c2e5372f028e6343b0c76_icgraph.png" border="0" usemap="#class_render_1_1_sprite_cache_base_af3ac5342c01c2e5372f028e6343b0c76_icgraph" alt=""/></div>
+<map name="class_render_1_1_sprite_cache_base_af3ac5342c01c2e5372f028e6343b0c76_icgraph" id="class_render_1_1_sprite_cache_base_af3ac5342c01c2e5372f028e6343b0c76_icgraph">
 <area shape="rect" id="node3" href="namespace_render.html#aa2625d5d45177718b16be35d3de01643" title="Render::drawLevel" alt="" coords="253,5,384,35"/><area shape="rect" id="node5" href="class_f_a_render_1_1_renderer.html#ad6e983189d6cf6b7aaef89d54ed89396" title="To be called only by Engine::ThreadManager." alt="" coords="433,5,655,35"/><area shape="rect" id="node7" href="class_engine_1_1_thread_manager.html#ab99a6ee7b73f2e9b24a824e811df5d88" title="Engine::ThreadManager::run" alt="" coords="704,5,891,35"/><area shape="rect" id="node9" href="class_engine_1_1_engine_main.html#a5a16165ab6d6e9f2bb2f2739bd1b11bf" title="Engine::EngineMain::run" alt="" coords="940,5,1103,35"/><area shape="rect" id="node11" href="freeablo_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1152,5,1203,35"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="af0a06d2069abeca46b501c6414319e68"></a><!-- doxytag: member="Render::SpriteCacheBase::setImmortal" ref="af0a06d2069abeca46b501c6414319e68" args="(size_t index, bool immortal)=0" -->
+<a class="anchor" id="a1deef00e690fc84727cde14ccd22018c"></a><!-- doxytag: member="Render::SpriteCacheBase::setImmortal" ref="a1deef00e690fc84727cde14ccd22018c" args="(uint32_t index, bool immortal)=0" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="class_render_1_1_sprite_cache_base.html#af0a06d2069abeca46b501c6414319e68">Render::SpriteCacheBase::setImmortal</a> </td>
+          <td class="memname">virtual void <a class="el" href="class_render_1_1_sprite_cache_base.html#a1deef00e690fc84727cde14ccd22018c">Render::SpriteCacheBase::setImmortal</a> </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>index</em>, </td>
         </tr>
         <tr>
@@ -176,13 +176,13 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_f_a_render_1_1_sprite_manager.html#a0f6f37bd76792c1c03b1ef46a7a1bcd0">FARender::SpriteManager</a>.</p>
+<p>Implemented in <a class="el" href="class_f_a_render_1_1_sprite_manager.html#a31902ca8beebb8b93894a3aaefd6d2b1">FARender::SpriteManager</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_render_1_1_sprite_cache_base_af0a06d2069abeca46b501c6414319e68_icgraph.png" border="0" usemap="#class_render_1_1_sprite_cache_base_af0a06d2069abeca46b501c6414319e68_icgraph" alt=""/></div>
-<map name="class_render_1_1_sprite_cache_base_af0a06d2069abeca46b501c6414319e68_icgraph" id="class_render_1_1_sprite_cache_base_af0a06d2069abeca46b501c6414319e68_icgraph">
+<div class="center"><img src="class_render_1_1_sprite_cache_base_a1deef00e690fc84727cde14ccd22018c_icgraph.png" border="0" usemap="#class_render_1_1_sprite_cache_base_a1deef00e690fc84727cde14ccd22018c_icgraph" alt=""/></div>
+<map name="class_render_1_1_sprite_cache_base_a1deef00e690fc84727cde14ccd22018c_icgraph" id="class_render_1_1_sprite_cache_base_a1deef00e690fc84727cde14ccd22018c_icgraph">
 <area shape="rect" id="node3" href="namespace_render.html#aa2625d5d45177718b16be35d3de01643" title="Render::drawLevel" alt="" coords="304,5,435,35"/><area shape="rect" id="node5" href="class_f_a_render_1_1_renderer.html#ad6e983189d6cf6b7aaef89d54ed89396" title="To be called only by Engine::ThreadManager." alt="" coords="484,5,705,35"/><area shape="rect" id="node7" href="class_engine_1_1_thread_manager.html#ab99a6ee7b73f2e9b24a824e811df5d88" title="Engine::ThreadManager::run" alt="" coords="755,5,941,35"/><area shape="rect" id="node9" href="class_engine_1_1_engine_main.html#a5a16165ab6d6e9f2bb2f2739bd1b11bf" title="Engine::EngineMain::run" alt="" coords="991,5,1153,35"/><area shape="rect" id="node11" href="freeablo_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1203,5,1253,35"/></map>
 </div>
 </p>

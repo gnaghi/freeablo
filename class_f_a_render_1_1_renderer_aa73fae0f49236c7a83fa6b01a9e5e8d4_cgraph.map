@@ -1,14 +1,14 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$class_f_a_render_1_1_sprite_manager.html#a3406a2bb2d8eac40abbc7e68fd3bbd6f" title="To be called from the game thread." alt="" coords="299,653,496,683"/>
-<area shape="rect" id="node115" href="$class_f_a_render_1_1_f_a_sprite_group.html#a045b9733513c5af7424efe1746b3dff1" title="FARender::FASpriteGroup::getCacheIndex" alt="" coords="263,707,532,736"/>
+<area shape="rect" id="node115" href="$class_f_a_render_1_1_f_a_sprite_group.html#a6a3acc826355578573d25afe1e614a53" title="FARender::FASpriteGroup::getCacheIndex" alt="" coords="263,707,532,736"/>
 <area shape="rect" id="node117" href="$namespace_render.html#ae8490bd4dd892c99b383fe597d8c51e6" title="Render::drawCursor" alt="" coords="328,760,467,789"/>
-<area shape="rect" id="node121" href="$class_f_a_render_1_1_f_a_sprite_group.html#aeedd6e391e00a33b45cea163f81bb937" title="FARender::FASpriteGroup::getWidth" alt="" coords="280,813,515,843"/>
-<area shape="rect" id="node123" href="$class_f_a_render_1_1_f_a_sprite_group.html#a0e914844f0f36071051a90dc5851ec4f" title="FARender::FASpriteGroup::getHeight" alt="" coords="279,867,516,896"/>
+<area shape="rect" id="node121" href="$class_f_a_render_1_1_f_a_sprite_group.html#a9589a5e95775b4a2eb6add446df7c4b8" title="FARender::FASpriteGroup::getWidth" alt="" coords="280,813,515,843"/>
+<area shape="rect" id="node123" href="$class_f_a_render_1_1_f_a_sprite_group.html#aa295382f7e191a3e57b0cb1b84fbbc6d" title="FARender::FASpriteGroup::getHeight" alt="" coords="279,867,516,896"/>
 <area shape="rect" id="node5" href="$class_f_a_render_1_1_sprite_cache.html#a5936030780a9a97d4c27bca0bb846dd6" title="To be called from the game thread." alt="" coords="581,653,768,683"/>
 <area shape="rect" id="node7" href="$class_f_a_render_1_1_sprite_cache.html#ac89d731619ab8f11003e563b3885dfed" title="To be called from the game thread." alt="" coords="817,573,1108,603"/>
-<area shape="rect" id="node9" href="$class_f_a_render_1_1_sprite_cache.html#aa29b27a49149aac3fb83560d8d05867f" title="Can be called from any thread." alt="" coords="829,627,1096,656"/>
+<area shape="rect" id="node9" href="$class_f_a_render_1_1_sprite_cache.html#a2b08caf45b2056810d72c42572947f8f" title="Can be called from any thread." alt="" coords="829,627,1096,656"/>
 <area shape="rect" id="node11" href="$class_misc_1_1_string_utils.html#ad4f3a03d1fd36d62265a3272da3e2a58" title="Misc::StringUtils::split" alt="" coords="888,680,1037,709"/>
-<area shape="rect" id="node13" href="$namespace_render.html#a04af26977f421431f3a4569af1b877f4" title="Render::getImageInfo" alt="" coords="889,733,1036,763"/>
+<area shape="rect" id="node13" href="$namespace_render.html#a5f9e2be0c2c45a803579d9860af440e3" title="Render::getImageInfo" alt="" coords="889,733,1036,763"/>
 <area shape="rect" id="node15" href="$namespace_render.html#a8b66dddb0313a61f2211531c6bfd433e" title="Render::getImageExtension" alt="" coords="1157,653,1341,683"/>
 <area shape="rect" id="node17" href="$class_misc_1_1_string_utils.html#a0f8cb0ac134191ba8417f74ab7dc4de6" title="Misc::StringUtils::ciEqual" alt="" coords="1164,707,1335,736"/>
 <area shape="rect" id="node19" href="$class_cel_1_1_cel_file.html#a3250aab7b67716ab35d84c4d4f1e76d8" title="if normal cel file, returns same as numFrames(), for an archive, the number of frames in each subcel..." alt="" coords="1167,760,1332,789"/>

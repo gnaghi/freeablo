@@ -19,7 +19,7 @@
 <area shape="rect" id="node71" href="$class_f_a_i_o_file_interface.html#a0dd986067a16d1ba2da857c9b59c091c" title="Opens a file." alt="" coords="623,219,785,248"/>
 <area shape="rect" id="node17" href="$class_f_a_audio_1_1_audio_manager.html#a9eaf93569374ad7fed5b0229d4e36e8b" title="FAAudio::AudioManager::playMusic" alt="" coords="863,5,1092,35"/>
 <area shape="rect" id="node21" href="$class_f_a_audio_1_1_audio_manager.html#a1c562d006a318f6c682dd80e6a278996" title="FAAudio::AudioManager::play" alt="" coords="880,59,1075,88"/>
-<area shape="rect" id="node25" href="$namespace_render.html#a04af26977f421431f3a4569af1b877f4" title="Render::getImageInfo" alt="" coords="904,339,1051,368"/>
+<area shape="rect" id="node25" href="$namespace_render.html#a5f9e2be0c2c45a803579d9860af440e3" title="Render::getImageInfo" alt="" coords="904,339,1051,368"/>
 <area shape="rect" id="node45" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="873,405,1081,435"/>
 <area shape="rect" id="node27" href="$class_f_a_render_1_1_sprite_cache.html#a5936030780a9a97d4c27bca0bb846dd6" title="To be called from the game thread." alt="" coords="1141,312,1328,341"/>
 <area shape="rect" id="node29" href="$class_f_a_render_1_1_sprite_manager.html#a3406a2bb2d8eac40abbc7e68fd3bbd6f" title="To be called from the game thread." alt="" coords="1377,312,1575,341"/>
@@ -33,8 +33,8 @@
 <area shape="rect" id="node47" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="1169,472,1300,501"/>
 <area shape="rect" id="node53" href="$namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="1152,365,1317,395"/>
 <area shape="rect" id="node56" href="$namespace_render.html#a05c97dfcb545abc37e57ca717e15f6cc" title="Render::loadResizedSprite" alt="" coords="1145,419,1324,448"/>
-<area shape="rect" id="node49" href="$class_f_a_render_1_1_sprite_cache.html#aaede499b2c79f9f1cf535f37887d2f99" title="To be called from the render thread." alt="" coords="1383,419,1569,448"/>
-<area shape="rect" id="node51" href="$class_f_a_render_1_1_sprite_manager.html#a4897198f560005dd7067150c3ed3ed2d" title="To be called from the render thread." alt="" coords="1377,472,1575,501"/>
+<area shape="rect" id="node49" href="$class_f_a_render_1_1_sprite_cache.html#ada6cb9dd393a5d7a0a794f7fbf12b5e7" title="To be called from the render thread." alt="" coords="1383,419,1569,448"/>
+<area shape="rect" id="node51" href="$class_f_a_render_1_1_sprite_manager.html#aba6477a1788e19b1e953fe354785807f" title="To be called from the render thread." alt="" coords="1377,472,1575,501"/>
 <area shape="rect" id="node78" href="$_storm_common_8h.html#a7d3f9dcaa29374564574951db3f84fd7" title="SAttrLoadAttributes" alt="" coords="393,803,529,832"/>
 <area shape="rect" id="node91" href="$_storm_lib_8h.html#a7f66db40266cb2d78416b2f9cc2804ba" title="SFileUpdateFileAttributes" alt="" coords="376,856,547,885"/>
 <area shape="rect" id="node93" href="$_storm_lib_8h.html#a25532910e8392ffc4b5fd57878d67316" title="SFileExtractFile" alt="" coords="404,909,519,939"/>

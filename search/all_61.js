@@ -106,7 +106,7 @@ var searchData=
   ['atrcase',['ATRCASE',['../common_8h.html#a52d6801a260023f678b423339cdd504f',1,'common.h']]],
   ['atrcase2',['ATRCASE2',['../common_8h.html#a3cc518f8d23195831b9ca8f4f27bd582',1,'common.h']]],
   ['attack',['attack',['../class_f_a_world_1_1_actor.html#a6e2d86d273662e6ea51e1c8f1a9c15cb',1,'FAWorld::Actor::attack()'],['../class_f_a_world_1_1_player.html#aa4da592bd7d2a7523212fe7ba91b4861',1,'FAWorld::Player::attack(Actor *enemy)'],['../class_f_a_world_1_1_player.html#a457c22a4c488e0ec3613bf502391fbd7',1,'FAWorld::Player::attack(Player *enemy)'],['../namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3aaeaaae5828bb4b57e078d81975cbba96',1,'FAWorld::AnimState::attack()']]],
-  ['attackanimindex',['attackAnimIndex',['../struct_f_a_world_1_1_actor_net_data.html#a89046e777edcdb833c69daad40c95971',1,'FAWorld::ActorNetData']]],
+  ['attackanimindex',['attackAnimIndex',['../struct_f_a_world_1_1_actor_net_data.html#a50e9c7c9299f3d8dd675a0d84338d04f',1,'FAWorld::ActorNetData']]],
   ['attackframeset',['attackFrameSet',['../struct_diablo_exe_1_1_monster.html#af61b9e86e9ecb8c32facfd081d4a37d5',1,'DiabloExe::Monster']]],
   ['attackplayback',['attackPlayback',['../struct_diablo_exe_1_1_monster.html#a15c79b282cbc29bde3237bc17b57ed78',1,'DiabloExe::Monster']]],
   ['attackspeed0',['AttackSpeed0',['../class_f_a_world_1_1_item.html#a3bcbdc930154420b49bb318fe536cbeaa016df7690a88c794074bf9869e708ef0',1,'FAWorld::Item']]],

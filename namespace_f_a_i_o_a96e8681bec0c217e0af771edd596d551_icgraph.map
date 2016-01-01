@@ -14,7 +14,7 @@
 <area shape="rect" id="node65" href="$class_f_a_i_o_file_interface.html#a0dd986067a16d1ba2da857c9b59c091c" title="Opens a file." alt="" coords="401,592,564,621"/>
 <area shape="rect" id="node11" href="$class_f_a_audio_1_1_audio_manager.html#a9eaf93569374ad7fed5b0229d4e36e8b" title="FAAudio::AudioManager::playMusic" alt="" coords="641,112,871,141"/>
 <area shape="rect" id="node15" href="$class_f_a_audio_1_1_audio_manager.html#a1c562d006a318f6c682dd80e6a278996" title="FAAudio::AudioManager::play" alt="" coords="659,165,853,195"/>
-<area shape="rect" id="node19" href="$namespace_render.html#a04af26977f421431f3a4569af1b877f4" title="Render::getImageInfo" alt="" coords="683,219,829,248"/>
+<area shape="rect" id="node19" href="$namespace_render.html#a5f9e2be0c2c45a803579d9860af440e3" title="Render::getImageInfo" alt="" coords="683,219,829,248"/>
 <area shape="rect" id="node39" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="652,299,860,328"/>
 <area shape="rect" id="node21" href="$class_f_a_render_1_1_sprite_cache.html#a5936030780a9a97d4c27bca0bb846dd6" title="To be called from the game thread." alt="" coords="920,205,1107,235"/>
 <area shape="rect" id="node23" href="$class_f_a_render_1_1_sprite_manager.html#a3406a2bb2d8eac40abbc7e68fd3bbd6f" title="To be called from the game thread." alt="" coords="1156,205,1353,235"/>
@@ -28,6 +28,6 @@
 <area shape="rect" id="node41" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="948,365,1079,395"/>
 <area shape="rect" id="node47" href="$namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="931,259,1096,288"/>
 <area shape="rect" id="node50" href="$namespace_render.html#a05c97dfcb545abc37e57ca717e15f6cc" title="Render::loadResizedSprite" alt="" coords="924,312,1103,341"/>
-<area shape="rect" id="node43" href="$class_f_a_render_1_1_sprite_cache.html#aaede499b2c79f9f1cf535f37887d2f99" title="To be called from the render thread." alt="" coords="1161,312,1348,341"/>
-<area shape="rect" id="node45" href="$class_f_a_render_1_1_sprite_manager.html#a4897198f560005dd7067150c3ed3ed2d" title="To be called from the render thread." alt="" coords="1156,365,1353,395"/>
+<area shape="rect" id="node43" href="$class_f_a_render_1_1_sprite_cache.html#ada6cb9dd393a5d7a0a794f7fbf12b5e7" title="To be called from the render thread." alt="" coords="1161,312,1348,341"/>
+<area shape="rect" id="node45" href="$class_f_a_render_1_1_sprite_manager.html#aba6477a1788e19b1e953fe354785807f" title="To be called from the render thread." alt="" coords="1156,365,1353,395"/>
 </map>

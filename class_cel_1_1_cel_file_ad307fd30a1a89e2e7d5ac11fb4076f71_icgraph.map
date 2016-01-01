@@ -2,5 +2,5 @@
 <area shape="rect" id="node3" href="$namespace_render.html#abdc1ed403712a032c4f1a150d4e7550e" title="Render::loadCelToSingleTexture" alt="" coords="225,5,436,35"/>
 <area shape="rect" id="node7" href="$class_render_1_1_sprite_group.html#aed43edd9c6f4f124541483fc9c3f19f9" title="Render::SpriteGroup::SpriteGroup" alt="" coords="221,59,440,88"/>
 <area shape="rect" id="node9" href="$class_cel_1_1_cel_file.html#ae099624e5a4d904c244dda5e374beecb" title="Cel::CelFile::operator[]" alt="" coords="253,112,408,141"/>
-<area shape="rect" id="node5" href="$class_f_a_render_1_1_sprite_cache.html#aaede499b2c79f9f1cf535f37887d2f99" title="To be called from the render thread." alt="" coords="488,5,675,35"/>
+<area shape="rect" id="node5" href="$class_f_a_render_1_1_sprite_cache.html#ada6cb9dd393a5d7a0a794f7fbf12b5e7" title="To be called from the render thread." alt="" coords="488,5,675,35"/>
 </map>

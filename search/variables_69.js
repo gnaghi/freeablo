@@ -1,7 +1,7 @@
 var searchData=
 [
   ['id',['ID',['../structltc__cipher__descriptor.html#a75a932af8e44b27b5952e512a2fe5678',1,'ltc_cipher_descriptor::ID()'],['../structltc__hash__descriptor.html#a6c8fd35cf5797e4c312eb7825e73c625',1,'ltc_hash_descriptor::ID()']]],
-  ['idleanimindex',['idleAnimIndex',['../struct_f_a_world_1_1_actor_net_data.html#ae76672a74abd8400fe168ea83a70adb5',1,'FAWorld::ActorNetData']]],
+  ['idleanimindex',['idleAnimIndex',['../struct_f_a_world_1_1_actor_net_data.html#a5f7a70b8a1e723341ba0d162d3829cf7',1,'FAWorld::ActorNetData']]],
   ['idleframeset',['idleFrameSet',['../struct_diablo_exe_1_1_monster.html#a3e81053e0fa7f00994f24135ee71508e',1,'DiabloExe::Monster']]],
   ['idleplayback',['idlePlayback',['../struct_diablo_exe_1_1_monster.html#a201fa672fb01295bc7a4203e4c29c367',1,'DiabloExe::Monster']]],
   ['immortal',['immortal',['../struct_f_a_render_1_1_cache_entry.html#a454d9d94d9bdb6ce1b852fe45fbbbb27',1,'FARender::CacheEntry']]],
@@ -10,6 +10,7 @@ var searchData=
   ['in_5fpos',['in_pos',['../struct_t_dcmp_struct.html#acae204a5d4cc4ab8fed3b9df3ee4570c',1,'TDcmpStruct']]],
   ['index',['index',['../struct_render_1_1_rocket_f_a_tex.html#a4948b32d7a0c6a30d92524f7233b6895',1,'Render::RocketFATex']]],
   ['indices',['indices',['../struct_draw_command.html#a2ae61ccfd750a8f761ec6eec89cdb38d',1,'DrawCommand']]],
+  ['indirectionarray',['indirectionArray',['../namespace_f_a_world.html#aa0dd3aae4f236cafea76893cb82aa5c7',1,'FAWorld']]],
   ['inflate_5fcopyright',['inflate_copyright',['../inftrees_8c.html#a01f427c9f5e8158ec52760a1c896e8be',1,'inftrees.c']]],
   ['info_5farch',['info_arch',['../_c_make_c_compiler_id_8c.html#a59647e99d304ed33b15cb284c27ed391',1,'info_arch():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a59647e99d304ed33b15cb284c27ed391',1,'info_arch():&#160;CMakeCXXCompilerId.cpp']]],
   ['info_5fcompiler',['info_compiler',['../_c_make_c_compiler_id_8c.html#a4b0efeb7a5d59313986b3a0390f050f6',1,'info_compiler():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a4b0efeb7a5d59313986b3a0390f050f6',1,'info_compiler():&#160;CMakeCXXCompilerId.cpp']]],
@@ -43,7 +44,7 @@ var searchData=
   ['isrepg0',['isRepG0',['../struct_c_save_state.html#a6f2fdae6a84089f2cafa4e8d33085751',1,'CSaveState::isRepG0()'],['../struct_c_lzma_enc.html#a831e32c1d8d85543ef8733dc8889fcb9',1,'CLzmaEnc::isRepG0()']]],
   ['isrepg1',['isRepG1',['../struct_c_save_state.html#a5e7db0167c452882bb49918fd0a4882a',1,'CSaveState::isRepG1()'],['../struct_c_lzma_enc.html#ac1c4f8fae6ec6aeeabad8de50e76cd05',1,'CLzmaEnc::isRepG1()']]],
   ['isrepg2',['isRepG2',['../struct_c_save_state.html#a14fc44cc38d3506a04eb09f5311f4532',1,'CSaveState::isRepG2()'],['../struct_c_lzma_enc.html#afab03df8c9c3c462e548decf7c0ee3be',1,'CLzmaEnc::isRepG2()']]],
-  ['it',['it',['../struct_f_a_render_1_1_cache_entry.html#ab57cf0c541601ef23406474f3f23f9c4',1,'FARender::CacheEntry']]],
+  ['it',['it',['../struct_f_a_render_1_1_cache_entry.html#a2fd4cb7d58794cd787785bcdf15a396f',1,'FARender::CacheEntry']]],
   ['itembuffer',['ItemBuffer',['../class_t_huffmann_tree.html#ab8fd636b667d0e490aa02355b3d00198',1,'THuffmannTree']]],
   ['itemcode',['itemCode',['../class_diablo_exe_1_1_base_item.html#acd9aa40a4558ef85a11b0390b43261e0',1,'DiabloExe::BaseItem']]],
   ['itemname',['itemName',['../class_diablo_exe_1_1_base_item.html#a80b03c751f6602cdfa36572177883806',1,'DiabloExe::BaseItem']]],

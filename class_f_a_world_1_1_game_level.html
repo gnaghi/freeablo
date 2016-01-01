@@ -135,7 +135,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_game_level.html#a67b324c701fe60ff4f250a1a6dae11b4">removeActor</a> (<a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *actor)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_game_level.html#aa34b6cd6ab73af749fe3a92426b55bb8">getLevelIndex</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_game_level.html#aef29b84a5601eb3593020d266d104b2f">saveToPacket</a> (ENetPacket *packet, size_t &amp;position)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_game_level.html#ace6b00b81148c4b6b9fd202aa909be5d">getActorById</a> (size_t id)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_game_level.html#a230302d641a847194f7dc33dbbc5bbd7">getActorById</a> (int32_t id)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_game_level.html#a5121ec15ff24b9fc48f258c52e7b7f87">getActors</a> (std::vector&lt; <a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> * &gt; &amp;actors)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -181,7 +181,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_f_a_world_1_1_game_level_a0d3123df1b9c3a86263efd9a672c6964_cgraph.png" border="0" usemap="#class_f_a_world_1_1_game_level_a0d3123df1b9c3a86263efd9a672c6964_cgraph" alt=""/></div>
 <map name="class_f_a_world_1_1_game_level_a0d3123df1b9c3a86263efd9a672c6964_cgraph" id="class_f_a_world_1_1_game_level_a0d3123df1b9c3a86263efd9a672c6964_cgraph">
-<area shape="rect" id="node3" href="class_f_a_world_1_1_game_level.html#a2355286e79388bc995971ba963924a8d" title="FAWorld::GameLevel::actorMapRefresh" alt="" coords="276,32,529,61"/><area shape="rect" id="node5" href="class_f_a_world_1_1_game_level.html#a08683ee87bd15235042842ee79e3d179" title="FAWorld::GameLevel::actorMapClear" alt="" coords="580,5,820,35"/><area shape="rect" id="node7" href="class_f_a_world_1_1_game_level.html#ab00e0f84e8728647d39a7a2f39f08499" title="FAWorld::GameLevel::actorMapInsert" alt="" coords="579,59,821,88"/><area shape="rect" id="node9" href="class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090" title="where we are coming from" alt="" coords="869,32,1045,61"/><area shape="rect" id="node11" href="class_f_a_world_1_1_position.html#aaab58152fbd29cfde68a7317dad1f83d" title="where we are going to" alt="" coords="877,85,1037,115"/></map>
+<area shape="rect" id="node3" href="class_f_a_world_1_1_game_level.html#a2355286e79388bc995971ba963924a8d" title="FAWorld::GameLevel::actorMapRefresh" alt="" coords="276,32,529,61"/><area shape="rect" id="node5" href="class_f_a_world_1_1_game_level.html#a08683ee87bd15235042842ee79e3d179" title="FAWorld::GameLevel::actorMapClear" alt="" coords="580,5,820,35"/><area shape="rect" id="node7" href="class_f_a_world_1_1_game_level.html#ab00e0f84e8728647d39a7a2f39f08499" title="FAWorld::GameLevel::actorMapInsert" alt="" coords="579,59,821,88"/><area shape="rect" id="node9" href="class_f_a_world_1_1_position.html#ab94b2a6090773ec284fe7ee2ed37b725" title="where we are coming from" alt="" coords="869,32,1045,61"/><area shape="rect" id="node11" href="class_f_a_world_1_1_position.html#af614f26024526e45894ebde109e84fee" title="where we are going to" alt="" coords="877,85,1037,115"/></map>
 </div>
 </p>
 
@@ -294,7 +294,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_f_a_world_1_1_game_level_ab00e0f84e8728647d39a7a2f39f08499_cgraph.png" border="0" usemap="#class_f_a_world_1_1_game_level_ab00e0f84e8728647d39a7a2f39f08499_cgraph" alt=""/></div>
 <map name="class_f_a_world_1_1_game_level_ab00e0f84e8728647d39a7a2f39f08499_cgraph" id="class_f_a_world_1_1_game_level_ab00e0f84e8728647d39a7a2f39f08499_cgraph">
-<area shape="rect" id="node3" href="class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090" title="where we are coming from" alt="" coords="296,5,472,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_position.html#aaab58152fbd29cfde68a7317dad1f83d" title="where we are going to" alt="" coords="304,59,464,88"/></map>
+<area shape="rect" id="node3" href="class_f_a_world_1_1_position.html#ab94b2a6090773ec284fe7ee2ed37b725" title="where we are coming from" alt="" coords="296,5,472,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_position.html#af614f26024526e45894ebde109e84fee" title="where we are going to" alt="" coords="304,59,464,88"/></map>
 </div>
 </p>
 
@@ -328,7 +328,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_f_a_world_1_1_game_level_a2355286e79388bc995971ba963924a8d_cgraph.png" border="0" usemap="#class_f_a_world_1_1_game_level_a2355286e79388bc995971ba963924a8d_cgraph" alt=""/></div>
 <map name="class_f_a_world_1_1_game_level_a2355286e79388bc995971ba963924a8d_cgraph" id="class_f_a_world_1_1_game_level_a2355286e79388bc995971ba963924a8d_cgraph">
-<area shape="rect" id="node3" href="class_f_a_world_1_1_game_level.html#a08683ee87bd15235042842ee79e3d179" title="FAWorld::GameLevel::actorMapClear" alt="" coords="311,5,551,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_game_level.html#ab00e0f84e8728647d39a7a2f39f08499" title="FAWorld::GameLevel::actorMapInsert" alt="" coords="309,59,552,88"/><area shape="rect" id="node7" href="class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090" title="where we are coming from" alt="" coords="600,32,776,61"/><area shape="rect" id="node9" href="class_f_a_world_1_1_position.html#aaab58152fbd29cfde68a7317dad1f83d" title="where we are going to" alt="" coords="608,85,768,115"/></map>
+<area shape="rect" id="node3" href="class_f_a_world_1_1_game_level.html#a08683ee87bd15235042842ee79e3d179" title="FAWorld::GameLevel::actorMapClear" alt="" coords="311,5,551,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_game_level.html#ab00e0f84e8728647d39a7a2f39f08499" title="FAWorld::GameLevel::actorMapInsert" alt="" coords="309,59,552,88"/><area shape="rect" id="node7" href="class_f_a_world_1_1_position.html#ab94b2a6090773ec284fe7ee2ed37b725" title="where we are coming from" alt="" coords="600,32,776,61"/><area shape="rect" id="node9" href="class_f_a_world_1_1_position.html#af614f26024526e45894ebde109e84fee" title="where we are going to" alt="" coords="608,85,768,115"/></map>
 </div>
 </p>
 
@@ -363,7 +363,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_f_a_world_1_1_game_level_ac468fcf7f924e14fb12f053b013a22ae_cgraph.png" border="0" usemap="#class_f_a_world_1_1_game_level_ac468fcf7f924e14fb12f053b013a22ae_cgraph" alt=""/></div>
 <map name="class_f_a_world_1_1_game_level_ac468fcf7f924e14fb12f053b013a22ae_cgraph" id="class_f_a_world_1_1_game_level_ac468fcf7f924e14fb12f053b013a22ae_cgraph">
-<area shape="rect" id="node3" href="class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090" title="where we are coming from" alt="" coords="312,5,488,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_position.html#aaab58152fbd29cfde68a7317dad1f83d" title="where we are going to" alt="" coords="320,59,480,88"/></map>
+<area shape="rect" id="node3" href="class_f_a_world_1_1_position.html#ab94b2a6090773ec284fe7ee2ed37b725" title="where we are coming from" alt="" coords="312,5,488,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_position.html#af614f26024526e45894ebde109e84fee" title="where we are going to" alt="" coords="320,59,480,88"/></map>
 </div>
 </p>
 
@@ -398,7 +398,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_f_a_world_1_1_game_level_a189434699b06161f5704156e63665991_cgraph.png" border="0" usemap="#class_f_a_world_1_1_game_level_a189434699b06161f5704156e63665991_cgraph" alt=""/></div>
 <map name="class_f_a_world_1_1_game_level_a189434699b06161f5704156e63665991_cgraph" id="class_f_a_world_1_1_game_level_a189434699b06161f5704156e63665991_cgraph">
-<area shape="rect" id="node3" href="class_f_a_world_1_1_game_level.html#ab00e0f84e8728647d39a7a2f39f08499" title="FAWorld::GameLevel::actorMapInsert" alt="" coords="261,32,504,61"/><area shape="rect" id="node5" href="class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090" title="where we are coming from" alt="" coords="552,5,728,35"/><area shape="rect" id="node7" href="class_f_a_world_1_1_position.html#aaab58152fbd29cfde68a7317dad1f83d" title="where we are going to" alt="" coords="560,59,720,88"/></map>
+<area shape="rect" id="node3" href="class_f_a_world_1_1_game_level.html#ab00e0f84e8728647d39a7a2f39f08499" title="FAWorld::GameLevel::actorMapInsert" alt="" coords="261,32,504,61"/><area shape="rect" id="node5" href="class_f_a_world_1_1_position.html#ab94b2a6090773ec284fe7ee2ed37b725" title="where we are coming from" alt="" coords="552,5,728,35"/><area shape="rect" id="node7" href="class_f_a_world_1_1_position.html#af614f26024526e45894ebde109e84fee" title="where we are going to" alt="" coords="560,59,720,88"/></map>
 </div>
 </p>
 
@@ -536,14 +536,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ace6b00b81148c4b6b9fd202aa909be5d"></a><!-- doxytag: member="FAWorld::GameLevel::getActorById" ref="ace6b00b81148c4b6b9fd202aa909be5d" args="(size_t id)" -->
+<a class="anchor" id="a230302d641a847194f7dc33dbbc5bbd7"></a><!-- doxytag: member="FAWorld::GameLevel::getActorById" ref="a230302d641a847194f7dc33dbbc5bbd7" args="(int32_t id)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> * <a class="el" href="class_f_a_world_1_1_game_level.html#ace6b00b81148c4b6b9fd202aa909be5d">FAWorld::GameLevel::getActorById</a> </td>
+          <td class="memname"><a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> * <a class="el" href="class_f_a_world_1_1_game_level.html#a230302d641a847194f7dc33dbbc5bbd7">FAWorld::GameLevel::getActorById</a> </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype">int32_t&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
@@ -726,7 +726,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_f_a_world_1_1_game_level_a67b324c701fe60ff4f250a1a6dae11b4_cgraph.png" border="0" usemap="#class_f_a_world_1_1_game_level_a67b324c701fe60ff4f250a1a6dae11b4_cgraph" alt=""/></div>
 <map name="class_f_a_world_1_1_game_level_a67b324c701fe60ff4f250a1a6dae11b4_cgraph" id="class_f_a_world_1_1_game_level_a67b324c701fe60ff4f250a1a6dae11b4_cgraph">
-<area shape="rect" id="node3" href="class_f_a_world_1_1_game_level.html#ac468fcf7f924e14fb12f053b013a22ae" title="FAWorld::GameLevel::actorMapRemove" alt="" coords="283,32,541,61"/><area shape="rect" id="node5" href="class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090" title="where we are coming from" alt="" coords="589,5,765,35"/><area shape="rect" id="node7" href="class_f_a_world_1_1_position.html#aaab58152fbd29cfde68a7317dad1f83d" title="where we are going to" alt="" coords="597,59,757,88"/></map>
+<area shape="rect" id="node3" href="class_f_a_world_1_1_game_level.html#ac468fcf7f924e14fb12f053b013a22ae" title="FAWorld::GameLevel::actorMapRemove" alt="" coords="283,32,541,61"/><area shape="rect" id="node5" href="class_f_a_world_1_1_position.html#ab94b2a6090773ec284fe7ee2ed37b725" title="where we are coming from" alt="" coords="589,5,765,35"/><area shape="rect" id="node7" href="class_f_a_world_1_1_position.html#af614f26024526e45894ebde109e84fee" title="where we are going to" alt="" coords="597,59,757,88"/></map>
 </div>
 </p>
 
@@ -807,7 +807,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_f_a_world_1_1_game_level_a78e4db23f4a198945e69fced2b8d8e9d_cgraph.png" border="0" usemap="#class_f_a_world_1_1_game_level_a78e4db23f4a198945e69fced2b8d8e9d_cgraph" alt=""/></div>
 <map name="class_f_a_world_1_1_game_level_a78e4db23f4a198945e69fced2b8d8e9d_cgraph" id="class_f_a_world_1_1_game_level_a78e4db23f4a198945e69fced2b8d8e9d_cgraph">
-<area shape="rect" id="node3" href="class_f_a_world_1_1_game_level.html#ac468fcf7f924e14fb12f053b013a22ae" title="FAWorld::GameLevel::actorMapRemove" alt="" coords="552,112,811,141"/><area shape="rect" id="node9" href="class_f_a_world_1_1_actor.html#a210d7366b718ee9366442a98f940d083" title="FAWorld::Actor::update" alt="" coords="297,219,455,248"/><area shape="rect" id="node25" href="class_f_a_world_1_1_game_level.html#ab00e0f84e8728647d39a7a2f39f08499" title="FAWorld::GameLevel::actorMapInsert" alt="" coords="560,5,803,35"/><area shape="rect" id="node29" href="class_f_a_world_1_1_game_level.html#a2355286e79388bc995971ba963924a8d" title="FAWorld::GameLevel::actorMapRefresh" alt="" coords="249,59,503,88"/><area shape="rect" id="node5" href="class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090" title="where we are coming from" alt="" coords="880,19,1056,48"/><area shape="rect" id="node7" href="class_f_a_world_1_1_position.html#aaab58152fbd29cfde68a7317dad1f83d" title="where we are going to" alt="" coords="888,99,1048,128"/><area shape="rect" id="node11" href="namespace_misc.html#a501bcdb31f2fadaf6e4c7ea3db7b5d69" title="Misc::getVec" alt="" coords="632,219,731,248"/><area shape="rect" id="node13" href="class_f_a_world_1_1_world.html#aa72cae8b62329a79324bce7294236787" title="FAWorld::World::get" alt="" coords="611,272,752,301"/><area shape="rect" id="node15" href="class_f_a_world_1_1_world.html#a232923bf93809b892f0e295ea678d395" title="FAWorld::World::getActorAt" alt="" coords="589,325,773,355"/><area shape="rect" id="node23" href="namespace_misc.html#a146231bea9c51a041c24dec11383e81c" title="Misc::getVecDir" alt="" coords="624,165,739,195"/><area shape="rect" id="node17" href="class_f_a_world_1_1_world.html#a0cb638b42a04dba460fcaf3e0a261fd9" title="FAWorld::World::getCurrentLevel" alt="" coords="861,299,1075,328"/><area shape="rect" id="node21" href="class_f_a_world_1_1_game_level.html#aae6a0535a7d91a41d9174c5e483f6736" title="FAWorld::GameLevel::getActorAt" alt="" coords="860,352,1076,381"/><area shape="rect" id="node19" href="class_f_a_world_1_1_actor.html#ac7f3a1a4b5b66da302e257ea3b5c0f58" title="FAWorld::Actor::getLevel" alt="" coords="1127,299,1295,328"/><area shape="rect" id="node31" href="class_f_a_world_1_1_game_level.html#a08683ee87bd15235042842ee79e3d179" title="FAWorld::GameLevel::actorMapClear" alt="" coords="561,59,801,88"/></map>
+<area shape="rect" id="node3" href="class_f_a_world_1_1_game_level.html#ac468fcf7f924e14fb12f053b013a22ae" title="FAWorld::GameLevel::actorMapRemove" alt="" coords="552,112,811,141"/><area shape="rect" id="node9" href="class_f_a_world_1_1_actor.html#a210d7366b718ee9366442a98f940d083" title="FAWorld::Actor::update" alt="" coords="297,219,455,248"/><area shape="rect" id="node25" href="class_f_a_world_1_1_game_level.html#ab00e0f84e8728647d39a7a2f39f08499" title="FAWorld::GameLevel::actorMapInsert" alt="" coords="560,5,803,35"/><area shape="rect" id="node29" href="class_f_a_world_1_1_game_level.html#a2355286e79388bc995971ba963924a8d" title="FAWorld::GameLevel::actorMapRefresh" alt="" coords="249,59,503,88"/><area shape="rect" id="node5" href="class_f_a_world_1_1_position.html#ab94b2a6090773ec284fe7ee2ed37b725" title="where we are coming from" alt="" coords="880,19,1056,48"/><area shape="rect" id="node7" href="class_f_a_world_1_1_position.html#af614f26024526e45894ebde109e84fee" title="where we are going to" alt="" coords="888,99,1048,128"/><area shape="rect" id="node11" href="namespace_misc.html#a501bcdb31f2fadaf6e4c7ea3db7b5d69" title="Misc::getVec" alt="" coords="632,219,731,248"/><area shape="rect" id="node13" href="class_f_a_world_1_1_world.html#aa72cae8b62329a79324bce7294236787" title="FAWorld::World::get" alt="" coords="611,272,752,301"/><area shape="rect" id="node15" href="class_f_a_world_1_1_world.html#a232923bf93809b892f0e295ea678d395" title="FAWorld::World::getActorAt" alt="" coords="589,325,773,355"/><area shape="rect" id="node23" href="namespace_misc.html#a146231bea9c51a041c24dec11383e81c" title="Misc::getVecDir" alt="" coords="624,165,739,195"/><area shape="rect" id="node17" href="class_f_a_world_1_1_world.html#a0cb638b42a04dba460fcaf3e0a261fd9" title="FAWorld::World::getCurrentLevel" alt="" coords="861,299,1075,328"/><area shape="rect" id="node21" href="class_f_a_world_1_1_game_level.html#aae6a0535a7d91a41d9174c5e483f6736" title="FAWorld::GameLevel::getActorAt" alt="" coords="860,352,1076,381"/><area shape="rect" id="node19" href="class_f_a_world_1_1_actor.html#ac7f3a1a4b5b66da302e257ea3b5c0f58" title="FAWorld::Actor::getLevel" alt="" coords="1127,299,1295,328"/><area shape="rect" id="node31" href="class_f_a_world_1_1_game_level.html#a08683ee87bd15235042842ee79e3d179" title="FAWorld::GameLevel::actorMapClear" alt="" coords="561,59,801,88"/></map>
 </div>
 </p>
 

@@ -25,7 +25,7 @@ var searchData=
   ['playpage',['PlayPage',['../class_launcher_1_1_play_page.html#a5174a87f7581c7501a465115f797b091',1,'Launcher::PlayPage']]],
   ['playsound',['playSound',['../class_engine_1_1_thread_manager.html#a9742aabffe9cf6ce0538b8c35f8aabe0',1,'Engine::ThreadManager::playSound()'],['../class_f_a_gui_1_1_f_a_python_funcs.html#a87545334fff51721b7d9d8dc16721b68',1,'FAGui::FAPythonFuncs::playSound()'],['../namespace_audio.html#a35fd2f02e417b4b357899722a1a7b693',1,'Audio::playSound()']]],
   ['poll',['poll',['../class_input_1_1_input_manager.html#a8c487668bd5ec294cfcccb94337f43d7',1,'Input::InputManager']]],
-  ['position',['Position',['../class_f_a_world_1_1_position.html#ad8fc3f2947f0017754c7d708aa640870',1,'FAWorld::Position::Position()'],['../class_f_a_world_1_1_position.html#a02ed9f8b63d3729aeb324f46169cf28e',1,'FAWorld::Position::Position(size_t x, size_t y)'],['../class_f_a_world_1_1_position.html#a1c79082f990f356930cfabb8b49eb133',1,'FAWorld::Position::Position(size_t x, size_t y, size_t direction)']]],
+  ['position',['Position',['../class_f_a_world_1_1_position.html#ad8fc3f2947f0017754c7d708aa640870',1,'FAWorld::Position::Position()'],['../class_f_a_world_1_1_position.html#a64fa8bfd0acd7e757e54352ab066265d',1,'FAWorld::Position::Position(int32_t x, int32_t y)'],['../class_f_a_world_1_1_position.html#a9f738351abca12740b41a568a24ae07b',1,'FAWorld::Position::Position(int32_t x, int32_t y, int32_t direction)']]],
   ['pqdownheap',['pqdownheap',['../trees_8c.html#a44f0c568451fbfd68a418eaddea09982',1,'trees.c']]],
   ['printerror',['PrintError',['../class_t_log_helper.html#a9b89cc796cb7820b101f064f445b6a15',1,'TLogHelper']]],
   ['printerrorva',['PrintErrorVa',['../class_t_log_helper.html#aa68e74f8f2410eda0543dac5187b5467',1,'TLogHelper']]],

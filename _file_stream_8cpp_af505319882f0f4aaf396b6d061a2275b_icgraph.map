@@ -21,7 +21,7 @@
 <area shape="rect" id="node76" href="$class_level_1_1_sol.html#ab1b97555d237cb1c671bfdbb3de5d129" title="Level::Sol::Sol" alt="" coords="784,403,891,432"/>
 <area shape="rect" id="node32" href="$class_f_a_audio_1_1_audio_manager.html#a9eaf93569374ad7fed5b0229d4e36e8b" title="FAAudio::AudioManager::playMusic" alt="" coords="976,243,1205,272"/>
 <area shape="rect" id="node36" href="$class_f_a_audio_1_1_audio_manager.html#a1c562d006a318f6c682dd80e6a278996" title="FAAudio::AudioManager::play" alt="" coords="993,296,1188,325"/>
-<area shape="rect" id="node40" href="$namespace_render.html#a04af26977f421431f3a4569af1b877f4" title="Render::getImageInfo" alt="" coords="1017,349,1164,379"/>
+<area shape="rect" id="node40" href="$namespace_render.html#a5f9e2be0c2c45a803579d9860af440e3" title="Render::getImageInfo" alt="" coords="1017,349,1164,379"/>
 <area shape="rect" id="node60" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="987,416,1195,445"/>
 <area shape="rect" id="node42" href="$class_f_a_render_1_1_sprite_cache.html#a5936030780a9a97d4c27bca0bb846dd6" title="To be called from the game thread." alt="" coords="1256,336,1443,365"/>
 <area shape="rect" id="node44" href="$class_f_a_render_1_1_sprite_manager.html#a3406a2bb2d8eac40abbc7e68fd3bbd6f" title="To be called from the game thread." alt="" coords="1492,336,1689,365"/>
@@ -35,8 +35,8 @@
 <area shape="rect" id="node62" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="1284,496,1415,525"/>
 <area shape="rect" id="node68" href="$namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="1267,389,1432,419"/>
 <area shape="rect" id="node71" href="$namespace_render.html#a05c97dfcb545abc37e57ca717e15f6cc" title="Render::loadResizedSprite" alt="" coords="1260,443,1439,472"/>
-<area shape="rect" id="node64" href="$class_f_a_render_1_1_sprite_cache.html#aaede499b2c79f9f1cf535f37887d2f99" title="To be called from the render thread." alt="" coords="1497,443,1684,472"/>
-<area shape="rect" id="node66" href="$class_f_a_render_1_1_sprite_manager.html#a4897198f560005dd7067150c3ed3ed2d" title="To be called from the render thread." alt="" coords="1492,496,1689,525"/>
+<area shape="rect" id="node64" href="$class_f_a_render_1_1_sprite_cache.html#ada6cb9dd393a5d7a0a794f7fbf12b5e7" title="To be called from the render thread." alt="" coords="1497,443,1684,472"/>
+<area shape="rect" id="node66" href="$class_f_a_render_1_1_sprite_manager.html#aba6477a1788e19b1e953fe354785807f" title="To be called from the render thread." alt="" coords="1492,496,1689,525"/>
 <area shape="rect" id="node83" href="$namespace_f_a_i_o.html#a05f68571b79c469db77a26cc74fdc8a3" title="FAIO::FAfseek" alt="" coords="583,536,692,565"/>
 <area shape="rect" id="node95" href="$namespace_f_a_i_o.html#ac08b4b781701ddb250389584e532cfee" title="FAIO::FAftell" alt="" coords="588,669,687,699"/>
 <area shape="rect" id="node86" href="$class_cel_1_1_cel_file.html#a7aa56b24ad6db831061b2b1f4faed266" title="Cel::CelFile::CelFile" alt="" coords="768,563,907,592"/>

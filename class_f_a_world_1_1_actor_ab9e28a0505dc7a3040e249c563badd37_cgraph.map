@@ -2,14 +2,14 @@
 <area shape="rect" id="node3" href="$namespace_cel.html#a4e01b99470fde6ba49817d25dc1e2bc6" title="Cel::get" alt="" coords="277,585,344,615"/>
 <area shape="rect" id="node5" href="$class_f_a_render_1_1_renderer.html#a4e68b29718f806cb93cc71656c5a4c28" title="FARender::Renderer::get" alt="" coords="227,639,395,668"/>
 <area shape="rect" id="node7" href="$class_f_a_render_1_1_renderer.html#a622fe982bc63abe4cd5a17612764af3c" title="FARender::Renderer::loadImage" alt="" coords="205,692,416,721"/>
-<area shape="rect" id="node121" href="$class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090" title="where we are coming from" alt="" coords="223,745,399,775"/>
+<area shape="rect" id="node121" href="$class_f_a_world_1_1_position.html#ab94b2a6090773ec284fe7ee2ed37b725" title="where we are coming from" alt="" coords="223,745,399,775"/>
 <area shape="rect" id="node123" href="$namespace_f_a_world.html#ae7b48dd95f63cd242f1b994c9da33bc8" title="FAWorld::getNewId" alt="" coords="243,799,379,828"/>
 <area shape="rect" id="node9" href="$class_f_a_render_1_1_sprite_manager.html#a3406a2bb2d8eac40abbc7e68fd3bbd6f" title="To be called from the game thread." alt="" coords="465,692,663,721"/>
 <area shape="rect" id="node11" href="$class_f_a_render_1_1_sprite_cache.html#a5936030780a9a97d4c27bca0bb846dd6" title="To be called from the game thread." alt="" coords="712,692,899,721"/>
 <area shape="rect" id="node13" href="$class_f_a_render_1_1_sprite_cache.html#ac89d731619ab8f11003e563b3885dfed" title="To be called from the game thread." alt="" coords="948,612,1239,641"/>
-<area shape="rect" id="node15" href="$class_f_a_render_1_1_sprite_cache.html#aa29b27a49149aac3fb83560d8d05867f" title="Can be called from any thread." alt="" coords="960,665,1227,695"/>
+<area shape="rect" id="node15" href="$class_f_a_render_1_1_sprite_cache.html#a2b08caf45b2056810d72c42572947f8f" title="Can be called from any thread." alt="" coords="960,665,1227,695"/>
 <area shape="rect" id="node17" href="$class_misc_1_1_string_utils.html#ad4f3a03d1fd36d62265a3272da3e2a58" title="Misc::StringUtils::split" alt="" coords="1019,719,1168,748"/>
-<area shape="rect" id="node19" href="$namespace_render.html#a04af26977f421431f3a4569af1b877f4" title="Render::getImageInfo" alt="" coords="1020,772,1167,801"/>
+<area shape="rect" id="node19" href="$namespace_render.html#a5f9e2be0c2c45a803579d9860af440e3" title="Render::getImageInfo" alt="" coords="1020,772,1167,801"/>
 <area shape="rect" id="node21" href="$namespace_render.html#a8b66dddb0313a61f2211531c6bfd433e" title="Render::getImageExtension" alt="" coords="1288,692,1472,721"/>
 <area shape="rect" id="node23" href="$class_misc_1_1_string_utils.html#a0f8cb0ac134191ba8417f74ab7dc4de6" title="Misc::StringUtils::ciEqual" alt="" coords="1295,745,1465,775"/>
 <area shape="rect" id="node25" href="$class_cel_1_1_cel_file.html#a3250aab7b67716ab35d84c4d4f1e76d8" title="if normal cel file, returns same as numFrames(), for an archive, the number of frames in each subcel..." alt="" coords="1297,799,1463,828"/>

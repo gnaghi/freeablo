@@ -1,6 +1,6 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$class_f_a_world_1_1_position.html#a1380f47771f9f1027a83ffd513570f83" title="Write object to packet." alt="" coords="263,5,441,35"/>
 <area shape="rect" id="node5" href="$namespace_engine.html#a2f758185eb1908305028faed44ae8ee2" title="Engine::writeToPacket" alt="" coords="536,32,691,61"/>
-<area shape="rect" id="node7" href="$class_f_a_render_1_1_f_a_sprite_group.html#a045b9733513c5af7424efe1746b3dff1" title="FARender::FASpriteGroup::getCacheIndex" alt="" coords="217,109,487,139"/>
+<area shape="rect" id="node7" href="$class_f_a_render_1_1_f_a_sprite_group.html#a6a3acc826355578573d25afe1e614a53" title="FARender::FASpriteGroup::getCacheIndex" alt="" coords="217,109,487,139"/>
 <area shape="rect" id="node9" href="$class_f_a_world_1_1_game_level.html#aa34b6cd6ab73af749fe3a92426b55bb8" title="FAWorld::GameLevel::getLevelIndex" alt="" coords="235,163,469,192"/>
 </map>

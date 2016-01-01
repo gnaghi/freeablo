@@ -2,6 +2,6 @@
 <area shape="rect" id="node3" href="$class_f_a_world_1_1_game_level.html#a2355286e79388bc995971ba963924a8d" title="FAWorld::GameLevel::actorMapRefresh" alt="" coords="276,32,529,61"/>
 <area shape="rect" id="node5" href="$class_f_a_world_1_1_game_level.html#a08683ee87bd15235042842ee79e3d179" title="FAWorld::GameLevel::actorMapClear" alt="" coords="580,5,820,35"/>
 <area shape="rect" id="node7" href="$class_f_a_world_1_1_game_level.html#ab00e0f84e8728647d39a7a2f39f08499" title="FAWorld::GameLevel::actorMapInsert" alt="" coords="579,59,821,88"/>
-<area shape="rect" id="node9" href="$class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090" title="where we are coming from" alt="" coords="869,32,1045,61"/>
-<area shape="rect" id="node11" href="$class_f_a_world_1_1_position.html#aaab58152fbd29cfde68a7317dad1f83d" title="where we are going to" alt="" coords="877,85,1037,115"/>
+<area shape="rect" id="node9" href="$class_f_a_world_1_1_position.html#ab94b2a6090773ec284fe7ee2ed37b725" title="where we are coming from" alt="" coords="869,32,1045,61"/>
+<area shape="rect" id="node11" href="$class_f_a_world_1_1_position.html#af614f26024526e45894ebde109e84fee" title="where we are going to" alt="" coords="877,85,1037,115"/>
 </map>

@@ -1,10 +1,10 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$class_f_a_world_1_1_game_level.html#af36b2f0b685b079cba343778904c5930" title="FAWorld::GameLevel::width" alt="" coords="288,16,475,46"/>
 <area shape="rect" id="node9" href="$class_f_a_world_1_1_game_level.html#ad576185f819af1be6b83418031d0cc58" title="FAWorld::GameLevel::height" alt="" coords="287,108,476,138"/>
-<area shape="rect" id="node15" href="$class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090" title="where we are coming from" alt="" coords="293,503,469,532"/>
-<area shape="rect" id="node17" href="$class_f_a_world_1_1_position.html#aaab58152fbd29cfde68a7317dad1f83d" title="where we are going to" alt="" coords="301,556,461,586"/>
+<area shape="rect" id="node15" href="$class_f_a_world_1_1_position.html#ab94b2a6090773ec284fe7ee2ed37b725" title="where we are coming from" alt="" coords="293,503,469,532"/>
+<area shape="rect" id="node17" href="$class_f_a_world_1_1_position.html#af614f26024526e45894ebde109e84fee" title="where we are going to" alt="" coords="301,556,461,586"/>
 <area shape="rect" id="node19" href="$namespace_render.html#aa2625d5d45177718b16be35d3de01643" title="Render::drawLevel" alt="" coords="316,239,447,268"/>
-<area shape="rect" id="node40" href="$class_f_a_render_1_1_f_a_sprite_group.html#a045b9733513c5af7424efe1746b3dff1" title="FARender::FASpriteGroup::getCacheIndex" alt="" coords="535,396,804,426"/>
+<area shape="rect" id="node40" href="$class_f_a_render_1_1_f_a_sprite_group.html#a6a3acc826355578573d25afe1e614a53" title="FARender::FASpriteGroup::getCacheIndex" alt="" coords="535,396,804,426"/>
 <area shape="rect" id="node42" href="$namespace_render.html#ab202bc8717cdb0033125cb9446fd2db2" title="Render::drawGui" alt="" coords="321,636,441,666"/>
 <area shape="rect" id="node46" href="$namespace_render.html#a7087bcd1e1950ec6ef28ff4897018fd9" title="Render::draw" alt="" coords="897,688,996,718"/>
 <area shape="rect" id="node48" href="$class_f_a_render_1_1_renderer.html#aa73fae0f49236c7a83fa6b01a9e5e8d4" title="FARender::Renderer::setCursor" alt="" coords="279,450,484,479"/>
@@ -13,22 +13,22 @@
 <area shape="rect" id="node11" href="$class_level_1_1_level.html#a2192aa396aedd8d135e8e027ed8a826e" title="Level::Level::height" alt="" coords="880,186,1013,215"/>
 <area shape="rect" id="node13" href="$class_level_1_1_dun.html#a741579a7d91d77fa99026cc35c77ac59" title="Level::Dun::height" alt="" coords="1171,186,1299,215"/>
 <area shape="rect" id="node21" href="$namespace_render.html#aa1e46d36c78f3a7f7f2715ebaa057bc9" title="Render::getMapScreenCoords" alt="" coords="571,79,768,108"/>
-<area shape="rect" id="node24" href="$class_render_1_1_sprite_cache_base.html#ac4423720734020abfa127474bec66924" title="Render::SpriteCacheBase::get" alt="" coords="569,292,769,322"/>
+<area shape="rect" id="node24" href="$class_render_1_1_sprite_cache_base.html#af3ac5342c01c2e5372f028e6343b0c76" title="Render::SpriteCacheBase::get" alt="" coords="569,292,769,322"/>
 <area shape="rect" id="node26" href="$namespace_render.html#ad87d4d24823c4be8c9e90a79cef0cc48" title="Render::getTileFromScreenCoords" alt="" coords="557,186,781,215"/>
 <area shape="rect" id="node29" href="$namespace_render.html#a4d30f80e7e20bffea849c6efdf7076b1" title="Render::drawLevelHelper" alt="" coords="585,239,753,268"/>
 <area shape="rect" id="node35" href="$namespace_render.html#a725f4e1357ec4979c7ed97f447c7d5a6" title="Render::drawAt" alt="" coords="891,344,1003,374"/>
-<area shape="rect" id="node37" href="$class_render_1_1_sprite_cache_base.html#af0a06d2069abeca46b501c6414319e68" title="Render::SpriteCacheBase::setImmortal" alt="" coords="544,132,795,162"/>
+<area shape="rect" id="node37" href="$class_render_1_1_sprite_cache_base.html#a1deef00e690fc84727cde14ccd22018c" title="Render::SpriteCacheBase::setImmortal" alt="" coords="544,132,795,162"/>
 <area shape="rect" id="node33" href="$class_render_1_1_sprite_group.html#a6509b30910ff7482b45d96f459938aa2" title="Render::SpriteGroup::size" alt="" coords="860,239,1033,268"/>
 <area shape="rect" id="node44" href="$class_rocket_s_d_l2_renderer.html#a4d590e7958e63257934ec4a23c33750f" title="RocketSDL2Renderer::drawBuffer" alt="" coords="559,663,780,692"/>
 <area shape="rect" id="node50" href="$class_f_a_render_1_1_sprite_manager.html#a3406a2bb2d8eac40abbc7e68fd3bbd6f" title="To be called from the game thread." alt="" coords="571,610,768,639"/>
 <area shape="rect" id="node106" href="$namespace_render.html#ae8490bd4dd892c99b383fe597d8c51e6" title="Render::drawCursor" alt="" coords="600,556,739,586"/>
-<area shape="rect" id="node109" href="$class_f_a_render_1_1_f_a_sprite_group.html#aeedd6e391e00a33b45cea163f81bb937" title="FARender::FASpriteGroup::getWidth" alt="" coords="552,450,787,479"/>
-<area shape="rect" id="node111" href="$class_f_a_render_1_1_f_a_sprite_group.html#a0e914844f0f36071051a90dc5851ec4f" title="FARender::FASpriteGroup::getHeight" alt="" coords="551,503,788,532"/>
+<area shape="rect" id="node109" href="$class_f_a_render_1_1_f_a_sprite_group.html#a9589a5e95775b4a2eb6add446df7c4b8" title="FARender::FASpriteGroup::getWidth" alt="" coords="552,450,787,479"/>
+<area shape="rect" id="node111" href="$class_f_a_render_1_1_f_a_sprite_group.html#aa295382f7e191a3e57b0cb1b84fbbc6d" title="FARender::FASpriteGroup::getHeight" alt="" coords="551,503,788,532"/>
 <area shape="rect" id="node52" href="$class_f_a_render_1_1_sprite_cache.html#a5936030780a9a97d4c27bca0bb846dd6" title="To be called from the game thread." alt="" coords="853,610,1040,639"/>
 <area shape="rect" id="node54" href="$class_f_a_render_1_1_sprite_cache.html#ac89d731619ab8f11003e563b3885dfed" title="To be called from the game thread." alt="" coords="1089,636,1380,666"/>
-<area shape="rect" id="node56" href="$class_f_a_render_1_1_sprite_cache.html#aa29b27a49149aac3fb83560d8d05867f" title="Can be called from any thread." alt="" coords="1101,690,1368,719"/>
+<area shape="rect" id="node56" href="$class_f_a_render_1_1_sprite_cache.html#a2b08caf45b2056810d72c42572947f8f" title="Can be called from any thread." alt="" coords="1101,690,1368,719"/>
 <area shape="rect" id="node58" href="$class_misc_1_1_string_utils.html#ad4f3a03d1fd36d62265a3272da3e2a58" title="Misc::StringUtils::split" alt="" coords="1160,530,1309,559"/>
-<area shape="rect" id="node60" href="$namespace_render.html#a04af26977f421431f3a4569af1b877f4" title="Render::getImageInfo" alt="" coords="1161,583,1308,612"/>
+<area shape="rect" id="node60" href="$namespace_render.html#a5f9e2be0c2c45a803579d9860af440e3" title="Render::getImageInfo" alt="" coords="1161,583,1308,612"/>
 <area shape="rect" id="node62" href="$namespace_render.html#a8b66dddb0313a61f2211531c6bfd433e" title="Render::getImageExtension" alt="" coords="1429,503,1613,532"/>
 <area shape="rect" id="node64" href="$class_misc_1_1_string_utils.html#a0f8cb0ac134191ba8417f74ab7dc4de6" title="Misc::StringUtils::ciEqual" alt="" coords="1436,556,1607,586"/>
 <area shape="rect" id="node66" href="$class_cel_1_1_cel_file.html#a3250aab7b67716ab35d84c4d4f1e76d8" title="if normal cel file, returns same as numFrames(), for an archive, the number of frames in each subcel..." alt="" coords="1439,610,1604,639"/>

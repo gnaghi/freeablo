@@ -2,6 +2,6 @@
 <area shape="rect" id="node3" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="288,112,419,141"/>
 <area shape="rect" id="node9" href="$namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="271,5,436,35"/>
 <area shape="rect" id="node12" href="$namespace_render.html#a05c97dfcb545abc37e57ca717e15f6cc" title="Render::loadResizedSprite" alt="" coords="264,59,443,88"/>
-<area shape="rect" id="node5" href="$class_f_a_render_1_1_sprite_cache.html#aaede499b2c79f9f1cf535f37887d2f99" title="To be called from the render thread." alt="" coords="497,59,684,88"/>
-<area shape="rect" id="node7" href="$class_f_a_render_1_1_sprite_manager.html#a4897198f560005dd7067150c3ed3ed2d" title="To be called from the render thread." alt="" coords="492,112,689,141"/>
+<area shape="rect" id="node5" href="$class_f_a_render_1_1_sprite_cache.html#ada6cb9dd393a5d7a0a794f7fbf12b5e7" title="To be called from the render thread." alt="" coords="497,59,684,88"/>
+<area shape="rect" id="node7" href="$class_f_a_render_1_1_sprite_manager.html#aba6477a1788e19b1e953fe354785807f" title="To be called from the render thread." alt="" coords="492,112,689,141"/>
 </map>

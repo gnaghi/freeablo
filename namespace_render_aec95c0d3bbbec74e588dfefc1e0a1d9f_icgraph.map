@@ -1,5 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$class_f_a_render_1_1_sprite_cache.html#aaede499b2c79f9f1cf535f37887d2f99" title="To be called from the render thread." alt="" coords="160,5,347,35"/>
+<area shape="rect" id="node3" href="$class_f_a_render_1_1_sprite_cache.html#ada6cb9dd393a5d7a0a794f7fbf12b5e7" title="To be called from the render thread." alt="" coords="160,5,347,35"/>
 <area shape="rect" id="node5" href="$class_input_1_1_input_manager.html#a8c487668bd5ec294cfcccb94337f43d7" title="Input::InputManager::poll" alt="" coords="171,59,336,88"/>
 <area shape="rect" id="node7" href="$class_engine_1_1_thread_manager.html#ab99a6ee7b73f2e9b24a824e811df5d88" title="Engine::ThreadManager::run" alt="" coords="395,59,581,88"/>
 <area shape="rect" id="node9" href="$class_engine_1_1_engine_main.html#a5a16165ab6d6e9f2bb2f2739bd1b11bf" title="Engine::EngineMain::run" alt="" coords="631,59,793,88"/>

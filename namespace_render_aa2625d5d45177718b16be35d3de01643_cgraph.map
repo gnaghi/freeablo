@@ -1,10 +1,10 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$namespace_render.html#aa1e46d36c78f3a7f7f2715ebaa057bc9" title="Render::getMapScreenCoords" alt="" coords="211,5,408,35"/>
-<area shape="rect" id="node9" href="$class_render_1_1_sprite_cache_base.html#ac4423720734020abfa127474bec66924" title="Render::SpriteCacheBase::get" alt="" coords="209,216,409,245"/>
+<area shape="rect" id="node9" href="$class_render_1_1_sprite_cache_base.html#af3ac5342c01c2e5372f028e6343b0c76" title="Render::SpriteCacheBase::get" alt="" coords="209,216,409,245"/>
 <area shape="rect" id="node11" href="$namespace_render.html#ad87d4d24823c4be8c9e90a79cef0cc48" title="Render::getTileFromScreenCoords" alt="" coords="197,59,421,88"/>
 <area shape="rect" id="node17" href="$namespace_render.html#a4d30f80e7e20bffea849c6efdf7076b1" title="Render::drawLevelHelper" alt="" coords="225,112,393,141"/>
 <area shape="rect" id="node23" href="$namespace_render.html#a725f4e1357ec4979c7ed97f447c7d5a6" title="Render::drawAt" alt="" coords="513,165,625,195"/>
-<area shape="rect" id="node25" href="$class_render_1_1_sprite_cache_base.html#af0a06d2069abeca46b501c6414319e68" title="Render::SpriteCacheBase::setImmortal" alt="" coords="184,269,435,299"/>
+<area shape="rect" id="node25" href="$class_render_1_1_sprite_cache_base.html#a1deef00e690fc84727cde14ccd22018c" title="Render::SpriteCacheBase::setImmortal" alt="" coords="184,269,435,299"/>
 <area shape="rect" id="node5" href="$class_level_1_1_level.html#a8a9ab47247600f305776f3d62b73a46a" title="Level::Level::width" alt="" coords="504,5,635,35"/>
 <area shape="rect" id="node7" href="$class_level_1_1_dun.html#a484e94f5c0d423b9277ee500583c510d" title="Level::Dun::width" alt="" coords="707,5,829,35"/>
 <area shape="rect" id="node13" href="$class_level_1_1_level.html#a2192aa396aedd8d135e8e027ed8a826e" title="Level::Level::height" alt="" coords="503,59,636,88"/>

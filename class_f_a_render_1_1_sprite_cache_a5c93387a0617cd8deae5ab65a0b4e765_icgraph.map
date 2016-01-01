@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_a_render_1_1_sprite_manager.html#ae8e2c286e896ca1f2099318308abcde3" title="To be called from the game thread." alt="" coords="320,5,597,35"/>
+<area shape="rect" id="node5" href="$class_f_a_render_1_1_renderer.html#a2986d4eb0568b1ac3e90b03cd3856424" title="FARender::Renderer::getPathForIndex" alt="" coords="647,5,892,35"/>
+</map>

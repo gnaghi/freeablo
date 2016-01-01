@@ -33,7 +33,7 @@ var searchData=
   ['fillisometric',['fillIsometric',['../namespace_f_a_level_gen.html#af82a580c6c944b63032043ff18d09999',1,'FALevelGen']]],
   ['fillrenderstate',['fillRenderState',['../class_f_a_world_1_1_game_level.html#a20ff87442017fdfbe0c6295673fbde4e',1,'FAWorld::GameLevel::fillRenderState()'],['../class_f_a_world_1_1_world.html#a5afbd524390014b824643a3430395196',1,'FAWorld::World::fillRenderState()']]],
   ['fillroom',['fillRoom',['../namespace_f_a_level_gen.html#af99aba47cf4eef3fa03a5ba2886d33fa',1,'FALevelGen']]],
-  ['fillserversprite',['fillServerSprite',['../class_f_a_render_1_1_renderer.html#a1064847ac7a7bab03072c46f08d4a112',1,'FARender::Renderer::fillServerSprite()'],['../class_f_a_render_1_1_sprite_manager.html#adc0f00fb8bd41b42fdc480a06bfe1651',1,'FARender::SpriteManager::fillServerSprite()']]],
+  ['fillserversprite',['fillServerSprite',['../class_f_a_render_1_1_renderer.html#a50c9a61c31dbaec1a33fdb51e3d6c4f3',1,'FARender::Renderer::fillServerSprite()'],['../class_f_a_render_1_1_sprite_manager.html#aa9c4cf0f79d87b274b3bdb8cddd69d85',1,'FARender::SpriteManager::fillServerSprite()']]],
   ['filltransparent',['fillTransparent',['../namespace_cel.html#ae30f06d0e7a345473f58e2de84f9332c',1,'Cel']]],
   ['find_5fcipher',['find_cipher',['../tomcrypt__cipher_8h.html#af5c3882342fd65a17239cd04bfdf44e2',1,'tomcrypt_cipher.h']]],
   ['find_5fcipher_5fany',['find_cipher_any',['../tomcrypt__cipher_8h.html#a292925e244bbb7c919aa60eedcba5bf6',1,'tomcrypt_cipher.h']]],
