@@ -100,25 +100,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00022"></a>00022         <span class="keyword">public</span>:
 <a name="l00023"></a>00023             <a class="code" href="class_f_a_render_1_1_sprite_manager.html#a40d78c73f114d43ebd4997e9c4379b7d">SpriteManager</a>(<span class="keywordtype">size_t</span> cacheSize);
 <a name="l00024"></a>00024 
-<a name="l00025"></a>00025             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a> <span class="keyword">get</span>(<span class="keyword">const</span> std::string&amp; path); 
-<a name="l00026"></a>00026             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a> <a class="code" href="class_f_a_render_1_1_sprite_manager.html#a7450a462f8996ce0c8658b7173edaeb0" title="To be called from the game thread.">getTileset</a>(<span class="keyword">const</span> std::string&amp; celPath, <span class="keyword">const</span> std::string&amp; minPath, <span class="keywordtype">bool</span> top); 
+<a name="l00025"></a>00025             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a>* <span class="keyword">get</span>(<span class="keyword">const</span> std::string&amp; path); 
+<a name="l00026"></a>00026             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a>* <a class="code" href="class_f_a_render_1_1_sprite_manager.html#a5048bae4eaf4ada59b4c6a9b0469c1e1" title="To be called from the game thread.">getTileset</a>(<span class="keyword">const</span> std::string&amp; celPath, <span class="keyword">const</span> std::string&amp; minPath, <span class="keywordtype">bool</span> top); 
 <a name="l00027"></a>00027 
-<a name="l00030"></a>00030             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a> <a class="code" href="class_f_a_render_1_1_sprite_manager.html#a0b1d3943c4cdefb3fa5fb38eb36bc966" title="To be called from the game thread.">getFromRaw</a>(<span class="keyword">const</span> uint8_t* source, <span class="keywordtype">size_t</span> width, <span class="keywordtype">size_t</span> height);
-<a name="l00031"></a>00031 
-<a name="l00036"></a>00036             <a class="code" href="class_render_1_1_sprite_group.html">Render::SpriteGroup</a>* <span class="keyword">get</span>(<span class="keywordtype">size_t</span> index);
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038             <span class="keywordtype">void</span> <a class="code" href="class_f_a_render_1_1_sprite_manager.html#a0f6f37bd76792c1c03b1ef46a7a1bcd0" title="To be called from the render thread.">setImmortal</a>(<span class="keywordtype">size_t</span> index, <span class="keywordtype">bool</span> immortal); 
-<a name="l00039"></a>00039 
-<a name="l00040"></a>00040             <span class="keywordtype">void</span> <a class="code" href="class_f_a_render_1_1_sprite_manager.html#a3654837a02b4e588ea5a5f486dac3203" title="To be called from the render thread.">clear</a>(); 
-<a name="l00041"></a>00041 
-<a name="l00042"></a>00042        <span class="keyword">private</span>:
-<a name="l00043"></a>00043             <a class="code" href="class_f_a_render_1_1_sprite_cache.html" title="Multithread sprite cache.">SpriteCache</a> mCache;
-<a name="l00044"></a>00044 
-<a name="l00045"></a>00045             std::map&lt;size_t, RawCacheTmp&gt; mRawCache;
-<a name="l00046"></a>00046     };
-<a name="l00047"></a>00047 }
-<a name="l00048"></a>00048 
-<a name="l00049"></a>00049 <span class="preprocessor">#endif</span>
+<a name="l00032"></a>00032             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a>* <a class="code" href="class_f_a_render_1_1_sprite_manager.html#aa71d04ba4a69860d849ef2bee384f7f5" title="To be called from the game thread.">getByServerSpriteIndex</a>(<span class="keywordtype">size_t</span> index);
+<a name="l00033"></a>00033 
+<a name="l00037"></a>00037             std::string <a class="code" href="class_f_a_render_1_1_sprite_manager.html#abd2cbd2037cd2700e545f391a23ab655" title="To be called from the game thread.">getPathForIndex</a>(<span class="keywordtype">size_t</span> index);
+<a name="l00038"></a>00038 
+<a name="l00041"></a>00041             <span class="keywordtype">void</span> <a class="code" href="class_f_a_render_1_1_sprite_manager.html#adc0f00fb8bd41b42fdc480a06bfe1651" title="To be called from the game thread.">fillServerSprite</a>(<span class="keywordtype">size_t</span> serverIndex, <span class="keyword">const</span> std::string&amp; path);
+<a name="l00042"></a>00042 
+<a name="l00045"></a>00045             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a>* <a class="code" href="class_f_a_render_1_1_sprite_manager.html#afdcbe2a2cca884b62745c97c931ac064" title="To be called from the game thread.">getFromRaw</a>(<span class="keyword">const</span> uint8_t* source, <span class="keywordtype">size_t</span> width, <span class="keywordtype">size_t</span> height);
+<a name="l00046"></a>00046 
+<a name="l00051"></a>00051             <a class="code" href="class_render_1_1_sprite_group.html">Render::SpriteGroup</a>* <span class="keyword">get</span>(<span class="keywordtype">size_t</span> index);
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053             <span class="keywordtype">void</span> <a class="code" href="class_f_a_render_1_1_sprite_manager.html#a0f6f37bd76792c1c03b1ef46a7a1bcd0" title="To be called from the render thread.">setImmortal</a>(<span class="keywordtype">size_t</span> index, <span class="keywordtype">bool</span> immortal); 
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055             <span class="keywordtype">void</span> <a class="code" href="class_f_a_render_1_1_sprite_manager.html#a3654837a02b4e588ea5a5f486dac3203" title="To be called from the render thread.">clear</a>(); 
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057        <span class="keyword">private</span>:
+<a name="l00058"></a>00058             <a class="code" href="class_f_a_render_1_1_sprite_cache.html" title="Multithread sprite cache.">SpriteCache</a> mCache;
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060             std::map&lt;size_t, RawCacheTmp&gt; mRawCache;
+<a name="l00061"></a>00061             std::vector&lt;FASpriteGroup*&gt; mRawSpriteGroups;
+<a name="l00062"></a>00062             std::map&lt;size_t, FASpriteGroup*&gt; mServerSpriteMap;
+<a name="l00063"></a>00063     };
+<a name="l00064"></a>00064 }
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"

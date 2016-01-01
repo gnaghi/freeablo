@@ -100,7 +100,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">FAWorld::NetObject Class Reference</div>  </div>
 </div><!--header-->
@@ -112,7 +113,7 @@ Inheritance diagram for FAWorld::NetObject:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_f_a_world_1_1_net_object__inherit__graph.png" border="0" usemap="#_f_a_world_1_1_net_object_inherit__map" alt="Inheritance graph"/></div>
 <map name="_f_a_world_1_1_net_object_inherit__map" id="_f_a_world_1_1_net_object_inherit__map">
-<area shape="rect" id="node3" href="class_f_a_world_1_1_actor.html" title="FAWorld::Actor" alt="" coords="87,83,199,112"/><area shape="rect" id="node9" href="class_f_a_world_1_1_game_level.html" title="FAWorld::GameLevel" alt="" coords="223,83,369,112"/><area shape="rect" id="node11" href="class_f_a_world_1_1_position.html" title="FAWorld::Position" alt="" coords="393,83,521,112"/><area shape="rect" id="node5" href="class_f_a_world_1_1_monster.html" title="FAWorld::Monster" alt="" coords="5,160,133,189"/><area shape="rect" id="node7" href="class_f_a_world_1_1_player.html" title="FAWorld::Player" alt="" coords="157,160,275,189"/></map>
+<area shape="rect" id="node3" href="class_f_a_world_1_1_actor.html" title="FAWorld::Actor" alt="" coords="87,83,199,112"/><area shape="rect" id="node9" href="class_f_a_world_1_1_position.html" title="FAWorld::Position" alt="" coords="223,83,351,112"/><area shape="rect" id="node5" href="class_f_a_world_1_1_monster.html" title="FAWorld::Monster" alt="" coords="5,160,133,189"/><area shape="rect" id="node7" href="class_f_a_world_1_1_player.html" title="FAWorld::Player" alt="" coords="157,160,275,189"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="class_f_a_world_1_1_net_object-members.html">List of all members.</a></p>
@@ -120,13 +121,22 @@ Inheritance diagram for FAWorld::NetObject:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#ad857986c68aa3d4a6f5e6b19fd06299b">~NetObject</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#a1be4602fa7204c096891ca9a1ced42dc">startWriting</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called before any calls to getSize() or <a class="el" href="class_f_a_world_1_1_net_object.html#a497984649cd1eb7b59429423cdaeecd4" title="Write object to packet. startWriting() must be called before this function.">writeTo()</a>  <a href="#a1be4602fa7204c096891ca9a1ced42dc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#a9339b64f1355eaa2899489845c982280">getWriteSize</a> ()=0</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Must only be called between calls to <a class="el" href="class_f_a_world_1_1_net_object.html#a1be4602fa7204c096891ca9a1ced42dc" title="Must be called before any calls to getSize() or writeTo()">startWriting()</a> and <a class="el" href="class_f_a_world_1_1_net_object.html#a497984649cd1eb7b59429423cdaeecd4" title="Write object to packet. startWriting() must be called before this function.">writeTo()</a>  <a href="#a9339b64f1355eaa2899489845c982280"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#a497984649cd1eb7b59429423cdaeecd4">writeTo</a> (ENetPacket *packet, size_t &amp;position)=0</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Write object to packet. <a class="el" href="class_f_a_world_1_1_net_object.html#a1be4602fa7204c096891ca9a1ced42dc" title="Must be called before any calls to getSize() or writeTo()">startWriting()</a> must be called before this function.  <a href="#a497984649cd1eb7b59429423cdaeecd4"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Write object to packet.  <a href="#a497984649cd1eb7b59429423cdaeecd4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#a7f7b24f69a32b43f7e36b1f5702e6765">readFrom</a> (ENetPacket *packet, size_t &amp;position)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#af0c64ee334bceb8ab832b2dd5e3ae222">getBasePriority</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#a5bc4351c25f45b87a6ba5a4f732afb08">getPriority</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#a930342e8a97ad6f3051f96d9df4ea272">tickDone</a> (<a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> wasSent)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after every network tick. Used to accumulate priorities, for later recall with <a class="el" href="class_f_a_world_1_1_net_object.html#a5bc4351c25f45b87a6ba5a4f732afb08">getPriority()</a>  <a href="#a930342e8a97ad6f3051f96d9df4ea272"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#a875f5add72812b21f2fde5737586e671">getClassId</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">get the class id for sending over the network, this is the id used on <a class="el" href="class_f_a_world_1_1_net_object.html#a13c2ffe170095ff5b8e893765e1d89c8" title="construct a class instance of a NetObject subclass, using a classId previously registered with regist...">construct()</a> and <a class="el" href="class_f_a_world_1_1_net_object.html#a5e560c637148a04f2bbd282a2b38aac3" title="Registers a factory function for a NetObject subclass, so they can be constructed using just the id...">registerNetObjectClass()</a> above.  <a href="#a875f5add72812b21f2fde5737586e671"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#a5e560c637148a04f2bbd282a2b38aac3">registerNetObjectClass</a> (int32_t classId, <a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> *(*factoryFunc)())</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a factory function for a <a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> subclass, so they can be constructed using just the id.  <a href="#a5e560c637148a04f2bbd282a2b38aac3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_net_object.html#a13c2ffe170095ff5b8e893765e1d89c8">construct</a> (int32_t classId)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">construct a class instance of a <a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> subclass, using a classId previously registered with <a class="el" href="class_f_a_world_1_1_net_object.html#a5e560c637148a04f2bbd282a2b38aac3" title="Registers a factory function for a NetObject subclass, so they can be constructed using just the id...">registerNetObjectClass()</a>. The reason for this is that the classId can be sent over the network allowing the reciever to construct the appropriate class using just the id.  <a href="#a13c2ffe170095ff5b8e893765e1d89c8"></a><br/></td></tr>
 </table>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad857986c68aa3d4a6f5e6b19fd06299b"></a><!-- doxytag: member="FAWorld::NetObject::~NetObject" ref="ad857986c68aa3d4a6f5e6b19fd06299b" args="()" -->
@@ -146,6 +156,97 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a13c2ffe170095ff5b8e893765e1d89c8"></a><!-- doxytag: member="FAWorld::NetObject::construct" ref="a13c2ffe170095ff5b8e893765e1d89c8" args="(int32_t classId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> * <a class="el" href="class_f_a_world_1_1_net_object.html#a13c2ffe170095ff5b8e893765e1d89c8">FAWorld::NetObject::construct</a> </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>classId</em></td><td>)</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>construct a class instance of a <a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> subclass, using a classId previously registered with <a class="el" href="class_f_a_world_1_1_net_object.html#a5e560c637148a04f2bbd282a2b38aac3" title="Registers a factory function for a NetObject subclass, so they can be constructed using just the id...">registerNetObjectClass()</a>. The reason for this is that the classId can be sent over the network allowing the reciever to construct the appropriate class using just the id. </p>
+
+</div>
+</div>
+<a class="anchor" id="af0c64ee334bceb8ab832b2dd5e3ae222"></a><!-- doxytag: member="FAWorld::NetObject::getBasePriority" ref="af0c64ee334bceb8ab832b2dd5e3ae222" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t <a class="el" href="class_f_a_world_1_1_net_object.html#af0c64ee334bceb8ab832b2dd5e3ae222">FAWorld::NetObject::getBasePriority</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="return"><dt><b>Returns:</b></dt><dd>The implementor's base priority for synchronisation, eg, <a class="el" href="class_f_a_world_1_1_player.html">Player</a> will have higher priority than <a class="el" href="class_f_a_world_1_1_monster.html">Monster</a> </dd></dl>
+
+<p>Reimplemented in <a class="el" href="class_f_a_world_1_1_player.html#aec3b6c0cc2195e249dedbf92e796e1b3">FAWorld::Player</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_world_1_1_net_object_af0c64ee334bceb8ab832b2dd5e3ae222_icgraph.png" border="0" usemap="#class_f_a_world_1_1_net_object_af0c64ee334bceb8ab832b2dd5e3ae222_icgraph" alt=""/></div>
+<map name="class_f_a_world_1_1_net_object_af0c64ee334bceb8ab832b2dd5e3ae222_icgraph" id="class_f_a_world_1_1_net_object_af0c64ee334bceb8ab832b2dd5e3ae222_icgraph">
+<area shape="rect" id="node3" href="class_f_a_world_1_1_net_object.html#a5bc4351c25f45b87a6ba5a4f732afb08" title="FAWorld::NetObject::getPriority" alt="" coords="292,5,497,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a875f5add72812b21f2fde5737586e671"></a><!-- doxytag: member="FAWorld::NetObject::getClassId" ref="a875f5add72812b21f2fde5737586e671" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t <a class="el" href="class_f_a_world_1_1_net_object.html#a875f5add72812b21f2fde5737586e671">FAWorld::NetObject::getClassId</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>get the class id for sending over the network, this is the id used on <a class="el" href="class_f_a_world_1_1_net_object.html#a13c2ffe170095ff5b8e893765e1d89c8" title="construct a class instance of a NetObject subclass, using a classId previously registered with regist...">construct()</a> and <a class="el" href="class_f_a_world_1_1_net_object.html#a5e560c637148a04f2bbd282a2b38aac3" title="Registers a factory function for a NetObject subclass, so they can be constructed using just the id...">registerNetObjectClass()</a> above. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5bc4351c25f45b87a6ba5a4f732afb08"></a><!-- doxytag: member="FAWorld::NetObject::getPriority" ref="a5bc4351c25f45b87a6ba5a4f732afb08" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="class_f_a_world_1_1_net_object.html#a5bc4351c25f45b87a6ba5a4f732afb08">FAWorld::NetObject::getPriority</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="return"><dt><b>Returns:</b></dt><dd>The priority for sending this <a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a>. Increases with every tick that it is not sent, and is reset to 1 every time it is sent. Value is weighted by <a class="el" href="class_f_a_world_1_1_net_object.html#af0c64ee334bceb8ab832b2dd5e3ae222">getBasePriority()</a> </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_world_1_1_net_object_a5bc4351c25f45b87a6ba5a4f732afb08_cgraph.png" border="0" usemap="#class_f_a_world_1_1_net_object_a5bc4351c25f45b87a6ba5a4f732afb08_cgraph" alt=""/></div>
+<map name="class_f_a_world_1_1_net_object_a5bc4351c25f45b87a6ba5a4f732afb08_cgraph" id="class_f_a_world_1_1_net_object_a5bc4351c25f45b87a6ba5a4f732afb08_cgraph">
+<area shape="rect" id="node3" href="class_f_a_world_1_1_net_object.html#af0c64ee334bceb8ab832b2dd5e3ae222" title="FAWorld::NetObject::getBasePriority" alt="" coords="261,5,499,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a9339b64f1355eaa2899489845c982280"></a><!-- doxytag: member="FAWorld::NetObject::getWriteSize" ref="a9339b64f1355eaa2899489845c982280" args="()=0" -->
 <div class="memitem">
 <div class="memproto">
@@ -159,11 +260,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Must only be called between calls to <a class="el" href="class_f_a_world_1_1_net_object.html#a1be4602fa7204c096891ca9a1ced42dc" title="Must be called before any calls to getSize() or writeTo()">startWriting()</a> and <a class="el" href="class_f_a_world_1_1_net_object.html#a497984649cd1eb7b59429423cdaeecd4" title="Write object to packet. startWriting() must be called before this function.">writeTo()</a> </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>size to be written </dd></dl>
 
-<p>Implemented in <a class="el" href="class_f_a_world_1_1_actor.html#a9efde1147775c12a01e7dd2bb9ffe4d0">FAWorld::Actor</a>, <a class="el" href="class_f_a_world_1_1_game_level.html#acb90f91f12e62d2db7cdcecf1a4a9cbb">FAWorld::GameLevel</a>, and <a class="el" href="class_f_a_world_1_1_position.html#af8be3a5a938b40435f39f383ce6262a1">FAWorld::Position</a>.</p>
+<p>Implemented in <a class="el" href="class_f_a_world_1_1_actor.html#a9efde1147775c12a01e7dd2bb9ffe4d0">FAWorld::Actor</a>, and <a class="el" href="class_f_a_world_1_1_position.html#af8be3a5a938b40435f39f383ce6262a1">FAWorld::Position</a>.</p>
 
 </div>
 </div>
@@ -200,36 +299,61 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>success </dd></dl>
 
-<p>Implemented in <a class="el" href="class_f_a_world_1_1_actor.html#ab53e39ee1f8c51d83f403f7c3c44ca21">FAWorld::Actor</a>, <a class="el" href="class_f_a_world_1_1_game_level.html#a4d42834e0c80453fb03c2b8b2208269f">FAWorld::GameLevel</a>, and <a class="el" href="class_f_a_world_1_1_position.html#af980b9e7511b02011f5605d1254e878e">FAWorld::Position</a>.</p>
+<p>Implemented in <a class="el" href="class_f_a_world_1_1_actor.html#ab53e39ee1f8c51d83f403f7c3c44ca21">FAWorld::Actor</a>, and <a class="el" href="class_f_a_world_1_1_position.html#af980b9e7511b02011f5605d1254e878e">FAWorld::Position</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1be4602fa7204c096891ca9a1ced42dc"></a><!-- doxytag: member="FAWorld::NetObject::startWriting" ref="a1be4602fa7204c096891ca9a1ced42dc" args="()" -->
+<a class="anchor" id="a5e560c637148a04f2bbd282a2b38aac3"></a><!-- doxytag: member="FAWorld::NetObject::registerNetObjectClass" ref="a5e560c637148a04f2bbd282a2b38aac3" args="(int32_t classId, NetObject *(*factoryFunc)())" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="class_f_a_world_1_1_net_object.html#a1be4602fa7204c096891ca9a1ced42dc">FAWorld::NetObject::startWriting</a> </td>
+          <td class="memname">void <a class="el" href="class_f_a_world_1_1_net_object.html#a5e560c637148a04f2bbd282a2b38aac3">FAWorld::NetObject::registerNetObjectClass</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline, virtual]</code></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>classId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> *(*)()&#160;</td>
+          <td class="paramname"><em>factoryFunc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [static]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Must be called before any calls to getSize() or <a class="el" href="class_f_a_world_1_1_net_object.html#a497984649cd1eb7b59429423cdaeecd4" title="Write object to packet. startWriting() must be called before this function.">writeTo()</a> </p>
+<p>Registers a factory function for a <a class="el" href="class_f_a_world_1_1_net_object.html">NetObject</a> subclass, so they can be constructed using just the id. </p>
 
-<p>Reimplemented in <a class="el" href="class_f_a_world_1_1_game_level.html#afc6fa520eece5aae880732debd52b812">FAWorld::GameLevel</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_f_a_world_1_1_net_object_a1be4602fa7204c096891ca9a1ced42dc_icgraph.png" border="0" usemap="#class_f_a_world_1_1_net_object_a1be4602fa7204c096891ca9a1ced42dc_icgraph" alt=""/></div>
-<map name="class_f_a_world_1_1_net_object_a1be4602fa7204c096891ca9a1ced42dc_icgraph" id="class_f_a_world_1_1_net_object_a1be4602fa7204c096891ca9a1ced42dc_icgraph">
-<area shape="rect" id="node3" href="class_f_a_world_1_1_actor.html#a80e0c4fe4a1dc980a57b9da694cd2362" title="Write object to packet. startWriting() must be called before this function." alt="" coords="269,5,432,35"/></map>
 </div>
-</p>
+</div>
+<a class="anchor" id="a930342e8a97ad6f3051f96d9df4ea272"></a><!-- doxytag: member="FAWorld::NetObject::tickDone" ref="a930342e8a97ad6f3051f96d9df4ea272" args="(bool wasSent)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_f_a_world_1_1_net_object.html#a930342e8a97ad6f3051f96d9df4ea272">FAWorld::NetObject::tickDone</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramname"><em>wasSent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Called after every network tick. Used to accumulate priorities, for later recall with <a class="el" href="class_f_a_world_1_1_net_object.html#a5bc4351c25f45b87a6ba5a4f732afb08">getPriority()</a> </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wasSent</td><td>whether the object was sent this tick. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -258,7 +382,7 @@ Here is the caller graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Write object to packet. <a class="el" href="class_f_a_world_1_1_net_object.html#a1be4602fa7204c096891ca9a1ced42dc" title="Must be called before any calls to getSize() or writeTo()">startWriting()</a> must be called before this function. </p>
+<p>Write object to packet. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">packet</td><td>packet to write to </td></tr>
@@ -268,12 +392,13 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>success </dd></dl>
 
-<p>Implemented in <a class="el" href="class_f_a_world_1_1_actor.html#a80e0c4fe4a1dc980a57b9da694cd2362">FAWorld::Actor</a>, <a class="el" href="class_f_a_world_1_1_game_level.html#aa9600204c099cbdd5d8304823b879266">FAWorld::GameLevel</a>, and <a class="el" href="class_f_a_world_1_1_position.html#a1380f47771f9f1027a83ffd513570f83">FAWorld::Position</a>.</p>
+<p>Implemented in <a class="el" href="class_f_a_world_1_1_actor.html#a80e0c4fe4a1dc980a57b9da694cd2362">FAWorld::Actor</a>, and <a class="el" href="class_f_a_world_1_1_position.html#a1380f47771f9f1027a83ffd513570f83">FAWorld::Position</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>apps/freeablo/faworld/<a class="el" href="netobject_8h_source.html">netobject.h</a></li>
+<li>apps/freeablo/faworld/<a class="el" href="netobject_8cpp.html">netobject.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- window showing the filter options -->

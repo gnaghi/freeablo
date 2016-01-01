@@ -90,27 +90,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00007"></a>00007 {
 <a name="l00008"></a><a class="code" href="class_f_a_world_1_1_player.html">00008</a>     <span class="keyword">class </span><a class="code" href="class_f_a_world_1_1_player.html">Player</a>: <span class="keyword">public</span> <a class="code" href="class_f_a_world_1_1_actor.html">Actor</a>
 <a name="l00009"></a>00009     {
-<a name="l00010"></a>00010         <span class="keyword">public</span>:
-<a name="l00011"></a>00011             <a class="code" href="class_f_a_world_1_1_player.html#a1f1fe37fd8144a89a4f495a760cbd797">Player</a>();
-<a name="l00012"></a><a class="code" href="class_f_a_world_1_1_player.html#a5793a4a0c105bbeecfe92e9dac7f9d45">00012</a>             <a class="code" href="class_f_a_world_1_1_inventory.html">Inventory</a> <a class="code" href="class_f_a_world_1_1_player.html#a5793a4a0c105bbeecfe92e9dac7f9d45">mInventory</a>;
-<a name="l00013"></a>00013             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_player.html#a617f9248e099f1bfe1a1685456d1fdbb">setSpriteClass</a>(std::string className);
-<a name="l00014"></a>00014             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_player.html#aa4da592bd7d2a7523212fe7ba91b4861">attack</a>(<a class="code" href="class_f_a_world_1_1_actor.html">Actor</a> * enemy);
-<a name="l00015"></a>00015             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_player.html#aa4da592bd7d2a7523212fe7ba91b4861">attack</a>(<a class="code" href="class_f_a_world_1_1_player.html">Player</a> * enemy);
-<a name="l00016"></a>00016             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> <a class="code" href="class_f_a_world_1_1_player.html#a1fbc0f7531b9f039d7a5ef5e07027a8c">getCurrentAnim</a>();
-<a name="l00017"></a>00017             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_player.html#af4dc40030e9bbac29582ac3a6411df80">updateSprite</a>();
-<a name="l00018"></a>00018 
-<a name="l00019"></a>00019             <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_player.html#a0fd3d6ce622b0bd7a874c820fa442953">setLevel</a>(<a class="code" href="class_f_a_world_1_1_game_level.html">GameLevel</a>* level);
-<a name="l00020"></a>00020 
-<a name="l00021"></a><a class="code" href="class_f_a_world_1_1_player.html#a885c6f4fd1d5a61180d34d3289be7c1c">00021</a>             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_player.html#a885c6f4fd1d5a61180d34d3289be7c1c">mInDungeon</a> = <span class="keyword">false</span>;
-<a name="l00022"></a>00022         <span class="keyword">private</span>:
-<a name="l00023"></a>00023             std::string mClassName;
-<a name="l00024"></a>00024             std::string mClassCode;
-<a name="l00025"></a>00025             std::string mArmourCode;
-<a name="l00026"></a>00026             std::string mWeaponCode;
-<a name="l00027"></a><a class="code" href="class_f_a_world_1_1_player.html#a4153fb350155e74d4b0d758d9ca894f5">00027</a>         <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_f_a_world_1_1_inventory.html">Inventory</a>;
-<a name="l00028"></a>00028     };
-<a name="l00029"></a>00029 }
-<a name="l00030"></a>00030 <span class="preprocessor">#endif</span>
+<a name="l00010"></a>00010         <a class="code" href="netobject_8h.html#aab0c33f65a3296a1b71a125d6e0a70fa">STATIC_NET_OBJECT_SET_CLASS_ID</a>(2)
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012         <span class="keyword">public</span>:
+<a name="l00013"></a>00013             <a class="code" href="class_f_a_world_1_1_player.html#a1f1fe37fd8144a89a4f495a760cbd797">Player</a>();
+<a name="l00014"></a>00014             <span class="keyword">virtual</span> <a class="code" href="class_f_a_world_1_1_player.html#aa6548e3961fcad13764237a7321f5a33">~Player</a>();
+<a name="l00015"></a><a class="code" href="class_f_a_world_1_1_player.html#a5793a4a0c105bbeecfe92e9dac7f9d45">00015</a>             <a class="code" href="class_f_a_world_1_1_inventory.html">Inventory</a> <a class="code" href="class_f_a_world_1_1_player.html#a5793a4a0c105bbeecfe92e9dac7f9d45">mInventory</a>;
+<a name="l00016"></a>00016             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_player.html#a617f9248e099f1bfe1a1685456d1fdbb">setSpriteClass</a>(std::string className);
+<a name="l00017"></a>00017             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_player.html#aa4da592bd7d2a7523212fe7ba91b4861">attack</a>(<a class="code" href="class_f_a_world_1_1_actor.html">Actor</a> * enemy);
+<a name="l00018"></a>00018             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_player.html#aa4da592bd7d2a7523212fe7ba91b4861">attack</a>(<a class="code" href="class_f_a_world_1_1_player.html">Player</a> * enemy);
+<a name="l00019"></a>00019             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a>* <a class="code" href="class_f_a_world_1_1_player.html#a49b86ba9b64ebe0fe837ccdcd5af78fb">getCurrentAnim</a>();
+<a name="l00020"></a>00020             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_player.html#a239ec7f582207322955e46c428660b64">updateSpriteFormatVars</a>();
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022             <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_player.html#a0fd3d6ce622b0bd7a874c820fa442953">setLevel</a>(<a class="code" href="class_f_a_world_1_1_game_level.html">GameLevel</a>* level);
+<a name="l00023"></a>00023 
+<a name="l00024"></a><a class="code" href="class_f_a_world_1_1_player.html#aec3b6c0cc2195e249dedbf92e796e1b3">00024</a>             <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_player.html#aec3b6c0cc2195e249dedbf92e796e1b3">getBasePriority</a>()
+<a name="l00025"></a>00025             {
+<a name="l00026"></a>00026                 <span class="keywordflow">return</span> 10;
+<a name="l00027"></a>00027             }
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029         <span class="keyword">private</span>:
+<a name="l00030"></a>00030             <span class="comment">// these &quot;Fmt&quot; vars are just used by getCurrentAnim</span>
+<a name="l00031"></a>00031             std::string mFmtClassName;
+<a name="l00032"></a>00032             std::string mFmtClassCode;
+<a name="l00033"></a>00033             std::string mFmtArmourCode;
+<a name="l00034"></a>00034             std::string mFmtWeaponCode;
+<a name="l00035"></a>00035             <span class="keywordtype">bool</span> mFmtInDungeon = <span class="keyword">false</span>;
+<a name="l00036"></a>00036 
+<a name="l00037"></a><a class="code" href="class_f_a_world_1_1_player.html#a4153fb350155e74d4b0d758d9ca894f5">00037</a>         <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_f_a_world_1_1_inventory.html">Inventory</a>;
+<a name="l00038"></a>00038     };
+<a name="l00039"></a>00039 }
+<a name="l00040"></a>00040 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"

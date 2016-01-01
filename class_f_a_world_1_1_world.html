@@ -126,10 +126,11 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_world.html#ae6d290feac7ac6ff400062d847722daf">update</a> (<a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> noclip)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_world.html#ae98082bfeb56bc7ff3ea1e17d4f7d1dd">addCurrentPlayer</a> (<a class="el" href="class_f_a_world_1_1_player.html">Player</a> *player)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_world.html#a8715034c60fe91ec17c2baf2d57c8e79">getCurrentPlayer</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_world.html#a9fd40c5d4166912a99821e2b58deb88d">addPlayer</a> (uint32_t id, <a class="el" href="class_f_a_world_1_1_player.html">Player</a> *player)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_world.html#a7c574d8552f5e2da929eeea027c433c7">getPlayer</a> (size_t id)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_world.html#a2451713e136dad823726f45ef27b3371">setCurrentPlayerId</a> (uint32_t id)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_world.html#afb06a52db0604fd891364453282effce">registerPlayer</a> (<a class="el" href="class_f_a_world_1_1_player.html">Player</a> *player)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_world.html#a2b924817dd8dc7e71af4ca4badb9da48">deregisterPlayer</a> (<a class="el" href="class_f_a_world_1_1_player.html">Player</a> *player)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_world.html#a5afbd524390014b824643a3430395196">fillRenderState</a> (<a class="el" href="class_f_a_render_1_1_render_state.html">FARender::RenderState</a> *state)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_world.html#a2cb5ee39c1ec77c38913adc9eba7f69b">getActorById</a> (size_t id)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_world.html#aaecb67ae98d669231b9b2fcab7b9fc16">getAllActors</a> (std::vector&lt; <a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> * &gt; &amp;actors)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_f_a_world_1_1_world.html">World</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_world.html#aa72cae8b62329a79324bce7294236787">get</a> ()</td></tr>
@@ -190,39 +191,20 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9fd40c5d4166912a99821e2b58deb88d"></a><!-- doxytag: member="FAWorld::World::addPlayer" ref="a9fd40c5d4166912a99821e2b58deb88d" args="(uint32_t id, Player *player)" -->
+<a class="anchor" id="a2b924817dd8dc7e71af4ca4badb9da48"></a><!-- doxytag: member="FAWorld::World::deregisterPlayer" ref="a2b924817dd8dc7e71af4ca4badb9da48" args="(Player *player)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_f_a_world_1_1_world.html#a9fd40c5d4166912a99821e2b58deb88d">FAWorld::World::addPlayer</a> </td>
+          <td class="memname">void <a class="el" href="class_f_a_world_1_1_world.html#a2b924817dd8dc7e71af4ca4badb9da48">FAWorld::World::deregisterPlayer</a> </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="class_f_a_world_1_1_player.html">Player</a> *&#160;</td>
-          <td class="paramname"><em>player</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>player</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_f_a_world_1_1_world_a9fd40c5d4166912a99821e2b58deb88d_cgraph.png" border="0" usemap="#class_f_a_world_1_1_world_a9fd40c5d4166912a99821e2b58deb88d_cgraph" alt=""/></div>
-<map name="class_f_a_world_1_1_world_a9fd40c5d4166912a99821e2b58deb88d_cgraph" id="class_f_a_world_1_1_world_a9fd40c5d4166912a99821e2b58deb88d_cgraph">
-<area shape="rect" id="node3" href="class_f_a_world_1_1_player.html#a0fd3d6ce622b0bd7a874c820fa442953" title="FAWorld::Player::setLevel" alt="" coords="256,5,429,35"/><area shape="rect" id="node7" href="class_f_a_world_1_1_world.html#a0cb638b42a04dba460fcaf3e0a261fd9" title="FAWorld::World::getCurrentLevel" alt="" coords="236,59,449,88"/><area shape="rect" id="node5" href="class_f_a_world_1_1_game_level.html#aa34b6cd6ab73af749fe3a92426b55bb8" title="FAWorld::GameLevel::getLevelIndex" alt="" coords="500,5,735,35"/><area shape="rect" id="node9" href="class_f_a_world_1_1_actor.html#ac7f3a1a4b5b66da302e257ea3b5c0f58" title="FAWorld::Actor::getLevel" alt="" coords="533,59,701,88"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -296,7 +278,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_f_a_world_1_1_world_aa72cae8b62329a79324bce7294236787_icgraph.png" border="0" usemap="#class_f_a_world_1_1_world_aa72cae8b62329a79324bce7294236787_icgraph" alt=""/></div>
 <map name="class_f_a_world_1_1_world_aa72cae8b62329a79324bce7294236787_icgraph" id="class_f_a_world_1_1_world_aa72cae8b62329a79324bce7294236787_icgraph">
-<area shape="rect" id="node3" href="class_f_a_gui_1_1_f_a_python_funcs.html#aedaa277fd1fdf292d0205a6ba0d7634d" title="FAGui::FAPythonFuncs::saveGame" alt="" coords="195,5,427,35"/><area shape="rect" id="node7" href="class_f_a_gui_1_1_f_a_python_funcs.html#afbc6e00b8cd71c9d4a7e89739eb3955f" title="FAGui::FAPythonFuncs::loadGame" alt="" coords="197,59,424,88"/><area shape="rect" id="node10" href="class_f_a_world_1_1_actor.html#ab53e39ee1f8c51d83f403f7c3c44ca21" title="FAWorld::Actor::readFrom" alt="" coords="224,112,397,141"/><area shape="rect" id="node5" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="475,32,715,61"/></map>
+<area shape="rect" id="node3" href="class_f_a_gui_1_1_f_a_python_funcs.html#aedaa277fd1fdf292d0205a6ba0d7634d" title="FAGui::FAPythonFuncs::saveGame" alt="" coords="195,5,427,35"/><area shape="rect" id="node7" href="class_f_a_gui_1_1_f_a_python_funcs.html#afbc6e00b8cd71c9d4a7e89739eb3955f" title="FAGui::FAPythonFuncs::loadGame" alt="" coords="197,59,424,88"/><area shape="rect" id="node10" href="class_f_a_world_1_1_actor.html#a210d7366b718ee9366442a98f940d083" title="FAWorld::Actor::update" alt="" coords="232,112,389,141"/><area shape="rect" id="node16" href="class_f_a_world_1_1_actor.html#ab53e39ee1f8c51d83f403f7c3c44ca21" title="FAWorld::Actor::readFrom" alt="" coords="224,165,397,195"/><area shape="rect" id="node5" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="475,32,715,61"/><area shape="rect" id="node12" href="class_f_a_world_1_1_game_level.html#a78e4db23f4a198945e69fced2b8d8e9d" title="FAWorld::GameLevel::update" alt="" coords="497,112,692,141"/><area shape="rect" id="node14" href="class_f_a_world_1_1_world.html#ae6d290feac7ac6ff400062d847722daf" title="FAWorld::World::update" alt="" coords="763,112,925,141"/></map>
 </div>
 </p>
 
@@ -347,6 +329,40 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a2cb5ee39c1ec77c38913adc9eba7f69b"></a><!-- doxytag: member="FAWorld::World::getActorById" ref="a2cb5ee39c1ec77c38913adc9eba7f69b" args="(size_t id)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> * <a class="el" href="class_f_a_world_1_1_world.html#a2cb5ee39c1ec77c38913adc9eba7f69b">FAWorld::World::getActorById</a> </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaecb67ae98d669231b9b2fcab7b9fc16"></a><!-- doxytag: member="FAWorld::World::getAllActors" ref="aaecb67ae98d669231b9b2fcab7b9fc16" args="(std::vector&lt; Actor * &gt; &amp;actors)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_f_a_world_1_1_world.html#aaecb67ae98d669231b9b2fcab7b9fc16">FAWorld::World::getAllActors</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>actors</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a0cb638b42a04dba460fcaf3e0a261fd9"></a><!-- doxytag: member="FAWorld::World::getCurrentLevel" ref="a0cb638b42a04dba460fcaf3e0a261fd9" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -375,7 +391,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_f_a_world_1_1_world_a0cb638b42a04dba460fcaf3e0a261fd9_icgraph.png" border="0" usemap="#class_f_a_world_1_1_world_a0cb638b42a04dba460fcaf3e0a261fd9_icgraph" alt=""/></div>
 <map name="class_f_a_world_1_1_world_a0cb638b42a04dba460fcaf3e0a261fd9_icgraph" id="class_f_a_world_1_1_world_a0cb638b42a04dba460fcaf3e0a261fd9_icgraph">
-<area shape="rect" id="node3" href="class_engine_1_1_engine_input_manager.html#a9e498a09e866f109b2d59d371f390ad6" title="Engine::EngineInputManager::update" alt="" coords="271,5,505,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_world.html#a232923bf93809b892f0e295ea678d395" title="FAWorld::World::getActorAt" alt="" coords="296,59,480,88"/><area shape="rect" id="node13" href="class_f_a_world_1_1_world.html#a9fd40c5d4166912a99821e2b58deb88d" title="FAWorld::World::addPlayer" alt="" coords="297,112,479,141"/><area shape="rect" id="node15" href="class_f_a_world_1_1_world.html#a5afbd524390014b824643a3430395196" title="FAWorld::World::fillRenderState" alt="" coords="284,165,492,195"/><area shape="rect" id="node7" href="class_f_a_world_1_1_actor.html#a210d7366b718ee9366442a98f940d083" title="FAWorld::Actor::update" alt="" coords="556,59,713,88"/><area shape="rect" id="node9" href="class_f_a_world_1_1_game_level.html#a78e4db23f4a198945e69fced2b8d8e9d" title="FAWorld::GameLevel::update" alt="" coords="763,59,957,88"/><area shape="rect" id="node11" href="class_f_a_world_1_1_world.html#ae6d290feac7ac6ff400062d847722daf" title="FAWorld::World::update" alt="" coords="1005,59,1168,88"/></map>
+<area shape="rect" id="node3" href="class_engine_1_1_engine_input_manager.html#a9e498a09e866f109b2d59d371f390ad6" title="Engine::EngineInputManager::update" alt="" coords="271,5,505,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_world.html#a232923bf93809b892f0e295ea678d395" title="FAWorld::World::getActorAt" alt="" coords="296,59,480,88"/><area shape="rect" id="node13" href="class_f_a_world_1_1_world.html#a5afbd524390014b824643a3430395196" title="FAWorld::World::fillRenderState" alt="" coords="284,112,492,141"/><area shape="rect" id="node7" href="class_f_a_world_1_1_actor.html#a210d7366b718ee9366442a98f940d083" title="FAWorld::Actor::update" alt="" coords="556,59,713,88"/><area shape="rect" id="node9" href="class_f_a_world_1_1_game_level.html#a78e4db23f4a198945e69fced2b8d8e9d" title="FAWorld::GameLevel::update" alt="" coords="763,59,957,88"/><area shape="rect" id="node11" href="class_f_a_world_1_1_world.html#ae6d290feac7ac6ff400062d847722daf" title="FAWorld::World::update" alt="" coords="1005,59,1168,88"/></map>
 </div>
 </p>
 
@@ -457,23 +473,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a7c574d8552f5e2da929eeea027c433c7"></a><!-- doxytag: member="FAWorld::World::getPlayer" ref="a7c574d8552f5e2da929eeea027c433c7" args="(size_t id)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_f_a_world_1_1_player.html">Player</a> * <a class="el" href="class_f_a_world_1_1_world.html#a7c574d8552f5e2da929eeea027c433c7">FAWorld::World::getPlayer</a> </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="ae0c89df31442b41a473b1d8d9094e3ed"></a><!-- doxytag: member="FAWorld::World::insertLevel" ref="ae0c89df31442b41a473b1d8d9094e3ed" args="(size_t levelNum, GameLevel *level)" -->
 <div class="memitem">
 <div class="memproto">
@@ -501,29 +500,20 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a2451713e136dad823726f45ef27b3371"></a><!-- doxytag: member="FAWorld::World::setCurrentPlayerId" ref="a2451713e136dad823726f45ef27b3371" args="(uint32_t id)" -->
+<a class="anchor" id="afb06a52db0604fd891364453282effce"></a><!-- doxytag: member="FAWorld::World::registerPlayer" ref="afb06a52db0604fd891364453282effce" args="(Player *player)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_f_a_world_1_1_world.html#a2451713e136dad823726f45ef27b3371">FAWorld::World::setCurrentPlayerId</a> </td>
+          <td class="memname">void <a class="el" href="class_f_a_world_1_1_world.html#afb06a52db0604fd891364453282effce">FAWorld::World::registerPlayer</a> </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_f_a_world_1_1_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_f_a_world_1_1_world_a2451713e136dad823726f45ef27b3371_icgraph.png" border="0" usemap="#class_f_a_world_1_1_world_a2451713e136dad823726f45ef27b3371_icgraph" alt=""/></div>
-<map name="class_f_a_world_1_1_world_a2451713e136dad823726f45ef27b3371_icgraph" id="class_f_a_world_1_1_world_a2451713e136dad823726f45ef27b3371_icgraph">
-<area shape="rect" id="node3" href="class_engine_1_1_net_manager.html#a4fbbbca7789b8385de286906a537550c" title="Engine::NetManager::NetManager" alt="" coords="287,5,505,35"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -547,7 +537,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_f_a_world_1_1_world_ae5fed250c5639c9975fda9e35691007b_cgraph.png" border="0" usemap="#class_f_a_world_1_1_world_ae5fed250c5639c9975fda9e35691007b_cgraph" alt=""/></div>
 <map name="class_f_a_world_1_1_world_ae5fed250c5639c9975fda9e35691007b_cgraph" id="class_f_a_world_1_1_world_ae5fed250c5639c9975fda9e35691007b_cgraph">
-<area shape="rect" id="node3" href="class_f_a_world_1_1_actor.html#ac7f3a1a4b5b66da302e257ea3b5c0f58" title="FAWorld::Actor::getLevel" alt="" coords="273,5,441,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_game_level.html#aa34b6cd6ab73af749fe3a92426b55bb8" title="FAWorld::GameLevel::getLevelIndex" alt="" coords="537,84,772,113"/><area shape="rect" id="node7" href="class_f_a_world_1_1_player.html#a0fd3d6ce622b0bd7a874c820fa442953" title="FAWorld::Player::setLevel" alt="" coords="271,109,444,139"/><area shape="rect" id="node10" href="class_f_a_audio_1_1_audio_manager.html#a0aa00bbb6d2feddb861ab0d5f2e157a9" title="FAAudio::AudioManager::playLevelMusic" alt="" coords="227,163,488,192"/><area shape="rect" id="node14" href="class_engine_1_1_thread_manager.html#a27827da1557a748ed2bb248d50d7a1ca" title="Engine::ThreadManager::get" alt="" coords="264,216,451,245"/><area shape="rect" id="node12" href="class_engine_1_1_thread_manager.html#aaa7f2f075f9237f1d684833b31c69556" title="Engine::ThreadManager::playMusic" alt="" coords="541,163,768,192"/></map>
+<area shape="rect" id="node3" href="class_f_a_world_1_1_actor.html#ac7f3a1a4b5b66da302e257ea3b5c0f58" title="FAWorld::Actor::getLevel" alt="" coords="273,5,441,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_game_level.html#aa34b6cd6ab73af749fe3a92426b55bb8" title="FAWorld::GameLevel::getLevelIndex" alt="" coords="240,59,475,88"/><area shape="rect" id="node7" href="class_f_a_world_1_1_player.html#a0fd3d6ce622b0bd7a874c820fa442953" title="FAWorld::Player::setLevel" alt="" coords="271,112,444,141"/><area shape="rect" id="node9" href="class_f_a_audio_1_1_audio_manager.html#a0aa00bbb6d2feddb861ab0d5f2e157a9" title="FAAudio::AudioManager::playLevelMusic" alt="" coords="227,165,488,195"/><area shape="rect" id="node13" href="class_engine_1_1_thread_manager.html#a27827da1557a748ed2bb248d50d7a1ca" title="Engine::ThreadManager::get" alt="" coords="264,219,451,248"/><area shape="rect" id="node11" href="class_engine_1_1_thread_manager.html#aaa7f2f075f9237f1d684833b31c69556" title="Engine::ThreadManager::playMusic" alt="" coords="536,165,763,195"/></map>
 </div>
 </p>
 
@@ -582,7 +572,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_f_a_world_1_1_world_ae6d290feac7ac6ff400062d847722daf_cgraph.png" border="0" usemap="#class_f_a_world_1_1_world_ae6d290feac7ac6ff400062d847722daf_cgraph" alt=""/></div>
 <map name="class_f_a_world_1_1_world_ae6d290feac7ac6ff400062d847722daf_cgraph" id="class_f_a_world_1_1_world_ae6d290feac7ac6ff400062d847722daf_cgraph">
-<area shape="rect" id="node3" href="class_f_a_world_1_1_game_level.html#a78e4db23f4a198945e69fced2b8d8e9d" title="FAWorld::GameLevel::update" alt="" coords="216,87,411,116"/><area shape="rect" id="node5" href="class_f_a_world_1_1_game_level.html#ac468fcf7f924e14fb12f053b013a22ae" title="FAWorld::GameLevel::actorMapRemove" alt="" coords="763,112,1021,141"/><area shape="rect" id="node11" href="class_f_a_world_1_1_actor.html#a210d7366b718ee9366442a98f940d083" title="FAWorld::Actor::update" alt="" coords="508,456,665,485"/><area shape="rect" id="node52" href="class_f_a_world_1_1_game_level.html#ab00e0f84e8728647d39a7a2f39f08499" title="FAWorld::GameLevel::actorMapInsert" alt="" coords="771,59,1013,88"/><area shape="rect" id="node56" href="class_f_a_world_1_1_game_level.html#a2355286e79388bc995971ba963924a8d" title="FAWorld::GameLevel::actorMapRefresh" alt="" coords="460,9,713,39"/><area shape="rect" id="node7" href="class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090" title="where we are coming from" alt="" coords="1093,85,1269,115"/><area shape="rect" id="node9" href="class_f_a_world_1_1_position.html#aaab58152fbd29cfde68a7317dad1f83d" title="where we are going to" alt="" coords="1101,139,1261,168"/><area shape="rect" id="node13" href="class_f_a_world_1_1_actor.html#af9dbee7f6987ffae1a1698434367057f" title="FAWorld::Actor::getAnimState" alt="" coords="793,693,991,723"/><area shape="rect" id="node15" href="class_f_a_world_1_1_actor.html#a202dce9f5352c307a3fe4e27c0d40b36" title="FAWorld::Actor::isDead" alt="" coords="1101,588,1261,617"/><area shape="rect" id="node17" href="class_f_a_world_1_1_actor.html#ab0f672a764dbd1aa2854eff81e45f78e" title="FAWorld::Actor::getCurrentAnim" alt="" coords="787,747,997,776"/><area shape="rect" id="node22" href="namespace_misc.html#a501bcdb31f2fadaf6e4c7ea3db7b5d69" title="Misc::getVec" alt="" coords="843,216,941,245"/><area shape="rect" id="node24" href="namespace_cel.html#a4e01b99470fde6ba49817d25dc1e2bc6" title="Cel::get" alt="" coords="859,269,925,299"/><area shape="rect" id="node26" href="class_f_a_world_1_1_actor.html#ab251c6705ad0be74a823fe955e6175f2" title="FAWorld::Actor::canIAttack" alt="" coords="801,483,983,512"/><area shape="rect" id="node33" href="namespace_misc.html#a146231bea9c51a041c24dec11383e81c" title="Misc::getVecDir" alt="" coords="835,376,949,405"/><area shape="rect" id="node35" href="class_f_a_world_1_1_position.html#ad34a10975af08be2beb527fc2d10d101" title="advances towards mNext" alt="" coords="805,323,979,352"/><area shape="rect" id="node38" href="class_f_a_world_1_1_actor.html#a6e2d86d273662e6ea51e1c8f1a9c15cb" title="FAWorld::Actor::attack" alt="" coords="815,429,969,459"/><area shape="rect" id="node40" href="class_f_a_world_1_1_world.html#a232923bf93809b892f0e295ea678d395" title="FAWorld::World::getActorAt" alt="" coords="800,800,984,829"/><area shape="rect" id="node48" href="class_f_a_world_1_1_game_level.html#a77abbe17d598a66968fa502ef9d21a6a" title="FAWorld::GameLevel::getTile" alt="" coords="795,536,989,565"/><area shape="rect" id="node50" href="class_f_a_world_1_1_actor.html#a00af1cf4ccaf76a3cf84dc7ec5ba3390" title="FAWorld::Actor::setAnimation" alt="" coords="795,589,989,619"/><area shape="rect" id="node19" href="class_f_a_render_1_1_f_a_sprite_group.html#a753178917d992e5f872ca528ebbb6e54" title="FARender::FASpriteGroup::isValid" alt="" coords="1071,747,1292,776"/><area shape="rect" id="node28" href="class_f_a_world_1_1_actor.html#aa214e029e67b1b02d811ef016e002d6e" title="FAWorld::Actor::isEnemy" alt="" coords="1096,509,1267,539"/><area shape="rect" id="node31" href="class_f_a_world_1_1_position.html#ac5087eb57c5012a8d5cf85feab4b2a26" title="FAWorld::Position::distanceFrom" alt="" coords="1075,456,1288,485"/><area shape="rect" id="node42" href="class_f_a_world_1_1_world.html#a0cb638b42a04dba460fcaf3e0a261fd9" title="FAWorld::World::getCurrentLevel" alt="" coords="1075,800,1288,829"/><area shape="rect" id="node46" href="class_f_a_world_1_1_game_level.html#aae6a0535a7d91a41d9174c5e483f6736" title="FAWorld::GameLevel::getActorAt" alt="" coords="1073,853,1289,883"/><area shape="rect" id="node44" href="class_f_a_world_1_1_actor.html#ac7f3a1a4b5b66da302e257ea3b5c0f58" title="FAWorld::Actor::getLevel" alt="" coords="1343,800,1511,829"/><area shape="rect" id="node58" href="class_f_a_world_1_1_game_level.html#a08683ee87bd15235042842ee79e3d179" title="FAWorld::GameLevel::actorMapClear" alt="" coords="772,5,1012,35"/></map>
+<area shape="rect" id="node3" href="class_f_a_world_1_1_game_level.html#a78e4db23f4a198945e69fced2b8d8e9d" title="FAWorld::GameLevel::update" alt="" coords="216,85,411,115"/><area shape="rect" id="node5" href="class_f_a_world_1_1_game_level.html#ac468fcf7f924e14fb12f053b013a22ae" title="FAWorld::GameLevel::actorMapRemove" alt="" coords="763,112,1021,141"/><area shape="rect" id="node11" href="class_f_a_world_1_1_actor.html#a210d7366b718ee9366442a98f940d083" title="FAWorld::Actor::update" alt="" coords="508,219,665,248"/><area shape="rect" id="node27" href="class_f_a_world_1_1_game_level.html#ab00e0f84e8728647d39a7a2f39f08499" title="FAWorld::GameLevel::actorMapInsert" alt="" coords="771,5,1013,35"/><area shape="rect" id="node31" href="class_f_a_world_1_1_game_level.html#a2355286e79388bc995971ba963924a8d" title="FAWorld::GameLevel::actorMapRefresh" alt="" coords="460,59,713,88"/><area shape="rect" id="node7" href="class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090" title="where we are coming from" alt="" coords="1091,19,1267,48"/><area shape="rect" id="node9" href="class_f_a_world_1_1_position.html#aaab58152fbd29cfde68a7317dad1f83d" title="where we are going to" alt="" coords="1099,99,1259,128"/><area shape="rect" id="node13" href="namespace_misc.html#a501bcdb31f2fadaf6e4c7ea3db7b5d69" title="Misc::getVec" alt="" coords="843,219,941,248"/><area shape="rect" id="node15" href="class_f_a_world_1_1_world.html#aa72cae8b62329a79324bce7294236787" title="FAWorld::World::get" alt="" coords="821,272,963,301"/><area shape="rect" id="node17" href="class_f_a_world_1_1_world.html#a232923bf93809b892f0e295ea678d395" title="FAWorld::World::getActorAt" alt="" coords="800,325,984,355"/><area shape="rect" id="node25" href="namespace_misc.html#a146231bea9c51a041c24dec11383e81c" title="Misc::getVecDir" alt="" coords="835,165,949,195"/><area shape="rect" id="node19" href="class_f_a_world_1_1_world.html#a0cb638b42a04dba460fcaf3e0a261fd9" title="FAWorld::World::getCurrentLevel" alt="" coords="1072,299,1285,328"/><area shape="rect" id="node23" href="class_f_a_world_1_1_game_level.html#aae6a0535a7d91a41d9174c5e483f6736" title="FAWorld::GameLevel::getActorAt" alt="" coords="1071,352,1287,381"/><area shape="rect" id="node21" href="class_f_a_world_1_1_actor.html#ac7f3a1a4b5b66da302e257ea3b5c0f58" title="FAWorld::Actor::getLevel" alt="" coords="1337,299,1505,328"/><area shape="rect" id="node33" href="class_f_a_world_1_1_game_level.html#a08683ee87bd15235042842ee79e3d179" title="FAWorld::GameLevel::actorMapClear" alt="" coords="772,59,1012,88"/></map>
 </div>
 </p>
 

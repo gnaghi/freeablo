@@ -11,7 +11,7 @@ var searchData=
   ['updatebelt',['updateBelt',['../classpython_1_1draggable_1_1_draggable_widget.html#a4ecbe8a82b153e69a0c057a66b9e62ae',1,'python::draggable::DraggableWidget']]],
   ['updateguibuffer',['updateGuiBuffer',['../namespace_render.html#a56d9c8caddda6febf752da5c297aabc7',1,'Render']]],
   ['updateinventory',['updateInventory',['../class_f_a_gui_1_1_f_a_python_funcs.html#a02df52cb30147adb14606b296743e23e',1,'FAGui::FAPythonFuncs::updateInventory()'],['../classpython_1_1draggable_1_1_draggable_widget.html#a16e15cc108585de3f8b1f2ed9013d2ea',1,'python::draggable::DraggableWidget.updateInventory()']]],
-  ['updatesprite',['updateSprite',['../class_f_a_world_1_1_player.html#af4dc40030e9bbac29582ac3a6411df80',1,'FAWorld::Player']]],
+  ['updatespriteformatvars',['updateSpriteFormatVars',['../class_f_a_world_1_1_player.html#a239ec7f582207322955e46c428660b64',1,'FAWorld::Player']]],
   ['updatewindow',['updatewindow',['../inflate_8c.html#a1d501d65182a4a5f56d3d07961f3fb02',1,'inflate.c']]],
   ['upstairspos',['upStairsPos',['../class_f_a_world_1_1_game_level.html#a7d1a99ff55cef3fa2403fe71c399d1b7',1,'FAWorld::GameLevel::upStairsPos()'],['../class_level_1_1_level.html#ac7b6737ed1e0fb52abea919f48773a53',1,'Level::Level::upStairsPos()']]]
 ];

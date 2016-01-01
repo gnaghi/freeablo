@@ -59,6 +59,8 @@ var searchData=
   ['smaller',['smaller',['../trees_8c.html#a78d1ce835d96eb110f23c580ad7fab7c',1,'trees.c']]],
   ['smallest',['SMALLEST',['../trees_8c.html#ad14f32cbc4e0d9dfc99f6a3897ee4607',1,'trees.c']]],
   ['specpos',['SpecPos',['../_lzma_dec_8c.html#a652a5e70190bf6d3bc40009e54072dc5',1,'LzmaDec.c']]],
+  ['static_5fhandle_5fnet_5fobject',['STATIC_HANDLE_NET_OBJECT',['../netobject_8h.html#a2fd97b350e0b4a5e5a67c8900ac8e92e',1,'netobject.h']]],
+  ['static_5fnet_5fobject_5fset_5fclass_5fid',['STATIC_NET_OBJECT_SET_CLASS_ID',['../netobject_8h.html#aab0c33f65a3296a1b71a125d6e0a70fa',1,'netobject.h']]],
   ['static_5ftrees',['STATIC_TREES',['../zutil_8h.html#a0f63a9090acfe4f653f117b638b289d1',1,'zutil.h']]],
   ['stored_5fblock',['STORED_BLOCK',['../zutil_8h.html#a9f650bc9c1fbd9499098e3a70d295b8a',1,'zutil.h']]],
   ['storm_5falloc',['STORM_ALLOC',['../_storm_common_8h.html#a6fe0c42173ef1a4b9f0e837b0c631660',1,'StormCommon.h']]],

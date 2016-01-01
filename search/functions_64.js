@@ -67,6 +67,7 @@ var searchData=
   ['der_5fprintable_5fvalue_5fdecode',['der_printable_value_decode',['../der__length__printable__string_8c.html#a40a13d8a1afe59dda039bc8fc1140ef2',1,'der_length_printable_string.c']]],
   ['der_5fsequence_5ffree',['der_sequence_free',['../der__sequence__free_8c.html#ad47a79b60d0b0a1f13b5529dcbd4f5fa',1,'der_sequence_free.c']]],
   ['der_5futf8_5fcharsize',['der_utf8_charsize',['../der__length__utf8__string_8c.html#acc54e796874f1b01e2f9dd101da4c2a9',1,'der_length_utf8_string.c']]],
+  ['deregisterplayer',['deregisterPlayer',['../class_f_a_world_1_1_world.html#a2b924817dd8dc7e71af4ca4badb9da48',1,'FAWorld::World']]],
   ['destination',['destination',['../class_f_a_world_1_1_actor.html#a444ffc43b8028fd002ff931c6e4ca445',1,'FAWorld::Actor']]],
   ['destroy',['destroy',['../class_render_1_1_sprite_group.html#a078e08344796afcf46ba2ba4a5670a27',1,'Render::SpriteGroup::destroy()'],['../storm__dll_8cpp.html#aa2819c45179e2c4de293055bc111a509',1,'Destroy():&#160;storm_dll.cpp']]],
   ['detect_5fdata_5ftype',['detect_data_type',['../trees_8c.html#aba5a443f39dc6a62117f7bbe268e60b5',1,'trees.c']]],

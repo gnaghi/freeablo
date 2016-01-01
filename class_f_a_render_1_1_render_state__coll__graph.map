@@ -1,7 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" id="node2" href="$class_f_a_world_1_1_position.html" title="FAWorld::Position" alt="" coords="5,85,133,115"/>
-<area shape="rect" id="node4" href="$class_f_a_world_1_1_net_object.html" title="FAWorld::NetObject" alt="" coords="96,5,235,35"/>
-<area shape="rect" id="node10" href="$class_f_a_world_1_1_game_level.html" title="FAWorld::GameLevel" alt="" coords="157,85,304,115"/>
-<area shape="rect" id="node6" href="$class_f_a_render_1_1_tileset.html" title="FARender::Tileset" alt="" coords="328,85,456,115"/>
-<area shape="rect" id="node8" href="$class_f_a_render_1_1_f_a_sprite_group.html" title="FARender::FASpriteGroup" alt="" coords="480,85,653,115"/>
+<area shape="rect" id="node2" href="$class_f_a_world_1_1_position.html" title="FAWorld::Position" alt="" coords="11,85,139,115"/>
+<area shape="rect" id="node4" href="$class_f_a_world_1_1_net_object.html" title="FAWorld::NetObject" alt="" coords="5,5,144,35"/>
+<area shape="rect" id="node6" href="$class_f_a_render_1_1_tileset.html" title="FARender::Tileset" alt="" coords="163,85,291,115"/>
+<area shape="rect" id="node8" href="$class_f_a_render_1_1_f_a_sprite_group.html" title="FARender::FASpriteGroup" alt="" coords="315,85,488,115"/>
+<area shape="rect" id="node10" href="$class_f_a_world_1_1_game_level.html" title="FAWorld::GameLevel" alt="" coords="512,85,659,115"/>
 </map>

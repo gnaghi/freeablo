@@ -11,8 +11,10 @@ var searchData=
   ['_7enetmanager',['~NetManager',['../class_engine_1_1_net_manager.html#ada27ecea83dc0117774680204415917f',1,'Engine::NetManager']]],
   ['_7enetobject',['~NetObject',['../class_f_a_world_1_1_net_object.html#ad857986c68aa3d4a6f5e6b19fd06299b',1,'FAWorld::NetObject']]],
   ['_7epage',['~Page',['../class_launcher_1_1_page.html#aa22afc4046337749be1d6d9976c0b118',1,'Launcher::Page']]],
+  ['_7eplayer',['~Player',['../class_f_a_world_1_1_player.html#aa6548e3961fcad13764237a7321f5a33',1,'FAWorld::Player']]],
   ['_7eprocessinvoker',['~ProcessInvoker',['../class_launcher_1_1_process_invoker.html#a411585d34fe0bb333a86f6b114277c1d',1,'Launcher::ProcessInvoker']]],
   ['_7erenderer',['~Renderer',['../class_f_a_render_1_1_renderer.html#a17cafafba0a56840930eca4014ae129a',1,'FARender::Renderer']]],
+  ['_7espritecache',['~SpriteCache',['../class_f_a_render_1_1_sprite_cache.html#ad80f1ceab0b1dabbbf2a1fb41f48e3ec',1,'FARender::SpriteCache']]],
   ['_7ethuffmanntree',['~THuffmannTree',['../class_t_huffmann_tree.html#af52db4fe899f97253fcced753272f0ed',1,'THuffmannTree']]],
   ['_7etloghelper',['~TLogHelper',['../class_t_log_helper.html#ae318391b2509fc7196aeeea88d78fefe',1,'TLogHelper']]],
   ['_7eworld',['~World',['../class_f_a_world_1_1_world.html#ab80db6139fc7fe03b2e174fdc1ea6243',1,'FAWorld::World']]]

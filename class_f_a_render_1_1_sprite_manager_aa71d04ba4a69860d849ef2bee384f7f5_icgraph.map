@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_a_render_1_1_renderer.html#a75f2bd7eda157c44d882f7488f69bbba" title="FARender::Renderer::loadServerImage" alt="" coords="383,5,631,35"/>
+<area shape="rect" id="node5" href="$class_f_a_render_1_1_sprite_manager.html#adc0f00fb8bd41b42fdc480a06bfe1651" title="To be called from the game thread." alt="" coords="373,59,640,88"/>
+<area shape="rect" id="node7" href="$class_f_a_render_1_1_renderer.html#a1064847ac7a7bab03072c46f08d4a112" title="FARender::Renderer::fillServerSprite" alt="" coords="688,59,923,88"/>
+</map>

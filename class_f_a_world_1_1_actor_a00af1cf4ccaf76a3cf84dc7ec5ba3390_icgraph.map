@@ -1,9 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$class_f_a_world_1_1_actor.html#a210d7366b718ee9366442a98f940d083" title="FAWorld::Actor::update" alt="" coords="269,5,427,35"/>
-<area shape="rect" id="node9" href="$class_f_a_world_1_1_actor.html#a45131c266364a071e5e36dba66bdf38a" title="FAWorld::Actor::takeDamage" alt="" coords="251,59,445,88"/>
-<area shape="rect" id="node11" href="$class_f_a_world_1_1_player.html#aa4da592bd7d2a7523212fe7ba91b4861" title="FAWorld::Player::attack" alt="" coords="509,111,672,140"/>
-<area shape="rect" id="node15" href="$class_f_a_world_1_1_actor.html#a5cc6f4f374e31c0a21d0f60ef6f1eb0a" title="FAWorld::Actor::die" alt="" coords="280,163,416,192"/>
-<area shape="rect" id="node5" href="$class_f_a_world_1_1_game_level.html#a78e4db23f4a198945e69fced2b8d8e9d" title="FAWorld::GameLevel::update" alt="" coords="493,5,688,35"/>
-<area shape="rect" id="node7" href="$class_f_a_world_1_1_world.html#ae6d290feac7ac6ff400062d847722daf" title="FAWorld::World::update" alt="" coords="736,5,899,35"/>
-<area shape="rect" id="node13" href="$class_f_a_world_1_1_player.html#a1f1fe37fd8144a89a4f495a760cbd797" title="FAWorld::Player::Player" alt="" coords="736,111,899,140"/>
+<area shape="rect" id="node3" href="$class_f_a_world_1_1_actor.html#a45131c266364a071e5e36dba66bdf38a" title="FAWorld::Actor::takeDamage" alt="" coords="251,5,445,35"/>
+<area shape="rect" id="node5" href="$class_f_a_world_1_1_player.html#aa4da592bd7d2a7523212fe7ba91b4861" title="FAWorld::Player::attack" alt="" coords="493,57,656,87"/>
+<area shape="rect" id="node7" href="$class_f_a_world_1_1_actor.html#a5cc6f4f374e31c0a21d0f60ef6f1eb0a" title="FAWorld::Actor::die" alt="" coords="280,109,416,139"/>
 </map>

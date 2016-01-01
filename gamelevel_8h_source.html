@@ -86,81 +86,77 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00003"></a>00003 <span class="preprocessor"></span>
 <a name="l00004"></a>00004 <span class="preprocessor">#include &lt;<a class="code" href="level_8h.html">level/level.h</a>&gt;</span>
 <a name="l00005"></a>00005 
-<a name="l00006"></a>00006 <span class="preprocessor">#include &quot;<a class="code" href="netobject_8h.html">netobject.h</a>&quot;</span>
-<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="actor_8h.html">actor.h</a>&quot;</span>
-<a name="l00008"></a>00008 
-<a name="l00009"></a>00009 <span class="keyword">namespace </span>FARender
-<a name="l00010"></a>00010 {
-<a name="l00011"></a>00011     <span class="keyword">class </span><a class="code" href="namespace_render.html#a0537ce4334a5cbbbf1ed246a12bc1b84">Renderer</a>;
-<a name="l00012"></a>00012 }
-<a name="l00013"></a>00013 
-<a name="l00014"></a>00014 <span class="keyword">namespace </span>FAWorld
-<a name="l00015"></a>00015 {
-<a name="l00016"></a>00016     <span class="keyword">class </span>Player;
-<a name="l00017"></a>00017 
-<a name="l00018"></a><a class="code" href="class_f_a_world_1_1_game_level.html">00018</a>     <span class="keyword">class </span><a class="code" href="class_f_a_world_1_1_game_level.html">GameLevel</a> : <span class="keyword">public</span> <a class="code" href="class_f_a_world_1_1_net_object.html">NetObject</a>
-<a name="l00019"></a>00019     {
-<a name="l00020"></a>00020         <span class="keyword">public</span>:
-<a name="l00021"></a>00021             <a class="code" href="class_f_a_world_1_1_game_level.html">GameLevel</a>(<a class="code" href="class_level_1_1_level.html">Level::Level</a> level, <span class="keywordtype">size_t</span> levelIndex, std::vector&lt;Actor*&gt; actors);
-<a name="l00022"></a>00022             <a class="code" href="class_f_a_world_1_1_game_level.html#a5b9994cc2f77761027e6033589dba834">~GameLevel</a>();
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024             <a class="code" href="class_level_1_1_min_pillar.html">Level::MinPillar</a> <a class="code" href="class_f_a_world_1_1_game_level.html#a77abbe17d598a66968fa502ef9d21a6a">getTile</a>(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y);
-<a name="l00025"></a>00025 
-<a name="l00026"></a>00026             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_game_level.html#af36b2f0b685b079cba343778904c5930">width</a>() <span class="keyword">const</span>;
-<a name="l00027"></a>00027             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_game_level.html#ad576185f819af1be6b83418031d0cc58">height</a>() <span class="keyword">const</span>;
-<a name="l00028"></a>00028 
-<a name="l00029"></a>00029             <span class="keyword">const</span> std::pair&lt;size_t,size_t&gt;&amp; <a class="code" href="class_f_a_world_1_1_game_level.html#a7d1a99ff55cef3fa2403fe71c399d1b7">upStairsPos</a>() <span class="keyword">const</span>;
-<a name="l00030"></a>00030             <span class="keyword">const</span> std::pair&lt;size_t,size_t&gt;&amp; <a class="code" href="class_f_a_world_1_1_game_level.html#a3b3b248f2460bab086924f9de587d9e2">downStairsPos</a>() <span class="keyword">const</span>;
-<a name="l00031"></a>00031 
-<a name="l00032"></a>00032             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#aa5b2e7a080f00c0d4bcc854cdf5fd147">activate</a>(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y);
-<a name="l00033"></a>00033 
-<a name="l00034"></a>00034             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a787106006e9f59d23dd00bc13f791adf">getNextLevel</a>();
-<a name="l00035"></a>00035             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a1e23b25cb1a3fbee6457cecf9848745e">getPreviousLevel</a>();
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037             <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#afc6fa520eece5aae880732debd52b812" title="Must be called before any calls to getSize() or writeTo()">startWriting</a>();
-<a name="l00038"></a>00038             <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_game_level.html#acb90f91f12e62d2db7cdcecf1a4a9cbb" title="Must only be called between calls to startWriting() and writeTo()">getWriteSize</a>();
-<a name="l00039"></a>00039             <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_game_level.html#aa9600204c099cbdd5d8304823b879266" title="Write object to packet. startWriting() must be called before this function.">writeTo</a>(ENetPacket* packet, <span class="keywordtype">size_t</span>&amp; position);
-<a name="l00040"></a>00040             <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a4d42834e0c80453fb03c2b8b2208269f">readFrom</a>(ENetPacket* packet, <span class="keywordtype">size_t</span>&amp; position);
-<a name="l00041"></a>00041 
-<a name="l00042"></a>00042             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a78e4db23f4a198945e69fced2b8d8e9d">update</a>(<span class="keywordtype">bool</span> noclip, <span class="keywordtype">size_t</span> tick);
-<a name="l00043"></a>00043 
-<a name="l00044"></a>00044             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#ab00e0f84e8728647d39a7a2f39f08499">actorMapInsert</a>(<a class="code" href="class_f_a_world_1_1_actor.html">Actor</a>* actor);
-<a name="l00045"></a>00045             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#ac468fcf7f924e14fb12f053b013a22ae">actorMapRemove</a>(<a class="code" href="class_f_a_world_1_1_actor.html">Actor</a>* actor);
-<a name="l00046"></a>00046             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a08683ee87bd15235042842ee79e3d179">actorMapClear</a>();
-<a name="l00047"></a>00047             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a2355286e79388bc995971ba963924a8d">actorMapRefresh</a>();
+<a name="l00006"></a>00006 <span class="preprocessor">#include &quot;<a class="code" href="actor_8h.html">actor.h</a>&quot;</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 <span class="keyword">namespace </span>FARender
+<a name="l00009"></a>00009 {
+<a name="l00010"></a>00010     <span class="keyword">class </span><a class="code" href="namespace_render.html#a0537ce4334a5cbbbf1ed246a12bc1b84">Renderer</a>;
+<a name="l00011"></a>00011 }
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 <span class="keyword">namespace </span>FAWorld
+<a name="l00014"></a>00014 {
+<a name="l00015"></a>00015     <span class="keyword">class </span>Player;
+<a name="l00016"></a>00016 
+<a name="l00017"></a><a class="code" href="class_f_a_world_1_1_game_level.html">00017</a>     <span class="keyword">class </span><a class="code" href="class_f_a_world_1_1_game_level.html">GameLevel</a>
+<a name="l00018"></a>00018     {
+<a name="l00019"></a>00019         <span class="keyword">public</span>:
+<a name="l00020"></a>00020             <a class="code" href="class_f_a_world_1_1_game_level.html">GameLevel</a>(<a class="code" href="class_level_1_1_level.html">Level::Level</a> level, <span class="keywordtype">size_t</span> levelIndex, std::vector&lt;Actor*&gt; actors);
+<a name="l00021"></a>00021             <a class="code" href="class_f_a_world_1_1_game_level.html#a5b9994cc2f77761027e6033589dba834">~GameLevel</a>();
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023             <a class="code" href="class_level_1_1_min_pillar.html">Level::MinPillar</a> <a class="code" href="class_f_a_world_1_1_game_level.html#a77abbe17d598a66968fa502ef9d21a6a">getTile</a>(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y);
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_game_level.html#af36b2f0b685b079cba343778904c5930">width</a>() <span class="keyword">const</span>;
+<a name="l00026"></a>00026             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_game_level.html#ad576185f819af1be6b83418031d0cc58">height</a>() <span class="keyword">const</span>;
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028             <span class="keyword">const</span> std::pair&lt;size_t,size_t&gt;&amp; <a class="code" href="class_f_a_world_1_1_game_level.html#a7d1a99ff55cef3fa2403fe71c399d1b7">upStairsPos</a>() <span class="keyword">const</span>;
+<a name="l00029"></a>00029             <span class="keyword">const</span> std::pair&lt;size_t,size_t&gt;&amp; <a class="code" href="class_f_a_world_1_1_game_level.html#a3b3b248f2460bab086924f9de587d9e2">downStairsPos</a>() <span class="keyword">const</span>;
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#aa5b2e7a080f00c0d4bcc854cdf5fd147">activate</a>(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y);
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a787106006e9f59d23dd00bc13f791adf">getNextLevel</a>();
+<a name="l00034"></a>00034             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a1e23b25cb1a3fbee6457cecf9848745e">getPreviousLevel</a>();
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a78e4db23f4a198945e69fced2b8d8e9d">update</a>(<span class="keywordtype">bool</span> noclip, <span class="keywordtype">size_t</span> tick);
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#ab00e0f84e8728647d39a7a2f39f08499">actorMapInsert</a>(<a class="code" href="class_f_a_world_1_1_actor.html">Actor</a>* actor);
+<a name="l00039"></a>00039             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#ac468fcf7f924e14fb12f053b013a22ae">actorMapRemove</a>(<a class="code" href="class_f_a_world_1_1_actor.html">Actor</a>* actor);
+<a name="l00040"></a>00040             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a08683ee87bd15235042842ee79e3d179">actorMapClear</a>();
+<a name="l00041"></a>00041             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a2355286e79388bc995971ba963924a8d">actorMapRefresh</a>();
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043             <a class="code" href="class_f_a_world_1_1_actor.html">Actor</a>* <a class="code" href="class_f_a_world_1_1_game_level.html#aae6a0535a7d91a41d9174c5e483f6736">getActorAt</a>(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y);
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a189434699b06161f5704156e63665991">addActor</a>(<a class="code" href="class_f_a_world_1_1_actor.html">Actor</a>* actor);
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a20ff87442017fdfbe0c6295673fbde4e">fillRenderState</a>(<a class="code" href="class_f_a_render_1_1_render_state.html">FARender::RenderState</a>* state);
 <a name="l00048"></a>00048 
-<a name="l00049"></a>00049             <a class="code" href="class_f_a_world_1_1_actor.html">Actor</a>* <a class="code" href="class_f_a_world_1_1_game_level.html#aae6a0535a7d91a41d9174c5e483f6736">getActorAt</a>(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y);
+<a name="l00049"></a>00049             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a67b324c701fe60ff4f250a1a6dae11b4">removeActor</a>(<a class="code" href="class_f_a_world_1_1_actor.html">Actor</a>* actor);
 <a name="l00050"></a>00050 
-<a name="l00051"></a>00051             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a189434699b06161f5704156e63665991">addActor</a>(<a class="code" href="class_f_a_world_1_1_actor.html">Actor</a>* actor);
-<a name="l00052"></a>00052 
-<a name="l00053"></a>00053             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a20ff87442017fdfbe0c6295673fbde4e">fillRenderState</a>(<a class="code" href="class_f_a_render_1_1_render_state.html">FARender::RenderState</a>* state);
-<a name="l00054"></a>00054 
-<a name="l00055"></a>00055             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a67b324c701fe60ff4f250a1a6dae11b4">removeActor</a>(<a class="code" href="class_f_a_world_1_1_actor.html">Actor</a>* actor);
-<a name="l00056"></a>00056 
-<a name="l00057"></a><a class="code" href="class_f_a_world_1_1_game_level.html#aa34b6cd6ab73af749fe3a92426b55bb8">00057</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_game_level.html#aa34b6cd6ab73af749fe3a92426b55bb8">getLevelIndex</a>()
-<a name="l00058"></a>00058             {
-<a name="l00059"></a>00059                 <span class="keywordflow">return</span> mLevelIndex;
-<a name="l00060"></a>00060             }
-<a name="l00061"></a>00061 
-<a name="l00062"></a>00062             <span class="keyword">static</span> <a class="code" href="class_f_a_world_1_1_game_level.html">GameLevel</a>* <a class="code" href="class_f_a_world_1_1_game_level.html#a1baa844313c2a3c6bc6ab98043aa8ddb">fromPacket</a>(ENetPacket* packet, <span class="keywordtype">size_t</span>&amp; position);
-<a name="l00063"></a>00063 
-<a name="l00064"></a>00064         <span class="keyword">private</span>:
-<a name="l00065"></a>00065             <a class="code" href="class_f_a_world_1_1_game_level.html">GameLevel</a>() {}
-<a name="l00066"></a>00066 
-<a name="l00067"></a>00067             <a class="code" href="class_level_1_1_level.html">Level::Level</a> mLevel;
-<a name="l00068"></a>00068             <span class="keywordtype">size_t</span> mLevelIndex;
-<a name="l00069"></a>00069 
-<a name="l00070"></a>00070             std::vector&lt;Actor*&gt; mActors;
-<a name="l00071"></a>00071             std::map&lt;std::pair&lt;size_t, size_t&gt;, Actor*&gt; mActorMap2D;    
-<a name="l00072"></a>00072 
-<a name="l00073"></a>00073 
-<a name="l00074"></a>00074             std::string mDataSavingTmp;
+<a name="l00051"></a><a class="code" href="class_f_a_world_1_1_game_level.html#aa34b6cd6ab73af749fe3a92426b55bb8">00051</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_f_a_world_1_1_game_level.html#aa34b6cd6ab73af749fe3a92426b55bb8">getLevelIndex</a>()
+<a name="l00052"></a>00052             {
+<a name="l00053"></a>00053                 <span class="keywordflow">return</span> mLevelIndex;
+<a name="l00054"></a>00054             }
+<a name="l00055"></a>00055 
+<a name="l00056"></a>00056             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#aef29b84a5601eb3593020d266d104b2f">saveToPacket</a>(ENetPacket* packet, <span class="keywordtype">size_t</span>&amp; position);
+<a name="l00057"></a>00057             <span class="keyword">static</span> <a class="code" href="class_f_a_world_1_1_game_level.html">GameLevel</a>* <a class="code" href="class_f_a_world_1_1_game_level.html#a1baa844313c2a3c6bc6ab98043aa8ddb">fromPacket</a>(ENetPacket* packet, <span class="keywordtype">size_t</span>&amp; position);
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059             <a class="code" href="class_f_a_world_1_1_actor.html">Actor</a>* <a class="code" href="class_f_a_world_1_1_game_level.html#ace6b00b81148c4b6b9fd202aa909be5d">getActorById</a>(<span class="keywordtype">size_t</span> <span class="keywordtype">id</span>);
+<a name="l00060"></a>00060 
+<a name="l00061"></a>00061             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_game_level.html#a5121ec15ff24b9fc48f258c52e7b7f87">getActors</a>(std::vector&lt;Actor*&gt;&amp; actors);
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063         <span class="keyword">private</span>:
+<a name="l00064"></a>00064             <a class="code" href="class_f_a_world_1_1_game_level.html">GameLevel</a>() {}
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066             <a class="code" href="class_level_1_1_level.html">Level::Level</a> mLevel;
+<a name="l00067"></a>00067             <span class="keywordtype">size_t</span> mLevelIndex;
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069             std::vector&lt;Actor*&gt; mActors;
+<a name="l00070"></a>00070             std::map&lt;std::pair&lt;size_t, size_t&gt;, Actor*&gt; mActorMap2D;    
+<a name="l00071"></a>00071 
+<a name="l00072"></a><a class="code" href="class_f_a_world_1_1_game_level.html#a8fdb8ee94a1f3cf29477931ba368a66e">00072</a>             <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_f_a_render_1_1_renderer.html">FARender::Renderer</a>;
+<a name="l00073"></a>00073     };
+<a name="l00074"></a>00074 }
 <a name="l00075"></a>00075 
-<a name="l00076"></a><a class="code" href="class_f_a_world_1_1_game_level.html#a8fdb8ee94a1f3cf29477931ba368a66e">00076</a>             <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_f_a_render_1_1_renderer.html">FARender::Renderer</a>;
-<a name="l00077"></a>00077     };
-<a name="l00078"></a>00078 }
-<a name="l00079"></a>00079 
-<a name="l00080"></a>00080 <span class="preprocessor">#endif</span>
+<a name="l00076"></a>00076 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"

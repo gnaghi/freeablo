@@ -60,6 +60,7 @@ var searchData=
   ['soundplay',['soundPlay',['../namespace_engine.html#a1dcbd7e753fb41b7760c029faed80920a7152e1376ce5c146cf9c51518b2e3150',1,'Engine']]],
   ['specifiedarmourclass',['SpecifiedArmourClass',['../class_f_a_world_1_1_item.html#a3bcbdc930154420b49bb318fe536cbeaaea2415ff55c68ba555f19a7dd21918dd',1,'FAWorld::Item']]],
   ['spell',['Spell',['../class_f_a_world_1_1_item.html#a3bcbdc930154420b49bb318fe536cbeaa284fbb3c237d67d95b47df86e3ae34cd',1,'FAWorld::Item']]],
+  ['sprite',['Sprite',['../namespace_engine.html#ac3bcf9b01492be06a1ed501aad5aeebca5cca46d5eeb4639b00332b1f12c434c8',1,'Engine']]],
   ['stored',['STORED',['../inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaa77647f28a49007bb2c1f10fa36f33b55',1,'inflate.h']]],
   ['strength',['Strength',['../class_f_a_world_1_1_actor_stats.html#a39fb57ae737f87a133b81a64abd4c9b5a6c458d0e50f17f4023d13248af7576c3',1,'FAWorld::ActorStats']]],
   ['sync',['SYNC',['../inflate_8h.html#a164ea0159d5f0b5f12a646f25f99eceaa447bfe7992c2fe70bfe561225f74d379',1,'inflate.h']]],

@@ -113,5 +113,6 @@ var searchData=
   ['extra_5flbits',['extra_lbits',['../trees_8c.html#a805b183476b3962fc40c42137cdea492',1,'trees.c']]],
   ['extra_5flen',['extra_len',['../structgz__header__s.html#a271798915d64ae1f0d25a3a814ca0aa3',1,'gz_header_s']]],
   ['extra_5fmax',['extra_max',['../structgz__header__s.html#ada4b174bf7ec0442b1091011c7342ca1',1,'gz_header_s']]],
-  ['extra_5fstate',['EXTRA_STATE',['../deflate_8h.html#affc01bd472ba5f5ad1519c40e20a3778',1,'deflate.h']]]
+  ['extra_5fstate',['EXTRA_STATE',['../deflate_8h.html#affc01bd472ba5f5ad1519c40e20a3778',1,'deflate.h']]],
+  ['netmanager',['NetManager',['../class_f_a_world_1_1_actor.html#ae313696e3157b96c2c65de30abd4fe1f',1,'FAWorld::Actor']]]
 ];

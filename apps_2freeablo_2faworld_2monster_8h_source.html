@@ -95,18 +95,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00012"></a>00012 {
 <a name="l00013"></a><a class="code" href="class_f_a_world_1_1_monster.html">00013</a>     <span class="keyword">class </span><a class="code" href="class_f_a_world_1_1_monster.html">Monster</a>: <span class="keyword">public</span> <a class="code" href="class_f_a_world_1_1_actor.html">Actor</a>
 <a name="l00014"></a>00014     {
-<a name="l00015"></a>00015         <span class="keyword">public</span>:
-<a name="l00016"></a>00016             <a class="code" href="class_f_a_world_1_1_monster.html#ae91522503d90e572897b3d3f36dcc21c">Monster</a>(<span class="keyword">const</span> <a class="code" href="struct_diablo_exe_1_1_monster.html">DiabloExe::Monster</a>&amp; monster, <a class="code" href="class_f_a_world_1_1_position.html">Position</a> pos, <a class="code" href="class_f_a_world_1_1_actor_stats.html">ActorStats</a> * stats=<span class="keyword">nullptr</span>);
-<a name="l00017"></a>00017             std::string <a class="code" href="class_f_a_world_1_1_monster.html#acf4e0ee8418c30d73535ce860353af48">getDieWav</a>();
-<a name="l00018"></a>00018             std::string <a class="code" href="class_f_a_world_1_1_monster.html#a730a8781ca04eddc6c68c4b2b8055d33">getHitWav</a>();
-<a name="l00019"></a>00019 
-<a name="l00020"></a>00020         <span class="keyword">private</span>:
-<a name="l00021"></a>00021             std::string mAnimPath;
-<a name="l00022"></a>00022             std::string mSoundPath;
-<a name="l00023"></a>00023     };
-<a name="l00024"></a>00024 }
-<a name="l00025"></a>00025 
-<a name="l00026"></a>00026 <span class="preprocessor">#endif     </span>
+<a name="l00015"></a>00015         <a class="code" href="netobject_8h.html#aab0c33f65a3296a1b71a125d6e0a70fa">STATIC_NET_OBJECT_SET_CLASS_ID</a>(1)
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017         <span class="keyword">public</span>:
+<a name="l00018"></a>00018             <a class="code" href="class_f_a_world_1_1_monster.html#a45cd66a5c8978940d4278322880c9919">Monster</a>();
+<a name="l00019"></a>00019             <a class="code" href="class_f_a_world_1_1_monster.html#a45cd66a5c8978940d4278322880c9919">Monster</a>(<span class="keyword">const</span> <a class="code" href="struct_diablo_exe_1_1_monster.html">DiabloExe::Monster</a>&amp; monster, <a class="code" href="class_f_a_world_1_1_position.html">Position</a> pos, <a class="code" href="class_f_a_world_1_1_actor_stats.html">ActorStats</a> * stats=<span class="keyword">nullptr</span>);
+<a name="l00020"></a>00020             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_monster.html#a80d8e8f0ace5fbb0c1507a187b3abe75">init</a>();
+<a name="l00021"></a>00021             std::string <a class="code" href="class_f_a_world_1_1_monster.html#acf4e0ee8418c30d73535ce860353af48">getDieWav</a>();
+<a name="l00022"></a>00022             std::string <a class="code" href="class_f_a_world_1_1_monster.html#a730a8781ca04eddc6c68c4b2b8055d33">getHitWav</a>();
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024         <span class="keyword">private</span>:
+<a name="l00025"></a>00025             std::string mAnimPath;
+<a name="l00026"></a>00026             std::string mSoundPath;
+<a name="l00027"></a>00027     };
+<a name="l00028"></a>00028 }
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 <span class="preprocessor">#endif     </span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"

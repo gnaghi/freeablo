@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['netmanager',['NetManager',['../class_engine_1_1_net_manager.html#a4fbbbca7789b8385de286906a537550c',1,'Engine::NetManager']]],
+  ['netmanager',['NetManager',['../class_engine_1_1_net_manager.html#a213ae4bb02889cd8dab377954d9f7ee0',1,'Engine::NetManager']]],
   ['newuniqueindex',['newUniqueIndex',['../class_f_a_render_1_1_sprite_cache.html#aa29b27a49149aac3fb83560d8d05867f',1,'FARender::SpriteCache']]],
   ['next',['next',['../class_f_a_world_1_1_position.html#aaab58152fbd29cfde68a7317dad1f83d',1,'FAWorld::Position']]],
   ['normaldecode',['normalDecode',['../namespace_cel.html#a8954267a3e910349a665f0a1e1c42dba',1,'Cel']]],

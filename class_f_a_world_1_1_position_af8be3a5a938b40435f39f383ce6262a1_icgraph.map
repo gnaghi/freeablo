@@ -1,3 +1,3 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$class_f_a_world_1_1_actor.html#a9efde1147775c12a01e7dd2bb9ffe4d0" title="Must only be called between calls to startWriting() and writeTo()" alt="" coords="264,5,459,35"/>
+<area shape="rect" id="node3" href="$class_f_a_world_1_1_actor.html#a9efde1147775c12a01e7dd2bb9ffe4d0" title="FAWorld::Actor::getWriteSize" alt="" coords="264,5,459,35"/>
 </map>

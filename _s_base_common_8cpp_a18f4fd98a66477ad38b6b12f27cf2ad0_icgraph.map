@@ -38,7 +38,7 @@
 <area shape="rect" id="node47" href="$class_f_a_audio_1_1_audio_manager.html#a1c562d006a318f6c682dd80e6a278996" title="FAAudio::AudioManager::play" alt="" coords="1016,857,1211,887"/>
 <area shape="rect" id="node51" href="$namespace_render.html#a04af26977f421431f3a4569af1b877f4" title="Render::getImageInfo" alt="" coords="1040,964,1187,993"/>
 <area shape="rect" id="node55" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="1009,911,1217,940"/>
-<area shape="rect" id="node53" href="$class_f_a_render_1_1_sprite_cache.html#ad480d3c6ae72f0a19439e542bea9356c" title="To be called from the game thread." alt="" coords="1277,964,1464,993"/>
+<area shape="rect" id="node53" href="$class_f_a_render_1_1_sprite_cache.html#a5936030780a9a97d4c27bca0bb846dd6" title="To be called from the game thread." alt="" coords="1277,964,1464,993"/>
 <area shape="rect" id="node57" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="1305,911,1436,940"/>
 <area shape="rect" id="node75" href="$_storm_lib_8h.html#a8b031afa4f88b4b3705c274a0b5b4f73" title="SFileOpenArchive" alt="" coords="777,217,903,247"/>
 <area shape="rect" id="node77" href="$namespace_f_a_i_o.html#a2c6d08b4256153f34907093724c0f995" title="FAIO::init" alt="" coords="1075,269,1152,299"/>

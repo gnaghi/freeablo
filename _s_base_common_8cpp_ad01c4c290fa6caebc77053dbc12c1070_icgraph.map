@@ -38,7 +38,7 @@
 <area shape="rect" id="node42" href="$class_f_a_audio_1_1_audio_manager.html#a1c562d006a318f6c682dd80e6a278996" title="FAAudio::AudioManager::play" alt="" coords="1040,192,1235,221"/>
 <area shape="rect" id="node46" href="$namespace_render.html#a04af26977f421431f3a4569af1b877f4" title="Render::getImageInfo" alt="" coords="1064,432,1211,461"/>
 <area shape="rect" id="node50" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="1033,365,1241,395"/>
-<area shape="rect" id="node48" href="$class_f_a_render_1_1_sprite_cache.html#ad480d3c6ae72f0a19439e542bea9356c" title="To be called from the game thread." alt="" coords="1301,459,1488,488"/>
+<area shape="rect" id="node48" href="$class_f_a_render_1_1_sprite_cache.html#a5936030780a9a97d4c27bca0bb846dd6" title="To be called from the game thread." alt="" coords="1301,459,1488,488"/>
 <area shape="rect" id="node52" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="1329,299,1460,328"/>
 <area shape="rect" id="node54" href="$namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="1312,352,1477,381"/>
 <area shape="rect" id="node56" href="$namespace_render.html#a05c97dfcb545abc37e57ca717e15f6cc" title="Render::loadResizedSprite" alt="" coords="1305,405,1484,435"/>

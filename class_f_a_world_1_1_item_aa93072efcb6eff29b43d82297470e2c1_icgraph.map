@@ -1,18 +1,17 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$class_f_a_gui_1_1_f_a_python_funcs.html#ab6ebb3e0d60378b1c1efd6e248e28923" title="FAGui::FAPythonFuncs::placeItem" alt="" coords="917,47,1144,77"/>
-<area shape="rect" id="node7" href="$class_f_a_gui_1_1_f_a_python_funcs.html#a02df52cb30147adb14606b296743e23e" title="FAGui::FAPythonFuncs::updateInventory" alt="" coords="217,338,479,367"/>
-<area shape="rect" id="node22" href="$class_f_a_world_1_1_inventory.html#a762bbb4dc49e65cebf08ac6d06906dfd" title="FAWorld::Inventory::canPlaceItem" alt="" coords="237,99,459,129"/>
-<area shape="rect" id="node27" href="$class_f_a_world_1_1_inventory.html#a0dd7b54868aa8320d4c7a84c62ad43f8" title="FAWorld::Inventory::putItem" alt="" coords="605,47,792,77"/>
-<area shape="rect" id="node31" href="$class_f_a_world_1_1_inventory.html#a463cf57748e5f68b5c33f916e109131c" title="FAWorld::Inventory::collectEffects" alt="" coords="237,153,459,182"/>
-<area shape="rect" id="node36" href="$class_f_a_world_1_1_player.html#af4dc40030e9bbac29582ac3a6411df80" title="FAWorld::Player::updateSprite" alt="" coords="249,497,447,526"/>
-<area shape="rect" id="node5" href="$namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="1192,101,1432,130"/>
-<area shape="rect" id="node10" href="$classpython_1_1draggable_1_1_draggable_widget.html#a50ad10d58fa24439e148fdcb549ba73b" title="python.draggable.DraggableWidget.onLoad" alt="" coords="564,311,833,341"/>
-<area shape="rect" id="node12" href="$classpython_1_1draggable_1_1_draggable_widget.html#aff93530fe54fd820022cfa71cd82f303" title="python.draggable.DraggableWidget.onAmuletClick" alt="" coords="541,365,856,394"/>
-<area shape="rect" id="node14" href="$classpython_1_1draggable_1_1_draggable_widget.html#a587cbc720a6c0414b383ae2bf8ec7d3c" title="python.draggable.DraggableWidget.onBodyClick" alt="" coords="548,418,849,447"/>
-<area shape="rect" id="node16" href="$classpython_1_1draggable_1_1_draggable_widget.html#a5dd08355ac329a1f039f137673c8b9d2" title="python.draggable.DraggableWidget.onRingClick" alt="" coords="549,471,848,501"/>
-<area shape="rect" id="node18" href="$classpython_1_1draggable_1_1_draggable_widget.html#a5418bd5677c2caead6e4081912907588" title="python.draggable.DraggableWidget.onWeaponClick" alt="" coords="539,205,859,234"/>
-<area shape="rect" id="node20" href="$classpython_1_1draggable_1_1_draggable_widget.html#aea728a9ca8d1854752b4eecca75790a4" title="python.draggable.DraggableWidget.socketMouseDown" alt="" coords="528,258,869,287"/>
-<area shape="rect" id="node24" href="$class_f_a_gui_1_1_f_a_python_funcs.html#a9cb1351ff5531061ce7f556dbf0cf478" title="FAGui::FAPythonFuncs::canPlace" alt="" coords="920,101,1141,130"/>
-<area shape="rect" id="node34" href="$class_f_a_world_1_1_player_factory.html#a8a732815736b42d20e193d3e845e8a86" title="FAWorld::PlayerFactory::create" alt="" coords="596,151,801,181"/>
-<area shape="rect" id="node38" href="$class_f_a_world_1_1_player.html#a1fbc0f7531b9f039d7a5ef5e07027a8c" title="FAWorld::Player::getCurrentAnim" alt="" coords="591,575,807,605"/>
+<area shape="rect" id="node3" href="$class_f_a_gui_1_1_f_a_python_funcs.html#ab6ebb3e0d60378b1c1efd6e248e28923" title="FAGui::FAPythonFuncs::placeItem" alt="" coords="920,48,1147,77"/>
+<area shape="rect" id="node7" href="$class_f_a_gui_1_1_f_a_python_funcs.html#a02df52cb30147adb14606b296743e23e" title="FAGui::FAPythonFuncs::updateInventory" alt="" coords="219,284,480,313"/>
+<area shape="rect" id="node22" href="$class_f_a_world_1_1_inventory.html#a762bbb4dc49e65cebf08ac6d06906dfd" title="FAWorld::Inventory::canPlaceItem" alt="" coords="239,152,460,181"/>
+<area shape="rect" id="node27" href="$class_f_a_world_1_1_inventory.html#a0dd7b54868aa8320d4c7a84c62ad43f8" title="FAWorld::Inventory::putItem" alt="" coords="608,48,795,77"/>
+<area shape="rect" id="node31" href="$class_f_a_world_1_1_inventory.html#a463cf57748e5f68b5c33f916e109131c" title="FAWorld::Inventory::collectEffects" alt="" coords="239,99,460,128"/>
+<area shape="rect" id="node34" href="$class_f_a_world_1_1_player.html#a239ec7f582207322955e46c428660b64" title="FAWorld::Player::updateSpriteFormatVars" alt="" coords="216,443,483,472"/>
+<area shape="rect" id="node5" href="$namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="1195,101,1435,131"/>
+<area shape="rect" id="node10" href="$classpython_1_1draggable_1_1_draggable_widget.html#a50ad10d58fa24439e148fdcb549ba73b" title="python.draggable.DraggableWidget.onLoad" alt="" coords="567,416,836,445"/>
+<area shape="rect" id="node12" href="$classpython_1_1draggable_1_1_draggable_widget.html#aff93530fe54fd820022cfa71cd82f303" title="python.draggable.DraggableWidget.onAmuletClick" alt="" coords="544,469,859,499"/>
+<area shape="rect" id="node14" href="$classpython_1_1draggable_1_1_draggable_widget.html#a587cbc720a6c0414b383ae2bf8ec7d3c" title="python.draggable.DraggableWidget.onBodyClick" alt="" coords="551,152,852,181"/>
+<area shape="rect" id="node16" href="$classpython_1_1draggable_1_1_draggable_widget.html#a5dd08355ac329a1f039f137673c8b9d2" title="python.draggable.DraggableWidget.onRingClick" alt="" coords="552,205,851,235"/>
+<area shape="rect" id="node18" href="$classpython_1_1draggable_1_1_draggable_widget.html#a5418bd5677c2caead6e4081912907588" title="python.draggable.DraggableWidget.onWeaponClick" alt="" coords="541,259,861,288"/>
+<area shape="rect" id="node20" href="$classpython_1_1draggable_1_1_draggable_widget.html#aea728a9ca8d1854752b4eecca75790a4" title="python.draggable.DraggableWidget.socketMouseDown" alt="" coords="531,363,872,392"/>
+<area shape="rect" id="node24" href="$class_f_a_gui_1_1_f_a_python_funcs.html#a9cb1351ff5531061ce7f556dbf0cf478" title="FAGui::FAPythonFuncs::canPlace" alt="" coords="923,101,1144,131"/>
+<area shape="rect" id="node36" href="$class_f_a_world_1_1_player.html#a49b86ba9b64ebe0fe837ccdcd5af78fb" title="FAWorld::Player::getCurrentAnim" alt="" coords="593,523,809,552"/>
 </map>

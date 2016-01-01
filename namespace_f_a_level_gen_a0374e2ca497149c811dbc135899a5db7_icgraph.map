@@ -4,17 +4,16 @@
 <area shape="rect" id="node7" href="$namespace_f_a_level_gen.html#a3e67d9abf003b6628cc7f4421fef950b" title="FALevelGen::generateTmp" alt="" coords="945,105,1124,135"/>
 <area shape="rect" id="node15" href="$namespace_f_a_level_gen.html#a2f48db4843ed8be1a245fed54a4b7e0b" title="FALevelGen::placeMonsters" alt="" coords="941,159,1128,188"/>
 <area shape="rect" id="node18" href="$namespace_f_a_level_gen.html#a9a5e4ea8044e59b4b5e21115e04d4e9a" title="FALevelGen::chooseOne" alt="" coords="312,211,480,240"/>
-<area shape="rect" id="node24" href="$class_f_a_level_gen_1_1_tile_set.html#a1a94d1a832c5e78a620be556f53c6876" title="FALevelGen::TileSet::getRandomTile" alt="" coords="277,264,515,293"/>
-<area shape="rect" id="node26" href="$class_f_a_world_1_1_actor_stats.html#a7c78d270bd2fb5aea05088954fd1b42f" title="FAWorld::ActorStats::ActorStats" alt="" coords="289,317,503,347"/>
-<area shape="rect" id="node28" href="$class_f_a_world_1_1_character_stats_base.html#aba8310e5bcf49cb098cfd7e4b4e6a902" title="FAWorld::CharacterStatsBase::processEffects" alt="" coords="249,371,543,400"/>
-<area shape="rect" id="node36" href="$class_f_a_world_1_1_item.html#a9b398b8078a2539505e56385c6b0304f" title="FAWorld::Item::Item" alt="" coords="325,424,467,453"/>
-<area shape="rect" id="node38" href="$class_f_a_world_1_1_monster.html#acf4e0ee8418c30d73535ce860353af48" title="FAWorld::Monster::getDieWav" alt="" coords="296,477,496,507"/>
-<area shape="rect" id="node40" href="$class_f_a_world_1_1_monster.html#a730a8781ca04eddc6c68c4b2b8055d33" title="FAWorld::Monster::getHitWav" alt="" coords="297,531,495,560"/>
+<area shape="rect" id="node22" href="$class_f_a_level_gen_1_1_tile_set.html#a1a94d1a832c5e78a620be556f53c6876" title="FALevelGen::TileSet::getRandomTile" alt="" coords="277,264,515,293"/>
+<area shape="rect" id="node24" href="$class_f_a_world_1_1_actor_stats.html#a7c78d270bd2fb5aea05088954fd1b42f" title="FAWorld::ActorStats::ActorStats" alt="" coords="289,317,503,347"/>
+<area shape="rect" id="node26" href="$class_f_a_world_1_1_character_stats_base.html#aba8310e5bcf49cb098cfd7e4b4e6a902" title="FAWorld::CharacterStatsBase::processEffects" alt="" coords="249,371,543,400"/>
+<area shape="rect" id="node34" href="$class_f_a_world_1_1_item.html#a9b398b8078a2539505e56385c6b0304f" title="FAWorld::Item::Item" alt="" coords="325,424,467,453"/>
+<area shape="rect" id="node36" href="$class_f_a_world_1_1_monster.html#acf4e0ee8418c30d73535ce860353af48" title="FAWorld::Monster::getDieWav" alt="" coords="296,477,496,507"/>
+<area shape="rect" id="node38" href="$class_f_a_world_1_1_monster.html#a730a8781ca04eddc6c68c4b2b8055d33" title="FAWorld::Monster::getHitWav" alt="" coords="297,531,495,560"/>
 <area shape="rect" id="node9" href="$namespace_f_a_level_gen.html#acf970d89560068907dc8e5f8a0511161" title="FALevelGen::generate" alt="" coords="1176,132,1328,161"/>
 <area shape="rect" id="node11" href="$class_f_a_world_1_1_world.html#a5f2ca8c8743cc7689ba9227be88f9556" title="FAWorld::World::generateLevels" alt="" coords="1376,132,1587,161"/>
 <area shape="rect" id="node20" href="$class_f_a_world_1_1_player.html#aa4da592bd7d2a7523212fe7ba91b4861" title="FAWorld::Player::attack" alt="" coords="661,211,824,240"/>
-<area shape="rect" id="node22" href="$class_f_a_world_1_1_player.html#a1f1fe37fd8144a89a4f495a760cbd797" title="FAWorld::Player::Player" alt="" coords="953,212,1116,241"/>
-<area shape="rect" id="node30" href="$class_f_a_world_1_1_melee_stats.html#a3374db0e3275cd527b65fa22fc04a7ea" title="FAWorld::MeleeStats::recalculateDerivedStats" alt="" coords="596,317,889,347"/>
-<area shape="rect" id="node32" href="$class_f_a_world_1_1_ranger_stats.html#a329efc41f5fa1d6f4a6644840bd90c86" title="FAWorld::RangerStats::recalculateDerivedStats" alt="" coords="592,371,893,400"/>
-<area shape="rect" id="node34" href="$class_f_a_world_1_1_mage_stats.html#a843c0875266c456177b0b49c335a0a62" title="FAWorld::MageStats::recalculateDerivedStats" alt="" coords="597,424,888,453"/>
+<area shape="rect" id="node28" href="$class_f_a_world_1_1_melee_stats.html#a3374db0e3275cd527b65fa22fc04a7ea" title="FAWorld::MeleeStats::recalculateDerivedStats" alt="" coords="596,317,889,347"/>
+<area shape="rect" id="node30" href="$class_f_a_world_1_1_ranger_stats.html#a329efc41f5fa1d6f4a6644840bd90c86" title="FAWorld::RangerStats::recalculateDerivedStats" alt="" coords="592,371,893,400"/>
+<area shape="rect" id="node32" href="$class_f_a_world_1_1_mage_stats.html#a843c0875266c456177b0b49c335a0a62" title="FAWorld::MageStats::recalculateDerivedStats" alt="" coords="597,424,888,453"/>
 </map>

@@ -1,4 +1,5 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$enginemain_8cpp.html" title="apps/freeablo/engine/enginemain.cpp" alt="" coords="5,83,243,112"/>
-<area shape="rect" id="node5" href="$playerfactory_8cpp.html" title="apps/freeablo/faworld/playerfactory.cpp" alt="" coords="267,83,517,112"/>
+<area shape="rect" id="node5" href="$netmanager_8cpp.html" title="apps/freeablo/engine/netmanager.cpp" alt="" coords="267,83,504,112"/>
+<area shape="rect" id="node7" href="$playerfactory_8cpp.html" title="apps/freeablo/faworld/playerfactory.cpp" alt="" coords="528,83,779,112"/>
 </map>

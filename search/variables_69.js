@@ -1,6 +1,7 @@
 var searchData=
 [
   ['id',['ID',['../structltc__cipher__descriptor.html#a75a932af8e44b27b5952e512a2fe5678',1,'ltc_cipher_descriptor::ID()'],['../structltc__hash__descriptor.html#a6c8fd35cf5797e4c312eb7825e73c625',1,'ltc_hash_descriptor::ID()']]],
+  ['idleanimindex',['idleAnimIndex',['../struct_f_a_world_1_1_actor_net_data.html#ae76672a74abd8400fe168ea83a70adb5',1,'FAWorld::ActorNetData']]],
   ['idleframeset',['idleFrameSet',['../struct_diablo_exe_1_1_monster.html#a3e81053e0fa7f00994f24135ee71508e',1,'DiabloExe::Monster']]],
   ['idleplayback',['idlePlayback',['../struct_diablo_exe_1_1_monster.html#a201fa672fb01295bc7a4203e4c29c367',1,'DiabloExe::Monster']]],
   ['immortal',['immortal',['../struct_f_a_render_1_1_cache_entry.html#a454d9d94d9bdb6ce1b852fe45fbbbb27',1,'FARender::CacheEntry']]],

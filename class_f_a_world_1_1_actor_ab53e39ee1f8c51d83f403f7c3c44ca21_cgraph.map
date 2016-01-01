@@ -1,15 +1,17 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$class_f_a_world_1_1_position.html#af980b9e7511b02011f5605d1254e878e" title="FAWorld::Position::readFrom" alt="" coords="245,42,435,72"/>
-<area shape="rect" id="node5" href="$namespace_engine.html#afc72014886f43e30e3ad11d303d62779" title="Engine::readFromPacket" alt="" coords="535,17,700,46"/>
-<area shape="rect" id="node8" href="$class_f_a_world_1_1_world.html#aa72cae8b62329a79324bce7294236787" title="FAWorld::World::get" alt="" coords="269,96,411,125"/>
-<area shape="rect" id="node10" href="$class_f_a_world_1_1_world.html#a8715034c60fe91ec17c2baf2d57c8e79" title="FAWorld::World::getCurrentPlayer" alt="" coords="229,149,451,178"/>
-<area shape="rect" id="node12" href="$class_f_a_world_1_1_actor.html#a11f7b0f99d17191140088f83d130538e" title="FAWorld::Actor::setLevel" alt="" coords="256,202,424,232"/>
-<area shape="rect" id="node30" href="$class_f_a_world_1_1_actor.html#ac7f3a1a4b5b66da302e257ea3b5c0f58" title="FAWorld::Actor::getLevel" alt="" coords="256,256,424,285"/>
-<area shape="rect" id="node14" href="$class_f_a_world_1_1_game_level.html#aa34b6cd6ab73af749fe3a92426b55bb8" title="FAWorld::GameLevel::getLevelIndex" alt="" coords="500,149,735,178"/>
-<area shape="rect" id="node16" href="$class_f_a_world_1_1_game_level.html#a67b324c701fe60ff4f250a1a6dae11b4" title="FAWorld::GameLevel::removeActor" alt="" coords="503,202,732,232"/>
-<area shape="rect" id="node24" href="$class_f_a_world_1_1_game_level.html#a189434699b06161f5704156e63665991" title="FAWorld::GameLevel::addActor" alt="" coords="515,256,720,285"/>
-<area shape="rect" id="node18" href="$class_f_a_world_1_1_game_level.html#ac468fcf7f924e14fb12f053b013a22ae" title="FAWorld::GameLevel::actorMapRemove" alt="" coords="784,202,1043,232"/>
-<area shape="rect" id="node20" href="$class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090" title="where we are coming from" alt="" coords="1091,202,1267,232"/>
-<area shape="rect" id="node22" href="$class_f_a_world_1_1_position.html#aaab58152fbd29cfde68a7317dad1f83d" title="where we are going to" alt="" coords="1099,256,1259,285"/>
-<area shape="rect" id="node26" href="$class_f_a_world_1_1_game_level.html#ab00e0f84e8728647d39a7a2f39f08499" title="FAWorld::GameLevel::actorMapInsert" alt="" coords="792,256,1035,285"/>
+<area shape="rect" id="node3" href="$class_f_a_world_1_1_position.html#af980b9e7511b02011f5605d1254e878e" title="FAWorld::Position::readFrom" alt="" coords="245,49,435,79"/>
+<area shape="rect" id="node5" href="$namespace_engine.html#afc72014886f43e30e3ad11d303d62779" title="Engine::readFromPacket" alt="" coords="535,24,700,53"/>
+<area shape="rect" id="node8" href="$class_f_a_world_1_1_world.html#aa72cae8b62329a79324bce7294236787" title="FAWorld::World::get" alt="" coords="269,103,411,132"/>
+<area shape="rect" id="node10" href="$class_f_a_world_1_1_world.html#a8715034c60fe91ec17c2baf2d57c8e79" title="FAWorld::World::getCurrentPlayer" alt="" coords="229,156,451,185"/>
+<area shape="rect" id="node12" href="$class_f_a_world_1_1_actor.html#a11f7b0f99d17191140088f83d130538e" title="FAWorld::Actor::setLevel" alt="" coords="256,209,424,239"/>
+<area shape="rect" id="node30" href="$class_f_a_world_1_1_actor.html#ac7f3a1a4b5b66da302e257ea3b5c0f58" title="FAWorld::Actor::getLevel" alt="" coords="256,263,424,292"/>
+<area shape="rect" id="node32" href="$namespace_f_a_render.html#a54135b19ed88b3c269188e8649a55e17" title="FARender::getDefaultSprite" alt="" coords="249,316,431,345"/>
+<area shape="rect" id="node34" href="$namespace_cel.html#a4e01b99470fde6ba49817d25dc1e2bc6" title="Cel::get" alt="" coords="307,369,373,399"/>
+<area shape="rect" id="node14" href="$class_f_a_world_1_1_game_level.html#aa34b6cd6ab73af749fe3a92426b55bb8" title="FAWorld::GameLevel::getLevelIndex" alt="" coords="500,156,735,185"/>
+<area shape="rect" id="node16" href="$class_f_a_world_1_1_game_level.html#a67b324c701fe60ff4f250a1a6dae11b4" title="FAWorld::GameLevel::removeActor" alt="" coords="503,209,732,239"/>
+<area shape="rect" id="node24" href="$class_f_a_world_1_1_game_level.html#a189434699b06161f5704156e63665991" title="FAWorld::GameLevel::addActor" alt="" coords="515,263,720,292"/>
+<area shape="rect" id="node18" href="$class_f_a_world_1_1_game_level.html#ac468fcf7f924e14fb12f053b013a22ae" title="FAWorld::GameLevel::actorMapRemove" alt="" coords="784,209,1043,239"/>
+<area shape="rect" id="node20" href="$class_f_a_world_1_1_position.html#ad3f6fbf7e42940edc332a296a4c27090" title="where we are coming from" alt="" coords="1091,209,1267,239"/>
+<area shape="rect" id="node22" href="$class_f_a_world_1_1_position.html#aaab58152fbd29cfde68a7317dad1f83d" title="where we are going to" alt="" coords="1099,263,1259,292"/>
+<area shape="rect" id="node26" href="$class_f_a_world_1_1_game_level.html#ab00e0f84e8728647d39a7a2f39f08499" title="FAWorld::GameLevel::actorMapInsert" alt="" coords="792,263,1035,292"/>
 </map>

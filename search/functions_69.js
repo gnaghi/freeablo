@@ -20,7 +20,7 @@ var searchData=
   ['inflatesync',['inflateSync',['../inflate_8c.html#a91828dbb3f427115719a892872b414a4',1,'inflate.c']]],
   ['inflatesyncpoint',['inflateSyncPoint',['../inflate_8c.html#a4499ff5c57a6da7b10a834e82c3e5ab8',1,'inflate.c']]],
   ['inflateundermine',['inflateUndermine',['../inflate_8c.html#a8975366f04bd9e4adefd64f6ad6ce362',1,'inflate.c']]],
-  ['init',['init',['../namespace_audio.html#a1bc7922d7669f621d532686d08bb8e41',1,'Audio::init()'],['../namespace_f_a_i_o.html#a2c6d08b4256153f34907093724c0f995',1,'FAIO::init()'],['../namespace_render.html#ab7141139bdd72281f0fdb376d75155d1',1,'Render::init()'],['../namespacepython_1_1docmanage.html#a1c49d189f6b499ed7b6382bba4fc166a',1,'python::docmanage.init()']]],
+  ['init',['init',['../class_f_a_world_1_1_monster.html#a80d8e8f0ace5fbb0c1507a187b3abe75',1,'FAWorld::Monster::init()'],['../namespace_audio.html#a1bc7922d7669f621d532686d08bb8e41',1,'Audio::init()'],['../namespace_f_a_i_o.html#a2c6d08b4256153f34907093724c0f995',1,'FAIO::init()'],['../namespace_render.html#ab7141139bdd72281f0fdb376d75155d1',1,'Render::init()'],['../namespacepython_1_1docmanage.html#a1c49d189f6b499ed7b6382bba4fc166a',1,'python::docmanage.init()']]],
   ['init_5fblock',['init_block',['../trees_8c.html#ac5265fdf07ca6c4cc57769e2fb546d55',1,'trees.c']]],
   ['initgui',['initGui',['../namespace_render.html#a9d96a3416ef7e954ba791f94c24a632c',1,'Render']]],
   ['initializempqcryptography',['InitializeMpqCryptography',['../_s_base_common_8cpp.html#a771e96257f2889763ee169050c798554',1,'InitializeMpqCryptography():&#160;SBaseCommon.cpp'],['../_storm_common_8h.html#a771e96257f2889763ee169050c798554',1,'InitializeMpqCryptography():&#160;SBaseCommon.cpp']]],

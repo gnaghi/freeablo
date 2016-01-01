@@ -1,14 +1,14 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$class_f_a_world_1_1_actor.html#a80e0c4fe4a1dc980a57b9da694cd2362" title="Write object to packet. startWriting() must be called before this function." alt="" coords="297,5,460,35"/>
-<area shape="rect" id="node5" href="$class_f_a_world_1_1_actor.html#a11f7b0f99d17191140088f83d130538e" title="FAWorld::Actor::setLevel" alt="" coords="295,59,463,88"/>
-<area shape="rect" id="node9" href="$class_f_a_world_1_1_player.html#a0fd3d6ce622b0bd7a874c820fa442953" title="FAWorld::Player::setLevel" alt="" coords="292,163,465,192"/>
-<area shape="rect" id="node11" href="$class_f_a_world_1_1_world.html#ae5fed250c5639c9975fda9e35691007b" title="FAWorld::World::setLevel" alt="" coords="553,111,724,140"/>
-<area shape="rect" id="node21" href="$class_f_a_world_1_1_world.html#a1cecdd7a29335885b67df630d476585f" title="FAWorld::World::getCurrentLevelIndex" alt="" coords="516,217,761,247"/>
-<area shape="rect" id="node7" href="$class_f_a_world_1_1_actor.html#ab53e39ee1f8c51d83f403f7c3c44ca21" title="FAWorld::Actor::readFrom" alt="" coords="552,57,725,87"/>
-<area shape="rect" id="node19" href="$class_f_a_world_1_1_world.html#a9fd40c5d4166912a99821e2b58deb88d" title="FAWorld::World::addPlayer" alt="" coords="548,164,729,193"/>
-<area shape="rect" id="node13" href="$class_f_a_save_game_1_1_save_game_manager.html#a850dea5a0a18721bebd30e31bc47410b" title="FASaveGame::SaveGameManager::load" alt="" coords="813,115,1072,144"/>
-<area shape="rect" id="node15" href="$class_f_a_gui_1_1_f_a_python_funcs.html#afbc6e00b8cd71c9d4a7e89739eb3955f" title="FAGui::FAPythonFuncs::loadGame" alt="" coords="1125,128,1352,157"/>
-<area shape="rect" id="node17" href="$namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="1403,159,1643,188"/>
-<area shape="rect" id="node23" href="$class_f_a_save_game_1_1_save_game_manager.html#a68aee19535d06533bc4dd06a872651f7" title="FASaveGame::SaveGameManager::save" alt="" coords="812,191,1073,220"/>
-<area shape="rect" id="node25" href="$class_f_a_gui_1_1_f_a_python_funcs.html#aedaa277fd1fdf292d0205a6ba0d7634d" title="FAGui::FAPythonFuncs::saveGame" alt="" coords="1123,188,1355,217"/>
+<area shape="rect" id="node3" href="$class_f_a_world_1_1_actor.html#a80e0c4fe4a1dc980a57b9da694cd2362" title="Write object to packet." alt="" coords="343,5,505,35"/>
+<area shape="rect" id="node5" href="$class_f_a_world_1_1_actor.html#a11f7b0f99d17191140088f83d130538e" title="FAWorld::Actor::setLevel" alt="" coords="340,59,508,88"/>
+<area shape="rect" id="node9" href="$class_f_a_world_1_1_player.html#a239ec7f582207322955e46c428660b64" title="FAWorld::Player::updateSpriteFormatVars" alt="" coords="291,112,557,141"/>
+<area shape="rect" id="node13" href="$class_f_a_world_1_1_world.html#a1cecdd7a29335885b67df630d476585f" title="FAWorld::World::getCurrentLevelIndex" alt="" coords="301,165,547,195"/>
+<area shape="rect" id="node21" href="$class_f_a_world_1_1_world.html#ae5fed250c5639c9975fda9e35691007b" title="FAWorld::World::setLevel" alt="" coords="339,219,509,248"/>
+<area shape="rect" id="node7" href="$class_f_a_world_1_1_actor.html#ab53e39ee1f8c51d83f403f7c3c44ca21" title="FAWorld::Actor::readFrom" alt="" coords="651,59,824,88"/>
+<area shape="rect" id="node11" href="$class_f_a_world_1_1_player.html#a49b86ba9b64ebe0fe837ccdcd5af78fb" title="FAWorld::Player::getCurrentAnim" alt="" coords="629,112,845,141"/>
+<area shape="rect" id="node15" href="$class_f_a_save_game_1_1_save_game_manager.html#a68aee19535d06533bc4dd06a872651f7" title="FASaveGame::SaveGameManager::save" alt="" coords="607,165,868,195"/>
+<area shape="rect" id="node17" href="$class_f_a_gui_1_1_f_a_python_funcs.html#aedaa277fd1fdf292d0205a6ba0d7634d" title="FAGui::FAPythonFuncs::saveGame" alt="" coords="917,165,1149,195"/>
+<area shape="rect" id="node19" href="$namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="1197,192,1437,221"/>
+<area shape="rect" id="node23" href="$class_f_a_save_game_1_1_save_game_manager.html#a850dea5a0a18721bebd30e31bc47410b" title="FASaveGame::SaveGameManager::load" alt="" coords="608,219,867,248"/>
+<area shape="rect" id="node25" href="$class_f_a_gui_1_1_f_a_python_funcs.html#afbc6e00b8cd71c9d4a7e89739eb3955f" title="FAGui::FAPythonFuncs::loadGame" alt="" coords="920,219,1147,248"/>
 </map>

@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$namespace_f_a_i_o.html#a68409e8d223eec973ba9abdce4e0c6d0" title="FAIO::FAfread" alt="" coords="155,59,261,88"/>
-<area shape="rect" id="node5" href="$_s_file_read_file_8cpp.html#a3c81a68cbecef70ab57c9d3145ef8b7d" title="SFileReadFile" alt="" coords="309,59,413,88"/>
+<area shape="rect" id="node3" href="$namespace_f_a_i_o.html#a68409e8d223eec973ba9abdce4e0c6d0" title="FAIO::FAfread" alt="" coords="155,125,261,155"/>
+<area shape="rect" id="node5" href="$_s_file_read_file_8cpp.html#a3c81a68cbecef70ab57c9d3145ef8b7d" title="SFileReadFile" alt="" coords="309,85,413,115"/>
+<area shape="rect" id="node17" href="$_file_stream_8cpp.html#a10b9a284527af83a44533867b0aff0fc" title="GetLastError" alt="" coords="651,164,747,193"/>
 <area shape="rect" id="node7" href="$_s_base_common_8cpp.html#a3216d5c62d758be099dfa3324cf34dd3" title="IsValidFileHandle" alt="" coords="463,5,585,35"/>
 <area shape="rect" id="node11" href="$_file_stream_8cpp.html#ae12246cf2f9f9aa8e3a6367bd9fa2aed" title="SetLastError" alt="" coords="477,59,571,88"/>
 <area shape="rect" id="node13" href="$_s_base_common_8cpp.html#ace1d87f4df2379a25c5516fbcc027d0c" title="AllocatePatchInfo" alt="" coords="461,112,587,141"/>
 <area shape="rect" id="node9" href="$_s_base_common_8cpp.html#a67882fdf8d424efbb6b2e1f748583a66" title="IsValidMpqHandle" alt="" coords="635,5,763,35"/>
-<area shape="rect" id="node15" href="$_file_stream_8cpp.html#a593f3b1416f7497c28fa5552cd1b3003" title="FileStream_Read" alt="" coords="637,85,760,115"/>
-<area shape="rect" id="node17" href="$_file_stream_8cpp.html#a10b9a284527af83a44533867b0aff0fc" title="GetLastError" alt="" coords="651,139,747,168"/>
+<area shape="rect" id="node15" href="$_file_stream_8cpp.html#a593f3b1416f7497c28fa5552cd1b3003" title="FileStream_Read" alt="" coords="637,111,760,140"/>
 </map>

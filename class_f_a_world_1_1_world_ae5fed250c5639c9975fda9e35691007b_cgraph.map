@@ -1,8 +1,8 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$class_f_a_world_1_1_actor.html#ac7f3a1a4b5b66da302e257ea3b5c0f58" title="FAWorld::Actor::getLevel" alt="" coords="273,5,441,35"/>
-<area shape="rect" id="node5" href="$class_f_a_world_1_1_game_level.html#aa34b6cd6ab73af749fe3a92426b55bb8" title="FAWorld::GameLevel::getLevelIndex" alt="" coords="537,84,772,113"/>
-<area shape="rect" id="node7" href="$class_f_a_world_1_1_player.html#a0fd3d6ce622b0bd7a874c820fa442953" title="FAWorld::Player::setLevel" alt="" coords="271,109,444,139"/>
-<area shape="rect" id="node10" href="$class_f_a_audio_1_1_audio_manager.html#a0aa00bbb6d2feddb861ab0d5f2e157a9" title="FAAudio::AudioManager::playLevelMusic" alt="" coords="227,163,488,192"/>
-<area shape="rect" id="node14" href="$class_engine_1_1_thread_manager.html#a27827da1557a748ed2bb248d50d7a1ca" title="Engine::ThreadManager::get" alt="" coords="264,216,451,245"/>
-<area shape="rect" id="node12" href="$class_engine_1_1_thread_manager.html#aaa7f2f075f9237f1d684833b31c69556" title="Engine::ThreadManager::playMusic" alt="" coords="541,163,768,192"/>
+<area shape="rect" id="node5" href="$class_f_a_world_1_1_game_level.html#aa34b6cd6ab73af749fe3a92426b55bb8" title="FAWorld::GameLevel::getLevelIndex" alt="" coords="240,59,475,88"/>
+<area shape="rect" id="node7" href="$class_f_a_world_1_1_player.html#a0fd3d6ce622b0bd7a874c820fa442953" title="FAWorld::Player::setLevel" alt="" coords="271,112,444,141"/>
+<area shape="rect" id="node9" href="$class_f_a_audio_1_1_audio_manager.html#a0aa00bbb6d2feddb861ab0d5f2e157a9" title="FAAudio::AudioManager::playLevelMusic" alt="" coords="227,165,488,195"/>
+<area shape="rect" id="node13" href="$class_engine_1_1_thread_manager.html#a27827da1557a748ed2bb248d50d7a1ca" title="Engine::ThreadManager::get" alt="" coords="264,219,451,248"/>
+<area shape="rect" id="node11" href="$class_engine_1_1_thread_manager.html#aaa7f2f075f9237f1d684833b31c69556" title="Engine::ThreadManager::playMusic" alt="" coords="536,165,763,195"/>
 </map>

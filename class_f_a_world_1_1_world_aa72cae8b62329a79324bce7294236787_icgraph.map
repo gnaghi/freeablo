@@ -1,6 +1,9 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$class_f_a_gui_1_1_f_a_python_funcs.html#aedaa277fd1fdf292d0205a6ba0d7634d" title="FAGui::FAPythonFuncs::saveGame" alt="" coords="195,5,427,35"/>
 <area shape="rect" id="node7" href="$class_f_a_gui_1_1_f_a_python_funcs.html#afbc6e00b8cd71c9d4a7e89739eb3955f" title="FAGui::FAPythonFuncs::loadGame" alt="" coords="197,59,424,88"/>
-<area shape="rect" id="node10" href="$class_f_a_world_1_1_actor.html#ab53e39ee1f8c51d83f403f7c3c44ca21" title="FAWorld::Actor::readFrom" alt="" coords="224,112,397,141"/>
+<area shape="rect" id="node10" href="$class_f_a_world_1_1_actor.html#a210d7366b718ee9366442a98f940d083" title="FAWorld::Actor::update" alt="" coords="232,112,389,141"/>
+<area shape="rect" id="node16" href="$class_f_a_world_1_1_actor.html#ab53e39ee1f8c51d83f403f7c3c44ca21" title="FAWorld::Actor::readFrom" alt="" coords="224,165,397,195"/>
 <area shape="rect" id="node5" href="$namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="475,32,715,61"/>
+<area shape="rect" id="node12" href="$class_f_a_world_1_1_game_level.html#a78e4db23f4a198945e69fced2b8d8e9d" title="FAWorld::GameLevel::update" alt="" coords="497,112,692,141"/>
+<area shape="rect" id="node14" href="$class_f_a_world_1_1_world.html#ae6d290feac7ac6ff400062d847722daf" title="FAWorld::World::update" alt="" coords="763,112,925,141"/>
 </map>

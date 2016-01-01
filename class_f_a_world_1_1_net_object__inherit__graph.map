@@ -1,7 +1,6 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$class_f_a_world_1_1_actor.html" title="FAWorld::Actor" alt="" coords="87,83,199,112"/>
-<area shape="rect" id="node9" href="$class_f_a_world_1_1_game_level.html" title="FAWorld::GameLevel" alt="" coords="223,83,369,112"/>
-<area shape="rect" id="node11" href="$class_f_a_world_1_1_position.html" title="FAWorld::Position" alt="" coords="393,83,521,112"/>
+<area shape="rect" id="node9" href="$class_f_a_world_1_1_position.html" title="FAWorld::Position" alt="" coords="223,83,351,112"/>
 <area shape="rect" id="node5" href="$class_f_a_world_1_1_monster.html" title="FAWorld::Monster" alt="" coords="5,160,133,189"/>
 <area shape="rect" id="node7" href="$class_f_a_world_1_1_player.html" title="FAWorld::Player" alt="" coords="157,160,275,189"/>
 </map>

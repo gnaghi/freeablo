@@ -21,9 +21,9 @@
 <area shape="rect" id="node21" href="$class_f_a_audio_1_1_audio_manager.html#a1c562d006a318f6c682dd80e6a278996" title="FAAudio::AudioManager::play" alt="" coords="880,59,1075,88"/>
 <area shape="rect" id="node25" href="$namespace_render.html#a04af26977f421431f3a4569af1b877f4" title="Render::getImageInfo" alt="" coords="904,339,1051,368"/>
 <area shape="rect" id="node45" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="873,405,1081,435"/>
-<area shape="rect" id="node27" href="$class_f_a_render_1_1_sprite_cache.html#ad480d3c6ae72f0a19439e542bea9356c" title="To be called from the game thread." alt="" coords="1141,312,1328,341"/>
-<area shape="rect" id="node29" href="$class_f_a_render_1_1_sprite_manager.html#aea2af871429cd9ac16e419e17ec03da5" title="To be called from the game thread." alt="" coords="1377,312,1575,341"/>
-<area shape="rect" id="node31" href="$class_f_a_render_1_1_renderer.html#ac3bcc5a3217058dc2a3ce0469cbbd37a" title="FARender::Renderer::loadImage" alt="" coords="1624,285,1835,315"/>
+<area shape="rect" id="node27" href="$class_f_a_render_1_1_sprite_cache.html#a5936030780a9a97d4c27bca0bb846dd6" title="To be called from the game thread." alt="" coords="1141,312,1328,341"/>
+<area shape="rect" id="node29" href="$class_f_a_render_1_1_sprite_manager.html#a3406a2bb2d8eac40abbc7e68fd3bbd6f" title="To be called from the game thread." alt="" coords="1377,312,1575,341"/>
+<area shape="rect" id="node31" href="$class_f_a_render_1_1_renderer.html#a622fe982bc63abe4cd5a17612764af3c" title="FARender::Renderer::loadImage" alt="" coords="1624,285,1835,315"/>
 <area shape="rect" id="node35" href="$class_f_a_render_1_1_renderer.html#aa73fae0f49236c7a83fa6b01a9e5e8d4" title="FARender::Renderer::setCursor" alt="" coords="1627,339,1832,368"/>
 <area shape="rect" id="node33" href="$class_f_a_world_1_1_actor.html#ab9e28a0505dc7a3040e249c563badd37" title="FAWorld::Actor::Actor" alt="" coords="1920,285,2069,315"/>
 <area shape="rect" id="node37" href="$class_f_a_render_1_1_renderer.html#ad6e983189d6cf6b7aaef89d54ed89396" title="To be called only by Engine::ThreadManager." alt="" coords="1884,339,2105,368"/>

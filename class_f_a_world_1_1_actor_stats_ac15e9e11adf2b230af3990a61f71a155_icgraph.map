@@ -2,8 +2,8 @@
 <area shape="rect" id="node3" href="$class_f_a_world_1_1_actor_stats.html#a9437600fb7e625274e5f47c8755b1456" title="FAWorld::ActorStats::levelUp" alt="" coords="359,5,553,35"/>
 <area shape="rect" id="node5" href="$class_f_a_world_1_1_actor_stats.html#afb866790046769f326bb375137b6fb54" title="FAWorld::ActorStats::ActorStats" alt="" coords="349,59,563,88"/>
 <area shape="rect" id="node7" href="$class_f_a_world_1_1_inventory.html#a463cf57748e5f68b5c33f916e109131c" title="FAWorld::Inventory::collectEffects" alt="" coords="345,112,567,141"/>
-<area shape="rect" id="node15" href="$class_f_a_world_1_1_player_factory.html#a8a732815736b42d20e193d3e845e8a86" title="FAWorld::PlayerFactory::create" alt="" coords="617,164,823,193"/>
-<area shape="rect" id="node9" href="$class_f_a_world_1_1_inventory.html#a0dd7b54868aa8320d4c7a84c62ad43f8" title="FAWorld::Inventory::putItem" alt="" coords="627,111,813,140"/>
-<area shape="rect" id="node11" href="$class_f_a_gui_1_1_f_a_python_funcs.html#ab6ebb3e0d60378b1c1efd6e248e28923" title="FAGui::FAPythonFuncs::placeItem" alt="" coords="872,111,1099,140"/>
-<area shape="rect" id="node13" href="$namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="1147,111,1387,140"/>
+<area shape="rect" id="node15" href="$class_f_a_world_1_1_player_factory.html#aabd1362661310a4a4ecf57197686a29c" title="FAWorld::PlayerFactory::create" alt="" coords="353,165,559,195"/>
+<area shape="rect" id="node9" href="$class_f_a_world_1_1_inventory.html#a0dd7b54868aa8320d4c7a84c62ad43f8" title="FAWorld::Inventory::putItem" alt="" coords="616,112,803,141"/>
+<area shape="rect" id="node11" href="$class_f_a_gui_1_1_f_a_python_funcs.html#ab6ebb3e0d60378b1c1efd6e248e28923" title="FAGui::FAPythonFuncs::placeItem" alt="" coords="851,112,1077,141"/>
+<area shape="rect" id="node13" href="$namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="1125,112,1365,141"/>
 </map>

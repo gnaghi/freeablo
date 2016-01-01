@@ -113,7 +113,7 @@ Collaboration diagram for FARender::RenderState:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_f_a_render_1_1_render_state__coll__graph.png" border="0" usemap="#_f_a_render_1_1_render_state_coll__map" alt="Collaboration graph"/></div>
 <map name="_f_a_render_1_1_render_state_coll__map" id="_f_a_render_1_1_render_state_coll__map">
-<area shape="rect" id="node2" href="class_f_a_world_1_1_position.html" title="FAWorld::Position" alt="" coords="5,85,133,115"/><area shape="rect" id="node4" href="class_f_a_world_1_1_net_object.html" title="FAWorld::NetObject" alt="" coords="96,5,235,35"/><area shape="rect" id="node10" href="class_f_a_world_1_1_game_level.html" title="FAWorld::GameLevel" alt="" coords="157,85,304,115"/><area shape="rect" id="node6" href="class_f_a_render_1_1_tileset.html" title="FARender::Tileset" alt="" coords="328,85,456,115"/><area shape="rect" id="node8" href="class_f_a_render_1_1_f_a_sprite_group.html" title="FARender::FASpriteGroup" alt="" coords="480,85,653,115"/></map>
+<area shape="rect" id="node2" href="class_f_a_world_1_1_position.html" title="FAWorld::Position" alt="" coords="11,85,139,115"/><area shape="rect" id="node4" href="class_f_a_world_1_1_net_object.html" title="FAWorld::NetObject" alt="" coords="5,5,144,35"/><area shape="rect" id="node6" href="class_f_a_render_1_1_tileset.html" title="FARender::Tileset" alt="" coords="163,85,291,115"/><area shape="rect" id="node8" href="class_f_a_render_1_1_f_a_sprite_group.html" title="FARender::FASpriteGroup" alt="" coords="315,85,488,115"/><area shape="rect" id="node10" href="class_f_a_world_1_1_game_level.html" title="FAWorld::GameLevel" alt="" coords="512,85,659,115"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="class_f_a_render_1_1_render_state-members.html">List of all members.</a></p>
@@ -126,13 +126,13 @@ Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_render_state.html#acb8ae6ba47157fca1505481b85294aa0">ready</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_position.html">FAWorld::Position</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_render_state.html#a347886c74bdbcfd0d2e538c3e23f4f77">mPos</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::tuple<br class="typebreak"/>
-&lt; <a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a>, size_t, <br class="typebreak"/>
-<a class="el" href="class_f_a_world_1_1_position.html">FAWorld::Position</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_render_state.html#a9ce8ffeb7af14e22cdc313eaeb94f1b4">mObjects</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">group, index into group, and position  <a href="#a9ce8ffeb7af14e22cdc313eaeb94f1b4"></a><br/></td></tr>
+&lt; <a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a> *, size_t, <br class="typebreak"/>
+<a class="el" href="class_f_a_world_1_1_position.html">FAWorld::Position</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_render_state.html#a1a00aeefbde876dacd697056c810e6c1">mObjects</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">group, index into group, and position  <a href="#a1a00aeefbde876dacd697056c810e6c1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_draw_command.html">DrawCommand</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_render_state.html#a1a577b49d90d12ae9541277c1e6bc570">guiDrawBuffer</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_render_1_1_tileset.html">Tileset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_render_state.html#a56727a6cd928940bf1c9f5b79498d043">tileset</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_game_level.html">FAWorld::GameLevel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_render_state.html#a8dc48363c72bfde9de1a193945776910">level</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_render_state.html#ad80902bb04228c65b66a05699a300fd2">mCursorSpriteGroup</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_render_state.html#ad62f6520e196c2797be262493b1e8a39">mCursorSpriteGroup</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_render_state.html#a9aaff6dfbbd5255cc1309aea5a7ef8de">mCursorFrame</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_render_1_1_render_state.html#ac4f65c3f76c1d3de8fd94b7443e7de2b">mCursorEmpty</a></td></tr>
 </table>
@@ -206,12 +206,12 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad80902bb04228c65b66a05699a300fd2"></a><!-- doxytag: member="FARender::RenderState::mCursorSpriteGroup" ref="ad80902bb04228c65b66a05699a300fd2" args="" -->
+<a class="anchor" id="ad62f6520e196c2797be262493b1e8a39"></a><!-- doxytag: member="FARender::RenderState::mCursorSpriteGroup" ref="ad62f6520e196c2797be262493b1e8a39" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a> <a class="el" href="class_f_a_render_1_1_render_state.html#ad80902bb04228c65b66a05699a300fd2">FARender::RenderState::mCursorSpriteGroup</a></td>
+          <td class="memname"><a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a>* <a class="el" href="class_f_a_render_1_1_render_state.html#ad62f6520e196c2797be262493b1e8a39">FARender::RenderState::mCursorSpriteGroup</a></td>
         </tr>
       </table>
 </div>
@@ -219,12 +219,12 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9ce8ffeb7af14e22cdc313eaeb94f1b4"></a><!-- doxytag: member="FARender::RenderState::mObjects" ref="a9ce8ffeb7af14e22cdc313eaeb94f1b4" args="" -->
+<a class="anchor" id="a1a00aeefbde876dacd697056c810e6c1"></a><!-- doxytag: member="FARender::RenderState::mObjects" ref="a1a00aeefbde876dacd697056c810e6c1" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::tuple&lt;<a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a>, size_t, <a class="el" href="class_f_a_world_1_1_position.html">FAWorld::Position</a>&gt; &gt; <a class="el" href="class_f_a_render_1_1_render_state.html#a9ce8ffeb7af14e22cdc313eaeb94f1b4">FARender::RenderState::mObjects</a></td>
+          <td class="memname">std::vector&lt;std::tuple&lt;<a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a>*, size_t, <a class="el" href="class_f_a_world_1_1_position.html">FAWorld::Position</a>&gt; &gt; <a class="el" href="class_f_a_render_1_1_render_state.html#a1a00aeefbde876dacd697056c810e6c1">FARender::RenderState::mObjects</a></td>
         </tr>
       </table>
 </div>

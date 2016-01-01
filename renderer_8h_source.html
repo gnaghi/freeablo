@@ -112,8 +112,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00029"></a><a class="code" href="class_f_a_render_1_1_tileset.html">00029</a>     <span class="keyword">class </span><a class="code" href="class_f_a_render_1_1_tileset.html">Tileset</a>
 <a name="l00030"></a>00030     {
 <a name="l00031"></a>00031         <span class="keyword">private</span>:
-<a name="l00032"></a>00032             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a> minTops;
-<a name="l00033"></a>00033             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a> minBottoms;
+<a name="l00032"></a>00032             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a>* minTops;
+<a name="l00033"></a>00033             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a>* minBottoms;
 <a name="l00034"></a><a class="code" href="class_f_a_render_1_1_tileset.html#a70538530bc36e033e360880ef311df61">00034</a>             <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_f_a_render_1_1_renderer.html">Renderer</a>;
 <a name="l00035"></a>00035     };
 <a name="l00036"></a>00036 
@@ -125,7 +125,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00042"></a>00042 
 <a name="l00043"></a><a class="code" href="class_f_a_render_1_1_render_state.html#a347886c74bdbcfd0d2e538c3e23f4f77">00043</a>         <a class="code" href="class_f_a_world_1_1_position.html">FAWorld::Position</a> <a class="code" href="class_f_a_render_1_1_render_state.html#a347886c74bdbcfd0d2e538c3e23f4f77">mPos</a>;
 <a name="l00044"></a>00044 
-<a name="l00045"></a><a class="code" href="class_f_a_render_1_1_render_state.html#a9ce8ffeb7af14e22cdc313eaeb94f1b4">00045</a>         std::vector&lt;std::tuple&lt;FASpriteGroup, size_t, FAWorld::Position&gt; &gt; <a class="code" href="class_f_a_render_1_1_render_state.html#a9ce8ffeb7af14e22cdc313eaeb94f1b4" title="group, index into group, and position">mObjects</a>; 
+<a name="l00045"></a><a class="code" href="class_f_a_render_1_1_render_state.html#a1a00aeefbde876dacd697056c810e6c1">00045</a>         std::vector&lt;std::tuple&lt;FASpriteGroup*, size_t, FAWorld::Position&gt; &gt; <a class="code" href="class_f_a_render_1_1_render_state.html#a1a00aeefbde876dacd697056c810e6c1" title="group, index into group, and position">mObjects</a>; 
 <a name="l00046"></a>00046 
 <a name="l00047"></a><a class="code" href="class_f_a_render_1_1_render_state.html#a1a577b49d90d12ae9541277c1e6bc570">00047</a>         std::vector&lt;DrawCommand&gt; <a class="code" href="class_f_a_render_1_1_render_state.html#a1a577b49d90d12ae9541277c1e6bc570">guiDrawBuffer</a>;
 <a name="l00048"></a>00048 
@@ -133,7 +133,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00050"></a>00050 
 <a name="l00051"></a><a class="code" href="class_f_a_render_1_1_render_state.html#a8dc48363c72bfde9de1a193945776910">00051</a>         <a class="code" href="class_f_a_world_1_1_game_level.html">FAWorld::GameLevel</a>* <a class="code" href="class_f_a_render_1_1_render_state.html#a8dc48363c72bfde9de1a193945776910">level</a>;
 <a name="l00052"></a>00052 
-<a name="l00053"></a><a class="code" href="class_f_a_render_1_1_render_state.html#ad80902bb04228c65b66a05699a300fd2">00053</a>         <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a> <a class="code" href="class_f_a_render_1_1_render_state.html#ad80902bb04228c65b66a05699a300fd2">mCursorSpriteGroup</a>;
+<a name="l00053"></a><a class="code" href="class_f_a_render_1_1_render_state.html#ad62f6520e196c2797be262493b1e8a39">00053</a>         <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a>* <a class="code" href="class_f_a_render_1_1_render_state.html#ad62f6520e196c2797be262493b1e8a39">mCursorSpriteGroup</a>;
 <a name="l00054"></a><a class="code" href="class_f_a_render_1_1_render_state.html#a9aaff6dfbbd5255cc1309aea5a7ef8de">00054</a>         uint32_t <a class="code" href="class_f_a_render_1_1_render_state.html#a9aaff6dfbbd5255cc1309aea5a7ef8de">mCursorFrame</a>;
 <a name="l00055"></a>00055 
 <a name="l00056"></a><a class="code" href="class_f_a_render_1_1_render_state.html#ac4f65c3f76c1d3de8fd94b7443e7de2b">00056</a>         <span class="keywordtype">bool</span> <a class="code" href="class_f_a_render_1_1_render_state.html#ac4f65c3f76c1d3de8fd94b7443e7de2b">mCursorEmpty</a>;
@@ -141,57 +141,62 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00058"></a><a class="code" href="class_f_a_render_1_1_render_state.html#a1d019091f5cb8b148bec91b3be2fd25f">00058</a>         <a class="code" href="class_f_a_render_1_1_render_state.html#a1d019091f5cb8b148bec91b3be2fd25f">RenderState</a>():<a class="code" href="class_f_a_render_1_1_render_state.html#acb8ae6ba47157fca1505481b85294aa0">ready</a>(<a class="code" href="_storm_port_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>) {}
 <a name="l00059"></a>00059     };
 <a name="l00060"></a>00060 
-<a name="l00061"></a><a class="code" href="class_f_a_render_1_1_renderer.html">00061</a>     <span class="keyword">class </span><a class="code" href="class_f_a_render_1_1_renderer.html">Renderer</a>
-<a name="l00062"></a>00062     {
-<a name="l00063"></a>00063         <span class="keyword">public</span>:
-<a name="l00064"></a>00064             <span class="keyword">static</span> <a class="code" href="class_f_a_render_1_1_renderer.html">Renderer</a>* <span class="keyword">get</span>();
-<a name="l00065"></a>00065             
-<a name="l00066"></a>00066             <a class="code" href="class_f_a_render_1_1_renderer.html#a5b93bce5ac2b91f51a877ee509d53161">Renderer</a>(int32_t windowWidth, int32_t windowHeight, <span class="keywordtype">bool</span> fullscreen);
-<a name="l00067"></a>00067             <a class="code" href="class_f_a_render_1_1_renderer.html#a17cafafba0a56840930eca4014ae129a">~Renderer</a>();
-<a name="l00068"></a>00068 
-<a name="l00069"></a>00069             <span class="keywordtype">void</span> <a class="code" href="class_f_a_render_1_1_renderer.html#aac0b2a11008ad9c45caff4410e974f07">stop</a>();
-<a name="l00070"></a>00070             <span class="keywordtype">void</span> <a class="code" href="class_f_a_render_1_1_renderer.html#af9ab7eeb8c34adaace5a29e82945e756">waitUntilDone</a>();
-<a name="l00071"></a>00071 
-<a name="l00072"></a>00072             <a class="code" href="class_f_a_render_1_1_tileset.html">Tileset</a> <a class="code" href="class_f_a_render_1_1_renderer.html#a8b24a99e7bba3ef06fbed07f56d7dbc1">getTileset</a>(<span class="keyword">const</span> <a class="code" href="class_f_a_world_1_1_game_level.html">FAWorld::GameLevel</a>&amp; level);
+<a name="l00061"></a>00061     FASpriteGroup* <a class="code" href="namespace_f_a_render.html#a54135b19ed88b3c269188e8649a55e17">getDefaultSprite</a>();
+<a name="l00062"></a>00062 
+<a name="l00063"></a><a class="code" href="class_f_a_render_1_1_renderer.html">00063</a>     <span class="keyword">class </span><a class="code" href="class_f_a_render_1_1_renderer.html">Renderer</a>
+<a name="l00064"></a>00064     {
+<a name="l00065"></a>00065         <span class="keyword">public</span>:
+<a name="l00066"></a>00066             <span class="keyword">static</span> <a class="code" href="class_f_a_render_1_1_renderer.html">Renderer</a>* <span class="keyword">get</span>();
+<a name="l00067"></a>00067             
+<a name="l00068"></a>00068             <a class="code" href="class_f_a_render_1_1_renderer.html#a5b93bce5ac2b91f51a877ee509d53161">Renderer</a>(int32_t windowWidth, int32_t windowHeight, <span class="keywordtype">bool</span> fullscreen);
+<a name="l00069"></a>00069             <a class="code" href="class_f_a_render_1_1_renderer.html#a17cafafba0a56840930eca4014ae129a">~Renderer</a>();
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071             <span class="keywordtype">void</span> <a class="code" href="class_f_a_render_1_1_renderer.html#aac0b2a11008ad9c45caff4410e974f07">stop</a>();
+<a name="l00072"></a>00072             <span class="keywordtype">void</span> <a class="code" href="class_f_a_render_1_1_renderer.html#af9ab7eeb8c34adaace5a29e82945e756">waitUntilDone</a>();
 <a name="l00073"></a>00073 
-<a name="l00074"></a>00074             <a class="code" href="class_f_a_render_1_1_render_state.html">RenderState</a>* <a class="code" href="class_f_a_render_1_1_renderer.html#ac4c33c3a19e242d3cda304a56a719e9a">getFreeState</a>(); <span class="comment">// ooh ah up de ra</span>
-<a name="l00075"></a>00075             <span class="keywordtype">void</span> <a class="code" href="class_f_a_render_1_1_renderer.html#a7f17e5a5e8d490f7bedcc0b2c2e48918">setCurrentState</a>(<a class="code" href="class_f_a_render_1_1_render_state.html">RenderState</a>* current);
-<a name="l00076"></a>00076 
-<a name="l00077"></a>00077             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a> <a class="code" href="class_f_a_render_1_1_renderer.html#ac3bcc5a3217058dc2a3ce0469cbbd37a">loadImage</a>(<span class="keyword">const</span> std::string&amp; path);
+<a name="l00074"></a>00074             <a class="code" href="class_f_a_render_1_1_tileset.html">Tileset</a> <a class="code" href="class_f_a_render_1_1_renderer.html#a8b24a99e7bba3ef06fbed07f56d7dbc1">getTileset</a>(<span class="keyword">const</span> <a class="code" href="class_f_a_world_1_1_game_level.html">FAWorld::GameLevel</a>&amp; level);
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076             <a class="code" href="class_f_a_render_1_1_render_state.html">RenderState</a>* <a class="code" href="class_f_a_render_1_1_renderer.html#ac4c33c3a19e242d3cda304a56a719e9a">getFreeState</a>(); <span class="comment">// ooh ah up de ra</span>
+<a name="l00077"></a>00077             <span class="keywordtype">void</span> <a class="code" href="class_f_a_render_1_1_renderer.html#a7f17e5a5e8d490f7bedcc0b2c2e48918">setCurrentState</a>(<a class="code" href="class_f_a_render_1_1_render_state.html">RenderState</a>* current);
 <a name="l00078"></a>00078 
-<a name="l00079"></a>00079             std::pair&lt;size_t, size_t&gt; <a class="code" href="class_f_a_render_1_1_renderer.html#ae176ae9d9cfbcc40bb248f000f22acf4">getClickedTile</a>(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y, <span class="keyword">const</span> <a class="code" href="class_f_a_world_1_1_game_level.html">FAWorld::GameLevel</a>&amp; level, <span class="keyword">const</span> <a class="code" href="class_f_a_world_1_1_position.html">FAWorld::Position</a>&amp; screenPos);
-<a name="l00080"></a>00080 
-<a name="l00081"></a>00081             <a class="code" href="namespace_render.html#a3d0be4ed74c9d5fd5ca6f4e25d2b9bcb">Rocket::Core::Context</a>* <a class="code" href="class_f_a_render_1_1_renderer.html#a9f198f6d107afbe18b9f68231c4b2b8c">getRocketContext</a>();
-<a name="l00082"></a>00082 
-<a name="l00083"></a>00083             <span class="keywordtype">void</span> <a class="code" href="class_f_a_render_1_1_renderer.html#aa73fae0f49236c7a83fa6b01a9e5e8d4">setCursor</a>(<a class="code" href="class_f_a_render_1_1_render_state.html">RenderState</a> *State);
-<a name="l00084"></a>00084 
-<a name="l00085"></a>00085             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_render_1_1_renderer.html#ad6e983189d6cf6b7aaef89d54ed89396" title="To be called only by Engine::ThreadManager.">renderFrame</a>(<a class="code" href="class_f_a_render_1_1_render_state.html">RenderState</a>* state); 
-<a name="l00086"></a>00086             <span class="keywordtype">void</span> <a class="code" href="class_f_a_render_1_1_renderer.html#a7c3143aefd6b3454e511ed572dad79c9" title="To be called only by Engine::ThreadManager.">cleanup</a>(); 
+<a name="l00079"></a>00079             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a>* <a class="code" href="class_f_a_render_1_1_renderer.html#a622fe982bc63abe4cd5a17612764af3c">loadImage</a>(<span class="keyword">const</span> std::string&amp; path);
+<a name="l00080"></a>00080             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FASpriteGroup</a>* <a class="code" href="class_f_a_render_1_1_renderer.html#a75f2bd7eda157c44d882f7488f69bbba">loadServerImage</a>(<span class="keywordtype">size_t</span> index);
+<a name="l00081"></a>00081             <span class="keywordtype">void</span> <a class="code" href="class_f_a_render_1_1_renderer.html#a1064847ac7a7bab03072c46f08d4a112">fillServerSprite</a>(<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> std::string&amp; path);
+<a name="l00082"></a>00082             std::string <a class="code" href="class_f_a_render_1_1_renderer.html#a1bf18a380ff6f2ce3c473963f93269f9">getPathForIndex</a>(<span class="keywordtype">size_t</span> index);
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084             std::pair&lt;size_t, size_t&gt; <a class="code" href="class_f_a_render_1_1_renderer.html#ae176ae9d9cfbcc40bb248f000f22acf4">getClickedTile</a>(<span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y, <span class="keyword">const</span> <a class="code" href="class_f_a_world_1_1_game_level.html">FAWorld::GameLevel</a>&amp; level, <span class="keyword">const</span> <a class="code" href="class_f_a_world_1_1_position.html">FAWorld::Position</a>&amp; screenPos);
+<a name="l00085"></a>00085 
+<a name="l00086"></a>00086             <a class="code" href="namespace_render.html#a3d0be4ed74c9d5fd5ca6f4e25d2b9bcb">Rocket::Core::Context</a>* <a class="code" href="class_f_a_render_1_1_renderer.html#a9f198f6d107afbe18b9f68231c4b2b8c">getRocketContext</a>();
 <a name="l00087"></a>00087 
-<a name="l00088"></a>00088             
-<a name="l00089"></a>00089         <span class="keyword">private</span>:
-<a name="l00090"></a>00090             <span class="keywordtype">bool</span> loadGuiTextureFunc(Rocket::Core::TextureHandle&amp; texture_handle, Rocket::Core::Vector2i&amp; texture_dimensions, <span class="keyword">const</span> Rocket::Core::String&amp; source);
-<a name="l00091"></a>00091             <span class="keywordtype">bool</span> generateGuiTextureFunc(Rocket::Core::TextureHandle&amp; texture_handle, <span class="keyword">const</span> <a class="code" href="tomcrypt__macros_8h.html#a76134035baa59a42ca0b5b8fb99d9d53">Rocket::Core::byte</a>* source, <span class="keyword">const</span> Rocket::Core::Vector2i&amp; source_dimensions);
-<a name="l00092"></a>00092             <span class="keywordtype">void</span> releaseGuiTextureFunc(Rocket::Core::TextureHandle texture_handle);
-<a name="l00093"></a>00093 
-<a name="l00094"></a>00094             <span class="keyword">static</span> Renderer* mRenderer; 
-<a name="l00095"></a>00095 
-<a name="l00096"></a>00096             std::atomic_bool mDone;
-<a name="l00097"></a>00097             Render::LevelObjects mLevelObjects;
+<a name="l00088"></a>00088             <span class="keywordtype">void</span> <a class="code" href="class_f_a_render_1_1_renderer.html#aa73fae0f49236c7a83fa6b01a9e5e8d4">setCursor</a>(<a class="code" href="class_f_a_render_1_1_render_state.html">RenderState</a> *State);
+<a name="l00089"></a>00089 
+<a name="l00090"></a>00090             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_render_1_1_renderer.html#ad6e983189d6cf6b7aaef89d54ed89396" title="To be called only by Engine::ThreadManager.">renderFrame</a>(<a class="code" href="class_f_a_render_1_1_render_state.html">RenderState</a>* state); 
+<a name="l00091"></a>00091             <span class="keywordtype">void</span> <a class="code" href="class_f_a_render_1_1_renderer.html#a7c3143aefd6b3454e511ed572dad79c9" title="To be called only by Engine::ThreadManager.">cleanup</a>(); 
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093             
+<a name="l00094"></a>00094         <span class="keyword">private</span>:
+<a name="l00095"></a>00095             <span class="keywordtype">bool</span> loadGuiTextureFunc(Rocket::Core::TextureHandle&amp; texture_handle, Rocket::Core::Vector2i&amp; texture_dimensions, <span class="keyword">const</span> Rocket::Core::String&amp; source);
+<a name="l00096"></a>00096             <span class="keywordtype">bool</span> generateGuiTextureFunc(Rocket::Core::TextureHandle&amp; texture_handle, <span class="keyword">const</span> <a class="code" href="tomcrypt__macros_8h.html#a76134035baa59a42ca0b5b8fb99d9d53">Rocket::Core::byte</a>* source, <span class="keyword">const</span> Rocket::Core::Vector2i&amp; source_dimensions);
+<a name="l00097"></a>00097             <span class="keywordtype">void</span> releaseGuiTextureFunc(Rocket::Core::TextureHandle texture_handle);
 <a name="l00098"></a>00098 
-<a name="l00099"></a>00099             <a class="code" href="class_f_a_render_1_1_render_state.html">RenderState</a> mStates[15];
+<a name="l00099"></a>00099             <span class="keyword">static</span> Renderer* mRenderer; 
 <a name="l00100"></a>00100 
-<a name="l00101"></a>00101             <a class="code" href="namespace_render.html#a3d0be4ed74c9d5fd5ca6f4e25d2b9bcb">Rocket::Core::Context</a>* mRocketContext;
-<a name="l00102"></a>00102 
-<a name="l00103"></a>00103             <a class="code" href="class_f_a_render_1_1_sprite_manager.html" title="Manager for game sprites. Mostly just a wrapper for SpriteCache, see that for documentation of member...">SpriteManager</a> mSpriteManager;
-<a name="l00104"></a>00104 
-<a name="l00105"></a>00105             <span class="keyword">volatile</span> <span class="keywordtype">bool</span> mAlreadyExited = <span class="keyword">false</span>;
-<a name="l00106"></a>00106             std::mutex mDoneMutex;
-<a name="l00107"></a>00107             std::condition_variable mDoneCV;
-<a name="l00108"></a>00108     };
-<a name="l00109"></a>00109 }
-<a name="l00110"></a>00110 
-<a name="l00111"></a>00111 <span class="preprocessor">#endif</span>
+<a name="l00101"></a>00101             std::atomic_bool mDone;
+<a name="l00102"></a>00102             Render::LevelObjects mLevelObjects;
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104             <a class="code" href="class_f_a_render_1_1_render_state.html">RenderState</a> mStates[15];
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106             <a class="code" href="namespace_render.html#a3d0be4ed74c9d5fd5ca6f4e25d2b9bcb">Rocket::Core::Context</a>* mRocketContext;
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108             <a class="code" href="class_f_a_render_1_1_sprite_manager.html" title="Manager for game sprites. Mostly just a wrapper for SpriteCache, see that for documentation of member...">SpriteManager</a> mSpriteManager;
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110             <span class="keyword">volatile</span> <span class="keywordtype">bool</span> mAlreadyExited = <span class="keyword">false</span>;
+<a name="l00111"></a>00111             std::mutex mDoneMutex;
+<a name="l00112"></a>00112             std::condition_variable mDoneCV;
+<a name="l00113"></a>00113     };
+<a name="l00114"></a>00114 }
+<a name="l00115"></a>00115 
+<a name="l00116"></a>00116 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
