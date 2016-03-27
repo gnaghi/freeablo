@@ -2,11 +2,12 @@
 <area shape="rect" id="node3" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="283,212,491,241"/>
 <area shape="rect" id="node11" href="$namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="567,109,732,139"/>
 <area shape="rect" id="node14" href="$namespace_render.html#a05c97dfcb545abc37e57ca717e15f6cc" title="Render::loadResizedSprite" alt="" coords="560,163,739,192"/>
-<area shape="rect" id="node19" href="$namespace_render.html#abdc1ed403712a032c4f1a150d4e7550e" title="Render::loadCelToSingleTexture" alt="" coords="544,5,755,35"/>
-<area shape="rect" id="node22" href="$class_render_1_1_sprite_group.html#aed43edd9c6f4f124541483fc9c3f19f9" title="Render::SpriteGroup::SpriteGroup" alt="" coords="277,265,496,295"/>
-<area shape="rect" id="node24" href="$class_render_1_1_sprite_group.html#ac3be63d0ef9141cd581700e8c2bddecc" title="Render::SpriteGroup::toPng" alt="" coords="296,319,477,348"/>
-<area shape="rect" id="node26" href="$namespace_render.html#a5b51432e4c169b5593556ea7ceebce69" title="Render::loadTilesetSprite" alt="" coords="303,57,471,87"/>
+<area shape="rect" id="node17" href="$namespace_render.html#a6677c983912e2231696f463898e1a744" title="Render::loadTiledTexture" alt="" coords="565,269,733,299"/>
+<area shape="rect" id="node22" href="$namespace_render.html#abdc1ed403712a032c4f1a150d4e7550e" title="Render::loadCelToSingleTexture" alt="" coords="544,56,755,85"/>
+<area shape="rect" id="node26" href="$class_render_1_1_sprite_group.html#aed43edd9c6f4f124541483fc9c3f19f9" title="Render::SpriteGroup::SpriteGroup" alt="" coords="277,316,496,345"/>
+<area shape="rect" id="node28" href="$class_render_1_1_sprite_group.html#ac3be63d0ef9141cd581700e8c2bddecc" title="Render::SpriteGroup::toPng" alt="" coords="296,369,477,399"/>
+<area shape="rect" id="node30" href="$namespace_render.html#a5b51432e4c169b5593556ea7ceebce69" title="Render::loadTilesetSprite" alt="" coords="303,5,471,35"/>
 <area shape="rect" id="node5" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="584,216,715,245"/>
-<area shape="rect" id="node7" href="$class_f_a_render_1_1_sprite_cache.html#ada6cb9dd393a5d7a0a794f7fbf12b5e7" title="To be called from the render thread." alt="" coords="809,109,996,139"/>
+<area shape="rect" id="node7" href="$class_f_a_render_1_1_sprite_cache.html#ada6cb9dd393a5d7a0a794f7fbf12b5e7" title="To be called from the render thread." alt="" coords="809,136,996,165"/>
 <area shape="rect" id="node9" href="$class_f_a_render_1_1_sprite_manager.html#aba6477a1788e19b1e953fe354785807f" title="To be called from the render thread." alt="" coords="804,216,1001,245"/>
 </map>

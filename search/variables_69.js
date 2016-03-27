@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['id',['ID',['../structltc__cipher__descriptor.html#a75a932af8e44b27b5952e512a2fe5678',1,'ltc_cipher_descriptor::ID()'],['../structltc__hash__descriptor.html#a6c8fd35cf5797e4c312eb7825e73c625',1,'ltc_hash_descriptor::ID()']]],
+  ['id',['id',['../class_diablo_exe_1_1_npc.html#a81beb322c74de3fc2151dcd38dcb1b41',1,'DiabloExe::Npc::id()'],['../structltc__cipher__descriptor.html#a75a932af8e44b27b5952e512a2fe5678',1,'ltc_cipher_descriptor::ID()'],['../structltc__hash__descriptor.html#a6c8fd35cf5797e4c312eb7825e73c625',1,'ltc_hash_descriptor::ID()']]],
   ['id_5fregex',['ID_REGEX',['../namespacepump.html#aeb704d1604781cf5d90d39354db65c8e',1,'pump']]],
   ['identifier',['identifier',['../classpump_1_1_var_node.html#aa2b634e2443646c3754f2d193efa4dc7',1,'pump::VarNode::identifier()'],['../classpump_1_1_range_node.html#ae75b9f31ba8c3bd048cf09b22035efa0',1,'pump::RangeNode::identifier()'],['../classpump_1_1_for_node.html#a2444199e135e43696b3a006bd0d38982',1,'pump::ForNode::identifier()']]],
   ['identifying_5fattribute',['identifying_attribute',['../classgtest__xml__test__utils_1_1_g_test_x_m_l_test_case.html#a0e3a4e84e18f29d2248dcd670a0a6ae6',1,'gtest_xml_test_utils::GTestXMLTestCase']]],
@@ -41,6 +41,7 @@ var searchData=
   ['inuse',['inUse',['../struct_e_state.html#a1e9b34981e1bbbb106c6eeccad9cd668',1,'EState::inUse()'],['../struct_d_state.html#ab33d14c6ab3b51d51bcb871ace899f5f',1,'DState::inUse()']]],
   ['inuse16',['inUse16',['../struct_d_state.html#ad03fbe8be0d8aed6ff951d667b6b2f4a',1,'DState']]],
   ['invclass',['invClass',['../class_f_a_gui_1_1_gui_manager.html#abac92caf7513a1c62573cf3aca7b2372',1,'FAGui::GuiManager']]],
+  ['inventoryfile',['InventoryFile',['../classpython_1_1docmanage_1_1_doc_manager.html#ab2db0b3ad448f35ca923f6d181ba80c7',1,'python::docmanage::DocManager']]],
   ['invmod',['invmod',['../structltc__math__descriptor.html#ad2e720c56a1845b76a9a53383e6b4ec8',1,'ltc_math_descriptor']]],
   ['is_5fcygwin',['IS_CYGWIN',['../namespacegtest__test__utils.html#a558fdaa283c04acfcd68df5e1948bf72',1,'gtest_test_utils']]],
   ['is_5flinux',['IS_LINUX',['../namespacegtest__env__var__test.html#acfd2c189ee451a16bdab04852e72d607',1,'gtest_env_var_test.IS_LINUX()'],['../namespacegtest__help__test.html#abf917c3861b5f0016812262653f8a984',1,'gtest_help_test.IS_LINUX()']]],
@@ -55,6 +56,7 @@ var searchData=
   ['isrepg0',['isRepG0',['../struct_c_save_state.html#a6f2fdae6a84089f2cafa4e8d33085751',1,'CSaveState::isRepG0()'],['../struct_c_lzma_enc.html#a831e32c1d8d85543ef8733dc8889fcb9',1,'CLzmaEnc::isRepG0()']]],
   ['isrepg1',['isRepG1',['../struct_c_save_state.html#a5e7db0167c452882bb49918fd0a4882a',1,'CSaveState::isRepG1()'],['../struct_c_lzma_enc.html#ac1c4f8fae6ec6aeeabad8de50e76cd05',1,'CLzmaEnc::isRepG1()']]],
   ['isrepg2',['isRepG2',['../struct_c_save_state.html#a14fc44cc38d3506a04eb09f5311f4532',1,'CSaveState::isRepG2()'],['../struct_c_lzma_enc.html#afab03df8c9c3c462e548decf7c0ee3be',1,'CLzmaEnc::isRepG2()']]],
+  ['istalking',['isTalking',['../class_f_a_world_1_1_actor.html#a28a757ce1289834aab96e6a56179a411',1,'FAWorld::Actor']]],
   ['it',['it',['../struct_f_a_render_1_1_cache_entry.html#a2fd4cb7d58794cd787785bcdf15a396f',1,'FARender::CacheEntry']]],
   ['itembuffer',['ItemBuffer',['../class_t_huffmann_tree.html#ab8fd636b667d0e490aa02355b3d00198',1,'THuffmannTree']]],
   ['itemcode',['itemCode',['../class_diablo_exe_1_1_base_item.html#acd9aa40a4558ef85a11b0390b43261e0',1,'DiabloExe::BaseItem']]],

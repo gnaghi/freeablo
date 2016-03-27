@@ -1,17 +1,18 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="172,35,380,64"/>
-<area shape="rect" id="node11" href="$namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="456,59,621,88"/>
+<area shape="rect" id="node3" href="$namespace_render.html#a104d79dc130b58dd05645cc9ddfbe307" title="Render::loadNonCelImageTrans" alt="" coords="172,61,380,91"/>
+<area shape="rect" id="node11" href="$namespace_render.html#ac6568e7174aad7806fee63be8c2cca9c" title="Render::loadVanimSprite" alt="" coords="456,5,621,35"/>
 <area shape="rect" id="node14" href="$namespace_render.html#a05c97dfcb545abc37e57ca717e15f6cc" title="Render::loadResizedSprite" alt="" coords="449,112,628,141"/>
-<area shape="rect" id="node19" href="$namespace_render.html#a8384399aba8d9bca82788367f744016f" title="Render::drawFrame" alt="" coords="208,217,344,247"/>
-<area shape="rect" id="node5" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="473,5,604,35"/>
-<area shape="rect" id="node7" href="$class_f_a_render_1_1_sprite_cache.html#ada6cb9dd393a5d7a0a794f7fbf12b5e7" title="To be called from the render thread." alt="" coords="1432,136,1619,165"/>
-<area shape="rect" id="node9" href="$class_f_a_render_1_1_sprite_manager.html#aba6477a1788e19b1e953fe354785807f" title="To be called from the render thread." alt="" coords="697,33,895,63"/>
-<area shape="rect" id="node21" href="$namespace_render.html#abdc1ed403712a032c4f1a150d4e7550e" title="Render::loadCelToSingleTexture" alt="" coords="1173,189,1384,219"/>
-<area shape="rect" id="node24" href="$class_render_1_1_sprite_group.html#aed43edd9c6f4f124541483fc9c3f19f9" title="Render::SpriteGroup::SpriteGroup" alt="" coords="429,323,648,352"/>
-<area shape="rect" id="node26" href="$class_render_1_1_sprite_group.html#ac3be63d0ef9141cd581700e8c2bddecc" title="Render::SpriteGroup::toPng" alt="" coords="448,165,629,195"/>
-<area shape="rect" id="node28" href="$namespace_render.html#a3bbdc70f166ed8419fcfa4d292258b6a" title="Render::drawMinTile" alt="" coords="468,269,609,299"/>
-<area shape="rect" id="node30" href="$namespace_render.html#aa3495cd25236e295a183dc4c70932ecd" title="Render::drawMinPillar" alt="" coords="721,269,871,299"/>
-<area shape="rect" id="node32" href="$namespace_render.html#ab52f404c5feb88408defadb935b310e5" title="Render::drawMinPillarTop" alt="" coords="949,323,1120,352"/>
-<area shape="rect" id="node37" href="$namespace_render.html#a17a1ce99e9825ff602e9834cb8a7a409" title="Render::drawMinPillarBase" alt="" coords="945,269,1124,299"/>
-<area shape="rect" id="node34" href="$namespace_render.html#a5b51432e4c169b5593556ea7ceebce69" title="Render::loadTilesetSprite" alt="" coords="1195,269,1363,299"/>
+<area shape="rect" id="node17" href="$namespace_render.html#a6677c983912e2231696f463898e1a744" title="Render::loadTiledTexture" alt="" coords="455,165,623,195"/>
+<area shape="rect" id="node23" href="$namespace_render.html#a8384399aba8d9bca82788367f744016f" title="Render::drawFrame" alt="" coords="208,269,344,299"/>
+<area shape="rect" id="node5" href="$namespace_render.html#a39ae636123baef1a7d42446331c82b28" title="Render::loadSprite" alt="" coords="473,59,604,88"/>
+<area shape="rect" id="node7" href="$class_f_a_render_1_1_sprite_cache.html#ada6cb9dd393a5d7a0a794f7fbf12b5e7" title="To be called from the render thread." alt="" coords="1432,140,1619,169"/>
+<area shape="rect" id="node9" href="$class_f_a_render_1_1_sprite_manager.html#aba6477a1788e19b1e953fe354785807f" title="To be called from the render thread." alt="" coords="697,63,895,92"/>
+<area shape="rect" id="node25" href="$namespace_render.html#abdc1ed403712a032c4f1a150d4e7550e" title="Render::loadCelToSingleTexture" alt="" coords="1173,217,1384,247"/>
+<area shape="rect" id="node28" href="$class_render_1_1_sprite_group.html#aed43edd9c6f4f124541483fc9c3f19f9" title="Render::SpriteGroup::SpriteGroup" alt="" coords="429,323,648,352"/>
+<area shape="rect" id="node30" href="$class_render_1_1_sprite_group.html#ac3be63d0ef9141cd581700e8c2bddecc" title="Render::SpriteGroup::toPng" alt="" coords="448,376,629,405"/>
+<area shape="rect" id="node32" href="$namespace_render.html#a3bbdc70f166ed8419fcfa4d292258b6a" title="Render::drawMinTile" alt="" coords="468,269,609,299"/>
+<area shape="rect" id="node34" href="$namespace_render.html#aa3495cd25236e295a183dc4c70932ecd" title="Render::drawMinPillar" alt="" coords="721,269,871,299"/>
+<area shape="rect" id="node36" href="$namespace_render.html#ab52f404c5feb88408defadb935b310e5" title="Render::drawMinPillarTop" alt="" coords="949,269,1120,299"/>
+<area shape="rect" id="node41" href="$namespace_render.html#a17a1ce99e9825ff602e9834cb8a7a409" title="Render::drawMinPillarBase" alt="" coords="945,323,1124,352"/>
+<area shape="rect" id="node38" href="$namespace_render.html#a5b51432e4c169b5593556ea7ceebce69" title="Render::loadTilesetSprite" alt="" coords="1195,271,1363,300"/>
 </map>

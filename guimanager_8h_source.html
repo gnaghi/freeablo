@@ -118,67 +118,76 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00035"></a>00035         };
 <a name="l00036"></a>00036 
 <a name="l00037"></a>00037         <a class="code" href="class_f_a_gui_1_1_gui_manager.html#afb827f9b028aafa83fa870a609b126f2">GuiManager</a>(<a class="code" href="class_f_a_world_1_1_inventory.html">FAWorld::Inventory</a> &amp;playerInventory, <a class="code" href="class_engine_1_1_engine_main.html">Engine::EngineMain</a>&amp; <a class="code" href="readme_8md.html#a0c672cf8c51ac9f910731bbd3cea24ca">engine</a>, <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#abac92caf7513a1c62573cf3aca7b2372">invClass</a>);
-<a name="l00038"></a>00038         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#ae6c3b065cf29ca67f74658a165f640cc">showTitleScreen</a>();
-<a name="l00039"></a>00039         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#af7667c4778fe6db955c3b32399213c97">showIngameGui</a>();
-<a name="l00040"></a>00040         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a517ba5e01a779fd93d2773c8976cd55f">showMainMenu</a>();
-<a name="l00041"></a>00041         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#afd9b15932f5c4e1ec963b468f59762f7">showCredits</a>();
-<a name="l00042"></a>00042         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#aa9529fccef92a768f871614fccbf6ebe">showSelectHeroMenu</a>(<span class="keywordtype">bool</span> fade);
-<a name="l00043"></a>00043         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#ab150be448d19219034998dac1c0b2f66">showChooseClassMenu</a>();
-<a name="l00044"></a>00044         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a73228101d7934dce8cda355499b22214">showSaveFileExistsMenu</a>(<span class="keywordtype">int</span> classNumber);
-<a name="l00045"></a>00045         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a316001c6914e78f667f6029e82c6840c">showEnterNameMenu</a>(<span class="keywordtype">int</span> classNumber);
-<a name="l00046"></a>00046         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a4a047459b9bca575ec28dcd18b48a9a8">showInvalidNameMenu</a>(<span class="keywordtype">int</span> classNumber);
-<a name="l00047"></a>00047         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#ad2d1e040339127fda9527be6437ff2b7">update</a>(<span class="keywordtype">bool</span> paused);
-<a name="l00048"></a>00048         <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754">GuiType</a> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#aedbc8c6e4b08c31c4208ea7b43dca4b3">currentGuiType</a>() <span class="keyword">const</span>;
-<a name="l00049"></a><a class="code" href="class_f_a_gui_1_1_gui_manager.html#abac92caf7513a1c62573cf3aca7b2372">00049</a>         <span class="keyword">static</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#abac92caf7513a1c62573cf3aca7b2372">invClass</a>;
-<a name="l00050"></a>00050 
-<a name="l00051"></a><a class="code" href="class_f_a_gui_1_1_gui_manager.html#af197a9c0cd40de81ac10a78865817c75">00051</a>         <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html">FAPythonFuncs</a> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#af197a9c0cd40de81ac10a78865817c75">mPythonFuncs</a>;
-<a name="l00052"></a>00052 
-<a name="l00053"></a>00053     <span class="keyword">private</span>:
-<a name="l00054"></a>00054 
-<a name="l00055"></a>00055         <span class="keyword">enum</span> State
-<a name="l00056"></a>00056         {
-<a name="l00057"></a>00057             FadeIn,
-<a name="l00058"></a>00058             FadeOut,
-<a name="l00059"></a>00059         };
-<a name="l00060"></a>00060 
-<a name="l00061"></a>00061         <span class="keywordtype">void</span> showMainMenuCallback();
-<a name="l00062"></a>00062         <span class="keywordtype">void</span> showCreditsCallback();
-<a name="l00063"></a>00063         <span class="keywordtype">void</span> showSelectHeroMenuCallback();
-<a name="l00064"></a>00064         <span class="keywordtype">void</span> showSelectHeroMenuNoFadeCallback();
-<a name="l00065"></a>00065 
-<a name="l00066"></a>00066         <span class="keywordtype">void</span> startFadeIn(Rocket::Core::ElementDocument *);
-<a name="l00067"></a>00067         <span class="keywordtype">void</span> startFadeOut(std::function&lt;<span class="keywordtype">void</span>(<a class="code" href="class_f_a_gui_1_1_gui_manager.html">GuiManager</a>&amp;)&gt; callback);
-<a name="l00068"></a>00068 
-<a name="l00069"></a>00069         <span class="keywordtype">void</span> updateFadeIn();
-<a name="l00070"></a>00070         <span class="keywordtype">void</span> updateFadeOut();
-<a name="l00071"></a>00071 
-<a name="l00072"></a>00072         <span class="keywordtype">void</span> stopFadeIn();
-<a name="l00073"></a>00073         <span class="keywordtype">void</span> stopFadeOut();
-<a name="l00074"></a>00074 
-<a name="l00075"></a>00075         <span class="keywordtype">void</span> hideFadeElement();
-<a name="l00076"></a>00076         <span class="keywordtype">void</span> showFadeElement();
-<a name="l00077"></a>00077 
-<a name="l00078"></a>00078         <span class="keywordtype">void</span> computeFadeDelta();
-<a name="l00079"></a>00079 
-<a name="l00080"></a>00080         <span class="keywordtype">void</span> updateGui(<span class="keywordtype">bool</span> paused);
-<a name="l00081"></a>00081         <span class="keywordtype">void</span> hideAllMenus();
-<a name="l00082"></a>00082 
-<a name="l00083"></a>00083         std::function&lt;void(GuiManager&amp;)&gt; mFadeOutCallback;
-<a name="l00084"></a>00084         <span class="keywordtype">float</span> mFadeDelta;
-<a name="l00085"></a>00085         <span class="keywordtype">float</span> mFadeValue;
-<a name="l00086"></a>00086         Rocket::Core::ElementDocument * mFadeCurrentDocument;
-<a name="l00087"></a>00087         std::queue&lt;State&gt; mStateQueue;
-<a name="l00088"></a>00088         <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754">GuiType</a> mCurrentGuiType;
-<a name="l00089"></a>00089         std::chrono::system_clock::time_point mStartTime;
-<a name="l00090"></a>00090         std::shared_ptr&lt;ScrollBox&gt; mCreditsScrollBox;
-<a name="l00091"></a>00091     };
-<a name="l00092"></a>00092 
-<a name="l00093"></a>00093     <span class="keyword">extern</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> <a class="code" href="namespace_f_a_gui.html#a0ca1b6902b9ba1e9dd10b09bcc9cea0d">cursorPath</a>;
-<a name="l00094"></a>00094 
-<a name="l00095"></a>00095     <span class="keyword">extern</span> uint32_t <a class="code" href="namespace_f_a_gui.html#aaeaebbc0ee052537ce05c78358f6d9ca">cursorFrame</a>;
-<a name="l00096"></a>00096 }
-<a name="l00097"></a>00097 
-<a name="l00098"></a>00098 <span class="preprocessor">#endif</span>
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#aec069d2a4bcb858c362fd0e5f4780bcf">openDialogue</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; document);
+<a name="l00040"></a>00040         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a709be93f3891ff52a560cfda84a97b1b">closeDialogue</a>();
+<a name="l00041"></a>00041         <span class="keywordtype">bool</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#ae86669ccf24b0b93589a49ff48614f2b">isDialogueOpened</a>() <span class="keyword">const</span>;
+<a name="l00042"></a>00042         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#abb2bfd980a0ee9d54e9ec862e93e061f">openDialogueScrollbox</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; document);
+<a name="l00043"></a>00043         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a216aeefb9a353349e7f85862fd03d888">closeDialogueScrollbox</a>();
+<a name="l00044"></a>00044         <span class="keywordtype">bool</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a4f0045aec831a30f47a73dae03cd5b1c">isDialogueScrollboxOpened</a>() <span class="keyword">const</span>;
+<a name="l00045"></a>00045         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#ae6c3b065cf29ca67f74658a165f640cc">showTitleScreen</a>();
+<a name="l00046"></a>00046         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#af7667c4778fe6db955c3b32399213c97">showIngameGui</a>();
+<a name="l00047"></a>00047         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a517ba5e01a779fd93d2773c8976cd55f">showMainMenu</a>();
+<a name="l00048"></a>00048         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#afd9b15932f5c4e1ec963b468f59762f7">showCredits</a>();
+<a name="l00049"></a>00049         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#aa9529fccef92a768f871614fccbf6ebe">showSelectHeroMenu</a>(<span class="keywordtype">bool</span> fade);
+<a name="l00050"></a>00050         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#ab150be448d19219034998dac1c0b2f66">showChooseClassMenu</a>();
+<a name="l00051"></a>00051         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a73228101d7934dce8cda355499b22214">showSaveFileExistsMenu</a>(<span class="keywordtype">int</span> classNumber);
+<a name="l00052"></a>00052         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a316001c6914e78f667f6029e82c6840c">showEnterNameMenu</a>(<span class="keywordtype">int</span> classNumber);
+<a name="l00053"></a>00053         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a4a047459b9bca575ec28dcd18b48a9a8">showInvalidNameMenu</a>(<span class="keywordtype">int</span> classNumber);
+<a name="l00054"></a>00054         <span class="keywordtype">void</span> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#ad2d1e040339127fda9527be6437ff2b7">update</a>(<span class="keywordtype">bool</span> paused);
+<a name="l00055"></a>00055         <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754">GuiType</a> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#aedbc8c6e4b08c31c4208ea7b43dca4b3">currentGuiType</a>() <span class="keyword">const</span>;
+<a name="l00056"></a><a class="code" href="class_f_a_gui_1_1_gui_manager.html#abac92caf7513a1c62573cf3aca7b2372">00056</a>         <span class="keyword">static</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#abac92caf7513a1c62573cf3aca7b2372">invClass</a>;
+<a name="l00057"></a>00057 
+<a name="l00058"></a><a class="code" href="class_f_a_gui_1_1_gui_manager.html#af197a9c0cd40de81ac10a78865817c75">00058</a>         <a class="code" href="class_f_a_gui_1_1_f_a_python_funcs.html">FAPythonFuncs</a> <a class="code" href="class_f_a_gui_1_1_gui_manager.html#af197a9c0cd40de81ac10a78865817c75">mPythonFuncs</a>;
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060     <span class="keyword">private</span>:
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062         <span class="keyword">enum</span> State
+<a name="l00063"></a>00063         {
+<a name="l00064"></a>00064             FadeIn,
+<a name="l00065"></a>00065             FadeOut,
+<a name="l00066"></a>00066         };
+<a name="l00067"></a>00067 
+<a name="l00068"></a>00068         <span class="keywordtype">void</span> showMainMenuCallback();
+<a name="l00069"></a>00069         <span class="keywordtype">void</span> showCreditsCallback();
+<a name="l00070"></a>00070         <span class="keywordtype">void</span> showSelectHeroMenuCallback();
+<a name="l00071"></a>00071         <span class="keywordtype">void</span> showSelectHeroMenuNoFadeCallback();
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073         <span class="keywordtype">void</span> startFadeIn(Rocket::Core::ElementDocument *);
+<a name="l00074"></a>00074         <span class="keywordtype">void</span> startFadeOut(std::function&lt;<span class="keywordtype">void</span>(<a class="code" href="class_f_a_gui_1_1_gui_manager.html">GuiManager</a>&amp;)&gt; callback);
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076         <span class="keywordtype">void</span> updateFadeIn();
+<a name="l00077"></a>00077         <span class="keywordtype">void</span> updateFadeOut();
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079         <span class="keywordtype">void</span> stopFadeIn();
+<a name="l00080"></a>00080         <span class="keywordtype">void</span> stopFadeOut();
+<a name="l00081"></a>00081 
+<a name="l00082"></a>00082         <span class="keywordtype">void</span> hideFadeElement();
+<a name="l00083"></a>00083         <span class="keywordtype">void</span> showFadeElement();
+<a name="l00084"></a>00084 
+<a name="l00085"></a>00085         <span class="keywordtype">void</span> computeFadeDelta();
+<a name="l00086"></a>00086 
+<a name="l00087"></a>00087         <span class="keywordtype">void</span> updateGui(<span class="keywordtype">bool</span> paused);
+<a name="l00088"></a>00088         <span class="keywordtype">void</span> hideAllMenus();
+<a name="l00089"></a>00089 
+<a name="l00090"></a>00090         Rocket::Core::ElementDocument * mDocument;
+<a name="l00091"></a>00091         std::function&lt;void(GuiManager&amp;)&gt; mFadeOutCallback;
+<a name="l00092"></a>00092         <span class="keywordtype">float</span> mFadeDelta;
+<a name="l00093"></a>00093         <span class="keywordtype">float</span> mFadeValue;
+<a name="l00094"></a>00094         Rocket::Core::ElementDocument * mFadeCurrentDocument;
+<a name="l00095"></a>00095         std::queue&lt;State&gt; mStateQueue;
+<a name="l00096"></a>00096         <a class="code" href="class_f_a_gui_1_1_gui_manager.html#a8cea84db3e9e079f9d4f1d323873d754">GuiType</a> mCurrentGuiType;
+<a name="l00097"></a>00097         std::chrono::system_clock::time_point mStartTime;
+<a name="l00098"></a>00098         std::shared_ptr&lt;ScrollBox&gt; mCreditsScrollBox;
+<a name="l00099"></a>00099         std::shared_ptr&lt;ScrollBox&gt; mDialogueScrollBox;
+<a name="l00100"></a>00100     };
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102     <span class="keyword">extern</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> <a class="code" href="namespace_f_a_gui.html#a0ca1b6902b9ba1e9dd10b09bcc9cea0d">cursorPath</a>;
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104     <span class="keyword">extern</span> uint32_t <a class="code" href="namespace_f_a_gui.html#aaeaebbc0ee052537ce05c78358f6d9ca">cursorFrame</a>;
+<a name="l00105"></a>00105 }
+<a name="l00106"></a>00106 
+<a name="l00107"></a>00107 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"

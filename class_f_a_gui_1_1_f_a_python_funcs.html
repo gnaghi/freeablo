@@ -125,6 +125,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#acb29738d9131a1b8e92c14738c18bd0c">FAPythonFuncs</a> (<a class="el" href="class_f_a_world_1_1_inventory.html">FAWorld::Inventory</a> &amp;playerInv, <a class="el" href="class_f_a_gui_1_1_gui_manager.html">GuiManager</a> &amp;guiManager, <a class="el" href="class_engine_1_1_engine_main.html">Engine::EngineMain</a> &amp;<a class="el" href="readme_8md.html#a0c672cf8c51ac9f910731bbd3cea24ca">engine</a>)</td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#a96deda3a275a0e6a64880f04a5a391ac">openDialogue</a> (const char *document)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#a0ee352c5b02635d7d9b3e90e591ca7a6">closeDialogue</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#aece6eeb8167be4c32a1f2d82cc5fe3e6">openDialogueScrollbox</a> (const char *document)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#abba9596fd0d3d14620e82da13a0e65bd">closeDialogueScrollbox</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#aedd42df1383bf782eb338a2e58394a9a">showMainMenu</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#afc2f79a6733fffdc47d9430ccbd7f39e">showCredits</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#a8dfd54b7095018c7af8d34ca0a2c7e25">showSelectHeroMenu</a> ()</td></tr>
@@ -141,6 +145,7 @@ Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#afbc6e00b8cd71c9d4a7e89739eb3955f">loadGame</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#af3db3e9cf3035c09423bebacde5366de">playClickButtonSound</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#a87545334fff51721b7d9d8dc16721b68">playSound</a> (const std::string &amp;path)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#abeb7b69b40aec1c51c9d2a6466619c72">stopSound</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boost::python::list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#a5d628bad1e601c5ea59f11bede2fd890">getHotkeyNames</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boost::python::list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#a4e2a57a6cca3fc9484e17b9381d85e5d">getHotkeys</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#a1622e498fae9ef53a2ff6df443b43822">setHotkey</a> (std::string function, boost::python::list pyhotkey)</td></tr>
@@ -262,6 +267,74 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_f_a_gui_1_1_f_a_python_funcs_a9cb1351ff5531061ce7f556dbf0cf478_icgraph.png" border="0" usemap="#class_f_a_gui_1_1_f_a_python_funcs_a9cb1351ff5531061ce7f556dbf0cf478_icgraph" alt=""/></div>
 <map name="class_f_a_gui_1_1_f_a_python_funcs_a9cb1351ff5531061ce7f556dbf0cf478_icgraph" id="class_f_a_gui_1_1_f_a_python_funcs_a9cb1351ff5531061ce7f556dbf0cf478_icgraph">
 <area shape="rect" id="node3" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="277,5,517,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ee352c5b02635d7d9b3e90e591ca7a6"></a><!-- doxytag: member="FAGui::FAPythonFuncs::closeDialogue" ref="a0ee352c5b02635d7d9b3e90e591ca7a6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#a0ee352c5b02635d7d9b3e90e591ca7a6">FAGui::FAPythonFuncs::closeDialogue</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_f_a_python_funcs_a0ee352c5b02635d7d9b3e90e591ca7a6_cgraph.png" border="0" usemap="#class_f_a_gui_1_1_f_a_python_funcs_a0ee352c5b02635d7d9b3e90e591ca7a6_cgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_f_a_python_funcs_a0ee352c5b02635d7d9b3e90e591ca7a6_cgraph" id="class_f_a_gui_1_1_f_a_python_funcs_a0ee352c5b02635d7d9b3e90e591ca7a6_cgraph">
+<area shape="rect" id="node3" href="class_f_a_gui_1_1_gui_manager.html#a709be93f3891ff52a560cfda84a97b1b" title="FAGui::GuiManager::closeDialogue" alt="" coords="304,5,531,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_f_a_python_funcs_a0ee352c5b02635d7d9b3e90e591ca7a6_icgraph.png" border="0" usemap="#class_f_a_gui_1_1_f_a_python_funcs_a0ee352c5b02635d7d9b3e90e591ca7a6_icgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_f_a_python_funcs_a0ee352c5b02635d7d9b3e90e591ca7a6_icgraph" id="class_f_a_gui_1_1_f_a_python_funcs_a0ee352c5b02635d7d9b3e90e591ca7a6_icgraph">
+<area shape="rect" id="node3" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="304,5,544,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abba9596fd0d3d14620e82da13a0e65bd"></a><!-- doxytag: member="FAGui::FAPythonFuncs::closeDialogueScrollbox" ref="abba9596fd0d3d14620e82da13a0e65bd" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#abba9596fd0d3d14620e82da13a0e65bd">FAGui::FAPythonFuncs::closeDialogueScrollbox</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_f_a_python_funcs_abba9596fd0d3d14620e82da13a0e65bd_cgraph.png" border="0" usemap="#class_f_a_gui_1_1_f_a_python_funcs_abba9596fd0d3d14620e82da13a0e65bd_cgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_f_a_python_funcs_abba9596fd0d3d14620e82da13a0e65bd_cgraph" id="class_f_a_gui_1_1_f_a_python_funcs_abba9596fd0d3d14620e82da13a0e65bd_cgraph">
+<area shape="rect" id="node3" href="class_f_a_gui_1_1_gui_manager.html#a216aeefb9a353349e7f85862fd03d888" title="FAGui::GuiManager::closeDialogueScrollbox" alt="" coords="361,5,641,35"/><area shape="rect" id="node5" href="class_f_a_gui_1_1_gui_manager.html#a709be93f3891ff52a560cfda84a97b1b" title="FAGui::GuiManager::closeDialogue" alt="" coords="691,5,917,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_f_a_python_funcs_abba9596fd0d3d14620e82da13a0e65bd_icgraph.png" border="0" usemap="#class_f_a_gui_1_1_f_a_python_funcs_abba9596fd0d3d14620e82da13a0e65bd_icgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_f_a_python_funcs_abba9596fd0d3d14620e82da13a0e65bd_icgraph" id="class_f_a_gui_1_1_f_a_python_funcs_abba9596fd0d3d14620e82da13a0e65bd_icgraph">
+<area shape="rect" id="node3" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="360,5,600,35"/></map>
 </div>
 </p>
 
@@ -389,6 +462,76 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_f_a_gui_1_1_f_a_python_funcs_afbc6e00b8cd71c9d4a7e89739eb3955f_icgraph.png" border="0" usemap="#class_f_a_gui_1_1_f_a_python_funcs_afbc6e00b8cd71c9d4a7e89739eb3955f_icgraph" alt=""/></div>
 <map name="class_f_a_gui_1_1_f_a_python_funcs_afbc6e00b8cd71c9d4a7e89739eb3955f_icgraph" id="class_f_a_gui_1_1_f_a_python_funcs_afbc6e00b8cd71c9d4a7e89739eb3955f_icgraph">
 <area shape="rect" id="node3" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="283,5,523,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a96deda3a275a0e6a64880f04a5a391ac"></a><!-- doxytag: member="FAGui::FAPythonFuncs::openDialogue" ref="a96deda3a275a0e6a64880f04a5a391ac" args="(const char *document)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#a96deda3a275a0e6a64880f04a5a391ac">FAGui::FAPythonFuncs::openDialogue</a> </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>document</em></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_f_a_python_funcs_a96deda3a275a0e6a64880f04a5a391ac_cgraph.png" border="0" usemap="#class_f_a_gui_1_1_f_a_python_funcs_a96deda3a275a0e6a64880f04a5a391ac_cgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_f_a_python_funcs_a96deda3a275a0e6a64880f04a5a391ac_cgraph" id="class_f_a_gui_1_1_f_a_python_funcs_a96deda3a275a0e6a64880f04a5a391ac_cgraph">
+<area shape="rect" id="node3" href="class_f_a_gui_1_1_gui_manager.html#aec069d2a4bcb858c362fd0e5f4780bcf" title="FAGui::GuiManager::openDialogue" alt="" coords="301,32,525,61"/><area shape="rect" id="node5" href="namespace_cel.html#a4e01b99470fde6ba49817d25dc1e2bc6" title="Cel::get" alt="" coords="668,5,735,35"/><area shape="rect" id="node7" href="class_f_a_render_1_1_renderer.html#a9f198f6d107afbe18b9f68231c4b2b8c" title="FARender::Renderer::getRocketContext" alt="" coords="573,59,829,88"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_f_a_python_funcs_a96deda3a275a0e6a64880f04a5a391ac_icgraph.png" border="0" usemap="#class_f_a_gui_1_1_f_a_python_funcs_a96deda3a275a0e6a64880f04a5a391ac_icgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_f_a_python_funcs_a96deda3a275a0e6a64880f04a5a391ac_icgraph" id="class_f_a_gui_1_1_f_a_python_funcs_a96deda3a275a0e6a64880f04a5a391ac_icgraph">
+<area shape="rect" id="node3" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="301,5,541,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aece6eeb8167be4c32a1f2d82cc5fe3e6"></a><!-- doxytag: member="FAGui::FAPythonFuncs::openDialogueScrollbox" ref="aece6eeb8167be4c32a1f2d82cc5fe3e6" args="(const char *document)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#aece6eeb8167be4c32a1f2d82cc5fe3e6">FAGui::FAPythonFuncs::openDialogueScrollbox</a> </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>document</em></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_f_a_python_funcs_aece6eeb8167be4c32a1f2d82cc5fe3e6_cgraph.png" border="0" usemap="#class_f_a_gui_1_1_f_a_python_funcs_aece6eeb8167be4c32a1f2d82cc5fe3e6_cgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_f_a_python_funcs_aece6eeb8167be4c32a1f2d82cc5fe3e6_cgraph" id="class_f_a_gui_1_1_f_a_python_funcs_aece6eeb8167be4c32a1f2d82cc5fe3e6_cgraph">
+<area shape="rect" id="node3" href="class_f_a_gui_1_1_gui_manager.html#abb2bfd980a0ee9d54e9ec862e93e061f" title="FAGui::GuiManager::openDialogueScrollbox" alt="" coords="359,32,636,61"/><area shape="rect" id="node5" href="class_f_a_gui_1_1_gui_manager.html#aec069d2a4bcb858c362fd0e5f4780bcf" title="FAGui::GuiManager::openDialogue" alt="" coords="685,32,909,61"/><area shape="rect" id="node7" href="namespace_cel.html#a4e01b99470fde6ba49817d25dc1e2bc6" title="Cel::get" alt="" coords="1052,5,1119,35"/><area shape="rect" id="node9" href="class_f_a_render_1_1_renderer.html#a9f198f6d107afbe18b9f68231c4b2b8c" title="FARender::Renderer::getRocketContext" alt="" coords="957,59,1213,88"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_f_a_python_funcs_aece6eeb8167be4c32a1f2d82cc5fe3e6_icgraph.png" border="0" usemap="#class_f_a_gui_1_1_f_a_python_funcs_aece6eeb8167be4c32a1f2d82cc5fe3e6_icgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_f_a_python_funcs_aece6eeb8167be4c32a1f2d82cc5fe3e6_icgraph" id="class_f_a_gui_1_1_f_a_python_funcs_aece6eeb8167be4c32a1f2d82cc5fe3e6_icgraph">
+<area shape="rect" id="node3" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="357,5,597,35"/></map>
 </div>
 </p>
 
@@ -988,6 +1131,40 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_f_a_gui_1_1_f_a_python_funcs_a0fb990e075a6172ab332954af481042a_icgraph.png" border="0" usemap="#class_f_a_gui_1_1_f_a_python_funcs_a0fb990e075a6172ab332954af481042a_icgraph" alt=""/></div>
 <map name="class_f_a_gui_1_1_f_a_python_funcs_a0fb990e075a6172ab332954af481042a_icgraph" id="class_f_a_gui_1_1_f_a_python_funcs_a0fb990e075a6172ab332954af481042a_icgraph">
+<area shape="rect" id="node3" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="285,5,525,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abeb7b69b40aec1c51c9d2a6466619c72"></a><!-- doxytag: member="FAGui::FAPythonFuncs::stopSound" ref="abeb7b69b40aec1c51c9d2a6466619c72" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_f_a_gui_1_1_f_a_python_funcs.html#abeb7b69b40aec1c51c9d2a6466619c72">FAGui::FAPythonFuncs::stopSound</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_f_a_python_funcs_abeb7b69b40aec1c51c9d2a6466619c72_cgraph.png" border="0" usemap="#class_f_a_gui_1_1_f_a_python_funcs_abeb7b69b40aec1c51c9d2a6466619c72_cgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_f_a_python_funcs_abeb7b69b40aec1c51c9d2a6466619c72_cgraph" id="class_f_a_gui_1_1_f_a_python_funcs_abeb7b69b40aec1c51c9d2a6466619c72_cgraph">
+<area shape="rect" id="node3" href="namespace_cel.html#a4e01b99470fde6ba49817d25dc1e2bc6" title="Cel::get" alt="" coords="287,5,353,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_f_a_python_funcs_abeb7b69b40aec1c51c9d2a6466619c72_icgraph.png" border="0" usemap="#class_f_a_gui_1_1_f_a_python_funcs_abeb7b69b40aec1c51c9d2a6466619c72_icgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_f_a_python_funcs_abeb7b69b40aec1c51c9d2a6466619c72_icgraph" id="class_f_a_gui_1_1_f_a_python_funcs_abeb7b69b40aec1c51c9d2a6466619c72_icgraph">
 <area shape="rect" id="node3" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="285,5,525,35"/></map>
 </div>
 </p>

@@ -1,4 +1,9 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$class_f_a_gui_1_1_gui_manager.html#afb827f9b028aafa83fa870a609b126f2" title="FAGui::GuiManager::GuiManager" alt="" coords="311,5,524,35"/>
-<area shape="rect" id="node5" href="$class_f_a_gui_1_1_gui_manager.html#ad2d1e040339127fda9527be6437ff2b7" title="FAGui::GuiManager::update" alt="" coords="325,59,509,88"/>
+<area shape="rect" id="node3" href="$class_f_a_gui_1_1_gui_manager.html#afb827f9b028aafa83fa870a609b126f2" title="FAGui::GuiManager::GuiManager" alt="" coords="315,5,528,35"/>
+<area shape="rect" id="node5" href="$class_f_a_gui_1_1_gui_manager.html#aec069d2a4bcb858c362fd0e5f4780bcf" title="FAGui::GuiManager::openDialogue" alt="" coords="309,59,533,88"/>
+<area shape="rect" id="node16" href="$class_f_a_gui_1_1_gui_manager.html#ad2d1e040339127fda9527be6437ff2b7" title="FAGui::GuiManager::update" alt="" coords="329,112,513,141"/>
+<area shape="rect" id="node7" href="$class_f_a_gui_1_1_f_a_python_funcs.html#a96deda3a275a0e6a64880f04a5a391ac" title="FAGui::FAPythonFuncs::openDialogue" alt="" coords="937,32,1185,61"/>
+<area shape="rect" id="node11" href="$class_f_a_gui_1_1_gui_manager.html#abb2bfd980a0ee9d54e9ec862e93e061f" title="FAGui::GuiManager::openDialogueScrollbox" alt="" coords="583,85,860,115"/>
+<area shape="rect" id="node9" href="$namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="1261,59,1501,88"/>
+<area shape="rect" id="node13" href="$class_f_a_gui_1_1_f_a_python_funcs.html#aece6eeb8167be4c32a1f2d82cc5fe3e6" title="FAGui::FAPythonFuncs::openDialogueScrollbox" alt="" coords="911,85,1212,115"/>
 </map>

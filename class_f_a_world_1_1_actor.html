@@ -148,10 +148,15 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a11f7b0f99d17191140088f83d130538e">setLevel</a> (<a class="el" href="class_f_a_world_1_1_game_level.html">GameLevel</a> *level)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_game_level.html">GameLevel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ac7f3a1a4b5b66da302e257ea3b5c0f58">getLevel</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a6e2d86d273662e6ea51e1c8f1a9c15cb">attack</a> (<a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *enemy)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a77967cf6328da51c0267795da6aea541">talk</a> (<a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *actor)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a5cc6f4f374e31c0a21d0f60ef6f1eb0a">die</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::pair&lt; int32_t, int32_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#aeae544fb56b7d7b8709e8124cb4d9577">destination</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a8ef6ab2dc0ff3457620154311e67f735">canTalk</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a202dce9f5352c307a3fe4e27c0d40b36">isDead</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#aa214e029e67b1b02d811ef016e002d6e">isEnemy</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a4bc04e344af9ef719cf3572748ca355e">getActorId</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a258c7036b477faa50ea6d4a9d6a0a349">setActorId</a> (const std::string &amp;id)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a939890831e2e172233eac6e6665c898e">setCanTalk</a> (<a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="class_f_a_world_1_1_actor.html#a8ef6ab2dc0ff3457620154311e67f735">canTalk</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a9efde1147775c12a01e7dd2bb9ffe4d0">getWriteSize</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a80e0c4fe4a1dc980a57b9da694cd2362">writeTo</a> (ENetPacket *packet, size_t &amp;position)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Write object to packet.  <a href="#a80e0c4fe4a1dc980a57b9da694cd2362"></a><br/></td></tr>
@@ -160,6 +165,7 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a7b6c16a77650c8da9bf4323510ca1c8f">mAnimPlaying</a> = <a class="el" href="_storm_port_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a0aa3b53bf1be4464e2c5b45e4465a0c8">isAttacking</a> = <a class="el" href="_storm_port_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a28a757ce1289834aab96e6a56179a411">isTalking</a> = <a class="el" href="_storm_port_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_position.html">Position</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a78328234299e1ed9da3e706cdfaf3853">mPos</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a17b9a46c3ff9241dec8ffef817afbf68">mWalkAnim</a> = <a class="el" href="namespace_f_a_render.html#a54135b19ed88b3c269188e8649a55e17">FARender::getDefaultSprite</a>()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ab78b06a953550b034c7eefe3b53093a3">mIdleAnim</a> = <a class="el" href="namespace_f_a_render.html#a54135b19ed88b3c269188e8649a55e17">FARender::getDefaultSprite</a>()</td></tr>
@@ -178,12 +184,14 @@ Protected Member Functions</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class Archive &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ae052cd3c00a6b57b34430d684e7863b8">load</a> (Archive &amp;ar, const unsigned int version)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ab251c6705ad0be74a823fe955e6175f2">canIAttack</a> (<a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *actor)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ac77ec7ddb3e80ebaeb58740e36ee22cf">canTalkTo</a> (<a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *actor)</td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_a_world_1_1_game_level.html">GameLevel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a5c7b9155b85b7d6d10397e77e0588e6a">mLevel</a> = <a class="el" href="huff__old_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ac6cf18e16b80ae8e820fea0c3c52a0b1">mIsDead</a> = <a class="el" href="_storm_port_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3">AnimState::AnimState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a9225c2ffaf0c39b8edc13334a861b2f6">mAnimState</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a97a2ee333d13eb57eaebe9c0dc98acc9">mCanTalk</a> = <a class="el" href="_storm_port_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a81ce70269025d8e9ce1bcf694312a32c">mIsEnemy</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_f_a_world_1_1_anim_state.html#a82bda00fbdc8323315200f5bbfae9fa3">AnimState::AnimState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#a9225c2ffaf0c39b8edc13334a861b2f6">mAnimState</a></td></tr>
 <tr><td colspan="2"><h2><a name="friends"></a>
 Friends</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_world_1_1_actor.html#ac98d07dd8f7b70e16ccb9a01abf56b9c">boost::serialization::access</a></td></tr>
@@ -306,6 +314,57 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a8ef6ab2dc0ff3457620154311e67f735"></a><!-- doxytag: member="FAWorld::Actor::canTalk" ref="a8ef6ab2dc0ff3457620154311e67f735" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="class_f_a_world_1_1_actor.html#a8ef6ab2dc0ff3457620154311e67f735">FAWorld::Actor::canTalk</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_world_1_1_actor_a8ef6ab2dc0ff3457620154311e67f735_icgraph.png" border="0" usemap="#class_f_a_world_1_1_actor_a8ef6ab2dc0ff3457620154311e67f735_icgraph" alt=""/></div>
+<map name="class_f_a_world_1_1_actor_a8ef6ab2dc0ff3457620154311e67f735_icgraph" id="class_f_a_world_1_1_actor_a8ef6ab2dc0ff3457620154311e67f735_icgraph">
+<area shape="rect" id="node3" href="class_f_a_world_1_1_actor.html#ac77ec7ddb3e80ebaeb58740e36ee22cf" title="FAWorld::Actor::canTalkTo" alt="" coords="224,5,405,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_actor.html#a939890831e2e172233eac6e6665c898e" title="FAWorld::Actor::setCanTalk" alt="" coords="221,59,408,88"/><area shape="rect" id="node7" href="class_f_a_world_1_1_world.html#a5f2ca8c8743cc7689ba9227be88f9556" title="FAWorld::World::generateLevels" alt="" coords="456,59,667,88"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac77ec7ddb3e80ebaeb58740e36ee22cf"></a><!-- doxytag: member="FAWorld::Actor::canTalkTo" ref="ac77ec7ddb3e80ebaeb58740e36ee22cf" args="(Actor *actor)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="class_f_a_world_1_1_actor.html#ac77ec7ddb3e80ebaeb58740e36ee22cf">FAWorld::Actor::canTalkTo</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *&#160;</td>
+          <td class="paramname"><em>actor</em></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_world_1_1_actor_ac77ec7ddb3e80ebaeb58740e36ee22cf_cgraph.png" border="0" usemap="#class_f_a_world_1_1_actor_ac77ec7ddb3e80ebaeb58740e36ee22cf_cgraph" alt=""/></div>
+<map name="class_f_a_world_1_1_actor_ac77ec7ddb3e80ebaeb58740e36ee22cf_cgraph" id="class_f_a_world_1_1_actor_ac77ec7ddb3e80ebaeb58740e36ee22cf_cgraph">
+<area shape="rect" id="node3" href="class_f_a_world_1_1_position.html#ac5087eb57c5012a8d5cf85feab4b2a26" title="FAWorld::Position::distanceFrom" alt="" coords="236,5,449,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_actor.html#a8ef6ab2dc0ff3457620154311e67f735" title="FAWorld::Actor::canTalk" alt="" coords="260,59,425,88"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="aeae544fb56b7d7b8709e8124cb4d9577"></a><!-- doxytag: member="FAWorld::Actor::destination" ref="aeae544fb56b7d7b8709e8124cb4d9577" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -360,6 +419,31 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_f_a_world_1_1_actor_a5cc6f4f374e31c0a21d0f60ef6f1eb0a_icgraph.png" border="0" usemap="#class_f_a_world_1_1_actor_a5cc6f4f374e31c0a21d0f60ef6f1eb0a_icgraph" alt=""/></div>
 <map name="class_f_a_world_1_1_actor_a5cc6f4f374e31c0a21d0f60ef6f1eb0a_icgraph" id="class_f_a_world_1_1_actor_a5cc6f4f374e31c0a21d0f60ef6f1eb0a_icgraph">
 <area shape="rect" id="node3" href="class_f_a_world_1_1_player.html#aa4da592bd7d2a7523212fe7ba91b4861" title="FAWorld::Player::attack" alt="" coords="192,5,355,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4bc04e344af9ef719cf3572748ca355e"></a><!-- doxytag: member="FAWorld::Actor::getActorId" ref="a4bc04e344af9ef719cf3572748ca355e" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="class_f_a_world_1_1_actor.html#a4bc04e344af9ef719cf3572748ca355e">FAWorld::Actor::getActorId</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_world_1_1_actor_a4bc04e344af9ef719cf3572748ca355e_icgraph.png" border="0" usemap="#class_f_a_world_1_1_actor_a4bc04e344af9ef719cf3572748ca355e_icgraph" alt=""/></div>
+<map name="class_f_a_world_1_1_actor_a4bc04e344af9ef719cf3572748ca355e_icgraph" id="class_f_a_world_1_1_actor_a4bc04e344af9ef719cf3572748ca355e_icgraph">
+<area shape="rect" id="node3" href="class_f_a_world_1_1_player.html#a46f65e261479b11b2e9f2eb7028d7ce7" title="FAWorld::Player::talk" alt="" coords="235,5,381,35"/></map>
 </div>
 </p>
 
@@ -719,6 +803,32 @@ template&lt;class Archive &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a258c7036b477faa50ea6d4a9d6a0a349"></a><!-- doxytag: member="FAWorld::Actor::setActorId" ref="a258c7036b477faa50ea6d4a9d6a0a349" args="(const std::string &amp;id)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_f_a_world_1_1_actor.html#a258c7036b477faa50ea6d4a9d6a0a349">FAWorld::Actor::setActorId</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_world_1_1_actor_a258c7036b477faa50ea6d4a9d6a0a349_icgraph.png" border="0" usemap="#class_f_a_world_1_1_actor_a258c7036b477faa50ea6d4a9d6a0a349_icgraph" alt=""/></div>
+<map name="class_f_a_world_1_1_actor_a258c7036b477faa50ea6d4a9d6a0a349_icgraph" id="class_f_a_world_1_1_actor_a258c7036b477faa50ea6d4a9d6a0a349_icgraph">
+<area shape="rect" id="node3" href="class_f_a_world_1_1_world.html#a5f2ca8c8743cc7689ba9227be88f9556" title="FAWorld::World::generateLevels" alt="" coords="235,5,445,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a00af1cf4ccaf76a3cf84dc7ec5ba3390"></a><!-- doxytag: member="FAWorld::Actor::setAnimation" ref="a00af1cf4ccaf76a3cf84dc7ec5ba3390" args="(AnimState::AnimState state, bool reset=false)" -->
 <div class="memitem">
 <div class="memproto">
@@ -750,6 +860,41 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_f_a_world_1_1_actor_a00af1cf4ccaf76a3cf84dc7ec5ba3390_icgraph.png" border="0" usemap="#class_f_a_world_1_1_actor_a00af1cf4ccaf76a3cf84dc7ec5ba3390_icgraph" alt=""/></div>
 <map name="class_f_a_world_1_1_actor_a00af1cf4ccaf76a3cf84dc7ec5ba3390_icgraph" id="class_f_a_world_1_1_actor_a00af1cf4ccaf76a3cf84dc7ec5ba3390_icgraph">
 <area shape="rect" id="node3" href="class_f_a_world_1_1_actor.html#a45131c266364a071e5e36dba66bdf38a" title="FAWorld::Actor::takeDamage" alt="" coords="251,5,445,35"/><area shape="rect" id="node5" href="class_f_a_world_1_1_player.html#aa4da592bd7d2a7523212fe7ba91b4861" title="FAWorld::Player::attack" alt="" coords="493,57,656,87"/><area shape="rect" id="node7" href="class_f_a_world_1_1_actor.html#a5cc6f4f374e31c0a21d0f60ef6f1eb0a" title="FAWorld::Actor::die" alt="" coords="280,109,416,139"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a939890831e2e172233eac6e6665c898e"></a><!-- doxytag: member="FAWorld::Actor::setCanTalk" ref="a939890831e2e172233eac6e6665c898e" args="(bool canTalk)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_f_a_world_1_1_actor.html#a939890831e2e172233eac6e6665c898e">FAWorld::Actor::setCanTalk</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramname"><em>canTalk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_world_1_1_actor_a939890831e2e172233eac6e6665c898e_cgraph.png" border="0" usemap="#class_f_a_world_1_1_actor_a939890831e2e172233eac6e6665c898e_cgraph" alt=""/></div>
+<map name="class_f_a_world_1_1_actor_a939890831e2e172233eac6e6665c898e_cgraph" id="class_f_a_world_1_1_actor_a939890831e2e172233eac6e6665c898e_cgraph">
+<area shape="rect" id="node3" href="class_f_a_world_1_1_actor.html#a8ef6ab2dc0ff3457620154311e67f735" title="FAWorld::Actor::canTalk" alt="" coords="241,5,407,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_world_1_1_actor_a939890831e2e172233eac6e6665c898e_icgraph.png" border="0" usemap="#class_f_a_world_1_1_actor_a939890831e2e172233eac6e6665c898e_icgraph" alt=""/></div>
+<map name="class_f_a_world_1_1_actor_a939890831e2e172233eac6e6665c898e_icgraph" id="class_f_a_world_1_1_actor_a939890831e2e172233eac6e6665c898e_icgraph">
+<area shape="rect" id="node3" href="class_f_a_world_1_1_world.html#a5f2ca8c8743cc7689ba9227be88f9556" title="FAWorld::World::generateLevels" alt="" coords="240,5,451,35"/></map>
 </div>
 </p>
 
@@ -915,6 +1060,25 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a77967cf6328da51c0267795da6aea541"></a><!-- doxytag: member="FAWorld::Actor::talk" ref="a77967cf6328da51c0267795da6aea541" args="(Actor *actor)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="class_f_a_world_1_1_actor.html#a77967cf6328da51c0267795da6aea541">FAWorld::Actor::talk</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_a_world_1_1_actor.html">Actor</a> *&#160;</td>
+          <td class="paramname"><em>actor</em></td><td>)</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_f_a_world_1_1_player.html#a46f65e261479b11b2e9f2eb7028d7ce7">FAWorld::Player</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a210d7366b718ee9366442a98f940d083"></a><!-- doxytag: member="FAWorld::Actor::update" ref="a210d7366b718ee9366442a98f940d083" args="(bool noclip, size_t ticksPassed)" -->
 <div class="memitem">
 <div class="memproto">
@@ -1049,6 +1213,19 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a28a757ce1289834aab96e6a56179a411"></a><!-- doxytag: member="FAWorld::Actor::isTalking" ref="a28a757ce1289834aab96e6a56179a411" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="class_f_a_world_1_1_actor.html#a28a757ce1289834aab96e6a56179a411">FAWorld::Actor::isTalking</a> = <a class="el" href="_storm_port_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a7b6c16a77650c8da9bf4323510ca1c8f"></a><!-- doxytag: member="FAWorld::Actor::mAnimPlaying" ref="a7b6c16a77650c8da9bf4323510ca1c8f" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -1094,6 +1271,19 @@ Here is the call graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a>* <a class="el" href="class_f_a_world_1_1_actor.html#a0f7af56ab59368afa294709db74267b0">FAWorld::Actor::mAttackAnim</a> = <a class="el" href="namespace_f_a_render.html#a54135b19ed88b3c269188e8649a55e17">FARender::getDefaultSprite</a>()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a97a2ee333d13eb57eaebe9c0dc98acc9"></a><!-- doxytag: member="FAWorld::Actor::mCanTalk" ref="a97a2ee333d13eb57eaebe9c0dc98acc9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="class_f_a_world_1_1_actor.html#a97a2ee333d13eb57eaebe9c0dc98acc9">FAWorld::Actor::mCanTalk</a> = <a class="el" href="_storm_port_8h.html#a65e9886d74aaee76545e83dd09011727">false</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>

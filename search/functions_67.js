@@ -23,6 +23,7 @@ var searchData=
   ['getactivetrigger',['getActiveTrigger',['../class_f_a_world_1_1_item.html#a23360ab4bcc808f17451c7fe7772706e',1,'FAWorld::Item']]],
   ['getactorat',['getActorAt',['../class_f_a_world_1_1_game_level.html#aae6a0535a7d91a41d9174c5e483f6736',1,'FAWorld::GameLevel::getActorAt()'],['../class_f_a_world_1_1_world.html#a232923bf93809b892f0e295ea678d395',1,'FAWorld::World::getActorAt()']]],
   ['getactorbyid',['getActorById',['../class_f_a_world_1_1_game_level.html#a230302d641a847194f7dc33dbbc5bbd7',1,'FAWorld::GameLevel::getActorById()'],['../class_f_a_world_1_1_world.html#aff73f8bb61715b9024591cabdafa435e',1,'FAWorld::World::getActorById()']]],
+  ['getactorid',['getActorId',['../class_f_a_world_1_1_actor.html#a4bc04e344af9ef719cf3572748ca355e',1,'FAWorld::Actor']]],
   ['getactors',['getActors',['../class_f_a_world_1_1_game_level.html#a5121ec15ff24b9fc48f258c52e7b7f87',1,'FAWorld::GameLevel']]],
   ['getallactors',['getAllActors',['../class_f_a_world_1_1_world.html#aaecb67ae98d669231b9b2fcab7b9fc16',1,'FAWorld::World']]],
   ['getanimlength',['getAnimLength',['../class_f_a_render_1_1_f_a_sprite_group.html#a96f298331f8009d4542924f65fe26052',1,'FARender::FASpriteGroup']]],

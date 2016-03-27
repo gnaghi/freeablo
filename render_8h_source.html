@@ -155,63 +155,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00075"></a>00075     <a class="code" href="class_render_1_1_sprite_group.html">SpriteGroup</a>* <a class="code" href="namespace_render.html#a05c97dfcb545abc37e57ca717e15f6cc">loadResizedSprite</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; path, <span class="keywordtype">size_t</span> width, <span class="keywordtype">size_t</span> height, <span class="keywordtype">size_t</span> tileWidth, <span class="keywordtype">size_t</span> tileHeight,  <span class="keywordtype">bool</span> hasTrans, <span class="keywordtype">size_t</span> transR, <span class="keywordtype">size_t</span> transG, <span class="keywordtype">size_t</span> transB);
 <a name="l00076"></a>00076     <a class="code" href="class_render_1_1_sprite_group.html">SpriteGroup</a>* <a class="code" href="namespace_render.html#abdc1ed403712a032c4f1a150d4e7550e">loadCelToSingleTexture</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; path);
 <a name="l00077"></a>00077     <a class="code" href="class_render_1_1_sprite_group.html">SpriteGroup</a>* <a class="code" href="namespace_render.html#a39ae636123baef1a7d42446331c82b28">loadSprite</a>(<span class="keyword">const</span> uint8_t* source, <span class="keywordtype">size_t</span> width, <span class="keywordtype">size_t</span> height);
-<a name="l00078"></a>00078 
-<a name="l00079"></a>00079     <span class="keywordtype">void</span> <a class="code" href="namespace_render.html#a7087bcd1e1950ec6ef28ff4897018fd9">draw</a>();
-<a name="l00080"></a>00080 
-<a name="l00081"></a>00081     <span class="keywordtype">void</span> <a class="code" href="namespace_render.html#a725f4e1357ec4979c7ed97f447c7d5a6">drawAt</a>(<span class="keyword">const</span> <a class="code" href="namespace_render.html#af50f804b65c964056de6aeffcf039f66">Sprite</a>&amp; sprite, <span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y); 
-<a name="l00082"></a>00082 
-<a name="l00083"></a><a class="code" href="class_render_1_1_sprite_group.html">00083</a>     <span class="keyword">class </span><a class="code" href="class_render_1_1_sprite_group.html">SpriteGroup</a>
-<a name="l00084"></a>00084     {
-<a name="l00085"></a>00085         <span class="keyword">public</span>:
-<a name="l00086"></a>00086             <a class="code" href="class_render_1_1_sprite_group.html#aed43edd9c6f4f124541483fc9c3f19f9">SpriteGroup</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; path);
-<a name="l00087"></a><a class="code" href="class_render_1_1_sprite_group.html#acaa27f153c116a2d150fcc57fd258915">00087</a>             <a class="code" href="class_render_1_1_sprite_group.html#acaa27f153c116a2d150fcc57fd258915">SpriteGroup</a>(<span class="keyword">const</span> std::vector&lt;Sprite&gt; sprites): mSprites(sprites), mAnimLength(sprites.<a class="code" href="class_render_1_1_sprite_group.html#a6509b30910ff7482b45d96f459938aa2">size</a>()) {}
-<a name="l00088"></a>00088             <span class="keywordtype">void</span> <a class="code" href="class_render_1_1_sprite_group.html#a078e08344796afcf46ba2ba4a5670a27">destroy</a>();
-<a name="l00089"></a>00089             
-<a name="l00090"></a><a class="code" href="class_render_1_1_sprite_group.html#a85e80d99a1151e41af32596e032cef48">00090</a>             <a class="code" href="namespace_render.html#af50f804b65c964056de6aeffcf039f66">Sprite</a>&amp; <a class="code" href="class_render_1_1_sprite_group.html#a85e80d99a1151e41af32596e032cef48">operator[]</a>(<span class="keywordtype">size_t</span> index)
-<a name="l00091"></a>00091             {
-<a name="l00092"></a>00092 <span class="preprocessor">                #ifndef NDEBUG</span>
-<a name="l00093"></a>00093 <span class="preprocessor"></span>                    assert(index &lt; mSprites.size());
-<a name="l00094"></a>00094 <span class="preprocessor">                #endif</span>
-<a name="l00095"></a>00095 <span class="preprocessor"></span>                <span class="keywordflow">return</span> mSprites[index];
-<a name="l00096"></a>00096             }
-<a name="l00097"></a>00097 
-<a name="l00098"></a><a class="code" href="class_render_1_1_sprite_group.html#a6509b30910ff7482b45d96f459938aa2">00098</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_render_1_1_sprite_group.html#a6509b30910ff7482b45d96f459938aa2">size</a>()
-<a name="l00099"></a>00099             {
-<a name="l00100"></a>00100                 <span class="keywordflow">return</span> mSprites.size();
-<a name="l00101"></a>00101             }
-<a name="l00102"></a>00102 
-<a name="l00103"></a><a class="code" href="class_render_1_1_sprite_group.html#a193d3eaea68e688b8d586d50d401efa8">00103</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_render_1_1_sprite_group.html#a193d3eaea68e688b8d586d50d401efa8">animLength</a>()
-<a name="l00104"></a>00104             {   
-<a name="l00105"></a>00105                 <span class="keywordflow">return</span> mAnimLength;
-<a name="l00106"></a>00106             }
-<a name="l00107"></a>00107 
-<a name="l00108"></a>00108             <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_render_1_1_sprite_group.html#ac3be63d0ef9141cd581700e8c2bddecc">toPng</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; celPath, <span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; pngPath);
-<a name="l00109"></a>00109 
+<a name="l00078"></a>00078     <a class="code" href="class_render_1_1_sprite_group.html">SpriteGroup</a>* <a class="code" href="namespace_render.html#a6677c983912e2231696f463898e1a744">loadTiledTexture</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; sourcePath, <span class="keywordtype">size_t</span> width, <span class="keywordtype">size_t</span> height, <span class="keywordtype">bool</span> hasTrans, <span class="keywordtype">size_t</span> transR, <span class="keywordtype">size_t</span> transG, <span class="keywordtype">size_t</span> transB);
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080     <span class="keywordtype">void</span> <a class="code" href="namespace_render.html#a7087bcd1e1950ec6ef28ff4897018fd9">draw</a>();
+<a name="l00081"></a>00081 
+<a name="l00082"></a>00082     <span class="keywordtype">void</span> <a class="code" href="namespace_render.html#a725f4e1357ec4979c7ed97f447c7d5a6">drawAt</a>(<span class="keyword">const</span> <a class="code" href="namespace_render.html#af50f804b65c964056de6aeffcf039f66">Sprite</a>&amp; sprite, <span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y); 
+<a name="l00083"></a>00083 
+<a name="l00084"></a><a class="code" href="class_render_1_1_sprite_group.html">00084</a>     <span class="keyword">class </span><a class="code" href="class_render_1_1_sprite_group.html">SpriteGroup</a>
+<a name="l00085"></a>00085     {
+<a name="l00086"></a>00086         <span class="keyword">public</span>:
+<a name="l00087"></a>00087             <a class="code" href="class_render_1_1_sprite_group.html#aed43edd9c6f4f124541483fc9c3f19f9">SpriteGroup</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; path);
+<a name="l00088"></a><a class="code" href="class_render_1_1_sprite_group.html#acaa27f153c116a2d150fcc57fd258915">00088</a>             <a class="code" href="class_render_1_1_sprite_group.html#acaa27f153c116a2d150fcc57fd258915">SpriteGroup</a>(<span class="keyword">const</span> std::vector&lt;Sprite&gt; sprites): mSprites(sprites), mAnimLength(sprites.<a class="code" href="class_render_1_1_sprite_group.html#a6509b30910ff7482b45d96f459938aa2">size</a>()) {}
+<a name="l00089"></a>00089             <span class="keywordtype">void</span> <a class="code" href="class_render_1_1_sprite_group.html#a078e08344796afcf46ba2ba4a5670a27">destroy</a>();
+<a name="l00090"></a>00090             
+<a name="l00091"></a><a class="code" href="class_render_1_1_sprite_group.html#a85e80d99a1151e41af32596e032cef48">00091</a>             <a class="code" href="namespace_render.html#af50f804b65c964056de6aeffcf039f66">Sprite</a>&amp; <a class="code" href="class_render_1_1_sprite_group.html#a85e80d99a1151e41af32596e032cef48">operator[]</a>(<span class="keywordtype">size_t</span> index)
+<a name="l00092"></a>00092             {
+<a name="l00093"></a>00093 <span class="preprocessor">                #ifndef NDEBUG</span>
+<a name="l00094"></a>00094 <span class="preprocessor"></span>                    assert(index &lt; mSprites.size());
+<a name="l00095"></a>00095 <span class="preprocessor">                #endif</span>
+<a name="l00096"></a>00096 <span class="preprocessor"></span>                <span class="keywordflow">return</span> mSprites[index];
+<a name="l00097"></a>00097             }
+<a name="l00098"></a>00098 
+<a name="l00099"></a><a class="code" href="class_render_1_1_sprite_group.html#a6509b30910ff7482b45d96f459938aa2">00099</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_render_1_1_sprite_group.html#a6509b30910ff7482b45d96f459938aa2">size</a>()
+<a name="l00100"></a>00100             {
+<a name="l00101"></a>00101                 <span class="keywordflow">return</span> mSprites.size();
+<a name="l00102"></a>00102             }
+<a name="l00103"></a>00103 
+<a name="l00104"></a><a class="code" href="class_render_1_1_sprite_group.html#a193d3eaea68e688b8d586d50d401efa8">00104</a>             <span class="keywordtype">size_t</span> <a class="code" href="class_render_1_1_sprite_group.html#a193d3eaea68e688b8d586d50d401efa8">animLength</a>()
+<a name="l00105"></a>00105             {   
+<a name="l00106"></a>00106                 <span class="keywordflow">return</span> mAnimLength;
+<a name="l00107"></a>00107             }
+<a name="l00108"></a>00108 
+<a name="l00109"></a>00109             <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_render_1_1_sprite_group.html#ac3be63d0ef9141cd581700e8c2bddecc">toPng</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; celPath, <span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; pngPath);
 <a name="l00110"></a>00110 
-<a name="l00111"></a>00111         <span class="keyword">private</span>:
-<a name="l00112"></a>00112             std::vector&lt;Sprite&gt; mSprites;
-<a name="l00113"></a>00113             <span class="keywordtype">size_t</span> mAnimLength;
-<a name="l00114"></a>00114     };
-<a name="l00115"></a>00115 
-<a name="l00116"></a><a class="code" href="struct_render_1_1_rocket_f_a_tex.html">00116</a>     <span class="keyword">struct </span><a class="code" href="struct_render_1_1_rocket_f_a_tex.html">RocketFATex</a>
-<a name="l00117"></a>00117     {
-<a name="l00118"></a><a class="code" href="struct_render_1_1_rocket_f_a_tex.html#a379df58e36c02e8aca2104282c12e535">00118</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_render_1_1_rocket_f_a_tex.html#a379df58e36c02e8aca2104282c12e535">animLength</a>;
-<a name="l00119"></a><a class="code" href="struct_render_1_1_rocket_f_a_tex.html#a9c3495131624e34c5c31a70464c12f4b">00119</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_render_1_1_rocket_f_a_tex.html#a9c3495131624e34c5c31a70464c12f4b">spriteIndex</a>;
-<a name="l00120"></a><a class="code" href="struct_render_1_1_rocket_f_a_tex.html#a4948b32d7a0c6a30d92524f7233b6895">00120</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_render_1_1_rocket_f_a_tex.html#a4948b32d7a0c6a30d92524f7233b6895">index</a>;
-<a name="l00121"></a><a class="code" href="struct_render_1_1_rocket_f_a_tex.html#afcb312281c974803e196f3651ee682ff">00121</a>         <span class="keywordtype">bool</span> <a class="code" href="struct_render_1_1_rocket_f_a_tex.html#afcb312281c974803e196f3651ee682ff">needsImmortal</a>;
-<a name="l00122"></a>00122     };
-<a name="l00123"></a>00123 
-<a name="l00124"></a>00124     <span class="keywordtype">void</span> <a class="code" href="namespace_render.html#a3d28da845a64625382c6b7ab62df3bdb">spriteSize</a>(<span class="keyword">const</span> <a class="code" href="namespace_render.html#af50f804b65c964056de6aeffcf039f66">Sprite</a>&amp; sprite, <span class="keywordtype">size_t</span>&amp; w, <span class="keywordtype">size_t</span>&amp; h);
-<a name="l00125"></a>00125 
-<a name="l00126"></a>00126     <a class="code" href="class_render_1_1_sprite_group.html">SpriteGroup</a>* <a class="code" href="namespace_render.html#a5b51432e4c169b5593556ea7ceebce69">loadTilesetSprite</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; celPath, <span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; minPath, <span class="keywordtype">bool</span> top);
-<a name="l00127"></a>00127     <span class="keywordtype">void</span> <a class="code" href="namespace_render.html#aa2625d5d45177718b16be35d3de01643">drawLevel</a>(<span class="keyword">const</span> <a class="code" href="class_level_1_1_level.html">Level::Level</a>&amp; level, <span class="keywordtype">size_t</span> minTopsHandle, <span class="keywordtype">size_t</span> minBottomsHandle, <a class="code" href="class_render_1_1_sprite_cache_base.html">SpriteCacheBase</a>* cache, LevelObjects&amp; objs, int32_t x1, int32_t y1, int32_t x2, int32_t y2, <span class="keywordtype">size_t</span> dist);
-<a name="l00128"></a>00128     
-<a name="l00129"></a>00129     std::pair&lt;int32_t, int32_t&gt; <a class="code" href="namespace_render.html#a14fb455a9e0201367451b54ff2276f9f">getClickedTile</a>(<span class="keyword">const</span> <a class="code" href="class_level_1_1_level.html">Level::Level</a>&amp; level, <span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y, int32_t x1, int32_t y1, int32_t x2, int32_t y2, <span class="keywordtype">size_t</span> dist);
-<a name="l00130"></a>00130 
-<a name="l00131"></a>00131     <span class="keywordtype">void</span> <a class="code" href="namespace_render.html#a1b2e4583833018c9d23e43e44300ba83">clear</a>(<span class="keywordtype">int</span> r = 0, <span class="keywordtype">int</span> g = 0, <span class="keywordtype">int</span> b = 255);
-<a name="l00132"></a>00132 }
-<a name="l00133"></a>00133 
-<a name="l00134"></a>00134 <span class="preprocessor">#endif</span>
+<a name="l00111"></a>00111 
+<a name="l00112"></a>00112         <span class="keyword">private</span>:
+<a name="l00113"></a>00113             std::vector&lt;Sprite&gt; mSprites;
+<a name="l00114"></a>00114             <span class="keywordtype">size_t</span> mAnimLength;
+<a name="l00115"></a>00115     };
+<a name="l00116"></a>00116 
+<a name="l00117"></a><a class="code" href="struct_render_1_1_rocket_f_a_tex.html">00117</a>     <span class="keyword">struct </span><a class="code" href="struct_render_1_1_rocket_f_a_tex.html">RocketFATex</a>
+<a name="l00118"></a>00118     {
+<a name="l00119"></a><a class="code" href="struct_render_1_1_rocket_f_a_tex.html#a379df58e36c02e8aca2104282c12e535">00119</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_render_1_1_rocket_f_a_tex.html#a379df58e36c02e8aca2104282c12e535">animLength</a>;
+<a name="l00120"></a><a class="code" href="struct_render_1_1_rocket_f_a_tex.html#a9c3495131624e34c5c31a70464c12f4b">00120</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_render_1_1_rocket_f_a_tex.html#a9c3495131624e34c5c31a70464c12f4b">spriteIndex</a>;
+<a name="l00121"></a><a class="code" href="struct_render_1_1_rocket_f_a_tex.html#a4948b32d7a0c6a30d92524f7233b6895">00121</a>         <span class="keywordtype">size_t</span> <a class="code" href="struct_render_1_1_rocket_f_a_tex.html#a4948b32d7a0c6a30d92524f7233b6895">index</a>;
+<a name="l00122"></a><a class="code" href="struct_render_1_1_rocket_f_a_tex.html#afcb312281c974803e196f3651ee682ff">00122</a>         <span class="keywordtype">bool</span> <a class="code" href="struct_render_1_1_rocket_f_a_tex.html#afcb312281c974803e196f3651ee682ff">needsImmortal</a>;
+<a name="l00123"></a>00123     };
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125     <span class="keywordtype">void</span> <a class="code" href="namespace_render.html#a3d28da845a64625382c6b7ab62df3bdb">spriteSize</a>(<span class="keyword">const</span> <a class="code" href="namespace_render.html#af50f804b65c964056de6aeffcf039f66">Sprite</a>&amp; sprite, <span class="keywordtype">size_t</span>&amp; w, <span class="keywordtype">size_t</span>&amp; h);
+<a name="l00126"></a>00126 
+<a name="l00127"></a>00127     <a class="code" href="class_render_1_1_sprite_group.html">SpriteGroup</a>* <a class="code" href="namespace_render.html#a5b51432e4c169b5593556ea7ceebce69">loadTilesetSprite</a>(<span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; celPath, <span class="keyword">const</span> <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a>&amp; minPath, <span class="keywordtype">bool</span> top);
+<a name="l00128"></a>00128     <span class="keywordtype">void</span> <a class="code" href="namespace_render.html#aa2625d5d45177718b16be35d3de01643">drawLevel</a>(<span class="keyword">const</span> <a class="code" href="class_level_1_1_level.html">Level::Level</a>&amp; level, <span class="keywordtype">size_t</span> minTopsHandle, <span class="keywordtype">size_t</span> minBottomsHandle, <a class="code" href="class_render_1_1_sprite_cache_base.html">SpriteCacheBase</a>* cache, LevelObjects&amp; objs, int32_t x1, int32_t y1, int32_t x2, int32_t y2, <span class="keywordtype">size_t</span> dist);
+<a name="l00129"></a>00129     
+<a name="l00130"></a>00130     std::pair&lt;int32_t, int32_t&gt; <a class="code" href="namespace_render.html#a14fb455a9e0201367451b54ff2276f9f">getClickedTile</a>(<span class="keyword">const</span> <a class="code" href="class_level_1_1_level.html">Level::Level</a>&amp; level, <span class="keywordtype">size_t</span> x, <span class="keywordtype">size_t</span> y, int32_t x1, int32_t y1, int32_t x2, int32_t y2, <span class="keywordtype">size_t</span> dist);
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132     <span class="keywordtype">void</span> <a class="code" href="namespace_render.html#a1b2e4583833018c9d23e43e44300ba83">clear</a>(<span class="keywordtype">int</span> r = 0, <span class="keywordtype">int</span> g = 0, <span class="keywordtype">int</span> b = 255);
+<a name="l00133"></a>00133 }
+<a name="l00134"></a>00134 
+<a name="l00135"></a>00135 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"

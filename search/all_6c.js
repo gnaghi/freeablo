@@ -130,6 +130,7 @@ var searchData=
   ['loadsqphashtable',['LoadSqpHashTable',['../_s_base_sub_types_8cpp.html#a7b04b4d4e21b0c707fc679cc1755082a',1,'LoadSqpHashTable(TMPQArchive *ha):&#160;SBaseSubTypes.cpp'],['../_storm_common_8h.html#a7b04b4d4e21b0c707fc679cc1755082a',1,'LoadSqpHashTable(TMPQArchive *ha):&#160;SBaseSubTypes.cpp']]],
   ['loadsqptable',['LoadSqpTable',['../_s_base_sub_types_8cpp.html#a39efc27f730dd52ff6f5fc9b559ed731',1,'SBaseSubTypes.cpp']]],
   ['loadtexture',['LoadTexture',['../class_rocket_s_d_l2_renderer.html#ab0e78538f385d5315b1e85a31417fcd1',1,'RocketSDL2Renderer']]],
+  ['loadtiledtexture',['loadTiledTexture',['../namespace_render.html#a6677c983912e2231696f463898e1a744',1,'Render']]],
   ['loadtilesetsprite',['loadTilesetSprite',['../namespace_render.html#a5b51432e4c169b5593556ea7ceebce69',1,'Render']]],
   ['loaduniqueitems',['loadUniqueItems',['../class_f_a_world_1_1_item_manager.html#a50caae6b529f46b2e984b6a75632b9cd',1,'FAWorld::ItemManager']]],
   ['loadusersettings',['loadUserSettings',['../class_settings_1_1_settings.html#a99d0bf933efedfbb5ce4f8a0c1a7f022',1,'Settings::Settings']]],

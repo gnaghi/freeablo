@@ -134,6 +134,12 @@ Public Types</h2></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#afb827f9b028aafa83fa870a609b126f2">GuiManager</a> (<a class="el" href="class_f_a_world_1_1_inventory.html">FAWorld::Inventory</a> &amp;playerInventory, <a class="el" href="class_engine_1_1_engine_main.html">Engine::EngineMain</a> &amp;<a class="el" href="readme_8md.html#a0c672cf8c51ac9f910731bbd3cea24ca">engine</a>, std::string <a class="el" href="class_f_a_gui_1_1_gui_manager.html#abac92caf7513a1c62573cf3aca7b2372">invClass</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#aec069d2a4bcb858c362fd0e5f4780bcf">openDialogue</a> (const std::string &amp;document)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#a709be93f3891ff52a560cfda84a97b1b">closeDialogue</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#ae86669ccf24b0b93589a49ff48614f2b">isDialogueOpened</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#abb2bfd980a0ee9d54e9ec862e93e061f">openDialogueScrollbox</a> (const std::string &amp;document)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#a216aeefb9a353349e7f85862fd03d888">closeDialogueScrollbox</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#a4f0045aec831a30f47a73dae03cd5b1c">isDialogueScrollboxOpened</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#ae6c3b065cf29ca67f74658a165f640cc">showTitleScreen</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#af7667c4778fe6db955c3b32399213c97">showIngameGui</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_a_gui_1_1_gui_manager.html#a517ba5e01a779fd93d2773c8976cd55f">showMainMenu</a> ()</td></tr>
@@ -224,6 +230,65 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a709be93f3891ff52a560cfda84a97b1b"></a><!-- doxytag: member="FAGui::GuiManager::closeDialogue" ref="a709be93f3891ff52a560cfda84a97b1b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_f_a_gui_1_1_gui_manager.html#a709be93f3891ff52a560cfda84a97b1b">FAGui::GuiManager::closeDialogue</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_gui_manager_a709be93f3891ff52a560cfda84a97b1b_icgraph.png" border="0" usemap="#class_f_a_gui_1_1_gui_manager_a709be93f3891ff52a560cfda84a97b1b_icgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_gui_manager_a709be93f3891ff52a560cfda84a97b1b_icgraph" id="class_f_a_gui_1_1_gui_manager_a709be93f3891ff52a560cfda84a97b1b_icgraph">
+<area shape="rect" id="node3" href="class_f_a_gui_1_1_f_a_python_funcs.html#a0ee352c5b02635d7d9b3e90e591ca7a6" title="FAGui::FAPythonFuncs::closeDialogue" alt="" coords="639,5,889,35"/><area shape="rect" id="node7" href="class_f_a_gui_1_1_gui_manager.html#a216aeefb9a353349e7f85862fd03d888" title="FAGui::GuiManager::closeDialogueScrollbox" alt="" coords="281,59,561,88"/><area shape="rect" id="node5" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="965,32,1205,61"/><area shape="rect" id="node9" href="class_f_a_gui_1_1_f_a_python_funcs.html#abba9596fd0d3d14620e82da13a0e65bd" title="FAGui::FAPythonFuncs::closeDialogueScrollbox" alt="" coords="612,59,916,88"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a216aeefb9a353349e7f85862fd03d888"></a><!-- doxytag: member="FAGui::GuiManager::closeDialogueScrollbox" ref="a216aeefb9a353349e7f85862fd03d888" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_f_a_gui_1_1_gui_manager.html#a216aeefb9a353349e7f85862fd03d888">FAGui::GuiManager::closeDialogueScrollbox</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_gui_manager_a216aeefb9a353349e7f85862fd03d888_cgraph.png" border="0" usemap="#class_f_a_gui_1_1_gui_manager_a216aeefb9a353349e7f85862fd03d888_cgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_gui_manager_a216aeefb9a353349e7f85862fd03d888_cgraph" id="class_f_a_gui_1_1_gui_manager_a216aeefb9a353349e7f85862fd03d888_cgraph">
+<area shape="rect" id="node3" href="class_f_a_gui_1_1_gui_manager.html#a709be93f3891ff52a560cfda84a97b1b" title="FAGui::GuiManager::closeDialogue" alt="" coords="336,5,563,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_gui_manager_a216aeefb9a353349e7f85862fd03d888_icgraph.png" border="0" usemap="#class_f_a_gui_1_1_gui_manager_a216aeefb9a353349e7f85862fd03d888_icgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_gui_manager_a216aeefb9a353349e7f85862fd03d888_icgraph" id="class_f_a_gui_1_1_gui_manager_a216aeefb9a353349e7f85862fd03d888_icgraph">
+<area shape="rect" id="node3" href="class_f_a_gui_1_1_f_a_python_funcs.html#abba9596fd0d3d14620e82da13a0e65bd" title="FAGui::FAPythonFuncs::closeDialogueScrollbox" alt="" coords="337,5,641,35"/><area shape="rect" id="node5" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="691,5,931,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="aedbc8c6e4b08c31c4208ea7b43dca4b3"></a><!-- doxytag: member="FAGui::GuiManager::currentGuiType" ref="aedbc8c6e4b08c31c4208ea7b43dca4b3" args="() const " -->
 <div class="memitem">
 <div class="memproto">
@@ -237,6 +302,126 @@ Here is the call graph for this function:</div>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae86669ccf24b0b93589a49ff48614f2b"></a><!-- doxytag: member="FAGui::GuiManager::isDialogueOpened" ref="ae86669ccf24b0b93589a49ff48614f2b" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="class_f_a_gui_1_1_gui_manager.html#ae86669ccf24b0b93589a49ff48614f2b">FAGui::GuiManager::isDialogueOpened</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_gui_manager_ae86669ccf24b0b93589a49ff48614f2b_icgraph.png" border="0" usemap="#class_f_a_gui_1_1_gui_manager_ae86669ccf24b0b93589a49ff48614f2b_icgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_gui_manager_ae86669ccf24b0b93589a49ff48614f2b_icgraph" id="class_f_a_gui_1_1_gui_manager_ae86669ccf24b0b93589a49ff48614f2b_icgraph">
+<area shape="rect" id="node3" href="class_f_a_gui_1_1_gui_manager.html#a4f0045aec831a30f47a73dae03cd5b1c" title="FAGui::GuiManager::isDialogueScrollboxOpened" alt="" coords="305,5,609,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f0045aec831a30f47a73dae03cd5b1c"></a><!-- doxytag: member="FAGui::GuiManager::isDialogueScrollboxOpened" ref="a4f0045aec831a30f47a73dae03cd5b1c" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_storm_port_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="class_f_a_gui_1_1_gui_manager.html#a4f0045aec831a30f47a73dae03cd5b1c">FAGui::GuiManager::isDialogueScrollboxOpened</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_gui_manager_a4f0045aec831a30f47a73dae03cd5b1c_cgraph.png" border="0" usemap="#class_f_a_gui_1_1_gui_manager_a4f0045aec831a30f47a73dae03cd5b1c_cgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_gui_manager_a4f0045aec831a30f47a73dae03cd5b1c_cgraph" id="class_f_a_gui_1_1_gui_manager_a4f0045aec831a30f47a73dae03cd5b1c_cgraph">
+<area shape="rect" id="node3" href="class_f_a_gui_1_1_gui_manager.html#ae86669ccf24b0b93589a49ff48614f2b" title="FAGui::GuiManager::isDialogueOpened" alt="" coords="360,5,611,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aec069d2a4bcb858c362fd0e5f4780bcf"></a><!-- doxytag: member="FAGui::GuiManager::openDialogue" ref="aec069d2a4bcb858c362fd0e5f4780bcf" args="(const std::string &amp;document)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_f_a_gui_1_1_gui_manager.html#aec069d2a4bcb858c362fd0e5f4780bcf">FAGui::GuiManager::openDialogue</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>document</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_gui_manager_aec069d2a4bcb858c362fd0e5f4780bcf_cgraph.png" border="0" usemap="#class_f_a_gui_1_1_gui_manager_aec069d2a4bcb858c362fd0e5f4780bcf_cgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_gui_manager_aec069d2a4bcb858c362fd0e5f4780bcf_cgraph" id="class_f_a_gui_1_1_gui_manager_aec069d2a4bcb858c362fd0e5f4780bcf_cgraph">
+<area shape="rect" id="node3" href="namespace_cel.html#a4e01b99470fde6ba49817d25dc1e2bc6" title="Cel::get" alt="" coords="372,5,439,35"/><area shape="rect" id="node5" href="class_f_a_render_1_1_renderer.html#a9f198f6d107afbe18b9f68231c4b2b8c" title="FARender::Renderer::getRocketContext" alt="" coords="277,59,533,88"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_gui_manager_aec069d2a4bcb858c362fd0e5f4780bcf_icgraph.png" border="0" usemap="#class_f_a_gui_1_1_gui_manager_aec069d2a4bcb858c362fd0e5f4780bcf_icgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_gui_manager_aec069d2a4bcb858c362fd0e5f4780bcf_icgraph" id="class_f_a_gui_1_1_gui_manager_aec069d2a4bcb858c362fd0e5f4780bcf_icgraph">
+<area shape="rect" id="node3" href="class_f_a_gui_1_1_f_a_python_funcs.html#a96deda3a275a0e6a64880f04a5a391ac" title="FAGui::FAPythonFuncs::openDialogue" alt="" coords="633,5,881,35"/><area shape="rect" id="node7" href="class_f_a_gui_1_1_gui_manager.html#abb2bfd980a0ee9d54e9ec862e93e061f" title="FAGui::GuiManager::openDialogueScrollbox" alt="" coords="279,59,556,88"/><area shape="rect" id="node5" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="957,32,1197,61"/><area shape="rect" id="node9" href="class_f_a_gui_1_1_f_a_python_funcs.html#aece6eeb8167be4c32a1f2d82cc5fe3e6" title="FAGui::FAPythonFuncs::openDialogueScrollbox" alt="" coords="607,59,908,88"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abb2bfd980a0ee9d54e9ec862e93e061f"></a><!-- doxytag: member="FAGui::GuiManager::openDialogueScrollbox" ref="abb2bfd980a0ee9d54e9ec862e93e061f" args="(const std::string &amp;document)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_f_a_gui_1_1_gui_manager.html#abb2bfd980a0ee9d54e9ec862e93e061f">FAGui::GuiManager::openDialogueScrollbox</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>document</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_gui_manager_abb2bfd980a0ee9d54e9ec862e93e061f_cgraph.png" border="0" usemap="#class_f_a_gui_1_1_gui_manager_abb2bfd980a0ee9d54e9ec862e93e061f_cgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_gui_manager_abb2bfd980a0ee9d54e9ec862e93e061f_cgraph" id="class_f_a_gui_1_1_gui_manager_abb2bfd980a0ee9d54e9ec862e93e061f_cgraph">
+<area shape="rect" id="node3" href="class_f_a_gui_1_1_gui_manager.html#aec069d2a4bcb858c362fd0e5f4780bcf" title="FAGui::GuiManager::openDialogue" alt="" coords="333,32,557,61"/><area shape="rect" id="node5" href="namespace_cel.html#a4e01b99470fde6ba49817d25dc1e2bc6" title="Cel::get" alt="" coords="700,5,767,35"/><area shape="rect" id="node7" href="class_f_a_render_1_1_renderer.html#a9f198f6d107afbe18b9f68231c4b2b8c" title="FARender::Renderer::getRocketContext" alt="" coords="605,59,861,88"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_f_a_gui_1_1_gui_manager_abb2bfd980a0ee9d54e9ec862e93e061f_icgraph.png" border="0" usemap="#class_f_a_gui_1_1_gui_manager_abb2bfd980a0ee9d54e9ec862e93e061f_icgraph" alt=""/></div>
+<map name="class_f_a_gui_1_1_gui_manager_abb2bfd980a0ee9d54e9ec862e93e061f_icgraph" id="class_f_a_gui_1_1_gui_manager_abb2bfd980a0ee9d54e9ec862e93e061f_icgraph">
+<area shape="rect" id="node3" href="class_f_a_gui_1_1_f_a_python_funcs.html#aece6eeb8167be4c32a1f2d82cc5fe3e6" title="FAGui::FAPythonFuncs::openDialogueScrollbox" alt="" coords="335,5,636,35"/><area shape="rect" id="node5" href="namespace_f_a_gui.html#afbfc2a5c5a5f9d7a9f9465179a85b8a4" title="FAGui::BOOST_PYTHON_MODULE" alt="" coords="685,5,925,35"/></map>
+</div>
+</p>
 
 </div>
 </div>

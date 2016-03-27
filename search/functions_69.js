@@ -55,6 +55,8 @@ var searchData=
   ['isatty',['IsATTY',['../namespacetesting_1_1internal_1_1posix.html#a16ebe936b3a8ea462a94191635aedc27',1,'testing::internal::posix']]],
   ['iscontainertest',['IsContainerTest',['../namespacetesting_1_1internal.html#acb6ea1086293c1d6636e3c67941351fb',1,'testing::internal::IsContainerTest(int, typename C::iterator *=NULL, typename C::const_iterator *=NULL)'],['../namespacetesting_1_1internal.html#af545a2ae928b8a9e7581978234464275',1,'testing::internal::IsContainerTest(long)']]],
   ['isdead',['isDead',['../class_f_a_world_1_1_actor.html#a202dce9f5352c307a3fe4e27c0d40b36',1,'FAWorld::Actor']]],
+  ['isdialogueopened',['isDialogueOpened',['../class_f_a_gui_1_1_gui_manager.html#ae86669ccf24b0b93589a49ff48614f2b',1,'FAGui::GuiManager']]],
+  ['isdialoguescrollboxopened',['isDialogueScrollboxOpened',['../class_f_a_gui_1_1_gui_manager.html#a4f0045aec831a30f47a73dae03cd5b1c',1,'FAGui::GuiManager']]],
   ['isdigit',['IsDigit',['../namespacetesting_1_1internal.html#a4bd96b7fa6486802d33ddc217af55a39',1,'testing::internal']]],
   ['isdir',['IsDir',['../namespacetesting_1_1internal_1_1posix.html#af0d04ed5baeed28353fa38742748a421',1,'testing::internal::posix']]],
   ['isdirectory',['IsDirectory',['../classtesting_1_1internal_1_1_file_path.html#a918336f16efa8e07d4b94192d6a89f44',1,'testing::internal::FilePath']]],

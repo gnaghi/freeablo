@@ -11,6 +11,7 @@ var searchData=
   ['parser',['parser',['../namespaceupload.html#a94a4182ad76aa33a505cb03808162ed1',1,'upload']]],
   ['partialversion',['PartialVersion',['../struct___p_a_r_t___f_i_l_e___h_e_a_d_e_r.html#a10e8c7b983a0349462fd3ca0aa5d495a',1,'_PART_FILE_HEADER']]],
   ['paused',['paused',['../classpython_1_1docmanage_1_1_doc_manager.html#a1cb934c0c748c1bd6c8495a8c48b1de0',1,'python::docmanage::DocManager']]],
+  ['pausefile',['PauseFile',['../classpython_1_1docmanage_1_1_doc_manager.html#aeec5bfdedefa3e970354af835c63fb2c',1,'python::docmanage::DocManager']]],
   ['pausehandle',['pauseHandle',['../classpython_1_1docmanage_1_1_doc_manager.html#a3abbfff39b7521928bd4324fee17127b',1,'python::docmanage::DocManager']]],
   ['pausehiddendocs',['pauseHiddenDocs',['../classpython_1_1docmanage_1_1_doc_manager.html#a057f43907d8299510784f28ab51fd1d1',1,'python::docmanage::DocManager']]],
   ['pb',['pb',['../union___b_y_t_e___a_n_d___w_o_r_d___p_t_r.html#aeca389d4431e972f488de11c48bacfd2',1,'_BYTE_AND_WORD_PTR::pb()'],['../struct___c_lzma_props.html#aa6519a22fe6aa1d83a6bb68398778d5d',1,'_CLzmaProps::pb()'],['../struct_c_lzma_enc.html#ae077722357c39eb8559e9f53c0ed2c6d',1,'CLzmaEnc::pb()'],['../struct___c_lzma_enc_props.html#aa1d9d0c7c3adccb35410fdbe8f102d5b',1,'_CLzmaEncProps::pb()']]],
