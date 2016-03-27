@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['biggestint',['BiggestInt',['../namespacetesting_1_1internal.html#a05c6bd9ede5ccdf25191a590d610dcc6',1,'testing::internal']]],
+  ['bits',['Bits',['../classtesting_1_1internal_1_1_floating_point.html#abf228bf6cd48f12c8b44c85b4971a731',1,'testing::internal::FloatingPoint']]],
   ['blizzard_5fbsdiff40_5ffile',['BLIZZARD_BSDIFF40_FILE',['../_s_file_patch_archives_8cpp.html#a05295947d179c7b31b500eb7165f5792',1,'SFilePatchArchives.cpp']]],
   ['block_5fcheck',['BLOCK_CHECK',['../_file_stream_8h.html#a00e3d5c8c1f6da61e9850bb0c0ff6c28',1,'FileStream.h']]],
   ['block_5fread',['BLOCK_READ',['../_file_stream_8h.html#a2b42629896807ab889151436820c14a4',1,'FileStream.h']]],

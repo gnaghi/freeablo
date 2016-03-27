@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespacegtest__output__test.html#a9d3e73851ab6b1d226fc584036025839" title="gtest_output_test.GetOutputOfAllCommands" alt="" coords="400,113,683,143"/>
+<area shape="rect" id="node9" href="$namespacegtest__output__test.html#a3454cfbe1dc13123ffc8d35189acfc22" title="gtest_output_test.ToUnixLineEnding" alt="" coords="1448,165,1680,195"/>
+<area shape="rect" id="node20" href="$namespacegtest__output__test.html#a0c15aa843eff7b1df244c46cca13ea57" title="gtest_output_test.RemoveTypeInfoDetails" alt="" coords="408,217,675,247"/>
+<area shape="rect" id="node22" href="$namespacegtest__output__test.html#a20cf98e6d794a2c732acc6a8b13f3c4c" title="gtest_output_test.NormalizeToCurrentPlatform" alt="" coords="395,271,688,300"/>
+<area shape="rect" id="node24" href="$namespacegtest__output__test.html#adee32bbc6a50383452627c3c4888231a" title="gtest_output_test.RemoveTestCounts" alt="" coords="420,324,663,353"/>
+<area shape="rect" id="node26" href="$classgtest__output__test_1_1_g_test_output_test.html#a5fd20de9ce41d36e690aba1e0934ad5a" title="gtest_output_test.GTestOutputTest.RemoveUnsupportedTests" alt="" coords="348,377,735,407"/>
+<area shape="rect" id="node5" href="$namespacegtest__output__test.html#a538ef64ef4ec54fa01ac5b790dce1094" title="gtest_output_test.GetCommandOutput" alt="" coords="793,113,1039,143"/>
+<area shape="rect" id="node7" href="$namespacegtest__output__test.html#ab48290651c02da54b54a0e1a52afde80" title="gtest_output_test.NormalizeOutput" alt="" coords="1123,60,1347,89"/>
+<area shape="rect" id="node17" href="$namespacegtest__output__test.html#a52d428b680879fbe96182f7db8ae738e" title="gtest_output_test.GetShellCommandOutput" alt="" coords="1097,113,1372,143"/>
+<area shape="rect" id="node11" href="$namespacegtest__output__test.html#a121831a3be4499f43226a849460076eb" title="gtest_output_test.RemoveLocations" alt="" coords="1448,5,1680,35"/>
+<area shape="rect" id="node13" href="$namespacegtest__output__test.html#a06f3f2b9517a19912a1b45c6af00a6fd" title="gtest_output_test.RemoveStackTraceDetails" alt="" coords="1423,59,1705,88"/>
+<area shape="rect" id="node15" href="$namespacegtest__output__test.html#a98f04785c16d829447ccffc63f3b35f1" title="gtest_output_test.RemoveTime" alt="" coords="1461,112,1667,141"/>
+<area shape="rect" id="node28" href="$namespacegtest__output__test.html#a49e9b498f20bb00261d74e752c1e231d" title="gtest_output_test.RemoveMatchingTests" alt="" coords="785,351,1047,380"/>
+<area shape="rect" id="node30" href="$namespacegtest__output__test.html#a78564bc7c92e26e73b93acdc8af703e5" title="gtest_output_test.RemoveStackTraces" alt="" coords="791,404,1041,433"/>
+</map>

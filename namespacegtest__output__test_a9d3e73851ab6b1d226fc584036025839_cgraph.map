@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespacegtest__output__test.html#a538ef64ef4ec54fa01ac5b790dce1094" title="gtest_output_test.GetCommandOutput" alt="" coords="337,112,583,141"/>
+<area shape="rect" id="node5" href="$namespacegtest__output__test.html#ab48290651c02da54b54a0e1a52afde80" title="gtest_output_test.NormalizeOutput" alt="" coords="659,85,883,115"/>
+<area shape="rect" id="node15" href="$namespacegtest__output__test.html#a52d428b680879fbe96182f7db8ae738e" title="gtest_output_test.GetShellCommandOutput" alt="" coords="633,139,908,168"/>
+<area shape="rect" id="node7" href="$namespacegtest__output__test.html#a3454cfbe1dc13123ffc8d35189acfc22" title="gtest_output_test.ToUnixLineEnding" alt="" coords="984,5,1216,35"/>
+<area shape="rect" id="node9" href="$namespacegtest__output__test.html#a121831a3be4499f43226a849460076eb" title="gtest_output_test.RemoveLocations" alt="" coords="984,59,1216,88"/>
+<area shape="rect" id="node11" href="$namespacegtest__output__test.html#a06f3f2b9517a19912a1b45c6af00a6fd" title="gtest_output_test.RemoveStackTraceDetails" alt="" coords="959,112,1241,141"/>
+<area shape="rect" id="node13" href="$namespacegtest__output__test.html#a98f04785c16d829447ccffc63f3b35f1" title="gtest_output_test.RemoveTime" alt="" coords="997,165,1203,195"/>
+</map>

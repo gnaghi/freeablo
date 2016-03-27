@@ -140,11 +140,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00057"></a><a class="code" href="_types_8h.html#accc14a7c843716dfed734f3a03e8d2b6">00057</a> <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="bzlib__private_8h.html#accc14a7c843716dfed734f3a03e8d2b6">UInt16</a>;
 <a name="l00058"></a>00058 
 <a name="l00059"></a>00059 <span class="preprocessor">#ifdef _LZMA_UINT32_IS_ULONG</span>
-<a name="l00060"></a>00060 <span class="preprocessor"></span><span class="keyword">typedef</span> <span class="keywordtype">long</span> <a class="code" href="bzlib__private_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>;
-<a name="l00061"></a>00061 <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="bzlib__private_8h.html#a4cd0dc7d33ac7a69204e8429ecea0f86">UInt32</a>;
+<a name="l00060"></a>00060 <span class="preprocessor"></span><span class="keyword">typedef</span> <span class="keywordtype">long</span> <a class="code" href="namespacetesting_1_1internal.html#a8ee38faaf875f133358abaf9bc056cec">Int32</a>;
+<a name="l00061"></a>00061 <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="namespacetesting_1_1internal.html#a40d4fffcd2bf56f18b1c380615aa85e3">UInt32</a>;
 <a name="l00062"></a>00062 <span class="preprocessor">#else</span>
-<a name="l00063"></a><a class="code" href="_types_8h.html#adf1ef98b7070177c7c709b0b82276a07">00063</a> <span class="preprocessor"></span><span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="bzlib__private_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>;
-<a name="l00064"></a><a class="code" href="_types_8h.html#a4cd0dc7d33ac7a69204e8429ecea0f86">00064</a> <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="bzlib__private_8h.html#a4cd0dc7d33ac7a69204e8429ecea0f86">UInt32</a>;
+<a name="l00063"></a><a class="code" href="_types_8h.html#adf1ef98b7070177c7c709b0b82276a07">00063</a> <span class="preprocessor"></span><span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="namespacetesting_1_1internal.html#a8ee38faaf875f133358abaf9bc056cec">Int32</a>;
+<a name="l00064"></a><a class="code" href="_types_8h.html#a4cd0dc7d33ac7a69204e8429ecea0f86">00064</a> <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="namespacetesting_1_1internal.html#a40d4fffcd2bf56f18b1c380615aa85e3">UInt32</a>;
 <a name="l00065"></a>00065 <span class="preprocessor">#endif</span>
 <a name="l00066"></a>00066 <span class="preprocessor"></span>
 <a name="l00067"></a>00067 <span class="preprocessor">#ifdef _SZ_NO_INT_64</span>
@@ -207,17 +207,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00124"></a>00124 
 <a name="l00125"></a><a class="code" href="struct_i_byte_in.html">00125</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
 <a name="l00126"></a>00126 {
-<a name="l00127"></a><a class="code" href="struct_i_byte_in.html#a5d45f52382bc284a5419d72f3f38bb17">00127</a>   <a class="code" href="_types_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> (*Read)(<span class="keywordtype">void</span> *p); <span class="comment">/* reads one byte, returns 0 in case of EOF or error */</span>
+<a name="l00127"></a><a class="code" href="struct_i_byte_in.html#a5d45f52382bc284a5419d72f3f38bb17">00127</a>   <a class="code" href="_types_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> (*<a class="code" href="namespacetesting_1_1internal_1_1posix.html#a3c6ab13e581a56f1b02f3eb7536c97fd">Read</a>)(<span class="keywordtype">void</span> *p); <span class="comment">/* reads one byte, returns 0 in case of EOF or error */</span>
 <a name="l00128"></a>00128 } <a class="code" href="struct_i_byte_in.html">IByteIn</a>;
 <a name="l00129"></a>00129 
 <a name="l00130"></a><a class="code" href="struct_i_byte_out.html">00130</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
 <a name="l00131"></a>00131 {
-<a name="l00132"></a><a class="code" href="struct_i_byte_out.html#a179e19dc8cfb53be334a776ab92adf04">00132</a>   void (*Write)(<span class="keywordtype">void</span> *p, <a class="code" href="_types_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> b);
+<a name="l00132"></a><a class="code" href="struct_i_byte_out.html#a179e19dc8cfb53be334a776ab92adf04">00132</a>   void (*<a class="code" href="namespacetesting_1_1internal_1_1posix.html#af4acf9f78d55f815a18b43786511abef">Write</a>)(<span class="keywordtype">void</span> *p, <a class="code" href="_types_8h.html#ae3a497195d617519e5353ea7b417940f">Byte</a> b);
 <a name="l00133"></a>00133 } <a class="code" href="struct_i_byte_out.html">IByteOut</a>;
 <a name="l00134"></a>00134 
 <a name="l00135"></a><a class="code" href="struct_i_seq_in_stream.html">00135</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
 <a name="l00136"></a>00136 {
-<a name="l00137"></a><a class="code" href="struct_i_seq_in_stream.html#ace6946f7cee60181df098ee5371ff1e8">00137</a>   <a class="code" href="_types_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*Read)(<span class="keywordtype">void</span> *p, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *size);
+<a name="l00137"></a><a class="code" href="struct_i_seq_in_stream.html#ace6946f7cee60181df098ee5371ff1e8">00137</a>   <a class="code" href="_types_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*<a class="code" href="namespacetesting_1_1internal_1_1posix.html#a3c6ab13e581a56f1b02f3eb7536c97fd">Read</a>)(<span class="keywordtype">void</span> *p, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *size);
 <a name="l00138"></a>00138     <span class="comment">/* if (input(*size) != 0 &amp;&amp; output(*size) == 0) means end_of_stream.</span>
 <a name="l00139"></a>00139 <span class="comment">       (output(*size) &lt; input(*size)) is allowed */</span>
 <a name="l00140"></a>00140 } <a class="code" href="struct_i_seq_in_stream.html">ISeqInStream</a>;
@@ -229,7 +229,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00146"></a>00146 
 <a name="l00147"></a><a class="code" href="struct_i_seq_out_stream.html">00147</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
 <a name="l00148"></a>00148 {
-<a name="l00149"></a><a class="code" href="struct_i_seq_out_stream.html#adaa5708b12db3b5ce1d62da3e85b30d9">00149</a>   size_t (*Write)(<span class="keywordtype">void</span> *p, <span class="keyword">const</span> <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> size);
+<a name="l00149"></a><a class="code" href="struct_i_seq_out_stream.html#adaa5708b12db3b5ce1d62da3e85b30d9">00149</a>   size_t (*<a class="code" href="namespacetesting_1_1internal_1_1posix.html#af4acf9f78d55f815a18b43786511abef">Write</a>)(<span class="keywordtype">void</span> *p, <span class="keyword">const</span> <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> size);
 <a name="l00150"></a>00150     <span class="comment">/* Returns: result - the number of actually written bytes.</span>
 <a name="l00151"></a>00151 <span class="comment">       (result &lt; size) means error */</span>
 <a name="l00152"></a>00152 } <a class="code" href="struct_i_seq_out_stream.html">ISeqOutStream</a>;
@@ -243,7 +243,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00160"></a>00160 
 <a name="l00161"></a><a class="code" href="struct_i_seek_in_stream.html">00161</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
 <a name="l00162"></a>00162 {
-<a name="l00163"></a><a class="code" href="struct_i_seek_in_stream.html#ad02737ba73b9aadf47dda6cad77bc8e2">00163</a>   <a class="code" href="_types_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*Read)(<span class="keywordtype">void</span> *p, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *size);  <span class="comment">/* same as ISeqInStream::Read */</span>
+<a name="l00163"></a><a class="code" href="struct_i_seek_in_stream.html#ad02737ba73b9aadf47dda6cad77bc8e2">00163</a>   <a class="code" href="_types_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*<a class="code" href="namespacetesting_1_1internal_1_1posix.html#a3c6ab13e581a56f1b02f3eb7536c97fd">Read</a>)(<span class="keywordtype">void</span> *p, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *size);  <span class="comment">/* same as ISeqInStream::Read */</span>
 <a name="l00164"></a><a class="code" href="struct_i_seek_in_stream.html#af7279dddc519e2ba62807f1fc310d32b">00164</a>   <a class="code" href="_types_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*Seek)(<span class="keywordtype">void</span> *p, <a class="code" href="_types_8h.html#ade5ca5eec203b16d15253b7c422808bf">Int64</a> *pos, <a class="code" href="_types_8h.html#ab0216441b8737c13f5b275408f9e9709">ESzSeek</a> origin);
 <a name="l00165"></a>00165 } <a class="code" href="struct_i_seek_in_stream.html">ISeekInStream</a>;
 <a name="l00166"></a>00166 
@@ -253,10 +253,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00170"></a>00170     <span class="comment">/* if (input(*size) != 0 &amp;&amp; output(*size) == 0) means end_of_stream.</span>
 <a name="l00171"></a>00171 <span class="comment">       (output(*size) &gt; input(*size)) is not allowed</span>
 <a name="l00172"></a>00172 <span class="comment">       (output(*size) &lt; input(*size)) is allowed */</span>
-<a name="l00173"></a><a class="code" href="struct_i_look_in_stream.html#a1155c03993c63ea408046b7969eb9e32">00173</a>   <a class="code" href="_types_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*Skip)(<span class="keywordtype">void</span> *p, <span class="keywordtype">size_t</span> offset);
+<a name="l00173"></a><a class="code" href="struct_i_look_in_stream.html#a1155c03993c63ea408046b7969eb9e32">00173</a>   <a class="code" href="_types_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*<a class="code" href="namespacepump.html#a2a4a78c5cca4b815e2f323eba9245dd4">Skip</a>)(<span class="keywordtype">void</span> *p, <span class="keywordtype">size_t</span> offset);
 <a name="l00174"></a>00174     <span class="comment">/* offset must be &lt;= output(*size) of Look */</span>
 <a name="l00175"></a>00175 
-<a name="l00176"></a><a class="code" href="struct_i_look_in_stream.html#aab1a5882c3ec829fa16f5638a0e0fbb9">00176</a>   <a class="code" href="_types_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*Read)(<span class="keywordtype">void</span> *p, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *size);
+<a name="l00176"></a><a class="code" href="struct_i_look_in_stream.html#aab1a5882c3ec829fa16f5638a0e0fbb9">00176</a>   <a class="code" href="_types_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*<a class="code" href="namespacetesting_1_1internal_1_1posix.html#a3c6ab13e581a56f1b02f3eb7536c97fd">Read</a>)(<span class="keywordtype">void</span> *p, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *size);
 <a name="l00177"></a>00177     <span class="comment">/* reads directly (without buffer). It&#39;s same as ISeqInStream::Read */</span>
 <a name="l00178"></a><a class="code" href="struct_i_look_in_stream.html#acca0048f4e2046b815739ed9ab2fa8f8">00178</a>   <a class="code" href="_types_8h.html#acc0053eeb62726b68b22e8c7d9e91367">SRes</a> (*Seek)(<span class="keywordtype">void</span> *p, <a class="code" href="_types_8h.html#ade5ca5eec203b16d15253b7c422808bf">Int64</a> *pos, <a class="code" href="_types_8h.html#ab0216441b8737c13f5b275408f9e9709">ESzSeek</a> origin);
 <a name="l00179"></a>00179 } <a class="code" href="struct_i_look_in_stream.html">ILookInStream</a>;

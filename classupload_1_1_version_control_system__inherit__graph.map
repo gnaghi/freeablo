@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classupload_1_1_git_v_c_s.html" title="upload.GitVCS" alt="" coords="5,83,115,112"/>
+<area shape="rect" id="node5" href="$classupload_1_1_mercurial_v_c_s.html" title="upload.MercurialVCS" alt="" coords="139,83,283,112"/>
+<area shape="rect" id="node7" href="$classupload_1_1_subversion_v_c_s.html" title="upload.SubversionVCS" alt="" coords="307,83,464,112"/>
+</map>

@@ -116,8 +116,8 @@ Classes</h2></td></tr>
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bzlib__private_8h.html#a74566e71cda38928f249b6d32429042a">BZ_VERSION</a>&#160;&#160;&#160;&quot;1.0.5, 10-Dec-2007&quot;</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bzlib__private_8h.html#add3ca9eefe3b5b754426f51d3043e579">True</a>&#160;&#160;&#160;((<a class="el" href="bzlib__private_8h.html#a253b248072cfc8bd812c69acd0046eed">Bool</a>)1)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bzlib__private_8h.html#a306ebd41c0cd1303b1372c6153f0caf8">False</a>&#160;&#160;&#160;((<a class="el" href="bzlib__private_8h.html#a253b248072cfc8bd812c69acd0046eed">Bool</a>)0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bzlib__private_8h.html#add3ca9eefe3b5b754426f51d3043e579">True</a>&#160;&#160;&#160;((<a class="el" href="struct_bool.html">Bool</a>)1)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bzlib__private_8h.html#a306ebd41c0cd1303b1372c6153f0caf8">False</a>&#160;&#160;&#160;((<a class="el" href="struct_bool.html">Bool</a>)0)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bzlib__private_8h.html#a9f04218fe09e6ee659e045b2f11542ed">__inline__</a>&#160;&#160;&#160;/* */</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bzlib__private_8h.html#ab89fbbd55d72ef6949245359aec05f78">AssertH</a>(cond, errcode)&#160;&#160;&#160;{ if (!(cond)) <a class="el" href="bzlib__private_8h.html#ace4dbed3109a9a83b7bef09843f23979">BZ2_bz__AssertH__fail</a> ( errcode ); }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bzlib__private_8h.html#ac2e8ee6cecda195a11d720e5c1503279">AssertD</a>(cond, msg)&#160;&#160;&#160;/* */</td></tr>
@@ -223,7 +223,7 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bzlib__private_8h.html#ace4dbed3109a9a83b7bef09843f23979">BZ2_bz__AssertH__fail</a> (int errcode)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bzlib__private_8h.html#ad624f77698d8a8973e1749d5279d3f47">BZ2_blockSort</a> (<a class="el" href="struct_e_state.html">EState</a> *)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bzlib__private_8h.html#a253dbd00d873f3af088678534ef72eaf">BZ2_compressBlock</a> (<a class="el" href="struct_e_state.html">EState</a> *, <a class="el" href="bzlib__private_8h.html#a253b248072cfc8bd812c69acd0046eed">Bool</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bzlib__private_8h.html#a253dbd00d873f3af088678534ef72eaf">BZ2_compressBlock</a> (<a class="el" href="struct_e_state.html">EState</a> *, <a class="el" href="struct_bool.html">Bool</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bzlib__private_8h.html#abecccdaf4e9ba0bf436d3f56920c76e6">BZ2_bsInitWrite</a> (<a class="el" href="struct_e_state.html">EState</a> *)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bzlib__private_8h.html#aa4af54c909516a42487334e6979f0759">BZ2_hbAssignCodes</a> (<a class="el" href="bzlib__private_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a> *, <a class="el" href="bzlib__private_8h.html#a5a0fa7fd26bf95968c50ea6c1dc48825">UChar</a> *, <a class="el" href="bzlib__private_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>, <a class="el" href="bzlib__private_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>, <a class="el" href="bzlib__private_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bzlib__private_8h.html#ae9474c299e069035421291b8d0f3c30c">BZ2_hbMakeCodeLengths</a> (<a class="el" href="bzlib__private_8h.html#a5a0fa7fd26bf95968c50ea6c1dc48825">UChar</a> *, <a class="el" href="bzlib__private_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a> *, <a class="el" href="bzlib__private_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>, <a class="el" href="bzlib__private_8h.html#adf1ef98b7070177c7c709b0b82276a07">Int32</a>)</td></tr>
@@ -1399,7 +1399,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="_types_8h.html#a306ebd41c0cd1303b1372c6153f0caf8">False</a>&#160;&#160;&#160;((<a class="el" href="bzlib__private_8h.html#a253b248072cfc8bd812c69acd0046eed">Bool</a>)0)</td>
+          <td class="memname">#define <a class="el" href="_types_8h.html#a306ebd41c0cd1303b1372c6153f0caf8">False</a>&#160;&#160;&#160;((<a class="el" href="struct_bool.html">Bool</a>)0)</td>
         </tr>
       </table>
 </div>
@@ -1533,7 +1533,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="_types_8h.html#add3ca9eefe3b5b754426f51d3043e579">True</a>&#160;&#160;&#160;((<a class="el" href="bzlib__private_8h.html#a253b248072cfc8bd812c69acd0046eed">Bool</a>)1)</td>
+          <td class="memname">#define <a class="el" href="_types_8h.html#add3ca9eefe3b5b754426f51d3043e579">True</a>&#160;&#160;&#160;((<a class="el" href="struct_bool.html">Bool</a>)1)</td>
         </tr>
       </table>
 </div>
@@ -1759,7 +1759,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef unsigned char <a class="el" href="bzlib__private_8h.html#a253b248072cfc8bd812c69acd0046eed">Bool</a></td>
+          <td class="memname">typedef unsigned char <a class="el" href="struct_bool.html">Bool</a></td>
         </tr>
       </table>
 </div>
@@ -1937,7 +1937,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="bzlib__private_8h.html#a253b248072cfc8bd812c69acd0046eed">Bool</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_bool.html">Bool</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>

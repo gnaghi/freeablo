@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#a5d06f6246b468aaa61914f95bbd7d4c6" title="gtest_shuffle_test.GTestShuffleUnitTest.testShuffleRestoresOrderAfterEachIteration" alt="" coords="259,5,773,35"/>
+<area shape="rect" id="node5" href="$classgtest__shuffle__test_1_1_g_test_shuffle_unit_test.html#ab748bd2af7c522d5b3c98c87a9b06867" title="gtest_shuffle_test.GTestShuffleUnitTest.testShuffleGeneratesNewOrderInEachIteration" alt="" coords="251,59,781,88"/>
+</map>

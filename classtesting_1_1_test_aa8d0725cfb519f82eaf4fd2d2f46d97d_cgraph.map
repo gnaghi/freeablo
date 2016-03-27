@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespacetesting_1_1internal.html#a9bd0caf5d16512de38b39599c13ee634" title="testing::internal::GetUnitTestImpl" alt="" coords="297,5,511,35"/>
+<area shape="rect" id="node7" href="$classtesting_1_1internal_1_1_unit_test_impl.html#aba3caef4ad23ce98be80250aeb0cc787" title="testing::internal::UnitTestImpl::current_test_result" alt="" coords="249,59,559,88"/>
+<area shape="rect" id="node9" href="$classtesting_1_1_test_result.html#ace61ce992083a9124f9ff0e99a2041cc" title="testing::TestResult::HasFatalFailure" alt="" coords="288,112,520,141"/>
+<area shape="rect" id="node5" href="$classtesting_1_1_unit_test.html#a24192400b70b3b946746954e9574fb8e" title="testing::UnitTest::GetInstance" alt="" coords="609,5,807,35"/>
+<area shape="rect" id="node11" href="$namespacetesting_1_1internal.html#a1e77a774d910346eff11a86d8df783a5" title="testing::internal::CountIf" alt="" coords="627,112,789,141"/>
+</map>

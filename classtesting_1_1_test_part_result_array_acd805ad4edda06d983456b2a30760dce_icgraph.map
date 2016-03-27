@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classtesting_1_1_test_part_result_array.html#a799a09c9ad8c1c8875400af78efe4b17" title="testing::TestPartResultArray::GetTestPartResult" alt="" coords="276,5,580,35"/>
+<area shape="rect" id="node5" href="$namespacetesting_1_1internal.html#a14ff02e6d151f45e998657674e9af88a" title="testing::internal::HasOneFailure" alt="" coords="631,32,836,61"/>
+<area shape="rect" id="node7" href="$classtesting_1_1internal_1_1_single_failure_checker.html#a4b0a907c9c1b350c79d70af138e9f0bf" title="testing::internal::SingleFailureChecker::~SingleFailureChecker" alt="" coords="887,32,1268,61"/>
+</map>

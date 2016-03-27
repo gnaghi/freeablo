@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespacetesting_1_1internal.html#acba06d4f0343dec407738ba5544af990" title="testing::internal::CaptureStdout" alt="" coords="223,5,425,35"/>
+<area shape="rect" id="node5" href="$namespacetesting_1_1internal.html#a8ec00d458d0d442bd64af7b5f9c22dda" title="testing::internal::CaptureStderr" alt="" coords="224,59,424,88"/>
+<area shape="rect" id="node7" href="$namespacetesting_1_1internal.html#aed657219a9856a8d249a3230de0c54ce" title="testing::internal::GetCapturedStdout" alt="" coords="209,112,439,141"/>
+<area shape="rect" id="node9" href="$namespacetesting_1_1internal.html#a374156401da17704099d0c33fa53adfb" title="testing::internal::GetCapturedStderr" alt="" coords="211,165,437,195"/>
+</map>

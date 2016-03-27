@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classtesting_1_1_unit_test.html#a24192400b70b3b946746954e9574fb8e" title="testing::UnitTest::GetInstance" alt="" coords="381,5,579,35"/>
+<area shape="rect" id="node5" href="$classtesting_1_1_unit_test.html#a6802793a0be9cee17380fdd8c7161fcd" title="testing::UnitTest::total_test_case_count" alt="" coords="353,59,607,88"/>
+<area shape="rect" id="node7" href="$classtesting_1_1_unit_test.html#a3f324a8067d56044b56cec58d1edf7ac" title="testing::UnitTest::GetTestCase" alt="" coords="377,112,583,141"/>
+<area shape="rect" id="node9" href="$classtesting_1_1_test_case.html#af4dfd4ece8e66520a30e6a9fbd9d43aa" title="testing::TestCase::name" alt="" coords="397,165,563,195"/>
+</map>

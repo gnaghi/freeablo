@@ -697,7 +697,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00614"></a>00614 <span class="comment">   perform any compression: this will be done by deflate().</span>
 <a name="l00615"></a>00615 <span class="comment">*/</span>
 <a name="l00616"></a>00616 
-<a name="l00617"></a>00617 ZEXTERN <span class="keywordtype">int</span> ZEXPORT <a class="code" href="deflate_8c.html#a496430688ab9f4179689c883a6776b02">deflateCopy</a> <a class="code" href="deflate_8c.html#a710017966c99b4ee777ec409dd4b7a81">OF</a>((z_streamp dest,
+<a name="l00617"></a>00617 ZEXTERN <span class="keywordtype">int</span> ZEXPORT <a class="code" href="deflate_8c.html#a496430688ab9f4179689c883a6776b02">deflateCopy</a> <a class="code" href="deflate_8c.html#a710017966c99b4ee777ec409dd4b7a81">OF</a>((z_streamp <a class="code" href="namespaceupload.html#acddb2d9bf09b98fb6a205c368a8d8b1b">dest</a>,
 <a name="l00618"></a>00618                                     z_streamp source));
 <a name="l00619"></a>00619 <span class="comment">/*</span>
 <a name="l00620"></a>00620 <span class="comment">     Sets the destination stream as a complete copy of the source stream.</span>
@@ -901,7 +901,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00818"></a>00818 <span class="comment">   time, until success or end of the input data.</span>
 <a name="l00819"></a>00819 <span class="comment">*/</span>
 <a name="l00820"></a>00820 
-<a name="l00821"></a>00821 ZEXTERN <span class="keywordtype">int</span> ZEXPORT <a class="code" href="inflate_8c.html#aed5ce4086853dcd68479b936c516ac09">inflateCopy</a> <a class="code" href="deflate_8c.html#a710017966c99b4ee777ec409dd4b7a81">OF</a>((z_streamp dest,
+<a name="l00821"></a>00821 ZEXTERN <span class="keywordtype">int</span> ZEXPORT <a class="code" href="inflate_8c.html#aed5ce4086853dcd68479b936c516ac09">inflateCopy</a> <a class="code" href="deflate_8c.html#a710017966c99b4ee777ec409dd4b7a81">OF</a>((z_streamp <a class="code" href="namespaceupload.html#acddb2d9bf09b98fb6a205c368a8d8b1b">dest</a>,
 <a name="l00822"></a>00822                                     z_streamp source));
 <a name="l00823"></a>00823 <span class="comment">/*</span>
 <a name="l00824"></a>00824 <span class="comment">     Sets the destination stream as a complete copy of the source stream.</span>
@@ -1182,7 +1182,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l01099"></a>01099 <span class="comment">   you need special options.</span>
 <a name="l01100"></a>01100 <span class="comment">*/</span>
 <a name="l01101"></a>01101 
-<a name="l01102"></a>01102 ZEXTERN <span class="keywordtype">int</span> ZEXPORT <a class="code" href="zlib_2compress_8c.html#aef315743418d760a360e1be293d27cd1">compress</a> <a class="code" href="deflate_8c.html#a710017966c99b4ee777ec409dd4b7a81">OF</a>((<a class="code" href="zconf_8h.html#aeb722a888064be47e12d05f692e0f407">Bytef</a> *dest,   <a class="code" href="zconf_8h.html#a0426a5a0ed418ec4ae15af8281c64254">uLongf</a> *destLen,
+<a name="l01102"></a>01102 ZEXTERN <span class="keywordtype">int</span> ZEXPORT <a class="code" href="zlib_2compress_8c.html#aef315743418d760a360e1be293d27cd1">compress</a> <a class="code" href="deflate_8c.html#a710017966c99b4ee777ec409dd4b7a81">OF</a>((<a class="code" href="zconf_8h.html#aeb722a888064be47e12d05f692e0f407">Bytef</a> *<a class="code" href="namespaceupload.html#acddb2d9bf09b98fb6a205c368a8d8b1b">dest</a>,   <a class="code" href="zconf_8h.html#a0426a5a0ed418ec4ae15af8281c64254">uLongf</a> *destLen,
 <a name="l01103"></a>01103                                  const <a class="code" href="zconf_8h.html#aeb722a888064be47e12d05f692e0f407">Bytef</a> *source, <a class="code" href="zconf_8h.html#acd2a5701a3aecf6700d2c66c606ecb40">uLong</a> sourceLen));
 <a name="l01104"></a>01104 <span class="comment">/*</span>
 <a name="l01105"></a>01105 <span class="comment">     Compresses the source buffer into the destination buffer.  sourceLen is</span>

@@ -183,7 +183,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00100"></a>00100 <a class="code" href="bzlib_8h.html#a53a5c16572762e7adf339b99fde2179b">BZ_EXTERN</a> <span class="keywordtype">int</span> <a class="code" href="bzlib_8h.html#ade0c35489678e5a0b7aa41396526e30b">BZ_API</a>(<a class="code" href="bzlib_8c.html#a96799e910fe1ae640518759dcda5c16b">BZ2_bzCompressInit</a>) ( 
 <a name="l00101"></a>00101       <a class="code" href="structbz__stream.html">bz_stream</a>* strm, 
 <a name="l00102"></a>00102       <span class="keywordtype">int</span>        blockSize100k, 
-<a name="l00103"></a>00103       <span class="keywordtype">int</span>        verbosity, 
+<a name="l00103"></a>00103       <span class="keywordtype">int</span>        <a class="code" href="namespaceupload.html#a79aff46409a98c4e5f608c8df1fd4612">verbosity</a>, 
 <a name="l00104"></a>00104       <span class="keywordtype">int</span>        workFactor 
 <a name="l00105"></a>00105    );
 <a name="l00106"></a>00106 
@@ -198,7 +198,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00115"></a>00115 
 <a name="l00116"></a>00116 <a class="code" href="bzlib_8h.html#a53a5c16572762e7adf339b99fde2179b">BZ_EXTERN</a> <span class="keywordtype">int</span> <a class="code" href="bzlib_8h.html#ade0c35489678e5a0b7aa41396526e30b">BZ_API</a>(<a class="code" href="bzlib_8c.html#a6586dc3373cc7ff49b9983585d290f64">BZ2_bzDecompressInit</a>) ( 
 <a name="l00117"></a>00117       <a class="code" href="structbz__stream.html">bz_stream</a> *strm, 
-<a name="l00118"></a>00118       <span class="keywordtype">int</span>       verbosity, 
+<a name="l00118"></a>00118       <span class="keywordtype">int</span>       <a class="code" href="namespaceupload.html#a79aff46409a98c4e5f608c8df1fd4612">verbosity</a>, 
 <a name="l00119"></a>00119       <span class="keywordtype">int</span>       small
 <a name="l00120"></a>00120    );
 <a name="l00121"></a>00121 
@@ -222,7 +222,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00139"></a>00139 <a class="code" href="bzlib_8h.html#a53a5c16572762e7adf339b99fde2179b">BZ_EXTERN</a> BZFILE* <a class="code" href="bzlib_8h.html#ade0c35489678e5a0b7aa41396526e30b">BZ_API</a>(<a class="code" href="bzlib_8c.html#af4e312e2c9ce1c680668c8e429b195e9">BZ2_bzReadOpen</a>) ( 
 <a name="l00140"></a>00140       <span class="keywordtype">int</span>*  bzerror,   
 <a name="l00141"></a>00141       FILE* f, 
-<a name="l00142"></a>00142       <span class="keywordtype">int</span>   verbosity, 
+<a name="l00142"></a>00142       <span class="keywordtype">int</span>   <a class="code" href="namespaceupload.html#a79aff46409a98c4e5f608c8df1fd4612">verbosity</a>, 
 <a name="l00143"></a>00143       <span class="keywordtype">int</span>   small,
 <a name="l00144"></a>00144       <span class="keywordtype">void</span>* unused,    
 <a name="l00145"></a>00145       <span class="keywordtype">int</span>   nUnused 
@@ -251,7 +251,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00168"></a>00168       <span class="keywordtype">int</span>*  bzerror,      
 <a name="l00169"></a>00169       FILE* f, 
 <a name="l00170"></a>00170       <span class="keywordtype">int</span>   blockSize100k, 
-<a name="l00171"></a>00171       <span class="keywordtype">int</span>   verbosity, 
+<a name="l00171"></a>00171       <span class="keywordtype">int</span>   <a class="code" href="namespaceupload.html#a79aff46409a98c4e5f608c8df1fd4612">verbosity</a>, 
 <a name="l00172"></a>00172       <span class="keywordtype">int</span>   workFactor 
 <a name="l00173"></a>00173    );
 <a name="l00174"></a>00174 
@@ -285,22 +285,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00202"></a>00202 <span class="comment">/*-- Utility functions --*/</span>
 <a name="l00203"></a>00203 
 <a name="l00204"></a>00204 <a class="code" href="bzlib_8h.html#a53a5c16572762e7adf339b99fde2179b">BZ_EXTERN</a> <span class="keywordtype">int</span> <a class="code" href="bzlib_8h.html#ade0c35489678e5a0b7aa41396526e30b">BZ_API</a>(<a class="code" href="bzlib_8c.html#ad495520e1cc97c20026e4ed15a1f30e3">BZ2_bzBuffToBuffCompress</a>) ( 
-<a name="l00205"></a>00205       <span class="keywordtype">char</span>*         dest, 
+<a name="l00205"></a>00205       <span class="keywordtype">char</span>*         <a class="code" href="namespaceupload.html#acddb2d9bf09b98fb6a205c368a8d8b1b">dest</a>, 
 <a name="l00206"></a>00206       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>* destLen,
 <a name="l00207"></a>00207       <span class="keywordtype">char</span>*         source, 
 <a name="l00208"></a>00208       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>  sourceLen,
 <a name="l00209"></a>00209       <span class="keywordtype">int</span>           blockSize100k, 
-<a name="l00210"></a>00210       <span class="keywordtype">int</span>           verbosity, 
+<a name="l00210"></a>00210       <span class="keywordtype">int</span>           <a class="code" href="namespaceupload.html#a79aff46409a98c4e5f608c8df1fd4612">verbosity</a>, 
 <a name="l00211"></a>00211       <span class="keywordtype">int</span>           workFactor 
 <a name="l00212"></a>00212    );
 <a name="l00213"></a>00213 
 <a name="l00214"></a>00214 <a class="code" href="bzlib_8h.html#a53a5c16572762e7adf339b99fde2179b">BZ_EXTERN</a> <span class="keywordtype">int</span> <a class="code" href="bzlib_8h.html#ade0c35489678e5a0b7aa41396526e30b">BZ_API</a>(<a class="code" href="bzlib_8c.html#adc3b1ee39adf75fbbcf62c115beff4d0">BZ2_bzBuffToBuffDecompress</a>) ( 
-<a name="l00215"></a>00215       <span class="keywordtype">char</span>*         dest, 
+<a name="l00215"></a>00215       <span class="keywordtype">char</span>*         <a class="code" href="namespaceupload.html#acddb2d9bf09b98fb6a205c368a8d8b1b">dest</a>, 
 <a name="l00216"></a>00216       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>* destLen,
 <a name="l00217"></a>00217       <span class="keywordtype">char</span>*         source, 
 <a name="l00218"></a>00218       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>  sourceLen,
 <a name="l00219"></a>00219       <span class="keywordtype">int</span>           small, 
-<a name="l00220"></a>00220       <span class="keywordtype">int</span>           verbosity 
+<a name="l00220"></a>00220       <span class="keywordtype">int</span>           <a class="code" href="namespaceupload.html#a79aff46409a98c4e5f608c8df1fd4612">verbosity</a> 
 <a name="l00221"></a>00221    );
 <a name="l00222"></a>00222 
 <a name="l00223"></a>00223 

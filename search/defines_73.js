@@ -2,6 +2,7 @@ var searchData=
 [
   ['s_5fmp_5fmul',['s_mp_mul',['../tommath_8h.html#ae898c316a09d46c551e5c64d0cbdd186',1,'tommath.h']]],
   ['scomp',['SCOMP',['../storm__dll_8h.html#a8fef1e91fbdc7bbe89ccb2bde6e04ce4',1,'storm_dll.h']]],
+  ['scoped_5ftrace',['SCOPED_TRACE',['../gtest_8h.html#a4dac08f15adc8cb1ee0e5c1bfb0f440d',1,'gtest.h']]],
   ['scrypt',['SCRYPT',['../tomcrypt_8h.html#a63273c49fdf80e2bdfa669811a59151a',1,'tomcrypt.h']]],
   ['sdl_5fsavepng',['SDL_SavePNG',['../save_p_n_g_8h.html#a139110fb7bdb4352d31d55f4c7eb359c',1,'savePNG.h']]],
   ['semaphore_5fclose',['Semaphore_Close',['../_threads_8h.html#a8807f038a48925de093fbcb8ab3f2495',1,'Threads.h']]],
@@ -83,6 +84,7 @@ var searchData=
   ['stream_5fprovider_5fmpqe',['STREAM_PROVIDER_MPQE',['../_storm_lib_8h.html#aebd4c9ef6f6e60b283469eb9aeebcd8e',1,'StormLib.h']]],
   ['stream_5fprovider_5fpartial',['STREAM_PROVIDER_PARTIAL',['../_storm_lib_8h.html#a4b2a4fcc373340f8488b54729205c0df',1,'StormLib.h']]],
   ['stream_5fproviders_5fmask',['STREAM_PROVIDERS_MASK',['../_storm_lib_8h.html#a07a964e92d9c6a64250c80b56e75c520',1,'StormLib.h']]],
+  ['succeed',['SUCCEED',['../gtest_8h.html#a75adcdf89f69b0b615e395daafc315af',1,'gtest.h']]],
   ['success',['SUCCESS',['../save_p_n_g_8cpp.html#aa90cac659d18e8ef6294c7ae337f6b58',1,'savePNG.cpp']]],
   ['switch_5fitems',['SWITCH_ITEMS',['../huff__old_8h.html#aa00bf36541d5f552829a2819ac3fda9e',1,'huff_old.h']]],
   ['sz_5ferror_5farchive',['SZ_ERROR_ARCHIVE',['../_types_8h.html#aaff96c18a42a227e6d84d1a28bd301fa',1,'Types.h']]],

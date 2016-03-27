@@ -1,0 +1,22 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespacetesting_1_1internal.html#a802d9586d870a90e6a850953c167654d" title="testing::internal::CmpHelperSTRCASEEQ" alt="" coords="415,144,681,173"/>
+<area shape="rect" id="node5" href="$namespacetesting_1_1internal.html#a7e31d489f06ab8f6a81a7729f0c377e7" title="testing::internal::CmpHelperSTRCASENE" alt="" coords="415,197,681,227"/>
+<area shape="rect" id="node7" href="$classtesting_1_1internal_1_1_string.html#a968f242b709f8c7c0ed5ecf246553321" title="testing::internal::String::EndsWithCaseInsensitive" alt="" coords="392,251,704,280"/>
+<area shape="rect" id="node11" href="$namespacetesting_1_1internal.html#ac1db1b4603967a6c4404f31cbbac31a6" title="testing::internal::ShouldUseColor" alt="" coords="441,331,655,360"/>
+<area shape="rect" id="node9" href="$classtesting_1_1internal_1_1_file_path.html#ab2a25cc916c111597b94d006aa973c3d" title="testing::internal::FilePath::RemoveExtension" alt="" coords="752,237,1035,267"/>
+<area shape="rect" id="node13" href="$namespacetesting_1_1internal.html#adef3055706176001364e54eb73a87e31" title="testing::internal::ColoredPrintf" alt="" coords="796,291,991,320"/>
+<area shape="rect" id="node41" href="$gtest__color__test___8cc.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="868,344,919,373"/>
+<area shape="rect" id="node43" href="$gtest__unittest_8cc.html#aaf1acc03f393989f85aafd13c880fa44" title="TEST" alt="" coords="865,397,921,427"/>
+<area shape="rect" id="node15" href="$classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#abdba10a8c97e272ab4cee97cb652c957" title="testing::internal::PrettyUnitTestResultPrinter::OnTestIterationStart" alt="" coords="1607,451,2012,480"/>
+<area shape="rect" id="node17" href="$classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a846a5e82b421e04fcdd2b1b2b64b162f" title="testing::internal::PrettyUnitTestResultPrinter::OnEnvironmentsSetUpStart" alt="" coords="1095,104,1545,133"/>
+<area shape="rect" id="node19" href="$classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#adcb68c729565d4bcdf8418a52902c3de" title="testing::internal::PrettyUnitTestResultPrinter::OnTestCaseStart" alt="" coords="1125,157,1515,187"/>
+<area shape="rect" id="node21" href="$classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a5078ee71cfa97e37ae7a9366149195c5" title="testing::internal::PrettyUnitTestResultPrinter::OnTestStart" alt="" coords="1141,211,1499,240"/>
+<area shape="rect" id="node23" href="$classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a06749ff2b32a16c127374ecd015f13e0" title="testing::internal::PrettyUnitTestResultPrinter::OnTestEnd" alt="" coords="1143,264,1497,293"/>
+<area shape="rect" id="node25" href="$classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a7a62fe58fa6f6aace813eb62b31e5a51" title="testing::internal::PrettyUnitTestResultPrinter::OnTestCaseEnd" alt="" coords="1128,317,1512,347"/>
+<area shape="rect" id="node27" href="$classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#afea9dc849c92fdbc1d8505f4c74ffc1a" title="testing::internal::PrettyUnitTestResultPrinter::OnEnvironmentsTearDownStart" alt="" coords="1084,371,1556,400"/>
+<area shape="rect" id="node29" href="$classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#ac29b30216023baddda04ef5889f484ff" title="testing::internal::PrettyUnitTestResultPrinter::OnTestIterationEnd" alt="" coords="1120,424,1520,453"/>
+<area shape="rect" id="node31" href="$namespacetesting_1_1internal.html#a19b35b39782d41e6ef76e1910a3a502e" title="testing::internal::WriteToShardStatusFileIfNeeded" alt="" coords="1165,531,1475,560"/>
+<area shape="rect" id="node37" href="$namespacetesting_1_1internal.html#a0fe41657b1d1ab7ec4e37ec07403ee6c" title="testing::internal::ShouldShard" alt="" coords="1224,477,1416,507"/>
+<area shape="rect" id="node33" href="$classtesting_1_1internal_1_1_unit_test_impl.html#a1fb6be9971f4768c4136a05aa9e7e375" title="testing::internal::UnitTestImpl::RunAllTests" alt="" coords="1672,517,1947,547"/>
+<area shape="rect" id="node35" href="$classtesting_1_1_unit_test.html#a2febc800536b44500565f4c423f359d3" title="testing::UnitTest::Run" alt="" coords="2063,517,2212,547"/>
+</map>

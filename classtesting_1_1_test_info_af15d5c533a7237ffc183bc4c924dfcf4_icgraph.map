@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classtesting_1_1internal_1_1_unit_test_impl.html#a1cc87dfc91377ebec4a3ff4192dfcba9" title="testing::internal::UnitTestImpl::AddTestInfo" alt="" coords="264,5,536,35"/>
+<area shape="rect" id="node7" href="$namespacetesting_1_1internal.html#a7a85ebe3b4de93a1edb091f92f1fb393" title="testing::internal::PrintFullTestCommentIfPresent" alt="" coords="249,59,551,88"/>
+<area shape="rect" id="node5" href="$namespacetesting_1_1internal.html#a8280dfb4f7c8d5b71184f91f4725f759" title="testing::internal::MakeAndRegisterTestInfo" alt="" coords="643,5,912,35"/>
+<area shape="rect" id="node9" href="$classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a06749ff2b32a16c127374ecd015f13e0" title="testing::internal::PrettyUnitTestResultPrinter::OnTestEnd" alt="" coords="600,59,955,88"/>
+</map>

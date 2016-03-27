@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classtesting_1_1_test_result.html#a08b680f63d91391db4161f909da2bbcc" title="testing::TestResult::GetTestPartResult" alt="" coords="288,5,539,35"/>
+<area shape="rect" id="node5" href="$classtesting_1_1_test_result.html#abb5d051bf958071c14020132a4d6cc07" title="testing::TestResult::Failed" alt="" coords="587,32,763,61"/>
+<area shape="rect" id="node7" href="$classtesting_1_1internal_1_1_pretty_unit_test_result_printer.html#a06749ff2b32a16c127374ecd015f13e0" title="testing::internal::PrettyUnitTestResultPrinter::OnTestEnd" alt="" coords="811,32,1165,61"/>
+</map>

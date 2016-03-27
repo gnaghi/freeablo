@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classgtest__help__test_1_1_g_test_help_test.html#a913bc1e0c66584e436623688ba4d6b50" title="gtest_help_test.GTestHelpTest.TestHelpFlag" alt="" coords="259,165,544,195"/>
+<area shape="rect" id="node17" href="$classgtest__help__test_1_1_g_test_help_test.html#a0eb2fe97ba1d7e143d96c53f291b1483" title="gtest_help_test.GTestHelpTest.TestNonHelpFlag" alt="" coords="247,325,556,355"/>
+<area shape="rect" id="node5" href="$classgtest__help__test_1_1_g_test_help_test.html#a99d9c22b2f109922c7f9801a893ac84b" title="gtest_help_test.GTestHelpTest.testPrintsHelpWithFullFlag" alt="" coords="669,5,1032,35"/>
+<area shape="rect" id="node7" href="$classgtest__help__test_1_1_g_test_help_test.html#abbbdca638eac1b6282575d829ddbfbb1" title="gtest_help_test.GTestHelpTest.testPrintsHelpWithShortFlag" alt="" coords="664,59,1037,88"/>
+<area shape="rect" id="node9" href="$classgtest__help__test_1_1_g_test_help_test.html#a4073fd2c07d116a27c292254530c19e5" title="gtest_help_test.GTestHelpTest.testPrintsHelpWithQuestionFlag" alt="" coords="653,112,1048,141"/>
+<area shape="rect" id="node11" href="$classgtest__help__test_1_1_g_test_help_test.html#a97d597972c6e922959ce2a52624ab1fe" title="gtest_help_test.GTestHelpTest.testPrintsHelpWithWindowsStyleQuestionFlag" alt="" coords="612,165,1089,195"/>
+<area shape="rect" id="node13" href="$classgtest__help__test_1_1_g_test_help_test.html#a997c51b045d9afdb780fba760dcc998b" title="gtest_help_test.GTestHelpTest.testPrintsHelpWithUnrecognizedGoogleTestFlag" alt="" coords="605,219,1096,248"/>
+<area shape="rect" id="node15" href="$classgtest__help__test_1_1_g_test_help_test.html#a4bcda3b4198315aa02b8cbac95e24988" title="gtest_help_test.GTestHelpTest.testPrintsHelpWithIncorrectFlagStyle" alt="" coords="639,272,1063,301"/>
+<area shape="rect" id="node19" href="$classgtest__help__test_1_1_g_test_help_test.html#a5a5285dac93bcc5933da13ed5209fbda" title="gtest_help_test.GTestHelpTest.testRunsTestsWithoutHelpFlag" alt="" coords="656,325,1045,355"/>
+<area shape="rect" id="node21" href="$classgtest__help__test_1_1_g_test_help_test.html#aabce3d2be94ad4e413b9452e3dc8c3a8" title="gtest_help_test.GTestHelpTest.testRunsTestsWithGtestInternalFlag" alt="" coords="640,379,1061,408"/>
+</map>

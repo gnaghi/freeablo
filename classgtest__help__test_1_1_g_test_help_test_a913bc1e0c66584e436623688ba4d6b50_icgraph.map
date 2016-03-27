@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classgtest__help__test_1_1_g_test_help_test.html#a99d9c22b2f109922c7f9801a893ac84b" title="gtest_help_test.GTestHelpTest.testPrintsHelpWithFullFlag" alt="" coords="405,5,768,35"/>
+<area shape="rect" id="node5" href="$classgtest__help__test_1_1_g_test_help_test.html#abbbdca638eac1b6282575d829ddbfbb1" title="gtest_help_test.GTestHelpTest.testPrintsHelpWithShortFlag" alt="" coords="400,59,773,88"/>
+<area shape="rect" id="node7" href="$classgtest__help__test_1_1_g_test_help_test.html#a4073fd2c07d116a27c292254530c19e5" title="gtest_help_test.GTestHelpTest.testPrintsHelpWithQuestionFlag" alt="" coords="389,112,784,141"/>
+<area shape="rect" id="node9" href="$classgtest__help__test_1_1_g_test_help_test.html#a97d597972c6e922959ce2a52624ab1fe" title="gtest_help_test.GTestHelpTest.testPrintsHelpWithWindowsStyleQuestionFlag" alt="" coords="348,165,825,195"/>
+<area shape="rect" id="node11" href="$classgtest__help__test_1_1_g_test_help_test.html#a997c51b045d9afdb780fba760dcc998b" title="gtest_help_test.GTestHelpTest.testPrintsHelpWithUnrecognizedGoogleTestFlag" alt="" coords="341,219,832,248"/>
+<area shape="rect" id="node13" href="$classgtest__help__test_1_1_g_test_help_test.html#a4bcda3b4198315aa02b8cbac95e24988" title="gtest_help_test.GTestHelpTest.testPrintsHelpWithIncorrectFlagStyle" alt="" coords="375,272,799,301"/>
+</map>

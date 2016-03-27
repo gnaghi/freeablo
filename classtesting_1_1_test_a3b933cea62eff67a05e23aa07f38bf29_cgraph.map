@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespacetesting_1_1internal.html#a9bd0caf5d16512de38b39599c13ee634" title="testing::internal::GetUnitTestImpl" alt="" coords="319,5,532,35"/>
+<area shape="rect" id="node7" href="$classtesting_1_1internal_1_1_unit_test_impl.html#aba3caef4ad23ce98be80250aeb0cc787" title="testing::internal::UnitTestImpl::current_test_result" alt="" coords="271,59,580,88"/>
+<area shape="rect" id="node5" href="$classtesting_1_1_unit_test.html#a24192400b70b3b946746954e9574fb8e" title="testing::UnitTest::GetInstance" alt="" coords="631,5,828,35"/>
+</map>

@@ -137,7 +137,7 @@ Defines</h2></td></tr>
 <b>Value:</b><div class="fragment"><pre class="fragment">{ \
   UInt32 temp = p-&gt;crc[cur[0]] ^ cur[1]; \
   hash2Value = temp &amp; (<a class="code" href="_lz_hash_8h.html#a329be29d9e83d874d5e599eb888698c8">kHash2Size</a> - 1); \
-  hashValue = (temp ^ ((<a class="code" href="bzlib__private_8h.html#a4cd0dc7d33ac7a69204e8429ecea0f86">UInt32</a>)cur[2] &lt;&lt; 8)) &amp; p-&gt;hashMask; }
+  hashValue = (temp ^ ((<a class="code" href="namespacetesting_1_1internal.html#a40d4fffcd2bf56f18b1c380615aa85e3">UInt32</a>)cur[2] &lt;&lt; 8)) &amp; p-&gt;hashMask; }
 </pre></div>
 </div>
 </div>
@@ -154,8 +154,8 @@ Defines</h2></td></tr>
 <b>Value:</b><div class="fragment"><pre class="fragment">{ \
   UInt32 temp = p-&gt;crc[cur[0]] ^ cur[1]; \
   hash2Value = temp &amp; (<a class="code" href="_lz_hash_8h.html#a329be29d9e83d874d5e599eb888698c8">kHash2Size</a> - 1); \
-  hash3Value = (temp ^ ((<a class="code" href="bzlib__private_8h.html#a4cd0dc7d33ac7a69204e8429ecea0f86">UInt32</a>)cur[2] &lt;&lt; 8)) &amp; (<a class="code" href="_lz_hash_8h.html#ada485c5ae49b85e8a7e5cced5ddf4f0d">kHash3Size</a> - 1); \
-  hashValue = (temp ^ ((<a class="code" href="bzlib__private_8h.html#a4cd0dc7d33ac7a69204e8429ecea0f86">UInt32</a>)cur[2] &lt;&lt; 8) ^ (p-&gt;crc[cur[3]] &lt;&lt; 5)) &amp; p-&gt;hashMask; }
+  hash3Value = (temp ^ ((<a class="code" href="namespacetesting_1_1internal.html#a40d4fffcd2bf56f18b1c380615aa85e3">UInt32</a>)cur[2] &lt;&lt; 8)) &amp; (<a class="code" href="_lz_hash_8h.html#ada485c5ae49b85e8a7e5cced5ddf4f0d">kHash3Size</a> - 1); \
+  hashValue = (temp ^ ((<a class="code" href="namespacetesting_1_1internal.html#a40d4fffcd2bf56f18b1c380615aa85e3">UInt32</a>)cur[2] &lt;&lt; 8) ^ (p-&gt;crc[cur[3]] &lt;&lt; 5)) &amp; p-&gt;hashMask; }
 </pre></div>
 </div>
 </div>
@@ -172,8 +172,8 @@ Defines</h2></td></tr>
 <b>Value:</b><div class="fragment"><pre class="fragment">{ \
   UInt32 temp = p-&gt;crc[cur[0]] ^ cur[1]; \
   hash2Value = temp &amp; (<a class="code" href="_lz_hash_8h.html#a329be29d9e83d874d5e599eb888698c8">kHash2Size</a> - 1); \
-  hash3Value = (temp ^ ((<a class="code" href="bzlib__private_8h.html#a4cd0dc7d33ac7a69204e8429ecea0f86">UInt32</a>)cur[2] &lt;&lt; 8)) &amp; (<a class="code" href="_lz_hash_8h.html#ada485c5ae49b85e8a7e5cced5ddf4f0d">kHash3Size</a> - 1); \
-  hash4Value = (temp ^ ((<a class="code" href="bzlib__private_8h.html#a4cd0dc7d33ac7a69204e8429ecea0f86">UInt32</a>)cur[2] &lt;&lt; 8) ^ (p-&gt;crc[cur[3]] &lt;&lt; 5)); \
+  hash3Value = (temp ^ ((<a class="code" href="namespacetesting_1_1internal.html#a40d4fffcd2bf56f18b1c380615aa85e3">UInt32</a>)cur[2] &lt;&lt; 8)) &amp; (<a class="code" href="_lz_hash_8h.html#ada485c5ae49b85e8a7e5cced5ddf4f0d">kHash3Size</a> - 1); \
+  hash4Value = (temp ^ ((<a class="code" href="namespacetesting_1_1internal.html#a40d4fffcd2bf56f18b1c380615aa85e3">UInt32</a>)cur[2] &lt;&lt; 8) ^ (p-&gt;crc[cur[3]] &lt;&lt; 5)); \
   hashValue = (hash4Value ^ (p-&gt;crc[cur[4]] &lt;&lt; 3)) &amp; p-&gt;hashMask; \
   hash4Value &amp;= (<a class="code" href="_lz_hash_8h.html#ace07d0e20c2f6629cbf675997fdc5138">kHash4Size</a> - 1); }
 </pre></div>
@@ -296,7 +296,7 @@ Defines</h2></td></tr>
 <b>Value:</b><div class="fragment"><pre class="fragment">{ \
   UInt32 temp = p-&gt;crc[cur[0]] ^ cur[1]; \
   hash2Value = temp &amp; (<a class="code" href="_lz_hash_8h.html#a329be29d9e83d874d5e599eb888698c8">kHash2Size</a> - 1); \
-  hash3Value = (temp ^ ((<a class="code" href="bzlib__private_8h.html#a4cd0dc7d33ac7a69204e8429ecea0f86">UInt32</a>)cur[2] &lt;&lt; 8)) &amp; (<a class="code" href="_lz_hash_8h.html#ada485c5ae49b85e8a7e5cced5ddf4f0d">kHash3Size</a> - 1); }
+  hash3Value = (temp ^ ((<a class="code" href="namespacetesting_1_1internal.html#a40d4fffcd2bf56f18b1c380615aa85e3">UInt32</a>)cur[2] &lt;&lt; 8)) &amp; (<a class="code" href="_lz_hash_8h.html#ada485c5ae49b85e8a7e5cced5ddf4f0d">kHash3Size</a> - 1); }
 </pre></div>
 </div>
 </div>
@@ -313,8 +313,8 @@ Defines</h2></td></tr>
 <b>Value:</b><div class="fragment"><pre class="fragment">{ \
   UInt32 temp = p-&gt;crc[cur[0]] ^ cur[1]; \
   hash2Value = temp &amp; (<a class="code" href="_lz_hash_8h.html#a329be29d9e83d874d5e599eb888698c8">kHash2Size</a> - 1); \
-  hash3Value = (temp ^ ((<a class="code" href="bzlib__private_8h.html#a4cd0dc7d33ac7a69204e8429ecea0f86">UInt32</a>)cur[2] &lt;&lt; 8)) &amp; (<a class="code" href="_lz_hash_8h.html#ada485c5ae49b85e8a7e5cced5ddf4f0d">kHash3Size</a> - 1); \
-  hash4Value = (temp ^ ((<a class="code" href="bzlib__private_8h.html#a4cd0dc7d33ac7a69204e8429ecea0f86">UInt32</a>)cur[2] &lt;&lt; 8) ^ (p-&gt;crc[cur[3]] &lt;&lt; 5)) &amp; (<a class="code" href="_lz_hash_8h.html#ace07d0e20c2f6629cbf675997fdc5138">kHash4Size</a> - 1); }
+  hash3Value = (temp ^ ((<a class="code" href="namespacetesting_1_1internal.html#a40d4fffcd2bf56f18b1c380615aa85e3">UInt32</a>)cur[2] &lt;&lt; 8)) &amp; (<a class="code" href="_lz_hash_8h.html#ada485c5ae49b85e8a7e5cced5ddf4f0d">kHash3Size</a> - 1); \
+  hash4Value = (temp ^ ((<a class="code" href="namespacetesting_1_1internal.html#a40d4fffcd2bf56f18b1c380615aa85e3">UInt32</a>)cur[2] &lt;&lt; 8) ^ (p-&gt;crc[cur[3]] &lt;&lt; 5)) &amp; (<a class="code" href="_lz_hash_8h.html#ace07d0e20c2f6629cbf675997fdc5138">kHash4Size</a> - 1); }
 </pre></div>
 </div>
 </div>

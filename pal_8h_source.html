@@ -95,21 +95,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00012"></a><a class="code" href="struct_cel_1_1_colour.html#a77b5394dbd38cf60d835c2e5bb960483">00012</a>         uint8_t <a class="code" href="struct_cel_1_1_colour.html#a77b5394dbd38cf60d835c2e5bb960483">r</a>;
 <a name="l00013"></a><a class="code" href="struct_cel_1_1_colour.html#a8ee5fee4c4cb6fc600c582a9467240a2">00013</a>         uint8_t <a class="code" href="struct_cel_1_1_colour.html#a8ee5fee4c4cb6fc600c582a9467240a2">g</a>;
 <a name="l00014"></a><a class="code" href="struct_cel_1_1_colour.html#ab9cfec99a7c38d6550c30623b0a66adb">00014</a>         uint8_t <a class="code" href="struct_cel_1_1_colour.html#ab9cfec99a7c38d6550c30623b0a66adb">b</a>;
-<a name="l00015"></a><a class="code" href="struct_cel_1_1_colour.html#a7eedb45626003357bd1f2c64891d65b1">00015</a>         <span class="keywordtype">bool</span> <a class="code" href="struct_cel_1_1_colour.html#a7eedb45626003357bd1f2c64891d65b1">visible</a>;
+<a name="l00015"></a><a class="code" href="struct_cel_1_1_colour.html#a4e4f2648f9bd7e58be474d3fcf2547cc">00015</a>         uint8_t <a class="code" href="struct_cel_1_1_colour.html#a4e4f2648f9bd7e58be474d3fcf2547cc">visible</a>;
 <a name="l00016"></a>00016 
 <a name="l00017"></a><a class="code" href="struct_cel_1_1_colour.html#ad6055fd8a1cad0fd648717b0fc62727a">00017</a>         <a class="code" href="struct_cel_1_1_colour.html#abe3968caee9cbeeeb2d882dda40a3a0e">Colour</a>(uint8_t _r, uint8_t _g, uint8_t _b, <span class="keywordtype">bool</span> _visible)
 <a name="l00018"></a>00018         {
-<a name="l00019"></a>00019             <a class="code" href="struct_cel_1_1_colour.html#a77b5394dbd38cf60d835c2e5bb960483">r</a> = _r; <a class="code" href="struct_cel_1_1_colour.html#a8ee5fee4c4cb6fc600c582a9467240a2">g</a> = _g; <a class="code" href="struct_cel_1_1_colour.html#ab9cfec99a7c38d6550c30623b0a66adb">b</a> = _b; <a class="code" href="struct_cel_1_1_colour.html#a7eedb45626003357bd1f2c64891d65b1">visible</a> = _visible;
+<a name="l00019"></a>00019             <a class="code" href="struct_cel_1_1_colour.html#a77b5394dbd38cf60d835c2e5bb960483">r</a> = _r; <a class="code" href="struct_cel_1_1_colour.html#a8ee5fee4c4cb6fc600c582a9467240a2">g</a> = _g; <a class="code" href="struct_cel_1_1_colour.html#ab9cfec99a7c38d6550c30623b0a66adb">b</a> = _b; <a class="code" href="struct_cel_1_1_colour.html#a4e4f2648f9bd7e58be474d3fcf2547cc">visible</a> = _visible;
 <a name="l00020"></a>00020         }
 <a name="l00021"></a>00021 
-<a name="l00022"></a><a class="code" href="struct_cel_1_1_colour.html#abe3968caee9cbeeeb2d882dda40a3a0e">00022</a>         <a class="code" href="struct_cel_1_1_colour.html#abe3968caee9cbeeeb2d882dda40a3a0e">Colour</a>(){ <a class="code" href="struct_cel_1_1_colour.html#a7eedb45626003357bd1f2c64891d65b1">visible</a> = <span class="keyword">true</span>; }
+<a name="l00022"></a><a class="code" href="struct_cel_1_1_colour.html#abe3968caee9cbeeeb2d882dda40a3a0e">00022</a>         <a class="code" href="struct_cel_1_1_colour.html#abe3968caee9cbeeeb2d882dda40a3a0e">Colour</a>(){ <a class="code" href="struct_cel_1_1_colour.html#a4e4f2648f9bd7e58be474d3fcf2547cc">visible</a> = <span class="keyword">true</span>; }
 <a name="l00023"></a>00023     };
 <a name="l00024"></a>00024 
 <a name="l00025"></a>00025 
 <a name="l00026"></a><a class="code" href="class_cel_1_1_pal.html">00026</a>     <span class="keyword">class </span><a class="code" href="class_cel_1_1_pal.html">Pal</a>
 <a name="l00027"></a>00027     {
 <a name="l00028"></a>00028         <span class="keyword">public</span>:
-<a name="l00029"></a>00029             <a class="code" href="class_cel_1_1_pal.html#a1374e8fdbb589d9ad415f4bc3f133ef2">Pal</a>(std::string filename);
+<a name="l00029"></a>00029             <a class="code" href="class_cel_1_1_pal.html#a1374e8fdbb589d9ad415f4bc3f133ef2">Pal</a>(<a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> filename);
 <a name="l00030"></a>00030             
 <a name="l00031"></a>00031             <span class="keyword">const</span> <a class="code" href="struct_cel_1_1_colour.html">Colour</a>&amp; <a class="code" href="class_cel_1_1_pal.html#ac201523e05fc5742329e310079efdb80">operator[]</a>(<span class="keywordtype">size_t</span> index) <span class="keyword">const</span>;
 <a name="l00032"></a>00032 

@@ -1,3 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$structbz__stream.html" title="bz_stream" alt="" coords="5,5,88,35"/>
+<area shape="rect" id="node1" href="$class_base.html" title="Base" alt="" coords="7,32,57,61"/>
+<area shape="rect" id="node3" href="$classnamespace1_1_1_my_type_in_name_space1.html" title="namespace1::MyTypeInNameSpace1" alt="" coords="108,5,348,35"/>
+<area shape="rect" id="node5" href="$classnamespace2_1_1_my_type_in_name_space2.html" title="namespace2::MyTypeInNameSpace2" alt="" coords="108,59,348,88"/>
 </map>

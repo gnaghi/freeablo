@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespacegtest__color__test.html#ac37cf66941952ac6fc423c97454b4f76" title="gtest_color_test.UsesColor" alt="" coords="237,112,419,141"/>
+<area shape="rect" id="node5" href="$classgtest__color__test_1_1_g_test_color_test.html#aea5ca1873661e507d702d861154f8114" title="gtest_color_test.GTestColorTest.testNoEnvVarNoFlag" alt="" coords="477,5,816,35"/>
+<area shape="rect" id="node7" href="$classgtest__color__test_1_1_g_test_color_test.html#a95c73e043988e6139e4643f5bde768f3" title="gtest_color_test.GTestColorTest.testFlagOnly" alt="" coords="501,59,792,88"/>
+<area shape="rect" id="node9" href="$classgtest__color__test_1_1_g_test_color_test.html#a9fae1f85474adca3de92ee649e080ad0" title="gtest_color_test.GTestColorTest.testEnvVarOnly" alt="" coords="493,112,800,141"/>
+<area shape="rect" id="node11" href="$classgtest__color__test_1_1_g_test_color_test.html#a432cb9355fa95fe6be30f6e9bbf4b8b4" title="gtest_color_test.GTestColorTest.testEnvVarAndFlag" alt="" coords="483,165,811,195"/>
+<area shape="rect" id="node13" href="$classgtest__color__test_1_1_g_test_color_test.html#a393af86f00d8566638a854fb46736a87" title="gtest_color_test.GTestColorTest.testAliasesOfYesAndNo" alt="" coords="468,219,825,248"/>
+</map>

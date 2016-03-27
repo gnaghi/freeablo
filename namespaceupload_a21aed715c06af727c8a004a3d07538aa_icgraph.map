@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classupload_1_1_subversion_v_c_s.html#a14ccef7a1ccf94ca4bdadb6d9ccf7732" title="upload.SubversionVCS.GuessBase" alt="" coords="189,5,419,35"/>
+<area shape="rect" id="node5" href="$classupload_1_1_subversion_v_c_s.html#a172d3d234e7ea046801eb7d86098c700" title="upload.SubversionVCS.GenerateDiff" alt="" coords="187,59,421,88"/>
+<area shape="rect" id="node7" href="$classupload_1_1_subversion_v_c_s.html#a8c86ca0b3b5c3470e2f8e6ddd60be6ea" title="upload.SubversionVCS.GetUnknownFiles" alt="" coords="172,112,436,141"/>
+<area shape="rect" id="node9" href="$classupload_1_1_subversion_v_c_s.html#aab365f71ddee062d3ff54ae669a1a09e" title="upload.SubversionVCS.GetStatus" alt="" coords="195,165,413,195"/>
+<area shape="rect" id="node11" href="$classupload_1_1_subversion_v_c_s.html#af1627bd7767139913b9ecfad89dfa2d8" title="upload.SubversionVCS.GetBaseFile" alt="" coords="487,192,719,221"/>
+<area shape="rect" id="node14" href="$classupload_1_1_git_v_c_s.html#a1ad18a30290aac2194d97eca293047a4" title="upload.GitVCS.GenerateDiff" alt="" coords="211,269,397,299"/>
+<area shape="rect" id="node16" href="$classupload_1_1_git_v_c_s.html#ad1a42bc5bfad24e392c79049a36312a6" title="upload.GitVCS.GetUnknownFiles" alt="" coords="196,323,412,352"/>
+<area shape="rect" id="node18" href="$classupload_1_1_mercurial_v_c_s.html#acc39f5e4c29d9295fae3c850673e4696" title="upload.MercurialVCS.GenerateDiff" alt="" coords="193,376,415,405"/>
+<area shape="rect" id="node20" href="$classupload_1_1_mercurial_v_c_s.html#ae074f84593a4869aa08117a6288ea5cc" title="upload.MercurialVCS.GetUnknownFiles" alt="" coords="177,429,431,459"/>
+<area shape="rect" id="node22" href="$classupload_1_1_mercurial_v_c_s.html#a3aec71ad8e93bdd1915b4bc54513ed90" title="upload.MercurialVCS.GetBaseFile" alt="" coords="193,483,415,512"/>
+</map>

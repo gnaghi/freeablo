@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespacetesting_1_1gtest__printers__test.html#abbd436200da6c80944c8a7504fb56ea1" title="testing::gtest_printers_test::HasPrefix" alt="" coords="308,32,551,61"/>
+<area shape="rect" id="node9" href="$namespacetesting_1_1gtest__printers__test.html#adab26e59d2d7781c06a2c1c5948a8f65" title="testing::gtest_printers_test::Print" alt="" coords="324,85,535,115"/>
+<area shape="rect" id="node11" href="$structtesting_1_1gtest__printers__test_1_1_foo.html#a703c1159114f3a640b16d470a9613672" title="testing::gtest_printers_test::Foo::MyMethod" alt="" coords="292,139,567,168"/>
+<area shape="rect" id="node13" href="$structtesting_1_1gtest__printers__test_1_1_foo.html#a368dc5150b27c2aaca6034830334e1cd" title="testing::gtest_printers_test::Foo::MyVirtualMethod" alt="" coords="273,192,585,221"/>
+<area shape="rect" id="node5" href="$namespacetesting.html#ac1d0baedb17286c5c6c87bd1a45da8ac" title="testing::AssertionSuccess" alt="" coords="636,5,809,35"/>
+<area shape="rect" id="node7" href="$namespacetesting.html#a75cb789614cb1c28c34627a4a3c053df" title="testing::AssertionFailure" alt="" coords="641,59,804,88"/>
+</map>

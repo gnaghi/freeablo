@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespaceupload.html#acec50a5988a3b92a044a95b5f044b58a" title="upload.RealMain" alt="" coords="148,164,265,193"/>
+<area shape="rect" id="node20" href="$namespaceupload.html#a9453572b24523c973b5e3a3087977e0f" title="upload.StatusUpdate" alt="" coords="604,272,748,301"/>
+<area shape="rect" id="node5" href="$namespaceupload.html#a0d9e0cd59cba1f0350eac84fe12de5ca" title="upload.GuessVCS" alt="" coords="352,8,483,37"/>
+<area shape="rect" id="node9" href="$namespaceupload.html#a5fcc0137fab448d6f9e8e5d7939ca3f3" title="upload.ErrorExit" alt="" coords="619,59,733,88"/>
+<area shape="rect" id="node12" href="$namespaceupload.html#a845da6aa3122cabb2992285892bc2adf" title="upload.GetRpcServer" alt="" coords="344,112,491,141"/>
+<area shape="rect" id="node16" href="$namespaceupload.html#a8508b71e682255af76e4c9d1dcfc59b5" title="upload.EncodeMultipartFormData" alt="" coords="568,165,784,195"/>
+<area shape="rect" id="node22" href="$namespaceupload.html#a05fba8e3c5cae78ce8ec47d646e9fe5a" title="upload.UploadSeparatePatches" alt="" coords="315,216,520,245"/>
+<area shape="rect" id="node7" href="$namespaceupload.html#ad1411f9f420adfc252e08a739383a935" title="upload.RunShellWithReturnCode" alt="" coords="569,5,783,35"/>
+<area shape="rect" id="node14" href="$namespaceupload.html#a60dcddb2eb258c146887ca1ec9ad5a58" title="upload.GetEmail" alt="" coords="617,112,735,141"/>
+<area shape="rect" id="node18" href="$namespaceupload.html#ae406a2e2869fc1f3253bd0788a6f5e1b" title="upload.GetContentType" alt="" coords="832,165,992,195"/>
+<area shape="rect" id="node24" href="$namespaceupload.html#a01fb73b67aae92e34433095fea93f5c4" title="upload.SplitPatch" alt="" coords="615,219,737,248"/>
+</map>

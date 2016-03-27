@@ -1,10 +1,22 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$class_ui___main_window.html#acf4a0872c4c77d8f43a2ec66ed849b58" title="Ui_MainWindow::setupUi" alt="" coords="328,5,499,35"/>
-<area shape="rect" id="node7" href="$namespace_f_a_level_gen.html#aab6daf68a2c5c15cfc70e3306a58b0c4" title="FALevelGen::connect" alt="" coords="340,59,487,88"/>
-<area shape="rect" id="node17" href="$class_settings_1_1_settings.html#a99d0bf933efedfbb5ce4f8a0c1a7f022" title="Settings::Settings::loadUserSettings" alt="" coords="296,112,531,141"/>
+<area shape="rect" id="node3" href="$class_ui___main_window.html#acf4a0872c4c77d8f43a2ec66ed849b58" title="Ui_MainWindow::setupUi" alt="" coords="328,19,499,48"/>
+<area shape="rect" id="node7" href="$namespace_f_a_level_gen.html#aab6daf68a2c5c15cfc70e3306a58b0c4" title="FALevelGen::connect" alt="" coords="340,85,487,115"/>
+<area shape="rect" id="node17" href="$class_settings_1_1_settings.html#a99d0bf933efedfbb5ce4f8a0c1a7f022" title="Settings::Settings::loadUserSettings" alt="" coords="296,152,531,181"/>
 <area shape="rect" id="node5" href="$class_ui___main_window.html#a097dd160c3534a204904cb374412c618" title="Ui_MainWindow::retranslateUi" alt="" coords="597,5,795,35"/>
 <area shape="rect" id="node9" href="$class_f_a_level_gen_1_1_room.html#ae46ead81abeda94bef95e2294411f143" title="FALevelGen::Room::centre" alt="" coords="605,59,787,88"/>
 <area shape="rect" id="node11" href="$namespace_f_a_level_gen.html#a936e41b0fa4a29dc684f6f0af066d73f" title="FALevelGen::drawCorridoorSegment" alt="" coords="579,112,813,141"/>
-<area shape="rect" id="node13" href="$namespace_f_a_level_gen.html#af99aba47cf4eef3fa03a5ba2886d33fa" title="FALevelGen::fillRoom" alt="" coords="888,85,1037,115"/>
-<area shape="rect" id="node15" href="$class_f_a_level_gen_1_1_room.html#a4e121776f07297ed0ede2c182434d2df" title="FALevelGen::Room::intersects" alt="" coords="861,139,1064,168"/>
+<area shape="rect" id="node13" href="$namespace_f_a_level_gen.html#af99aba47cf4eef3fa03a5ba2886d33fa" title="FALevelGen::fillRoom" alt="" coords="888,59,1037,88"/>
+<area shape="rect" id="node15" href="$class_f_a_level_gen_1_1_room.html#a4e121776f07297ed0ede2c182434d2df" title="FALevelGen::Room::intersects" alt="" coords="861,112,1064,141"/>
+<area shape="rect" id="node19" href="$namespace_f_a_i_o.html#a8f16382f062120f012e3145ae9e4e517" title="FAIO::exists" alt="" coords="648,165,744,195"/>
+<area shape="rect" id="node21" href="$namespace_f_a_i_o.html#a96e8681bec0c217e0af771edd596d551" title="FAIO::getStormLibPath" alt="" coords="884,165,1041,195"/>
+<area shape="rect" id="node23" href="$_s_file_open_file_ex_8cpp.html#a7fb756b76326ffec7dbe07e4167490c0" title="SFileHasFile" alt="" coords="915,219,1011,248"/>
+<area shape="rect" id="node25" href="$_s_base_common_8cpp.html#a67882fdf8d424efbb6b2e1f748583a66" title="IsValidMpqHandle" alt="" coords="1120,112,1248,141"/>
+<area shape="rect" id="node27" href="$_s_base_common_8cpp.html#ad01c4c290fa6caebc77053dbc12c1070" title="IsPseudoFileName" alt="" coords="1117,165,1251,195"/>
+<area shape="rect" id="node29" href="$_s_base_file_table_8cpp.html#a7347ab3dd849dcc0350e1ca8d83af6b3" title="GetFileEntryLocale" alt="" coords="1117,219,1251,248"/>
+<area shape="rect" id="node39" href="$_s_base_file_table_8cpp.html#abf78f423c25cfc7a8065eca9dc4480af" title="GetFileEntryByIndex" alt="" coords="1113,272,1255,301"/>
+<area shape="rect" id="node41" href="$_file_stream_8cpp.html#ae12246cf2f9f9aa8e3a6367bd9fa2aed" title="SetLastError" alt="" coords="1137,325,1231,355"/>
+<area shape="rect" id="node31" href="$_s_base_file_table_8cpp.html#acf04d5326a7dd5e0c5d82598f8e76a50" title="GetFileIndex_Het" alt="" coords="1305,219,1428,248"/>
+<area shape="rect" id="node33" href="$_s_base_common_8cpp.html#a7c410e53e1793314064827d095ba86ce" title="HashStringJenkins" alt="" coords="1479,192,1609,221"/>
+<area shape="rect" id="node37" href="$_s_base_file_table_8cpp.html#a8b7cf3b06d4cc7779a95a0ef92172269" title="GetBits" alt="" coords="1511,245,1577,275"/>
+<area shape="rect" id="node35" href="$lookup_8h.html#a28bbffa78951ac929184f31d92a05388" title="hashlittle2" alt="" coords="1660,192,1740,221"/>
 </map>

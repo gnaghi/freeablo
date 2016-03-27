@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classtesting_1_1_test_case.html#a47de0cf87858370388275c9d995f1ff4" title="testing::TestCase::test_to_run_count" alt="" coords="447,59,684,88"/>
+<area shape="rect" id="node7" href="$namespacetesting_1_1internal.html#adef3055706176001364e54eb73a87e31" title="testing::internal::ColoredPrintf" alt="" coords="468,139,663,168"/>
+<area shape="rect" id="node27" href="$classtesting_1_1_test_case.html#af4dfd4ece8e66520a30e6a9fbd9d43aa" title="testing::TestCase::name" alt="" coords="483,192,648,221"/>
+<area shape="rect" id="node29" href="$classtesting_1_1_test_case.html#a2052c095bc6ac9c0ab1cae6f0e2d9fc9" title="testing::TestCase::type_param" alt="" coords="464,245,667,275"/>
+<area shape="rect" id="node5" href="$namespacetesting_1_1internal.html#a1e77a774d910346eff11a86d8df783a5" title="testing::internal::CountIf" alt="" coords="767,32,929,61"/>
+<area shape="rect" id="node9" href="$namespacetesting_1_1internal.html#ac1db1b4603967a6c4404f31cbbac31a6" title="testing::internal::ShouldUseColor" alt="" coords="741,85,955,115"/>
+<area shape="rect" id="node21" href="$namespacetesting_1_1internal_1_1posix.html#a16ebe936b3a8ea462a94191635aedc27" title="testing::internal::posix::IsATTY" alt="" coords="747,139,949,168"/>
+<area shape="rect" id="node23" href="$namespacetesting_1_1internal_1_1posix.html#a3117b067e1f942a2031e666953120ccc" title="testing::internal::posix::FileNo" alt="" coords="751,192,945,221"/>
+<area shape="rect" id="node25" href="$namespacetesting_1_1internal.html#a0aefb9deb60e90f19c236559837303d8" title="testing::internal::GetAnsiColorCode" alt="" coords="735,245,961,275"/>
+<area shape="rect" id="node11" href="$gtest__output__test___8cc.html#a448e05d56107d7550bea141e0f7a73d3" title="GTEST_FLAG" alt="" coords="1127,5,1233,35"/>
+<area shape="rect" id="node13" href="$classtesting_1_1internal_1_1_string.html#a116ca435d63306927ba19f90a3596787" title="testing::internal::String::CaseInsensitiveCStringEquals" alt="" coords="1011,59,1349,88"/>
+<area shape="rect" id="node17" href="$namespacetesting_1_1internal_1_1posix.html#a1d5e3da5a27eed25986859fa83cafe95" title="testing::internal::posix::GetEnv" alt="" coords="1079,112,1281,141"/>
+<area shape="rect" id="node19" href="$classtesting_1_1internal_1_1_string.html#a8bea7b33e7effbd299a0b4a5522ea96e" title="testing::internal::String::CStringEquals" alt="" coords="1057,165,1303,195"/>
+<area shape="rect" id="node15" href="$namespacetesting_1_1internal_1_1posix.html#a1ef2385a7f8e4c706054da35967e76bd" title="testing::internal::posix::StrCaseCmp" alt="" coords="1397,59,1632,88"/>
+</map>

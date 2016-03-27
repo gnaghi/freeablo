@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['setuptestcasefunc',['SetUpTestCaseFunc',['../classtesting_1_1_test.html#a5f2a051d1d99c9b784c666c586186cf9',1,'testing::Test::SetUpTestCaseFunc()'],['../namespacetesting_1_1internal.html#ada14d66b5460b20e09071f51b9885c8d',1,'testing::internal::SetUpTestCaseFunc()']]],
   ['sfile_5faddfile_5fcallback',['SFILE_ADDFILE_CALLBACK',['../_storm_lib_8h.html#aa079b6d9f0e997a0b4dff53ad112f603',1,'StormLib.h']]],
   ['sfile_5fcompact_5fcallback',['SFILE_COMPACT_CALLBACK',['../_storm_lib_8h.html#a2a42639b325f48193ab2b5e0ef4b2800',1,'StormLib.h']]],
   ['sfile_5fcreate_5fmpq',['SFILE_CREATE_MPQ',['../_storm_lib_8h.html#a80037db6483e8bbd003a556603b8c2ec',1,'StormLib.h']]],
@@ -19,6 +20,7 @@ var searchData=
   ['sprite',['Sprite',['../namespace_render.html#af50f804b65c964056de6aeffcf039f66',1,'Render']]],
   ['sres',['SRes',['../_types_8h.html#acc0053eeb62726b68b22e8c7d9e91367',1,'Types.h']]],
   ['static_5ftree_5fdesc',['static_tree_desc',['../deflate_8h.html#a905910aabf6aabbe79ff0832e4a664cc',1,'deflate.h']]],
+  ['statstruct',['StatStruct',['../namespacetesting_1_1internal_1_1posix.html#a8eb9f08d3af29941c2d2a964cfff3ecb',1,'testing::internal::posix']]],
   ['stream_5fclose',['STREAM_CLOSE',['../_file_stream_8h.html#a48ad34755a0279714c10b1c884a60b41',1,'FileStream.h']]],
   ['stream_5fcreate',['STREAM_CREATE',['../_file_stream_8h.html#aa9e8c979563f0b74ae92ffe62eee3deb',1,'FileStream.h']]],
   ['stream_5fgetpos',['STREAM_GETPOS',['../_file_stream_8h.html#a7f527201713e0f4a02735f5b366e3d22',1,'FileStream.h']]],
@@ -28,5 +30,6 @@ var searchData=
   ['stream_5fread',['STREAM_READ',['../_file_stream_8h.html#a29660be44256c3466d1c0d72a24b3c64',1,'FileStream.h']]],
   ['stream_5fresize',['STREAM_RESIZE',['../_file_stream_8h.html#a6bdeb9531dc582892fa460a8b666a9d1',1,'FileStream.h']]],
   ['stream_5fwrite',['STREAM_WRITE',['../_file_stream_8h.html#a5c979aab996e98d89553870f951e52a0',1,'FileStream.h']]],
+  ['string',['string',['../namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111',1,'testing::internal']]],
   ['symmetric_5fkey',['symmetric_key',['../tomcrypt__cipher_8h.html#ac5a146550efe94c415d95abc7e454362',1,'tomcrypt_cipher.h']]]
 ];

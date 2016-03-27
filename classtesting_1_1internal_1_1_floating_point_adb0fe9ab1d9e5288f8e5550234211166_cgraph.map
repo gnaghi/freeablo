@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classtesting_1_1internal_1_1_floating_point.html#aaef2fd2cd8cdf791206a5e9fed8ef90d" title="testing::internal::FloatingPoint::is_nan" alt="" coords="340,32,580,61"/>
+<area shape="rect" id="node5" href="$classtesting_1_1internal_1_1_floating_point.html#af53c50b85408c582540d6244c026ce2b" title="testing::internal::FloatingPoint::exponent_bits" alt="" coords="631,5,913,35"/>
+<area shape="rect" id="node7" href="$classtesting_1_1internal_1_1_floating_point.html#aa0167b7b10a934b743ba3c1f47421e63" title="testing::internal::FloatingPoint::fraction_bits" alt="" coords="635,59,909,88"/>
+</map>

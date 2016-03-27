@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$namespacetesting_1_1internal_1_1posix.html#a1d5e3da5a27eed25986859fa83cafe95" title="testing::internal::posix::GetEnv" alt="" coords="956,5,1159,35"/>
+<area shape="rect" id="node5" href="$namespacetesting_1_1internal_1_1posix.html#a4042201dcc4932641d484e7ddf94de7d" title="testing::internal::posix::FOpen" alt="" coords="365,59,563,88"/>
+<area shape="rect" id="node7" href="$namespacetesting_1_1internal.html#adef3055706176001364e54eb73a87e31" title="testing::internal::ColoredPrintf" alt="" coords="367,112,561,141"/>
+<area shape="rect" id="node9" href="$namespacetesting_1_1internal.html#ac1db1b4603967a6c4404f31cbbac31a6" title="testing::internal::ShouldUseColor" alt="" coords="619,59,832,88"/>
+<area shape="rect" id="node20" href="$namespacetesting_1_1internal_1_1posix.html#a16ebe936b3a8ea462a94191635aedc27" title="testing::internal::posix::IsATTY" alt="" coords="624,112,827,141"/>
+<area shape="rect" id="node22" href="$namespacetesting_1_1internal_1_1posix.html#a3117b067e1f942a2031e666953120ccc" title="testing::internal::posix::FileNo" alt="" coords="628,165,823,195"/>
+<area shape="rect" id="node24" href="$namespacetesting_1_1internal.html#a0aefb9deb60e90f19c236559837303d8" title="testing::internal::GetAnsiColorCode" alt="" coords="612,219,839,248"/>
+<area shape="rect" id="node11" href="$gtest__output__test___8cc.html#a448e05d56107d7550bea141e0f7a73d3" title="GTEST_FLAG" alt="" coords="1004,59,1111,88"/>
+<area shape="rect" id="node13" href="$classtesting_1_1internal_1_1_string.html#a116ca435d63306927ba19f90a3596787" title="testing::internal::String::CaseInsensitiveCStringEquals" alt="" coords="888,112,1227,141"/>
+<area shape="rect" id="node18" href="$classtesting_1_1internal_1_1_string.html#a8bea7b33e7effbd299a0b4a5522ea96e" title="testing::internal::String::CStringEquals" alt="" coords="935,165,1180,195"/>
+<area shape="rect" id="node15" href="$namespacetesting_1_1internal_1_1posix.html#a1ef2385a7f8e4c706054da35967e76bd" title="testing::internal::posix::StrCaseCmp" alt="" coords="1275,112,1509,141"/>
+</map>

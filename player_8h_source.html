@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00013"></a>00013             <a class="code" href="class_f_a_world_1_1_player.html#a1f1fe37fd8144a89a4f495a760cbd797">Player</a>();
 <a name="l00014"></a>00014             <span class="keyword">virtual</span> <a class="code" href="class_f_a_world_1_1_player.html#aa6548e3961fcad13764237a7321f5a33">~Player</a>();
 <a name="l00015"></a><a class="code" href="class_f_a_world_1_1_player.html#a5793a4a0c105bbeecfe92e9dac7f9d45">00015</a>             <a class="code" href="class_f_a_world_1_1_inventory.html">Inventory</a> <a class="code" href="class_f_a_world_1_1_player.html#a5793a4a0c105bbeecfe92e9dac7f9d45">mInventory</a>;
-<a name="l00016"></a>00016             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_player.html#a617f9248e099f1bfe1a1685456d1fdbb">setSpriteClass</a>(std::string className);
+<a name="l00016"></a>00016             <span class="keywordtype">void</span> <a class="code" href="class_f_a_world_1_1_player.html#a617f9248e099f1bfe1a1685456d1fdbb">setSpriteClass</a>(<a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> className);
 <a name="l00017"></a>00017             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_player.html#aa4da592bd7d2a7523212fe7ba91b4861">attack</a>(<a class="code" href="class_f_a_world_1_1_actor.html">Actor</a> * enemy);
 <a name="l00018"></a>00018             <span class="keywordtype">bool</span> <a class="code" href="class_f_a_world_1_1_player.html#aa4da592bd7d2a7523212fe7ba91b4861">attack</a>(<a class="code" href="class_f_a_world_1_1_player.html">Player</a> * enemy);
 <a name="l00019"></a>00019             <a class="code" href="class_f_a_render_1_1_f_a_sprite_group.html">FARender::FASpriteGroup</a>* <a class="code" href="class_f_a_world_1_1_player.html#a49b86ba9b64ebe0fe837ccdcd5af78fb">getCurrentAnim</a>();
@@ -111,10 +111,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00028"></a>00028 
 <a name="l00029"></a>00029         <span class="keyword">private</span>:
 <a name="l00030"></a>00030             <span class="comment">// these &quot;Fmt&quot; vars are just used by getCurrentAnim</span>
-<a name="l00031"></a>00031             std::string mFmtClassName;
-<a name="l00032"></a>00032             std::string mFmtClassCode;
-<a name="l00033"></a>00033             std::string mFmtArmourCode;
-<a name="l00034"></a>00034             std::string mFmtWeaponCode;
+<a name="l00031"></a>00031             <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> mFmtClassName;
+<a name="l00032"></a>00032             <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> mFmtClassCode;
+<a name="l00033"></a>00033             <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> mFmtArmourCode;
+<a name="l00034"></a>00034             <a class="code" href="namespacetesting_1_1internal.html#a8e8ff5b11e64078831112677156cb111">std::string</a> mFmtWeaponCode;
 <a name="l00035"></a>00035             <span class="keywordtype">bool</span> mFmtInDungeon = <span class="keyword">false</span>;
 <a name="l00036"></a>00036 
 <a name="l00037"></a><a class="code" href="class_f_a_world_1_1_player.html#a4153fb350155e74d4b0d758d9ca894f5">00037</a>         <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_f_a_world_1_1_inventory.html">Inventory</a>;

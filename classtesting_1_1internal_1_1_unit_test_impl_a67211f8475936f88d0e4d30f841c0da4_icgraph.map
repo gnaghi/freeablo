@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classtesting_1_1internal_1_1_default_global_test_part_result_reporter.html#a6081576a23b964cfecab1e424d8044fc" title="testing::internal::DefaultGlobalTestPartResultReporter::ReportTestPartResult" alt="" coords="305,5,775,35"/>
+<area shape="rect" id="node5" href="$classtesting_1_1internal_1_1_unit_test_impl.html#a5fb75faa88ee71f26e16473455b70839" title="testing::internal::UnitTestImpl::UnitTestImpl" alt="" coords="401,59,679,88"/>
+<area shape="rect" id="node7" href="$classtesting_1_1internal_1_1_unit_test_impl.html#a21cd7b2928de03a55b5252f29dd5ae6d" title="testing::internal::UnitTestImpl::ConfigureXmlOutput" alt="" coords="380,112,700,141"/>
+<area shape="rect" id="node11" href="$classtesting_1_1internal_1_1_unit_test_impl.html#a1fb6be9971f4768c4136a05aa9e7e375" title="testing::internal::UnitTestImpl::RunAllTests" alt="" coords="1189,164,1464,193"/>
+<area shape="rect" id="node9" href="$classtesting_1_1internal_1_1_unit_test_impl.html#a772894193104b1b2516f16e6ff813168" title="testing::internal::UnitTestImpl::PostFlagParsingInit" alt="" coords="825,112,1140,141"/>
+<area shape="rect" id="node15" href="$namespacetesting_1_1internal.html#ac3c6fa93391768aa91c6238b31aaeeb5" title="testing::internal::InitGoogleTestImpl" alt="" coords="1212,111,1441,140"/>
+<area shape="rect" id="node13" href="$classtesting_1_1_unit_test.html#a2febc800536b44500565f4c423f359d3" title="testing::UnitTest::Run" alt="" coords="1515,164,1664,193"/>
+<area shape="rect" id="node17" href="$namespacetesting.html#afd726ae08c9bd16dc52f78c822d9946b" title="testing::InitGoogleTest" alt="" coords="1512,111,1667,140"/>
+<area shape="rect" id="node19" href="$sample10__unittest_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1715,111,1765,140"/>
+</map>

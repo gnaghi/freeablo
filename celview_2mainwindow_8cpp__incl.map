@@ -1,14 +1,14 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$celview_2mainwindow_8h.html" title="mainwindow.h" alt="" coords="680,83,784,112"/>
 <area shape="rect" id="node30" href="$render_8h.html" title="render/render.h" alt="" coords="955,160,1064,189"/>
-<area shape="rect" id="node65" href="$ui__celview_8h.html" title="ui_celview.h" alt="" coords="2880,83,2973,112"/>
-<area shape="rect" id="node15" href="$disablewarn_8h.html" title="misc/disablewarn.h" alt="" coords="1384,315,1517,344"/>
+<area shape="rect" id="node66" href="$ui__celview_8h.html" title="ui_celview.h" alt="" coords="2880,83,2973,112"/>
+<area shape="rect" id="node15" href="$disablewarn_8h.html" title="misc/disablewarn.h" alt="" coords="1388,315,1521,344"/>
 <area shape="rect" id="node17" href="$_storm_lib_8h.html" title="StormLib.h" alt="" coords="107,160,192,189"/>
-<area shape="rect" id="node19" href="$enablewarn_8h.html" title="misc/enablewarn.h" alt="" coords="1099,315,1229,344"/>
+<area shape="rect" id="node19" href="$enablewarn_8h.html" title="misc/enablewarn.h" alt="" coords="1159,315,1289,344"/>
 <area shape="rect" id="node21" href="$settings_8h.html" title="settings/settings.h" alt="" coords="216,160,344,189"/>
 <area shape="rect" id="node25" href="$faio_8h.html" title="faio/faio.h" alt="" coords="5,160,83,189"/>
-<area shape="rect" id="node42" href="$celfile_8h.html" title="cel/celfile.h" alt="" coords="441,237,529,267"/>
-<area shape="rect" id="node46" href="$celframe_8h.html" title="cel/celframe.h" alt="" coords="313,237,417,267"/>
-<area shape="rect" id="node54" href="$drawcommand_8h.html" title="rocketglue/drawcommand.h" alt="" coords="1135,237,1316,267"/>
-<area shape="rect" id="node62" href="$levelobjects_8h.html" title="levelobjects.h" alt="" coords="959,237,1060,267"/>
+<area shape="rect" id="node42" href="$celfile_8h.html" title="cel/celfile.h" alt="" coords="391,237,479,267"/>
+<area shape="rect" id="node46" href="$celframe_8h.html" title="celframe.h" alt="" coords="396,315,479,344"/>
+<area shape="rect" id="node55" href="$drawcommand_8h.html" title="rocketglue/drawcommand.h" alt="" coords="1236,237,1417,267"/>
+<area shape="rect" id="node63" href="$levelobjects_8h.html" title="levelobjects.h" alt="" coords="959,237,1060,267"/>
 </map>
