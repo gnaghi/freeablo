@@ -4,5 +4,5 @@ var searchData=
   ['zalloc',['zalloc',['../structz__stream__s.html#a23a2299c384f808e76e9908f21216b0f',1,'z_stream_s']]],
   ['zbits',['zbits',['../struct_e_state.html#ac2f697608f9395215fd34c69790ce80b',1,'EState']]],
   ['zfree',['zfree',['../structz__stream__s.html#a89eb750ade7f4f0b56bfdadf13344982',1,'z_stream_s']]],
-  ['zlib',['zlib',['../readme_8md.html#aa4adeff7f6fe688092d93543a6ee433b',1,'readme.md']]]
+  ['zlib',['zlib',['../readme_8md.html#a2abba2eac7c12dd8230fc102edcd988c',1,'readme.md']]]
 ];
