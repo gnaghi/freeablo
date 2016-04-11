@@ -4,7 +4,7 @@
 <area shape="rect" id="node23" href="$namespace_f_a_level_gen.html#ab839eedf0dc81a4db5366d95ca198188" title="FALevelGen::isWall" alt="" coords="243,5,381,35"/>
 <area shape="rect" id="node25" href="$namespace_f_a_level_gen.html#abd00f6c90ec460081478daad824540e9" title="FALevelGen::setPoint" alt="" coords="507,53,656,83"/>
 <area shape="rect" id="node31" href="$namespace_f_a_level_gen.html#a0a6b8872f9374d3d1ea6e1bf6a8a350b" title="FALevelGen::cleanLooseWallsHelper" alt="" coords="193,160,431,189"/>
-<area shape="rect" id="node37" href="$namespace_f_a_level_gen.html#a09f0829395e8549e29e1edf094fb297c" title="FALevelGen::doorAddHelper" alt="" coords="488,107,675,136"/>
+<area shape="rect" id="node37" href="$namespace_f_a_level_gen.html#adaf7e5a6e9305705ac2f1c0217351b26" title="FALevelGen::doorAddHelper" alt="" coords="488,107,675,136"/>
 <area shape="rect" id="node42" href="$namespace_f_a_level_gen.html#a6afadecc7f51a2b049ce927e4f9b9808" title="FALevelGen::isPassable" alt="" coords="229,317,395,347"/>
 <area shape="rect" id="node9" href="$namespace_f_a_level_gen.html#a3e67d9abf003b6628cc7f4421fef950b" title="FALevelGen::generateTmp" alt="" coords="949,185,1128,215"/>
 <area shape="rect" id="node18" href="$namespace_f_a_level_gen.html#a919277a6ead4f9bab070feaf8151ff29" title="FALevelGen::cleanupHelper" alt="" coords="489,264,673,293"/>
@@ -14,5 +14,5 @@
 <area shape="rect" id="node13" href="$class_f_a_world_1_1_world.html#a5f2ca8c8743cc7689ba9227be88f9556" title="FAWorld::World::generateLevels" alt="" coords="1376,133,1587,163"/>
 <area shape="rect" id="node27" href="$namespace_f_a_level_gen.html#af82a580c6c944b63032043ff18d09999" title="FALevelGen::fillIsometric" alt="" coords="732,53,900,83"/>
 <area shape="rect" id="node33" href="$namespace_f_a_level_gen.html#a390fa115f23f6651f009d2dfcd639b98" title="FALevelGen::cleanLooseWalls" alt="" coords="481,160,681,189"/>
-<area shape="rect" id="node39" href="$namespace_f_a_level_gen.html#addd22db51650e4202c3521978a26e97c" title="FALevelGen::addDoors" alt="" coords="737,107,895,136"/>
+<area shape="rect" id="node39" href="$namespace_f_a_level_gen.html#aaadc8f0a4f323fffca554c5bb48bd218" title="FALevelGen::addDoors" alt="" coords="737,107,895,136"/>
 </map>

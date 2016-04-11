@@ -18,7 +18,7 @@
 <area shape="rect" id="node64" href="$namespace_f_a_level_gen.html#abd97c680f0e14d01f8ce16c23ec91ca9" title="FALevelGen::borders" alt="" coords="1376,780,1520,809"/>
 <area shape="rect" id="node67" href="$namespace_f_a_level_gen.html#a65b24647f0db6ad38c4c66bb489be055" title="FALevelGen::cleanup" alt="" coords="791,883,937,912"/>
 <area shape="rect" id="node75" href="$namespace_f_a_level_gen.html#a390fa115f23f6651f009d2dfcd639b98" title="FALevelGen::cleanLooseWalls" alt="" coords="1047,1084,1247,1113"/>
-<area shape="rect" id="node82" href="$namespace_f_a_level_gen.html#addd22db51650e4202c3521978a26e97c" title="FALevelGen::addDoors" alt="" coords="785,1200,943,1229"/>
+<area shape="rect" id="node82" href="$namespace_f_a_level_gen.html#aaadc8f0a4f323fffca554c5bb48bd218" title="FALevelGen::addDoors" alt="" coords="785,1200,943,1229"/>
 <area shape="rect" id="node87" href="$namespace_f_a_level_gen.html#a594ed88ca46d4ee0453ef8743eceda3d" title="FALevelGen::placeUpStairs" alt="" coords="772,580,956,609"/>
 <area shape="rect" id="node89" href="$namespace_f_a_level_gen.html#a03d95875d0aa4f7a5e245b920487a23d" title="FALevelGen::placeDownStairs" alt="" coords="764,987,964,1016"/>
 <area shape="rect" id="node21" href="$class_f_a_level_gen_1_1_room.html#ae46ead81abeda94bef95e2294411f143" title="FALevelGen::Room::centre" alt="" coords="1056,660,1237,689"/>
@@ -38,7 +38,7 @@
 <area shape="rect" id="node60" href="$namespace_f_a_level_gen.html#ae58979758ba5b5bc2d6f0e719832b3ef" title="FALevelGen::getXY" alt="" coords="1653,1193,1792,1223"/>
 <area shape="rect" id="node69" href="$namespace_f_a_level_gen.html#a919277a6ead4f9bab070feaf8151ff29" title="FALevelGen::cleanupHelper" alt="" coords="1055,725,1239,755"/>
 <area shape="rect" id="node79" href="$namespace_f_a_level_gen.html#a0a6b8872f9374d3d1ea6e1bf6a8a350b" title="FALevelGen::cleanLooseWallsHelper" alt="" coords="1329,1193,1567,1223"/>
-<area shape="rect" id="node84" href="$namespace_f_a_level_gen.html#a09f0829395e8549e29e1edf094fb297c" title="FALevelGen::doorAddHelper" alt="" coords="1053,1213,1240,1243"/>
+<area shape="rect" id="node84" href="$namespace_f_a_level_gen.html#adaf7e5a6e9305705ac2f1c0217351b26" title="FALevelGen::doorAddHelper" alt="" coords="1053,1213,1240,1243"/>
 <area shape="rect" id="node97" href="$namespace_f_a_level_gen.html#ab839eedf0dc81a4db5366d95ca198188" title="FALevelGen::isWall" alt="" coords="1379,1348,1517,1377"/>
 <area shape="rect" id="node100" href="$namespace_f_a_level_gen.html#abd00f6c90ec460081478daad824540e9" title="FALevelGen::setPoint" alt="" coords="1072,1296,1221,1325"/>
 <area shape="rect" id="node108" href="$namespace_f_a_level_gen.html#ac9781713d748d73af019950ff659089a" title="FALevelGen::connectHelperX" alt="" coords="1861,439,2056,468"/>
