@@ -4,7 +4,11 @@
 #include <complex>
 
 #include <SDL.h>
+//#include <SDL_opengl.h>
 #include <SDL_image.h>
+
+
+#include "sdl_gl_funcs.h"
 
 #include "../cel/celfile.h"
 #include "../cel/celframe.h"
@@ -14,17 +18,26 @@
 #include "../level/level.h"
 #include <misc/stringops.h>
 #include <misc/savePNG.h>
-#include <faio/faio.h>
+#include <faio/fafileobject.h>
 
-#include <Rocket/Core.h>
-#include <Rocket/Core/Input.h>
 
-#include "rocketglue/FAIOFileInterface.h"
-#include "rocketglue/SystemInterfaceSDL2.h"
-#include "rocketglue/RenderInterfaceSDL2.h"
+/*#define NK_INCLUDE_FIXED_TYPES
+#define NK_INCLUDE_STANDARD_IO
+#define NK_INCLUDE_STANDARD_VARARGS
+#define NK_INCLUDE_DEFAULT_ALLOCATOR
+#define NK_INCLUDE_VERTEX_BUFFER_OUTPUT
+#define NK_INCLUDE_FONT_BAKING
+#define NK_INCLUDE_DEFAULT_FONT
+#define NK_IMPLEMENTATION*/
+#include <fa_nuklear.h>
 
-#include <misc/boost_python.h>
-#include <Rocket/Core/Python/Python.h>
+#define NK_SDL_GL3_IMPLEMENTATION
+#include "nuklear_sdl_gl3.h"
+
+
+#define MAX_VERTEX_MEMORY 512 * 1024
+#define MAX_ELEMENT_MEMORY 128 * 1024
+
 
 namespace Render
 {
@@ -33,13 +46,9 @@ namespace Render
 
     SDL_Window* screen;
     SDL_Renderer* renderer;
+    SDL_GLContext glContext;
 
-    RocketSDL2Renderer* Renderer;
-    RocketSDL2SystemInterface* SystemInterface;
-    FAIOFileInterface* FileInterface;
-    Rocket::Core::Context* Context;
-    
-    void init(const RenderSettings& settings)
+    void init(const std::string& title, const RenderSettings& settings, NuklearGraphicsContext& nuklearGraphics, nk_context* nk_ctx)
     {
         WIDTH = settings.windowWidth;
         HEIGHT = settings.windowHeight;
@@ -55,12 +64,16 @@ namespace Render
         }
 
         SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO);
-        screen = SDL_CreateWindow("LibRocket SDL2 test", 20, 20, WIDTH, HEIGHT, flags);
+        screen = SDL_CreateWindow(title.c_str(), 20, 20, WIDTH, HEIGHT, flags);
         if(screen == NULL)
             printf("Could not create window: %s\n", SDL_GetError());
 
+        SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_COMPATIBILITY);
+        SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+        SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 2);
+        SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 
-        SDL_GL_CreateContext(screen);
+        glContext = SDL_GL_CreateContext(screen);
         int oglIdx = -1;
         int nRD = SDL_GetNumRenderDrivers();
         for(int i=0; i<nRD; i++)
@@ -77,97 +90,33 @@ namespace Render
 
         renderer = SDL_CreateRenderer(screen, oglIdx, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 
-        SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
-        glMatrixMode(GL_PROJECTION|GL_MODELVIEW);
-        glLoadIdentity();
-        glOrtho(0, WIDTH, HEIGHT, 0, 0, 1);
-    }
+        initGlFuncs();
 
-    bool import(const std::string& name)
-    {
-        PyObject* module = PyImport_ImportModule(name.c_str());
-        if (!module)
+        glDisable(GL_CULL_FACE);
+        glDisable(GL_DEPTH_TEST);
+
+        if (nk_ctx)
         {
-            PyErr_Print();
-            return false;
+            memset(&nuklearGraphics, 0, sizeof(nuklearGraphics));
+            nk_sdl_device_create(nuklearGraphics.dev);
         }
-
-        Py_DECREF(module);
-        return true;
     }
 
-    Rocket::Core::Context* initGui(std::function<bool(Rocket::Core::TextureHandle&, Rocket::Core::Vector2i&, const Rocket::Core::String&)> loadTextureFunc,
-                                   std::function<bool(Rocket::Core::TextureHandle&, const Rocket::Core::byte*, const Rocket::Core::Vector2i&)> generateTextureFunc,
-                                   std::function<void(Rocket::Core::TextureHandle)> releaseTextureFunc)
+    void setWindowSize(const RenderSettings& settings)
     {
-        #ifdef WIN32
-            Py_SetPythonHome("Python27");
-        #endif
-        Py_Initialize();
-
-        #ifdef WIN32
-            PyRun_SimpleString("import sys\nsys.path.append('.')");
-        #endif
-        
-        // add our python libs to path
-        PyRun_SimpleString("import sys\nsys.path.append('./resources/python')");
-
-        // Pull in the Rocket Python module.
-        import("rocket");
-
-        Renderer = new RocketSDL2Renderer(renderer, screen, loadTextureFunc, generateTextureFunc, releaseTextureFunc);
-        SystemInterface = new RocketSDL2SystemInterface();
-        FileInterface = new FAIOFileInterface();
-
-        Rocket::Core::SetFileInterface(FileInterface);
-        Rocket::Core::SetRenderInterface(Renderer);
-        Rocket::Core::SetSystemInterface(SystemInterface);
-
-        if(!Rocket::Core::Initialise())
-            fprintf(stderr, "couldn't initialise rocket!");
-
-        Rocket::Core::FontDatabase::LoadFontFace("resources/fonts/Freeablo/FreeabloWhite11.fnt");
-
-        Rocket::Core::FontDatabase::LoadFontFace("resources/fonts/Freeablo/FreeabloGold16.fnt");
-        Rocket::Core::FontDatabase::LoadFontFace("resources/fonts/Freeablo/FreeabloGold22.fnt");
-        Rocket::Core::FontDatabase::LoadFontFace("resources/fonts/Freeablo/FreeabloGold24.fnt");
-        Rocket::Core::FontDatabase::LoadFontFace("resources/fonts/Freeablo/FreeabloGold30.fnt");
-        Rocket::Core::FontDatabase::LoadFontFace("resources/fonts/Freeablo/FreeabloGold42.fnt");
-
-        Rocket::Core::FontDatabase::LoadFontFace("resources/fonts/Freeablo/FreeabloSilver16.fnt");
-        Rocket::Core::FontDatabase::LoadFontFace("resources/fonts/Freeablo/FreeabloSilver24.fnt");
-        Rocket::Core::FontDatabase::LoadFontFace("resources/fonts/Freeablo/FreeabloSilver30.fnt");
-        Rocket::Core::FontDatabase::LoadFontFace("resources/fonts/Freeablo/FreeabloSilver42.fnt");
-
-        Rocket::Core::FontDatabase::LoadFontFace("resources/fonts/FreeMono/FreeMonoBoldOblique.ttf");
-        Rocket::Core::FontDatabase::LoadFontFace("resources/fonts/FreeMono/FreeMonoBold.ttf");
-        Rocket::Core::FontDatabase::LoadFontFace("resources/fonts/FreeMono/FreeMonoOblique.ttf");
-        Rocket::Core::FontDatabase::LoadFontFace("resources/fonts/FreeMono/FreeMono.ttf");
-
-        Context = Rocket::Core::CreateContext("default",
-            Rocket::Core::Vector2i(WIDTH, HEIGHT));
-
-        return Context;
+        SDL_SetWindowSize(screen, settings.windowWidth, settings.windowHeight);
     }
 
-    void quitGui()
+
+    void destroyNuklearGraphicsContext(NuklearGraphicsContext& nuklearGraphics)
     {
-        Context->UnloadAllDocuments();
-
-        Context->RemoveReference();
-
-        Rocket::Core::Shutdown();
-        Py_Finalize();
-
-        delete Renderer;
-        delete FileInterface;
-        delete SystemInterface;
+        nk_font_atlas_clear(&nuklearGraphics.atlas);
+        nk_sdl_device_destroy(nuklearGraphics.dev);
     }
 
-
-    
     void quit()
     {
+        SDL_GL_DeleteContext(glContext);
         SDL_DestroyRenderer(renderer);
         SDL_DestroyWindow(screen);
         SDL_Quit();
@@ -185,41 +134,78 @@ namespace Render
     RenderSettings getWindowSize()
     {
         RenderSettings settings;
-        SDL_GetWindowSize(screen, &settings.windowWidth, &settings.windowHeight);
+        settings.windowWidth = 0;
+        settings.windowHeight = 0;
+        SDL_GetRendererOutputSize(renderer, &settings.windowWidth, &settings.windowHeight);
+        //SDL_GetWindowSize(screen, &settings.windowWidth, &settings.windowHeight);
         return settings;
     }
 
-    void updateGuiBuffer(std::vector<DrawCommand>* buffer)
+    GLuint getGLTexFromSurface(SDL_Surface* surf)
     {
-        if(resized)
-        {
-            Context->SetDimensions(Rocket::Core::Vector2i(WIDTH, HEIGHT));
-            resized = false;
-        }
+        GLenum data_fmt = GL_RGBA;
+        /*Uint8 test = SDL_MapRGB(surf->format, 0xAA, 0xBB, 0xCC) & 0xFF;
+        if (test == 0xAA) data_fmt = GL_RGB;
+        else if (test == 0xCC) data_fmt = GL_BGR;//GL_BGR;
+        else {
+        printf("Error: \"Loaded surface was neither RGB or BGR!\""); return;
+        }*/
 
-        if(buffer)
-            buffer->clear();
+        bool validFormat = true;
+        if (surf->format->BitsPerPixel != 24 && surf->format->BitsPerPixel != 32)
+            validFormat = false;
+        if (surf->format->Rmask != 0x000000FF || surf->format->Gmask != 0x0000FF00 || surf->format->Bmask != 0x00FF0000)
+            validFormat = false;
+        if (surf->format->BitsPerPixel != 32 || surf->format->Amask != 0xFF000000)
+            validFormat = false;
+        if (surf->pitch != 4 * surf->w)
+            validFormat = false;
 
-        Renderer->mDrawBuffer = buffer;
-        Context->Render();
+        if (!validFormat)
+            surf = SDL_ConvertSurfaceFormat(surf, SDL_PIXELFORMAT_ABGR8888, 0); // SDL is stupid and interprets pixel formats by endianness, so on LE, it calls RGBA ABGR...
+
+        assert(surf->pitch == 4 * surf->w);
+
+        GLuint tex = 0;
+
+        glGenTextures(1, &tex);
+        glBindTexture(GL_TEXTURE_2D, tex);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, surf->w, surf->h, 0, data_fmt, GL_UNSIGNED_BYTE, surf->pixels);
+
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+        int32_t w, h;
+        spriteSize((Sprite)(intptr_t)tex, w, h);
+
+        if (!validFormat)
+            SDL_FreeSurface(surf);
+
+        return tex;
     }
 
-    void drawGui(std::vector<DrawCommand>& buffer, SpriteCacheBase* cache)
+    void drawGui(NuklearFrameDump& dump, SpriteCacheBase* cache)
     {
-        Renderer->drawBuffer(buffer, cache);
+        // IMPORTANT: `nk_sdl_render` modifies some global OpenGL state
+        // with blending, scissor, face culling, depth test and viewport and
+        // defaults everything back into a default state.
+        // Make sure to either a.) save and restore or b.) reset your own state after
+        // rendering the UI.
+        nk_sdl_render_dump(cache, dump, screen);
+
+        glEnable(GL_BLEND); // see above comment
     }
 
     SDL_Surface* loadNonCelImage(const std::string& sourcePath, const std::string& extension)
     {
-        FAIO::FAFile* file_handle = FAIO::FAfopen(sourcePath);
-        if (!file_handle)
+        FAIO::FAFileObject file_handle(sourcePath);
+        if (!file_handle.isValid())
             return NULL;
 
-        size_t buffer_size = FAIO::FAsize(file_handle);
+        size_t buffer_size = file_handle.FAsize();
 
         char* buffer = new char[buffer_size];
-        FAIO::FAfread(buffer, 1, buffer_size, file_handle);
-        FAIO::FAfclose(file_handle);
+        file_handle.FAfread(buffer, 1, buffer_size);
 
         SDL_Surface* s = IMG_LoadTyped_RW(SDL_RWFromMem(buffer, buffer_size), 1, extension.c_str());
         delete[] buffer;
@@ -240,7 +226,7 @@ namespace Render
     }
 
 
-    bool getImageInfo(const std::string& path, uint32_t& width, uint32_t& height, uint32_t& animLength, int32_t celIndex)
+    bool getImageInfo(const std::string& path, std::vector<int32_t>& widths, std::vector<int32_t>& heights, int32_t& animLength)
     {
         //TODO: get better image decoders that allow you to peek image dimensions without loading full image
 
@@ -249,21 +235,22 @@ namespace Render
         if(Misc::StringUtils::ciEqual(extension, "cel") || Misc::StringUtils::ciEqual(extension, "cl2"))
         {
             Cel::CelFile cel(path);
-            width = cel[celIndex].mWidth;
-            height = cel[celIndex].mHeight;
+            widths.resize (cel.animLength()); heights.resize (cel.animLength());
+            for (int i = 0; i < cel.animLength(); ++i)
+                {
+                    widths[i] = cel[i].mWidth;
+                    heights[i] = cel[i].mHeight;
+                }
             animLength = cel.animLength();
         }
         else
         {
-            if(celIndex != 0)   // no indices on normal files
-                return false; 
-
             SDL_Surface* surface = loadNonCelImage(path, extension);
 
             if(surface)
             {
-                width = surface->w;
-                height = surface->h;
+                widths = {surface->w};
+                heights = {surface->h};
                 animLength = 1;
 
                 SDL_FreeSurface(surface);
@@ -319,11 +306,11 @@ namespace Render
         else
         {
             SDL_Surface* tmp = loadNonCelImageTrans(path, extension, hasTrans, transR, transG, transB);
-            SDL_Texture* tex = SDL_CreateTextureFromSurface(renderer, tmp);
-            SDL_FreeSurface(tmp);
 
             std::vector<Sprite> vec(1);
-            vec[0] = (Sprite)tex;
+            vec[0] = (Sprite)(intptr_t)getGLTexFromSurface(tmp);
+
+            SDL_FreeSurface(tmp);
 
             return new SpriteGroup(vec);
         }
@@ -410,12 +397,11 @@ namespace Render
                 break;
         }
 
-        SDL_Texture* tex = SDL_CreateTextureFromSurface(renderer, tmp);
+        std::vector<Sprite> vec(1);
+        vec[0] = (Sprite)(intptr_t)getGLTexFromSurface(tmp);
+
         SDL_FreeSurface(original);
         SDL_FreeSurface(tmp);
-
-        std::vector<Sprite> vec(1);
-        vec[0] = (Sprite)tex;
 
         return new SpriteGroup(vec);
     }
@@ -424,10 +410,10 @@ namespace Render
     {
         Cel::CelFile cel(path);
 
-        size_t width = 0;
-        size_t height = 0;
+        int32_t width = 0;
+        int32_t height = 0;
 
-        for(size_t i = 0; i < cel.numFrames(); i++)
+        for(int32_t i = 0; i < cel.numFrames(); i++)
         {
             width += cel[i].mWidth;
             height = (cel[i].mHeight > height ? cel[i].mHeight : height);
@@ -438,21 +424,23 @@ namespace Render
 
         SDL_Surface* surface = createTransparentSurface(width, height);
 
-        size_t x = 0;
-        for(size_t i = 0; i < cel.numFrames(); i++)
+        int32_t x = 0;
+        for(int32_t i = 0; i < cel.numFrames(); i++)
         {
             drawFrame(surface, x, 0, cel[i]);
             x += cel[i].mWidth;
         }
 
-        SDL_Texture* tex = SDL_CreateTextureFromSurface(renderer, surface);
-        SDL_FreeSurface(surface);
-
         std::vector<Sprite> vec(1);
-        vec[0] = (Sprite)tex;
+        vec[0] = (Sprite)(intptr_t)getGLTexFromSurface(surface);
+
+        SDL_FreeSurface(surface);
 
         return new SpriteGroup(vec);
     }
+
+
+
 
     SpriteGroup* loadTiledTexture(const std::string& sourcePath, size_t width, size_t height, bool hasTrans, size_t transR, size_t transG, size_t transB)
     {
@@ -478,17 +466,29 @@ namespace Render
             }
         }
 
-        SDL_Texture* tex = SDL_CreateTextureFromSurface(renderer, texture);
+        std::vector<Sprite> vec(1);
+        vec[0] = (Sprite)(intptr_t)getGLTexFromSurface(texture);
+
         SDL_FreeSurface(texture);
         SDL_FreeSurface(tile);
-
-        std::vector<Sprite> vec(1);
-        vec[0] = (Sprite)tex;
 
         return new SpriteGroup(vec);
     }
 
-    void drawCursor(Sprite s, size_t w, size_t h)
+    SpriteGroup* loadNonCelSprite(const std::string& path)
+    {
+        std::string extension = getImageExtension(path);
+        SDL_Surface* image = loadNonCelImage(path, extension);
+
+        std::vector<Sprite> vec(1);
+        vec[0] = (Sprite)(intptr_t)getGLTexFromSurface(image);
+
+        SDL_FreeSurface(image);
+
+        return new SpriteGroup(vec);
+    }
+
+    void drawCursor(Sprite s, CursorHotspotLocation hotspotLocation)
     {
         if(s == NULL)
         {
@@ -501,7 +501,18 @@ namespace Render
             SDL_ShowCursor(0);
             int x,y;
             SDL_GetMouseState(&x,&y);
-            drawAt(s, x-w/2, y-h/2);
+            int32_t w, h;
+            spriteSize(s, w, h);
+            int shiftX = 0;
+            int shiftY = 0;
+            switch (hotspotLocation) {
+            case CursorHotspotLocation::topLeft: break;
+            case CursorHotspotLocation::center:
+                shiftX = w / 2;
+                shiftY = h / 2;
+                break;
+            }
+            drawSprite (s, x - shiftX, y - shiftY); // this shouldn't be the case for default cursor
         }
     }
 
@@ -520,47 +531,273 @@ namespace Render
         #endif
 
         SDL_Surface *surface = SDL_CreateRGBSurfaceFrom ((void*) source, width, height, 32, width*4, rmask, gmask, bmask, amask);
-        SDL_Texture *tex = SDL_CreateTextureFromSurface(renderer, surface);
-        SDL_SetTextureBlendMode(tex, SDL_BLENDMODE_BLEND);
-        SDL_FreeSurface(surface);
+        //SDL_Texture *tex = SDL_CreateTextureFromSurface(renderer, surface);
+        //SDL_SetTextureBlendMode(tex, SDL_BLENDMODE_BLEND);
 
         std::vector<Sprite> vec(1);
-        vec[0] = (Sprite)tex;
+        vec[0] = (Sprite)(intptr_t)getGLTexFromSurface(surface);
+
+        SDL_FreeSurface(surface);
+
         return new SpriteGroup(vec);
     }
 
 
+    bool once = false;
+
+
+
+    GLuint vao = 0;
+    GLuint shader_programme = 0;
+    GLuint texture = 0;
+
     void draw()
     {
+        if (!once)
+        {
+
+            glEnable(GL_BLEND); glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+            once = true;
+
+            float points[] = {
+                0, 0, 0,
+                1, 0, 0,
+                1, 1, 0,
+                0, 0, 0,
+                1, 1, 0,
+                0, 1, 0
+            };
+
+
+
+
+
+            float colours[] = {
+                0, 0,
+                1, 0,
+                1, 1,
+                0, 0,
+                1, 1,
+                0, 1
+            };
+
+
+            GLuint vbo = 0;
+            glGenBuffers(1, &vbo);
+            glBindBuffer(GL_ARRAY_BUFFER, vbo);
+            glBufferData(GL_ARRAY_BUFFER, 18 * sizeof(float), points, GL_STATIC_DRAW);
+
+
+            GLuint uvs_vbo = 0;
+            glGenBuffers(1, &uvs_vbo);
+            glBindBuffer(GL_ARRAY_BUFFER, uvs_vbo);
+            glBufferData(GL_ARRAY_BUFFER, 12 * sizeof(float), colours, GL_STATIC_DRAW);
+
+            glGenVertexArrays(1, &vao);
+            glBindVertexArray(vao);
+            glBindBuffer(GL_ARRAY_BUFFER, vbo);
+            glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, NULL);
+            glBindBuffer(GL_ARRAY_BUFFER, uvs_vbo);
+            glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 0, NULL);
+
+            glEnableVertexAttribArray(0);
+            glEnableVertexAttribArray(1);
+
+
+
+
+            std::string src = Misc::StringUtils::readAsString("resources/shaders/basic.vert");
+            const GLchar* srcPtr = src.c_str();
+
+            GLuint vs = glCreateShader(GL_VERTEX_SHADER);
+            glShaderSource(vs, 1, &srcPtr, NULL);
+            glCompileShader(vs);
+
+            GLint isCompiled = 0;
+            glGetShaderiv(vs, GL_COMPILE_STATUS, &isCompiled);
+            if (isCompiled == GL_FALSE)
+            {
+                GLint maxLength = 0;
+                glGetShaderiv(vs, GL_INFO_LOG_LENGTH, &maxLength);
+
+                // The maxLength includes the NULL character
+                std::vector<GLchar> errorLog(maxLength);
+                glGetShaderInfoLog(vs, maxLength, &maxLength, &errorLog[0]);
+
+                std::cout << &errorLog[0] << std::endl;
+
+                // Provide the infolog in whatever manor you deem best.
+                // Exit with failure.
+                glDeleteShader(vs); // Don't leak the shader.
+                return;
+            }
+
+            src = Misc::StringUtils::readAsString("resources/shaders/basic.frag");
+            srcPtr = src.c_str();
+
+            GLuint fs = glCreateShader(GL_FRAGMENT_SHADER);
+            glShaderSource(fs, 1, &srcPtr, NULL);
+            glCompileShader(fs);
+
+            glGetShaderiv(fs, GL_COMPILE_STATUS, &isCompiled);
+            if (isCompiled == GL_FALSE)
+            {
+                GLint maxLength = 0;
+                glGetShaderiv(fs, GL_INFO_LOG_LENGTH, &maxLength);
+
+                // The maxLength includes the NULL character
+                std::vector<GLchar> errorLog(maxLength);
+                glGetShaderInfoLog(fs, maxLength, &maxLength, &errorLog[0]);
+
+                std::cout << &errorLog[0] << std::endl;
+
+                // Provide the infolog in whatever manor you deem best.
+                // Exit with failure.
+                glDeleteShader(fs); // Don't leak the shader.
+                return;
+            }
+
+
+
+            shader_programme = glCreateProgram();
+            glAttachShader(shader_programme, fs);
+            glAttachShader(shader_programme, vs);
+            glLinkProgram(shader_programme);
+
+
+            /*SDL_Surface* surf = SDL_LoadBMP("E:\\tom.bmp");
+
+            SDL_Surface* s = createTransparentSurface(surf->w, surf->h);
+            SDL_BlitSurface(surf, NULL, s, NULL);
+
+            texture = getGLTexFromSurface(s);
+
+            SDL_FreeSurface(s);
+            SDL_FreeSurface(surf);*/
+        }
+
+
+        /*GLint loc = glGetUniformLocation(shader_programme, "width");
+        if (loc != -1)
+        {
+            glUniform1f(loc, WIDTH);
+        }
+        loc = glGetUniformLocation(shader_programme, "height");
+        if (loc != -1)
+        {
+            glUniform1f(loc, HEIGHT);
+        }
+
+        loc = glGetUniformLocation(shader_programme, "imgW");
+        if (loc != -1)
+        {
+            glUniform1f(loc, 150);
+        }
+        loc = glGetUniformLocation(shader_programme, "imgH");
+        if (loc != -1)
+        {
+            glUniform1f(loc, 100);
+        }
+
+        loc = glGetUniformLocation(shader_programme, "offsetX");
+        if (loc != -1)
+        {
+            glUniform1f(loc, 150);
+        }
+        loc = glGetUniformLocation(shader_programme, "offsetY");
+        if (loc != -1)
+        {
+            glUniform1f(loc, 100);
+        }
+
+        //glClearColor(1.0f, 0.0f, 0.0f, 0.0f);
+        //glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+        glUseProgram(shader_programme);
+        glBindVertexArray(vao);
+        // draw points 0-3 from the currently bound VAO with current in-use shader
+        glDrawArrays(GL_TRIANGLES, 0, 6);*/
+
+        //drawAt(texture, 0, 0);
+
         SDL_RenderPresent(renderer);
     }
 
-    void drawAt(SDL_Texture* sprite, size_t x, size_t y)
+    void drawSprite(GLuint sprite, int32_t x, int32_t y, boost::optional<Cel::Colour> highlightColor)
     {
-        int width, height;
-        SDL_QueryTexture(sprite, NULL, NULL, &width, &height);
+        glUseProgram(shader_programme);
 
-        SDL_Rect dest = { int(x), int(y), width, height };
-        
-        SDL_RenderCopy(renderer, sprite, NULL, &dest);
+        auto setUniform = [](const char *name, double value)
+        {
+          GLint loc = glGetUniformLocation(shader_programme, name);
+          if (loc != -1)
+              {
+                  glUniform1f(loc, value);
+              }
+        };
+
+        setUniform ("width", WIDTH);
+        setUniform ("height", HEIGHT);
+
+        int32_t w, h;
+        spriteSize((Sprite)(intptr_t)sprite, w, h);
+
+        setUniform ("imgW", w);
+        setUniform ("imgH", h);
+        setUniform ("offsetX", x);
+        setUniform ("offsetY", y);
+        if (auto c = highlightColor) {
+          setUniform ("h_color_r", c->r/255.f);
+          setUniform ("h_color_g", c->g/255.f);
+          setUniform ("h_color_b", c->b/255.f);
+          setUniform ("h_color_a", 1.0f);
+        }
+        else
+          setUniform ("h_color_a", 0.0f);
+
+        glBindTexture(GL_TEXTURE_2D, sprite);
+
+        glBindVertexArray(vao);
+        // draw points 0-3 from the currently bound VAO with current in-use shader
+        glDrawArrays(GL_TRIANGLES, 0, 6);
     }
-    
-    void drawAt(const Sprite& sprite, size_t x, size_t y)
+
+
+    void handleEvents()
     {
-        drawAt((SDL_Texture*)sprite, x, y);
+        SDL_Event event;
+        while (SDL_PollEvent(&event))
+        {
+            //do nothing, just clear the event queue to avoid render window hang up in ubuntu.
+        }
+    }
+
+    void drawSprite(const Sprite& sprite, int32_t x, int32_t y, boost::optional<Cel::Colour> highlightColor)
+    {
+        drawSprite((GLuint)(intptr_t)sprite, x, y, highlightColor);
+    }
+
+    constexpr auto tileHeight = 32;
+    constexpr auto tileWidth = tileHeight * 2;
+
+    void drawAtTile(const Sprite& sprite, const Misc::Point& tileTop, int spriteW, int spriteH, boost::optional<Cel::Colour> highlightColor = boost::none)
+    {
+        // centering spright at the center of tile by width and at the bottom of tile by height
+        drawSprite(sprite, tileTop.x - spriteW / 2, tileTop.y - spriteH + tileHeight, highlightColor);
     }
 
 
     SpriteGroup::SpriteGroup(const std::string& path)
     {
         Cel::CelFile cel(path);
-        
-        for(size_t i = 0; i < cel.numFrames(); i++)
+
+        for(int32_t i = 0; i < cel.numFrames(); i++)
         {
             SDL_Surface* s = createTransparentSurface(cel[i].mWidth, cel[i].mHeight);
             drawFrame(s, 0, 0, cel[i]);
 
-            mSprites.push_back(SDL_CreateTextureFromSurface(renderer, s));
+            mSprites.push_back((Render::Sprite)(intptr_t)getGLTexFromSurface(s));// SDL_CreateTextureFromSurface(renderer, s));
 
             SDL_FreeSurface(s);
         }
@@ -573,13 +810,13 @@ namespace Render
     {
         Cel::CelFile cel(celPath);
 
-        size_t numFrames = cel.animLength();
+        int32_t numFrames = cel.animLength();
         if(numFrames == 0)
             return;
 
-        size_t sumWidth = 0;
-        size_t maxHeight = 0;
-        for(size_t i = 0; i < numFrames; i++)
+        int32_t sumWidth = 0;
+        int32_t maxHeight = 0;
+        for(int32_t i = 0; i < numFrames; i++)
         {
             sumWidth += cel[i].mWidth;
             if(cel[i].mHeight > maxHeight) maxHeight = cel[i].mHeight;
@@ -591,7 +828,7 @@ namespace Render
         SDL_Surface* s = createTransparentSurface(sumWidth, maxHeight);
         unsigned int x = 0;
         unsigned int dx = 0;
-        for(size_t i = 0; i < numFrames; i++)
+        for(int32_t i = 0; i < numFrames; i++)
         {
             drawFrame(s, x, 0, cel[i]);
             dx = cel[i].mWidth;
@@ -605,13 +842,16 @@ namespace Render
 
     void SpriteGroup::destroy()
     {
-        for(size_t i = 0; i < mSprites.size(); i++)
-            SDL_DestroyTexture((SDL_Texture*)mSprites[i]);
+        for (size_t i = 0; i < mSprites.size(); i++)
+        {
+            GLuint tex = (GLuint)(intptr_t)mSprites[i];
+            glDeleteTextures(1, &tex);
+        }
     }
-    
+
     void drawMinPillarTop(SDL_Surface* s, int x, int y, const std::vector<int16_t>& pillar, Cel::CelFile& tileset);
     void drawMinPillarBase(SDL_Surface* s, int x, int y, const std::vector<int16_t>& pillar, Cel::CelFile& tileset);
-    
+
     SpriteGroup* loadTilesetSprite(const std::string& celPath, const std::string& minPath, bool top)
     {
         Cel::CelFile cel(celPath);
@@ -630,26 +870,31 @@ namespace Render
             else
                 drawMinPillarBase(newPillar, 0, 0, min[i], cel);
 
-            newMin[i] = SDL_CreateTextureFromSurface(renderer, newPillar);
+            newMin[i] = (Sprite)(intptr_t)getGLTexFromSurface(newPillar);// NULL;// SDL_CreateTextureFromSurface(renderer, newPillar);
         }
 
         SDL_FreeSurface(newPillar);
 
         return new SpriteGroup(newMin);
     }
-    
-    void spriteSize(const Sprite& sprite, size_t& w, size_t& h)
+
+    void spriteSize(const Sprite& sprite, int32_t& w, int32_t& h)
     {
-        int tmpW, tmpH;
-        SDL_QueryTexture((SDL_Texture*)sprite, NULL, NULL, &tmpW, &tmpH);
+        GLint tmpW = 0, tmpH = 0;
+
+        glBindTexture(GL_TEXTURE_2D, (GLuint)(intptr_t)sprite);
+
+        glGetTexLevelParameteriv(GL_TEXTURE_2D, 0, GL_TEXTURE_WIDTH, &tmpW);
+        glGetTexLevelParameteriv(GL_TEXTURE_2D, 0, GL_TEXTURE_HEIGHT, &tmpH);
+        //SDL_QueryTexture((SDL_Texture*)sprite, NULL, NULL, &tmpW, &tmpH);
         w = tmpW;
         h = tmpH;
     }
 
     void clear(int r, int g, int b)
     {
-         SDL_SetRenderDrawColor(renderer, r, g, b, 255);
-         SDL_RenderClear(renderer);
+        glClearColor(((float)r)/255.0, ((float)g)/255.0, ((float)b)/255.0, 1.0);
+        glClear(GL_COLOR_BUFFER_BIT);
     }
 
     #define BPP 4
@@ -657,13 +902,13 @@ namespace Render
 
     void clearTransparentSurface(SDL_Surface* s)
     {
-        SDL_FillRect(s, NULL, SDL_MapRGBA(s->format, 0, 0, 0, 0)); 
+        SDL_FillRect(s, NULL, SDL_MapRGBA(s->format, 0, 0, 0, 0));
     }
 
     SDL_Surface* createTransparentSurface(size_t width, size_t height)
     {
-         SDL_Surface* s; 
-        
+         SDL_Surface* s;
+
         // SDL y u do dis
         #if SDL_BYTEORDER == SDL_BIG_ENDIAN
             s = SDL_CreateRGBSurface(0, width, height, DEPTH, 0xFF000000, 0x00FF0000, 0x0000FF00, 0x000000FF);
@@ -751,9 +996,9 @@ namespace Render
 
     void drawFrame(SDL_Surface* s, int start_x, int start_y, const Cel::CelFrame& frame)
     {
-        for(size_t x = 0; x < frame.mWidth; x++)
+        for(int32_t x = 0; x < frame.mWidth; x++)
         {
-            for(size_t y = 0; y < frame.mHeight; y++)
+            for(int32_t y = 0; y < frame.mHeight; y++)
             {
                 if(frame[x][y].visible)
                     setpixel(s, start_x+x, start_y+y, frame[x][y]);
@@ -795,9 +1040,9 @@ namespace Render
         {
             int16_t l = (pillar[i]&0x0FFF)-1;
             int16_t r = (pillar[i+1]&0x0FFF)-1;
-            
+
             drawMinTile(s, tileset, x, y, l, r);
-        
+
             y += 32; // down 32 each row
         }
     }
@@ -812,203 +1057,131 @@ namespace Render
         drawMinPillar(s, x, y, pillar, tileset, false);
     }
 
-    void drawAt(const Level::Level& level, const Sprite& sprite, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist, int32_t levelX, int32_t levelY)
+    // basic transform of isometric grid to normal, (0, 0) tile coordinate maps to (0, 0) pixel coordinates
+    // since eventually we're gonna shift coordinates to viewport center, it's better to keep transform itself
+    // as simple as possible
+    static Misc::Point tileTopPoint (const Tile &tile) {
+      return {(tileWidth / 2) * (tile.x - tile.y), (tile.y + tile.x) * (tileHeight / 2)};
+    }
+
+    // this function simply does the reverse of the above function, could be found by solving linear equation system
+    // it obviously uses the fact that ttileWidth = tileHeight * 2
+    Tile getTileFromScreenCoords(const Misc::Point& screenPos, const Misc::Point& toScreen)
     {
-        size_t w, h;
+         auto point = screenPos - toScreen;
+         auto x = std::div (2 * point.y + point.x, tileWidth); // division by 64 is pretty fast btw
+         auto y = std::div (2 * point.y - point.x, tileWidth);
+         return {x.quot, y.quot, x.rem > y.rem ? TileHalf::right : TileHalf::left};
+    }
+
+    static Misc::Point pointBetween (const Tile &start, const Tile &finish, const size_t &percent) {
+      auto pointA = tileTopPoint (start);
+      auto pointB = tileTopPoint (finish);
+      return pointA + (pointB - pointA) * (percent * 0.01);
+    }
+
+    static void drawMovingSprite(const Sprite& sprite, const Tile& start, const Tile& finish, size_t dist, const Misc::Point& toScreen, boost::optional<Cel::Colour> highlightColor = boost::none)
+    {
+        int32_t w, h;
         spriteSize(sprite, w, h);
-
-        int32_t xPx1 = ((y1*(-32)) + 32*x1 + level.width()*32) + levelX - w/2;
-        int32_t yPx1 = ((y1*16) + (16*x1) +160) + levelY;
-
-        int32_t xPx2 = ((y2*(-32)) + 32*x2 + level.width()*32) + levelX - w/2;
-        int32_t yPx2 = ((y2*16) + (16*x2) +160) + levelY;
-
-        int32_t x = xPx1 + ((((float)(xPx2-xPx1))/100.0)*(float)dist);
-        int32_t y = yPx1 + ((((float)(yPx2-yPx1))/100.0)*(float)dist);
-
-        drawAt(sprite, x, y);
+        auto point = pointBetween (start, finish, dist);
+        auto res = point + toScreen;
+        drawAtTile(sprite, res, w, h, highlightColor);
     }
 
-    void getMapScreenCoords(const Level::Level& level, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist, int32_t& levelX, int32_t& levelY)
+    constexpr auto bottomMenuSize = 144; // TODO: pass it as a variable
+    Misc::Point worldToScreenVector(const Tile& start, const Tile& finish, size_t dist)
     {
-        int16_t xPx1 = -((y1*(-32)) + 32*x1 + level.width()*32) +WIDTH/2;
-        int16_t yPx1 = -((y1*16) + (16*x1) +160) + HEIGHT/2;
-
-        int16_t xPx2 = -((y2*(-32)) + 32*x2 + level.width()*32) +WIDTH/2;
-        int16_t yPx2 = -((y2*16) + (16*x2) +160) + HEIGHT/2;
-
-        levelX = xPx1 + ((((float)(xPx2-xPx1))/100.0)*(float)dist);
-        levelY = yPx1 + ((((float)(yPx2-yPx1))/100.0)*(float)dist);
+        // centering takes in accord bottom menu size to be consistent with original game centering
+        return Misc::Point{WIDTH / 2, (HEIGHT - bottomMenuSize) / 2} - pointBetween(start, finish, dist);
     }
 
-    std::pair<int32_t, int32_t> getTileFromScreenCoords(const Level::Level& level, size_t levelX, size_t levelY, size_t x, size_t y)
+    Tile getTileByScreenPos(size_t x, size_t y, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)
     {
-        // Position on the map in pixels
-        int32_t flatX = x - levelX;
-        int32_t flatY = y - levelY;
+        auto toScreen = worldToScreenVector({x1, y1}, {x2, y2}, dist);
+        return getTileFromScreenCoords({static_cast<int32_t> (x), static_cast<int32_t> (y)}, toScreen);
+    }
 
-        // position on the map divided into 32x16 flat blocks
-        // every second one of these blocks is centred on an isometric
-        // block centre, the others are centred on isometric block corners
-        int32_t flatGridX = (flatX+16) / 32;
-        int32_t flatGridY = (flatY+8) / 16;
-        
-        // origin position (in flat grid coords) for the first line (isometric y = 0)
-        int32_t flatOriginPosX = level.height();
-        int32_t flatOriginPosY = 15;
+    constexpr auto staticObjectHeight = 256;
 
-        // when a flat grid box is clicked that does not centre on an isometric block, work out which
-        // isometric quadrant of that box was clicked, then adjust flatGridPos accordingly
-        if((flatGridX % 2 == 1 && flatGridY % 2 == 1) || (flatGridX % 2 == 0 && flatGridY % 2 == 0))
+    template <typename ProcessTileFunc>
+    void drawObjectsByTiles (const Misc::Point &toScreen, ProcessTileFunc processTile)
+    {
+      Misc::Point start {-tileWidth, -tileHeight};
+      auto startingTile = getTileFromScreenCoords(start, toScreen);
+
+      auto startingPoint = tileTopPoint(startingTile) + toScreen;
+      auto processLine = [&]()
         {
-            
-            // origin of current flat grid box
-            int32_t baseX = 32*flatGridX - 16;
-            int32_t baseY = 16*flatGridY - 8;
-            
-            // position within grid box
-            int32_t blockPosX = flatX - baseX;
-            int32_t blockPosY = flatY - baseY;
+           auto point = startingPoint;
+           auto tile = startingTile;
 
-            if(blockPosY*2 > blockPosX)
-            {
-                if(blockPosX < (15-blockPosY)*2)
-                    flatGridX--;
-                else
-                    flatGridY++;
-            }
-            else
-            {
-                if(blockPosX < (15-blockPosY)*2)
-                    flatGridY--;
-                else
-                    flatGridX++;
-            }
-        }
-        
-        // flatOrigin adjusted for the current y value
-        int32_t lineOriginPosX = flatOriginPosX + ((flatGridX - flatOriginPosX) - (flatGridY - flatOriginPosY))/2;
-        int32_t lineOriginPosY = flatOriginPosY - (-(flatGridX - flatOriginPosX) -( flatGridY - flatOriginPosY))/2;
+           while (point.x < WIDTH + tileWidth / 2)
+             {
+               point.x += tileWidth;
+               ++tile.x;
+               --tile.y;
+               processTile (tile, point);
+             }
+        };
 
-        int32_t isoPosX = flatGridX - lineOriginPosX;
-        int32_t isoPosY = flatGridY - lineOriginPosY;
-
-        return std::make_pair(isoPosX, isoPosY);
-    }
-    
-    std::pair<int32_t, int32_t> getClickedTile(const Level::Level& level, size_t x, size_t y, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)
-    {
-        int32_t levelX, levelY;
-        getMapScreenCoords(level, x1, y1, x2, y2, dist, levelX, levelY);
-        
-        return getTileFromScreenCoords(level, levelX, levelY, x, y);
-    }
-    
-    // returns: whether or not to keep drawing the current line (see where it's used for what I mean by "line"
-    bool drawLevelHelper(const Level::Level& level, SpriteGroup& minSprites, int32_t x, int32_t y, int32_t levelX, int32_t levelY)
-    {
-        // if the top left of our screen is on a negative coord (we're at the edge of the map)
-        // we want to continue the line, but we obviously don't want to draw tiles outside the map
-        if(x < 0)
-            return true;
-        
-        if((size_t)x < level.width() && (size_t)y < level.height())
+      // then from top left to top-bottom
+      while (startingPoint.y < HEIGHT + staticObjectHeight - tileHeight)
         {
-            size_t index = level[x][y].index();
-            int32_t xCoord = (y*(-32)) + 32*x + level.height()*32-32 + levelX;
-            int32_t yCoord = (y*16) + 16*x + levelY;
-
-            if(xCoord <=  WIDTH && yCoord <= HEIGHT)
-            {
-                if(index < minSprites.size())
-                    drawAt(minSprites[index], xCoord, yCoord);
-                
-                return true;
-            }
-            
-            return false;
+          ++startingTile.y;
+          startingPoint.x -= tileWidth / 2; startingPoint.y += tileHeight / 2;
+          processLine ();
+          ++startingTile.x;
+          startingPoint.x += tileWidth / 2; startingPoint.y += tileHeight / 2;
+          processLine ();
         }
-        
-        return false;
     }
 
-    void drawLevel(const Level::Level& level, size_t minTopsHandle, size_t minBottomsHandle, SpriteCacheBase* cache, LevelObjects& objs, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist)
-    {
-        int32_t levelX, levelY;
-        getMapScreenCoords(level, x1, y1, x2, y2, dist, levelX, levelY);
+    void drawLevel(const Level::Level& level, size_t minTopsHandle, size_t minBottomsHandle, SpriteCacheBase* cache, LevelObjects& objs, LevelObjects
+                   & items, int32_t x1, int32_t y1, int32_t x2, int32_t y2, size_t dist) {
+      auto toScreen = worldToScreenVector({x1, y1}, {x2, y2}, dist);
+      SpriteGroup* minBottoms = cache->get(minBottomsHandle);
+      auto isInvalidTile = [&](const Tile &tile){ return tile.x < 0 || tile.y < 0 || tile.x >= static_cast<int32_t> (level.width()) || tile.y >= static_cast<int32_t> (level.height());};
 
-        //TODO clean up the magic numbers here, and elsewhere in this file
+      // drawing on the ground objects
+      drawObjectsByTiles (toScreen, [&](const Tile &tile, const Misc::Point &topLeft){
+          // Fill invalid tiles with ground, it looks ok but it's probably better to have something else than zero-eth sprite here
+          if (isInvalidTile (tile))
+            return drawAtTile ((*minBottoms)[0], topLeft, tileWidth, staticObjectHeight);
 
-        SpriteGroup* minBottoms = cache->get(minBottomsHandle);
-        
-        
-        int32_t startX = WIDTH;
-        int32_t startY = -32;
-        
-        // draw the squares that are in view, starting at the top right of the screen, running
-        // in lines along the isometric x axis until they go off screen, with each line starting one
-        // to the left in screen space (x-1, y+1 in iso space)
-        // this loop draws the bottoms of the tiles, ie the ground, not including walls
-        while(startY < HEIGHT)
-        {
-            std::pair<int32_t, int32_t> tilePos = getTileFromScreenCoords(level, levelX, levelY, startX, startY);
-            
-            while(drawLevelHelper(level, *minBottoms, tilePos.first, tilePos.second, levelX, levelY))
-                tilePos.first++;
-            
-            if(startX > -64)
+        size_t index = level[tile.x][tile.y].index();
+        if(index < minBottoms->size())
+           drawAtTile ((*minBottoms)[index], topLeft, tileWidth, staticObjectHeight); // all static objects have the same sprite size
+      });
+
+      SpriteGroup* minTops = cache->get(minTopsHandle);
+      cache->setImmortal(minTopsHandle, true);
+
+      // drawing above the ground and moving object
+      drawObjectsByTiles (toScreen, [&](const Tile &tile, const Misc::Point &topLeft){
+        if (isInvalidTile (tile))
+          return;
+
+        size_t index = level[tile.x][tile.y].index();
+        if(index < minTops->size())
+           drawAtTile ((*minTops)[index], topLeft, tileWidth, staticObjectHeight);
+
+        auto &itemsForTile = items[tile.x][tile.y];
+        for (auto &item : itemsForTile)
             {
-                startX -= 64;
-                
-                if(startX < -64)
-                    startX = -64;
+                int32_t w, h;
+                auto sprite = (*cache->get(item.spriteCacheIndex))[item.spriteFrame];
+                spriteSize(sprite, w, h);
+                drawAtTile(sprite, topLeft, w, h, item.hoverColor);
             }
-            else
-            {
-                startY += 32;
-            }
+
+        auto &objsForTile = objs[tile.x][tile.y];
+        for (auto &obj : objsForTile) {
+            if (obj.valid)
+                drawMovingSprite((*cache->get(obj.spriteCacheIndex))[obj.spriteFrame], tile, {obj.x2, obj.y2}, obj.dist, toScreen, obj.hoverColor);
         }
-        
-        
-        startX = WIDTH;
-        startY = -256;
-        
-        SpriteGroup* minTops = cache->get(minTopsHandle);
-        cache->setImmortal(minTopsHandle, true);
-        
-        // same as above, but for the above-gound parts (walls + actors)
-        // starts at -256 and finishes at +256 because the minTops are 256 px tall
-        // Note to people trying to improve perf: I tried rolling both loops into one,
-        // the stuff from this loop has to be drawn at y-1 of the stuff from the first loop (or maybe >1)
-        // but it's actually slower. My guess would be that the offset ruins the cache,
-        // so yeah, it's a copy pasted loop DRY blah blah blah
-        while(startY < HEIGHT + 256)
-        {
-            std::pair<int32_t, int32_t> tilePos = getTileFromScreenCoords(level, levelX, levelY, startX, startY);
-            
-            while(drawLevelHelper(level, *minTops, tilePos.first, tilePos.second, levelX, levelY))
-            {
-                if(tilePos.first >= 0 && tilePos.second >= 0 && objs[tilePos.first][tilePos.second].valid)
-                {
-                    LevelObject o = objs[tilePos.first][tilePos.second];
-                    drawAt(level, cache->get(objs[tilePos.first][tilePos.second].spriteCacheIndex)->operator[](o.spriteFrame), tilePos.first, tilePos.second, objs[tilePos.first][tilePos.second].x2, objs[tilePos.first][tilePos.second].y2, objs[tilePos.first][tilePos.second].dist, levelX, levelY);
-                }
-                
-                tilePos.first++;
-            }
-            
-            if(startX > -64)
-            {
-                startX -= 64;
-                
-                if(startX < -64)
-                    startX = -64;
-            }
-            else
-            {
-                startY += 32;
-            }
-        }
-        cache->setImmortal(minTopsHandle, false);
+      });
+
+      cache->setImmortal(minTopsHandle, false);
     }
 }

@@ -11,31 +11,39 @@ namespace FAWorld
 
         public:
             Player();
+            Player(const std::string& className, const DiabloExe::CharacterStats& charStats);
             virtual ~Player();
-            Inventory mInventory;
             void setSpriteClass(std::string className);
-            bool attack(Actor * enemy);
-            bool attack(Player * enemy);
             bool talk(Actor * actor);
-            FARender::FASpriteGroup* getCurrentAnim();
-            void updateSpriteFormatVars();
+            void updateSprites();
+            void pickupItem(ItemTarget target) override;
+        bool dropItem(const FAWorld::Tile& clickedTile);
 
-            virtual void setLevel(GameLevel* level);
-
-            virtual size_t getBasePriority()
+        virtual size_t getBasePriority()
             {
                 return 10;
             }
 
-        private:
-            // these "Fmt" vars are just used by getCurrentAnim
-            std::string mFmtClassName;
-            std::string mFmtClassCode;
-            std::string mFmtArmourCode;
-            std::string mFmtWeaponCode;
-            bool mFmtInDungeon = false;
+            const Inventory &getInventory () const { return mInventory; }
+            Inventory &getInventory () { return mInventory; }
 
-        friend class Inventory;
+        private:
+            void init(const std::string& className, const DiabloExe::CharacterStats& charStats);
+
+            std::string mClassName;
+            Inventory mInventory;
+
+            friend class Inventory;
+
+            template <class Stream>
+            Serial::Error::Error faSerial(Stream& stream)
+            {
+                serialise_as_parent_class(Actor);
+                return Serial::Error::Success;
+            }
+
+            friend class Serial::WriteBitStream;
+            friend class Serial::ReadBitStream;
     };
 }
 #endif

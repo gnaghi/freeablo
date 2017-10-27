@@ -2,74 +2,98 @@
 #define FAWORLD_LEVEL_H
 
 #include <level/level.h>
+#include <unordered_map>
 
-#include "actor.h"
+#include <enet/enet.h> // TODO: remove
+
+#include <misc/stdhashes.h>
+#include "hoverstate.h"
+#include "item.h"
 
 namespace FARender
 {
     class Renderer;
+    class RenderState;
 }
 
 namespace FAWorld
 {
-    class Player;
+    class Actor;
+    class ItemMap;
+    class Tile;
 
-    class GameLevel
+    class GameLevelImpl
     {
-        public:
-            GameLevel(Level::Level level, size_t levelIndex, std::vector<Actor*> actors);
-            ~GameLevel();
+    public:
+        virtual ~GameLevelImpl() {}
+        virtual int32_t width() const = 0;
+        virtual int32_t height() const = 0;
+        virtual bool isPassable(int x, int y) const = 0;
+    };
 
-            Level::MinPillar getTile(size_t x, size_t y);
+    class GameLevel :public GameLevelImpl
+    {
+    public:
+        GameLevel(Level::Level level, size_t levelIndex);
+        ~GameLevel();
 
-            size_t width() const;
-            size_t height() const;
+        Level::MinPillar getTile(size_t x, size_t y);
 
-            const std::pair<size_t,size_t>& upStairsPos() const;
-            const std::pair<size_t,size_t>& downStairsPos() const;
+        int32_t width() const;
+        int32_t height() const;
 
-            void activate(size_t x, size_t y);
+        const std::pair<size_t, size_t> upStairsPos() const;
+        const std::pair<size_t, size_t> downStairsPos() const;
 
-            size_t getNextLevel();
-            size_t getPreviousLevel();
+        void activate(size_t x, size_t y);
 
-            void update(bool noclip, size_t tick);
+        size_t getNextLevel();
+        size_t getPreviousLevel();
 
-            void actorMapInsert(Actor* actor);
-            void actorMapRemove(Actor* actor);
-            void actorMapClear();
-            void actorMapRefresh();
+        void update(bool noclip);
 
-            Actor* getActorAt(size_t x, size_t y);
+        void actorMapInsert(Actor* actor);
+        void actorMapRemove(Actor* actor);
+        void actorMapClear();
+        void actorMapRefresh();
+        virtual bool isPassable(int x, int y) const;
 
-            void addActor(Actor* actor);
+        Actor* getActorAt(int32_t x, int32_t y) const;
 
-            void fillRenderState(FARender::RenderState* state);
+        void addActor(Actor* actor);
 
-            void removeActor(Actor* actor);
+        void fillRenderState(FARender::RenderState* state, Actor* displayedActor);
 
-            size_t getLevelIndex()
-            {
-                return mLevelIndex;
-            }
+        void removeActor(Actor* actor);
 
-            void saveToPacket(ENetPacket* packet, size_t& position);
-            static GameLevel* fromPacket(ENetPacket* packet, size_t& position);
+        size_t getLevelIndex()
+        {
+            return mLevelIndex;
+        }
 
-            Actor* getActorById(int32_t id);
+        std::string serialiseToString();
+        bool isPassableFor(int i, int j, const Actor* actor) const;
+        bool dropItem(std::unique_ptr <Item>&& item, const Actor& actor, const Tile &tile);
+        static GameLevel* loadFromString(const std::string& data);
 
-            void getActors(std::vector<Actor*>& actors);
+        Actor* getActorById(int32_t id);
 
-        private:
-            GameLevel() {}
+        void getActors(std::vector<Actor*>& actors);
+        HoverState& getHoverState();
+        ItemMap &getItemMap();
 
-            Level::Level mLevel;
-            size_t mLevelIndex;
+    private:
+        GameLevel();
 
-            std::vector<Actor*> mActors;
-            std::map<std::pair<size_t, size_t>, Actor*> mActorMap2D;    ///< Map of points to actors.
-                                                                        ///< Where an actor straddles two squares, they shall be placed in both.
-            friend class FARender::Renderer;
+        Level::Level mLevel;
+        size_t mLevelIndex = 0u;
+
+        std::vector<Actor*> mActors;
+        std::unordered_map<std::pair<int32_t, int32_t>, Actor*> mActorMap2D;    ///< Map of points to actors.
+                                                                    ///< Where an actor straddles two squares, they shall be placed in both.
+        friend class FARender::Renderer;
+        HoverState mHoverState;
+        std::unique_ptr<ItemMap> mItemMap;
     };
 }
 

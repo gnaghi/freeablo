@@ -18,10 +18,10 @@ public:
     Player* create(const std::string& playerClass) const;
 
 private:
-
-    ActorStats* createWarrior(Player* player, const DiabloExe::CharacterStats& charStats) const;
-    ActorStats* createRogue(Player* player, const DiabloExe::CharacterStats& charStats) const;
-    ActorStats* createSorcerer(Player* player, const DiabloExe::CharacterStats& charStats) const;
+    static void loadTestingKit(Player* player);
+    void createWarrior(Player* player) const;
+    void createRogue(Player* player) const;
+    void createSorcerer(Player* player) const;
 
     const DiabloExe::DiabloExe& mExe;
 };

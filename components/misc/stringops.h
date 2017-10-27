@@ -10,6 +10,8 @@
 #include <vector>
 #include <sstream>
 
+#include <faio/fafileobject.h>
+
 namespace Misc
 {
 class StringUtils
@@ -77,7 +79,7 @@ public:
         std::string out = in;
         return toLower(out);
     }
-    
+
     static bool containsNonPrint(const std::string & s)
     {
         for(uint32_t i=0; i < s.length(); i++)
@@ -140,6 +142,19 @@ public:
     static void replace(std::string& str, const std::string& from, const std::string& to)
     {
         while(replaceOne(str, from, to)) {}
+    }
+
+    static std::string readAsString(const std::string& path)
+    {
+        FAIO::FAFileObject f(path);
+
+        size_t size = f.FAsize();
+        std::string retval;
+        retval.resize(size);
+
+        f.FAfread(&retval[0], 1, size);
+
+        return retval;
     }
 };
 

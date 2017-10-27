@@ -6,43 +6,38 @@
 
 #include <boost/lockfree/spsc_queue.hpp>
 
-#include <misc/disablewarn.h>
-#include <Rocket/Core.h>
-#include <misc/enablewarn.h>
-
 #include "keys.h"
+
 
 namespace Input
 {
-    enum Modifier
+    struct KeyboardModifiers
     {
-        FAMOD_CTRL = 1,
-        FAMOD_ALT = 2,
-        FAMOD_SHIFT = 4
+        bool ctrl = false;
+        bool alt = false;
+        bool shift = false;
     };
 
     class InputManager
     {
         public:
             InputManager(std::function<void(Key)> keyPress, std::function<void(Key)> keyRelease,
-                std::function<void(uint32_t, uint32_t, Key)> mouseClick,
+                std::function<void(uint32_t, uint32_t, Key, bool)> mouseClick,
                 std::function<void(uint32_t, uint32_t, Key)> mouseRelease,
-                std::function<void(uint32_t, uint32_t)> mouseMove,
-                Rocket::Core::Context* context);
+                std::function<void(uint32_t, uint32_t, uint32_t, uint32_t)> mouseMove,
+                std::function<void(int32_t, int32_t)> mouseWheel,
+                std::function<void(std::string)> textInput);
 
-            void processInput(bool paused);
+            bool processInput(bool paused); ///< \return true if user requested quit, false otherwise
             void poll();
 
-            uint32_t getModifiers();
+            KeyboardModifiers getModifiers();
 
             static InputManager* get();
 
         private:
-            void rocketBaseClicked(); ///< called by libRocket when it receives a click that doesn't hit any gui elements
-            bool mBaseWasClicked;
 
-            friend void baseClickedHelper();
-
+            bool mHasQuit = false;
             
             ///< Basically a copy of the subset of SDL_Event that we actually use
             struct Event
@@ -58,13 +53,27 @@ namespace Input
                         int32_t key;
                         int32_t x;
                         int32_t y;
+                        int32_t numClicks;
                     } mouseButton;
 
                     struct _mouseMove
                     {
                         int32_t x;
                         int32_t y;
+                        int32_t xrel;
+                        int32_t yrel;
                     } mouseMove;
+
+                    struct _mouseWheel
+                    {
+                        int32_t x;
+                        int32_t y;
+                    } mouseWheel;
+
+                    struct _textInput
+                    {
+                        std::string* text;
+                    } textInput;
 
                 } vals;
             };
@@ -72,15 +81,15 @@ namespace Input
             boost::lockfree::spsc_queue<Event, boost::lockfree::capacity<500> > mQueue;
             std::function<void(Key)> mKeyPress;
             std::function<void(Key)> mKeyRelease;
-            std::function<void(uint32_t, uint32_t, Key)> mMouseClick;
+            std::function<void(uint32_t, uint32_t, Key, bool)> mMouseClick;
             std::function<void(uint32_t, uint32_t, Key)> mMouseRelease;
-            std::function<void(uint32_t, uint32_t)> mMouseMove;
-
-            Rocket::Core::Context* mContext;
+            std::function<void(uint32_t, uint32_t, uint32_t, uint32_t)> mMouseMove;
+            std::function<void(int32_t, int32_t)> mMouseWheel;
+            std::function<void(std::string)> mTextInput;
 
             static InputManager* instance;
 
-            uint32_t mModifiers;
+            KeyboardModifiers mModifiers;
     };
 }
 

@@ -1,26 +1,25 @@
 #include "position.h"
 
-#include "../engine/netmanager.h"
+#include "world.h"
 
 namespace FAWorld
 {
-    Position::Position(): mDist(0), mDirection(0),
-        mMoving(false), mCurrent(std::make_pair(0,0)) {}
+    Position::Position() : mDist(0), mDirection(0), mMoving(false),
+        mCurrent(std::make_pair(0, 0)) {}
 
-    Position::Position(int32_t x, int32_t y): mDist(0), mDirection(0),
-        mMoving(false), mCurrent(std::make_pair(x,y)) {}
+    Position::Position(int32_t x, int32_t y) : mDist(0), mDirection(0), mMoving(false),
+        mCurrent(std::make_pair(x, y)) {}
 
-    Position::Position(int32_t x, int32_t y, int32_t direction): mDist(0),
-        mDirection(direction), mMoving(false),
-        mCurrent(std::make_pair(x,y)) {}
+    Position::Position(int32_t x, int32_t y, int32_t direction) : mDist(0), mDirection(direction), mMoving(false),
+        mCurrent(std::make_pair(x, y)) {}
 
     void Position::update()
     {
-        if(mMoving)
+        if (mMoving)
         {
-            mDist += 2;
+            mDist += static_cast<int32_t> (FAWorld::World::getSecondsPerTick() * 250);
 
-            if(mDist >= 100)
+            if (mDist >= 100)
             {
                 mCurrent = next();
                 mDist = 0;
@@ -28,9 +27,26 @@ namespace FAWorld
         }
     }
 
+    int32_t Position::getDirection() const
+    {
+        return mDirection;
+    }
+
+    void Position::setDirection(int32_t mDirection)
+    {
+        if (mDirection >= 0)
+            this->mDirection = mDirection;
+    }
+
     std::pair<int32_t, int32_t> Position::current() const
     {
         return mCurrent;
+    }
+
+    bool Position::isNear(const Position& other)
+    {
+        return std::max (abs (mCurrent.first - other.mCurrent.first),
+                         abs (mCurrent.second - other.mCurrent.second)) <= 1;
     }
 
     double Position::distanceFrom(Position B)
@@ -47,116 +63,23 @@ namespace FAWorld
 
     std::pair<int32_t, int32_t> Position::next() const
     {
-        if(!mMoving)
+        if (!mMoving)
             return mCurrent;
-        
-        std::pair<int32_t, int32_t> retval = mCurrent;
 
-        switch(mDirection)
-        {
-            case 0:
-            {
-                retval.first++;
-                retval.second++;
-                break;
-            }
-            
-            case 7:
-            {
-                retval.first++;
-                break;
-            }
-
-            case 6:
-            {
-                retval.first++;
-                retval.second--;
-                break;
-            }
-
-            case 5:
-            {
-                retval.second--;
-                break;
-            }
-            
-            case 4:
-            {
-                retval.first--;
-                retval.second--;
-                break;
-            }
-
-            case 3:
-            {
-                retval.first--;
-                break;
-            }
-
-            case 2:
-            {
-                retval.first--;
-                retval.second++;
-                break;
-            }
-
-            case 1:
-            {
-                retval.second++;
-                break;
-            }
-
-            default:
-            {
-                break;
-            }
-        }
-
-        return retval;
+        return Misc::getNextPosByDir (mCurrent, mDirection);
     }
 
-    #pragma pack(1)
-    struct PosNetData
+    template<class Stream>
+    Serial::Error::Error Position::faSerial(Stream& stream)
     {
-        int32_t dist;
-        int32_t direction;
-        uint8_t moving;
-        int32_t currentX;
-        int32_t currentY;
-    };
+        serialise_int(stream, 0, 100, mDist);
+        serialise_int(stream, 0, 7, mDirection);
+        serialise_bool(stream, mMoving);
+        serialise_int32(stream, mCurrent.first);
+        serialise_int32(stream, mCurrent.second);
 
-    size_t Position::getWriteSize()
-    {
-        return sizeof(PosNetData);
+        return Serial::Error::Success;
     }
 
-    bool Position::writeTo(ENetPacket *packet, size_t& position)
-    {
-        PosNetData data;
-        data.dist = mDist;
-        data.direction = mDirection;
-        data.moving = mMoving;
-        data.currentX = mCurrent.first;
-        data.currentY = mCurrent.second;
-
-        return Engine::writeToPacket(packet, position, data);
-    }
-
-    bool Position::readFrom(ENetPacket *packet, size_t& position)
-    {
-        PosNetData data;
-
-        if(Engine::readFromPacket(packet, position, data))
-        {
-            mDist = data.dist;
-            mDirection = data.direction;
-            mMoving = data.moving;
-            mCurrent.first = data.currentX;
-            mCurrent.second = data.currentY;
-
-            return true;
-        }
-
-        return false;
-    }
+    FA_SERIAL_TEMPLATE_INSTANTIATE(Position);
 }

@@ -13,12 +13,13 @@ namespace FARender
 
 namespace Engine
 {
-    enum ThreadState
+    enum class ThreadState
     {
-        musicPlay,
-        soundPlay,
-        soundStop,
-        renderState
+        PLAY_MUSIC,
+        PLAY_SOUND,
+        STOP_SOUND,
+        RENDER_STATE,
+        PRELOAD_SPRITES
     };
 
     struct Message
@@ -30,6 +31,7 @@ namespace Engine
             std::string* musicPath;
             std::string* soundPath;
             FARender::RenderState* renderState;
+            std::vector<uint32_t>* preloadSpriteIds;
         } data;
     };
 
@@ -37,25 +39,23 @@ namespace Engine
     {
         public:
             static ThreadManager* get();
-
             ThreadManager();
-
             void run();
-
             void playMusic(const std::string& path);
             void playSound(const std::string& path);
             void stopSound();
             void sendRenderState(FARender::RenderState* state);
-
+            void sendSpritesForPreload(std::vector<uint32_t> sprites);
 
         private:
-            static ThreadManager* mThreadManager; ///< Singleton instance
-
-            boost::lockfree::spsc_queue<Message, boost::lockfree::capacity<100> > mQueue;
             void handleMessage(const Message& message);
-            FARender::RenderState* mRenderState;
 
-            FAAudio::AudioManager audioManager;
+            static ThreadManager* mThreadManager; ///< Singleton instance
+            boost::lockfree::spsc_queue<Message, boost::lockfree::capacity<100> > mQueue;
+            FARender::RenderState* mRenderState;
+            FAAudio::AudioManager mAudioManager;
+
+            std::vector<uint32_t> mSpritesToPreload;
     };
 }
 

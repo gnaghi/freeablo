@@ -1,9 +1,12 @@
 #include "player.h"
 #include "world.h"
 #include "actorstats.h"
+#include "characterstats.h"
 #include "../falevelgen/random.h"
 #include "../engine/threadmanager.h"
-#include <boost/python.hpp>
+#include <misc/stringops.h>
+#include <string>
+#include "itemmap.h"
 
 namespace FAWorld
 {
@@ -11,10 +14,32 @@ namespace FAWorld
 
     Player::Player() : Actor(), mInventory(this)
     {
-        mAnimTimeMap[AnimState::dead] = 10;
-        mAnimTimeMap[AnimState::walk] = 10;
-        mAnimTimeMap[AnimState::attack] = 16;
-        mAnimTimeMap[AnimState::idle] = 10;
+        //TODO: hack - need to think of some more elegant way of handling Actors in general
+        DiabloExe::CharacterStats stats;
+        init("Warrior", stats);
+    }
+
+    Player::Player(const std::string& className, const DiabloExe::CharacterStats& charStats) : Actor(), mInventory(this)
+    {
+        init(className, charStats);
+        mMoveHandler = MovementHandler(World::getTicksInPeriod(0.1f)); // allow players to repath much more often than other actors
+    }
+
+    void Player::init(const std::string& className, const DiabloExe::CharacterStats& charStats)
+    {
+        if (className == "Warrior")
+            mStats = new FAWorld::MeleeStats(charStats, this);
+        else if (className == "Rogue")
+            mStats = new FAWorld::RangerStats(charStats, this);
+        else if (className == "Sorcerer")
+            mStats = new FAWorld::MageStats(charStats, this);
+
+        setSpriteClass(Misc::StringUtils::lowerCase(className));
+
+        mStats->setActor(this);
+        mStats->recalculateDerivedStats();
+
+        mFaction = Faction::heaven();
 
         FAWorld::World::get()->registerPlayer(this);
     }
@@ -24,104 +49,27 @@ namespace FAWorld
         FAWorld::World::get()->deregisterPlayer(this);
     }
 
-    bool Player::attack(Actor *enemy)
+    bool Player::talk(Actor* actor)
     {
-        if(enemy->isDead() && enemy->mStats != nullptr)
-            return false;
-        isAttacking = true;
-        Engine::ThreadManager::get()->playSound(FALevelGen::chooseOne({"sfx/misc/swing2.wav", "sfx/misc/swing.wav"}));
-        enemy->takeDamage((uint32_t)mStats->getMeleeDamage());
-        if(enemy->getCurrentHP() <= 0)
-            enemy->die();
-        setAnimation(AnimState::attack, true);
-        mAnimPlaying = true;
-        return true;
-    }
-
-    bool Player::attack(Player *enemy)
-    {
-        UNUSED_PARAM(enemy);
-        return false;
-    }
-
-    bool Player::talk(Actor * actor)
-    {
-        isTalking = true;
-
-        using namespace boost::python;
-
-        try
-        {
-            object module = import("dialogues");
-            object talkTo = module.attr("talkTo");
-
-            talkTo(actor->getActorId().c_str());
-        }
-        catch(...)
-        {
-                PyErr_Print();
-                PyErr_Clear();
-        }
-
+        UNUSED_PARAM(actor);
+        //assert(false);
         return true;
     }
 
     void Player::setSpriteClass(std::string className)
     {
-        mFmtClassName = className;
-        mFmtClassCode = className[0];
+        mClassName = className;
+        updateSprites();
     }
 
-    FARender::FASpriteGroup* Player::getCurrentAnim()
-    {       
-        auto lastClassName = mFmtClassName;
-        auto lastClassCode = mFmtClassCode;
-        auto lastArmourCode = mFmtArmourCode;
-        auto lastWeaponCode = mFmtWeaponCode;
-        auto lastInDungeon = mFmtInDungeon;
-
-        updateSpriteFormatVars();
-
-        if( lastClassName   != mFmtClassName   ||
-            lastClassCode   != mFmtClassCode   ||
-            lastWeaponCode  != mFmtWeaponCode  ||
-            lastArmourCode  != mFmtArmourCode  ||
-            lastInDungeon   != mFmtInDungeon   )
-        {
-            auto helper = [&] (bool isDie = false)
-            {
-                std::string weapFormat = mFmtWeaponCode;
-
-                if(isDie)
-                    weapFormat = "n";
-
-                boost::format fmt("plrgfx/%s/%s%s%s/%s%s%s%s.cl2");
-                fmt % mFmtClassName % mFmtClassCode % mFmtArmourCode % weapFormat % mFmtClassCode % mFmtArmourCode % weapFormat;
-                return fmt;
-            };
-
-            auto renderer = FARender::Renderer::get();
-
-            mDieAnim = renderer->loadImage((helper(true) % "dt").str());
-            mAttackAnim = renderer->loadImage((helper() % "at").str());
-
-            if(mFmtInDungeon)
-            {
-                mWalkAnim = renderer->loadImage((helper() % "aw").str());
-                mIdleAnim = renderer->loadImage((helper() % "as").str());
-            }
-            else
-            {
-                mWalkAnim = renderer->loadImage((helper() % "wl").str());
-                mIdleAnim = renderer->loadImage((helper() % "st").str());
-            }
-        }
-
-        return Actor::getCurrentAnim();
-    }
-
-    void Player::updateSpriteFormatVars()
+    void Player::updateSprites()
     {
+        std::string classCode;
+        classCode = mClassName[0];
+        std::string armourCode;
+        std::string weaponCode;
+        bool inDungeon = false;
+
         std::string armour, weapon;
         switch(mInventory.mBody.getCode())
         {
@@ -211,18 +159,105 @@ namespace FAWorld
                 weapon = "t";
             else if(mInventory.mLeftHand.getCode() == Item::icBlunt || mInventory.mRightHand.getCode() == Item::icBlunt)
                 weapon = "h";
-        }
-        mFmtWeaponCode = weapon;
-        mFmtArmourCode = armour;
 
-        if(mLevel && mLevel->getLevelIndex() != 0)
-            mFmtInDungeon=true;
+            assert (!weapon.empty ()); // Empty weapon format
+        }
+        weaponCode = weapon;
+        armourCode = armour;
+
+        if(getLevel() && getLevel()->getLevelIndex() != 0)
+            inDungeon=true;
         else
-            mFmtInDungeon=false;
+            inDungeon=false;
+
+        auto helper = [&](bool isDie)
+        {
+            std::string weapFormat = weaponCode;
+
+            if (isDie)
+                weapFormat = "n";
+
+            boost::format fmt("plrgfx/%s/%s%s%s/%s%s%s%s.cl2");
+            fmt % mClassName % classCode % armourCode % weapFormat % classCode % armourCode % weapFormat;
+            return fmt;
+        };
+
+        auto renderer = FARender::Renderer::get();
+
+        getAnimationManager().setAnimation(AnimState::dead, renderer->loadImage((helper(true) % "dt").str()));
+        getAnimationManager().setAnimation(AnimState::attack, renderer->loadImage((helper(false) % "at").str()));
+        getAnimationManager().setAnimation(AnimState::hit, renderer->loadImage((helper(false) % "ht").str()));
+
+        if (inDungeon)
+        {
+            getAnimationManager().setAnimation(AnimState::walk, renderer->loadImage((helper(false) % "aw").str()));
+            getAnimationManager().setAnimation(AnimState::idle, renderer->loadImage((helper(false) % "as").str()));
+        }
+        else
+        {
+            getAnimationManager().setAnimation(AnimState::walk, renderer->loadImage((helper(false) % "wl").str()));
+            getAnimationManager().setAnimation(AnimState::idle, renderer->loadImage((helper(false) % "st").str()));
+        }
     }
 
-    void Player::setLevel(GameLevel *level)
+    void Player::pickupItem(ItemTarget target)
     {
-        Actor::setLevel(level);
+      auto &itemMap = getLevel()->getItemMap();
+      auto tile = target.item->getTile();
+      auto item = itemMap.takeItemAt (tile);
+      auto dropBack = [&](){ itemMap.dropItem(std::move (item), *this, tile); };
+      switch (target.action)
+      {
+      case ItemTarget::ActionType::autoEquip:
+          if (!getInventory().autoPlaceItem(*item))
+            dropBack ();
+          break;
+      case ItemTarget::ActionType::toCursor:
+          auto cursorItem = getInventory ().getItemAt(MakeEquipTarget<Item::eqCURSOR> ());
+          if (!cursorItem.isEmpty ())
+              return dropBack ();
+
+          getInventory ().setCursorHeld(*item);
+          break;
+      }
+    }
+
+    bool Player::dropItem(const FAWorld::Tile& clickedTile)
+    {
+       auto cursorItem = getInventory ().getItemAt(MakeEquipTarget<Item::eqCURSOR> ());
+       auto initialDir = Misc::getVecDir (Misc::getVec (getPos().current(), {clickedTile.x, clickedTile.y}));
+       auto curPos = getPos().current ();
+       auto tryDrop = [&](const std::pair<int32_t, int32_t> &pos){
+           if (getLevel()->dropItem (std::unique_ptr<Item> {new Item (cursorItem)}, *this, {pos.first, pos.second}))
+               {
+                   getInventory ().setCursorHeld({});
+                   return true;
+               }
+           return false;
+       };
+
+       auto isPosOk = [&](std::pair<int32_t, int32_t> pos)
+       {
+           return getLevel()->isPassableFor(pos.first, pos.second, this) && !getLevel()->getItemMap().getItemAt({pos.first, pos.second});
+       };
+
+       if (clickedTile == FAWorld::Tile {curPos.first, curPos.second})
+       {
+           if (isPosOk (curPos))
+             return tryDrop (curPos);
+           initialDir = 7; // this is hack to emulate original game behavior, diablo's 0th direction is our 7th unfortunately
+       }
+
+        for (auto diff : {0, -1, 1})
+        {
+            auto dir = (initialDir + diff + 8) % 8;
+            auto pos = Misc::getNextPosByDir (curPos, dir);
+            if (isPosOk (pos))
+                return tryDrop (pos);
+        }
+
+      if (isPosOk (curPos))
+          return tryDrop (curPos);
+      return false;
     }
 }

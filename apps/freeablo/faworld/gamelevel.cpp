@@ -5,21 +5,19 @@
 #include <boost/archive/binary_oarchive.hpp>
 #include <boost/archive/binary_iarchive.hpp>
 
-#include "../engine/netmanager.h"
+#include "../engine/net/netmanager.h"
 
 #include <diabloexe/diabloexe.h>
 #include "monster.h"
 #include "world.h"
 #include "actorstats.h"
+#include "itemmap.h"
 
 namespace FAWorld
 {
-    GameLevel::GameLevel(Level::Level level, size_t levelIndex, std::vector<Actor*> actors) : mLevel(level), mLevelIndex(levelIndex)
+    GameLevel::GameLevel(Level::Level level, size_t levelIndex) : mLevel(level), mLevelIndex(levelIndex),
+       mItemMap (new ItemMap (this))
     {
-        for(auto actor : actors)
-            actor->setLevel(this);
-
-        actorMapRefresh();
     }
 
     GameLevel::~GameLevel()
@@ -33,22 +31,22 @@ namespace FAWorld
         return mLevel[x][y];
     }
 
-    size_t GameLevel::width() const
+    int32_t GameLevel::width() const
     {
         return mLevel.width();
     }
 
-    size_t GameLevel::height() const
+    int32_t GameLevel::height() const
     {
         return mLevel.height();
     }
 
-    const std::pair<size_t,size_t>& GameLevel::upStairsPos() const
+    const std::pair<size_t,size_t> GameLevel::upStairsPos() const
     {
         return mLevel.upStairsPos();
     }
 
-    const std::pair<size_t,size_t>& GameLevel::downStairsPos() const
+    const std::pair<size_t,size_t> GameLevel::downStairsPos() const
     {
         return mLevel.downStairsPos();
     }
@@ -68,33 +66,38 @@ namespace FAWorld
         return mLevel.getPreviousLevel();
     }
 
-    void GameLevel::update(bool noclip, size_t tick)
+    void GameLevel::update(bool noclip)
     {
         for(size_t i = 0; i < mActors.size(); i++)
         {
             Actor * actor = mActors[i];
 
             actorMapRemove(actor);
-            actor->update(noclip, tick);
+            actor->update(noclip);
             actorMapInsert(actor);
         }
 
         actorMapRefresh();
+
+        for (auto &p : mItemMap->mItems)
+            {
+                p.second.update ();
+            }
     }
 
     void GameLevel::actorMapInsert(Actor* actor)
     {
-        mActorMap2D[actor->mPos.current()] = actor;
-        if(actor->mPos.mMoving)
-            mActorMap2D[actor->mPos.next()] = actor;
+        mActorMap2D[actor->getPos().current()] = actor;
+        if(actor->getPos().isMoving())
+            mActorMap2D[actor->getPos().next()] = actor;
     }
 
     void GameLevel::actorMapRemove(Actor* actor)
     {
-        if(mActorMap2D[actor->mPos.current()] == actor)
-            mActorMap2D.erase(actor->mPos.current());
-        if(actor->mPos.mMoving && mActorMap2D[actor->mPos.next()] == actor)
-            mActorMap2D.erase(actor->mPos.next());
+        if(mActorMap2D[actor->getPos().current()] == actor)
+            mActorMap2D.erase(actor->getPos().current());
+        if(actor->getPos().isMoving() && mActorMap2D[actor->getPos().next()] == actor)
+            mActorMap2D.erase(actor->getPos().next());
     }
 
     void GameLevel::actorMapClear()
@@ -109,9 +112,22 @@ namespace FAWorld
             actorMapInsert(mActors[i]);
     }
 
-    Actor* GameLevel::getActorAt(size_t x, size_t y)
+    bool GameLevel::isPassable(int x, int y) const
     {
-        return mActorMap2D[std::pair<size_t, size_t>(x, y)];
+        if (x > 0 && x < width() && y > 0 && y < height() && !mLevel[x][y].passable())
+            return false;
+
+        FAWorld::Actor* actor = getActorAt(x, y);
+        return actor == NULL || actor->isPassable();
+    }
+
+    Actor* GameLevel::getActorAt(int32_t x, int32_t y) const
+    {
+        auto it = mActorMap2D.find(std::pair<int32_t, int32_t>(x, y));
+        if (it == mActorMap2D.end())
+            return nullptr;
+
+        return it->second;
     }
 
     void GameLevel::addActor(Actor* actor)
@@ -120,14 +136,44 @@ namespace FAWorld
         actorMapInsert(actor);
     }
 
-    void GameLevel::fillRenderState(FARender::RenderState* state)
+    static Cel::Colour friendHoverColor () { return {180, 110, 110, true};}
+    static Cel::Colour enemyHoverColor () { return {164, 46, 46, true}; }
+    static Cel::Colour itemHoverColor () { return {185, 170, 119, true}; }
+
+    void GameLevel::fillRenderState(FARender::RenderState* state, Actor* displayedActor)
     {
         state->mObjects.clear();
+        state->mItems.clear ();
 
         for(size_t i = 0; i < mActors.size(); i++)
         {
-            size_t frame = mActors[i]->mFrame + mActors[i]->mPos.mDirection * mActors[i]->getCurrentAnim()->getAnimLength();
-            state->mObjects.push_back(std::tuple<FARender::FASpriteGroup*, size_t, FAWorld::Position>(mActors[i]->getCurrentAnim(), frame, mActors[i]->mPos));
+            auto tmp = mActors[i]->getAnimationManager().getCurrentRealFrame();
+
+            FARender::FASpriteGroup* sprite = tmp.first;
+            int32_t frame = tmp.second;
+            boost::optional<Cel::Colour> hoverColor;
+            if (mHoverState.isActorHovered(mActors[i]->getId()))
+               hoverColor = mActors[i]->isEnemy (displayedActor) ? enemyHoverColor() : friendHoverColor();
+            if (!sprite)
+                sprite = FARender::getDefaultSprite();
+
+
+            // offset the sprite for the current direction of the actor
+            frame += mActors[i]->getPos().getDirection() * sprite->getAnimLength();
+
+            state->mObjects.push_back({sprite, static_cast<uint32_t> (frame), mActors[i]->getPos(), hoverColor});
+
+            for (auto &p : mItemMap->mItems)
+               {
+                   auto sf = p.second.getSpriteFrame();
+                   FARender::ObjectToRender o;
+                   o.spriteGroup = sf.first;
+                   o.frame = sf.second;
+                   o.position = {p.first.x, p.first.y};
+                   if (mHoverState.isItemHovered(p.first))
+                       o.hoverColor = itemHoverColor ();
+                   state->mItems.push_back(o);
+               }
         }
     }
 
@@ -152,50 +198,39 @@ namespace FAWorld
         size_t contentLength;
     };
 
-    void GameLevel::saveToPacket(ENetPacket* packet, size_t& position)
+    std::string GameLevel::serialiseToString()
     {
-        // serialise mLevel into a binary string
         std::string dataSavingTmp;
         boost::iostreams::back_insert_device<std::string> inserter(dataSavingTmp);
         boost::iostreams::stream<boost::iostreams::back_insert_device<std::string> > s(inserter);
         boost::archive::binary_oarchive oa(s);
         oa & mLevel;
+        oa & mLevelIndex;
         s.flush();
 
-        // write data to packet
-        GameLevelHeader header;
-        header.levelIndex = mLevelIndex;
-        header.contentLength = dataSavingTmp.length();
-
-        size_t requiredSize = position + sizeof(header) + header.contentLength;
-        if(packet->dataLength < requiredSize)
-            enet_packet_resize(packet, requiredSize);
-
-        Engine::writeToPacket(packet, position, header);
-
-        for(size_t i = 0; i < dataSavingTmp.length(); i++)
-            packet->data[position++] = (uint8_t) dataSavingTmp[i];
+        return dataSavingTmp;
     }
 
+    bool GameLevel::isPassableFor(int x, int y, const Actor *actor) const
+     {
+       auto actorAtPos = getActorAt (x, y);
+       return mLevel[x][y].passable() && (actorAtPos == nullptr || actorAtPos == actor || actorAtPos->isPassable());
+     }
 
-    GameLevel* GameLevel::fromPacket(ENetPacket *packet, size_t &position)
+    bool GameLevel::dropItem(std::unique_ptr <Item>&& item, const Actor& actor, const Tile &tile)
+    {
+        return mItemMap->dropItem (move (item), actor, tile);
+    }
+
+    GameLevel* GameLevel::loadFromString(const std::string& data)
     {
         GameLevel* retval = new GameLevel();
 
-        GameLevelHeader header;
-        Engine::readFromPacket(packet, position, header);
-
-        retval->mLevelIndex = header.levelIndex;
-
-        std::string strTmp(header.contentLength, '\0');
-
-        for(size_t i = 0; i < strTmp.length(); i++)
-            strTmp[i] = packet->data[position++];
-
-        boost::iostreams::basic_array_source<char> device(strTmp.data(), strTmp.size());
+        boost::iostreams::basic_array_source<char> device(data.data(), data.size());
         boost::iostreams::stream<boost::iostreams::basic_array_source<char> > s(device);
         boost::archive::binary_iarchive ia(s);
         ia & retval->mLevel;
+        ia & retval->mLevelIndex;
 
         return retval;
     }
@@ -214,5 +249,18 @@ namespace FAWorld
     void GameLevel::getActors(std::vector<Actor*>& actors)
     {
         actors.insert(actors.end(), mActors.begin(), mActors.end());
+    }
+
+    HoverState& GameLevel::getHoverState() {
+       return mHoverState;
+    }
+
+    GameLevel::GameLevel()
+    {
+    }
+
+    ItemMap& GameLevel::getItemMap()
+    {
+        return *mItemMap;
     }
 }

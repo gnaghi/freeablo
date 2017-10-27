@@ -8,12 +8,79 @@
 
 namespace Misc
 {
+    std::pair<int32_t, int32_t> getNextPosByDir(std::pair<int32_t, int32_t> pos, int32_t dir)
+    {
+        std::pair<int32_t, int32_t> retval = pos;
+
+        switch (dir)
+        {
+        case 0:
+        {
+            retval.first++;
+            retval.second++;
+            break;
+        }
+
+        case 7:
+        {
+            retval.first++;
+            break;
+        }
+
+        case 6:
+        {
+            retval.first++;
+            retval.second--;
+            break;
+        }
+
+        case 5:
+        {
+            retval.second--;
+            break;
+        }
+
+        case 4:
+        {
+            retval.first--;
+            retval.second--;
+            break;
+        }
+
+        case 3:
+        {
+            retval.first--;
+            break;
+        }
+
+        case 2:
+        {
+            retval.first--;
+            retval.second++;
+            break;
+        }
+
+        case 1:
+        {
+            retval.second++;
+            break;
+        }
+
+        default:
+        {
+            break;
+        }
+        }
+
+        return retval;
+    }
+
     int32_t getVecDir(const std::pair<float, float>& vector)
     {
         if(vector.first == 0 && vector.second == 0)
             return -1;
-        
-        float angle = (std::atan2(vector.second, vector.first) / M_PI) * 180.0;
+
+        auto angle = (std::atan2(vector.second, vector.first) / M_PI) * 180.0;
 
         if(angle < 0)
             angle = 360 + angle;
@@ -34,7 +101,6 @@ namespace Misc
             return 5;
         else if(angle <= 337.5 && angle >= 292.5)
             return 6;
-
         return -1; // shut up compiler
     }
 }

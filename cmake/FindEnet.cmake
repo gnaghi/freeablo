@@ -29,6 +29,10 @@ FIND_LIBRARY(ENET_LIBRARY
   /opt
 )
 
+IF(WIN32)
+	set(ENET_LIBRARY "${ENET_LIBRARY}" "WINMM.LIB" "Ws2_32.lib") # needs some libs on windows apparently
+ENDIF()
+
 SET(ENET_FOUND "NO")
 IF(ENET_LIBRARY AND ENET_INCLUDE_DIR)
   SET(ENET_FOUND "YES")

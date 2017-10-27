@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#include <faio/faio.h>
+#include <faio/fafileobject.h>
 
 int main(int, char**)
 {
@@ -17,6 +17,6 @@ int main(int, char**)
     DiabloExe::DiabloExe exe(pathEXE);
     std::cout << exe.dump();
 
-    FAIO::quit();
+    FAIO::FAFileObject::quit();
     return 0;
 }

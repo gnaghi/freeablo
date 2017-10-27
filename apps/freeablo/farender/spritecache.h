@@ -9,6 +9,7 @@
 #include <utility>
 #include <atomic>
 
+#include <fa_nuklear.h>
 #include <render/render.h>
 
 namespace FARender
@@ -18,43 +19,61 @@ namespace FARender
     class FASpriteGroup
     {
         public:
-            FASpriteGroup():
-                animLength(1),
-                width(1),
-                height(1),
-                spriteCacheIndex(0)
-            {}
-        
             bool isValid()
             {
                 return spriteCacheIndex != 0;
             }
 
-            uint32_t getAnimLength()
+            int32_t getAnimLength()
             {
                 return animLength;
             }
 
-            uint32_t getWidth()
+            int32_t getWidth(int frame = 0) const
             {
-                return width;
+                return width[frame];
             }
 
-            uint32_t getHeight()
+            int32_t getHeight(int frame = 0) const
             {
-                return height;
+                return height[frame];
             }
 
-            uint32_t getCacheIndex()
+            int32_t getCacheIndex()
             {
                 return spriteCacheIndex;
             }
 
+            struct nk_image getNkImage(int32_t frame = 0)
+            {
+                assert(frame >= 0 && frame < (int32_t)frameHandles.size());
+                auto ret = nk_image_handle(nk_handle_ptr(&frameHandles[frame]));
+                return ret;
+            }
+
         private:
-            uint32_t animLength;
-            uint32_t width;
-            uint32_t height;
-            uint32_t spriteCacheIndex;
+
+            void init(int32_t _animLength, const std::vector<int32_t> &_width, const std::vector<int32_t> &_height, int32_t _spriteCacheIndex)
+            {
+                animLength = _animLength;
+                width = _width;
+                height = _height;
+                spriteCacheIndex = _spriteCacheIndex;
+
+                frameHandles.resize(animLength);
+                for (uint32_t i = 0; i < frameHandles.size(); i++)
+                {
+                    frameHandles[i].first = spriteCacheIndex;
+                    frameHandles[i].second = i;
+                }
+            }
+
+            int32_t animLength = 0;
+            std::vector<int32_t> width = {};
+            std::vector<int32_t> height = {};
+            int32_t spriteCacheIndex = 0;
+
+            std::vector<std::pair<int32_t, int32_t>> frameHandles;
 
         friend class SpriteCache;
         friend class SpriteManager;

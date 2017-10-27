@@ -9,10 +9,11 @@
 #include "netobject.h"
 
 #include <misc/misc.h>
+#include <serial/bitstream.h>
 
 namespace FAWorld
 {
-    class Position : public NetObject
+    class Position
     {
         public:
             Position();
@@ -21,44 +22,37 @@ namespace FAWorld
 
             void update(); ///< advances towards mNext
             std::pair<int32_t, int32_t> current() const; ///< where we are coming from
+            bool isNear(const Position& other);
             std::pair<int32_t, int32_t> next() const; ///< where we are going to
+
+            int32_t getDirection() const;
+            void setDirection(int32_t mDirection);
+
+            double distanceFrom(Position B);
+
+            template<class Stream>
+            Serial::Error::Error faSerial(Stream& stream);
+
+            bool isMoving() const { return mMoving; }
+            int32_t getDist() const { return mDist; }
+
+            void stop()
+            {
+                mDist = 0;
+                mMoving = false;
+            }
+
+            void start()
+            {
+                mDist = 0;
+                mMoving = true;
+            }
+
+        private:
             int32_t mDist; ///< percentage of the way there
             int32_t mDirection;
             bool mMoving;
-            double distanceFrom(Position B);
-            virtual size_t getWriteSize();
-            virtual bool writeTo(ENetPacket *packet, size_t& position);
-            virtual bool readFrom(ENetPacket *packet, size_t& position);
-
-        
-        private:
             std::pair<int32_t, int32_t> mCurrent;
-
-            template<class Archive>
-            void save(Archive & ar, const unsigned int version) const
-            {
-                UNUSED_PARAM(version);
-
-                ar << mDirection;
-                ar << mCurrent;
-            }
-
-            template<class Archive>
-            void load(Archive & ar, const unsigned int version)
-            {
-                UNUSED_PARAM(version);
-
-                ar >> mDirection;
-                ar >> mCurrent;
-                mMoving = false;
-                mDist = 0;
-            }
-
-
-            friend class boost::serialization::access;
-
-            BOOST_SERIALIZATION_SPLIT_MEMBER()
-
     };
 }
 

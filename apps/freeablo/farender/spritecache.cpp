@@ -7,6 +7,7 @@
 
 #include <cel/celfile.h>
 #include <misc/stringops.h>
+#include <numeric>
 
 
 namespace FARender
@@ -27,13 +28,11 @@ namespace FARender
     {
         if(!mStrToCache.count(path))
         {
-            FASpriteGroup* newCacheEntry = allocNewSpriteGroup();
-            uint32_t cacheIndex = newUniqueIndex();
-            newCacheEntry->spriteCacheIndex = cacheIndex;
-
             std::vector<std::string> components = Misc::StringUtils::split(path, '&');
 
-            Render::getImageInfo(components[0], newCacheEntry->width, newCacheEntry->height, newCacheEntry->animLength, 0);
+            std::vector<int32_t> tmpWidth, tmpHeight;
+            int32_t tmpAnimLength;
+            Render::getImageInfo(components[0], tmpWidth, tmpHeight, tmpAnimLength);
 
             for(uint32_t i = 1; i < components.size(); i++)
             {
@@ -41,19 +40,31 @@ namespace FARender
 
                 if(pair[0] == "vanim")
                 {
+                    assert (tmpAnimLength == 1);
                     std::istringstream vanimss(pair[1]);
 
                     uint32_t vAnim;
                     vanimss >> vAnim;
 
-                    newCacheEntry->animLength = (newCacheEntry->height / vAnim);
-                    if(newCacheEntry->height % vAnim != 0)
-                        newCacheEntry->animLength++;
-
-                    newCacheEntry->height = vAnim;
+                    tmpAnimLength = (tmpHeight[0] + vAnim - 1) / vAnim;
+                    tmpHeight.resize (tmpAnimLength);
+                    tmpWidth.resize (tmpAnimLength);
+                    for (int j = 0; j < tmpAnimLength; ++j)
+                        {
+                            tmpHeight[j] = vAnim;
+                            tmpWidth[j] = tmpWidth[0];
+                        }
+                } else if (pair[0] == "convertToSingleTexture") {
+                  tmpAnimLength = 1;
+                  tmpWidth = {std::accumulate (tmpWidth.begin (), tmpWidth.end (), 0)};
+                  tmpHeight = {*std::max_element (tmpHeight.begin (), tmpHeight.end ())};
                 }
             }
 
+            FASpriteGroup* newCacheEntry = allocNewSpriteGroup();
+            uint32_t cacheIndex = newUniqueIndex();
+
+            newCacheEntry->init(tmpAnimLength, tmpWidth, tmpHeight, cacheIndex);
 
             mStrToCache[path] = newCacheEntry;
             mCacheToStr[cacheIndex] = path;
@@ -72,7 +83,7 @@ namespace FARender
         {
             FASpriteGroup* newCacheEntry = allocNewSpriteGroup();
             uint32_t cacheIndex = newUniqueIndex();
-            newCacheEntry->spriteCacheIndex = cacheIndex;
+            newCacheEntry->init(0, {}, {}, cacheIndex);
             mStrToTilesetCache[key] = newCacheEntry;
             mCacheToTilesetPath[cacheIndex] = TilesetPath(celPath, minPath, top);
         }
@@ -124,6 +135,7 @@ namespace FARender
                 uint32_t newWidth = 0;
                 uint32_t newHeight = 0;
                 uint32_t r=0,g=0,b=0;
+                int32_t celIndex;
 
                 for(uint32_t i = 1; i < components.size(); i++)
                 {
@@ -187,6 +199,11 @@ namespace FARender
 
                         std::istringstream hss(size[1]);
                         hss >> newHeight;
+                    }
+                    else if(pair[0] == "frame")
+                    {
+                        std::istringstream ss(pair[1]);
+                        ss >> celIndex;
                     }
                 }
 

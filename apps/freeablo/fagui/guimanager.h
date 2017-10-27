@@ -1,13 +1,15 @@
 #ifndef GUIMANAGER_H
 #define GUIMANAGER_H
-#include "../faworld/itemmanager.h"
 #include <string>
 #include <chrono>
 #include <queue>
 #include <functional>
+#include "../engine/enginemain.h"
 
 
-#include "fapython.h"
+#include <fa_nuklear.h>
+#include "../faworld/inventory.h"
+#include <boost/variant/variant_fwd.hpp>
 
 namespace Rocket
 {
@@ -17,91 +19,101 @@ class ElementDocument;
 }
 }
 
+namespace Render
+{
+    enum class CursorHotspotLocation;
+}
+
+namespace FAWorld
+{
+    class Player;
+}
+
 namespace FAGui
 {
+    enum class EffectType {
+        none = 0,
+        highlighted,
+        checkerboarded,
+    };
+
+    // move all this to better place since cursor state is also dependent on spells etc.
+    extern std::string cursorPath;
+    extern Render::CursorHotspotLocation cursorHotspot;
+    extern uint32_t cursorFrame;
+
+    enum class PanelType {
+        none,
+        inventory,
+        spells,
+        character,
+        quests,
+    };
+
+    enum class PanelPlacement
+    {
+        none,
+        left,
+        right,
+    };
+
+    enum class ItemHighlightInfo {
+        highlited,
+        notHighlighed,
+        highlightIfHover,
+    };
+
+    enum class TextColor {
+        white,
+        blue,
+        golden,
+        red,
+    };
+
+    enum class DescriptionType {
+        none,
+        item,
+    };
+
+    PanelPlacement panelPlacementByType (PanelType type);
+    const char *bgImgPath (PanelType type);
+    const char *panelName (PanelType type);
 
     class ScrollBox;
     class GuiManager
     {
-        public:
-
-        enum GuiType
-        {
-            TitleScreen,
-            MainMenu,
-            Credits,
-            IngameMenu,
-            Other
-        };
-
-        GuiManager(FAWorld::Inventory &playerInventory, Engine::EngineMain& engine, std::string invClass);
-
-        void openDialogue(const std::string& document);
-        void closeDialogue();
-        bool isDialogueOpened() const;
-        void openDialogueScrollbox(const std::string& document);
-        void closeDialogueScrollbox();
-        bool isDialogueScrollboxOpened() const;
-        void showTitleScreen();
-        void showIngameGui();
-        void showMainMenu();
-        void showCredits();
-        void showSelectHeroMenu(bool fade);
-        void showChooseClassMenu();
-        void showSaveFileExistsMenu(int classNumber);
-        void showEnterNameMenu(int classNumber);
-        void showInvalidNameMenu(int classNumber);
-        void update(bool paused);
-        GuiType currentGuiType() const;
-        static std::string invClass;
-
-        FAPythonFuncs mPythonFuncs;
+        using self = GuiManager;
+    public:
+        GuiManager(Engine::EngineMain& engine, FAWorld::Player &player);
+        void update(bool paused, nk_context* ctx);
+        void setDescription (std::string text, TextColor color = TextColor::white);
+        void clearDescription();
+        bool isInventoryShown () const;
 
     private:
+        void togglePanel (PanelType type);
+        template <class Function>
+        void drawPanel(nk_context* ctx, PanelType panelType, Function op);
+        void item(nk_context* ctx, FAWorld::EquipTarget target, boost::variant<struct nk_rect, struct nk_vec2> placement, ItemHighlightInfo highligh);
+        void inventoryPanel(nk_context* ctx);
+        void characterPanel(nk_context* ctx);
+        void questsPanel(nk_context* ctx);
+        void spellsPanel(nk_context* ctx);
+        void belt(nk_context* ctx);
+        void bottomMenu(nk_context* ctx);
+        void smallText(nk_context* ctx, const char* text, TextColor color = TextColor::white);
+        void descriptionPanel(nk_context* ctx);
+        PanelType* panel(PanelPlacement placement);
+        const PanelType* panel(PanelPlacement placement) const;
 
-        enum State
-        {
-            FadeIn,
-            FadeOut,
-        };
-
-        void showMainMenuCallback();
-        void showCreditsCallback();
-        void showSelectHeroMenuCallback();
-        void showSelectHeroMenuNoFadeCallback();
-
-        void startFadeIn(Rocket::Core::ElementDocument *);
-        void startFadeOut(std::function<void(GuiManager&)> callback);
-
-        void updateFadeIn();
-        void updateFadeOut();
-
-        void stopFadeIn();
-        void stopFadeOut();
-
-        void hideFadeElement();
-        void showFadeElement();
-
-        void computeFadeDelta();
-
-        void updateGui(bool paused);
-        void hideAllMenus();
-
-        Rocket::Core::ElementDocument * mDocument;
-        std::function<void(GuiManager&)> mFadeOutCallback;
-        float mFadeDelta;
-        float mFadeValue;
-        Rocket::Core::ElementDocument * mFadeCurrentDocument;
-        std::queue<State> mStateQueue;
-        GuiType mCurrentGuiType;
-        std::chrono::system_clock::time_point mStartTime;
-        std::shared_ptr<ScrollBox> mCreditsScrollBox;
-        std::shared_ptr<ScrollBox> mDialogueScrollBox;
+    private:
+        Engine::EngineMain& mEngine;
+        FAWorld::Player& mPlayer;
+        std::string mDescription;
+        TextColor mDescriptionColor;
+        DescriptionType mDescriptionType;
+        PanelType mCurRightPanel = PanelType::none, mCurLeftPanel = PanelType::none;
     };
-
-    extern std::string cursorPath;
-
-    extern uint32_t cursorFrame;
 }
 
 #endif
